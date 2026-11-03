@@ -1,0 +1,5 @@
+requests>=2.31
+feedparser>=6.0
+pyyaml>=6.0
+anthropic>=0.40        # only needed when llm.provider is "anthropic"
+# openai>=1.40         # uncomment if llm.provider is "openai_compat" (OpenAI, Ollama, vLLM, ...)

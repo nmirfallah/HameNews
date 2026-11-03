@@ -1,0 +1,32 @@
+# Anything you leave out falls back to the defaults in trendwatch/config.py.
+
+llm:
+  provider: anthropic            # anthropic | openai_compat (add more in trendwatch/llm/__init__.py)
+  models:
+    fast: claude-haiku-5-5       # high-volume labelling (cheap)
+    smart: claude-sonnet-5-5     # clustering, framings, report writing
+  options: {}
+  # To use another model, e.g. a local one via Ollama:
+  # provider: openai_compat
+  # models: {fast: llama3.1, smart: llama3.1}
+  # options: {base_url: "http://localhost:11434/v1"}
+
+discovery:
+  enabled_sources: [google_trends, wikipedia, hackernews, mastodon, bluesky, news_headlines]
+  topics_per_day: 3
+  min_platforms: 2               # a topic must trend on this many different platforms
+  google_trends_geo: US
+
+collection:
+  sources: [news, bluesky, mastodon, hackernews]
+  max_articles: 60
+  max_posts: 80
+
+analysis:
+  min_items_outlet: 10           # articles on a topic before an outlet gets a label
+  min_items_account: 15          # posts on a topic before an account gets a label
+  min_kappa: 0.5                 # below this the two labelling passes disagree too much
+
+# news_feeds: edit the list in trendwatch/config.py or override it here, e.g.
+# news_feeds:
+#   - {name: "BBC News", url: "http://feeds.bbci.co.uk/news/world/rss.xml"}
