@@ -22,6 +22,7 @@ class Item:
     created_at: str = ""
     engagement: int = 0
     group: str = ""        # perspective group, e.g. "Israeli media" or "Bluesky posts"
+    domain: str = ""       # website domain of the outlet when known (from Google News)
 
     def to_dict(self):
         return asdict(self)

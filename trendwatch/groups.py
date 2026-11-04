@@ -11,7 +11,20 @@ POST_GROUPS = {"bluesky": "Bluesky posts", "mastodon": "Mastodon posts",
                "hackernews": "Hacker News comments"}
 
 
-def assign_groups(llm, items, store):
+def assign_groups(llm, items, store, cfg=None):
+    overrides = {n.lower(): g for g, names in ((cfg or {}).get("outlet_groups") or {}).items()
+                 for n in names}
+    domains = (cfg or {}).get("domain_groups") or {}
+    for it in items:
+        if it.kind != "article":
+            continue
+        dom = (it.domain or "").lower()
+        hit = next((g for d, g in domains.items() if dom == d or dom.endswith("." + d)), None)
+        if hit:
+            it.group = hit
+        elif it.outlet.lower() in overrides:
+            it.group = overrides[it.outlet.lower()]
+
     cache = store.read(FILE, {}) or {}
     known = {k.lower() for k in cache}
     need = sorted({i.outlet for i in items

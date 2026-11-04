@@ -15,7 +15,25 @@ DEFAULTS = {
         {"name": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/latest.xml"},
         {"name": "DW", "url": "https://rss.dw.com/rdf/rss-en-all"},
         {"name": "France 24", "url": "https://www.france24.com/en/rss"},
+        {"name": "RT", "url": "https://rt-english.com/rss/"},
     ],
+    # Outlets searched through Google News with a site: filter (no RSS URL needed).
+    "news_sites": [
+        {"name": "Tasnim News Agency", "site": "tasnimnews.ir"},
+        {"name": "Fars News Agency", "site": "farsnews.ir"},
+        {"name": "The Grayzone", "site": "thegrayzone.com"},
+    ],
+    # Force outlets into a named group, whatever the AI would have guessed.
+    # Format: group name -> outlet names as they appear in results (case-insensitive).
+    "outlet_groups": {
+        "Qatar state-linked media": ["Al Jazeera", "Al Jazeera English"],
+        "Russia state-linked media": ["RT", "RT News", "RT English", "Russia Today"],
+        "Iran state-linked media": ["Tasnim News Agency", "Tasnim", "Fars News Agency",
+                                    "FARS News Agency", "Fars News"],
+        "The Grayzone": ["The Grayzone", "Grayzone", "thegrayzone.com"],
+    },
+    # National news agencies from trendwatch/agencies.py, grouped by country and ownership type.
+    "agencies": {"enabled": True, "search": True, "site_chunk": 8},
     "discovery": {
         "enabled_sources": ["google_trends", "wikipedia", "hackernews", "mastodon",
                             "bluesky", "news_headlines"],
@@ -69,7 +87,17 @@ def deep_merge(base, override):
 
 
 def build_config(user_cfg=None):
-    return deep_merge(DEFAULTS, user_cfg or {})
+    cfg = deep_merge(DEFAULTS, user_cfg or {})
+    cfg["domain_groups"] = {}
+    if cfg["agencies"]["enabled"]:
+        from . import agencies
+        merged = {g: list(n) for g, n in agencies.outlet_groups().items()}
+        for g, names in cfg["outlet_groups"].items():
+            lst = merged.setdefault(g, [])
+            lst += [n for n in names if n not in lst]
+        cfg["outlet_groups"] = merged
+        cfg["domain_groups"] = agencies.domain_groups()
+    return cfg
 
 
 def load_config(path):

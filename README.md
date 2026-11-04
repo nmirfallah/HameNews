@@ -190,6 +190,35 @@ in `config.yaml`. Outlets not written in English are not covered unless they pub
 Outlet-to-country assignments are made by the AI and saved to `data/outlet_groups.json`; fix any
 mistakes there and your edits are kept.
 
+## Choosing which outlets are in which group
+
+Settings in `config.yaml` (defaults live in `trendwatch/config.py`) control this:
+
+- `news_feeds`: outlets read through their own RSS feed (BBC, Guardian, NPR, Al Jazeera, Fox, DW,
+  France 24 and RT by default).
+- `news_sites`: outlets searched through Google News with a `site:` filter (Tasnim, Fars and The Grayzone
+  by default). Use it for outlets whose RSS address you do not have.
+- `agencies`: about 60 national news agencies listed in `trendwatch/agencies.py`, each tagged with its
+  country and ownership type. They are searched through Google News (several domains per query) and
+  grouped as `<Country> state-linked media`, `<Country> public media` or `<Country> independent media`.
+  Set `agencies.enabled: false` to turn this off, or `agencies.search: false` to keep the grouping
+  but skip the extra searches. Edit the list to add or fix agencies.
+- `outlet_groups`: forces outlets into a named group, overriding the AI and the agency list. The group
+  name is exactly what appears in the report ("According to Qatar state-linked media, ...").
+
+Grouping order for each article: its website domain, then its outlet name, then the AI's guess
+(cached in `data/outlet_groups.json`, which you can edit).
+
+Al Jazeera, RT, Tasnim and Fars are placed in their country's `state-linked` group (Qatar, Russia,
+Iran). The Grayzone is its own group rather than being filed under a funder, because its funding is
+disputed: the outlet says it takes no government money, while critics point to ties between its staff
+and RT/Sputnik. Move it in `outlet_groups` if you disagree.
+
+Limits: the agency names and domains were written from memory and not verified one by one. Many agencies
+publish mainly in other languages and will only show up when they publish English content. Reported
+as closed or unreachable: Argentina's Telam (reported closed in 2024) and KCNA (no searchable domain).
+Run `python check_sources.py` to see which agencies actually return results.
+
 ## What you get
 
 ```

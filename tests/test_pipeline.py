@@ -137,6 +137,42 @@ def test_narratives_by_group_and_html_report():
         assert "According to Israeli media" in html and "<!doctype html>" in html
 
 
+def test_outlet_group_overrides():
+    from trendwatch.groups import assign_groups
+    cfg = build_config({})
+    items = [Item("1", "article", "news", "Al Jazeera", "x"),
+             Item("2", "article", "news", "rt", "x"),
+             Item("3", "article", "news", "Fars News Agency", "x"),
+             Item("4", "article", "news", "The Grayzone", "x")]
+    with tempfile.TemporaryDirectory() as d:
+        llm = FakeLLM()
+        assign_groups(llm, items, Store(d), cfg)
+        assert [i.group for i in items] == ["Qatar state-linked media", "Russia state-linked media",
+                                            "Iran state-linked media", "The Grayzone"]
+        assert "classify_outlets" not in llm.calls
+        # a known domain wins even when the outlet name is unfamiliar
+        odd = [Item("5", "article", "news", "Some Name", "x", domain="english.news.cn"),
+               Item("6", "article", "news", "AFP", "x"),
+               Item("7", "article", "news", "AP News", "x")]
+        assign_groups(llm, odd, Store(d), cfg)
+        assert [i.group for i in odd] == ["China state-linked media", "France public media",
+                                          "United States independent media"]
+
+
+def test_agency_data_is_consistent():
+    from trendwatch import agencies
+    seen = {}
+    for country, kind, names, domains in agencies.AGENCIES:
+        assert kind in agencies.LABEL and names, country
+        for d in domains:
+            assert d not in seen, f"duplicate domain {d}"
+            seen[d] = country
+    assert len(agencies.AGENCIES) >= 55
+    cfg = build_config({})
+    assert cfg["domain_groups"]["tass.com"] == "Russia state-linked media"
+    assert "Al Jazeera" in cfg["outlet_groups"]["Qatar state-linked media"]
+
+
 def test_html_escapes_untrusted_text():
     from trendwatch.report import render_html
     bad = {"topic": "<img src=x onerror=alert(1)>", "n_items": 1, "platforms": [], "n_signals": 0,
@@ -158,5 +194,5 @@ def test_manual_subject_and_provider_registry():
 
 
 if __name__ == "__main__":
-    test_extract_json(); test_end_to_end_and_no_double_counting(); test_narratives_by_group_and_html_report(); test_html_escapes_untrusted_text(); test_manual_subject_and_provider_registry()
+    test_extract_json(); test_end_to_end_and_no_double_counting(); test_narratives_by_group_and_html_report(); test_outlet_group_overrides(); test_agency_data_is_consistent(); test_html_escapes_untrusted_text(); test_manual_subject_and_provider_registry()
     print("all tests passed")

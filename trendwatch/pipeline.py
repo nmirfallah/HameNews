@@ -17,7 +17,7 @@ def analyze_topic(llm, topic, cfg, store):
 
     # "Who says what": works even when there is too little data for stance labels.
     try:
-        groups.assign_groups(llm, items, store)
+        groups.assign_groups(llm, items, store, cfg)
         res["narratives"] = narratives.build(llm, topic["topic"], items, cfg)
     except Exception as e:
         log.warning("narratives step failed: %s", e)
