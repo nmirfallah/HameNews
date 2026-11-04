@@ -33,7 +33,7 @@ def summarize(counts, framings, min_items, lean_threshold):
     framed = {k: v for k, v in counts.items() if k != "none"}
     nf = sum(framed.values())
     if n < min_items:
-        return {"n": n, "label": "insufficient data", "confidence": "-"}
+        return {"n": n, "label": f"building ({n}/{min_items} items needed)", "confidence": "-"}
     if nf < 3:
         return {"n": n, "label": "no clear framing (mostly neutral)", "confidence": "low"}
     ranked = sorted(framed.items(), key=lambda kv: -kv[1])

@@ -21,6 +21,7 @@ class Item:
     url: str = ""
     created_at: str = ""
     engagement: int = 0
+    group: str = ""        # perspective group, e.g. "Israeli media" or "Bluesky posts"
 
     def to_dict(self):
         return asdict(self)

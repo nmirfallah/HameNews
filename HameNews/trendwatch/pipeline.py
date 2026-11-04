@@ -1,7 +1,7 @@
 import json
 from datetime import date
 
-from . import profiles, prompts, report
+from . import groups, narratives, profiles, prompts, report
 from .collect import collect
 from .discovery import discover_topics, expand_subject
 from .stance import divide_report, get_framings, label_with_consensus
@@ -14,6 +14,13 @@ def analyze_topic(llm, topic, cfg, store):
     res = {k: topic.get(k) for k in ("topic", "slug", "summary", "platforms", "n_signals", "signals")}
     res["n_items"] = len(items)
     a = cfg["analysis"]
+
+    # "Who says what": works even when there is too little data for stance labels.
+    try:
+        groups.assign_groups(llm, items, store)
+        res["narratives"] = narratives.build(llm, topic["topic"], items, cfg)
+    except Exception as e:
+        log.warning("narratives step failed: %s", e)
 
     if len(items) < a["min_items_to_analyze"]:
         res["divide"] = {"verdict": "insufficient data", "note": f"Only {len(items)} items found."}
@@ -61,11 +68,14 @@ def run(llm, cfg, store, subject=None):
         log.warning("nothing to analyse today")
         return None
     results = []
-    for t in topics:
-        log.info("analysing topic: %s", t["topic"])
-        results.append(analyze_topic(llm, t, cfg, store))
+    for rank, t in enumerate(topics, 1):   # topics arrive sorted by how much they are trending
+        log.info("analysing topic #%d: %s", rank, t["topic"])
+        res = analyze_topic(llm, t, cfg, store)
+        res["rank"] = rank
+        results.append(res)
     name = f"reports/{day}-{slugify(subject)}.md" if subject else f"reports/{day}.md"
     store.write_text(name, report.render(day, results))
+    store.write_text(name.replace(".md", ".html"), report.render_html(day, results))
     store.write(name.replace(".md", ".json"), results)
     log.info("report written: %s", store.path(name))
     return name

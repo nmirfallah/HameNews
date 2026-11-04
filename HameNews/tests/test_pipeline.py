@@ -43,6 +43,16 @@ class FakeLLM(LLM):
                 rows.append({"i": int(m.group(1)), "label": lab, "confidence": 0.9,
                              "evidence": text[:40]})
             return json.dumps(rows)
+        if task == "classify_outlets":
+            names = re.findall(r"^- (.+)$", prompt, re.M)
+            return json.dumps([{"outlet": n, "group": "Israeli media" if n == "Outlet0" else "Iranian media"}
+                               for n in names])
+        if task == "group_narratives":
+            gs = re.findall(r'<group name="([^"]+)"', prompt)
+            first = re.search(r'<item i="(\d+)"', prompt)
+            return json.dumps({"groups": [{"group": g, "narrative": f"According to {g}, it was covered.",
+                                           "item_ids": [int(first.group(1))]} for g in gs],
+                               "differences": "They use different terms."})
         if task == "write_narrative":
             return "Neutral briefing text."
         raise AssertionError(task)
@@ -106,6 +116,38 @@ def test_end_to_end_and_no_double_counting():
         assert llm.calls.count("propose_framings") == 1
 
 
+def test_narratives_by_group_and_html_report():
+    cfg = setup()
+    with tempfile.TemporaryDirectory() as d:
+        store, llm = Store(d), FakeLLM()
+        name = run(llm, cfg, store)
+        res = store.read(name.replace(".md", ".json"))[0]
+        nar = res["narratives"]
+        names = {g["group"] for g in nar["groups"]}
+        assert {"Israeli media", "Iranian media", "Bluesky posts"} <= names, names
+        assert nar["differences"] and res["rank"] == 1
+        assert all(g["links"] for g in nar["groups"])
+        # classification is cached and editable; a second run must not ask again
+        assert store.read("outlet_groups.json")["Outlet0"] == "Israeli media"
+        run(llm, cfg, store)
+        assert llm.calls.count("classify_outlets") == 1
+        md = open(store.path(name), encoding="utf-8").read()
+        assert "### What each side says" in md and "**Israeli media**" in md
+        html = open(store.path(name.replace(".md", ".html")), encoding="utf-8").read()
+        assert "According to Israeli media" in html and "<!doctype html>" in html
+
+
+def test_html_escapes_untrusted_text():
+    from trendwatch.report import render_html
+    bad = {"topic": "<img src=x onerror=alert(1)>", "n_items": 1, "platforms": [], "n_signals": 0,
+           "narratives": {"groups": [{"group": "<b>g</b>", "n_items": 2, "outlets": ["<i>o</i>"],
+                                      "narrative": "<script>alert(1)</script>",
+                                      "links": [{"outlet": "x", "url": "javascript:alert(1)"}]}],
+                          "differences": "", "unclassified": 0}}
+    out = render_html("2026-01-01", [bad])
+    assert "<img" not in out and "<script>" not in out and "javascript:" not in out
+
+
 def test_manual_subject_and_provider_registry():
     from trendwatch.llm import get_llm
     try:
@@ -116,5 +158,5 @@ def test_manual_subject_and_provider_registry():
 
 
 if __name__ == "__main__":
-    test_extract_json(); test_end_to_end_and_no_double_counting(); test_manual_subject_and_provider_registry()
+    test_extract_json(); test_end_to_end_and_no_double_counting(); test_narratives_by_group_and_html_report(); test_html_escapes_untrusted_text(); test_manual_subject_and_provider_registry()
     print("all tests passed")

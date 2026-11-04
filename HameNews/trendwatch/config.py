@@ -29,10 +29,19 @@ DEFAULTS = {
     },
     "collection": {
         "sources": ["news", "bluesky", "mastodon", "hackernews"],
-        "max_articles": 60,
+        "max_articles": 80,
         "max_posts": 80,
         "skip_replies": True,
         "google_news": True,
+        # Google News editions to search. More editions = more national perspectives.
+        "google_news_editions": ["US", "GB", "IL", "IN", "AU"],
+    },
+    "narratives": {
+        "enabled": True,
+        "min_total_items": 3,
+        "min_group_items": 2,
+        "max_items_per_group": 8,
+        "max_groups": 8,
     },
     "analysis": {
         "min_items_to_analyze": 8,

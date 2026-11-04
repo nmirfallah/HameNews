@@ -77,3 +77,36 @@ def narrative(stats_json):
         "Do not add facts that are not in the data.\n\n"
         f"{json.dumps(stats_json, ensure_ascii=False)}"
     )
+
+
+def classify_outlets(names):
+    lst = "\n".join(f"- {n}" for n in names)
+    return (
+        "TASK:classify_outlets\n"
+        "For each news outlet below, give the group it belongs to based on the country or region "
+        "where it is based, written as '<Country or region> media' (for example 'Israeli media', "
+        "'Iranian media', 'US media', 'UK media', 'Qatari media'). Use 'International / wire' for "
+        "global wire services. Use 'Unknown' if you are not sure; do not guess.\n"
+        "Return a JSON list of objects with keys: outlet (exactly as given), group.\n\n"
+        f"{lst}"
+    )
+
+
+def group_narratives(topic, groups_block):
+    return (
+        "TASK:group_narratives\n"
+        f"Topic: {topic}\n"
+        "Below are items about this topic, grouped by the kind of source (the country an outlet is "
+        "based in, or a social platform).\n"
+        "For EACH group write a neutral 1-3 sentence summary of the narrative that group's items "
+        "present, beginning with 'According to <group name>,'. Attribute precisely: state what the "
+        "sources claim, include specific figures, names or terms they use when the items give them, and "
+        "keep each group's account separate even where groups contradict each other. Describe; do not "
+        "judge which account is true. If a group's items are only bare headlines with no clear "
+        "narrative, say so plainly. Use only the items provided.\n"
+        "Also give 'differences': one or two neutral sentences on where the groups differ in "
+        "terminology, emphasis or reported facts (empty string if fewer than two groups or no real difference).\n"
+        "Return a JSON object with keys: groups (list of objects with keys group (exact name given), "
+        "narrative, item_ids (indices of up to 4 items you relied on)), differences (string).\n\n"
+        f"{groups_block}"
+    )

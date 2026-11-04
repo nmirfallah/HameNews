@@ -53,6 +53,20 @@ accounts by how they frame the topic. The result is a Markdown report committed 
    its sample size, a confidence level and quoted evidence.
 6. **Report.** A neutral AI-written summary of the computed numbers, plus tables.
 
+**The report shows, for each trending topic (ranked by how much it is trending), what each group of
+sources says:**
+
+```
+#1  Hamas attack on Israel          (trending on 5 platforms)
+  According to Israeli media, ...   Sources: [Times of Israel] ...
+  According to Iranian media, ...   Sources: [Tehran Times] ...
+  According to US media, ...
+  Where they differ: terminology, casualty figures, causes cited ...
+```
+Groups are the country an outlet is based in (for articles) or the platform (for posts).
+Open it as a web page with `python run.py --open`, or `python run.py --open-latest`
+to reopen the newest one without running anything.
+
 The AI does the judgment work (grouping, framing, labelling, writing). Plain code does the
 counting, thresholds and history, so the numbers are exact and cheap.
 
@@ -74,6 +88,8 @@ $env:ANTHROPIC_API_KEY = "your_key_here"      # lasts for this PowerShell window
 python run.py --subject "AI regulation"       # analyse one subject you choose
 python run.py                                 # auto-discover today's trending topics
 python run.py --topics 5                      # auto-discover, analyse 5 topics
+python run.py --open                          # run, then open the HTML report in your browser
+python run.py --open-latest                   # just reopen the newest report
 ```
 
 Notes for Windows:
@@ -153,11 +169,33 @@ Each source is a small module in `trendwatch/sources/`:
 
 Register it in `trendwatch/sources/__init__.py`, then enable it in `config.yaml`.
 
+## Why am I not seeing labels?
+
+There are two kinds of output, and they fill in at different speeds:
+
+- **"What each side says"** works from the first run. It needs at least `narratives.min_group_items`
+  items from a source group. Outlets whose country the AI could not identify are left out.
+- **Per-outlet and per-account labels** (in "Analysis details") need history: 10 articles per outlet
+  and 15 posts per account on the same topic (`analysis.min_items_outlet` / `min_items_account`).
+  Until then the table shows progress such as `building (3/10 items needed)`. They are also skipped
+  when the verdict is `no distinct framings` or `insufficient data`.
+  For testing, lower both numbers in `config.yaml`.
+- No accounts at all? Bluesky search needs the app-password login (see Quick start).
+
+## Getting more perspectives
+
+Coverage is only as varied as your sources. Add more `google_news_editions` (country codes), and add
+RSS feeds for outlets from the countries or camps you want represented, with an optional `group`
+in `config.yaml`. Outlets not written in English are not covered unless they publish an English feed.
+Outlet-to-country assignments are made by the AI and saved to `data/outlet_groups.json`; fix any
+mistakes there and your edits are kept.
+
 ## What you get
 
 ```
 data/
-  reports/2026-11-03.md      the daily report (and a .json version of the same data)
+  reports/2026-11-03.html    the daily report to read in a browser (plus .md and .json versions)
+  outlet_groups.json         which country group each outlet belongs to (editable)
   topics/<topic>.json        frozen framings and divide history for each topic
   profiles/outlets.json      running per-outlet counts and evidence
   profiles/accounts.json     running per-account counts and evidence
@@ -178,7 +216,8 @@ trendwatch/
   collect.py                gather articles and posts
   stance.py                 framings, two-pass labelling, divide verdict
   profiles.py               running outlet and account profiles
-  report.py, pipeline.py    report rendering and the daily flow
+  groups.py, narratives.py  source groups and the "According to X..." summaries
+  report.py, pipeline.py    report rendering (Markdown and HTML) and the daily flow
   prompts.py                every prompt in one place
   llm/                      model-independent AI layer and providers
   sources/                  one module per data source

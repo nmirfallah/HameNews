@@ -19,14 +19,26 @@ discovery:
 
 collection:
   sources: [news, bluesky, mastodon, hackernews]
-  max_articles: 60
+  max_articles: 80
   max_posts: 80
+  # Each edition shows Google News as seen from that country, giving different outlets.
+  # Some combinations may return nothing; remove any that do.
+  google_news_editions: [US, GB, IL, IN, AU]
+
+narratives:                      # the "According to X, ... According to Y, ..." section
+  enabled: true
+  min_group_items: 2             # a source group needs this many items to get a narrative
+  max_items_per_group: 8
 
 analysis:
   min_items_outlet: 10           # articles on a topic before an outlet gets a label
   min_items_account: 15          # posts on a topic before an account gets a label
   min_kappa: 0.5                 # below this the two labelling passes disagree too much
 
-# news_feeds: edit the list in trendwatch/config.py or override it here, e.g.
+# news_feeds: replacing this list replaces the built-in one, so include every feed you want.
+# "group" is optional; without it the AI assigns the outlet to a country group
+# (saved in data/outlet_groups.json, which you can edit). Find each outlet's real RSS URL
+# on its own website; broken feeds are skipped with a warning.
 # news_feeds:
 #   - {name: "BBC News", url: "http://feeds.bbci.co.uk/news/world/rss.xml"}
+#   - {name: "Some Outlet", url: "https://example.com/rss", group: "Iranian media"}
