@@ -22,6 +22,7 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 - [Project layout](#project-layout)
 - [Reading the labels responsibly](#reading-the-labels-responsibly)
 - [Known limits](#known-limits)
+- [Plans and specs](#plans-and-specs)
 
 ## How it works
 
@@ -251,6 +252,7 @@ trendwatch/
   llm/                      model-independent AI layer and providers
   sources/                  one module per data source
 tests/test_pipeline.py      offline end-to-end test
+specs/                      planning documents, one file per subject
 .github/workflows/daily.yml scheduled job
 ```
 
@@ -275,3 +277,8 @@ tests/test_pipeline.py      offline end-to-end test
 - Bluesky search may require the app-password login.
 - Instagram and X/Twitter are not supported. X's API is paid and Instagram has no public trends API.
 - Articles are judged from headlines and snippets, not full text.
+
+## Plans and specs
+
+Planned work and design decisions live in [`specs/`](specs/README.md), one file per subject:
+the knowledge base of outlet and account connections, news sources, analysis quality, and operations.
