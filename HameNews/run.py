@@ -5,6 +5,7 @@
   python run.py --subject "AI regulation"   # analyse one subject you choose
 """
 import argparse
+import sys
 import logging
 
 from trendwatch.config import load_config
@@ -20,6 +21,9 @@ def main():
     ap.add_argument("--data-dir", default="data")
     ap.add_argument("--topics", type=int, help="override discovery.topics_per_day")
     args = ap.parse_args()
+
+    for stream in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
+        stream.reconfigure(encoding="utf-8", errors="replace")
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     cfg = load_config(args.config)
