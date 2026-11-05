@@ -25,4 +25,5 @@ and how outlets and accounts frame the topic, with evidence for every claim.
 - Calibrate on outlets with well-known positions and fix framings that look off.
 - Trend history: chart divide verdicts over days from `data/topics/*.json`.
 - Topic matching across days (fuzzy match on names and keywords) to avoid duplicate topic files.
-- Evaluation set: a small hand-labelled sample to measure labelling accuracy over time.
+- Evaluation set: a small hand-labelled sample to measure labelling accuracy over time. Unit tests prove the
+  code behaves; only this set shows whether the model's labels are any good.

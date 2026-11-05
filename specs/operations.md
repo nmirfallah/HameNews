@@ -13,6 +13,8 @@ Run once a day unattended, cheaply, with failures that are visible and never sil
 - Every data source fails softly with a warning; one broken feed never stops a run.
 - Console output is forced to UTF-8 for Windows.
 - Keep `check_sources.py` as the first thing to run when something looks wrong.
+- Offline test suite (unittest, no dependencies beyond the app's own) runs on every push via
+  `.github/workflows/tests.yml`; the AI and all network access are faked in tests.
 
 ## Open questions
 - Actual cost per daily run on live data? Check the Anthropic Console usage page after the first runs.
@@ -25,5 +27,5 @@ Run once a day unattended, cheaply, with failures that are visible and never sil
 - Add a failure summary to the report (which sources returned nothing today).
 - Alert on failed runs (e.g. GitHub notifications on the workflow).
 - Cost cap: stop analysing further topics once an estimated token budget is exceeded.
-- CI: run `python tests/test_pipeline.py` on every push.
+- Add a small set of live smoke tests (opt-in, needs network and an API key) for the real sources and models.
 - Pin dependency versions once the first live run succeeds.

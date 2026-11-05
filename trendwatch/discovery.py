@@ -50,7 +50,8 @@ def discover_topics(llm, cfg, existing_topic_names=()):
 
     topics = []
     for t in data:
-        ids = [i for i in t.get("signal_ids", []) if isinstance(i, int) and 0 <= i < len(signals)]
+        ids = list(dict.fromkeys(  # valid ids only, duplicates removed, order kept
+            i for i in t.get("signal_ids", []) if isinstance(i, int) and 0 <= i < len(signals)))
         if not ids or not t.get("topic"):
             continue
         platforms = sorted({signals[i].platform for i in ids})

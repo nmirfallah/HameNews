@@ -1,23 +1,21 @@
-"""Offline end-to-end test: fake LLM + fake data sources, no network, no API key.
-Run:  python tests/test_pipeline.py     (or: pytest)"""
+"""Offline end-to-end tests: fake LLM that answers each TASK, fake data sources, no network.
+Run everything with:  python -m unittest discover -s tests -v"""
 import json
-import os
 import re
-import sys
 import tempfile
+import unittest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
+import helpers
+from helpers import cfg
 from trendwatch import sources
-from trendwatch.config import build_config
-from trendwatch.llm.base import LLM, extract_json
-from trendwatch.models import Item, Signal
+from trendwatch.llm.base import LLM
+from trendwatch.models import Signal
 from trendwatch.pipeline import run
 from trendwatch.store import Store
 
 
 class FakeLLM(LLM):
-    """Answers each TASK deterministically so the whole pipeline can be exercised."""
+    """Deterministic answers for every task the pipeline asks for."""
 
     def __init__(self):
         super().__init__({"fast": "fake-fast", "smart": "fake-smart"})
@@ -32,17 +30,9 @@ class FakeLLM(LLM):
                  "summary": "A big album was released."},
                 {"topic": "Lonely Signal", "keywords": ["x"], "signal_ids": [3], "summary": "."}])
         if task == "propose_framings":
-            return "```json\n" + json.dumps({"has_distinct_framings": True, "framings": [
-                {"label": "Celebratory", "description": "Frames it as an achievement."},
-                {"label": "Dismissive", "description": "Mocks or belittles it."}]}) + "\n```"
+            return "```json\n" + json.dumps(helpers.FRAMINGS_REPLY) + "\n```"
         if task == "label_items":
-            rows = []
-            for m in re.finditer(r'<item i="(\d+)"[^>]*>(.*?)</item>', prompt):
-                text = m.group(2).lower()
-                lab = "f1" if "triumph" in text else "f2" if "mock" in text else "none"
-                rows.append({"i": int(m.group(1)), "label": lab, "confidence": 0.9,
-                             "evidence": text[:40]})
-            return json.dumps(rows)
+            return json.dumps(helpers.keyword_labels(prompt))
         if task == "classify_outlets":
             names = re.findall(r"^- (.+)$", prompt, re.M)
             return json.dumps([{"outlet": n, "group": "Israeli media" if n == "Outlet0" else "Iranian media"}
@@ -55,144 +45,80 @@ class FakeLLM(LLM):
                                "differences": "They use different terms."})
         if task == "write_narrative":
             return "Neutral briefing text."
-        raise AssertionError(task)
+        raise AssertionError(f"unexpected task {task}")
 
 
-def fake_signals(cfg):
+def fake_signals(cfg_):
     return [Signal("Album drop", "google_trends", 10), Signal("New album", "wikipedia", 9),
             Signal("album launch", "mastodon", 5), Signal("Something else", "hackernews", 1)]
 
 
-def fake_content(topic, cfg):
-    items = []
-    for i in range(24):
-        text = ("A triumph for the artist" if i % 3 == 0 else
-                "Mock the hype, honestly" if i % 3 == 1 else "Album released on Friday")
-        items.append(Item(id=f"a{i}", kind="article", platform="news",
-                          outlet=f"Outlet{i % 2}", text=f"{text} #{i}", url=f"http://x/{i}"))
-    for i in range(10):
-        items.append(Item(id=f"p{i}", kind="post", platform="bluesky", outlet=f"user{i % 2}",
-                          text="Total triumph, love it" if i % 2 == 0 else "Mock mock mock",
-                          url=f"http://p/{i}", engagement=i))
-    return items
+def fake_content(topic, cfg_):
+    return helpers.mixed_items(24, 10)
 
 
-def setup():
-    sources.SIGNAL_SOURCES.clear(); sources.SIGNAL_SOURCES["fake"] = fake_signals
-    sources.CONTENT_SOURCES.clear(); sources.CONTENT_SOURCES["fake"] = fake_content
-    return build_config({"discovery": {"enabled_sources": ["fake"], "topics_per_day": 3},
-                         "collection": {"sources": ["fake"]},
-                         "analysis": {"min_items_outlet": 5, "min_items_account": 5}})
+class EndToEndTests(unittest.TestCase):
+    def setUp(self):
+        saved = (dict(sources.SIGNAL_SOURCES), dict(sources.CONTENT_SOURCES))
+        self.addCleanup(self._restore, saved)
+        sources.SIGNAL_SOURCES.clear()
+        sources.SIGNAL_SOURCES["fake"] = fake_signals
+        sources.CONTENT_SOURCES.clear()
+        sources.CONTENT_SOURCES["fake"] = fake_content
+        self.cfg = cfg(discovery={"enabled_sources": ["fake"], "topics_per_day": 3},
+                       collection={"sources": ["fake"]},
+                       analysis={"min_items_outlet": 5, "min_items_account": 5})
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.store = Store(self._tmp.name)
 
+    @staticmethod
+    def _restore(saved):
+        for registry, original in zip((sources.SIGNAL_SOURCES, sources.CONTENT_SOURCES), saved):
+            registry.clear()
+            registry.update(original)
 
-def test_extract_json():
-    assert extract_json('```json\n{"a": 1}\n```') == {"a": 1}
-    assert extract_json('Sure! [1, 2, 3] done') == [1, 2, 3]
-
-
-def test_end_to_end_and_no_double_counting():
-    cfg = setup()
-    with tempfile.TemporaryDirectory() as d:
-        store, llm = Store(d), FakeLLM()
-        name = run(llm, cfg, store)
-        res = store.read(name.replace(".md", ".json"))
-        # "Lonely Signal" trends on one platform only, so it is filtered out
-        assert [r["topic"] for r in res] == ["Album Launch"], res
-        div = res[0]["divide"]
-        assert div["verdict"] == "strong", div
-        assert div["kappa"] == 1.0
-        assert "Divide verdict: strong" in store.read_text(name) if hasattr(store, "read_text") else True
-
-        outlets = res[0]["rows"]["outlets"]
-        assert len(outlets) == 2 and all(o["n"] == 12 for o in outlets), outlets
-        assert all(o["label"] != "insufficient data" for o in outlets)
-
-        # Running again on the same items must not inflate the counts
-        run(llm, cfg, store)
-        prof = store.read("profiles/outlets.json")
-        assert sum(sum(t["counts"].values()) for e in prof.values()
-                   for t in e["topics"].values()) == 24
-        # framings are frozen: only proposed once
-        assert llm.calls.count("propose_framings") == 1
-
-
-def test_narratives_by_group_and_html_report():
-    cfg = setup()
-    with tempfile.TemporaryDirectory() as d:
-        store, llm = Store(d), FakeLLM()
-        name = run(llm, cfg, store)
-        res = store.read(name.replace(".md", ".json"))[0]
-        nar = res["narratives"]
-        names = {g["group"] for g in nar["groups"]}
-        assert {"Israeli media", "Iranian media", "Bluesky posts"} <= names, names
-        assert nar["differences"] and res["rank"] == 1
-        assert all(g["links"] for g in nar["groups"])
-        # classification is cached and editable; a second run must not ask again
-        assert store.read("outlet_groups.json")["Outlet0"] == "Israeli media"
-        run(llm, cfg, store)
-        assert llm.calls.count("classify_outlets") == 1
-        md = open(store.path(name), encoding="utf-8").read()
-        assert "### What each side says" in md and "**Israeli media**" in md
-        html = open(store.path(name.replace(".md", ".html")), encoding="utf-8").read()
-        assert "According to Israeli media" in html and "<!doctype html>" in html
-
-
-def test_outlet_group_overrides():
-    from trendwatch.groups import assign_groups
-    cfg = build_config({})
-    items = [Item("1", "article", "news", "Al Jazeera", "x"),
-             Item("2", "article", "news", "rt", "x"),
-             Item("3", "article", "news", "Fars News Agency", "x"),
-             Item("4", "article", "news", "The Grayzone", "x")]
-    with tempfile.TemporaryDirectory() as d:
+    def test_auto_discovery_to_report_and_no_double_counting(self):
         llm = FakeLLM()
-        assign_groups(llm, items, Store(d), cfg)
-        assert [i.group for i in items] == ["Qatar state-linked media", "Russia state-linked media",
-                                            "Iran state-linked media", "The Grayzone"]
-        assert "classify_outlets" not in llm.calls
-        # a known domain wins even when the outlet name is unfamiliar
-        odd = [Item("5", "article", "news", "Some Name", "x", domain="english.news.cn"),
-               Item("6", "article", "news", "AFP", "x"),
-               Item("7", "article", "news", "AP News", "x")]
-        assign_groups(llm, odd, Store(d), cfg)
-        assert [i.group for i in odd] == ["China state-linked media", "France public media",
-                                          "United States independent media"]
+        name = run(llm, self.cfg, self.store)
+        res = self.store.read(name.replace(".md", ".json"))
+        # "Lonely Signal" trends on one platform only, so it is filtered out
+        self.assertEqual([r["topic"] for r in res], ["Album Launch"])
+        div = res[0]["divide"]
+        self.assertEqual((div["verdict"], div["kappa"]), ("strong", 1.0))
+        outlets = res[0]["rows"]["outlets"]
+        self.assertEqual(len(outlets), 2)
+        self.assertTrue(all(o["n"] == 12 for o in outlets), outlets)
+        self.assertTrue(all(not o["label"].startswith("building") for o in outlets))
 
+        run(llm, self.cfg, self.store)  # same items again must not inflate the counts
+        prof = self.store.read("profiles/outlets.json")
+        total = sum(sum(t["counts"].values()) for e in prof.values() for t in e["topics"].values())
+        self.assertEqual(total, 24)
+        self.assertEqual(llm.calls.count("propose_framings"), 1)  # framings are frozen
 
-def test_agency_data_is_consistent():
-    from trendwatch import agencies
-    seen = {}
-    for country, kind, names, domains in agencies.AGENCIES:
-        assert kind in agencies.LABEL and names, country
-        for d in domains:
-            assert d not in seen, f"duplicate domain {d}"
-            seen[d] = country
-    assert len(agencies.AGENCIES) >= 55
-    cfg = build_config({})
-    assert cfg["domain_groups"]["tass.com"] == "Russia state-linked media"
-    assert "Al Jazeera" in cfg["outlet_groups"]["Qatar state-linked media"]
-
-
-def test_html_escapes_untrusted_text():
-    from trendwatch.report import render_html
-    bad = {"topic": "<img src=x onerror=alert(1)>", "n_items": 1, "platforms": [], "n_signals": 0,
-           "narratives": {"groups": [{"group": "<b>g</b>", "n_items": 2, "outlets": ["<i>o</i>"],
-                                      "narrative": "<script>alert(1)</script>",
-                                      "links": [{"outlet": "x", "url": "javascript:alert(1)"}]}],
-                          "differences": "", "unclassified": 0}}
-    out = render_html("2026-01-01", [bad])
-    assert "<img" not in out and "<script>" not in out and "javascript:" not in out
-
-
-def test_manual_subject_and_provider_registry():
-    from trendwatch.llm import get_llm
-    try:
-        get_llm({"provider": "nope", "models": {}})
-        raise AssertionError("should have failed")
-    except ValueError as e:
-        assert "Known providers" in str(e)
+    def test_report_names_each_side_and_is_written_as_markdown_html_and_json(self):
+        llm = FakeLLM()
+        name = run(llm, self.cfg, self.store)
+        res = self.store.read(name.replace(".md", ".json"))[0]
+        names = {g["group"] for g in res["narratives"]["groups"]}
+        self.assertTrue({"Israeli media", "Iranian media", "Bluesky posts"} <= names, names)
+        self.assertEqual(res["rank"], 1)
+        self.assertTrue(res["narratives"]["differences"])
+        self.assertTrue(all(g["links"] for g in res["narratives"]["groups"]))
+        # outlet classification is cached and editable; a second run must not ask again
+        self.assertEqual(self.store.read("outlet_groups.json")["Outlet0"], "Israeli media")
+        run(llm, self.cfg, self.store)
+        self.assertEqual(llm.calls.count("classify_outlets"), 1)
+        with open(self.store.path(name), encoding="utf-8") as f:
+            md = f.read()
+        self.assertIn("### What each side says", md)
+        self.assertIn("**Israeli media**", md)
+        with open(self.store.path(name.replace(".md", ".html")), encoding="utf-8") as f:
+            html = f.read()
+        self.assertIn("According to Israeli media", html)
+        self.assertTrue(html.startswith("<!doctype html>"))
 
 
 if __name__ == "__main__":
-    test_extract_json(); test_end_to_end_and_no_double_counting(); test_narratives_by_group_and_html_report(); test_outlet_group_overrides(); test_agency_data_is_consistent(); test_html_escapes_untrusted_text(); test_manual_subject_and_provider_registry()
-    print("all tests passed")
+    unittest.main()

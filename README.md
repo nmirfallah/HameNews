@@ -102,10 +102,12 @@ Notes for Windows:
 
 On macOS or Linux, use `python3`, `source .venv/bin/activate` and `export ANTHROPIC_API_KEY=...`.
 
-Run the offline test (no network, no API key):
+Run the tests (offline: no network and no API key needed):
 
 ```powershell
-python tests\test_pipeline.py
+python -m unittest discover -s tests            # everything, about 250 tests in under a second
+python -m unittest discover -s tests -v         # list each test
+python -m unittest tests.test_stance            # one file (run from the project folder)
 ```
 
 **Before your first real run,** check every source with `python check_sources.py`
@@ -251,7 +253,7 @@ trendwatch/
   prompts.py                every prompt in one place
   llm/                      model-independent AI layer and providers
   sources/                  one module per data source
-tests/test_pipeline.py      offline end-to-end test
+tests/                      unit tests per module plus end-to-end tests (fake AI, fake data)
 specs/                      planning documents, one file per subject
 .github/workflows/daily.yml scheduled job
 ```
@@ -277,6 +279,25 @@ specs/                      planning documents, one file per subject
 - Bluesky search may require the app-password login.
 - Instagram and X/Twitter are not supported. X's API is paid and Instagram has no public trends API.
 - Articles are judged from headlines and snippets, not full text.
+
+## Testing
+
+`python -m unittest discover -s tests` runs the whole suite with no network, no API key and no extra
+packages. A GitHub Actions workflow (`.github/workflows/tests.yml`) runs it on every push.
+
+- **Fakes, not mocks of internals:** `tests/helpers.py` has a scriptable fake AI (`ScriptedLLM`) that returns
+  queued answers or answers by task, so tests exercise the real prompts, parsing and pipeline code.
+- **Network is always patched:** source tests feed canned feeds and JSON into each adapter, so they check
+  parsing, filtering and request building, not whether a website is up. Use `check_sources.py` for that.
+- **Provider code is tested without the SDKs:** the Anthropic and OpenAI-compatible providers run against
+  small fake `anthropic` and `openai` modules.
+- **What is covered:** every module, including score thresholds, the two-pass labelling, de-duplication across
+  days, outlet grouping order, narrative building, report rendering and HTML escaping, and the command line.
+- **What is not covered:** real model quality and live websites. Those need the first real runs and the
+  evaluation set listed in `specs/analysis.md`.
+
+New code should come with tests. Tests that guard a behaviour you rely on (for example "an item is never
+counted twice") should fail loudly if that behaviour changes.
 
 ## Plans and specs
 

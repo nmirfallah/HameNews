@@ -34,7 +34,8 @@ def main():
     args = ap.parse_args()
 
     for stream in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
-        stream.reconfigure(encoding="utf-8", errors="replace")
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
 
     logging.basicConfig(level=logging.WARNING, format="        warning: %(message)s")
     cfg = load_config(args.config)

@@ -29,7 +29,7 @@ DEFAULTS = {
         "Qatar state-linked media": ["Al Jazeera", "Al Jazeera English"],
         "Russia state-linked media": ["RT", "RT News", "RT English", "Russia Today"],
         "Iran state-linked media": ["Tasnim News Agency", "Tasnim", "Fars News Agency",
-                                    "FARS News Agency", "Fars News"],
+                                    "Fars News"],
         "The Grayzone": ["The Grayzone", "Grayzone", "thegrayzone.com"],
     },
     # National news agencies from trendwatch/agencies.py, grouped by country and ownership type.

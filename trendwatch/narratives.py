@@ -5,6 +5,11 @@ from . import prompts
 from .util import clip, log
 
 
+def _attr(text):
+    """Make scraped text safe to place inside a quoted prompt attribute."""
+    return str(text).replace('"', "'").replace("<", "‹").replace(">", "›").replace("\n", " ")
+
+
 def _sample(items, limit):
     """Pick up to `limit` items, rotating through outlets so one outlet cannot dominate."""
     by_outlet = OrderedDict()
@@ -37,10 +42,10 @@ def build(llm, topic_name, items, cfg):
     for g, its in eligible:
         sample = _sample(its, n["max_items_per_group"])
         outlets = ", ".join(sorted({i.outlet for i in its}))
-        lines = [f'<group name="{g}" items="{len(its)}" outlets="{clip(outlets, 200)}">']
+        lines = [f'<group name="{_attr(g)}" items="{len(its)}" outlets="{_attr(clip(outlets, 200))}">']
         for it in sample:
             text = it.text.replace("\n", " ").replace("<", "‹").replace(">", "›")
-            lines.append(f'<item i="{len(refs)}" outlet="{it.outlet}">{clip(text, 300)}</item>')
+            lines.append(f'<item i="{len(refs)}" outlet="{_attr(it.outlet)}">{clip(text, 300)}</item>')
             refs.append(it)
         lines.append("</group>")
         blocks.append("\n".join(lines))
