@@ -59,6 +59,96 @@ class GoogleItemsTests(unittest.TestCase):
         self.assertIn("hl=en-GB&gl=GB&ceid=GB:en", url)
 
 
+class LanguageMetadataTests(unittest.TestCase):
+    def test_google_url_for_other_languages(self):
+        url = news.google_url("q", "EG", "ar")
+        self.assertIn("hl=ar&gl=EG&ceid=EG:ar", url)
+        self.assertIn("hl=en-GB&gl=GB&ceid=GB:en", news.google_url("q", "GB"))
+        self.assertIn("hl=en-GB&gl=GB&ceid=GB:en", news.google_url("q", "GB", "en"))
+
+    def test_google_items_carry_the_language(self):
+        entry = {"title": "عنوان - الجزيرة", "link": "http://g/1", "source": {"title": "الجزيرة"}}
+        (it,) = news.google_items(feed(entry), lang="ar")
+        self.assertEqual(it.lang, "ar")
+
+    def test_configured_feed_language_beats_feed_metadata_which_beats_nothing(self):
+        entries = [{"title": "Climate", "summary": "", "link": "l1"}]
+        feeds = {"http://a": SimpleNamespace(entries=entries, feed={"language": "de-DE"}),
+                 "http://b": SimpleNamespace(entries=entries, feed={"language": "de-DE"}),
+                 "http://c": feed(*entries)}
+        conf = cfg(collection={"google_news": False}, news_sites=[], agencies={"enabled": False},
+                   news_feeds=[{"name": "A", "url": "http://a"}, {"name": "B", "url": "http://b", "lang": "fr"},
+                               {"name": "C", "url": "http://c"}])
+        with mock.patch.object(news, "get_feed", side_effect=lambda u: feeds[u]), mock.patch.object(news.time, "sleep"):
+            items = news.search({"topic": "Climate", "keywords": []}, conf)
+        self.assertEqual({i.outlet: i.lang for i in items}, {"A": "de-DE", "B": "fr", "C": ""})
+
+    def test_english_edition_items_are_marked_english(self):
+        entry = {"title": "Story - Out", "link": "http://g/9", "source": {}}
+        conf = cfg(collection={"google_news_editions": ["US"]}, news_sites=[], news_feeds=[],
+                   agencies={"enabled": False}, languages={"search_native": False})
+        with mock.patch.object(news, "get_feed", return_value=feed(entry)), mock.patch.object(news.time, "sleep"):
+            items = news.search({"topic": "T", "keywords": []}, conf)
+        self.assertEqual({i.lang for i in items}, {"en"})
+
+
+class NativeSearchTests(unittest.TestCase):
+    def run_search(self, conf, topic, feeds=None):
+        urls = []
+
+        def fake(url):
+            urls.append(url)
+            return (feeds or {}).get(url, feed())
+
+        with mock.patch.object(news, "get_feed", side_effect=fake), mock.patch.object(news.time, "sleep"):
+            items = news.search(topic, conf)
+        return items, urls
+
+    def base(self, **over):
+        c = dict(collection={"google_news": False}, news_feeds=[], news_sites=[], agencies={"enabled": False},
+                 languages={"search_native": True, "editions": [{"country": "EG", "lang": "ar"}]})
+        c.update(over)
+        return cfg(**c)
+
+    def test_translated_terms_are_searched_in_the_edition_language(self):
+        topic = {"topic": "T", "keywords": [], "translations": {"ar": ["عربي1", "عربي2", "عربي3"]}}
+        entry = {"title": "خبر - مصدر", "link": "http://g/1", "source": {"title": "مصدر"}}
+        url = news.google_url("عربي1", "EG", "ar")
+        items, urls = self.run_search(self.base(), topic, {url: feed(entry)})
+        self.assertEqual(len(urls), 2)  # at most two translated terms per language
+        self.assertTrue(all("hl=ar&gl=EG" in u for u in urls))
+        self.assertEqual([(i.lang, i.text, i.outlet) for i in items], [("ar", "خبر", "مصدر")])
+
+    def test_no_translation_for_a_language_means_no_request(self):
+        _, urls = self.run_search(self.base(), {"topic": "T", "keywords": [], "translations": {"he": ["x"]}})
+        self.assertEqual(urls, [])
+
+    def test_native_search_can_be_switched_off(self):
+        conf = self.base(languages={"search_native": False, "editions": [{"country": "EG", "lang": "ar"}]})
+        _, urls = self.run_search(conf, {"topic": "T", "keywords": [], "translations": {"ar": ["x"]}})
+        self.assertEqual(urls, [])
+
+    def test_sites_are_searched_in_each_language_they_list(self):
+        conf = self.base(news_sites=[{"name": "Tasnim", "site": "t.ir", "langs": ["en", "fa"]}],
+                         languages={"search_native": False})
+        topic = {"topic": "T", "keywords": ["k1", "k2"], "translations": {"fa": ["پ1", "پ2", "پ3"]}}
+        fa_entry = {"title": "خبر - تسنیم", "link": "http://t/fa", "source": {}}
+        en_entry = {"title": "News - Tasnim", "link": "http://t/en", "source": {}}
+        feeds = {news.google_url("پ1 site:t.ir", "US", "fa"): feed(fa_entry),
+                 news.google_url("T site:t.ir"): feed(en_entry)}
+        items, urls = self.run_search(conf, topic, feeds)
+        self.assertEqual(len(urls), 3 + 2)  # three English queries, two Persian terms
+        self.assertTrue(any("hl=fa" in u and "site%3At.ir" in u for u in urls))
+        self.assertEqual({(i.id, i.lang, i.outlet) for i in items},
+                         {("http://t/fa", "fa", "Tasnim"), ("http://t/en", "en", "Tasnim")})
+
+    def test_site_without_langs_is_searched_in_english_only(self):
+        conf = self.base(news_sites=[{"name": "S", "site": "s.com"}], languages={"search_native": False})
+        _, urls = self.run_search(conf, {"topic": "T", "keywords": [], "translations": {"fa": ["x"]}})
+        self.assertEqual(len(urls), 1)
+        self.assertNotIn("hl=fa", urls[0])
+
+
 class NewsSignalsTests(unittest.TestCase):
     def test_headlines_become_signals_and_failed_feeds_are_skipped(self):
         feeds = {"http://a": feed({"title": "<b>Hi</b>", "link": "l1"}, {"title": "Second", "link": "l2"}),
@@ -190,6 +280,12 @@ class MastodonTests(unittest.TestCase):
                          ("Hello world", "a@x", 6, "post"))
         self.assertTrue(all("fosstodon.org" in c for c in calls))
 
+    def test_post_language_comes_from_the_status(self):
+        routes = {"/timelines/tag/": [self.status(language="de"), self.status(uri="u2", language=None)]}
+        with mock.patch.object(mastodon, "get_json", self.fake_get_json(routes)):
+            items = mastodon.search({"topic": "T", "keywords": []}, cfg())
+        self.assertEqual([i.lang for i in items][:2], ["de", ""])
+
     def test_replies_can_be_kept(self):
         routes = {"/timelines/tag/": [self.status(in_reply_to_id="5")]}
         with mock.patch.object(mastodon, "get_json", self.fake_get_json(routes)):
@@ -228,6 +324,7 @@ class HackerNewsTests(unittest.TestCase):
         self.assertEqual((it.id, it.text, it.outlet, it.kind, it.platform),
                          ("hn:9", "Nice & good", "bob", "post", "hackernews"))
         self.assertEqual(it.url, "https://news.ycombinator.com/item?id=9")
+        self.assertEqual(it.lang, "en")
 
 
 # ------------------------------------------------------------- wikipedia
@@ -315,6 +412,13 @@ class BlueskyTests(unittest.TestCase):
         it = items[0]
         self.assertEqual((it.url, it.engagement, it.outlet, it.kind, it.platform),
                          ("https://bsky.app/profile/a.bsky.social/post/abc123", 10, "a.bsky.social", "post", "bluesky"))
+        self.assertEqual(it.lang, "")  # no language metadata on this post
+
+    def test_post_language_comes_from_the_record(self):
+        self.no_credentials()
+        items, _ = self.run_search([self.post(record={"text": "سلام", "langs": ["fa", "en"]})],
+                                   topic={"topic": "T", "keywords": []})
+        self.assertEqual(items[0].lang, "fa")
 
     def test_replies_are_skipped_unless_configured(self):
         self.no_credentials()

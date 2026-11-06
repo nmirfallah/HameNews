@@ -56,6 +56,25 @@ class BuildConfigTests(unittest.TestCase):
         for name in DEFAULTS["collection"]["sources"]:
             self.assertIn(name, sources.CONTENT_SOURCES, name)
 
+    def test_leaning_defaults(self):
+        cfg = build_config({})
+        self.assertEqual(cfg["leanings"], {"enabled": True, "split_groups": True})
+        self.assertEqual(cfg["outlet_leanings"], {})
+        self.assertEqual(build_config({"outlet_leanings": {"X": "left"}})["outlet_leanings"], {"X": "left"})
+
+    def test_language_defaults(self):
+        cfg = build_config({})
+        self.assertTrue(cfg["languages"]["translate"])
+        self.assertTrue(cfg["languages"]["search_native"])
+        codes = {e["lang"] for e in cfg["languages"]["editions"]}
+        self.assertTrue({"ar", "he", "ru"} <= codes)
+        for site in cfg["news_sites"]:
+            if site["name"] in ("Tasnim News Agency", "Fars News Agency"):
+                self.assertIn("fa", site["langs"])
+        replaced = build_config({"languages": {"editions": [{"country": "JP", "lang": "ja"}]}})
+        self.assertEqual(replaced["languages"]["editions"], [{"country": "JP", "lang": "ja"}])
+        self.assertTrue(replaced["languages"]["translate"])  # the rest of the section is kept
+
     def test_default_models_exist_for_both_tiers(self):
         self.assertEqual(set(DEFAULTS["llm"]["models"]), {"fast", "smart"})
 

@@ -12,6 +12,8 @@ def result(**over):
         "narratives": {
             "groups": [
                 {"group": "Israeli media", "n_items": 3, "outlets": ["T1", "T2"],
+                 "outlet_notes": ["T1: right (AI estimate)", "T2: center (config)"],
+                 "languages": ["Arabic", "Persian"],
                  "narrative": "According to Israeli media, it was big.",
                  "links": [{"outlet": "T1", "url": "http://t1/a"}]},
                 {"group": "Iranian media", "n_items": 2, "outlets": ["P1"],
@@ -47,6 +49,8 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("**Israeli media** (3 items; T1, T2)", md)
         self.assertIn("According to Israeli media, it was big.", md)
         self.assertIn("Sources: [T1](http://t1/a)", md)
+        self.assertIn("Outlet leanings: T1: right (AI estimate); T2: center (config)", md)
+        self.assertIn("Translated from: Arabic, Persian", md)
         self.assertIn("**Where they differ:** They use different terms.", md)
         self.assertIn("2 items came from outlets whose origin is unknown", md)
 
@@ -78,6 +82,18 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("Only 2 items found.", md)
         self.assertNotIn("kappa", md)
 
+    def test_groups_without_translations_show_no_translation_line(self):
+        res = result()
+        res["narratives"]["groups"][0]["languages"] = []
+        self.assertNotIn("Translated from", report.render_topic(res).split("Iranian media")[0])
+
+    def test_the_report_warns_that_other_languages_are_machine_translated(self):
+        self.assertIn("machine-translated", report.NOTE)
+
+    def test_the_report_explains_where_leaning_labels_come_from(self):
+        self.assertIn("AI estimate", report.NOTE)
+        self.assertIn("your own ratings", report.NOTE)
+
     def test_empty_tables_say_no_data(self):
         md = report.render_topic(result(rows={"outlets": [], "accounts": []}))
         self.assertIn("_No data yet._", md)
@@ -102,6 +118,8 @@ class HtmlTests(unittest.TestCase):
         self.assertIn("What each side says", html)
         self.assertIn("According to Israeli media, it was big.", html)
         self.assertIn('<a href="http://t1/a" target="_blank" rel="noopener noreferrer">T1</a>', html)
+        self.assertIn("Outlet leanings: T1: right (AI estimate); T2: center (config)", html)
+        self.assertIn("Translated from: Arabic, Persian", html)
         self.assertIn("Where they differ:", html)
         self.assertIn("<details><summary>Analysis details</summary>", html)
         self.assertIn("Divide verdict: strong", html)

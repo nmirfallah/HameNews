@@ -14,9 +14,14 @@ and how outlets and accounts frame the topic, with evidence for every claim.
 - Framings are frozen per topic in `data/topics/` so labels stay comparable; hand edits are kept.
 - The AI never decides which framing is correct.
 
+## Multilingual notes
+Labels and summaries are computed on English translations so groups are comparable across languages.
+Translation quality is therefore part of label quality; the evaluation set should include translated items.
+
 ## Open questions
 - Are the proposed framings sensible on real topics? Review the first live reports.
 - Do the two-pass agreement thresholds (kappa 0.5, 25% framed) separate real divides from imagined ones?
+- Do translated items label differently from native-English ones on the same story?
 - Is headline-level text enough, or should full article text be fetched for the top few items?
 - Should the same topic on different days share one history even if the AI names it differently?
 

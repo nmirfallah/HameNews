@@ -25,6 +25,93 @@ class SampleTests(unittest.TestCase):
         self.assertEqual(_sample([], 4), [])
 
 
+def lean(i, outlet, group, leaning, source="AI estimate"):
+    it = art(i, outlet, group)
+    it.leaning, it.leaning_source = leaning, source
+    return it
+
+
+class LanguageTests(unittest.TestCase):
+    def items(self):
+        out = []
+        for i in range(2):
+            it = art(i, "Tasnim", "Iran media")
+            it.text, it.lang, it.text_en = "متن فارسی", "fa", f"translated {i}"
+            out.append(it)
+        ar = art(2, "Aljazeera", "Iran media")
+        ar.text, ar.lang, ar.text_en = "نص عربي", "ar", "arabic translated"
+        out += [ar, art(3, "BBC", "UK media"), art(4, "Guardian", "UK media")]
+        for it in out[3:]:
+            it.lang = "en"
+        return out
+
+    def test_the_model_sees_english_text_and_language_labels_for_translations_only(self):
+        llm = ScriptedLLM([{"groups": [], "differences": ""}])
+        build(llm, "T", self.items(), cfg())
+        prompt = llm.calls[0]["prompt"]
+        self.assertIn("translated 0", prompt)
+        self.assertNotIn("متن فارسی", prompt)
+        self.assertIn('outlet="Tasnim" lang="Persian"', prompt)
+        self.assertIn('lang="Arabic"', prompt)
+        self.assertNotIn('outlet="BBC" lang=', prompt)  # English items carry no language label
+
+    def test_groups_report_which_languages_were_translated(self):
+        reply = {"groups": [{"group": "Iran media", "narrative": "n", "item_ids": []},
+                            {"group": "UK media", "narrative": "m", "item_ids": []}], "differences": ""}
+        out = build(ScriptedLLM([reply]), "T", self.items(), cfg())
+        langs = {g["group"]: g["languages"] for g in out["groups"]}
+        self.assertEqual(langs, {"Iran media": ["Arabic", "Persian"], "UK media": []})
+
+    def test_prompt_explains_that_lang_means_translated(self):
+        llm = ScriptedLLM([{"groups": [], "differences": ""}])
+        build(llm, "T", self.items(), cfg())
+        self.assertIn("translated into English", llm.calls[0]["prompt"])
+
+
+class LeaningSplitTests(unittest.TestCase):
+    def items(self):
+        return [lean(0, "Fox", "US media", "right"), lean(1, "Fox", "US media", "center-right"),
+                lean(2, "Guardian", "US media", "left"), lean(3, "Guardian", "US media", "center-left"),
+                lean(4, "AP", "US media", "center", "config"),
+                art(5, "Mystery", "US media"), art(6, "Mystery2", "US media")]
+
+    def run_build(self, conf=None):
+        llm = ScriptedLLM([{"groups": [], "differences": ""}])
+        build(llm, "T", self.items(), conf or cfg())
+        return llm.calls[0]["prompt"]
+
+    def test_groups_are_split_into_leaning_buckets_with_plain_group_for_unknowns(self):
+        prompt = self.run_build()
+        for name in ("US media (right-leaning)", "US media (left-leaning)", '<group name="US media" items="2"'):
+            self.assertIn(name, prompt)
+        self.assertNotIn("centrist", prompt)  # a single centrist item is below min_group_items
+
+    def test_splitting_can_be_turned_off(self):
+        prompt = self.run_build(cfg(leanings={"split_groups": False}))
+        self.assertEqual(prompt.count('<group name="'), 1)
+        self.assertIn('<group name="US media" items="7"', prompt)
+
+    def test_disabling_leanings_also_disables_splitting(self):
+        self.assertEqual(self.run_build(cfg(leanings={"enabled": False})).count('<group name="'), 1)
+
+    def test_outlet_notes_list_each_outlet_with_its_source(self):
+        reply = {"groups": [{"group": "US media (right-leaning)", "narrative": "n", "item_ids": [0]},
+                            {"group": "US media", "narrative": "m", "item_ids": []}], "differences": ""}
+        out = build(ScriptedLLM([reply]), "T", self.items(), cfg())
+        notes = {g["group"]: g["outlet_notes"] for g in out["groups"]}
+        self.assertEqual(notes["US media (right-leaning)"],
+                         ["Fox: right (AI estimate)"])  # first rating seen per outlet
+        self.assertEqual(notes["US media"], [])  # unknown leaning gets no note
+
+    def test_posts_and_unknown_groups_are_not_split(self):
+        posts = [item(i, "post", f"u{i}", "p", platform="bluesky", group="Bluesky posts") for i in range(3)]
+        for p in posts:
+            p.leaning = "right"
+        llm = ScriptedLLM([{"groups": [], "differences": ""}])
+        build(llm, "T", posts, cfg())
+        self.assertIn('<group name="Bluesky posts"', llm.calls[0]["prompt"])
+
+
 class BuildTests(unittest.TestCase):
     REPLY = {"groups": [
         {"group": "Iranian media", "narrative": "According to Iranian media, x", "item_ids": [3, 3, 99, "a"]},

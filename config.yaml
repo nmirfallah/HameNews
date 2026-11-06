@@ -25,6 +25,30 @@ collection:
   # Some combinations may return nothing; remove any that do.
   google_news_editions: [US, GB, IL, IN, AU]
 
+# Your own left/right ratings win over the AI's estimate. Scale: left, center-left, center,
+# center-right, right. Outlets you leave out get a labelled AI estimate (or none if unsure).
+# outlet_leanings:
+#   "The Guardian": center-left
+#   "Fox News": right
+leanings:
+  enabled: true
+  split_groups: true             # split each group into left-leaning / centrist / right-leaning parts
+
+languages:
+  translate: true                # translate non-English items to English for analysis (originals are kept)
+  search_native: true            # also search each topic in the languages below
+  # Google News editions to search in their own language. Not every country/language pair exists;
+  # pairs that return nothing are harmless. Replace the whole list to change it.
+  editions:
+    - {country: EG, lang: ar}
+    - {country: IL, lang: he}
+    - {country: RU, lang: ru}
+    - {country: TR, lang: tr}
+    - {country: DE, lang: de}
+    - {country: FR, lang: fr}
+    # - {country: ES, lang: es}
+    # - {country: JP, lang: ja}
+
 narratives:                      # the "According to X, ... According to Y, ..." section
   enabled: true
   min_group_items: 2             # a source group needs this many items to get a narrative

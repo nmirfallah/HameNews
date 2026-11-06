@@ -29,7 +29,8 @@ def show(label, fn, *args):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="config.yaml")
-    ap.add_argument("--subject", default="climate")
+    ap.add_argument("--subject", default=None,
+                    help="word to test the content sources with (default: a neutral placeholder, 'climate')")
     ap.add_argument("--llm", action="store_true", help="also test the AI provider")
     args = ap.parse_args()
 
@@ -37,6 +38,8 @@ def main():
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="replace")
 
+    placeholder = args.subject is None
+    args.subject = args.subject or "climate"
     logging.basicConfig(level=logging.WARNING, format="        warning: %(message)s")
     cfg = load_config(args.config)
 
@@ -44,6 +47,9 @@ def main():
     for name, fn in sources.SIGNAL_SOURCES.items():
         show(name, fn, cfg)
 
+    if placeholder:
+        print(f"\nNote: no --subject given, so the content checks below use the placeholder word "
+              f"{args.subject!r}. It is only a test word; use --subject \"your topic\" to test with your own.")
     topic = {"topic": args.subject, "keywords": [args.subject]}
     print(f"\nContent sources (articles/posts about {args.subject!r}):")
     for name, fn in sources.CONTENT_SOURCES.items():

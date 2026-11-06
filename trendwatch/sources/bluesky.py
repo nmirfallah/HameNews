@@ -57,6 +57,7 @@ def search(topic, cfg):
             items.append(Item(id=p["uri"], kind="post", platform="bluesky", outlet=handle,
                               text=rec.get("text", ""),
                               url=f"https://bsky.app/profile/{handle}/post/{rkey}",
-                              created_at=rec.get("createdAt", ""), engagement=eng))
+                              created_at=rec.get("createdAt", ""), engagement=eng,
+                              lang=(rec.get("langs") or [""])[0]))
     log.info("bluesky: %d posts for %r", len(items), topic["topic"])
     return items

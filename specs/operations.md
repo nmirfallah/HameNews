@@ -17,6 +17,7 @@ Run once a day unattended, cheaply, with failures that are visible and never sil
   `.github/workflows/tests.yml`; the AI and all network access are faked in tests.
 
 ## Open questions
+- Translation adds fast-model calls (20 items per call) and one keyword-translation call per topic; how much does it add per run? Both are cached.
 - Actual cost per daily run on live data? Check the Anthropic Console usage page after the first runs.
 - Does Google News rate-limit the roughly 40 requests per topic? If so, add backoff or lower
   `agencies.search`.

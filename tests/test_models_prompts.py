@@ -10,8 +10,17 @@ class ModelTests(unittest.TestCase):
     def test_item_defaults_and_to_dict(self):
         it = Item(id="1", kind="article", platform="news", outlet="BBC", text="t")
         d = it.to_dict()
-        self.assertEqual((d["url"], d["engagement"], d["group"], d["domain"]), ("", 0, "", ""))
+        self.assertEqual((d["url"], d["engagement"], d["group"], d["domain"], d["leaning"], d["leaning_source"]),
+                         ("", 0, "", "", "", ""))
+        self.assertEqual((d["lang"], d["text_en"]), ("", ""))
         self.assertEqual(Item(**d), it)
+
+    def test_en_prefers_the_translation(self):
+        it = Item(id="1", kind="article", platform="news", outlet="O", text="original")
+        self.assertEqual(it.en, "original")
+        it.text_en = "translated"
+        self.assertEqual(it.en, "translated")
+        self.assertNotIn("en", it.to_dict())  # a property, not a stored field
 
     def test_signal_defaults(self):
         s = Signal("name", "wikipedia")
@@ -28,6 +37,9 @@ class PromptTests(unittest.TestCase):
             "write_narrative": prompts.narrative({"a": 1}),
             "classify_outlets": prompts.classify_outlets(["BBC"]),
             "group_narratives": prompts.group_narratives("T", "<group name=\"g\"></group>"),
+            "classify_leanings": prompts.classify_leanings(["BBC"]),
+            "translate_items": prompts.translate_items("<item i=\"0\">x</item>"),
+            "translate_keywords": prompts.translate_keywords("T", ["k"], ["ar", "fa"]),
         }
         for task, text in cases.items():
             self.assertTrue(text.startswith(f"TASK:{task}\n"), task)

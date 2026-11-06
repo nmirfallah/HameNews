@@ -1,7 +1,7 @@
 import json
 from datetime import date
 
-from . import groups, narratives, profiles, prompts, report
+from . import groups, languages, leanings, narratives, profiles, prompts, report
 from .collect import collect
 from .discovery import discover_topics, expand_subject
 from .stance import divide_report, get_framings, label_with_consensus
@@ -10,14 +10,25 @@ from .util import log, slugify
 
 def analyze_topic(llm, topic, cfg, store):
     topic = dict(topic, slug=slugify(topic["topic"]))
+    try:
+        languages.translate_keywords(llm, topic, cfg, store)   # so topics can be searched in other languages
+    except Exception as e:
+        log.warning("keyword translation step failed: %s", e)
     items = collect(topic, cfg)
     res = {k: topic.get(k) for k in ("topic", "slug", "summary", "platforms", "n_signals", "signals")}
     res["n_items"] = len(items)
     a = cfg["analysis"]
 
+    try:
+        languages.annotate(items)
+        languages.translate_items(llm, items, store, cfg)       # non-English items -> English text_en
+    except Exception as e:
+        log.warning("language step failed: %s", e)
+
     # "Who says what": works even when there is too little data for stance labels.
     try:
         groups.assign_groups(llm, items, store, cfg)
+        leanings.assign_leanings(llm, items, store, cfg)
         res["narratives"] = narratives.build(llm, topic["topic"], items, cfg)
     except Exception as e:
         log.warning("narratives step failed: %s", e)

@@ -37,6 +37,12 @@ class FakeLLM(LLM):
             names = re.findall(r"^- (.+)$", prompt, re.M)
             return json.dumps([{"outlet": n, "group": "Israeli media" if n == "Outlet0" else "Iranian media"}
                                for n in names])
+        if task == "translate_keywords":
+            return "{}"
+        if task == "translate_items":
+            return "[]"
+        if task == "classify_leanings":
+            return json.dumps(helpers.leaning_reply(prompt, {"Outlet0": "right", "Outlet1": "center-left"}))
         if task == "group_narratives":
             gs = re.findall(r'<group name="([^"]+)"', prompt)
             first = re.search(r'<item i="(\d+)"', prompt)
@@ -102,18 +108,25 @@ class EndToEndTests(unittest.TestCase):
         name = run(llm, self.cfg, self.store)
         res = self.store.read(name.replace(".md", ".json"))[0]
         names = {g["group"] for g in res["narratives"]["groups"]}
-        self.assertTrue({"Israeli media", "Iranian media", "Bluesky posts"} <= names, names)
+        self.assertTrue({"Israeli media (right-leaning)", "Iranian media (left-leaning)", "Bluesky posts"} <= names,
+                        names)
+        notes = [n for g in res["narratives"]["groups"] for n in g["outlet_notes"]]
+        self.assertEqual(sorted(notes), ["Outlet0: right (AI estimate)", "Outlet1: center-left (AI estimate)"])
         self.assertEqual(res["rank"], 1)
         self.assertTrue(res["narratives"]["differences"])
         self.assertTrue(all(g["links"] for g in res["narratives"]["groups"]))
         # outlet classification is cached and editable; a second run must not ask again
         self.assertEqual(self.store.read("outlet_groups.json")["Outlet0"], "Israeli media")
+        self.assertEqual(self.store.read("outlet_leanings.json")["Outlet0"],
+                         {"leaning": "right", "source": "AI estimate"})
         run(llm, self.cfg, self.store)
         self.assertEqual(llm.calls.count("classify_outlets"), 1)
+        self.assertEqual(llm.calls.count("classify_leanings"), 1)
         with open(self.store.path(name), encoding="utf-8") as f:
             md = f.read()
         self.assertIn("### What each side says", md)
-        self.assertIn("**Israeli media**", md)
+        self.assertIn("**Israeli media (right-leaning)**", md)
+        self.assertIn("Outlet leanings: Outlet0: right (AI estimate)", md)
         with open(self.store.path(name.replace(".md", ".html")), encoding="utf-8") as f:
             html = f.read()
         self.assertIn("According to Israeli media", html)

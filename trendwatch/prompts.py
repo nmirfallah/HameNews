@@ -103,10 +103,50 @@ def group_narratives(topic, groups_block):
         "sources claim, include specific figures, names or terms they use when the items give them, and "
         "keep each group's account separate even where groups contradict each other. Describe; do not "
         "judge which account is true. If a group's items are only bare headlines with no clear "
-        "narrative, say so plainly. Use only the items provided.\n"
+        "narrative, say so plainly. Items with a lang attribute were translated into English from that "
+        "language; treat the translation as what the source said. Use only the items provided.\n"
         "Also give 'differences': one or two neutral sentences on where the groups differ in "
         "terminology, emphasis or reported facts (empty string if fewer than two groups or no real difference).\n"
         "Return a JSON object with keys: groups (list of objects with keys group (exact name given), "
         "narrative, item_ids (indices of up to 4 items you relied on)), differences (string).\n\n"
         f"{groups_block}"
+    )
+
+
+def classify_leanings(names):
+    lst = "\n".join(f"- {n}" for n in names)
+    return (
+        "TASK:classify_leanings\n"
+        "For each news outlet below, give its usual editorial leaning on the political spectrum of its "
+        "home country, using exactly one of: left, center-left, center, center-right, right, unknown. "
+        "Base it on how the outlet is widely described by media-bias raters and independent analysts, "
+        "not on any single story. Use 'unknown' if you are not sure, if the outlet is too obscure, or if "
+        "a left/right scale does not meaningfully apply (for example outlets whose line follows a "
+        "government rather than a domestic political camp). Do not guess.\n"
+        "Return a JSON list of objects with keys: outlet (exactly as given), leaning.\n\n"
+        f"{lst}"
+    )
+
+
+def translate_items(items_block):
+    return (
+        "TASK:translate_items\n"
+        "Below are news headlines or posts, each with a language guess that may be wrong. Translate each "
+        "into plain, faithful English. Keep names, numbers and loaded or emotive terms as the source wrote "
+        "them: do not soften, sharpen, explain or add anything. Also give the language's ISO 639-1 code "
+        "(for example ar, fa, he, ru, tr, de, fr, es, zh).\n"
+        "Return a JSON list with one object per item with keys: i (the item index), lang, english.\n\n"
+        f"{items_block}"
+    )
+
+
+def translate_keywords(topic, keywords, langs):
+    return (
+        "TASK:translate_keywords\n"
+        f"Topic: {topic}\n"
+        f"Keywords: {', '.join(keywords)}\n"
+        "For each language code below, give 2 or 3 short search terms that news outlets writing in that "
+        "language would use for this topic (the topic itself first), written in that language's own script.\n"
+        "Return a JSON object mapping each language code to a list of strings.\n"
+        f"Languages: {', '.join(langs)}"
     )

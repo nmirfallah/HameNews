@@ -23,6 +23,15 @@ class Item:
     engagement: int = 0
     group: str = ""        # perspective group, e.g. "Israeli media" or "Bluesky posts"
     domain: str = ""       # website domain of the outlet when known (from Google News)
+    leaning: str = ""      # left, center-left, center, center-right or right (outlets only); "" = unknown
+    leaning_source: str = ""  # where the leaning came from: config, user, or AI estimate
+    lang: str = ""         # ISO 639-1 language code of `text` ("" = unknown)
+    text_en: str = ""      # English translation of `text` when it is not English
+
+    @property
+    def en(self):
+        """The text to analyse: the English translation if there is one, else the original."""
+        return self.text_en or self.text
 
     def to_dict(self):
         return asdict(self)

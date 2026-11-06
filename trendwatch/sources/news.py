@@ -5,13 +5,18 @@ from urllib.parse import quote_plus, urlparse
 
 from ..http import get_feed
 from ..models import Item, Signal
+from ..languages import norm
 from ..util import log, strip_html, term_in
 
 GOOGLE_NEWS = "https://news.google.com/rss/search?q={q}&hl=en-{c}&gl={c}&ceid={c}:en"
+GOOGLE_NEWS_LANG = "https://news.google.com/rss/search?q={q}&hl={l}&gl={c}&ceid={c}:{l}"
 
 
-def google_url(query, edition="US"):
-    return GOOGLE_NEWS.format(q=quote_plus(query), c=edition)
+def google_url(query, edition="US", lang="en"):
+    """Google News RSS search. English editions use hl=en-XX; other languages use hl=<lang>."""
+    if lang == "en":
+        return GOOGLE_NEWS.format(q=quote_plus(query), c=edition)
+    return GOOGLE_NEWS_LANG.format(q=quote_plus(query), c=edition, l=lang)
 
 
 def signals(cfg):
@@ -30,7 +35,7 @@ def signals(cfg):
     return out
 
 
-def google_items(feed, limit=30, outlet=None, group=""):
+def google_items(feed, limit=30, outlet=None, group="", lang=""):
     """Turn a Google News RSS feed into Items. Google puts the outlet in <source>."""
     items = []
     for e in (feed.entries[:limit] if feed else []):
@@ -44,7 +49,8 @@ def google_items(feed, limit=30, outlet=None, group=""):
         if title and e.get("link"):
             items.append(Item(id=e["link"], kind="article", platform="news",
                               outlet=name or "unknown", text=title, url=e["link"],
-                              created_at=e.get("published", ""), group=group, domain=domain))
+                              created_at=e.get("published", ""), group=group, domain=domain,
+                              lang=lang))
     return items
 
 
@@ -63,16 +69,28 @@ def search(topic, cfg):
     if cfg["collection"].get("google_news", True):
         for edition in cfg["collection"].get("google_news_editions", ["US"]):
             for q in queries:
-                items += google_items(get_feed(google_url(q, edition)))
+                items += google_items(get_feed(google_url(q, edition)), lang="en")
+                time.sleep(0.2)
+
+    # 1b) The topic searched in other languages, through the Google News editions you configured
+    translations = topic.get("translations", {})
+    langs = cfg.get("languages", {})
+    if langs.get("search_native"):
+        for ed in langs.get("editions", []):
+            lang = norm(ed.get("lang"))
+            for q in translations.get(lang, [])[:2]:
+                items += google_items(get_feed(google_url(q, ed.get("country", "US"), lang)), 30, lang=lang)
                 time.sleep(0.2)
 
     # 2) Named outlets searched with a site: filter
     named = cfg.get("news_sites", [])
     for site in named:
-        for q in queries:
-            items += google_items(get_feed(google_url(f"{q} site:{site['site']}")), 20,
-                                  outlet=site["name"], group=site.get("group", ""))
-            time.sleep(0.2)
+        for lang in [norm(l) for l in site.get("langs", ["en"])] or ["en"]:
+            terms = queries if lang == "en" else translations.get(lang, [])[:2]
+            for q in terms:
+                items += google_items(get_feed(google_url(f"{q} site:{site['site']}", "US", lang)), 20,
+                                      outlet=site["name"], group=site.get("group", ""), lang=lang)
+                time.sleep(0.2)
 
     # 3) National news agencies, several domains per query
     ag = cfg.get("agencies", {})
@@ -91,6 +109,7 @@ def search(topic, cfg):
         feed = get_feed(f["url"])
         if not feed:
             continue
+        feed_lang = f.get("lang") or (getattr(feed, "feed", None) or {}).get("language", "")
         for e in feed.entries:
             title = strip_html(e.get("title", ""))
             summary = strip_html(e.get("summary", ""))
@@ -99,6 +118,7 @@ def search(topic, cfg):
                 text = title if len(summary) < len(title) + 10 else f"{title}. {summary}"
                 items.append(Item(id=e["link"], kind="article", platform="news",
                                   outlet=f["name"], text=text, url=e["link"],
-                                  created_at=e.get("published", ""), group=f.get("group", "")))
+                                  created_at=e.get("published", ""), group=f.get("group", ""),
+                                  lang=feed_lang))
     log.info("news: %d articles for %r", len(items), topic["topic"])
     return items

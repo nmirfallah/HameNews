@@ -51,6 +51,11 @@ such as outlet -> owner company -> shareholder -> state -> other outlets tied to
   if DuckDB gives trouble. Neo4j only if visually exploring the network becomes the main use.
 - Do not commit the database file itself (binary, diffs badly); rebuild it from the JSONL each run.
 
+## Interim solution already built
+Outlet leaning is stored in `data/outlet_leanings.json` as `{"leaning": ..., "source": ...}`, where source is
+`config`, `user` or `AI estimate`, and shown in reports with that source. When the claims store exists, import
+these as claims asserted by the named rater instead of keeping a separate file.
+
 ## Open questions
 - Does `pip install duckdb` work on the Python version in use (3.14)?
 - Who curates claims: manual entry only, or AI-proposed claims reviewed by hand before they are stored?

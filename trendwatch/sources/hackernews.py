@@ -25,6 +25,6 @@ def search(topic, cfg):
             items.append(Item(id=f"hn:{h.get('objectID')}", kind="post", platform="hackernews",
                               outlet=h.get("author", "unknown"), text=text,
                               url=f"https://news.ycombinator.com/item?id={h.get('objectID')}",
-                              created_at=h.get("created_at", "")))
+                              created_at=h.get("created_at", ""), lang="en"))
     log.info("hackernews: %d comments for %r", len(items), topic["topic"])
     return items

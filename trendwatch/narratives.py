@@ -1,7 +1,8 @@
 """'According to X, ... According to Y, ...': one neutral narrative per source group."""
 from collections import OrderedDict, defaultdict
 
-from . import prompts
+from . import languages, prompts
+from .leanings import BUCKET
 from .util import clip, log
 
 
@@ -25,13 +26,30 @@ def _sample(items, limit):
     return out
 
 
+def _label(item, split):
+    group = item.group or "Unknown"
+    if split and group != "Unknown" and item.kind == "article" and item.leaning in BUCKET:
+        return f"{group} ({BUCKET[item.leaning]})"
+    return group
+
+
+def _notes(items):
+    notes = {}
+    for it in items:
+        if it.kind == "article" and it.leaning:
+            notes.setdefault(it.outlet, f"{it.outlet}: {it.leaning} ({it.leaning_source or 'unknown source'})")
+    return [notes[k] for k in sorted(notes)]
+
+
 def build(llm, topic_name, items, cfg):
     n = cfg["narratives"]
     if not n["enabled"] or len(items) < n["min_total_items"]:
         return None
+    lc = cfg.get("leanings", {})
+    split = lc.get("enabled", True) and lc.get("split_groups", True)
     groups = defaultdict(list)
     for it in items:
-        groups[it.group or "Unknown"].append(it)
+        groups[_label(it, split)].append(it)
     unclassified = len(groups.pop("Unknown", []))
     eligible = sorted(((g, its) for g, its in groups.items() if len(its) >= n["min_group_items"]),
                       key=lambda kv: -len(kv[1]))[: n["max_groups"]]
@@ -44,8 +62,9 @@ def build(llm, topic_name, items, cfg):
         outlets = ", ".join(sorted({i.outlet for i in its}))
         lines = [f'<group name="{_attr(g)}" items="{len(its)}" outlets="{_attr(clip(outlets, 200))}">']
         for it in sample:
-            text = it.text.replace("\n", " ").replace("<", "‹").replace(">", "›")
-            lines.append(f'<item i="{len(refs)}" outlet="{_attr(it.outlet)}">{clip(text, 300)}</item>')
+            text = it.en.replace("\n", " ").replace("<", "‹").replace(">", "›")
+            lang = f' lang="{_attr(languages.name(it.lang))}"' if it.lang and it.lang != "en" else ""
+            lines.append(f'<item i="{len(refs)}" outlet="{_attr(it.outlet)}"{lang}>{clip(text, 300)}</item>')
             refs.append(it)
         lines.append("</group>")
         blocks.append("\n".join(lines))
@@ -60,6 +79,9 @@ def build(llm, topic_name, items, cfg):
 
     sizes = {g: len(its) for g, its in eligible}
     outlet_lists = {g: sorted({i.outlet for i in its}) for g, its in eligible}
+    note_lists = {g: _notes(its) for g, its in eligible}
+    lang_lists = {g: sorted({languages.name(i.lang) for i in its if i.lang and i.lang != "en"})
+                  for g, its in eligible}
     out = []
     for row in (data.get("groups", []) if isinstance(data, dict) else []):
         g = row.get("group")
@@ -71,6 +93,7 @@ def build(llm, topic_name, items, cfg):
                 seen.add(idx)
                 links.append({"outlet": refs[idx].outlet, "url": refs[idx].url})
         out.append({"group": g, "n_items": sizes[g], "outlets": outlet_lists[g][:8],
+                    "outlet_notes": note_lists[g], "languages": lang_lists[g],
                     "narrative": str(row["narrative"]).strip(), "links": links[:3]})
     out.sort(key=lambda r: -r["n_items"])
     return {"groups": out, "unclassified": unclassified,

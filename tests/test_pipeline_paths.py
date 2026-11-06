@@ -5,7 +5,8 @@ from datetime import date
 from unittest import mock
 
 import helpers
-from helpers import FRAMINGS_REPLY, ScriptedLLM, cfg, keyword_labels, mixed_items, task_handler
+from helpers import (FRAMINGS_REPLY, ScriptedLLM, cfg, keyword_labels, leaning_reply, mixed_items,
+                     task_handler)
 from trendwatch import pipeline
 from trendwatch.models import Signal
 from trendwatch.sources import CONTENT_SOURCES, SIGNAL_SOURCES
@@ -26,7 +27,9 @@ def narratives(prompt):
 def handler(**over):
     base = dict(expand_subject={"topic": "Album", "keywords": ["album"], "summary": "s"},
                 propose_framings=FRAMINGS_REPLY, label_items=keyword_labels, classify_outlets=classify,
-                group_narratives=narratives, write_narrative="Neutral text.")
+                classify_leanings=lambda p: leaning_reply(p, {"Outlet0": "right", "Outlet1": "left"}),
+                group_narratives=narratives, write_narrative="Neutral text.",
+                translate_keywords={}, translate_items=[])
     base.update(over)
     return task_handler(**base)
 
@@ -103,6 +106,61 @@ class AnalyzeTopicTests(PipelineTestCase):
         res = self.analyze(ScriptedLLM(handler=handler(write_narrative=RuntimeError("down"))))
         self.assertNotIn("narrative", res)
         self.assertEqual(res["divide"]["verdict"], "strong")
+
+
+class LanguageIntegrationTests(PipelineTestCase):
+    def persian_items(self):
+        out = []
+        for i in range(2):
+            out.append(helpers.item(f"fa{i}", "article", "Tasnim News Agency", "گفتگوهای ایران آغاز شد",
+                                    url=f"http://t/{i}", lang="fa"))
+        return out
+
+    def translations(self, prompt):
+        return [{"i": int(m.group(1)), "lang": "fa", "english": f"Translated headline {m.group(1)}"}
+                for m in re.finditer(r'<item i="(\d+)"', prompt)]
+
+    def test_non_english_items_are_translated_grouped_and_reported(self):
+        self.content(mixed_items(12, 6) + self.persian_items())
+        keywords = lambda p: {"fa": ["ایران"], "ar": ["إيران"]}
+        llm = ScriptedLLM(handler=handler(translate_items=self.translations, translate_keywords=keywords))
+        res = self.analyze(llm)
+        groups = {g["group"]: g for g in res["narratives"]["groups"]}
+        self.assertEqual(groups["Iran state-linked media"]["languages"], ["Persian"])
+        by_task = {}
+        for c in llm.calls:
+            by_task.setdefault(c["prompt"].split("\n")[0], []).append(c["prompt"])
+        for prompt in by_task["TASK:group_narratives"] + by_task["TASK:label_items"]:
+            self.assertNotIn("گفتگوهای", prompt)          # analysis sees English only
+        self.assertTrue(any("Translated headline" in p for p in by_task["TASK:group_narratives"]))
+        cached = self.store.read("translations.json")
+        self.assertEqual({v["lang"] for v in cached.values()}, {"fa"})
+        self.assertEqual({v["english"] for v in cached.values()}, {"Translated headline 0", "Translated headline 1"})
+        self.assertEqual(self.store.read("keyword_translations.json")["album"]["fa"], ["ایران"])
+
+    def test_translations_are_cached_across_runs(self):
+        self.content(mixed_items(12, 6) + self.persian_items())
+        llm = ScriptedLLM(handler=handler(translate_items=self.translations))
+        self.analyze(llm)
+        before = llm.tasks().count("translate_items")
+        self.analyze(llm)
+        self.assertEqual(llm.tasks().count("translate_items"), before)
+
+    def test_a_failing_translation_step_does_not_stop_the_analysis(self):
+        self.content(mixed_items(12, 6) + self.persian_items())
+        llm = ScriptedLLM(handler=handler(translate_items=RuntimeError("down"), translate_keywords=RuntimeError("down")))
+        res = self.analyze(llm)
+        self.assertEqual(res["divide"]["verdict"], "strong")
+        self.assertTrue(res["narratives"]["groups"])
+
+    def test_translation_can_be_turned_off(self):
+        self.cfg = cfg(collection={"sources": ["fake"]}, analysis={"batch_size": 100},
+                       languages={"translate": False, "search_native": False}, news_sites=[])
+        self.content(mixed_items(12, 6) + self.persian_items())
+        llm = ScriptedLLM(handler=handler())
+        self.analyze(llm)
+        self.assertNotIn("translate_items", llm.tasks())
+        self.assertNotIn("translate_keywords", llm.tasks())
 
 
 class RunTests(PipelineTestCase):

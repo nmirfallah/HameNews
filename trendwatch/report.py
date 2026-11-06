@@ -3,6 +3,9 @@ import html as _html
 
 NOTE = ("Summaries and labels are written by an AI from headlines and short snippets. They describe "
         "what each group of sources says, not what is true, and they can be wrong. "
+        "Left/right labels are your own ratings where you set them; otherwise they are an AI estimate of "
+        "the outlet's usual editorial line and are marked as such. "
+        "Items in other languages are machine-translated into English, and quotes from them are translations. "
         "Open the linked sources before relying on any of it.")
 
 
@@ -33,6 +36,10 @@ def render_topic(res):
         for g in nar["groups"]:
             lines.append(f"**{g['group']}** ({g['n_items']} items; {', '.join(g['outlets'])})  ")
             lines.append(g["narrative"])
+            if g.get("languages"):
+                lines.append("Translated from: " + ", ".join(g["languages"]))
+            if g.get("outlet_notes"):
+                lines.append("Outlet leanings: " + "; ".join(g["outlet_notes"]))
             if g["links"]:
                 lines.append("Sources: " + ", ".join(f"[{l['outlet']}]({l['url']})" for l in g["links"]))
             lines.append("")
@@ -118,6 +125,10 @@ def _topic_html(res):
                 f"<div class='side'><div class='side-name'>{_e(g['group'])} "
                 f"<span class='muted'>({_e(g['n_items'])} items: {_e(', '.join(g['outlets']))})</span></div>"
                 f"<p>{_e(g['narrative'])}</p>"
+                + (f"<p class='src'>Translated from: {_e(', '.join(g['languages']))}</p>"
+                   if g.get("languages") else "")
+                + (f"<p class='src'>Outlet leanings: {_e('; '.join(g['outlet_notes']))}</p>"
+                   if g.get("outlet_notes") else "")
                 + (f"<p class='src'>Sources: {links}</p>" if links else "") + "</div>")
         if nar.get("differences"):
             h.append(f"<p class='diff'><strong>Where they differ:</strong> {_e(nar['differences'])}</p>")

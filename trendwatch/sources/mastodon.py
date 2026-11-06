@@ -52,6 +52,7 @@ def search(topic, cfg):
             eng = sum(s.get(k, 0) or 0 for k in ("favourites_count", "reblogs_count", "replies_count"))
             items.append(Item(id=s.get("uri") or s.get("url", ""), kind="post", platform="mastodon",
                               outlet=acct, text=text, url=s.get("url", ""),
-                              created_at=s.get("created_at", ""), engagement=eng))
+                              created_at=s.get("created_at", ""), engagement=eng,
+                              lang=s.get("language") or ""))
     log.info("mastodon: %d posts for %r", len(items), topic["topic"])
     return items

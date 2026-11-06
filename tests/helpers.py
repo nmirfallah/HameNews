@@ -63,6 +63,12 @@ def keyword_labels(prompt):
     return rows
 
 
+def leaning_reply(prompt, mapping=None):
+    """Answer a classify_leanings prompt from a name -> leaning mapping (default: unknown)."""
+    mapping = mapping or {}
+    return [{"outlet": n, "leaning": mapping.get(n, "unknown")} for n in re.findall(r"^- (.+)$", prompt, re.M)]
+
+
 def task_handler(**responses):
     """Answer by TASK tag. Values are data, or callables taking the prompt. An unexpected task fails the test."""
     def handle(prompt, tier):

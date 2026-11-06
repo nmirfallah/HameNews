@@ -9,7 +9,7 @@ from .util import clip, log
 def _block(items, max_chars):
     lines = []
     for idx, it in enumerate(items):
-        text = it.text.replace("\n", " ").replace("<", "‹").replace(">", "›")
+        text = it.en.replace("\n", " ").replace("<", "‹").replace(">", "›")
         lines.append(f'<item i="{idx}" type="{it.kind}">{clip(text, max_chars)}</item>')
     return "\n".join(lines)
 

@@ -19,8 +19,8 @@ DEFAULTS = {
     ],
     # Outlets searched through Google News with a site: filter (no RSS URL needed).
     "news_sites": [
-        {"name": "Tasnim News Agency", "site": "tasnimnews.ir"},
-        {"name": "Fars News Agency", "site": "farsnews.ir"},
+        {"name": "Tasnim News Agency", "site": "tasnimnews.ir", "langs": ["en", "fa"]},
+        {"name": "Fars News Agency", "site": "farsnews.ir", "langs": ["en", "fa"]},
         {"name": "The Grayzone", "site": "thegrayzone.com"},
     ],
     # Force outlets into a named group, whatever the AI would have guessed.
@@ -32,6 +32,22 @@ DEFAULTS = {
                                     "Fars News"],
         "The Grayzone": ["The Grayzone", "Grayzone", "thegrayzone.com"],
     },
+    # Other languages: translate non-English items to English for analysis (originals are kept) and
+    # also search each topic in the languages below. Editions are Google News country/language pairs.
+    "languages": {
+        "translate": True,
+        "search_native": True,
+        "batch_size": 20,
+        "editions": [
+            {"country": "EG", "lang": "ar"}, {"country": "IL", "lang": "he"},
+            {"country": "RU", "lang": "ru"}, {"country": "TR", "lang": "tr"},
+            {"country": "DE", "lang": "de"}, {"country": "FR", "lang": "fr"},
+        ],
+    },
+    # Political leaning of outlets. Your own ratings (outlet name -> left | center-left | center |
+    # center-right | right) always win; other outlets get an AI estimate that is shown as such.
+    "outlet_leanings": {},
+    "leanings": {"enabled": True, "split_groups": True},
     # National news agencies from trendwatch/agencies.py, grouped by country and ownership type.
     "agencies": {"enabled": True, "search": True, "site_chunk": 8},
     "discovery": {

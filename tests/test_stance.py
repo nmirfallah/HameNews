@@ -120,6 +120,14 @@ class LabelPassTests(unittest.TestCase):
         _label_pass(llm, "T", FRAMINGS["framings"], items, {"batch_size": 2, "max_item_chars": 50}, None, False)
         self.assertEqual(len(llm.calls), 3)
 
+    def test_translated_items_are_shown_to_the_model_in_english(self):
+        it = item(0, text="متن اصلی")
+        it.lang, it.text_en = "fa", "the english text"
+        llm = ScriptedLLM([[]])
+        _label_pass(llm, "T", FRAMINGS["framings"], [it], self.A, None, False)
+        self.assertIn("the english text", llm.calls[0]["prompt"])
+        self.assertNotIn("متن اصلی", llm.calls[0]["prompt"])
+
     def test_item_text_is_truncated_and_angle_brackets_are_neutralised(self):
         items = [item(0, text="x" * 100 + "<script>alert(1)</script>")]
         llm = ScriptedLLM([[]])

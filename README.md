@@ -11,6 +11,15 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 > **Keep this repository private.** It stores per-outlet and per-account labels in `data/`.
 > It is built as a personal research tool.
 
+## Which command do I run?
+
+| Command | What it does |
+|---|---|
+| `python run.py --open` | **The main program.** Checks every trend source, picks the trending subjects, collects coverage, and writes the report (then opens it in your browser). |
+| `python run.py --subject "Iran" --open` | Same, but for one subject you choose instead of discovered ones. |
+| `python run.py --open-latest` | Reopens the newest report without running anything. |
+| `python check_sources.py` | Diagnostic only: tests whether each website responds. It makes no report. |
+
 ## Contents
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
@@ -64,7 +73,9 @@ sources says:**
   According to US media, ...
   Where they differ: terminology, casualty figures, causes cited ...
 ```
-Groups are the country an outlet is based in (for articles) or the platform (for posts).
+Groups are the country and ownership type of an outlet (for articles) or the platform (for posts), split
+by the outlet's political leaning where it is known, for example
+`United States independent media (right-leaning)` or `Russia state-linked media`.
 Open it as a web page with `python run.py --open`, or `python run.py --open-latest`
 to reopen the newest one without running anything.
 
@@ -222,12 +233,67 @@ publish mainly in other languages and will only show up when they publish Englis
 as closed or unreachable: Argentina's Telam (reported closed in 2024) and KCNA (no searchable domain).
 Run `python check_sources.py` to see which agencies actually return results.
 
+## Other languages
+
+HameNews reads sources in any language the AI model understands.
+
+1. **Detect.** Each article or post gets a language code. The source's own metadata is trusted first (Bluesky
+   and Mastodon posts carry a language, RSS feeds can declare one, and Google News editions have one). Only
+   items with no metadata are guessed from their script and common words (Persian vs Arabic vs Urdu,
+   Russian vs Ukrainian, Spanish, French, German and so on). Plain ASCII text with no clue is taken as English.
+2. **Translate.** Non-English items are translated into English by the fast model, in batches. The translation
+   is faithful (names, numbers and loaded terms are kept as written). The original text is always kept, and
+   translations are cached in `data/translations.json` so the same article is never paid for twice.
+3. **Analyse in English.** Framing labels, group summaries and evidence quotes all use the English text, so
+   an Arabic outlet and a Russian outlet are compared on equal terms. The report lists which languages
+   were translated for each group, and quotes taken from translated items are translations.
+4. **Search in other languages.** For each topic the model writes search terms in the languages you configure
+   (cached in `data/keyword_translations.json`), and they are searched through Google News editions
+   such as Egypt in Arabic or Israel in Hebrew. Named outlets can list `langs`, so Tasnim and Fars are also
+   searched with Persian terms.
+
+Change the languages under `languages:` in `config.yaml`. Turn translation off with `translate: false`
+and native-language searching with `search_native: false`.
+
+Limits: Google News does not offer every country and language pair (for example there is no Iran
+edition), so some pairs return nothing; the script-based guess is a fallback and can be wrong for short
+text; translations are machine translations and can lose nuance, so open the linked original for anything
+important; and translating adds model calls (cheap headlines, but more of them).
+
+## Political leaning of outlets
+
+Each article outlet gets a leaning on the scale left, center-left, center, center-right, right, or none.
+Where it comes from, in order of priority:
+
+1. **Your own ratings** in `config.yaml`, which always win:
+   ```yaml
+   outlet_leanings:
+     "Fox News": right
+     "The Guardian": center-left
+   ```
+2. **`data/outlet_leanings.json`**, which you can edit by hand (a plain `"Outlet": "right"` entry is fine).
+3. **An AI estimate** of the outlet's usual editorial line, made once per outlet and saved to that file.
+   It is always shown as `(AI estimate)` in the report, and the AI is told to answer `unknown` rather than
+   guess, or when a left/right scale does not really apply (for example outlets that follow a government
+   line rather than a domestic political camp). Unknown outlets stay in their plain group.
+
+The report splits each group into left-leaning, centrist and right-leaning parts (only where a part has at
+least `narratives.min_group_items` items) and lists each outlet's leaning and source under its summary.
+Turn the splitting off with `leanings: {split_groups: false}` or all of it with `leanings: {enabled: false}`.
+Posts and individual accounts get no leaning.
+
+If you use ratings from AllSides, Media Bias/Fact Check or Ad Fontes, check each organisation's licence
+first, and enter them as your own ratings.
+
 ## What you get
 
 ```
 data/
   reports/2026-11-03.html    the daily report to read in a browser (plus .md and .json versions)
   outlet_groups.json         which country group each outlet belongs to (editable)
+  outlet_leanings.json       each outlet's leaning and where it came from (editable)
+  translations.json          cached English translations of non-English items
+  keyword_translations.json  cached search terms per topic and language
   topics/<topic>.json        frozen framings and divide history for each topic
   profiles/outlets.json      running per-outlet counts and evidence
   profiles/accounts.json     running per-account counts and evidence
@@ -248,7 +314,9 @@ trendwatch/
   collect.py                gather articles and posts
   stance.py                 framings, two-pass labelling, divide verdict
   profiles.py               running outlet and account profiles
-  groups.py, narratives.py  source groups and the "According to X..." summaries
+  languages.py              language detection and translation
+  groups.py, leanings.py    source groups and outlet political leaning
+  narratives.py             the "According to X..." summaries
   report.py, pipeline.py    report rendering (Markdown and HTML) and the daily flow
   prompts.py                every prompt in one place
   llm/                      model-independent AI layer and providers
