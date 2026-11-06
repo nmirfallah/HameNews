@@ -1,0 +1,150 @@
+{
+  "iran": {
+    "ar": [
+      "إيران",
+      "الحكومة الإيرانية",
+      "البرنامج النووي الإيراني"
+    ],
+    "de": [
+      "Iran",
+      "iranische Regierung",
+      "iranisches Atomprogramm"
+    ],
+    "fa": [
+      "ایران",
+      "دولت ایران",
+      "برنامه هسته‌ای ایران"
+    ],
+    "fr": [
+      "Iran",
+      "gouvernement iranien",
+      "programme nucléaire iranien"
+    ],
+    "he": [
+      "איראן",
+      "הממשל האיראני",
+      "תוכנית הגרעין של איראן"
+    ],
+    "ru": [
+      "Иран",
+      "правительство Ирана",
+      "ядерная программа Ирана"
+    ],
+    "tr": [
+      "İran",
+      "İran hükümeti",
+      "İran nükleer programı"
+    ]
+  },
+  "tesla-cybertruck-wind-down": {
+    "ar": [
+      "إيقاف إنتاج تسلا سايبرتراك",
+      "تسلا سايبرتراك",
+      "ماسك سايبرتراك"
+    ],
+    "de": [
+      "Cybertruck Produktionsstopp",
+      "Tesla Cybertruck Produktion",
+      "Musk Cybertruck"
+    ],
+    "fa": [
+      "پایان تولید تسلا سایبرتراک",
+      "تسلا سایبرتراک",
+      "ماسک سایبرتراک"
+    ],
+    "fr": [
+      "arrêt production Cybertruck",
+      "Tesla Cybertruck production",
+      "Musk Cybertruck"
+    ],
+    "he": [
+      "הפסקת ייצור סייברטראק",
+      "טסלה סייברטראק",
+      "מאסק סייברטראק"
+    ],
+    "ru": [
+      "прекращение производства Cybertruck",
+      "Tesla Cybertruck производство",
+      "Маск Cybertruck"
+    ],
+    "tr": [
+      "Cybertruck üretim durdurma",
+      "Tesla Cybertruck üretim",
+      "Musk Cybertruck"
+    ]
+  },
+  "2026-us-midterm-elections": {
+    "ar": [
+      "انتخابات التجديد النصفي الأمريكية 2026",
+      "الديمقراطيون",
+      "انتخابات مجلس الشيوخ"
+    ],
+    "de": [
+      "US-Zwischenwahlen 2026",
+      "Demokraten",
+      "Senatswahlen"
+    ],
+    "fa": [
+      "انتخابات میان‌دوره‌ای آمریکا ۲۰۲۶",
+      "دموکرات‌ها",
+      "انتخابات سنا"
+    ],
+    "fr": [
+      "élections de mi-mandat américaines 2026",
+      "démocrates",
+      "élections sénatoriales"
+    ],
+    "he": [
+      "הבחירות האמצע בארה\"ב 2026",
+      "הדמוקרטים",
+      "בחירות לסנאט"
+    ],
+    "ru": [
+      "промежуточные выборы в США 2026",
+      "демократы",
+      "выборы в Сенат"
+    ],
+    "tr": [
+      "2026 ABD ara seçimleri",
+      "Demokratlar",
+      "Senato seçimleri"
+    ]
+  },
+  "stephen-miller-named-chief-of-staff": {
+    "ar": [
+      "ستيفن ميلر كبير موظفي البيت الأبيض",
+      "ستيفن ميلر",
+      "البيت الأبيض كبير الموظفين"
+    ],
+    "de": [
+      "Stephen Miller Stabschef",
+      "Stephen Miller Weißes Haus",
+      "Stabschef Weißes Haus"
+    ],
+    "fa": [
+      "استیفن میلر رئیس کارکنان کاخ سفید",
+      "استیفن میلر",
+      "کاخ سفید رئیس کارکنان"
+    ],
+    "fr": [
+      "Stephen Miller directeur de cabinet",
+      "Stephen Miller Maison Blanche",
+      "chef de cabinet Maison Blanche"
+    ],
+    "he": [
+      "סטיבן מילר ראש המטה",
+      "סטיבן מילר הבית הלבן",
+      "ראש מטה הבית הלבן"
+    ],
+    "ru": [
+      "Стивен Миллер руководитель аппарата Белого дома",
+      "Стивен Миллер Белый дом",
+      "глава аппарата Белого дома"
+    ],
+    "tr": [
+      "Stephen Miller Beyaz Saray kurmay başkanı",
+      "Stephen Miller Beyaz Saray",
+      "Beyaz Saray kurmay başkanı"
+    ]
+  }
+}

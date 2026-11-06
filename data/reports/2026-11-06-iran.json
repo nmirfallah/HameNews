@@ -1,0 +1,683 @@
+[
+  {
+    "topic": "Iran",
+    "slug": "iran",
+    "summary": "Iran is a country in the Middle East whose government, nuclear program, regional role, and international relations are frequently covered in news and policy discussion.",
+    "platforms": [],
+    "n_signals": 0,
+    "signals": [],
+    "n_items": 160,
+    "narratives": {
+      "groups": [
+        {
+          "group": "Mastodon posts",
+          "n_items": 80,
+          "outlets": [
+            "2legged@mastodon.ie",
+            "CanalRedAmLat@mastox.eu",
+            "GeoWire",
+            "Hotfinds",
+            "Jools@lor.sh",
+            "LThinkTank",
+            "ManyRoads@mstdn.social",
+            "Mathrubhumi_English"
+          ],
+          "outlet_notes": [],
+          "languages": [
+            "Dutch",
+            "French",
+            "Spanish"
+          ],
+          "narrative": "According to Mastodon posts, Iran is preparing for possible nuclear or military escalation: posts say it is handing out iodine tablets and survival guides (one cites 180,000 tablets in Bushehr) as Trump vowed to destroy the 'Pickaxe Mountain' nuclear site. Other posts report Iran-Russia talks on S-400 air defences, unusual Iran-linked vessel maneuvers near submarine cables in the Gulf of Oman, and an Iranian ambassador criticizing European positions on 'US and Israeli regime aggression'. Posts also cover Lake Urmia's desiccation and a campaign about children killed by the Iranian regime.",
+          "links": [
+            {
+              "outlet": "mitexleo@mastodon.bd",
+              "url": "https://mastodon.bd/@mitexleo/117571064958670906"
+            },
+            {
+              "outlet": "rvps2001",
+              "url": "https://mastodon.social/@rvps2001/117571021228251226"
+            },
+            {
+              "outlet": "analytics@social.vir.group",
+              "url": "https://social.vir.group/@analytics/117571098140714142"
+            }
+          ]
+        },
+        {
+          "group": "US media (centrist)",
+          "n_items": 14,
+          "outlets": [
+            "ABC7 New York",
+            "Axios",
+            "Bloomberg.com",
+            "CBS News",
+            "CNBC",
+            "Fortune",
+            "Houston Chronicle",
+            "Institute for the Study of War"
+          ],
+          "outlet_notes": [
+            "ABC7 New York: center (AI estimate)",
+            "Axios: center (AI estimate)",
+            "Bloomberg.com: center (AI estimate)",
+            "CBS News: center (AI estimate)",
+            "CNBC: center (AI estimate)",
+            "Fortune: center (AI estimate)",
+            "Houston Chronicle: center (AI estimate)",
+            "Institute for the Study of War: center (AI estimate)",
+            "Military.com: center (AI estimate)",
+            "NewsNation: center (AI estimate)",
+            "PBS: center (AI estimate)",
+            "Politico: center (AI estimate)",
+            "The Hill: center (AI estimate)",
+            "Time Magazine: center (AI estimate)"
+          ],
+          "languages": [],
+          "narrative": "According to US media (centrist), the Iran war is a live political and market issue: Trump says a decision on new strikes is coming 'soon' while keeping up diplomacy, and some Democrats and Sen. Ted Cruz are pushing to block or end the war. Items also mention oil prices falling after the midterms, reports of US talks with Iran on deporting Iranians, and a Bloomberg piece arguing US support for Israel is eroding.",
+          "links": [
+            {
+              "outlet": "CBS News",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTGRhLVU1VTVqNWp4WUduNU5uT1pwOEUwYnV1RmlnODdlUzduZDdsLTQzMkZLeVdiYlhBT09pMTI5RGN1a0NYVTl4Y3NDcmV2Q3BKZHJBZ1hEMTZsVXAwZkRyMGxZNDRYVXoyVV9qUXFoaDZrcHNmdXZwaEhMSE9raDJoSlM3a0Z4UVE?oc=5"
+            },
+            {
+              "outlet": "Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlJKcEVCZV9CSFVKMVlkeTN1SFVxYm10cHZxb2JxamZiLTc1LTg2WVBqN3otelFmZFRzSEdsR0s4RGE1T25kUFpjOWNpejdEaHlQMGt4VDFqSmFpSDJXRzY5NHNzZVhRY2pqTFM2ZWVaZFhsd0k1ODM5cURnOWJSbUFKYlo5RzVycjktR2NvMHZldE54V1NPSF9ObGViSFdZdUlKOXhZZVptR3BpTVdkY3dUclg?oc=5"
+            },
+            {
+              "outlet": "Politico",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUplVHdkRmVaZDVmNGJaRDh3MTI1QUU3ckJCN25wVXRxOTM1a2FoejJadkpwUnd6THVzUnlLaGlQR0pUXzUtd3ptQnZucFBFUlhOUUw1SHpJWU9ITWFaOUM2MnRYQmZXSWxhMThmMFFRbU5lQ1NNeFI1WnFlSlRRakxUZ1k1Rm1YaUZvX3pKbDE5UQ?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media",
+          "n_items": 9,
+          "outlets": [
+            "Aviation International News",
+            "Crude Oil Prices Today | OilPrice.com",
+            "Dallas Express",
+            "Radio Free Europe/Radio Liberty",
+            "U.S. Virtual Embassy Iran (.gov)",
+            "WBAL-TV",
+            "WRDW",
+            "Yahoo"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "narrative": "According to US media, the war has passed the eight-month mark, with coverage of an AP exclusive on US talks with Iran about deporting Iranians, US sanctions on ship registries and aviation support for the Iranian regime, and oil traders 'pricing in peace' though the war is not over. Other items concern a Texas-focused 'regime change' column and an Iranian envoy reportedly mobilizing Iraqi tribes to reopen a border crossing.",
+          "links": [
+            {
+              "outlet": "Yahoo",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVU91SVV6VmdEdVBvckRsaU1JWjBZWnNneUhiaGxEM2NOc1NkX2NRaEdzdVdEUGRMMU9QTE5USk9QMzFnWjlXcnhXeURLSnZaWnNMQ09fUGtiUHN6d1AyeC04cHhTdUY2TW1wTm1MN2JhakpZc2V6SU5wWGlBWk1qNWxTWENtdm12M0NfbUlHU1ViN1Iz?oc=5"
+            },
+            {
+              "outlet": "WBAL-TV",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94M012V0xsaEdHNE5YYXptNzZfUExOdEhJU0ROei1OdHd0dFJvaWc2blhud2RqN2dPbUtobjY3UTNKN0ZUaHhYbGVrN0g3OHdVRGxySFFvLXNrY2pTSElWdlFiOE95Yzln?oc=5"
+            },
+            {
+              "outlet": "U.S. Virtual Embassy Iran (.gov)",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObFpUZ0ViclJKYXBsNnR0eHpTZXRmQVpkYWhNSFdTdEtWcEQySWVKcVJ3RW8zNVd5NlEzT3RTQklDN3BGZWNIaVRjTFJmQ2JlYkZDbndGb3FESjdCX192WUlvZDdUTGJSSThudFc5MlpFM2QwOXR0T0VpREhUWEpNcHljZWtJRjJ2Qmtvanl0aV9KUy1OblNoZEhvYVhXSmxFR05XdTFtWU03UQ?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Indian media",
+          "n_items": 7,
+          "outlets": [
+            "ANI News",
+            "News On AIR",
+            "Rediff",
+            "Telegraph India",
+            "The Hindu",
+            "The New Indian Express",
+            "The Times of India"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "narrative": "According to Indian media, Iran put a seven-point proposal before the US to end the war, and says it wants concrete US action rather than 'paper commitments' before talks. They report Iran's Guards saying two tankers caught fire in Hormuz, with a sailor killed in the Gulf, and the Iranian government saying Indian vessels may navigate the Strait. Trump's meeting with security advisers after the midterms is framed as a possible prelude to another attack.",
+          "links": [
+            {
+              "outlet": "Rediff",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYi1QYU9MelV5cm5DRDdCOUk2UUxGZmhfb293a1NKV25LMW92aXdyY3ZTSUhtMTAwaXhaVWRtZWlvWVhQV3M2SXBTdzFLNnFzc2FUTDNnMFBPelBWMGlsMTZaZ3R0ZEltVUI4SmZhYkItX2ZJdnIwVWtBN2tZQnFrVlF1N0k3TjFPN1JtenY3enhQMkFhUVJiUExNSHHSAZ8BQVVfeXFMTlExcHlBclF5cEJscXVsdjlMUk9HMTJLMUd4YmNNazJXQjlCNm05Rjk3RzFKSkhiMERVb1pmUDBoY1hWVUNEdGlISl90bUVJSEx1TEZxTlFGSlhRTTdQYnJrMGEyaWJheHVOeGxKeDBhcEg0LWFES29wWGlsMzdOSDFnUTlhdFZNVDZTUGRXbEpQMnoxYW12WGxha1djSkhN?oc=5"
+            },
+            {
+              "outlet": "The Hindu",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMnZsRVBzTjhaemJoLUhiLU0tRXBmV2NEMzRSUFp5SHpHZ2VDXzlINWxRTkNOTU1FWkFDdWh4Y1FJR2duX0lmdk1BVXVZV243MldMLTAyaXRzYXhqdG13MnpBd1ZIbFlvaEw2cXNxMW1YcEU5VHZLNnpGcTlCVzh3emE0RldxUU9qcVhHMU02N1M4TWM1RndGekRhNkUxbm9xOVdKYUF2NVgxd1FzQ21XZHY2Z9IBugFBVV95cUxQa0daekNWVnEzX19vOUI0U3lZNmpCNmF2c3RLd2dDT24zdWtsR3lTMW0zaG4wdXhXX2tocElHR01ueDB3dzhuMXpJRUxWRTlIMUJTVHNfNUtqdjR5ei0tcVlhR0VNN0lIRy02LUZhdm1qNXpZSGd3Rko1MFlPYlYyUEtLOVNTenJYanVyalozSnBON1BWclZiQnVUTlZyWHMxSGl5TXRYcUFnZ053SF83MzdPWWZVUkpfS2c?oc=5"
+            },
+            {
+              "outlet": "Telegraph India",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTFIc3RxZEVDcFdtZDk4QW9WWXBVc1loc2lxT1dzV1hwTC1xQlRHaHBQNmhTSUtSU255TmkzX3BJdGJTbkFscDgzdUJ4SC1nYVZVOWl2UVJpWm05czhTQjF1TVNrUEdLcUNKX1YwNVZmNUtBaV9feGdXODF3NnRRN21UQnRRUGUzOGMwQWxubEVGTDBJcTAwUjZENmEzdHR0YnBaWkh2N01BODFlMlRDSTFB0gG3AUFVX3lxTE5wbWEwTTM5Q2toTC10MldOWmhhWGRzT1FTczVSTVdiTThEanNsRURRNkowNlNpUU5lZTYzNjJXcGRUVzEzTFducGdQcFhacVk5ZWZUSWpXNFJpeUJodVRoak13cHlpOUVhSVJxNTdobkdtcktfNTB0OVIyUzVYcmJTUm9IcUc0ZmFOZzlQNXVnUlV6WjM5LTFEenlOdWdhcS1heFBnUzBfMHc4SVk5eXpaVXZ6UUdjMA?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (left-leaning)",
+          "n_items": 6,
+          "outlets": [
+            "ABC News - Breaking News, Latest News and Videos",
+            "CNN",
+            "Center for American Progress",
+            "The New York Times",
+            "The New Yorker",
+            "The Washington Post"
+          ],
+          "outlet_notes": [
+            "ABC News - Breaking News, Latest News and Videos: center-left (AI estimate)",
+            "CNN: center-left (AI estimate)",
+            "Center for American Progress: left (AI estimate)",
+            "The New York Times: center-left (AI estimate)",
+            "The New Yorker: left (AI estimate)",
+            "The Washington Post: center-left (AI estimate)"
+          ],
+          "languages": [],
+          "narrative": "According to US media (left-leaning), the war faces domestic criticism: Hegseth defends it amid calls for his removal, a judge criticized the administration over plans to deport Iranian immigrants during wartime, and the Center for American Progress lists steps Congress should take to end it. The NYT reports the US and Israel have drawn up plans for renewed strikes after elections.",
+          "links": [
+            {
+              "outlet": "The Washington Post",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWGRIQ19MXzAwUlQ0WHlaZ1I4WE5tUXZMTmdrOVQ3Ql9QZVRqOHB2dGNOcUFoOVlIbVBMMmFmS3pXQk1GTlYzV3BhMk5haFBZRXRoNkhNek1lSU0yZVlvUVk0YU1DOHlpeEZaWmFEdGdKaXNrQ2ZIaGI4Tm41ZUg4R1NVd2JYQ1pUdGtBYW5wOC1aaG15dWlFNFFCWXZkYXhCcXlFNnRFdjZFaTJqT3RscTBXTDAyeEszakhvcFBnbTlQeTA?oc=5"
+            },
+            {
+              "outlet": "ABC News - Breaking News, Latest News and Videos",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb1V3YWJFdE5GLXZ1aENLb0JTLWNpTzMxdGJYU3VOODl2bEFJYVlQckIzZVlZdnZyMFgyX2dqaFJkZGdaajQ4bUFTb01XN3BGV2pUTjNIb1FIeDMxTGJkUS1OaTRTOVNScmJFSU9ZU3ZyWkl4c3JLRk5VdU9RV3NPd3pqRGhyWnc0SzhuSm1DV0hUemU0WkpqT28wd0pWdFBVMDdLaUdzX1lSTVlsTEHSAbMBQVVfeXFMTlhNeVJ3SjNibWhEUXdLdWNwOFIzSHlzbEJXSTYyRERnekNkSkt4Zm5JUXN6ZGJJZ0YzR2hvZTJ2ZXZjSGI5QUJIWDNLNTRfYlViVTFHWGpMQmVhUkFXQXYzYVBtYXlqc0MtUFVETDhTYXRUTHAtX28wWFZMQVpKN2YwbnBTenc5eWlrRDlqRlNIUUhkV2tMckpBQ1UtZml1ajZ1WFpvQ2JWemQxeVllYTllY2M?oc=5"
+            },
+            {
+              "outlet": "The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaFNybFlkMEkyWkpGZUhTNHUyd2V2Y0JGQkNUNzdJVFhaNlpMWU1FQXh6NG9PWWU0ZlBSdDBCUXUwcEc0c1lJaXRFMzdNajVFdjN5Mm43Y2dBdmNST2lYY1JsWjA5dlVzZkZFcGVaY1RlUEMwS3pOblF0RlVzRGtlYm40TWh2NEp3UGc?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media",
+          "n_items": 6,
+          "outlets": [
+            "ASHARQ AL-AWSAT English",
+            "GOV.UK",
+            "Iran International",
+            "Middle East Eye",
+            "Sky News",
+            "The House of Commons Library"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "narrative": "According to UK media, items cover reported US-Iran deportation talks, Iran International's claim that Trump's election defeat is fueling debate in Tehran over a US deal, and Middle East Eye's report of fake Iranian accounts campaigning for Netanyahu. Also included are a Commons Library briefing on Iranian state threat activities in the UK and GOV.UK travel advice; most are bare headlines.",
+          "links": [
+            {
+              "outlet": "ASHARQ AL-AWSAT English",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQV9oRHFYTVpUMF9pb18ycXRjMHVtcXJvbHhOZE1sUEJfQ1VPcnZKbk54VmtkZjBmUjE2QjlQcmllYkRVcU5Ja2RocGxoSU4tZnJ3bXpqeVdRYXhOMmhjYXpWWlJ1SjNfdWRMdGV3MUhxZ2p6SkRNUEVudmZrMVRYbWZiWVBFZkc5NWYwa0piSTN0bkZJWjdXa3cxS2NtVUhabTJoRVJrX1NYM00?oc=5"
+            },
+            {
+              "outlet": "Middle East Eye",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR0hxRWoxZkR0bVl6LTV1elo4NzdxNjVSSFZUNXk0LXlTR09FcFRfR3RjaVgtWUJaemlfZklvLXVIUVdkNk5wa3RicDdidUFYUDlkQ3UyRS1DcXh0cnduS0tMRGlfVXREQUJPdGx1cDZCMDRpRV9FX2tBZGJLOV90aDJxUjdCQTN0cWVJMGthRFBwaFdjZFVwQ0xDVHU5ay1UMHc?oc=5"
+            },
+            {
+              "outlet": "Iran International",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PdkIwNWZUdDBnWGg5MHdHejdQeWxCc1RUNGxLVW82TmNqbWxTTW9rZWlpSW5PTnk5bEpoRjlrSk9jdDdTbk1zTXBlU2xEUVBfbkE?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (right-leaning)",
+          "n_items": 3,
+          "outlets": [
+            "Fox News",
+            "The Dispatch",
+            "WSJ"
+          ],
+          "outlet_notes": [
+            "Fox News: right (AI estimate)",
+            "The Dispatch: center-right (AI estimate)",
+            "WSJ: center-right (AI estimate)"
+          ],
+          "languages": [],
+          "narrative": "According to US media (right-leaning), Hegseth calls the US-Iran war a 'courageous and historic effort', while a WSJ opinion piece says Trump 'outran his leash' with the war. The Dispatch runs a piece on the 'countdown to the end' of the war.",
+          "links": [
+            {
+              "outlet": "WSJ",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQM0tXN241MkN2Qm96UG5nQkNPOS1Idld4dllCaHl0TVNsSTR6U1RQTkl3VGlRaDNqODF0V3ZQV1JUckZCamRDZ25CTThjenpYUUpaOC04VGpMY1NHbzBLeVA1N0l1VjBoY2RsQ1hNb1d2MHNKanhpMl8tUlBaNGx1LXh3QQ?oc=5"
+            },
+            {
+              "outlet": "Fox News",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNV85dG0tUVl6b1BtcWJ3XzhsQ19aUnpQblF0XzJPcER0Q1JDSDB2THBGWXdFdXM5aGZ6UmZwN1hrTm9YcDBVWW1YWTJ0Skd2TXU3U3ZGcDlYZ0FxMnRTd05obzBQaTczSm4wQndGbWlVTnJEQzd5cmZsa01iS2c0bDQza2dwRlZqcUJaOFFvWHhGeFJlQzczZFZORHIyOTEyNlVWelNLdDM?oc=5"
+            },
+            {
+              "outlet": "The Dispatch",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ERmUxQV9ScXFHblJyNXpuV2F4QzljTlJzSFdud1RVLTdNdFZNb1RwdWVXMnJVNnhmSGphREMzcmdOQzdBZjJNdjlOcWdMU1lSTDg3d1lBSV9UbU9STDU4dGtweGxXdVpka0hnTmFBUm9aWG8?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Israeli media (right-leaning)",
+          "n_items": 3,
+          "outlets": [
+            "Israel National News",
+            "The Jerusalem Post",
+            "www.israelhayom.com"
+          ],
+          "outlet_notes": [
+            "Israel National News: right (AI estimate)",
+            "The Jerusalem Post: center-right (AI estimate)",
+            "www.israelhayom.com: right (AI estimate)"
+          ],
+          "languages": [],
+          "narrative": "According to Israeli media (right-leaning), Trump says Iran is 'largely destroyed' and the US is ready to 'finish the job' if needed. They report Iranian officials distributing iodine pills in anticipation of American nuclear bombardment, and that the Joint List won't commit to backing the government during the war with Iran.",
+          "links": [
+            {
+              "outlet": "The Jerusalem Post",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iYUtoVXhSZ0cxZmM3Z2xzRjF2WjlmVE1oNUNDeTQxNk12UmprWUItS0VYRDRPc2Nmdzh4ZjR3N2M3cmQ4UUkyRkwySUFzRDU2U3NKcWxCUnltOGNmYTJJc2xlUWVZUVhWLUE?oc=5"
+            },
+            {
+              "outlet": "www.israelhayom.com",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb1lxM0dfMFNUTkFDYjEzcTRZcVZQQWNZYkt5QWtWamdDWS1vSzFIQWczZVZDbU01QXptd015S05Fako0dGYtM2JXWFRCRnNabUZLSWVoMWJld0p6TlAwLU5Rem5XZzJfVTIyRVd1VWtuOS14cjRiSHk1aGowUl9KaFRDbk9MNkdZUUpR?oc=5"
+            },
+            {
+              "outlet": "Israel National News",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ldzlRV1JWbUhJRUdXbHdWSnNxR1I2QktYOTFFV0hONGg3MlA2T0hZME1hZFlkdklsZWhMNi1aNllfbmNJMDR6M0tYZEt3VmFPRGNEX2VHQXVZUQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "unclassified": 5,
+      "differences": "US centrist, left and right outlets stress domestic politics (midterms, Congress, Hegseth, deportation talks), while Indian media emphasize Iran's seven-point offer and Hormuz shipping incidents. Israeli right-leaning and Mastodon items highlight Iranian iodine-pill distribution and nuclear fears, framing Iran as bracing for US strikes, and Trump's claim of 'largely destroyed' Iran."
+    },
+    "framings": {
+      "topic": "Iran",
+      "has_distinct_framings": true,
+      "framings": [
+        {
+          "id": "f1",
+          "label": "Domestic political fallout of the war",
+          "description": "Posts treat the Iran war mainly as a U.S. electoral and partisan story, covering the midterm loss, Democratic and Republican criticism, and calls for Hegseth's removal."
+        },
+        {
+          "id": "f2",
+          "label": "Administration defending war and resolve",
+          "description": "Posts relay Trump and Hegseth portraying the war as historic and successful, and describing Iran as largely destroyed, with strikes still possible alongside talk of diplomacy."
+        },
+        {
+          "id": "f3",
+          "label": "Negotiation and de-escalation track",
+          "description": "Posts focus on diplomatic channels, nuclear proposals via Qatar, reports of a possible deal or peace talks, and the resulting moves in oil prices."
+        },
+        {
+          "id": "f4",
+          "label": "Economic and household cost",
+          "description": "Posts frame the conflict through its costs, including per-household expense, oil price swings, and market reactions to escalation risk."
+        },
+        {
+          "id": "f5",
+          "label": "Military and regional operations",
+          "description": "Posts report on battlefield and strategic developments, such as Hormuz incidents, drone shootdowns, base construction, Russian arms supplies, Iran-Russia contacts, sanctions, and Israeli politics and U.S. support."
+        }
+      ],
+      "created": "2026-11-06",
+      "history": []
+    },
+    "divide": {
+      "verdict": "strong",
+      "kappa": 0.52,
+      "n_items": 160,
+      "n_framed": 60,
+      "framed_share": 0.38,
+      "counts": {
+        "f1": 16,
+        "f2": 4,
+        "f3": 19,
+        "f4": 4,
+        "f5": 17
+      },
+      "shares": {
+        "f1": 0.27,
+        "f2": 0.07,
+        "f3": 0.32,
+        "f4": 0.07,
+        "f5": 0.28
+      }
+    },
+    "rows": {
+      "outlets": [
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CBS News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Trump touts imminent decision on new U.S. strikes",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTGRhLVU1VTVqNWp4WUduNU5uT1pwOEUwYnV1RmlnODdlUzduZDdsLTQzMkZLeVdiYlhBT09pMTI5RGN1a0NYVTl4Y3NDcmV2Q3BKZHJBZ1hEMTZsVXAwZkRyMGxZNDRYVXoyVV9qUXFoaDZrcHNmdXZwaEhMSE9raDJoSlM3a0Z4UVE?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "The Washington Post",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Hegseth defends Iran war, assails critics",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWGRIQ19MXzAwUlQ0WHlaZ1I4WE5tUXZMTmdrOVQ3Ql9QZVRqOHB2dGNOcUFoOVlIbVBMMmFmS3pXQk1GTlYzV3BhMk5haFBZRXRoNkhNek1lSU0yZVlvUVk0YU1DOHlpeEZaWmFEdGdKaXNrQ2ZIaGI4Tm41ZUg4R1NVd2JYQ1pUdGtBYW5wOC1aaG15dWlFNFFCWXZkYXhCcXlFNnRFdjZFaTJqT3RscTBXTDAyeEszakhvcFBnbTlQeTA?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CNN",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Sen. Bill Cassidy on Hegseth and Iran War",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5KNXdoM2xSMTJuZGYtU3dKRW5sbFBDdlE5eTJ1Y3AxaGRfWEY1dGpUWmtPM3kwd1M2cFdnMzhTU1J6MnJHOENjdXN0Sm9KYXRSTUliT2hncXlwQWwxTFREX3lsLV9qcl9Va011ZGp6NHpoSFU5c1VIcnpwOA?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "AP News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "After midterm loss, Trump is left to weigh his next move",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVdCMXZ3Y0NJQ3Y2ZG9YSHp3YW95Q2gtdm9QYTBjZDQzUGNvT2FHaDhuUnMxdXZXdlJrUzVrRW5RVXBzZExUTzhZT2JNSi1VWWVIWUw2RGpPS2pIcm4tUDJrMmRoQUpHVFRiY3p0c1pnazdEdUpDcThSbzV1NFNtbFF1ODhZczMtZkFYVTlwcjJEdw?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "BBC",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Major construction near Iran bases, satellite images suggest",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MbHJlbXBEbVlHQWJkcmtsYUcwX2ZWWVZLWkNTU1A5Y2h6X0xYSjF5dGpkOWxGSm13dGVsY24weVJHSTBKMy1lbGxUQkJoTXd6ZHM5cWxET1BOWTQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "The Guardian",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Russia agreed to supply Iran with 90 helicopter missile launchers",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxON2ZlQ3hWVDdwTXMtUlc4VlNWZEN4bnVDbndJVHVNbjVva1QtMnVSdGlKckJRV1RlVXdyRnFRenlENFZnTmoyZzE3ZGhBQ2xYcVhZSGgyUmNnZFY2eFFBSkhDWk1JSUIzRmF6eGpxbkRKTkFZOXc0RUloZEhabkxySl9iLWNUWlpaUGR3ZldtcC1zQjk4WFhzTlhwanRvSzBFRWpZMGFVOFU4QQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Bloomberg.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Israel Risks Missing How Quickly US Support Is Evaporating",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlJKcEVCZV9CSFVKMVlkeTN1SFVxYm10cHZxb2JxamZiLTc1LTg2WVBqN3otelFmZFRzSEdsR0s4RGE1T25kUFpjOWNpejdEaHlQMGt4VDFqSmFpSDJXRzY5NHNzZVhRY2pqTFM2ZWVaZFhsd0k1ODM5cURnOWJSbUFKYlo5RzVycjktR2NvMHZldE54V1NPSF9ObGViSFdZdUlKOXhZZVptR3BpTVdkY3dUclg?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "ABC News - Breaking News, Latest News and Videos",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Yahoo",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "PBS",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "NDTV",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Israel Would Not Exist If I Did Not Stop Iran From Having Nuke",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc3QtamhBYkhDcm9CTFVjQXBwMld3WVhPS0Y0NGdmc1hRbEJGUmg4SnN1cm9fVHRqWHNhTldSN3NzQl9JUnhYLXE4blB0V0U1eFM0V3BHWGZsU1dwQ05iSHI3andRai1wYjUzaDhZZHhGamN4elNvS0FnZXBIcDEyR0RCalpablpWV2ZuMkI5SkM5UTBDb3lZZzVDY1o0QnUzVTRrSDk3LUFuNmNYNlHSAbYBQVVfeXFMT256N3JRendhSkdZVU5lRVhlYzkyeWlTaUdxUWMxMUxMSUFsdWxtZUFscXNKbG5Vdmp5VGo2SEg3RkFXSTVKVVZQWEoxR0c0RG5PVU1qaUFLd3Q1UjBJeW5hSzRNcFFKWWdqUFlrV3VpSC1NeWNjV2xGZDhMQmdzdno5Tl9ndVh5RGpIRDEtUXNtZlc2NnBhd2M3RXMwWGtwenlKWUczMnE3X0NfNVh4THFkUlRPSnc?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "WBAL-TV",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Politico",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Some Democrats don't want to wait for January to block Trump's war",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUplVHdkRmVaZDVmNGJaRDh3MTI1QUU3ckJCN25wVXRxOTM1a2FoejJadkpwUnd6THVzUnlLaGlQR0pUXzUtd3ptQnZucFBFUlhOUUw1SHpJWU9ITWFaOUM2MnRYQmZXSWxhMThmMFFRbU5lQ1NNeFI1WnFlSlRRakxUZ1k1Rm1YaUZvX3pKbDE5UQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Reuters",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Iran sent nuclear proposal to the US via Qatar",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSlJZVlphdWhPcDNGc1E5eDVNdDdMQkJNTXVDS0RYSVRqaC1tblFqQy1FekRQdldnV0FsMU5RdnVHNEI3UEZWMC1MY1l5cnRtcjBlcDlpUXdvX0hXbV91S1UxajV1TEx1VmJ2SzNLNElXSjc3YkdmYWw4VGNXZEl5NXR4RFNjRXBxeEZMLWpBT1Z5X2JRc3NEdkdMZDljQ0dkZXZRbzc3U1NmNkhnaFN5QzNhVmRzSmhsM0Q5VzU3Mm11OWZBa3M1V1lvaw?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Axios",
+          "reference": "",
+          "evidence": []
+        }
+      ],
+      "accounts": [
+        {
+          "n": 10,
+          "label": "building (10/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:Mathrubhumi_English",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "A tanker was hit by an \"unknown projectile\" near the Strait of Hormuz",
+              "url": "https://mastodon.social/@Mathrubhumi_English/117165010709554465"
+            },
+            {
+              "framing": "f3",
+              "quote": "Iran rejects reports of a new Strait of Hormuz deal with the US",
+              "url": "https://mastodon.social/@Mathrubhumi_English/117498969669422438"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "label": "building (7/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:publicnewsfeed",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "After midterm stinging defeat, Trump is left to weigh his next move in Iran war",
+              "url": "https://mastodon.social/@publicnewsfeed/117564136746506232"
+            },
+            {
+              "framing": "f1",
+              "quote": "Americans voted against Trump's Iran war",
+              "url": "https://mastodon.social/@publicnewsfeed/117566142097634168"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "label": "building (3/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:analytics@social.vir.group",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Suspicious maneuvers of Iranian vessels near submarine cables",
+              "url": "https://social.vir.group/@analytics/117571098140714142"
+            },
+            {
+              "framing": "f5",
+              "quote": "the IRGC has shot down 16 MQ-1C Gray Eagle and 56 MQ-9A Reaper drones",
+              "url": "https://social.vir.group/@analytics/117570170008468301"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:bcinfo@mastodon.roitsystems.ca",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:Hotfinds",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Trump Says Iran War Could End Soon",
+              "url": "https://mastodon.social/@Hotfinds/117382611635240698"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:poligraf@mastodon.online",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "why did Trump wait until after the election to use it",
+              "url": "https://mastodon.online/@poligraf/117570672960238186"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:ScottLucas@journa.host",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Iran negotiators reviewing proposals to limit Tehran nuclear program",
+              "url": "https://journa.host/@ScottLucas/117570433848943103"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:elfolio",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:bdonadio",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "This could be the small window for peace talks with Iran",
+              "url": "https://mastodon.social/@bdonadio/117295432688287770"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:GeoWire",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Trump's Iran Strategy Faces Crossroads After Midterm Defeat",
+              "url": "https://mastodon.social/@GeoWire/117570241335155655"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:desnips",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Qatar mediates with Trump to prevent escalation with Iran",
+              "url": "https://mastodon.social/@desnips/117570232646456850"
+            }
+          ]
+        }
+      ]
+    },
+    "narrative": "Coverage of Iran in this sample centers on a U.S.-Iran war, and the divide between framings is rated strong (kappa 0.52). Of 160 items, 60 (38%) carried a framing.\n\nThree framings dominate. Negotiation and de-escalation (32%) covers diplomatic channels, a nuclear proposal via Qatar, possible peace talks and oil-price moves. Military and regional operations (28%) covers Hormuz incidents, drone shootdowns, base construction and Russian arms. Domestic political fallout (27%) treats the war as a U.S. electoral and partisan story. Administration defense of the war (7%) and economic or household cost (7%) are smaller.\n\nThe data gives no political-lean labels for any outlet or account, so only topical patterns can be described. AP, CNN and Politico headlines fit the domestic-fallout framing. CBS, The Washington Post and NDTV fit the administration-defense framing. BBC, The Guardian and Bloomberg fit military and regional operations. Reuters fits negotiation. Among Mastodon accounts, publicnewsfeed leans toward domestic fallout, analytics@social.vir.group toward military, and Mathrubhumi_English spans military and negotiation.\n\nLimits: outlets are judged from headlines and snippets, mostly one item each, and every outlet and account is still marked \"building.\" Sample sizes are small.",
+    "rank": 1
+  }
+]

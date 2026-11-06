@@ -1,0 +1,3217 @@
+{
+  "CBS News": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b26884340023"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump touts imminent decision on new U.S. strikes",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTGRhLVU1VTVqNWp4WUduNU5uT1pwOEUwYnV1RmlnODdlUzduZDdsLTQzMkZLeVdiYlhBT09pMTI5RGN1a0NYVTl4Y3NDcmV2Q3BKZHJBZ1hEMTZsVXAwZkRyMGxZNDRYVXoyVV9qUXFoaDZrcHNmdXZwaEhMSE9raDJoSlM3a0Z4UVE?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ded3424608e5"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Musk says Tesla will end Cybertruck production in 2027",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2NGswdEUycm1SMmlwV2dEZHpDQ1JzdUUxdnNJQWRnbEhxVzFHMjJmSS1jcVNwS1FLVHNZSzE1a3FTR21KRWNLb0xSYS02Z1NqSDBuZy1ra1BSNnowQ3VLeHBEUzVIYXM1TGNyMGFtamZPa3FLdWVqTkt6V19LS0E?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "59a962801153"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democrats could dust off plans for Supreme Court reforms after capturing House and Senate",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uY1prTkZBMXJpMjlJWmN5OFYtQUNxVUlNQ2NUbXlkT2dySlNsYlVYNHd5THhOTkM0eGw5WG50TjJMenJmdzdfZWVxZnktVFZleU82WFhjaFQ5bW9xNndoeng3Y1ltcE9BVEJNelY3LTlGaDZjQU1UbUJGWGpCaGM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Washington Post": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "cc3b324ddc5d"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Hegseth defends Iran war, assails critics",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWGRIQ19MXzAwUlQ0WHlaZ1I4WE5tUXZMTmdrOVQ3Ql9QZVRqOHB2dGNOcUFoOVlIbVBMMmFmS3pXQk1GTlYzV3BhMk5haFBZRXRoNkhNek1lSU0yZVlvUVk0YU1DOHlpeEZaWmFEdGdKaXNrQ2ZIaGI4Tm41ZUg4R1NVd2JYQ1pUdGtBYW5wOC1aaG15dWlFNFFCWXZkYXhCcXlFNnRFdjZFaTJqT3RscTBXTDAyeEszakhvcFBnbTlQeTA?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "88d4dc02ad86"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "This isn't the first midterms tsunami",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSmtvREtsQ3plcnhVRmFLOFQzdkhCM01ZYlRmY0lLVWpwYWN4QUVCY2ktUkpwNGJWQkZDRHgwX2djUHU4M012N2JhWGR0ZEs5OVFraTNlMUFJdWk5d3dfQXJmZ3lRR0wwWHdTcjVmaFduZXNyb0lBbGI4dWptbDE5aGV3NFVoSFV5bWpqQjYwMWQ5TUpoTWF3ZUtuQQ?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "136e30324159"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller new White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOUdhNU1vVzIzTjBRY0VsWlhFdHF2dGJUbUxLOHRSa0owZXdqMXpSaWdfYmhMUFBOand0QzFLWVVHLTh2ZTZTcmNhVmRfSnIyMFNQcDZkaEdDak0xWjZiTHJQcFBYVG1GTi12bXhqX0lyNi1PdmFqREhVSFlmazNUZDc4Mm1aTTdIc0VsZnUwaWQtcldjTEJPRndKTVNyV3FkNHR1YlM1d3p5QQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "CNN": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bc05fb07698c"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Sen. Bill Cassidy on Hegseth and Iran War",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5KNXdoM2xSMTJuZGYtU3dKRW5sbFBDdlE5eTJ1Y3AxaGRfWEY1dGpUWmtPM3kwd1M2cFdnMzhTU1J6MnJHOENjdXN0Sm9KYXRSTUliT2hncXlwQWwxTFREX3lsLV9qcl9Va011ZGp6NHpoSFU5c1VIcnpwOA?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "6c9a9cbcf14f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller in, Susie Wiles out",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkh6ek9FRnNMdWF2U3dFeTVGcmkyOG5VdFpOd1Z3UXktanBYTG56M1NGS1JwWnlNNVpEeDFsODZCZURvWkg2QnBBNXVZUnZCTmRFbHNtM3pMV3NRWlBVc3FjREhrUEZTVE9vYUhQQkhGT1JfMjBETzBxakwyTkJfYlFOWjFFOWFaUnlvRVI1MUh6UmpmVmlYZmE4YWg1LWdsOHdqbVVQM3QwclhGSlVV?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "AP News": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "9280b831c3cf"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "After midterm loss, Trump is left to weigh his next move",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVdCMXZ3Y0NJQ3Y2ZG9YSHp3YW95Q2gtdm9QYTBjZDQzUGNvT2FHaDhuUnMxdXZXdlJrUzVrRW5RVXBzZExUTzhZT2JNSi1VWWVIWUw2RGpPS2pIcm4tUDJrMmRoQUpHVFRiY3p0c1pnazdEdUpDcThSbzV1NFNtbFF1ODhZczMtZkFYVTlwcjJEdw?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "29189b82d8e6"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after GOP’s midterm defeat",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdReU5NTkhUSUdyRGlEeFF3YVVOaW9PMjdJOUtSd2YwdEpzUUM5WmhtRlJ1NFNrekdLZjM3Y0RSeTIwQ0xwQW5xaHJhUnFrSlhHZm1HZmdzcjFlZzcydHVhV3dLQ1U4X21vakg3a01ONi1VREdFc1pJMVB2S3JXVEN4clJyR182NnBBSG9WcWQtQXNpSVQzQw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "BBC": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "11f0aa27049f"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Major construction near Iran bases, satellite images suggest",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MbHJlbXBEbVlHQWJkcmtsYUcwX2ZWWVZLWkNTU1A5Y2h6X0xYSjF5dGpkOWxGSm13dGVsY24weVJHSTBKMy1lbGxUQkJoTXd6ZHM5cWxET1BOWTQ?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "320768f4ed61"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Live updates: 2026 US midterm elections and results",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12UGtQS1M3eEd3N1BXOGR4TDdmeVlabFdQOXFya3NiNlZRTkdteEdCM2JPbHlVYzJzMEhwc1dhOENCUE1TbnFiWExFQWtuX0VqRlZhVFNB?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bfee3aaec8a5"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says Stephen Miller will replace Susie Wiles as chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1MHg1T3M5TnJwblpMNE84SXVkdEs4OFZRY1BmbnhqYTVDeXpPYnNYaTAwdFRnMFRFT2JUUk8ybWJnWHJnWEVDczFyTHlBc2Z0M0JvUDVSS2JFcWN4Nmc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Guardian": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "f78c91b737b8"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Russia agreed to supply Iran with 90 helicopter missile launchers",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxON2ZlQ3hWVDdwTXMtUlc4VlNWZEN4bnVDbndJVHVNbjVva1QtMnVSdGlKckJRV1RlVXdyRnFRenlENFZnTmoyZzE3ZGhBQ2xYcVhZSGgyUmNnZFY2eFFBSkhDWk1JSUIzRmF6eGpxbkRKTkFZOXc0RUloZEhabkxySl9iLWNUWlpaUGR3ZldtcC1zQjk4WFhzTlhwanRvSzBFRWpZMGFVOFU4QQ?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "2c753e6f515c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "as Elon Musk focuses on robotics and AI",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOckp5MHVCMWRzVEZIQlVUZjc5QjVOZEpHNHBPY0VCbGtocXRtMXJXcDJyRTBSYVI5OVJ0eWM2LVFha0FsOGJSVV9PdHNmR252NU5NYTRmQWE0eE5yVHdnaDJXVDVvZDhmdExmMnVUalNTeVpURXIxZ2tpdVd6SXNfamN5djF2Q3JhclJReUFSLXlsWXFIbUhCSGFNM2hONzhxYXRSakxQeFlySGZYYnN1OFFDMDJRS3czVUpqZlRIN0w4S2JxTC1mRU9hZw?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "eb2f423170a7"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Bloomberg.com": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "69f3631bc8ef"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Israel Risks Missing How Quickly US Support Is Evaporating",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlJKcEVCZV9CSFVKMVlkeTN1SFVxYm10cHZxb2JxamZiLTc1LTg2WVBqN3otelFmZFRzSEdsR0s4RGE1T25kUFpjOWNpejdEaHlQMGt4VDFqSmFpSDJXRzY5NHNzZVhRY2pqTFM2ZWVaZFhsd0k1ODM5cURnOWJSbUFKYlo5RzVycjktR2NvMHZldE54V1NPSF9ObGViSFdZdUlKOXhZZVptR3BpTVdkY3dUclg?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "e22e13c2865d"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla to Wind Down Cybertruck Production in Texas Next Year, Elon Musk Says",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRGdvX0pvbXJYRDkwem1xU0pQQVpPaFZlemVSdUFkTFdQMU5iNDVGTDJOLVd6RzNDcmFvaG1ReXhobE5UbmFlTzYxNmt4bjJ2MDlaSEtZa181Q3dnb3BTSl9CdURSWWo2ODRiQzBGa2FnMURLTzV2Q09LRVRKVTUzb1NMV0ZtNk9vYjBGY0NMR2xnWWg0ajlVVjgxQ0xmU1hKdU85Y2JsTTg1UzhBVmpz?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "c12b4fa86e45"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump Taps Stephen Miller to Replace Wiles as Chief of Staff",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYkxNS2lISllGeUdnc3VBdExJUE5BS0tOeTFTM0h4WmxHb1FOS3R0V3JKUkFnNmFXeFJTdDYtb3lkTHhUM2VoZXdpSHlldHUxcG1BMkhYSENTTUtUMmdYeDdxc3RHQjVNeEU5Z0M5VlNCcDAtaFcyWHZkaEtZanVVdGpBeUplcVdYQnZUeldncF9HallmekRkRFFrWFFNcHRSRll2cnFvZ2MybXlxcklFWA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "ABC News - Breaking News, Latest News and Videos": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "51066cade977"
+        ],
+        "evidence": []
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "e414dfd974bd"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says chief of staff Susie Wiles out, Stephen Miller will replace her",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSklWQnMzMXZUdEF1RTVXNTZaaktHSUtvU0lIaXhVUEpPQ0taSzhPUWk4YW96M1dOQXBRUDlrSXYxRENSNnlndzNYWWR5dTFJc3FBN09ubXF1c3c3b2Q3R1hOM3Q3X3NkV09fUC1JSXJkSDJ2a1JyNkp3OVRkRWNkUnUzRGFEcThkRGlUNTRUQklNVDI2ekZJ0gGcAUFVX3lxTE5VVVZkTUVnS2p1VTBkTTJCOW5ieUsweU5xNWNGcDR5cE05MVhJQ1NrSnVveDExbXllWllQOHdCRWJjM1lvNVZMTWd3TFo3ZTEzMmcxTWlVcWZyaEZCem1FTVNuVjBOMG0yUVlWSGpac25YU1l4Q0cyQTRIY2ItTWdFSG44elQwX09xS2JsOWdsVzRfLUZsMHNHV3Ryaw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Yahoo": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "919f146dbc32"
+        ],
+        "evidence": []
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "95fd216f915e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Midterms 2026 results and latest updates",
+            "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOVXRSOTMyejZZY2lrRGdDYWltTGgzUl9vYUI1S2xSN2dOdFVDZFNzN19TODNibWsxN3hmX3NxVzVIR213VEZ1akVyUnZQeFl4V0JOYzRlYzZUOVNITHZtSXQ4a0tPZHM0VGd2bHR1bS1leDhxem5oUkZEM1c5RnhlZG9CMk9TS2FvbWZQS0YwX3ByNDJiUHk3RldKVFhkZ0tuVHNmd0RHcWVHUUNib2VweW9BVFA3cXE0RWdueFlIUHMxQldWa19BbVFaOWxvVkdYNGgzQlFQRnRWYnR4aDFIcDc0bzZ1akd5aWI5dl9LVndqVGEzbVRZS0lXMnJucktFdHE1U09JMGJxLXF0bW81bjVJQjVyOXpRQldlZHcwVERFODhoMzZ3dGctdW9kUQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "PBS": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0c97ca1f1a6d"
+        ],
+        "evidence": []
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "51500126c4f2"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after major Republican midterm losses",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaGhUR1cxdTlHU1pCUXp6amZfMlp1b0w0ckhXdW9kNVlrcWgtek5SV2Y1eHJfSU9NbjZMN1lFWE9wWWtmT2c1NkNQRlZ3amhXRnVvMzJVYTFXOGRBUWcxdklfUkVrbU5Fa0d2blpRcFEwOGo1Mng2cUJ1NHRXeWFIN0hGa3BRVmRMMFJmZGVUak5sN19oRHRXSG9tRFhKc3piRkF5cWFEb3Vld2dtV3k4WFJGbFZFZ212ckxOM2NaRTBKV2tE0gHKAUFVX3lxTE1KdDFFQnNkdnlUNkN1a29aTDlhVXlQNDRrWjRuQkpyZ2kwSDVXWDZlWUtZcHJUNWRjTzVHa3NBTm1mcjJ1NS1tTXd3Vkg2UzhvTm16MVJySklCTkh4V2FHUC1VeXhpTnVfYTBxbVBTb3BtMTdZenowcmxzN1lPVFA4TDFFb0JXZ3NkUENpejA1S1ZUSFZwYVk5d3VhUTJYSW03Y0d0bjY1OHp3REwwRklkMURnTHVCWEN3S0ljdFY0WHJEbm5kaGZvcXc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NDTV": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "95dd1729e821"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Israel Would Not Exist If I Did Not Stop Iran From Having Nuke",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc3QtamhBYkhDcm9CTFVjQXBwMld3WVhPS0Y0NGdmc1hRbEJGUmg4SnN1cm9fVHRqWHNhTldSN3NzQl9JUnhYLXE4blB0V0U1eFM0V3BHWGZsU1dwQ05iSHI3andRai1wYjUzaDhZZHhGamN4elNvS0FnZXBIcDEyR0RCalpablpWV2ZuMkI5SkM5UTBDb3lZZzVDY1o0QnUzVTRrSDk3LUFuNmNYNlHSAbYBQVVfeXFMT256N3JRendhSkdZVU5lRVhlYzkyeWlTaUdxUWMxMUxMSUFsdWxtZUFscXNKbG5Vdmp5VGo2SEg3RkFXSTVKVVZQWEoxR0c0RG5PVU1qaUFLd3Q1UjBJeW5hSzRNcFFKWWdqUFlrV3VpSC1NeWNjV2xGZDhMQmdzdno5Tl9ndVh5RGpIRDEtUXNtZlc2NnBhd2M3RXMwWGtwenlKWUczMnE3X0NfNVh4THFkUlRPSnc?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8c89ab3a5720"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla To 'Wind Down' Cybertruck Production Next Year: Musk",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2tkVHl1aFptQ0JVLXFSVnZncUdUOTkwZUx4b2tfUUdJdG1oeVNoVTFRN1FPSzZVWW1OLTR5b18xbE9ydi1aZ0xxTEF5blBhVmFfUEhYQ1JlQURQbXdTb2lRQ0ZWTDVvRTRheHpIeGhLVGVjWFhPbzRBY056dmFfWl9iMjVOVFpJaTcyYXc1WWdVTF9uZnZFN0k5T3jSAaQBQVVfeXFMUGMzWDZkWWlRR1BhRjF2SkNrelFEb0xZdTFnZjNqOEJzOXpqXzlPTUlDY3BjS0RhNlhPdGZZSHpoQVNlWC1ZdnRtNWhHMUxwbGZyeEtueXJ1RThJemZacUNlMUNwMnF0VjZ0TlJzc1lDN002TXhUVVB5Vkx4TFZBNEowVXpuTGFQWndDZ2ZhdnZiem1qanZUajJ3eTVhUmU5SS1iZW0?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "20f8f72916a2"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "After Midterm Rout, Trump Announces Stephen Miller",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeUlZRlFTakVaa2VYVVJDWWFybVd2UUYwNVFnaDVFWDVDSEZ5VnItczM1WVlRN1pLSHJSM2dMeEhIX3g0Rm1CR2E3U2hnU2toY2RnV3pTNmc0Y3BEdVVSSEIzOWdhZlZHMDM0R2xfamRfX09TVEV3MWR2Y2F4UGl0aGdFbzkzVXlpbHFaejYwZ2hmMVR1aUVMMW85QVBLZWp4LWFwVVZjRGZIQzRfNXFIVHV30gG6AUFVX3lxTFA3TnhPTmxKMC0xZkNSa3ZyNEkyV3A4d2k2VlgyUzZzS1FPN0VkVkMtQnZ2RXI1U2tIY0FWWFJHOF9qd2VKbnlVS09XU2g0NUlIcFd2VmlfUkFydHpKaUtjMDBhRXhZVnIwVHdQTGUyZFZqanhLNktERVJhLUtwaXpOQW5SUlZJV2VkZlBuSkR3Nk9kcG1scGVzb20yNnpsaUZCUGl3VXdiSVJOUXdiemdFa0xHZXVmMy1yQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "WBAL-TV": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "b5aef4a7a09c"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Politico": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cddd6c969d7a"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Some Democrats don't want to wait for January to block Trump's war",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUplVHdkRmVaZDVmNGJaRDh3MTI1QUU3ckJCN25wVXRxOTM1a2FoejJadkpwUnd6THVzUnlLaGlQR0pUXzUtd3ptQnZucFBFUlhOUUw1SHpJWU9ITWFaOUM2MnRYQmZXSWxhMThmMFFRbU5lQ1NNeFI1WnFlSlRRakxUZ1k1Rm1YaUZvX3pKbDE5UQ?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "b78bdefcb1d3"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "The midterms blew open the 2028 map. Republicans are panicking.",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWENKQXBtR21iZi1tM0dMWEhZRlV1M0huSm1XUHBvcDlIRGVHN1lWclROdXl4ZnUwZldfNm1EYVQ3eXlHYzlGNWszR2lLaHlPczFWSTRwN0EyNEFXMUZKcjJ6ZnRMQ0d2UlpnamUyR25GNExlS0h3TmZSbXExVDF5VUR6blB0Q0t1eG5PcHNieGdWem5sRlA4TFFIQXIxX2U2ZjZ0NUZSQmM3RVVxUlB2eVllT0U?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "4b14a64fb710"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller will replace Susie Wiles as White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOM1BHOEpVT0E0bUtPTTF5aGVQWlZKckhPR1FRbktnUzlNdF9UZFQ0cGJ5ZGUzMWJrTUVJc1FVSWNIYzB0MjU0UlBNb3daQkszNThSVThaT2hoOFNLNjdTSVJOWExTT3JERmxTNXNSNGEzY1RfaXZ6MHFCb3pMVEx1bDNmZ1dHNExVSWFlU1BvVDZLQlN0MEU1dzBsUkNEdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Reuters": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "d37cbb1e225d"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Iran sent nuclear proposal to the US via Qatar",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSlJZVlphdWhPcDNGc1E5eDVNdDdMQkJNTXVDS0RYSVRqaC1tblFqQy1FekRQdldnV0FsMU5RdnVHNEI3UEZWMC1MY1l5cnRtcjBlcDlpUXdvX0hXbV91S1UxajV1TEx1VmJ2SzNLNElXSjc3YkdmYWw4VGNXZEl5NXR4RFNjRXBxeEZMLWpBT1Z5X2JRc3NEdkdMZDljQ0dkZXZRbzc3U1NmNkhnaFN5QzNhVmRzSmhsM0Q5VzU3Mm11OWZBa3M1V1lvaw?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "074b58210cca"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "cracked windows, long delays and 11 recalls",
+            "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVlZoWnUxVlNKWGwzMk1oMUUyeEFfdFh4ek1IZWQ0d3R1SFRCUTZPNnhaMDVILTU3VkNrcWxDNWlXNkdNVEZXYW8wY1JDZTBHTEJYWW1VMElFX1gzdDVCUXpJUm9wVUF0UmNlWXJTNV9mNmpjejJMN2JfOE55WkowQ2Q3aDVlNUlmQ0FzT1Iwal83VWVSaTZMNm92ZEVJM3J5ZTF5VEszR1ZCWndXMEk0V3J2WDYydElnUzRaZnVSR3c1TWE2TkZjUExLNDg?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b4e990c8f138"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US midterm results in maps and charts",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9mYlFQMWJNR3dHZEQ1QVZ5TEo4QnRWOHYwTE9UMGh2X2x4TV8xTk1VbWNJSWZzdkdjclZFdjBNZmE5UFhhQnU4dGh0eXloOVhCeTBkekRwQUUyTzVZNV96Uml0ZXZDbHB1RHExMkphQUtLRnl3cWNMYmwyYVE?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "504f6e5f2f5b"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Trump promotes Stephen Miller to post of chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRW9VOFJHVC05elRKeHJYaUVfalhSNTJYS0dhNkJobGVIaGU1ZVlLaUNlakI2SURhTHNqc2c2ODFYcWpVaE5uUXpoNEI1d1h3MjFxbTlqNHQwVVJmNEFyUl9uRWktTWdRMGs1Z05GUXRxU2FwVC0wV19JSExCbi1DM1pPNHZVUzFZcVB3ak93TWM4MUk?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Axios": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0de3f503731f"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "CNBC": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "f2c353f3f3f9"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Oil prices set for sharp weekly fall after midterm elections",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zQW9uWnVUd0hLODVnWG1oa29OUEJuQlFjLXNlMjhyZDdrNGl5T1MxRTJDQXJ0TUJNbXh4MDhaYk1DeUM2bHh1b3RsNWZ3Sm1zT05udHZJQ3JzWS16RXd3NjR0Qmt5UWtPQnRMbE5MWdIBdEFVX3lxTE9DMzBrTllWWDUtQmdHLV9fR0hwU21fcllTNWZ2bnZTRDlTNUthbmRnWk83V1NMYVZ3eTZZSl8tZnh5NGNGanN5VEtfYVIza0huQnR3S3NVRTl5bkpzaGF0R0d1LXdCcURLVlJYWHRwS2ljS2Uz?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "dc4af917ca9d"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "National data center moratorium now",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG85QmJuZGVEWUIxSW4ybHJPVmN2RmR2VjBTdnkydmZSOGV6YllsWEUtbVpYclRTSWhQS09EZGxJSllyY0otS1QtQVdVY3BhY0ZqMWxfR25WeWo3Q3d5LUg5dVZrUGRneGh2LTRBQjY3SERxNTdLaXNkaU9VaHVPb0lKQW10WmvSAYwBQVVfeXFMTWdsc2pjdEpUS1NXdWRzcld3SFp2eVBhWkU2NWNOTXRsUS1WbTNRVlg3S0ZRalhiYnR5WTNKQUxiR1JXNkI3b3ItbnBsZkdoZE9lbWJkVFB1eTFwMFluVFNobUtfLU1sTUJPSlRVSU1IUnRhYXFPVzNEc0NRempsZGM3MTFTVFZSUGUzS0Y?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b65e2379b721"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamU2dzlBUmJZRE0tcWQzZmFkYjBCVzBTRDdaQ3djMG9HMHlCVTlHTWxvYndYaURTUjI3R3pJRTBUZGZxd3Y0c2Nfbm1UQ1d5M1hfUTNyb0tidHpSRDFxeWpocDdPSVZCOGVqd0laLUozR05nVmlqSDVCaFkzVl9iYzJwZjE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Houston Chronicle": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8ef1f30b5f88"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Ted Cruz slams Trump's tariffs and says Iran war needs to end",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQd2F5bE9YaU8ySnpNaUhMOXhIaU54VDJjZVdxYXFPSVI4SVliZTdxZzFETkJGN2piTHFqUnFnSHRIM3dDWjBXZTVQdy1WZ3BLcXZOOG5NQkZ0dk1tdE85LThSWTE4VXlGZFFGTG1QU2lCQzR2Y2dWakdMTTNHYTJFdXM3RThyN3B6TFdvQVdoUlBzb3dmOVUzS3FyUjJCUjZNbV8xQlhsYWdXamJhUEw0Qk9iWWFTR2N6OXc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Fortune": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "ab28f985cb93"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "The Iran war has cost U.S. households nearly $2,000 each",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3TzduR05LZ0lhYThLeDdnTXVsc3VmLUFmS3VzVEtiaTI0NEtwRDRZUmJ0WFV0dkRBelhoZTY3YWo4SU5ZMFc1NEZvWjczS2lIb1k1Z2I1czcyanpPWVpWZm0ydThDdVl5Sjk1LWU5ZG82cmc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NewsNation": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "db872e91f714"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "'No idea' what Hegseth's strategy for Iran is",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQ21lYXVpLXYydTZPeVhtNGJuYWNoOVlKMVpHUEh1bndPc01UWm9zVndsMFlVbEFuS183bFdWX3NMT2taUzFvWTRIYVJjNEtpUnpNb0djRnM4RmlVQkJzUEZCd0xfMVJOcTQ5bmt4amVDU1l3NW5VaTEzZWRNMUpQcGlweDc2R1Na0gGOAUFVX3lxTFBtbGZzZkhpVzAwdDZmWVBkZzU3Q2R3RExKUDdYd0NOWEdfUUZXQzMxZDNJRXFScHdLUHNocVJkbmJwZlF1d09iNXFvUmVKZUlyR0RYeHI1UnlqeUFnVExTQ2NHcDJUX2tCNzJBYm5IMGFfb0VfSDRZaFhqbFpKUG14N0FpN3VuVWk4YklRaGc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Euronews.com": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "f0f89605844f"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Iran official delivers secret Khamenei message to Putin in Moscow trip",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdF91MGxfbnJjQVFiTVZhV01vQVdsSmxuR2RyM0lyQ2Q3Skl2bUdBRVNqNy1udG1UNWRBSlN4NmJXWklCN1JrWlo0bDZGZXdtX3JhRGlPTDAwMW12Vm9EV2hJWkp4QjlyTlVFM2ppWE5DQ0J0VDF1ZU1CQmdSNW11UzJ5b00wbmFpVHgwd0JvSjQwLWFsd3FEZFBFQXdIV25ySnFlbUduVG1JOGRNOUszelQtV0JpRU8y?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "2bfba3679ea0"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Elon Musk's Tesla to 'wind down' Cybertruck production next year",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUDdsS0duRGhld0xCUTc1UEMxbHViZlhjT25fZFJBemg1TWxDNFRtMllKZnYwLXhKbUlRUGpsV2x5Y0ZFR3dwU0JpaThCQlc4TFlFYThoMVVtOV9SMFMtU0VxWk5nOWVZWTl6Mm5Nbm9ZUngyd1RzNE5xRGhKM2NsV0Y2WlhaSUtrYkxBcTZYeXhKY0h5RXFNbXdwd1BpZw?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "f41c001bad39"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "2026 US midterm elections: Real-time results in maps and charts",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSDdDOV9mYVNKSjVxczdfSWU5bUtsNVFnMndDUTlwLXhmUzZ6NXBlRnkzTF9xTG81N1ptcnpiVERGeVhSb0MzUWFCamhDbnlURTEtcC0tTTVqT2FkeVdyaTVUTGR4eDNlby1XenpDclJEVjdyYXc5d3JhNlQybGE0am5fQkwzRDk2aVJOUzV5aHhVMG9vQ0h4aEtDdFFNNDhxLXFV?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Military.com": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "eb33b39f0a9c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "US and Iran Edge Closer to Deal With Nuclear Issue Back in Play",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZ1RMdEx1WDlFRTJ5VGYtZFlIR2ZwSDM3d1hqa3Y4bmpjaUQxLTQxdkJFRTdXT3hVNmQwYjhZUHowYms5ZExYU2pfRWhUZG02ZDk1YWlDaVJSZXk2Wk5HZEtEZUVxRlg1LXFzNVdkQ1Y3c0FyR3JxMm9RMGw5ZmRDT1IzbWljTFRJbDFjMnNxNHFjZw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "IranWire": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "a569506dd324"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Oil Prices Drop Sharply Amid Reports of Potential Iran–U.S. Peace Talks",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTDR1blQzX2o2ejlGUk1mc3htT3BrODY1VU5DdzhEczVlNDItYWl1Z0FvakRGQTdnam8wNkVuMFl0QmE0dWI4NE16emY4VUZnVjJrTmdLX1BNODJwN3VfY2Q5NGp0YjdNWV9CMDVLQ3A5ai1QRGExYXMtQ2VobkxKRUVKYVhKQkptT2E4dlc4NWRJcWdlSnMwSTR4Y3U4NnJWVjZ1M2pmQnVMcHBQV3F0WDFB?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Jerusalem Post": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "182c214c2846"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Iran largely destroyed, US ready to 'finish the job'",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iYUtoVXhSZ0cxZmM3Z2xzRjF2WjlmVE1oNUNDeTQxNk12UmprWUItS0VYRDRPc2Nmdzh4ZjR3N2M3cmQ4UUkyRkwySUFzRDU2U3NKcWxCUnltOGNmYTJJc2xlUWVZUVhWLUE?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "02e48b83affb"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Donald Trump to promote Stephen Miller to admin. chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ycUpmcjA0LVYxajdVN2YwaEJJUGpuaGl4aDFoVFlTWVBwYjZmNjZjV2N5SmpaekJSOGVNdk9IcmdWRHBHZWVLaWlOWmRRdGhqQTRnTm9JN054TDN2WGNj?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Haaretz": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "c927b82ccaa0"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Trump Weighs Options for Resuming War With Iran",
+            "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQY3ZzTnIydHp3SHBINm90cXZfeS1tNUxGblk3eW5KaTFJcGVtQ012a2xiSXN0aTRielROemVJUnJaWmRyLVJXeGdPNl9qZ01qWU9DZjlLSnc3ekFsUGZUcmVISUEzeTlucFVJNkF2enZlVzZQNjVGV0d0UGw0RHhpVzVHU2x2Yjk4eVp0QVdzRXJTTGFnS1lyTzE1OE1MRmNXckItbWhuQXBqRkRvLUQyU0FqUi14M0ItRWhpU0RqRG1ucVg2eXY3N3l1REt5UU11VUo5dEQ5RVZkLXFiakdtX1VPbVVWeG9OT3oxalVORmNxc2ZhcWdVZUhjQ3k1UWU4M0syRm5YVk5KbG5wa0E?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "ABC7 New York": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "eed90862054c"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "midterm results show US voters have rejected Trump's war",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONFN3Zm5LTWh5bWNZcnc2TVBNX21IVEVJUjVwbHpOZkRHbVVaYjF3V2JIZE9RaXhWNUxvX2VZeUVLNTZDQ19ieGtDY0U0VDY2M1gtZC04NTNWWXFwT3hoTllpZFhPYWZXSFB0SWlNcWY1VGZUaGpURG9SS3NDQ1JZWVJSM3lMaU9SangyZmtuTFdpT21XeE5vejJJQklTVXUtLW11QlZVZUUwVFdvZnpQLWF3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Media Line": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "2b1508f1ad51"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "'No Good Options' for Iran War After President Trump's Midterm Defeat",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZkJJSlAtaXIwMTlkMXV2V1BXUGo0Z20yYXBwTUpRNm5BMGtiUFNSVUFBc0laamVJVTAwamtXSVJPMWkxcjRaOXdkeVFrSG1DQkhKU08wSXY1S1hKdXR6VHM3SHpOZ0FMNHJ3d2sxSXVwbFBMU1FyVnkzVm1SWmZJSHhqMlZXYWhyY3FsclUwc09MckhHSDJiRGlFR28zWGs0T1dBR0Utdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "ASHARQ AL-AWSAT English": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "5afd1c29f6be"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "U.S. Virtual Embassy Iran (.gov)": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "94ffce2eb4ea"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "U.S. Sanctions Fraudulent Ship Registries and Aviation Support",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObFpUZ0ViclJKYXBsNnR0eHpTZXRmQVpkYWhNSFdTdEtWcEQySWVKcVJ3RW8zNVd5NlEzT3RTQklDN3BGZWNIaVRjTFJmQ2JlYkZDbndGb3FESjdCX192WUlvZDdUTGJSSThudFc5MlpFM2QwOXR0T0VpREhUWEpNcHljZWtJRjJ2Qmtvanl0aV9KUy1OblNoZEhvYVhXSmxFR05XdTFtWU03UQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Time Magazine": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "a22f2ba48406"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "What the Midterms Mean for the Iran War",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWkREOUhTeDl2aS13a0xVaEtmREpaS1d2bTJYWW9zalNqZUxOVmhFSlY5RVB2RVZtMTFPVmswRENsQzk3Q3d6ek1aRkFxVTh2OEVIVmF2cURXTEgyMmhnTUJwUGlCbjN0bG10c3htQXpCM0VmWEE2TDlXX0lrS0FJZHh2aV9wcEY4ZUhuMnZCNWFFSE1oNVBvZQ?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8a13ce99c8c6"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller to Be Trump's New Chief of Staff, Replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVBFUnEyOC1IT3psamR6c0xjLTZ0T1N3OXlIbmN1MjR2U0J2dlNVUnNZdzFxTUJuVEpkN0FfakpQUXoxeFVnRGpvckkwU2k5QVNZTnBLRzRmaHdzbl94bTh5eGkzZnY4WXVJaDgzeEJWbkp5ZDNqeXllNUVxaFhDUkhtYmNQOWI3RUtHT044Rl9GeTk1OHRlMWdMRkoyaWU5MXlMRkVmdko5OFk0VHR3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Aviation International News": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "2592c79dd77c"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Iran News Update": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "38acb399659d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Legis1": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "ab9bd1007703"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "The Telegraph": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "054d941ef686"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Russia in talks to supply advanced missiles to Iran",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdDJmNUdxaWQ1dzhIQjE0bXJMbVBmRDJDTk5tV2ZucGl6cWhWb09YMDlhLUxhYV9XQndzWGNma3lxd081X2FDOGNNQjBFVWRWUnIydVFibVR6M1dSRGtQbExOdkpXa21EMG1xQ1RPZkRuWU12VHBONEVobG5uSTZad0pSMnhDZExiNTd3b3YzOUZtUllfZks0elhBRkpVMFZfckRpZA?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "04c78980c57a"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Elon Musk to kill off Tesla's Cybertruck",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU1BNVC1FLXZZdS04ZkYwaU1aS3UzMmhkMl93YTJrWE9HMjNEcm9LUUVCRkVJNVlIQ1JIbzltNDQ3X0R6bWtyWjJtYXA1NlJTdFR5TWpGSWZFek1GM0tXOEZuMjE3VXBCSmVmY0otbXhVYUJhMFNGZUVQSml1OXFTU0I1b2xxWkR1ZXBPQUJLNXVGUQ?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "6d2236bbdeb3"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Vance ready to take Trump's crown after midterms humbling",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWmRGaU1id1VzeE9qYUNmWVprT3U1Y18tRTFzX3o4NG9NT2FGa1lhTEo0Z0ttOGtBSWp6YWF5MXF5SzlLNXNicFlGbzJzcnFxQlZpN3FvN1J5dmloSEVlSE55NGRIVVhuT3BWOVFYWnZHMUhUUUg2MDFfY3Y2dU94MnAwWEVZaTFXU1ExNWxJbzJtOVZSMzh2UjlDQy1MbjlfTEdiSVVSZi13R3Bw?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7766136a6336"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Financial Times": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "0b8bf64bc7c6"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Iran-linked ships hover over subsea cables after threats",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNE9LVVlCM25qOUVDTUFLN0xhREg0LW9WcnB2RTllX21CMTVUTmV4OE5NMEJ0bktnamJ3c1lMR3RwWm45S3J4NU80aTIwallzc005ZF9jcTB1UlRXa19ZVEhxUlVvc001Vm9aUUo3V1dqWWJETHphYzg4c3RJdVFxak91REs?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "8e02401491b1"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Musk shifts focus to robotics and AI",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVlVaZU1LeDhwOFdtY2ltb2ZHRV9mSHdENXZDYm83Nl92dUF2UWpJSU5TbWVzV2RvNXVBNGV4bkVIYmpMNE1LclE4ampWYXRnWkpuUVhrdS1VVE5tcFptakxSYzNGMWpqTkY0Z3BzVFk1WldlenFVcWJhU09WcWlwTUQ0MFY?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0a6c4e5255dc"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Live US midterm elections results tracker 2026",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRG5qZnpaSFIxMGs4a3pKbXFtZzRxSW9VYWNxd0FkdXZNN2E0R0ZsODZfZ2JxRHhaM2RhU3hHaUJFSnFoa2pGMGtjY0tIczc3Tk14Umx1MjB5MVNxVjR4dXprTlJ1SmRBQ25hcS1vUWduWWxZNXk3Nm1BMVBDSHZHcVEzdEE?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b92caa949fd4"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump to replace Susie Wiles with Stephen Miller as chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTZ4MHlwT2psR3d6M080amlJb0lWZVJScE5Jd2kxbWVldUlQLWhYSV9TTDg0TGRXTWY3czlDU3p4bVUySG5XY19VSXBXVnlmNC1QMlR5MkVzV1VIRGJkckNBbXZtS1ZSQjhpaEZJN2lnU01TT3g2WkphOTdEeWlheTNtczc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Crude Oil Prices Today | OilPrice.com": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "aaf71cdc3c34"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Oil Traders Are Already Pricing In Peace",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWjM5UnZ3RUNOMTM0U0EtQmhaZXBFTW5qbnpyRzRodmJQc0RXTkxOdVdBY3htOVNRXzZTLV9MbTBpcEhGWWZ0cldTV015MFdPZG1GbTBGbVBkT29KZ08wZzVoVDlkOFNzNDczY1VaendWMmdNR1YwUjFPVVY1TXBXRXM1VG8xVVI3QkhCVUJFTGk2SW05VTQ1dDY0UHNHS25FdFFaNUF0bVE5aklGbk9EdjI1TXRsZ9IBuwFBVV95cUxNdDg4QThZb250RGVGYjFIeUpNVXlRWnRiMjFzeDYxS2lOcVFVdE1QV0UzQW1fNy1kYnBkR0d6R3ViUGp6ZE91S2sxR1J3cDBpVnM3LVowQTloQkV6cW5PRTQxZWVlblZxWm4xODlSckRkU2cxSGhZQmdZQVlpTVpldFZqX3VFU3duSWRwRlIxS1lPQm96eVVOSUkwYmxWay1tSEZKaEk4NXdUSVJzLWIwYjhpSUxKSXdpcGFn?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "438df7afd06a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump's Iran Strategy Reaches a Critical Crossroads After Midterm Defeat",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnAyQW15dlZZNUt5Skg2Umt3WkE0NUlabEtJZFVDdTFvNTJnUHBZejlYanBvVHQzSFNTQmdlOE1NNzh3Nl95RlVmeDdaX2MycjVIYkkwR0FPZ1lXbi1vcFgwRUFEd1RpQ3VoZFVWSmREcXktbnFLY3FXZTk2LVF2b1pUOE5XRGczWUhhek1YNml4WUZ6NDNrc2pVX3lydFpBSlJrbUNxOWNxR2xUb0s0YUl4LWJuRXk4ZFdZTUJ30gHDAUFVX3lxTE52MjNZZkM5UnR6cDMxWWMyMTZ5dnU3d2gyak1EUW5HZWZMUUJzVGthaVNKREJtbmtMN2ZtbmE4WWNOcXhBSVpzVC10aWhxSDBFakh4VUVRb2VTYnFYb2w2UmpMNUZQbjFnNTZFTUtSVi1EZzdsd3lSMGhtZ0g2by1VZ1R5RDl0VW0tSUw1QkJ2bUxmNURuRnZUMjFtZDAxcVk4X3lQSkJ4bWxWY3ZlSy1sV3dnaGxpWk52UVY1VnFYVWFYdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Iran International": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "90fa041f8780"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "debate in Tehran over US deal",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PdkIwNWZUdDBnWGg5MHdHejdQeWxCc1RUNGxLVW82TmNqbWxTTW9rZWlpSW5PTnk5bEpoRjlrSk9jdDdTbk1zTXBlU2xEUVBfbkE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Ynetnews": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "1461913acfe5"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "US and Iran near possible nuclear breakthrough",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GUlR2UnVWcm9HZ3MyU3F6cUphdi1DaURCdzduQXVSVmViemhEZkFVc253aEJ0TTh0SkNQdElaaS1langydEVTSldpdlQyVndJTldfWjJB?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The New York Times": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "756ec9315b32"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "U.S. and Israel Draw Up Plans for Renewed Strikes on Iran",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaFNybFlkMEkyWkpGZUhTNHUyd2V2Y0JGQkNUNzdJVFhaNlpMWU1FQXh6NG9PWWU0ZlBSdDBCUXUwcEc0c1lJaXRFMzdNajVFdjN5Mm43Y2dBdmNST2lYY1JsWjA5dlVzZkZFcGVaY1RlUEMwS3pOblF0RlVzRGtlYm40TWh2NEp3UGc?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "c692454a74f9"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Refocusing on the Cybercab",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT3BET3ZQajVOVnRXaEdyMTZydUZQYTNWN2Z5TG5GczZ2SzdPYkRTcDFPWURnN3RfM21KZGNlMl9odXVBNlVGamxianpvTGZXa25jZ05uc3M0bTR3VkJBbFp0c1ZQUEY5b2l2MHFFV3hsSXRkb3dNQ1Q3WEEyMVRadnBR?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Times": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "17ff943d15e9"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Iranians prepare for fire, fury and nuclear fallout at Pickaxe Mountain",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYkJCT213ZXR2dmpvamhLYzZSVElIMEFhWHVzUG9GMXlzTTBrc2hOai0xUkZqUU9GbnRnSktqUWMxY3M4RXJjSDA4N0ZiMDduOU1RbG1paElXbWZmQkVEcHFXUVZYY21hVWpvM2dnWXdZbGtWRVhmQ3RMNzFLMGJneURIcmFsNWxqWl9DWnpleXpuSjF4RVJ1ZmpxM1o3djFMT0VDeldLTEhBbzNEbjYwZWpn?oc=5"
+          }
+        ]
+      },
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "08ff0c82c7fa"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Elon Musk plans to wind down production of Tesla Cybertruck",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNb2JUekQ5bHJqM0pkRXlDTVVWUUo5aGloS0R4UUx4c29lblptMlpMeGtHN3JxU20wWGQyYXhuREdMX0hBV1R1aHRya2ZxaUJEYWVjczQyd0c2YnczR0dmY2o2Z21ZRE9sV25UNjVDdHdvdlI2NDB0WXRYUmdIbnZRQU1BTU4wazVkYTZuLTVickNGQktrcnVEb1VOcw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "GOV.UK": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7dfcfa74053a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "www.inss.org.il": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "b7896c1c8f9a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "XTB.com": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "ec89d527e203"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "OIL loses after reaching $100",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVRldGZuWjdEVk12Qi1SRURvY2N5Vkx5aXB0dW92MWE1QkliRmpBQXVLbUJWZXVUWms4X0REWm4wMVcyMFhNX181VjJkNTY2NXZoZmM2Sl9pc3pqWEVHcnFDdnkweGlSMUFlTVJ4YVYtdzRmYnNVUktkOUZqZG9oTXRZeHhLSEduaGs3Vml3TEl0UUtJUy1FWVNvYkpfYmZndDVCNnlXRXBwOHc5bWgtc0xUUURQb09YVkJnM2dldUZzTHphZ0RySkQ3NENJRVNKc2c?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Anadolu Ajansı": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "20f60d58a3af"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Iraq proposes regional diplomatic mission to Iran, US as Tehran outlines plan to resume talks",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQaXdhMDI2dHl5UW84T2tiaU84NXBNc19Nc3h3MUNtcjdzaVNIVTE2TUhnWUV4WW1fejFJNmRYdEI0SlpqcHpMZExCQlZxMGRZLWZQRXg1Rzl3RExYckdVSXg4b1lMUjJjSXp0Vmk4Ni1ZMmRLQkU3T0ZyMmFGbnpjcV9LMVJ5cFBnRXRhQnBfdWc2NGJsZTZib1dxUmhDcWtXbXN2cklHUW4xME1rN3JUUEVqaVBIQU1YU2dIVmVmdXk0MmxYV2U1R2g3LS1TUzhBZW1F?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Arab News": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "4be2315361d0"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Iran demands practical US steps before diplomacy",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUEQ4cnNXX2FyaVA5RTBYWWI5OUZxbzVCOFBGRGxhOFVial9XS1Vnc056emZSV0EtY0RiS1p3cENfR1NXd3BZQ0F0WENTRHhrdElmYWdKNDlpRWhlOGFnTjZuSDJ6VGJwMjVHa0hFUjNJaHNkaXpmbzZ3OXJNcEhvZ205dW9CcUdVMWh3MWxoY25UVmtnZWFZRDc4YTZvR3pXdDdSRklVdk8wLTNTY01CVzE4dnZrWHFaTGtnd0dhem8?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "News On AIR": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "af2eb865abdc"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Iran gives nuke proposal to US with seven demands",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMmJJd2ZlbUtPS3htTUFfQWRPczIyNzhKV1dkMWo0YmVvdG90Z1psVlJSMDROU3o4ODhjN3g2Yjl5S2YweHY5NmNGdE9YTDlCTDJyUTNGRi1nVTFFRnZMM2NKRnBsSmRJajM0VHpuYy1MUnNsZ080NW1kbmNHaVljZQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Telegraph India": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "bb0e8853c116"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "No 'paper commitments': Iran seeks concrete US action before talks",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTFIc3RxZEVDcFdtZDk4QW9WWXBVc1loc2lxT1dzV1hwTC1xQlRHaHBQNmhTSUtSU255TmkzX3BJdGJTbkFscDgzdUJ4SC1nYVZVOWl2UVJpWm05czhTQjF1TVNrUEdLcUNKX1YwNVZmNUtBaV9feGdXODF3NnRRN21UQnRRUGUzOGMwQWxubEVGTDBJcTAwUjZENmEzdHR0YnBaWkh2N01BODFlMlRDSTFB0gG3AUFVX3lxTE5wbWEwTTM5Q2toTC10MldOWmhhWGRzT1FTczVSTVdiTThEanNsRURRNkowNlNpUU5lZTYzNjJXcGRUVzEzTFducGdQcFhacVk5ZWZUSWpXNFJpeUJodVRoak13cHlpOUVhSVJxNTdobkdtcktfNTB0OVIyUzVYcmJTUm9IcUc0ZmFOZzlQNXVnUlV6WjM5LTFEenlOdWdhcS1heFBnUzBfMHc4SVk5eXpaVXZ6UUdjMA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "ANI News": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "14b4cfda8d9c"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Indian shipping vessels free to navigate Strait of Hormuz says Iranian government",
+            "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPT1FXNEVjWVgtbk9nQk9MWW04QXl4OXg4YVhqMVk5ei13aHFmV1JNVkVyakg4N2VqY1dYUFhfZGNELVQxMl9OVnljVWZab3dTSHZzUEZMYjI0bDY3cE4xeEdOb3RJWEN3Ymd6QUxZcW1PZUNycEZmblVEQUNnMkJRbFVKcm45SXFzX2xfajVNTDJmXzliNFlPdzBMTWFnXzhtVTFiY0FidThjTVpZYzl1V1AxMFR0LVJMaXBYdlNrRFhDdWJsdmpmZmdlZlBpNEJhemZyZUh1MmU?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "AFR": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "1ed52be3a3d7"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "War on the weekend? Strategist's startling Iran warning",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVHNUeTZxVGZQU3dJcjFiLWNHdzB0RDluQldNOGFibmFNSTNWQ21sLWFfR25kUWgwQlI3djlDR2VhVDF4cHZQdlg2WGdvYmhTaVZwOGNicjJsd2VUdXo1REdyLXVrLWlKSkJGbmFVc0RtS0lQRDlVMVFUTkJTd0pmWXVoR0hVOER4d0FzdU52MjMwSmd0Q0lfZmk0dXBpYzd2U3FEVQ?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "28eeafbe086e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "2026 Trump blowout",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZmRGb28yWXVvX01xLV90YzRBdUQtNC1NTkROX2gxY0hxQTkzY1UtbUd3Sjh1RVFxemlYLVVpNU9kM3JEV19pMk02Y1lCU25GVldXdUNiTy04NFA1VEVoUE84WkRDZnFlSGFKbkNvTkVmZUFqUXZhVW10cjVZanVkM1BjRzlFLTg0QWxoa2h2RE9QbkN1a0ZVVE9JdzBOdHNPdWRKcjJ5UHBKWjhRckV6LVBJUlNnbkE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Center for American Progress": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "697e6cbec212"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "5 Steps That Congress Should Take To End the War in Iran",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTHBpUDNNWDBiRmxnLWtBcWdvc2JxUS10aEtJR2VENkM2b1FUYXpwOVR6YUk4Y0wzNnhMMTJvRXp1a1VZYnFVLTM2XzhXT1BMelEwWUwwOFB6VTV6Z2ZKUDl0aFBwSDVLb0J5NlN0a2tkY21HZGQ0aWVvM0ktYVo4WnN0eFh5RzlGd2dnd1VmcGNvaGJib25WbkNPY295X2M?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Radio Free Europe/Radio Liberty": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "4be58c6797be"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "NBC News": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "764a22d05ea6"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after years of poor sales in few markets",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSG1oeC1rMEhSa295Y2lsOEx4bVJITmY3UEJRcWpBRE5SNHMxWWtyN0thOVZxdmI4QzNWYlJhenlOYVJQRVppb1IxR2lEbmxQNlhFOXNNTFVidjdCNEx5Rl9xTmZTUlVydDJSa1ZUVFNMdjU4Uk8wbWlOWUxhYlE2SEZEdUYzUGZTbzZFUngzMjVzaXlhN21DSFgxOHpnd3FwY2J1Smx2Ymdfb0k?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "24b09d3ac732"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "U.S. Senate Election 2026 Live Results: Democrats Win Majority",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HT01FMldrNmE3Z1pmR3lRYmxaMVhxNDN1MF9maXpIV1hiU2xLWnpuWURkeEFhXzVEMmdjR3dreFgyeWZxZDYxTVVxSWh4cUFGMkc4N3Bja2RzQm1KS2x3clhsR0I2WVR4WXVOTUNtRQ?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "2d08a43f76a3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller his new chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVWlUZUk0N2lPSzFqNnlCZUYzQVhVWEJueXk5a29yaDhkVXp6R0xsX2xJamFhTjhyNEprTkdLQjNDeE5XVFRzMG1wTTkzOGtiNmhTVEZFTzZzTy1NcU4tQ0dqSG4xc1FiU3pLMDd5QndNM1pYejcxZ00ycUVwbVBLOEloSWdNdjI1MDNra2VEdTA0WU9keHpEOUNfMFpUMm8xa1B2ajBCM0VpYlFrYy1KZWotbXY0bXM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "KOCO": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "ff8eddf2dbdc"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "with its allure escaping most potential buyers",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeE9LM25FbWRuLTVhTWNSck5uQktGSkdEdzVQQXMtbVl1UmlxNmJTSWFnSndLOWtmbXdMTXZ0LU5mZk9JQmNsdHBQa3BLNWU5MVB3NWluUVQ0NTBYcUNlWmxfTjdVWE5EbUE3X1FFQmMxc0ZtUkY1Ym96emFyM3MwWVpR?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "c28905f82d91"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller new White House chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMDJJU1NlOEctTGtScGM0UjlhSXQ1UTlSZGUwT0pJVFpXTkxqOVlYdm5TQWhVSkJtZHFBeHQyTnkyU1ZpaFhuNUxUWWRXeV9iUU9QR1FZV0lscUNwdmd1d3BYNUJ0SmFVQ3ZxMEZCaW5kWGczd2Qzd1NFWEd1RlFlN1JUSmhaWUVnYnZzYUhfdGRZZS1tOWhxNFA5V1lyQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "DW.com": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "83116d8d494d"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "flop Cybertruck",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWHpBd3NESjR2NVMwTUVURFo3UDhrNHB1UC16bFRiZ1N2VGpYWmpvVi1JVVdDNE5wXzdyLUdlLW5ZSDE5LXhMR0lISkFCVGs3MzRJbmxmalRsdGwyZ3VBOUNJMFR1R25qWFZwNlRNdnNkVXAtZlBCcHhHVjdBdmdnZVhRTURscDNJ0gGIAUFVX3lxTE55d0VzUUdXX3JXeGhsOE1nYXlQRVBqWmJHejdJWUhtX3hObEJuWmV3dU9nUGg0WWxTSzdHN2p1aVlPbUxTeUtMV1FuOG0wR0pQa2NHX2ZkT2I0OGE2UEVwUENqU0JZTC1MZGhSSXV6THliSjVDcFpyUGlJdFF6ZWJHUHRnZm1aeHM?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cf5ffec731c3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller as White House Chief of Staff",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ3JxNTI0QVkwclI4Z3ZwaUNGZkxRY28zZlZlWWlTMmQwNXRvakg0TkcxdVRkRmJTb29Fa1dKYUUwSW04Z29naVh0MlNqR1lWdmd2N3BFblhQTFRBcWVRa0lQUG5HTmFqWmJMemQzXzNaWXZWMUk5Q21JMVVXNTh5OC0yLXZmU3VoWjU3M2JXUTBWaGQ4R095T3hQeWZVMDB4YU9iZUtxcEE2ZnlGX3fSAa4BQVVfeXFMTUxHNmQ0UVB5OHpYSFVJQ3NrNEM2OUprZjNUeDk3cUpidGtqTElFRTNoOHNaOFZoMnRTTHBzU2FNTEtrM2tfMFVqbjl4cGZCRXI1aWNpVHBTNjR4VkNIWXV6Y1E0aFVXRV9hVi03UTdmNXlGN3lnQmo4THl6QWZ5Ui1KUTZHZldvazRwdGxqd1RnRFZvc0dkcXlpZWJQWGRXRnY5UGdFMllXMktmb1J3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Seattle Times": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "7220ebf7e274"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "with allure escaping most potential buyers",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaEp3bkI4Rlp0Zm5CVGVEVjRGblV6ekRLcUNFR0YwckhIWVFOZXd5RUJHQVRqaDBhYjJfSE9na1JyUTZLMTFzWVVKbkNfNzhnTnE1U1pmUVJlYXRKeUctalo0WjVzYVF0b1diN2l6TkF2bXJLS2dTQktTb29CR3lFRkhCWERGV1RQRmQ2cTJfRkV4TGUybk54TVd6U0NOMHEtTWdfZXRqbXlUdXFwWW1XeXotNTZHODlrTjRGalJadldvMmxzLUZGZ1ZsUHBBdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Electrek": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "68bc9928bf6f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "sales stall at ~10% of plan",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON1JvS1hpNEFacFF1V2EwZHVQQm1Vc0pMTDhsWnpoLWh5ekwzaWJKOFgzYWZqSUxIeExvOEpfU3hvUzE1cGF5WWZtWWQ2ME1xd2xjRlhPMFhvdm5HSDdUVi1OME12Z1lsc2l2WE8yMDlvenVBdGxoTzhsZ2tlQ3R3Y2RhZ05CZ0gyS0dyT2E0aEVjUQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "KEYE": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "3fd26213cdc9"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla to wind down Cybertruck production at Austin Gigafactory, Musk says",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS08tV2ZzMi1qSmtTblAyUEx1Nld6T2lmZlFzWWs5Y3Zkc1JheEZoY20zOEhoVGFVa0lFd2U4Rmo2SFJtOUhaQ1J0bFp5NkxvZVZUS2RLXy1fdjRfQkMyMHNvZW5sc2h3N19iSmd5TXZCR0I0amJIT3V1eGlqd3I3ZEFQRTN0SjJJZU96NDhqQ1lEbXRBWjI4OEd4eVAzcDdlQmdacnJ0UVQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "USA Today": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "9bfb2f5a4710"
+        ],
+        "evidence": []
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "c991072fc93b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump taps Stephen Miller to replace Susie Wiles as chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb2JzQnQyamlTWnRWR0E0dDh6cl9CMjUyY3JsTV9HQWJncU1zVFJ1cUZjMzVZaFJoWFhIb0dLY0tjM29HQ2hQQkdlUDZVQmJ0OVVMWDVZdW8xclNjZVNvZUllb2RYd2JpN2puLUZZc0VPZFFTb0xmQ3R1cjFMeEU1V1ppbVhyWVNKQzU0TXJINkdFc2dlV0xaSUVPbUZvc3lCQXpFR3Y1bXUyeENNcTdEdkxuQTluVEk?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Hill": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cc64026e0b4d"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla winding down Cybertruck production",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRlJhMjNhcGp4Z2dnWTkxMlBXQy02LTNELVh3T3NKTGNWR01JZGVXSTdKVUpQRzR2ck0tY083X0xWNkZ4cGI1cWJSRXZfQkdZYnJuaGw5SWJLWEhjOFB5bTlsdGRVZGJmMkxiMXdmYkRuU2dZd2tyX3Rhd0lVNmlmQzc1aTViTjkw0gGOAUFVX3lxTE5zWTVRUmI4bFVyOEtLWUR6NWdxZW9YNHhRUV9fN0E3QzFBNXRTMlNiTkVHampmRTZzNlNLR1FJcko4eERVRGJXVklDNjZlSVFweFZVYWFmek9jRmctcVh4c0tZTzYxMUxaaF9TT1JYYm5jOUhfWGFrcTJvZUdULWd6RTlzc3EzS1JoVGZLaXc?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "10f7ff220424"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Prospect of replacing Wiles with Stephen Miller 'terrifying'",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTGY1WUFqLWRMRjdwQWI3UF9Kcy01blI1ZTQ4U1dndEtZMXpVUmNuMmxRODRhTVpjZmQyN3RZeGZzSzhfYVVxbFdaS0J3NEVDdXQxWnZZVHZTM3B5OTgyUi1UODYyNDdaSVdzczZyMDVsSnNsS1h0Mk1lbWZVNFhfTjN6MXhOdThiNWFRdkUzOUtOOGtyZFQtVWhSSFZybGotRVHSAacBQVVfeXFMTUJ1X3BEREpQVXhnLTM1ckJFcUxPUnYyYjZTRzBNZGl6eDBZNFpIQVdJRENkQWhQVERDdTl3c0s0UHNpYUZic21zQUJzcE8wa2s2NklDR283RWVpeE8wRUtURHUwajBUYnctVWJlSndYNGdtVzUxX3ZOSjVuVHo3SG1wTTZsUERTWGE1aG4yRHdmdG1OMEtDdFpiS0VyeldqbWgtMGVUdHc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "shattered.io": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "98ed86e92a43"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "63,619 Recalled",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZkQ0VEwtMVdYaGNuM2NwbnljN2JMbGs5djAzRVVqczEydHBMazVkTkNaZ2JndFo1SmlVeTEwTW9pNEtrUWpaZVc4dmtFcmt0Zm51NTNITkw1RzN0dE9LWTJRRFE1MTBOVlhGU2xKYm9BYV9EX3hYNk81M1VjbzRsMA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "KATU": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b86823a565d4"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla to wind down production of Cybertruck, Elon Musk says",
+            "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQ3dKMVNmUENtQ1Y1Z0hSclN1ZG1URm1RY2stRHZhYVhqUHFfSHFnVDJYV3BCWVNpczVuSlFjdlUxWjdQdnBWb1lSSF91bXVySVlWRmRZM01td1g5NVhDdWdaR1JDYlFVXzRiaVZFc2RFY3lKZFFCUWlNUmhVVHhXaDA4WlptLXJzZ0JURHlCTmxzZVAya3Z1ZTItalY5ekdYc2JvSWVoX2o4Mkx1SkFhMkRyY1NBaTE2UkJLcTFZandNTlJfSWNsbGhJR0pqYVBZYzRJZUpEcmNOYlMxQkl5elJPTQ?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "52c340d36dc9"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPNTZyQXVsN09qRG9zeEtMcXg5X3loZklBWWZ6RS1EWHRKOWoxQk1ZcmU5MjU4Nk9wX2NCQUFFS1REVVpyUkV6Rm5WenJmenRGR2thSmtYNVJlSGlDaVJtR2l6c3NITHFINWxaa29LU2ViUnFVOERQWU5NcVhzOUZXTzVxY0hVVEpwNFZCb3BtZ0hFSFQ5TGVXTE0yai00SHlsSWtaMmJNLTB2WVFZU2xyMnFkdHMtVHVBaGJYWi1pQ2JVV2VBU1lsRGVzc2p4T054M3dUazJKV1JKS2xmaXN5SldDQUl3SzZpZ2E3Q2dTVTZRdGZhVDJVRGRPNzdUVmp6MWpyM09QOTNLQzEyd2h6TkZB?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Defector": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "c7a2192c9e1b"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Farewell To The Cybertruck, A Total Failure",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03UzMxZk91OFZHSmdIMTdmV0pSMGVEajVtbzdEaUhGY094N3VuTGV4aVh3Yk5TYzZkZTNWOEJBT0MzVkJVdV9kc1VSMUdCVWR4dURWR09TR3AyVWFNRkRoZFJraUltcDhuMFNyNGZndnA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "TechCrunch": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bc3e900f229a"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla will stop making the Cybertruck in 2027",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTh2YnNUSVpBMFg3eVZ1ckpLR1Zzbk1MTVp3dVhVYjRwZW9EUWlvSUV2amVvdy1hSGFvRDZ3dURmY2NXX1BmaVBMdUpkWFJOdUo3NXBGdzN3dURGUlo2YXJXWUF4QmNyUFRDbDdmc0JqWXBhZkxDcHZrc3MxcG1jMkhZZUg4VDA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Ars Technica": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b661a93f4f8c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Musk moves on from the angular metallic flop",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc0xncmpQRnRNV3labGNBOE15RFpFWlYzclM1VmVEX3BQQm10c3dJTFJqQm5vbkdXMHZoUGRaY241M0Nvam14Rm5wTDAwSzRxdHdrTnFEd3hyeXcwMUR6bjA3eHJLVTF5c2NYT1BaTFdaLWRYMDVVaC1jZkhFcjJEaW5HQ3U3cnhRdnV2QzhVd1NYWENVOFN6T3MtMkdQQlE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "InsideEVs": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "ca7728e61ce5"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Tesla Is Killing The Cybertruck To Make Room For More Robotaxis",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY0paSVNoOG12dHVYWXlPbERKNFNXT2xoUFhpdTBHMTMwbzRfZjBTVVJndFVFQ0Vtd04tR3dzSGZPYk5zbkJwT0k5Wk14b1BBSUg1TEVwb0htUklaS0dMU2xxLWs5QUJnU0xZMmY4VUtzalFodk1XYlBqUUR2dTVMU1BvVE4?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Drive": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "0c2404f45eff"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "The Tesla Cybertruck Is Dead",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBPZ2pScmwxVElQT2hHM0FzTHYydGRmbFFfaVotTWQxY2FjN0dNVElNQnlsTjlRUnkyX1h5ZEtXT19pcWFneUgzSWs1dHBRWHhrVjd3OGpJeC1MT21iaHdBMVFJbGgyV0lJV0E?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Forbes": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f68dcdc16cc7"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "To Make Room For Cybercab",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUZNLTVPQ29tNld4bHBMTXNQcFhjYmRMdmZEX1A1M3VfUVhiMFlLdlJBZjU2RTZmUTAyczdhcjB2VEFCbHBHV1FtV09NNzRJcHlzX1dOWXRfRTFqQ1FxV1h3NFdJWV93SmpySE5ZWktvQ21zWFR6MHBrT3pWM3N4X09jQXNyakVHVVJzcy1ibzB6ZF81d180X3o5OGM4SXJvM2RmQ3RVVkFvRlZ1NlNxci02bG12MGM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Verge": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "5418e21de2c5"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "winding down production of the Cybertruck next year",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMnFEQTh0TWMyanV3SndWQTNPN0MtUVVVcm9hdzJ2OEJnekh4TjJkZXg4cnFQQkh1WHo4dVZnSzFHU1NYTmlQRS1ZbGwtaDJYajFfdE4taDRicVYwWFI0S0pkZGs3SjBleHJVRU9zOFpFRXdPd2R6eHBVV2pLMVV3WDJXRENGNGsxcEpqSVpVdlkwT0dJVDdWUA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Gizmodo": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "6e147572b3de"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Elon Musk Has Found a Convenient Excuse to Kill the Cybertruck",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeGhwdTNqYXZGU1RoRnZndTQ0dTdpYlNwQk5hVTFHSkhkSnowS0ViSUNrb1RGZXN4MU9rZ3BQYkYyai11UTlEN0hqeHJ6Ml8tdUFTWWlwY1VUQzdvT0dMaVJVdEhGVG1UYVEzLUFleUN5Q0k3VFF1REVseWtDOXpZaHQxMEFubWJGSEE5QzNLWVdvdnRuRmU0OQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Barron's": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0e706408457d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "The Autopian": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "1a349e61cd11"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "The Tesla Cybertruck Is Dead, The Ford F-150 Lives",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOR2pUNDc0eVpSNVRzWm42SktlZGVhd1dWeG8tbXdTSGJfcWNuN3pQODRVa3E5eDd1TXBkbnBjOUk0MVhJZGJtM0lRelRwb2RxSV9lX3FDOTZ0VzhTTkM5RHUtZFNYc1EyRENpaDEwckFVQzlMdlM3Z2J2bF84aHR5S05GNjI?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Gadget Review": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f8c2567b3d02"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "to Make Room for Its Robotaxi Bet",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaUppbDRmRzZHN1ZiRU5Wenl3WXdEU1BQZnV6a29GZ3hGb1lUZGFiZXVtajl0ejBZdUJsaVlfWG0xYVJIWWsxeXBaRmczWUt2M2oyZ2VBTVFuOUJReHd3X1M2WnNvUVloak01UFZQMGItR2RlZnMxbkljb0x2VmZUNzNNOHZqUDc1emY2d2FNZC1VcWtGOE9iOFVPemtDWnNnRVJTX3cxdTFxdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Next Web": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "351dae86c47a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "to wind down Cybertruck production in mid-2027 to build Cybercabs",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0zb01KNVdSTjhsR2NvQ0twUFoxSEZnZUhxY0t5N3U5S3I5QjVTMC1VMG1xSHVSLTBOdGJvSE9aYVVpbDJCTFNHbEdFTEhTakhWdjM1WnNsRjZ3MWVESExIQkpqUXZRVEtIaVYzOG9zV2hEQTQtLTlROW5B?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Stuff": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "483dc8251a77"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Elon Musk's recent failures and coming woes mount-up",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ0FUM1VFLUlUSXZwZ2hmak1sZ0xxTUZwX0VuQm04YWFNMDRra3hZemdmdUgySmZuU2syZTFidk1oUC1sWjVsUTRMWnVJV1ppSjVub0xmSnk0OUxodzVqNEhWTXhjVVFlZGJ6X1pXeUhWT0VWa1pCLTl3YU9fQUdNZjhsMVdkMTVKUE9VTHlmS1VpaUdRSUx3VlZVcGZ5MTZjUF9ZUFliWkI4X0xicXdhT3F4QzZJYXIyVVJnUVJSR3I4RzRM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Missourian | Washington, MO": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "6998a6bd4d83"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "slow-selling Cybertruck",
+            "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdXJRUmhBaFlla0ZDUGl6MTRTdnFyMEZBZFNrbm1Za05mTU1yd2dnQVY2YjBObnZHWVdzV3BRczVyMlo0QTlMQkd0TnkycVlXMWdvZHoyZC02R1U3eEI0UHZRZkM4Zk1ISzJQRlJIckdOWGl1NWphTmFnOGhJM2lxdWxzYS1BcWNWNElsZ0ZhOWtCSHM3ZW5hOTF6SUt6WXdIblhYODFnZ2ZRaGFwWFJrWnFhd2ZDdldTN2ZlV2pvU29hblJpaHlLMUZUeEpVTVNqak9oZw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Global News": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "a96bea7d8a17"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla is going to stop making Cybertrucks, Musk says",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SbDlZQ1c1SXdKc0J5eXdqS2dBY2xyQlJHQVZPSVpZSVBQZnFaTjJXbFVWVWU1WUlzQ2lNMXNYRHFoVUotN1RYT1F0Z3gyRFNPeXZYMFhjTUxaZ0FrZ1hQX2R0WFVmTThTTV94MWRxT3VULVI5eWVfS1UwMlVSd0k?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "e7c27d415744"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ncFBTRURodGNQNDR6aEtTdk1BbVpPdV9xUDc3ZjRkRXJBTVI4QzFlcFpWejJJZEtjVnllU0xsd0YyaHNCM2RSelQxaURYUlZuOFh4ampMY1JjZVd2aVN2MkhYMkVXTHZhQWgyUTlmaHVfdmdMdjQ5ZHc4OW4?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "CarExpert": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "3217e7aca87d"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "production to 'wind down' in 2027",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbEhmem1BTGk0YzQzMkdjWElhSkVZcTFyZHRoRDZmSG5Kelp1Qk1zdWFXbngxTGNOdGh5WnRrNThlenJlSzRxblJsRjRGV1FqMW9CTWlMRmFidjVER1FVSXNpRTdaNk9XRHdNc05MMzItWmM3UEZUVXRqQ1VkS29laDA3TFRmMVM5MHR3Z1NxRk9GenJhWkw5SDVtUmxBV1U?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Arise News": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "2a1713070ad9"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "As Sales Fall Short Of Expectations",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOS3JyWE1zaUhEVVpLU2VtbkZYS0pmazdCYURpTEZPWDJIcUxJRU5jQ09SWmJUbVZqa3dfOTV6MGk0bkRaaURwbWV1SmNZWlNpQnNEak5OblJQUUkyTnhsTlFJSUNIRWFlWFB0VVNJQkVIRXJzeXBUZ2Q3VVZVZlVicWltQ1YyWUZsM2x5X1gtV1BuSnZyRElDdkxGclp4ZHM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Open Magazine": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0bee38d4345b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Why Is Elon Musk Winding Down Tesla Cybertruck Production in Texas?",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZmtUOVM1UEtNeXFGYTcwZ2hqUEN5UmQ3SjlhRzBtcXN5NkVQQTAtaHRDLURkQVJHbnBvYkE1SVhkTHBldEFSMEtoWU1mR1ZnaGhsQUxSTEx5c0I5azVLWFhtbUZjT1dJVUprUXhLVXR1TE0wS3N2TUFDNktfUVhGc0REU1dBc0tCRXhQd2d6TGNaY3cwTWE4U1drLVZXby00blQ3M0JR?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Hindustan Times": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "efdaf289e51a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "as Cybercab takes centre stage",
+            "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQS0tzQ2ZDUE9TSVQ4Q1RqYjZKZWRadlpieDdKaDl2d0dDMHA3M2FlSnp5NnpnN3Zsd0FfQ0l1WndEOE85eHNScFRfbDl6V0hPOUZ3Z29nLU1aNGM4bEJaQjRyczc0T3JVSll2ZjRKVGRibkUyM0dGbXZSZk1zbDlPTlFod3JpY2ZNSDI0WEM1eTlBRWlRR2FRelVzSzlTNFE0QUNuT3NaSW9aVklYQ0hpT0pxY1E1cmhGaGRBYkthSVhMTF94LUlmUXFtYzIwMjdRUlk2NTlVQmZMeG5lLWs2N1QyQlVFZGw5b0HSAe8BQVVfeXFMUGZDYjFaOUxkaTNvSGVxTnlQU0ZNNkt5dDM5UDRFUF9HVnpwTjFIc25ZdkpFaEV5M0laVWY5LWFpazFISDZod0xROTFnSFAxOFlnYVJIQmVSb0dWQmNWRkxERVFRdHQ3eE1wTTRXSk50Zm5DOU05X1NfYVctbXFIS2ZVS0hOV0lGcXQwZThXWDV6U3M1d3FTdUxLZ202RF9nQ01HTXRmVmd4UUp5T3N0ZzBSaDdMWWRZOFRSV0hzMFlRZHNfbTFTbmlGY3M2V182WE5YYWhJa2RZR0F3RzQ1enlkQlNFaERJX0JzMjAwTkE?oc=5"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "93b47f1ab10b"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Two more top DOJ officials resign after Republicans' midterm defeat",
+            "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNbFBiWURibzRrRTdVeGlHYktkRnlVN0Y3Y0hiNG9BblprUWdmSDBxV1hGQmtFMTNfQldfSzRKS3pWSHFQYzUwdUhHbnp3VjJLRTlwUFJKRC04RENCaDkydjdadGF0RjJLeGhGVC0tWU9YQzVoT0pSUG1oQUR4bGlJSDd6ejBNLTNQLTAxcDBhREhNdWU2NU9sbTFBX0d1QXl3czhDWkhTTlFkWl9kOS15ZlpyZVlzV1NlWFNEd1J2WlRUQWg1U2JlUUJWQ043VmxVbjh0S1VnM0hUY3ZmM19WeTVTa1UyLV9LQlhzMWN6MzdyeVoxMXowaHBnRTdDcUN0aGpV0gGIAkFVX3lxTE5BLWRCbndSNHd3Zlh3WHYzVVlDTWlJNGZRSVRYOW1HTDE3cFFHbFJ2d1JqczdObnRpS2F1dTBSYU1RcXBZbmFMQlUwa3hiaWVjb1MxODFXdWs1Vm5FT1Y4anczaklpbjdKbnpDSUtrM0xaSXRLV3F0amFVUEhDTEdvTURmV0VoRFNqT2FPeWhzU3IwWUMwa2IwZ2hBdmM0YTdqaWs3T0xnZXBYNjFReHRIUTNWQUNLTUtma3lnWmFDR3lkdGZzYXJHTWl4dnZEcEFhZ2FGME9iUEpYdWFNSHA0YnlBazVpbnVLTUhjVjJ1SEFxOEZiblY5MDZyTmtoV05Cd1phVmtXUA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "PCMag": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "cba5bb95fc1a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Focus on Cybercabs",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORVVpNDNxdDlyZFlpZThpdmlrWjZ4dzYzVEtwR0NuMDEyY2ExYm16YTV3cmE4ZUxlNXMyazRhS1VReGFORExTX2h1cnhTV0g4dlRRLXdXT2lZaUVzLU9nQVB0RmlmMkRFUFN5bTY3NnNmMTFzVDVYdXJGcm1YTHZxVnp5TG9lMjZmaTR0RjFwVQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Futurism": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "da6507772738"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "After Dismal Sales",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ2xSdDFsdnVWWkFZdllYRXRZS0N0b3RwTEdEVTVKajJoZld3V0tGV29OOGZEZXFLbjVSd2Rabk5ScWZNczRVbVB0dkNycVJVcURTMFFXaS1yUWI2a2hua2k4bDE5Z21VYU00cUdlUFVzcnZIUUp0SFA5a3lnS19xSDFn?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Yahoo Autos": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "14ab5b083398"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "as Sales Continue to Struggle",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR1dfdkEzaFpxZnVqQ24zcExpRzV1bll5RlNoVVY2TFFWQ3dGM0pDVXlYN005SGNkTnk5YmtVZkxtWi1sRlJwWUU1a3BNd1c0Ty1WSmVDN3BSX19HUW5KWWNabFRJSzdRWnFlWmoyU2VseGVfUnJ3WXE5RTU3UzFGdkp5ZjRqbVBKS2pycnQ4YUhubl9LcmNN?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "LiveNOW from FOX": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "fe2087cbfc5a"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Cybertruck to end production after 3 years on market",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObVJWSWVWNGN2Yk5JZW1PWUhhYk5KTEdPYkxIaktGd0N1dEdrMU53VkVvRVh2cVl4QXNlNG1ZTTdLbDF0dEIzZ1VTOFM1VzYxRnNxTGdUWGNNa044M3lCUi1IMkQ4UUlTc0Q1a1hRWUNnb2s3WHRnYTBuUk9mN3k1aVZQNjc1Q0hLVFplbHAyaVBPdUM1UFdLbQ?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "b079e3f4e47f"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Who is Stephen Miller, Trump's incoming White House chief of staff?",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4VmVsQWpMd3BVcHZJTWcxMWMzU1RXNlZKM2J3SExvMlYzQmhPZlp5YTlkRFNfc25SMlktR3dsUEZMeTNDVGY3X2c4VmhtdEhRZDItdnFRME9nSV84ZVV3SlFSRHhEOU5RM3pvYkVrZDE1ZHZJR3ZIOFFYUDhVc3M?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "ODI: Think change": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "0cec3464080a"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "what the 2026 US midterms say about populism and political change in 2028",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazNnTHpMc2RlbVpwV1dTbENfVC1TOGdjcE9JaFZPTUJuNFgyLVlMTEE2TDJXeDVVWXJlTUtsSlI2ZTlNclpNR04zWUV0bUJWODJzQ0RwUjJ4X21JaWhXREplZlRVNHBmNnVycUZzMWlDekR0aElILWlTSnY4MjZ0X3pEczhWWG92ZkM3UU9GODBnNmxfYmtxMUxHNkd4Q0JrQjVsdEswekp6OERyNGVNWW9zcUVEY0RiRVhsMHNIaEU?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NPR Illinois": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "87386aff5cee"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Where Does America Go from Here",
+            "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPa3JlZHktTWdNMDBDX2o2U1VadmNWWW5FRDVhMzdmSUZ1elY1a2tpOFlWbzRScjBUbWFYYzExVDcxQ01MbG5oVDF0c2pXVkwwdU5UTmI1UV9ac1ctV0pOU0gxdkF5ZHEyVHhKNWhoUjVTbG5mMElGTUNBRXNBSExhZ2llZFd6dUxRcS1iTmxWTjVTUUZzZUdTYXFVX0c1c2E3ckRIZ0p2OUxJMUNaeFFiUEJ2cGxDcUp5cnBsZjB4cHRXbkNuRW92ODRkWFJ3UnhxME9sdFJaelZXX3F3ZEp4Y0hZbjhmM1FNdmtfVDhB?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "MS NOW": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "596902b55dee"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump aides question his focus after Republicans' midterm losses",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kZGs1MzF6cE00OHJGQkNRVGNvcEhkOHVJZ1h3b2ZBdWF1TmdabVRFcjVDXzZmbWhKU1RpNkxRSDlXc24zVDVxM1BxX2oxd1BJSURhRFJGZkNUSHJTbDMwSkdfdFJDWHdQMUw4Ty1Qaw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Conversation": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "0ee8a554c14b"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "women voters helped drive the ‘blue wave’",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYUUxc1hWaEdnNzBZU1hYaWtONjc2NWw1V2gwemlzN1lUdEozN1NiLTdDMHVNQVM3LW9RY01yZEpSTC1pSDl3M2xFblppY1VxZ0JXTkpESDNNbFF5bGR0QzJOaExoTkdWWUpCQ3ZnMkwzNHdLMUs5NEZOdERCZU55MzN5ajQwUVpzTjAtWnpRSQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Council on Foreign Relations": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "fbe6ffee9aae"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "The Midterms Rattled AI Stocks",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYmFpVS01Q3l5T29kbVQ3aDFZcjhnRmNaano4c1hXdHJTYnB3bFJXakY2V2w3U044VmhSd29JaWV6ZUUxbVFEUGV0Z3dHaXo4TVJpZXBCYnVXLU5jZGxzc0dhNkxFZUVyWFZQVk55R0RFdl9adjItMUkyMG9TVG9IQkV2Tk5YN2hadk1qcFJ3dDFicXlMMlhzSGVDV3JuM0gzQXRJeQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Arizona Capitol Times": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "cc41ae376f6b"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "after Republican losses in the midterms",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQkI0dEpSOS1hVUFaMmJmaTVuem9RTUtWQ3V4bXFCSmlYQ1UyNkNXRnUyZFRtNW00Uy1jYlhfbDVtSFJKbnQzWUdJbjdmRFExTUQ2NDBZLVphcWJ4aWU4a3hqbm9KYnhQWHNpSUJzR0ZLRHRHWlRYdzYySk9XSUQwQ0RTeEw3Mm9SLURVSlJTMjZLb2lBbVM1NEJtZFJSQThYcFEtcEFqSTRNRWl1bVhJZnJ3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The 19th News": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "a55e8a01a53b"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "The midterms energized a powerful political constituency: abuse survivors",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYm43QktzWGlabE50YjVqX3g2UE1UQkMzblBhZmVhbGxsc2V1UnMyb3B6eHhPS19IbzdGeld6Q2VoYVVQTjZaS29JeXZlaW1LdHJQT0FNMS1mVmZUX3hGNnFhSjF3X1pCQXUteXM5ZEFhcHlaaVVxNzZ1ZEdORmpzcmxmcw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "WSJ": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "8f6bb9ef29c8"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRVhNeS1XX0xDd1ZkN3JZMkdWcUJkaFhONTBWSmprcWxkRVpqbU02QUQxWnRVRXdlTHBzaVJNMENWaE5HaFcyU2pCVDl3SkpXV3Y4UTlEMzM4STJFc3FGVVByUW1xUHh1QWlqOWx2bHBKQTZxb09zSDQtMklkRFpsRENDbWRiNzg3dzlwMnVqbVpLQkhRVWwwT0F6UUxFODdybWFqekNqUVhrcEZKNzZz?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "5b297ff3835f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump Names Stephen Miller His New Chief of Staff",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSkRNLUdCaTVjYnpWYVp5aWNFMm5WQ2dlMkVDSjZzZG05RjdyWDRYSG9jRnlVRHNLdGhhODR1VDJadWlKZ1BJSS16LW9SelBab3hKZ1ExU0lxSkpyZkNvbXlhSHhBbzVxMVd3SzJtLTBUTEpwVWFJRGZDcllWc0lfRFZoZkdqYm1xeUhNVlJ1YzR4eVNHWjZSQ0h6TGw2QQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NC Newsline": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "e0e5c2ec93a5"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "The Colorado Sun": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "f3b55e3cea68"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Votebeat": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "bfb999bd45a2"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "want to transform election law after flipping the legislature",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYVVjV2p4S1dTd2ZRMWFQVmo0VXNPcVVyMEVnZWJGRkthZ2I3aU1iWHIwUm9YVkV3eU10ZVpNUjFFQVN5U2pnd0JnWnA3bEtNMGRMSmlWa29lNHRGclVkYXU2QnV5cmtYTHpnTUE0MUV2UUNyTXRQN0FXS09xYWdvd3phWGVMdWhwMDFfNnBLZHF2TlBIaTZyVFNPQWMtdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "France 24": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "d693007c5a2a"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "European stocks plunge after US midterm election results shock markets",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzBFYkRISnp6Q01vdDZFckppcEduSWlrdTIwRHVxa2NJT0ViQ2ItZl9TUEVmcE1yRzFQNTRkeWVDQm0yaExGdUR1Q2NVUTR1a3FYYmlwSWw5YWw0Rl9Vcmd0VE44LXZPdHR0aVdPY3dINmZVUHB5SzRoSkJJVWd5OVBBNGl5elAyMlVRMUVwUnhoZlF5bFlWV1RSVmhoOWxmN29hM1o0bDB1ZHBEMXd1M2QzWmdDRlpPRU1aRUh3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Le Monde.fr": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "8e3b7998401a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Teneo": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "411e642b58d3"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "Sky News": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "373a9e8f3b59"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Trillions wiped off tech stocks as AI fears hit markets worldwide",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZnk2V0FGdU5QUUZVd0s1S0xSZlNvNGEtcXNmSTJFNy1hMmRsZlJfaG1la2tMbHlyTGZzTmNiSkx2M1FtOW1aVTFyR3hDVUZUcGx2ZFc1dnpIcUpWazRveTE0Zi1aejJxNHh3TjBTNEpQZzZlRHlpMnVlNFQwWGFKVm5MX3lNZEYxMmRFM1BZNTdFOFZXVXlqOGFQME1MOE1ZRWk4?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Channel 4": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "16e0a5777b97"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "How Democrats' US midterm election success sparked AI and tech share sell-off",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeUo3b1ljU0d4ZFJqQnF5SXlNWnhWdXlPRUN3VVMtRlYwUFhoaHM3OVZoRTRqMmhiUVE3dlU0QUxzTHNIQjhGREd2VGJqUHB5TmpfOGNMMWJnUW1tNDhPemxacFNUUjdUZjZoeE9PTUhtaW5xdVliTUNOYzZTRnNQMFpwWmJreFNsMVY1TXMxWWpzMnVqWXh1UDF6Y3ZuNm9iU09LNFpYZk5fdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "St. James’s Place": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "23a7a133306b"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "a decisive win for the Democrats. What now?",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMzZkUWs4QlNUR2tIUXk5WEdMNUVVTDBZd0R2dVdubTVGdzRDU2Z2ZUZkbkNnbGtUdHdsZkM1TGNmVFVwQUpVaERiTklEYldLUmZuOVdDRjA4NlA1ZkwzT0dpVnRaa0F2Z1FDVUhsRFJhQXNRdlhHWEZ2b1FqRXYycWRWTW5HUkpZWWs0ZXF4dldkWkJnUElR?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Hindu": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f4f9dee27c26"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump debacle: On the U.S. midterm election results",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSi03akpRME9LMEdKX3RtY3V6SHl6b1FZbGZka3RhMXFsakc4UjdBdTMyNHk0czRFS0kyaGpKdE1HYU1MVGVlVEdRS2t0UHR5a3FTc0drbGdzU0Y2SVRibDRQOVRZZHA0Z1FoeXRMX1ZYY216Y0dBOUt5QUZxbDdWZElnVEJ5ZGozeTVFODMtQTZUdkx3QXV5TlI0aFJtUjJaUmdIcGYwcThld1NJdjloYtIBtwFBVV95cUxNVmJlVmtEV0hJN2xKU3VoVnNacDRoM3VFbXJoTGxrRnhXZTRBZmRJQUtMSFVsQ1BHZ25oeTNBcXRIQy03VFhydk10RVpCNGZ6R0otaEJRcTcyN1BvY1VvVlh5X1VLRTBURU1Ba2dnTGF5R19NRUc4ZUtoX00xMVl2XzdfOFpEbTNQMmpmTGEzY3VSVW9fYTNwclJWbkNCTWdTeUtUazQ4REM0NnpwN25NQlB1ZVV1Qkk?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Times of India": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9060a4d6043e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump's fawning tech bros under scrutiny after midterm rout for president",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcUtjbkRLOUExdVo3emJ5LW9telZhMzJfQV9aaVJhdkhFTXdDcm04MUh0cmtDN3N4elozcjZxNlJEa0tDZy1RRjZQVHFvXzdkZFRjZzJwWHk4ekl6WDRiMUVobmFxbmlJLWhRZW1qQmhobE1jS2xQR00yc0lueDBKSGtRczV0aDBnbUFvM1Rrc004MnU5RjllaGVteTZxVV9FNk5LYmo0V1R6QVFpX2VYYmdPTlhZMEtOdUJLTlFtdVJLVTJyRi1BX1FwM0xrWXBNVlM3RlgyS3RCVnfSAeABQVVfeXFMUGI2YUlPVFRPZ0M1b0lLUngySXk1RExNamcyWkp6NEI5RkhwNVRvalZDOWp3NkVBSmw5MWZHVmVQQld1NnI0ODVRcE5WNVdyZE1FbDlqZElLWEtIZGVKRlFQdjRIMUdRZUNKSFQ3dVljMno5eU40eEJHMmthMTkwRFVVTV9yaF9NWkJZN1FfLXg3dEVsbERLVmc5aTEtNXVUNmh2RkFwOXFadTNJbE5rMlJqNTFWR1dtVFN3bVRkWThhSTVVNFRSWEtfaHU5cS00NkxGUGdjRllCYl90eFlJdE4?oc=5"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "4f20a1d791b2"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after GOP's midterm defeat, sacks Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOQ1owTnV3MXhKUFJCTDFDYmJ1ckhFNzREeGQ0MExYbHlaZmdoOXktZmMtSW56VVlrXzFpQTB2RWJVVGhhS01yM1NHVXdmeTYzWmRaWVV6ME5neU5tNHBna1pKUFdDTF9mRlg3ZnotYU5kYzJzX3J0R2Y1dkVsT2hxRVVxTjNNT2Jvd1kzQ1ZBREZSQk1LU21kMU1oNVE0RTRsMmcxcWNEenhmRTZVYlR1b0F3QjlwSnJaX1dFeHdJMGVYTmh5N3RzVkF4UXlfSmVGb1ppekJCcTFVQkNwaVFGcjJTQVRsQ0ZyNFB6VGhqQjMtOFhwMkd5ck00UENkQzdFandmQlhYTW5GSTV3NmJteVB0OXg2ZTZZMjhHVVJnWFFVUExGazZDanB2VVZOMmV3WnBTeWJvUkh0dVZjY25lcTFXY1lKX2cwREgwLWdSYV9oZWpRS2lLMVpsVUxHd09FSUtQT01LTmJ0SW9Xa1FqQ1dB0gH3AkFVX3lxTFA0a0hxX3lkNV9rcW5YeDBYSjIycUpvN0EzaE5LVld4VjFnek1CbjhqeVpReGdzcERIV3dXT0JxVW04Z2RadHNmT2N1NEJfSkpPVjBpYkVRNHBaUWtNMmp5U1daZ00xRnpMRGlpckR5Umh5V3NiQzFrSElpaUFHZENqTUh0WmRydFFLZmhab3lsNlN5YnBhX0txajZJdUFzekx1R09fbUJ3cnRfUWZtUXdDSGdobGp4SmM3OUVGQXF5ZEVTTTBNdzYwWWNwems5NzBxVGJORDhCQUxUcDFEdnA2RS1LZUZjblBGOWhlOTU3Vmh6b0JoNlF5SEozMi1PRTZPOVkzUG01X0FyYklfWUZYMkNyTGNwRVhGSGlsYjJtekdsSFlPdWk4ZVE0TUQ1bTVCMUMtbDFGVDJBMmFiWWVCQ29vOWpfVnVGQjNaTW11aExSVFlMbUR0cVZkOEY2V29xaEp3UWRvOGZiRVZBX2Y2YlFfMUltQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Investing.com India": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "3cda32647133"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "OpenAI will keep investing in data centers despite results of midterms",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYUwtYVlHakRCZWx3eUlHUmFENnBtdDE3Q2JmUjl2MlEtUFB6Tm54bmNleUsyUmNfYm4wMTI2bWRPMllsSFVqdE95UjVQbzVNWUpOb1dLV3VsTm96SGVCSDVva0w1QWZqUTlTMDNaM2czcmk0N3RnaWxuYkhwSXhPV3Q0WHJOVjk3RHBhZXQ5bHc2cEh4SUVRZ2h4SVloWlRQYkZBbUItSXQ0Q3F5VVU1VXFTOFEzeC1iT2w3SGhXRWhjTTk1Smo2akpaOA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "SMH.com.au": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "a1edbc4651c3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "As it happened US midterm results 2026",
+            "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxOV3lRaWFWMXQxY1o4OW9tNHUxTEp3TV9pd3ZNR2ozcUFBNmxETGI4aWxLME9TMk1MbnJBRmRrak15X2c1bldYV25xZG1qaFlrSEtvOHZtdVFwbG0yNzFDMTdnQm5iVENDMUNrM1dTalBDSVdYb2FKVk1ST1RjYmxpdWVqRjdIeFQyWXJvUmR3d0RPTlhBRXBQTmt0Nm0xNW1tNngzSHJ6VWlqTENEQ1NNb1RDSVRLVzJWb0wya21MR3RoX0NUT0FrbGNwSnl2UW1hUHIwekhRV1JtdDBseWZrbzFYaERCWmp3dUhReWVzX0tfZTZnZnNDWlJvMEJOXzFJdTFWdHV5Tm9VeUt0Z2NhOWVtVFVmeHo4M0p1UDJ2anoyX2V2NzBQN2VDV0N0Z3RPRF9hZHZLMTlOcG5iUzBOTHJCTmhoeWdoS2U0T2I2QTF3MUNDUVJLeDkzNjdYbVRHNnRnU2xnV0twQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "United States Studies Centre": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "bdef0362666d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "الجزيرة نت": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "9a358fadb9d3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "live results with maps and charts",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9RY3dZLThjQlBkbkRiUDJmUTdCTV9GZ2NFa29iR2JoU0VrQ1JTanpJWk1QLVZjc1o1MzFMX1h3bWUxYkJwWUR6XzNlMk9vTnlVdzBXWmdHWHVlZ0lpRnIyal9NMmRyVnJqWFhueA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "العربية": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "4d2fad44ad33"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "اخبارك نت": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "6c580b2cbd65"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "will Democrats use it to stop the war in Iran?",
+            "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQUjV0YzU0aTk2Z2puTXNOQm05N2YzWFZQT2hRVEpSSEtDY3ktZ2hSbEVjeGpTTGlYZEx5ckhZeXFJTHNiMVNOMVFtRXhsOHhRZTlXV3V2T2RycGdlNGhFS2Q4OVVIU3hzRTJ4V0Vlanlsa05rb2RZUkd0cmFKX3JPdUFoYjB4eUl6dUxlM3Vtd3ljOV9hUVhETFhTNjh4RXU2dUZUQXlnRnM3SHNwWjN6WEpiT0U2UmZyT3d5T3Rra0lBQXdici1zMi1qNVFUZElDVmxxU3NpSGxISVJQTHJWY0ZVSmlsSWx1NzBhMlNJS3EwaEFxUHJCTUN4RUZTQU12V0VmTC1MWlBfcHBHcHJrRGUxem5HMkdjSlN0ckRRanNvc1VmQXRyRGNlR0pRTVVCSVJkVUtMZVd0eGlscV9NenpPNkpTUEUtQkt6dGwyX0h5UjBKTUJaV25hc1pNNW16cWFQSmxkVld0U19ZcDdCNXJ3aUJPRzJ5S2VmMHRVUUkzQWFVSDFpNHpSTlNJbDhhS3pYY3lDbWFXTDZtSEg3VkpraWJIZERscG1PeEw0ZDZFSWFjNjNsM0ppbUFlMHoxRUo5WEdMZkVZZWc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "الشرق الأوسط": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "dbc6396dc0bb"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Democrats begin the search for a presidential candidate",
+            "url": "https://news.google.com/rss/articles/CBMikwVBVV95cUxQYlBKdWhWRmNBM2RVbV94T2pYMlpocDR2dUNDNWNfSHNPLUtNVjU3cVhoSTJNZzZqYW82UnZ0R1JwY1dweGJTM3Z0S0phY05acGxnRzJDUmFDQXhLNTVWWEh4SXphenoyOF9xLS1NSVFzZkFCZE5pT1VPN1FjNElVbUJ2NHhzVDhzME01TXZFLTJPbU96UWs1Y2V2MlRpRFZBNTR3alRJNGFXMWZESXZmR2VQQ1ZTVWNvWkw4dVoxN0tYSEl2TVRlUVpITlFueThpcEppNUtPYnUtUnQ2TWtWR1ZBNTdPN0lJXzZWSUZLTTh2ODVpazlyNWlKN0VvbHR3ZXdJaUhCNDR6YkdVMDEya2FGcjBIUFZpdnhJQ2hXMWJDY1Z1YTBEeFJVdXQtVFRMbXdqT2d6Z09NQ1V3UGRvUjQydFhJX0x1Rklqal9QaWFRWjhEVUczQm80OTg2NEw4ei1VdDFrbEY5RzZoWndUSG5uVTBQVHhHbDJCWGZoS2hnNVNTcXc1bVZfQ1d2X2duV09maTUzWXJaM2hIT3FNSWtNYXdHUGZuNW52aVBWdklWZGhPRGVUUjZfcXpzWFo2TDlNNkRyOGZNaV95U3g3YUFMdHU2UGVfR25WY0FTQkVCazhPakhWazNERUl3UFlJSWZ5QnZzUVhyUnItaElLZ1B5X19zMmpUMXZDclB5aXlfWkFmTWFGT3VVZklSQjJnbmNzRFFvQ201U2JRWTZOVnBpZ2MwYnhkYjYtdXJuWl9MOHpwYTJNSDU2ZFJOSmJJOEJXU0pTWUQ1bFZMQnZlNGs1dHJ3R2EzdlhkUnZta2Y5R190dXgyamFYVEgzd3BaMEpwd2pSRWYtdDdoS1diZzFLNA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NPR": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "667f05d8bffb"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller will replace Susie Wiles as Trump's chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTG1zcnVYQ3lRbUhVNUFLSDRmLVp3SXJMc0ZudkdsMjFhMmthTlptYkg2OVBWck1zM3M4bVJlTlpWZjVBZ3lMTjNScjFzUlBDQTNHNnNtWDhadWo0amhOa0I5SWVIVXpXYWRlcXk0Zktnd3l0TDBvRW9pVHBxdlYyV0M0YVVvQXhoSmFhaGRhZUpiaGtibG93OGREaEp0TEYzdWJ3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Fox News": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ae383efb2329"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller new White House chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNai1KVkNTS0w0X21BTDBJLVo5M081NW9aeHZsRlNMMnlVVUFaUzJmY3NYQjVfODV5WnJCS0pYZU5HbTVFaDNKTGZkV242amc5TG1iRy1feHhtb3RKdVdBMnFOdUFCcWFpWXVpd011NzdPeXgxcURfdjNxemRTMVVwYkxWMEUwQnZ5YXpMV19CWlNpaG5TMFR1aFdtZ2w4N01YanlFVTFzVk5oU05QY1E?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "WJLA": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "35f8479ac248"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOTmZPZXZkbUlpUDBfX2w1WkZHSFBVSFd3ZkNWT2hjNTdVdU5WMlozSzFLUHNMZE5WYjV6R0ZhOVdBVnlRVXJuWWVuMnhjeE9FY0NIQU5xajk4YzE4WUE3bVR6QlMtWkR3UDYzWlA2SVg2QjVlSHNQYkVWOUtrTV80Q1JLU2ZJdExoYmxMeDcwb1B4eWRNUV9mTUNKSnBDS3FpWGFFY2xydXpoSFdyRktCdmN2Ny14REJ3WmRXRnlkYm9Lb2dINXZLTW5mdXdNLVdxUl9lNWhJWGMtckM1cEVkS3AyUTZKc1diWk5YTV9FUmtNQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Duke Chronicle": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "f0bf61241844"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Duke alumnus Stephen Miller promoted to White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTHhaNTI4b3ZoVjg1SE00bENPNXBlcExUNnJ5bG01QmxrZW9NX0g5NVhlcnhqMDJrVGRaaFZZdTRZa3NBOTdxM2dma2xwQlFQQ3ZWd1hoaTI0MEkxRW5YM2pHUUlKZC04Y19zWDJ4U25SMGVaLUpCUi1IRlZNamQ4aFlsM29ZelpvSi1iX0d2QTFfQnNmeGduN2JPeENCMnVpd01pNUk5aFMxUWM2UWVpcGdNLWZWTVVVaFMyT01KWUxzRHZKbzQ4bHRMcVk1aXZLTDJOQWVsTjNoOXlUckIxZkFManBFUGhodnZvQlNYaXZ6UE94MjlVMXlWcVY?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Rolling Stone": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "48fcd763cfa7"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump First Big Post-Midterms Move Is Promoting Stephen Miller",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMHdOeTlJdGRzODNjSWZSbjNfNTU1UjlObVdkQWppT256Mld6QmlaYlBwWWhmaHN6MlBQY0luTTFJVFF3NVVkU2xKVFZwSkpCTVVjZWFvYnpCR0dPUVBRYVVaa3BwVmVUazBhc2JjbWdmMVN2aWpGc1ZQMGtoNFZtMHVzR1FSRzJ4SHkzY2Zkc0FKdzgzZUNwWlFIM3NKRDY1MS1wckFGOWVQUTlLRXpQMw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Los Angeles Times": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "779ae6a2b419"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVURIMmdzRUgtTU14VUtlWG9RSndCeW82VUlSQlZ0X1ZSbjhqV3Q4WGlWVXBYUUNncE5VLW9UWS1IQVNadTZCcmdpdUlyZFFKS3pBS1FzcHpDVEFGSXFlbGlpTVJSODJSM2pqVC1qLW1oMC01Sm5xZGpZcXJ6bno1ZVFKRHBqbWhxSUI1cmdpRXcxbzBnTi1UNFZFMXo5dXFFV0hhSFlGd0NrVEV1NkRrMzJBSQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "New York Post": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "6731664e7c1f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump fires Susie Wiles after midterm blowout",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOVBCaVV1UHR5cEtGUWRJQ2N3NU9YSldHZXhHZlhKeXN3QzFYSktDR1RyTjB0LWdYQkR4Uzc2dktZNzNMb3ZlLV8xa09tNEx6YXpnZk5sZG5ZVzRLeHpCSUQ4alc4MWF3c2JiZmxMcE95SmFVRUhpYVdkX2RwQ1BvWXROSXhHcTZzV1BRLWk4OHhNM3dqYlhNVXhsRTc3RVUwcXpBNUt0QkZEdlk5aDJ1dS1vd2hQTlkyVmE2Qk8xdWJUSWRweXc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Al Jazeera": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "00739b229917"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says making adviser Stephen Miller White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdDNsZEg3eDc1U0M3dUwzc0lZaHNad1lOanNqMjNLc29UMlVacGh1NDBJRklFNEhZbDFaeUkyRXYwcm5BT0NCbk5ZcGpHS3RJWTg5eG9aU1AzZ1hNV1oxWTJET1JQUmpNX3VpdFhSdTlEeWxzM0hacmU1LW9KSnI3SlBwejhwTEFpT2diUlRjeFpWbU5jQ1VzQ3JwQkplMzJNVXU3UjZpN1ZVeHVL0gGyAUFVX3lxTFBxTTNWaHQ1RTFCVUJ5a05HSlhIVGpONnY3VUFJNFNfeDgyVHlOUU5zaFQyYkp3UDBQSzZwQ3UxM1hhV1ZaYWRpSnFPajMwY2dfZVRPa0FDcEFuM19CMmJGX2piNDUyMW1Ib0Utd1BfcURxZXp4Q0EtdVJMeEV1NmdyWHVDTEZFRUJkVEM3WHRSbVd2bDNCbHRGWS1MNU81dW9wMjhoS3NWSmdWSnlnbXJuMEE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "St. Cloud Times": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "766b3fd85325"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller new chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORTVjLXFfczljOXJNT1NiMFQ1ZEpUWGtlYVctMFJIUWpXQXdqRGtQUGNCbU9KbGJWR1ktRUlNYVBDWjJSSmhYNUgwcEU4b1RQV1pvVlBhSDh0Ni1TcU8xcG5IMmZxMHdnWVZObVdLZzR0LW1SYVpzVHBvdnZXOEpFRVBMQTZkRDMtRjNnaUpoYVdJeUdBV2h2YUVoSHNjaE96ai1LaENHWllrRDRHdjZZMHB0NXQ1UQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "WTOP News": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "2df80250165a"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after GOP’s midterm defeat",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUlZTRFQ2Q3FfNm0zZFpZQ295dkxnMVd5aXU3eGUtdTRKZFRUQzF6WEpwOG1ydUlNdGhsdG53NlVHRGRXbXRfMHl3V3JGZzFBLWQzV0UzQzh1elhTVjE1MmJKckFDU1hDbjRVUHhEWksxdFFPQUJOSHlOOUdCUGotakdncjl6MDlXRmFfMVEwM25UUlBvWlh0eUhua2ZUblUtWmdqMXRaSGZ5LVRvTFRTNXY1ZlBydWlSLThNdVhTRVZQbXZNUDJkVTVzSXFQLXRrTjZYVVhYRQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "KIRO 7 News Seattle": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "a36ebc2abd0d"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after GOP’s defeat",
+            "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZlhRRnlpS2psWjZPamVFWFJremtEczJxeVVQTWZCRUlvRTBZX3lZQUVkRDdGcEFKVnZzY2M0aEJQVlhLbHJiQWNsbEtRbXk2QUdBeVVLOTJ3WnljemNXaW9uQUpxMXRNWURHMUpjRE9mYzVfejdTYjctVHVVaGIyYVJEcHdNaWs4OWZSVFdNMEFldjRDYS1KUHBnTEh1YWJxMElHVXgxakJPQWdYVXF1YkNQVWdfRDVtT2xrSkFueHZkcE82NlVqLUVJV2VjVnQyMDRHUXlndHVpSlAySzhucjkzUdIB9wFBVV95cUxNVlJsel9BSkwxamRJb0JHbE5qeUMwVWlUblJBZ2M2R29BR2dpZzljTUVyNjBZNmJYZHd5QmJDNWtJZENvUXZ6bW84R3I2ZDZIcTR0UkIxdmRycXdPVGI2N0hUZHBCQl9taWhGWDd0OGhqczZKOUhVUXdkVm1WZERwYU1YdjItUzZFY2ZrX1pRcEkyaGJsUXpGcjJhN3VQZEgwRTY0RDVKbzRuQ0M0SWlqTzRYamlLdHpSN24wRUI3eXZzaG85WXVhSG53QWJGMV82TzBMUW9aS0dOTWRrTmZWZDlLYVJLMm9RTHh4Vkg0em9fX0xDRDF3?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "NBC4 Washington": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "70f399972d33"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller named White House chief of staff as Trump replaces Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQOUdUZHlLUURzdnZiX3dZTTJ4Qk5wR2hWV0p6V29zSWl0V2FrTlBsaWtMT3QzdElkeHd2TUdpTUduaVItVV9qUGQyWFRfZ0JVM0pOWEpKenJmVjVXaVZVRERXVWpCWFg5MlhvQmFEbG1SSlpKSWIySTFqVFd0RkZPMzJod1BqVmc1MExuR1RhdXFRMmlCcFgwQU5tbUEyVUtsNTVmNlRRYk9qaGxmMVZFdkF6Qlo2Vi1SLWd1VTk0VVo4VzdOQmE2M3lqYkRpQdIB1gFBVV95cUxPX2p4dGplSlJSUm1xYjlyN1VKU1N5T2Y3NVJBQlZBbU5rNkFmNG14aXNPV0VfZ0hSc254UG9kekRpMGk3RktONEF5TFg2Vm1kbEpLRGpPVE5uT0lTTmZMeHVzTTBzYm5iQXZxaFFSYWgtN2ZfdVEteG9DU2xiUFNMdzhfNWotamJqR2x4aVVieUpqRm1IdV8zLXFrRklKQmV5emRWcVhxYVI4MjVrSVotSXZIOGlscDNUTlQySkwzWjIxS0NDVDFBN3NjYmdBcXFhR1hrVzRR?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The New Republic": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "8d6eda462af3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump Promotes Stephen Miller After Republican Election Wipeout",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaW5oMTlCNlc0dnZOZXBkWDlDanVrMEIzUzg3Vm1faUpEN3pRNm96MU5iMW1jS3RBOWV1VXhhQWZKX05jNWpoMEo1ellCbXQzSW9NWktSSEo5LS1Ib1ljUm0yaTU4RU5sc0lLQTZjbElMek9vRVdtdFBfV2lNX1JPUlM1cjVzWU5BMURYS2tjNU1NWGs?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "WRVO Public Media": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "c8e2df518075"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller will replace Susie Wiles as Trump's chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONXBiRnROWFNuenVseXRheTNEb3JYamxwR2lCMDBhNnpCdy1Cbi10TkhfdmdzNGVmdVZjM25lNlU0Y2xnT282VzFiMms2QTlDaTZ6akczajFQeXdRRmpiZlpkb1N1Qm01RHVTWmJ0bWllUFpMSDhjVlc4LS1CaHktcUtfOFRTc01fRWlkVlg3cTJBczZHWWFXUHdWZlI?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Independent": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "cc290b0c3973"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump axes chief of staff Susie Wiles for Stephen Miller after resounding midterms defeat",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeTdsUXZkOFdfdzhNWE5DajVGaU91M2lpRjBPQ0dnWjNvYXNSdktTUFpQXzBYVXBXVTVQUzZCaEdOVWhYZVZEaS1xVFFqTlM2cmZON0ZaeS1Bal9kS1JVaDdFTDRCR2d0MTY0bERfdHhYZ2xHZ2QycEZ2Q0NuMlNqUGk5NmFOaUlTN2kwelVQSEhUVHl1TFFIc19sdFZlWUVDYURVTTdmalpxdGVGMEZoc1N3c01KYXZMYm12d0N3Rl9SQQ?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Economist": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "e635f323421a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "LBC": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "53c3d90fa291"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "after midterms hammering",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HVnVBTjF3RmM0X25Dd2RmcEllVFRVRUZrek5GN2xmMHlBS1dEbzhrUU1jeFB5NWhMckJvTk1IeE53Um9VM0dOdU50dVowRnpxaVBhdUZqSjdZcGNIYjNmb21waUE2clJGV3pYUGhHY2hSeWxZNkREX3ZveUVtS2s?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "CBC": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "3112b6e6ee61"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "out after midterm defeat",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Pa3RUOUlaa1Z4c0NLMzdKcXJTalpfQlFkaTVlRTluWjFOTTRfMGNkanhXOXd0YlpOOHAtdjhvSjZCMjgzazFZWktfcnBvUlBNX2Y4ajktbk0tRTlXM09sZ1FZUWpjVjA0?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Times of Israel": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "a174ac434926"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Days after midterm route",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYlRBekhhN0x2MHUtdXROQ2pmOVlzOW94c2ZCcXFQRy1RcXJQT1ZRQlZMOElBZjA1d2hOWVpuSXRlUVBNRVVYeWlHVzFkNTYxN2I1MWw1YlhFenBPdmlTdDgzaHRTUjhyS0s5Z1ZtQnhxRFlhZ1pGWFpqOEtGSXlrcTJ2dWdWY1JKZDR4VXV4b2ZnTlBkblY3NjBqajlWcURCLWg1Y0dwLXpMb09Mb1hvTGRlRG41LUlEUm9Ldkl3Sll3ZWl0dVNvcXpMeGNlaFd2SUQwTldXOUluVWM?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "marketscreener.com": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "a76177a2c584"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says Stephen Miller to become chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb1RVTUxQZHFNUlRrcUdMWkxXWW9PWHFZcjYzV3FWblNHeDlkYnREN2NBTHJ0a0xlenI4RUxRMV8zdzlUY1JYcmpSbGNqYXppdVYxQXNoWTd2aFpHQWVkMlptNXRLdG92akFNTTBDS3MxdEs4OWRDZll5a21mMEozTE80RHU3RG5jVEhlOENKMzY3NldraTcyZVBrQmx4a19NQng5b2hn?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Mezha.net": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "d9e745cee386"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names Stephen Miller White House chief of staff, replacing Susie Wiles",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMk90TVlneG01TUVQX1g2TGQ0Y1NaRXZZU3g1TjZHY3BZV25rVDRjTHdJT0dsOXlveUpBcnJDeGJGTlJ1OW1WQ2Y4eEpXXzM2enhmS29XWU9YUmpUeXNDbHJMc20zZWpJM29sRm9lNmxFT1kzd2psSUJEU2NWc3d6Sm1sbFY?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Israel National News": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "6d83b57b5cf6"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "replaces White House Chief of Staff Susie Wiles after GOP midterm defeat",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FYlRrVzFPbzFmZUJLQ2NrRm5sU09HNXluaUxZTnIwRjQzM01CWmlXYndBUzk3ZmhCWXpmOHhvQnBwMUExSlNRV2E3dU5HQi1DUlVKeXMxbjRZdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "India Today": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "c46d8380c865"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump sacks Susie Wiles after midterm rout",
+            "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNOXcwUnJaRmhCVHdnR09jNG1JaHJOMzVCWFYtWlctV1p4VGF3SEt0VXNXYWcyWXBSeVc1WFpCaE1nRzlXZU9BcWZUcFRGbW0xNllHT0dpd1oybTlzWnhZWVVIYTNUMVIxc2U3RDQwb1hlNmpzVXJ3NWxtNFNaX3Q4djZDZTFxb2htMEtSNlloSzNmSUpuUjVzaFQ5SHNtVEMyNG0xVVJfdVQ0cjRPcnNGWXhqaldPTDc4WDIxcXd1N1Q5dWdKRmlFd21jM1RhT1JkZjlpdDJFVWxMSlpXcWJwQXJWbUEwSTdfRVBVTWdTdE5hVUdKemNOeHVVZ1FTSmZG0gGGAkFVX3lxTE1LT0dYZk5TS0dnQmFxVnRBQnp0bjJhQ3hGNEo4dTlCVEVMVlFrWUFwRE9TSF9ITkFOMkNFQ2JwckhHZU1rc0tZSm9ZRlFDcThManVRbG8xTmwtVzFYa0Vzb3hTM3cyUDVhY0pWbFRxQkVsVGFYWXIzUDdZVEZRNG1JeFhFRVM0VGttZ3lLVmt3Uk55MDhncmk2NzJsTF9SWGVmMUpiTmtMaENXdWp6QldFOHlzajNHT09KRzRvQjJrOGUxczFaaDRWZUxqU215SmhmNWZmOWNrUlVFQjdVVGk3bExSaWpOeFJGSnQ3Q0ZpaWF3ekpTdlczY05IdFZxOE8zNzdQY1E?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Devdiscourse": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "fbb18cbe5445"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says Stephen Miller to become chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNd1N6RmlvNlFvTVNid2ZoWU1LcW9LekhtRzRtTGxTd2NDNG1aVGtaa3Q4V3FCSlBOT3I0TmR5UHpOcGVGbU9uMzhZb0dwMnZONWdtVEVHV3QzQWJvbTJ3SGk5bkR0YkF5OVlEdU5fbThIWG5vNDJWR1FDX2tsbjlzRFFEY2w4WlctdFpQWnJuNlVEdWY1WG52blpSSE1hcWJ1czlrTEF6bV9IeUxPMHfSAbMBQVVfeXFMTjV5V3RPa3Q1QVY0bTJmTlhpQ1VQa203RllvNThuYWxTQU1UTVBjWGgzZkdCcHJqYUFyZVEzdEF2ZmFWX3dPN0Fia05iVGpwYjQ4Rng1UnlCamUtNkFHU194QlgzR1EtSUdEbWNxZmY4Z2hVa21GUVNHZlRLWTFmV0tLTUpPR2FFOEx3UENwX294Ml8yU3JuZV9yNHZtOWQ2dktrWmZRdEIxVkhkZmpsR1p1azA?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Yahoo News Singapore": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "31bb9c287861"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump names migration hardliner Miller new chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQzhQOXBMRmN6LW1nZDZ0QnY2NnFmTWFxVkZ3aHZ6dGdrZEZkUzdndlRIWnUxRzlmSWNiblc3YWJfRGtaX0ZxbWl2RWR5U3JrdGJ5cUgwNmhJWEV6aFB1dU82THZaa2lHQ0tHR0xUX1U0ZVlmWnAyUng4QVdpcEg4LXo4d3lvdw?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "KTEN": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "578c83f46ab0"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Stephen Miller will become White House chief of staff, Trump announces",
+            "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRUp3U0xPbGI4Nk9HaS1IRm9ELTdNZzBkYWdvWl9CMHNBUndZdlJIUWFHNjN5alBYZEVmSktRS3NIeDNMSDJUeUQ2UWNhbUZYNHNzYXV3OEF4dGN4NTlBRXpxd2hSS0E0a1VQWEZ3NWstWWxVLTVQLU9TbzhyTjlzUzlxS1BuSnM2WXpNbW5xaUFXcnZTLWdNWEFlVGJ0b3Vodkx3QTBHZlF5d2czRjR4RDllbll4MmpuZGtVREJjTTBqRnotdGx3T0hVU1Y2dlhZSmZJdUc0U0lENGYta2JpM3ZFdFp1MTU3NUE?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "Xinhua": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "5408f9b51f12"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5aR1dmZzdESmdrNElrU2p6Nk8tdHo4TWVTdDI3MFpSSzFpQ3VtU0pwVFBTZ1UtZ3N0a1ctWFlFbmNQWXBWNHhSU0FJb2JvUkFxMEVMSVByVWFYUEV1djlLX3VlQjVMMW1xSUJreUNYZ3gwN2VZdTg5blZsdVc?oc=5"
+          }
+        ]
+      }
+    }
+  },
+  "The Straits Times": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "35d0fc243c06"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Trump promotes Stephen Miller to chief of staff role",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOenlHbDI1RGlnNlRibjh4UlVwcDBiYWRBT0JlVWFxcmpxUWFEZzdoVU1kY0dvS2VhT3hSTWJUTUQ0bFFjcUdpTEdBdXB4amkxRi1hX1BjY05XdjJpTkVoX1gyMnl4bmlVZ21hOVo0aHRYRlZlM1J5ZDRsMkROT2FZbXFjMElKT2VPem1LTnFzUjQ5TFNLVzhxMHVKcXZ1NnNGMmxfdXhqVlBIdmpOWEE?oc=5"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "topic": "Stephen Miller named chief of staff",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Neutral personnel announcement",
+      "description": "Straight news reports state that Trump named Stephen Miller chief of staff to replace Susie Wiles, with little added interpretation."
+    },
+    {
+      "id": "f2",
+      "label": "Reaction to midterm losses",
+      "description": "Posts tie the staffing change to Republican midterm defeats, presenting it as Trump's first major move after the election, sometimes with language like 'fires', 'blowout' or 'wipeout'."
+    },
+    {
+      "id": "f3",
+      "label": "Alarm about Miller's influence",
+      "description": "Coverage quotes a former Trump aide calling the prospect of Miller replacing Wiles 'terrifying', framing the change as a source of concern."
+    },
+    {
+      "id": "f4",
+      "label": "Promotion and profile of Miller",
+      "description": "Pieces present the move as a promotion or explain who Miller is, including biographical angles such as his Duke background."
+    }
+  ],
+  "created": "2026-11-06",
+  "history": [
+    {
+      "date": "2026-11-06",
+      "verdict": "strong",
+      "kappa": 0.67,
+      "n_items": 160,
+      "n_framed": 54
+    }
+  ]
+}

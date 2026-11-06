@@ -1,0 +1,41 @@
+{
+  "topic": "2026 US midterm elections",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Live results and vote tracking",
+      "description": "Posts present the midterms as a running tally of races, maps and charts, reporting who won or leads without much interpretation."
+    },
+    {
+      "id": "f2",
+      "label": "Democratic mandate and governing agenda",
+      "description": "Posts treat the Democratic win of Congress and state legislatures as a mandate and look at what the party will do with power, such as tariff reversal, Supreme Court reform, election law changes, AI limits and leadership choices."
+    },
+    {
+      "id": "f3",
+      "label": "Republican and Trump fallout",
+      "description": "Posts focus on the Republican defeat as a rebuke of Trump and a source of turmoil, covering aides doubting his focus, White House staff changes, 2028 worries and the Iran war."
+    },
+    {
+      "id": "f4",
+      "label": "Markets, business and economy",
+      "description": "Posts view the results through their financial effects, including falling stocks, AI-sector jitters, business implications and policy forecasts."
+    },
+    {
+      "id": "f5",
+      "label": "Voter blocs and long-term political shifts",
+      "description": "Posts interpret the results as evidence of wider trends, such as women voters, progressive versus moderate Democrats, populism, historical comparisons and the 2028 outlook."
+    }
+  ],
+  "created": "2026-11-06",
+  "history": [
+    {
+      "date": "2026-11-06",
+      "verdict": "unreliable",
+      "kappa": 0.4,
+      "n_items": 160,
+      "n_framed": 42
+    }
+  ]
+}

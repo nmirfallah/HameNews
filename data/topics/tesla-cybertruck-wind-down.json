@@ -1,0 +1,41 @@
+{
+  "topic": "Tesla Cybertruck wind-down",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Neutral production announcement",
+      "description": "Reports the wind-down as a straightforward corporate news item, citing Musk's statement and the timing (Texas, 2027) without evaluative language."
+    },
+    {
+      "id": "f2",
+      "label": "Commercial flop and weak sales",
+      "description": "Frames the end of the Cybertruck as the result of poor demand, citing sales far below plan, limited markets and a polarizing design, often with words like 'flop' or 'failure'."
+    },
+    {
+      "id": "f3",
+      "label": "Strategic pivot to Cybercab and AI",
+      "description": "Presents the wind-down as a reallocation of factory capacity and company focus toward Cybercab, robotaxis, robotics and AI."
+    },
+    {
+      "id": "f4",
+      "label": "Quality and recall troubles",
+      "description": "Looks back at the truck's problems, such as cracked windows, delays and repeated recalls, as part of its troubled record."
+    },
+    {
+      "id": "f5",
+      "label": "Obituary and skeptical commentary",
+      "description": "Uses eulogy-style or pointed language ('RIP', 'Is Dead', 'convenient excuse') to treat the end as a symbolic moment or to question Musk's stated reasons."
+    }
+  ],
+  "created": "2026-11-06",
+  "history": [
+    {
+      "date": "2026-11-06",
+      "verdict": "unreliable",
+      "kappa": 0.45,
+      "n_items": 160,
+      "n_framed": 53
+    }
+  ]
+}

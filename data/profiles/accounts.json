@@ -1,0 +1,728 @@
+{
+  "mastodon:analytics@social.vir.group": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f5": 3
+        },
+        "seen": [
+          "7bd9caf79de9",
+          "d5fdb72b4f6c",
+          "aec14b28ddb7"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Suspicious maneuvers of Iranian vessels near submarine cables",
+            "url": "https://social.vir.group/@analytics/117571098140714142"
+          },
+          {
+            "framing": "f5",
+            "quote": "the IRGC has shot down 16 MQ-1C Gray Eagle and 56 MQ-9A Reaper drones",
+            "url": "https://social.vir.group/@analytics/117570170008468301"
+          },
+          {
+            "framing": "f5",
+            "quote": "IRGC claims to have shot down a US MQ-1C Gray Eagle unmanned drone",
+            "url": "https://social.vir.group/@analytics/117570085271961123"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:bcinfo@mastodon.roitsystems.ca": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "d91399b84391"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Hotfinds": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "ffe71034089c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump Says Iran War Could End Soon",
+            "url": "https://mastodon.social/@Hotfinds/117382611635240698"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:poligraf@mastodon.online": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "375cecc08c38"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "why did Trump wait until after the election to use it",
+            "url": "https://mastodon.online/@poligraf/117570672960238186"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ScottLucas@journa.host": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "470a824051c4"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Iran negotiators reviewing proposals to limit Tehran nuclear program",
+            "url": "https://journa.host/@ScottLucas/117570433848943103"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:elfolio": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0304289dbd51"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:publicnewsfeed": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 4,
+          "f3": 2,
+          "none": 1
+        },
+        "seen": [
+          "5b82818326ee",
+          "5e84a8184f41",
+          "c54c579e8bb7",
+          "e37706fb9202",
+          "2481bab44011",
+          "58a645884a25",
+          "7a807f90ead7"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "After midterm stinging defeat, Trump is left to weigh his next move in Iran war",
+            "url": "https://mastodon.social/@publicnewsfeed/117564136746506232"
+          },
+          {
+            "framing": "f1",
+            "quote": "Americans voted against Trump's Iran war",
+            "url": "https://mastodon.social/@publicnewsfeed/117566142097634168"
+          },
+          {
+            "framing": "f1",
+            "quote": "Trump says 'largely true' Iran war led to Republicans midterm loss",
+            "url": "https://mastodon.social/@publicnewsfeed/117560951694488918"
+          },
+          {
+            "framing": "f3",
+            "quote": "Qatar stepped up efforts to bridge differences and avert a renewed escalation",
+            "url": "https://mastodon.social/@publicnewsfeed/117555879208926431"
+          },
+          {
+            "framing": "f3",
+            "quote": "Donald Trump also said a deal with Tehran could happen.",
+            "url": "https://mastodon.social/@publicnewsfeed/117551632554009607"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:bdonadio": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "1d5212dbebe2"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "This could be the small window for peace talks with Iran",
+            "url": "https://mastodon.social/@bdonadio/117295432688287770"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Mathrubhumi_English": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "none": 3,
+          "f5": 2,
+          "f3": 3,
+          "f4": 1,
+          "f1": 1
+        },
+        "seen": [
+          "cd33b3736ac9",
+          "b1608295967c",
+          "aaacf4b7a5af",
+          "c2063f269aea",
+          "2287bd97fa63",
+          "9eec129f36fe",
+          "f63de825e7dd",
+          "999615a4a4f7",
+          "28d869423e63",
+          "d669b6a55da0"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "A tanker was hit by an \"unknown projectile\" near the Strait of Hormuz",
+            "url": "https://mastodon.social/@Mathrubhumi_English/117165010709554465"
+          },
+          {
+            "framing": "f3",
+            "quote": "Iran rejects reports of a new Strait of Hormuz deal with the US",
+            "url": "https://mastodon.social/@Mathrubhumi_English/117498969669422438"
+          },
+          {
+            "framing": "f4",
+            "quote": "Residents express fear over rising living costs.",
+            "url": "https://mastodon.social/@Mathrubhumi_English/117232889704493534"
+          },
+          {
+            "framing": "f1",
+            "quote": "Why Trump furious after US Senate rebuke on war powers?",
+            "url": "https://mastodon.social/@Mathrubhumi_English/116803473076171472"
+          },
+          {
+            "framing": "f3",
+            "quote": "Iran has agreed to tougher nuclear restrictions as US-Iran negotiations continue",
+            "url": "https://mastodon.social/@Mathrubhumi_English/116667951026420889"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:GeoWire": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bc498ab5b65f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump's Iran Strategy Faces Crossroads After Midterm Defeat",
+            "url": "https://mastodon.social/@GeoWire/117570241335155655"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:desnips": {
+    "topics": {
+      "iran": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "0f8e3d501503"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Qatar mediates with Trump to prevent escalation with Iran",
+            "url": "https://mastodon.social/@desnips/117570232646456850"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:BruceMirken@mas.to": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "3d7b3a77c8d9"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "A brutal but accurate obit for the soon-to-die # Cybertruck",
+            "url": "https://mas.to/@BruceMirken/117570809213441485"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:RealJournalism": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "cd241e7798ca"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "the real reason # Tesla halted # Cybertruck production is",
+            "url": "https://mastodon.social/@RealJournalism/117570253778527094"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:carkner@glammr.us": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "790cd905dfd2"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "good riddance, because as a part time cyclist",
+            "url": "https://glammr.us/@carkner/117570242529046481"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rameshgupta": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "b355750f0690"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "“End of an error” # Tesla # CyberTruck # ElonMusk",
+            "url": "https://mastodon.social/@rameshgupta/117570080689136393"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:futurism.com@web.brid.gy": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "51728ce5f478"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Winding Down Cybertruck Production After Dismal Sales",
+            "url": "https://fed.brid.gy/r/https://futurism.com/future-society/tesla-winding-down-cybertruck-production"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:wat10000": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b02f7b921e08"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "fell far short of expectations",
+            "url": "https://news.ycombinator.com/item?id=50397255"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:double0jimb0": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "e459e3deca42"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trucks priced higher than the Cybertruck sell at higher volumes than the cybertruck.",
+            "url": "https://news.ycombinator.com/item?id=50397189"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:sloob": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "629713b78853"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Very happy to see this incel dumpster disappear.",
+            "url": "https://news.ycombinator.com/item?id=50396994"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:paulpauper": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "0dcd3f3052bb"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "The Cybertruck was a distraction basically.",
+            "url": "https://news.ycombinator.com/item?id=50396885"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:specialist": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "76fbe1bbf9fa"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Tesla scaled up CyberTruck production before finding product market fit.",
+            "url": "https://news.ycombinator.com/item?id=50396849"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:al_borland": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "5263951b1abb"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "By the time Tesla delivered, there were several options already on the road",
+            "url": "https://news.ycombinator.com/item?id=50396744"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:throwaway5752": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "c0edf3cf0534"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "A low selling, controversial truck that is the brainchild of an eccentric billionaire",
+            "url": "https://news.ycombinator.com/item?id=50396732"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:thejapantimes": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1,
+          "f2": 1,
+          "none": 3
+        },
+        "seen": [
+          "b5c041c4d361",
+          "6603319ed3ff",
+          "6024d77b811f",
+          "1cdadfbfed66",
+          "0ac70bce5319"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "The Democratic sweep has devastated U.S. stocks",
+            "url": "https://mastodon.social/@thejapantimes/117568839394390981"
+          },
+          {
+            "framing": "f2",
+            "quote": "opens doors to new aid for Ukraine",
+            "url": "https://mastodon.social/@thejapantimes/117569366495934205"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:MusiqueNow@masto.ai": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "6a3fd0881c58"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Dems won, now Dems need to get to work for people",
+            "url": "https://masto.ai/@MusiqueNow/117570604132224873"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:peri@ciberlandia.pt": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "fc60f7a1cc48"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:alternet@www.urbanmind.net": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "17919ee6eec9"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Republicans are beginning to look for a way to move their party beyond",
+            "url": "https://www.urbanmind.net/display/f7dd981d-b81709c5-9e101906160b9970"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:newyorker.com@web.brid.gy": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "5983f30307ca"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "where they go from here",
+            "url": "https://fed.brid.gy/r/https://www.newyorker.com/culture/the-new-yorker-interview/pete-buttigieg-on-the-democrats-sweep-of-congress-and-where-they-go-from-here"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:SocraticEthics@mastodon.online": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3c985bb32141"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:guardianfeeds@rssfeed.media": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1,
+          "f5": 1
+        },
+        "seen": [
+          "c4455bd11fd2",
+          "2c5019869534"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democratics plan comeback for when new Congress is sworn in",
+            "url": "https://rssfeed.media/@guardianfeeds/117570761052643574"
+          },
+          {
+            "framing": "f5",
+            "quote": "Democrats won big in Ohio on working-class issues",
+            "url": "https://rssfeed.media/@guardianfeeds/117570760182252024"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:theguardian_us_news@halo.nu": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "5f05587c19be"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Could the AI bubble burst after Democrats' midterms sweep",
+            "url": "https://halo.nu/@theguardian_us_news/117570641935807359"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Nonilex@masto.ai": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "e217fe75533b"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Very bad news. Trump may be a lame duck, but Miller is a zealot.",
+            "url": "https://masto.ai/@Nonilex/117571063951512823"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:KimPerales@toad.social": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "847e04f37d0b"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "first administrative change since the lopsided midterm elections",
+            "url": "https://toad.social/@KimPerales/117571077071174752"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:iuculano@masto.ai": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "2092d1bc3fdb"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:deadline": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "a6e015f47ff7"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Moves Follows Voters' Midterm Rebuke",
+            "url": "https://mastodon.social/@deadline/117571054559303406"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -86,6 +86,72 @@ class CliTests(unittest.TestCase):
         op.assert_not_called()
 
 
+class FakeApiError(Exception):
+    def __init__(self, message, status_code=None):
+        super().__init__(message)
+        self.status_code = status_code
+
+
+CREDIT = ("Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': "
+          "'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing.'}}")
+
+
+class ExplainTests(unittest.TestCase):
+    def test_billing_error(self):
+        msg = cli.explain(FakeApiError(CREDIT, 400))
+        self.assertIn("credit balance is too low", msg)
+        self.assertIn("Plans & Billing", msg)
+        self.assertIn("chat subscription", msg)
+
+    def test_bad_key(self):
+        self.assertIn("API key was rejected", cli.explain(FakeApiError("nope", 401)))
+        self.assertIn("API key was rejected", cli.explain(FakeApiError("invalid x-api-key")))
+
+    def test_unknown_model(self):
+        msg = cli.explain(FakeApiError("model: claude-x not found", 404))
+        self.assertIn("config.yaml", msg)
+        self.assertIsNone(cli.explain(FakeApiError("page not found", 404)))
+
+    def test_rate_limit(self):
+        self.assertIn("rate-limiting", cli.explain(FakeApiError("slow down", 429)))
+
+    def test_missing_key_message_passes_through(self):
+        err = RuntimeError("Set the ANTHROPIC_API_KEY environment variable.")
+        self.assertEqual(cli.explain(err), str(err))
+
+    def test_unknown_errors_are_not_explained_away(self):
+        self.assertIsNone(cli.explain(ValueError("boom")))
+        self.assertIsNone(cli.explain(FakeApiError("server exploded", 500)))
+
+
+class ErrorHandlingTests(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+
+    def main(self):
+        with mock.patch.object(sys, "argv", ["run.py", "--data-dir", self._tmp.name, "--config", CONFIG,
+                                             "--subject", "Iran"]):
+            cli.main()
+
+    def test_billing_error_becomes_a_short_message_not_a_traceback(self):
+        with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", side_effect=FakeApiError(CREDIT, 400)):
+            with self.assertRaises(SystemExit) as cm:
+                self.main()
+        self.assertIn("credit balance is too low", str(cm.exception))
+
+    def test_missing_key_is_caught_when_building_the_model(self):
+        with mock.patch.object(cli, "get_llm", side_effect=RuntimeError("Set the ANTHROPIC_API_KEY environment variable.")):
+            with self.assertRaises(SystemExit) as cm:
+                self.main()
+        self.assertIn("ANTHROPIC_API_KEY", str(cm.exception))
+
+    def test_unexpected_errors_still_show_the_traceback(self):
+        with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", side_effect=ValueError("bug")):
+            with self.assertRaises(ValueError):
+                self.main()
+
+
 class CheckSourcesTests(unittest.TestCase):
     def test_show_reports_ok_empty_and_failures(self):
         import check_sources

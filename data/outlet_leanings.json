@@ -1,0 +1,878 @@
+{
+  "A News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "ABC News & Headlines – Australian Broadcasting Corporation": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "ABC News - Breaking News, Latest News and Videos": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "ABC7 New York": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "AFR": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "ANI News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "AP News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "ASHARQ AL-AWSAT English": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Al Jazeera": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Anadolu Ajansı": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Arab News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Arise News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Arizona Capitol Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Ark Invest": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Ars Technica": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Austin American-Statesman": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Aviation International News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Axios": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "BBC": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Barchart.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Barron's": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Bloomberg Law News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Bloomberg.com": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Britannica": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Business Insider": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "CBC": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "CBS News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "CNBC": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "CNN": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "CNN Arabic": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "CTV News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Car and Driver": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "CarExpert": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Center for American Progress": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Channel 4": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Chatham House": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Colorado House Democrats": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "CommBank": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Council on Foreign Relations": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Crude Oil Prices Today | OilPrice.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "DW.com": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Dallas Express": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Deadline": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Defector": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Devdiscourse": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Dezeen": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Edelman": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Electrek": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Euronews.com": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Financial Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Firstpost": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "Forbes": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "Fortune": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Fox News": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "France 24": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Futurism": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "GOV.UK": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Gadget Review": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Gizmodo": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Global News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Haaretz": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Herald Sun": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "Hindustan Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Houston Chronicle": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "India Today": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "InsideEVs": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Institute for the Study of War": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Investing.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Investing.com India": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Investor's Business Daily": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "Iran International": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Iran News Update": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "IranWire": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Israel National News": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "KATU": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KCRA": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "KEYE": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KFOX": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KIRO 7 News Seattle": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "KOCO": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KOKH": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "KTEN": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "KTSM 9 News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KVUE": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Khaleej Times": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "LBC": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Le Monde.fr": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Legis1": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "LiveNOW from FOX": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "Los Angeles Times": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Lowy Institute": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "MS NOW": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Mashable": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Mezha.net": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Middle East Eye": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Military.com": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Missourian | Washington, MO": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "MotorTrend": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "NBC News": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "NBC4 Washington": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "NC Newsline": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "NDTV": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "NPR": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "NPR Illinois": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "National Council of Resistance of Iran - NCRI": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "New York Post": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "News On AIR": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "News.com.au": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "NewsNation": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Newser": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Not a Tesla App": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "ODI: Think change": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Open Magazine": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Outlook India": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "PBS": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "PCMag": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Political Science Now": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Politico": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Public Citizen": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Radio Free Europe/Radio Liberty": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Rediff": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Renew Economy": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Reuters": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Rolling Stone": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "SBS": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "SCOTUSblog": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "SMH.com.au": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Scripps News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Sky News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "South China Morning Post": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Spectrum News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "St. Cloud Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "St. James’s Place": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Stuff": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "TRT World": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "TechCrunch": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Telegraph India": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Teneo": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The 19th News": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The Age": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The American Action Forum": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The American Conservative": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "The Australian": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Autopian": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Colorado Sun": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Conversation": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Diplomat – Asia-Pacific Current Affairs Magazine": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Dispatch": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Drive": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Duke Chronicle": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Economic Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Economist": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Guardian": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The Hill": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Hindu": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The House of Commons Library": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Independent": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The Irish Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Jerusalem Post": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Media Line": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Motley Fool": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The National": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The New Indian Express": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The New Republic": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "The New York Times": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The New Yorker": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "The Next Web": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Seattle Times": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Straits Times": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Strategist | ASPI's analysis and commentary site": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Telegraph": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Times": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Times of India": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Times of Israel": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Verge": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The Washington Post": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "TheWrap": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Time Magazine": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Toledo Blade": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Tom's Hardware": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Top Gear": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "U.S. Virtual Embassy Iran (.gov)": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "USA Today": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "United States Studies Centre": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Vanity Fair": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Votebeat": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WBAL News Radio": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "WBAL-TV": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WJLA": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "WRDW": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WRVO Public Media": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "WSJ": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "WTAE": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "WTOP News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "XTB.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Xinhua": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yahoo": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yahoo Autos": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yahoo Finance": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yahoo Finance UK": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yahoo News Singapore": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Ynetnews": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "https://ascendants.in/": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "https://tech-insider.org/": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "i24NEWS": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "marketscreener.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "shattered.io": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "www.inss.org.il": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "www.israelhayom.com": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
+  "הארץ": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "اخبارك نت": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "الجزيرة نت": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "الحدث": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "الحرة": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "الشرق الأوسط": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "الشرق للأخبار": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "العربية": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "تسنیم": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "سكاي نيوز عربية": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  }
+}
