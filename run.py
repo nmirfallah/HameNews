@@ -19,6 +19,26 @@ from trendwatch.pipeline import run
 from trendwatch.store import Store
 
 
+def explain(error):
+    """A short, actionable message for the errors people hit most often; None for anything else."""
+    low, status = str(error).lower(), getattr(error, "status_code", None)
+    if "credit balance is too low" in low:
+        return ("Your Anthropic API credit balance is too low.\n"
+                "Add credit at console.anthropic.com > Plans & Billing (in the same organization as your API key), "
+                "wait a minute, and run again.\nA Claude chat subscription does not include API credit.")
+    if status == 401 or "invalid x-api-key" in low:
+        return ("The API key was rejected. Check that ANTHROPIC_API_KEY holds a valid key "
+                "(PowerShell: $env:ANTHROPIC_API_KEY = \"your_key\") and that it was not revoked.")
+    if status == 404 and "model" in low:
+        return ("The API says that model name does not exist for your account.\n"
+                "Edit llm.models in config.yaml (fast and smart) to model names you have access to.")
+    if status == 429 or "rate limit" in low:
+        return "The API is rate-limiting this key. Wait a minute and run again, or lower collection.max_articles."
+    if isinstance(error, RuntimeError) and "environment variable" in low:
+        return str(error)
+    return None
+
+
 def open_in_browser(path):
     webbrowser.open(Path(path).resolve().as_uri())
     print(f"Opened {path}")
@@ -50,7 +70,13 @@ def main():
     cfg = load_config(args.config)
     if args.topics:
         cfg["discovery"]["topics_per_day"] = args.topics
-    name = run(get_llm(cfg["llm"]), cfg, store, subject=args.subject)
+    try:
+        name = run(get_llm(cfg["llm"]), cfg, store, subject=args.subject)
+    except Exception as e:
+        message = explain(e)
+        if message is None:
+            raise
+        sys.exit(f"\nError: {message}")
     if name and args.open:
         open_in_browser(store.path(name.replace(".md", ".html")))
 
