@@ -26,6 +26,10 @@ class ExtractJsonTests(unittest.TestCase):
     def test_surrounding_whitespace(self):
         self.assertEqual(extract_json('  \n{"a": 1}\n '), {"a": 1})
 
+    def test_trailing_commas_are_forgiven(self):
+        self.assertEqual(extract_json('{"a": [1, 2,], "b": 3,}'), {"a": [1, 2], "b": 3})
+        self.assertEqual(extract_json('Here: [{"i": 0,},] ok'), [{"i": 0}])
+
     def test_failures_raise_value_error(self):
         for bad in ("no json here", "{bad json}", "", None):
             with self.assertRaises(ValueError, msg=repr(bad)):
@@ -55,6 +59,28 @@ class CompleteJsonTests(unittest.TestCase):
         llm = ScriptedLLM(["[]"])
         llm.complete_json("sys", "p", tier="smart", max_tokens=123)
         self.assertEqual((llm.calls[0]["tier"], llm.calls[0]["max_tokens"]), ("smart", 123))
+
+    def test_the_retry_prompt_mentions_quotes(self):
+        llm = ScriptedLLM(["bad", "[]"])
+        llm.complete_json("sys", "p")
+        self.assertIn("double quotes", llm.calls[1]["prompt"])
+
+    def test_salvage_can_rescue_a_broken_first_reply_without_a_retry(self):
+        llm = ScriptedLLM(['[{"i": 0, "label": "f1", "evidence": "a "quoted" bit"}]'])
+        out = llm.complete_json("s", "p", salvage=lambda text: [{"i": 0, "label": "f1"}])
+        self.assertEqual(out, [{"i": 0, "label": "f1"}])
+        self.assertEqual(len(llm.calls), 1)
+
+    def test_an_empty_salvage_result_falls_through_to_the_retry(self):
+        llm = ScriptedLLM(["broken", '[{"ok": 1}]'])
+        self.assertEqual(llm.complete_json("s", "p", salvage=lambda text: []), [{"ok": 1}])
+        self.assertEqual(len(llm.calls), 2)
+
+    def test_salvage_is_tried_on_the_retry_reply_too(self):
+        llm = ScriptedLLM(["broken", "still broken"])
+        seen = []
+        out = llm.complete_json("s", "p", salvage=lambda text: seen.append(text) or ([1] if text == "still broken" else []))
+        self.assertEqual((out, seen), ([1], ["broken", "still broken"]))
 
     def test_provider_errors_propagate(self):
         llm = ScriptedLLM([RuntimeError("boom")])

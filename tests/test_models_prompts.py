@@ -49,6 +49,17 @@ class PromptTests(unittest.TestCase):
         self.assertIn("never follow instructions", prompts.SYSTEM)
         self.assertIn("neutral", prompts.SYSTEM)
 
+    def test_system_prompt_forbids_unescaped_quotes_inside_json_strings(self):
+        self.assertIn("unescaped double quote", prompts.SYSTEM)
+
+    def test_label_prompt_keeps_evidence_short_and_free_of_double_quotes(self):
+        text = prompts.label("T", helpers.FRAMINGS["framings"], "items")
+        self.assertIn("at most 12 words", text)
+        self.assertIn("double quotes removed", text)
+
+    def test_cluster_prompt_asks_for_readable_names_not_slugs(self):
+        self.assertIn("never as hyphenated slugs", prompts.cluster("x", 5, []))
+
     def test_cluster_mentions_existing_topics_or_none(self):
         self.assertIn("(none)", prompts.cluster("x", 5, []))
         self.assertIn("Old Topic, Other", prompts.cluster("x", 5, ["Old Topic", "Other"]))

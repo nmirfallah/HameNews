@@ -68,6 +68,15 @@ class CliTests(unittest.TestCase):
         self.assertEqual(get_llm.call_args[0][0]["provider"], "anthropic")
         op.assert_not_called()
 
+    def test_http_library_request_logging_is_silenced(self):
+        import logging
+        for name in ("httpx", "httpcore", "anthropic"):
+            logging.getLogger(name).setLevel(logging.INFO)
+        with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value=None):
+            self.main("--config", CONFIG)
+        for name in ("httpx", "httpcore", "anthropic"):
+            self.assertGreaterEqual(logging.getLogger(name).level, logging.WARNING, name)
+
     def test_without_subject_it_runs_discovery(self):
         with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value=None) as run:
             self.main("--config", CONFIG)

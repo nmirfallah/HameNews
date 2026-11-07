@@ -21,6 +21,13 @@ and how outlets and accounts frame the topic, with evidence for every claim.
 Labels and summaries are computed on English translations so groups are comparable across languages.
 Translation quality is therefore part of label quality; the evaluation set should include translated items.
 
+## Lessons from the first live run (2026-11-06)
+- About a quarter of labelling batches returned unreadable JSON (unescaped quotes in the evidence field, or
+  prose instead of JSON). Fixed with a quoting rule in the system prompt, a regex salvage for label rows, and
+  splitting an unreadable batch in half. Track how often salvage and splitting fire; if frequent, consider a
+  structured-output mode or dropping the model-written evidence in favour of code-extracted snippets.
+- The model copied the style of the "already tracked topics" list. Pass readable names, never file-name slugs.
+
 ## Open questions
 - Does the model keep to the "say it once" rule on real topics, or does it still restate the main story in
   each group? If so, tighten the prompt or post-filter repeated sentences.

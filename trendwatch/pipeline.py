@@ -73,7 +73,10 @@ def run(llm, cfg, store, subject=None):
     if subject:
         topics = [expand_subject(llm, subject)]
     else:
-        existing = [f[:-5] for f in store.list_dir("topics") if f.endswith(".json")]
+        existing = []   # readable names (the files are named by slug, which the model would imitate)
+        for f in store.list_dir("topics"):
+            if f.endswith(".json"):
+                existing.append((store.read(f"topics/{f}", {}) or {}).get("topic") or f[:-5])
         topics = discover_topics(llm, cfg, existing)
     if not topics:
         log.warning("nothing to analyse today")

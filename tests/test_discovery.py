@@ -125,6 +125,30 @@ class DiscoverTopicsTests(unittest.TestCase):
         self.assertEqual(topics[0]["keywords"], ["0", "1", "2", "3", "4"])
 
 
+class TidyTopicNameTests(unittest.TestCase):
+    def test_slugs_become_readable_text(self):
+        self.assertEqual(discovery.tidy_topic_name("tesla-cybertruck-wind-down"), "Tesla cybertruck wind down")
+        self.assertEqual(discovery.tidy_topic_name("2026-us-midterm-elections"), "2026 us midterm elections")
+
+    def test_real_titles_are_left_alone(self):
+        for name in ("Tesla Cybertruck production ends", "COVID-19", "covid-19", "Iran-Israel war",
+                     "Stephen Miller named chief of staff", "AI regulation"):
+            self.assertEqual(discovery.tidy_topic_name(name), name)
+
+    def test_blank_and_none(self):
+        self.assertEqual(discovery.tidy_topic_name(None), "")
+        self.assertEqual(discovery.tidy_topic_name("  "), "")
+
+    def test_discovered_slug_names_are_tidied(self):
+        reply = [{"topic": "tesla-cybertruck-wind-down", "keywords": ["tesla"], "signal_ids": [0, 1]}]
+        llm = ScriptedLLM([reply])
+        signals = {"a": lambda c: [sig("x", "a")], "b": lambda c: [sig("y", "b")]}
+        conf = cfg(discovery={"enabled_sources": ["a", "b"], "min_platforms": 2})
+        with mock.patch.dict(SIGNAL_SOURCES, signals, clear=True):
+            topics = discovery.discover_topics(llm, conf)
+        self.assertEqual(topics[0]["topic"], "Tesla cybertruck wind down")
+
+
 class ExpandSubjectTests(unittest.TestCase):
     def test_uses_fields_from_the_reply(self):
         llm = ScriptedLLM([{"topic": "Climate change", "keywords": ["a", "b"], "summary": "s"}])

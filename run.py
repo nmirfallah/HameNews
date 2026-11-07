@@ -67,6 +67,8 @@ def main():
         return open_in_browser(store.path(f"reports/{newest}"))
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    for noisy in ("httpx", "httpcore", "anthropic", "openai"):   # their per-request INFO lines bury real warnings
+        logging.getLogger(noisy).setLevel(logging.WARNING)
     cfg = load_config(args.config)
     if args.topics:
         cfg["discovery"]["topics_per_day"] = args.topics

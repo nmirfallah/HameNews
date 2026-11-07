@@ -22,6 +22,13 @@ def _base_and_headers():
                                   json={"identifier": handle, "password": pw}, timeout=20)
                 r.raise_for_status()
                 _session["token"] = r.json()["accessJwt"]
+            except requests.HTTPError as e:
+                code = getattr(e.response, "status_code", None)
+                hint = (" Check that BSKY_HANDLE looks like name.bsky.social (no @) and that BSKY_APP_PASSWORD is an "
+                        "app password created under Settings > Privacy and security > App passwords, not your "
+                        "account password." if code in (400, 401) else "")
+                log.warning("Bluesky login failed (HTTP %s).%s", code, hint)
+                _session["token"] = None
             except (requests.RequestException, KeyError, ValueError) as e:
                 log.warning("Bluesky login failed: %s", e)
                 _session["token"] = None
@@ -38,6 +45,8 @@ def signals(cfg):
 
 
 def search(topic, cfg):
+    if _session.get("blocked"):
+        return []
     base, headers = _base_and_headers()
     skip_replies = cfg["collection"].get("skip_replies", True)
     items = []
@@ -45,7 +54,11 @@ def search(topic, cfg):
         data = get_json(f"{base}/xrpc/app.bsky.feed.searchPosts",
                         params={"q": q, "limit": 50, "sort": "latest"}, headers=headers)
         if data is None:
-            log.warning("bluesky search unavailable (if unauthenticated, set BSKY_HANDLE/BSKY_APP_PASSWORD)")
+            if not headers:   # anonymous search is refused: stop asking for the rest of this run
+                _session["blocked"] = True
+                log.warning("Bluesky search needs a login, so Bluesky is skipped for this run "
+                            "(set BSKY_HANDLE and BSKY_APP_PASSWORD).")
+                break
             continue
         for p in data.get("posts", []):
             rec = p.get("record", {})

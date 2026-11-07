@@ -446,6 +446,53 @@ class BlueskyTests(unittest.TestCase):
             _, calls = self.run_search([self.post()])
         self.assertTrue(calls[0]["url"].startswith(bluesky.PUBLIC))
 
+    def test_a_rejected_login_explains_what_to_check(self):
+        bad = requests.HTTPError("401 Client Error")
+        bad.response = SimpleNamespace(status_code=401)
+        resp = mock.Mock()
+        resp.raise_for_status.side_effect = bad
+        with mock.patch.dict(os.environ, {"BSKY_HANDLE": "me", "BSKY_APP_PASSWORD": "pw"}), \
+                mock.patch.object(bluesky.requests, "post", return_value=resp), \
+                self.assertLogs("trendwatch", level="WARNING") as logs:
+            bluesky._base_and_headers()
+        text = " ".join(logs.output)
+        self.assertIn("HTTP 401", text)
+        self.assertIn("app password", text)
+        self.assertIn("name.bsky.social", text)
+
+    def test_other_login_failures_do_not_claim_the_password_is_wrong(self):
+        bad = requests.HTTPError("500 Server Error")
+        bad.response = SimpleNamespace(status_code=500)
+        resp = mock.Mock()
+        resp.raise_for_status.side_effect = bad
+        with mock.patch.dict(os.environ, {"BSKY_HANDLE": "me", "BSKY_APP_PASSWORD": "pw"}), \
+                mock.patch.object(bluesky.requests, "post", return_value=resp), \
+                self.assertLogs("trendwatch", level="WARNING") as logs:
+            bluesky._base_and_headers()
+        self.assertNotIn("app password", " ".join(logs.output))
+
+    def test_after_an_anonymous_refusal_the_rest_of_the_run_skips_bluesky(self):
+        self.no_credentials()
+        with mock.patch.object(bluesky, "get_json", return_value=None) as g, \
+                self.assertLogs("trendwatch", level="WARNING") as logs:
+            first = bluesky.search({"topic": "T", "keywords": ["a", "b"]}, cfg())
+            second = bluesky.search({"topic": "U", "keywords": ["c"]}, cfg())
+        self.assertEqual((first, second), ([], []))
+        self.assertEqual(g.call_count, 1)             # one refused request, then no more
+        self.assertEqual(len(logs.output), 1)          # and a single warning, not one per query
+        self.assertIn("BSKY_APP_PASSWORD", logs.output[0])
+
+    def test_a_failed_authenticated_search_does_not_block_later_ones(self):
+        ok = mock.Mock()
+        ok.json.return_value = {"accessJwt": "tok"}
+        with mock.patch.dict(os.environ, {"BSKY_HANDLE": "me", "BSKY_APP_PASSWORD": "pw"}), \
+                mock.patch.object(bluesky.requests, "post", return_value=ok), \
+                mock.patch.object(bluesky, "get_json", return_value=None) as g:
+            bluesky.search({"topic": "T", "keywords": ["a"]}, cfg())
+            bluesky.search({"topic": "U", "keywords": []}, cfg())
+        self.assertEqual(g.call_count, 3)
+        self.assertFalse(bluesky._session.get("blocked"))
+
     def test_refused_search_returns_no_items_without_crashing(self):
         self.no_credentials()
         with mock.patch.object(bluesky, "get_json", return_value=None):

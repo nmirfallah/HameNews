@@ -344,6 +344,18 @@ specs/                      planning documents, one file per subject
 - Posts sampled from Bluesky, Mastodon and Hacker News are not the general public.
 - Text collected from the web is treated as untrusted data and never as instructions to the AI.
 
+## Troubleshooting warnings
+
+| Message | Meaning and fix |
+|---|---|
+| `Bluesky login failed (HTTP 401)` | Bluesky rejected the login. `BSKY_HANDLE` must look like `name.bsky.social` (no `@`), and `BSKY_APP_PASSWORD` must be an **app password** (Settings > Privacy and security > App passwords), not your account password. In PowerShell: `$env:BSKY_HANDLE = "name.bsky.social"` and `$env:BSKY_APP_PASSWORD = "xxxx-xxxx-xxxx-xxxx"`, then run again. |
+| `Bluesky search needs a login, so Bluesky is skipped for this run` | Anonymous Bluesky search is refused. Without a working login the run simply has no Bluesky posts; everything else continues. |
+| `labelling skipped one item` | The model's reply for one item could not be read even after splitting the batch. The item is left unlabelled. A few of these are normal. Many means the model or prompt needs attention. |
+| `Your Anthropic API credit balance is too low` | Add credit at console.anthropic.com > Plans & Billing. |
+
+Replies with broken JSON (usually a quote inside a quoted phrase) are repaired where possible, and an
+unreadable batch is split in half and retried, so one bad item no longer costs its whole batch.
+
 ## Known limits
 
 - The code was tested offline with a fake AI and fake data. Live endpoints, feed URLs and

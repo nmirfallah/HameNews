@@ -1,5 +1,7 @@
 """Stage 3: find framings, label items twice independently, and measure whether the divide is real."""
+import json
 import random
+import re
 from datetime import date
 
 from . import prompts
@@ -41,6 +43,30 @@ def get_framings(llm, topic, items, store, cfg):
     return result
 
 
+_OBJECT = re.compile(r"\{[^{}]*\}")
+
+
+def salvage_label_rows(text):
+    """Recover label rows from a reply whose JSON is broken (typically an unescaped quote inside the
+    evidence text). The index, label and confidence are read from each object; broken evidence is dropped."""
+    rows = []
+    for chunk in _OBJECT.findall(text or ""):
+        try:
+            row = json.loads(chunk)
+        except json.JSONDecodeError:
+            idx = re.search(r'"i"\s*:\s*(\d+)', chunk)
+            lab = re.search(r'"label"\s*:\s*"([^"]*)"', chunk)
+            if not (idx and lab):
+                continue
+            row = {"i": int(idx.group(1)), "label": lab.group(1), "evidence": ""}
+            conf = re.search(r'"confidence"\s*:\s*([0-9]*\.?[0-9]+)', chunk)
+            if conf:
+                row["confidence"] = float(conf.group(1))
+        if isinstance(row, dict) and "i" in row and "label" in row:
+            rows.append(row)
+    return rows
+
+
 def _label_pass(llm, topic_name, framings, items, a, seed, reverse):
     order = list(range(len(items)))
     if seed is not None:
@@ -49,15 +75,23 @@ def _label_pass(llm, topic_name, framings, items, a, seed, reverse):
     allowed = {f["id"] for f in framings} | {"none", "unclear"}
     out = {}
     bs = a["batch_size"]
-    for start in range(0, len(order), bs):
-        batch = [items[i] for i in order[start:start + bs]]
+
+    def run_batch(batch):
         try:
             data = llm.complete_json(prompts.SYSTEM,
                                      prompts.label(topic_name, shown, _block(batch, a["max_item_chars"])),
-                                     tier="fast", max_tokens=1500)
+                                     tier="fast", max_tokens=1500, salvage=salvage_label_rows)
+        except ValueError:          # unreadable even after the retry: split the batch to isolate the cause
+            if len(batch) > 1:
+                mid = len(batch) // 2
+                run_batch(batch[:mid])
+                run_batch(batch[mid:])
+            else:
+                log.warning("labelling skipped one item: the model's reply could not be read")
+            return
         except Exception as e:
             log.warning("labelling batch failed: %s", e)
-            continue
+            return
         if isinstance(data, dict):
             data = data.get("labels", [])
         for row in data:
@@ -71,8 +105,11 @@ def _label_pass(llm, topic_name, framings, items, a, seed, reverse):
                     conf = 0.5
                 out[batch[j].id] = {"label": lab, "confidence": conf,
                                     "evidence": clip(str(row.get("evidence", "")), 160)}
-            except (KeyError, ValueError, TypeError):
+            except (KeyError, ValueError, TypeError, AttributeError):
                 continue
+
+    for start in range(0, len(order), bs):
+        run_batch([items[i] for i in order[start:start + bs]])
     for it in items:
         out.setdefault(it.id, {"label": "unclear", "confidence": 0.0, "evidence": ""})
     return out

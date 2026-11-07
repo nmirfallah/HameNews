@@ -9,7 +9,7 @@ class Store:
         self.root = root
 
     def path(self, rel):
-        return os.path.join(self.root, rel)
+        return os.path.normpath(os.path.join(self.root, rel))
 
     def read(self, rel, default=None):
         try:

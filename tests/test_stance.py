@@ -4,7 +4,7 @@ import unittest
 import helpers
 from helpers import FRAMINGS, FRAMINGS_REPLY, ScriptedLLM, cfg, item, keyword_labels
 from trendwatch.stance import (_label_pass, cohens_kappa, divide_report, get_framings,
-                               label_with_consensus)
+                               label_with_consensus, salvage_label_rows)
 from trendwatch.store import Store
 
 
@@ -135,6 +135,66 @@ class LabelPassTests(unittest.TestCase):
         prompt = llm.calls[0]["prompt"]
         self.assertNotIn("<script>", prompt)
         self.assertNotIn("x" * 30, prompt)
+
+
+class SalvageTests(unittest.TestCase):
+    BROKEN = ('[{"i": 0, "label": "f1", "confidence": 0.9, "evidence": "he said "no" to it"},\n'
+              ' {"i": 1, "label": "none", "confidence": 0.5, "evidence": ""},\n'
+              ' {"label": "f2", "confidence": 0.7, "evidence": "missing the index"},\n'
+              ' {"i": 3, "label": "f2", "evidence": "oops "x" here"}]')
+
+    def test_rows_are_recovered_from_json_broken_by_quotes_in_the_evidence(self):
+        rows = salvage_label_rows(self.BROKEN)
+        self.assertEqual([(r["i"], r["label"]) for r in rows], [(0, "f1"), (1, "none"), (3, "f2")])
+        self.assertEqual(rows[0]["confidence"], 0.9)
+        self.assertEqual(rows[0]["evidence"], "")      # the broken evidence is dropped, not guessed
+        self.assertEqual(rows[1]["evidence"], "")
+        self.assertNotIn("confidence", rows[2])
+
+    def test_nothing_recoverable_gives_an_empty_list(self):
+        for text in ("Sorry, I cannot help with that.", "", None, "{}", '{"label": "f1"}'):
+            self.assertEqual(salvage_label_rows(text), [], repr(text))
+
+    def test_label_pass_uses_the_salvaged_rows_without_a_second_request(self):
+        items = [item(0), item(1)]
+        llm = ScriptedLLM([self.BROKEN])
+        out = _label_pass(llm, "T", FRAMINGS["framings"], items, {"batch_size": 100, "max_item_chars": 50}, None, False)
+        self.assertEqual((out["0"]["label"], out["1"]["label"]), ("f1", "none"))
+        self.assertEqual(len(llm.calls), 1)
+
+
+class BisectTests(unittest.TestCase):
+    A = {"batch_size": 100, "max_item_chars": 500}
+
+    def poison_handler(self, prompt, tier):
+        if "POISON" in prompt:
+            return "I'm sorry, but I can't help with that request."
+        return keyword_labels(prompt)
+
+    def test_one_unreadable_item_does_not_take_its_batch_down(self):
+        items = [item(i, text=f"A triumph number {i}") for i in range(7)]
+        items[4] = item(4, text="POISON triumph")
+        llm = ScriptedLLM(handler=self.poison_handler)
+        out = _label_pass(llm, "T", FRAMINGS["framings"], items, self.A, None, False)
+        self.assertEqual(out["4"]["label"], "unclear")
+        for i in (0, 1, 2, 3, 5, 6):
+            self.assertEqual(out[str(i)]["label"], "f1", i)
+
+    def test_a_single_unreadable_item_ends_cleanly(self):
+        llm = ScriptedLLM(handler=lambda p, t: "no json here")
+        out = _label_pass(llm, "T", FRAMINGS["framings"], [item(0, text="POISON")], self.A, None, False)
+        self.assertEqual(out["0"]["label"], "unclear")
+        self.assertEqual(len(llm.calls), 2)  # the call and its single retry, then it gives up
+
+    def test_api_errors_are_not_split_because_that_would_only_repeat_the_failure(self):
+        llm = ScriptedLLM(handler=lambda p, t: RuntimeError("api down"))
+        _label_pass(llm, "T", FRAMINGS["framings"], [item(i) for i in range(8)], self.A, None, False)
+        self.assertEqual(len(llm.calls), 1)
+
+    def test_healthy_batches_cost_one_request_each(self):
+        llm = ScriptedLLM(handler=lambda p, t: keyword_labels(p))
+        _label_pass(llm, "T", FRAMINGS["framings"], [item(i) for i in range(10)], self.A, None, False)
+        self.assertEqual(len(llm.calls), 1)
 
 
 class ConsensusTests(unittest.TestCase):

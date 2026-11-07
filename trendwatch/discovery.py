@@ -1,9 +1,19 @@
 """Stage 1: decide WHAT to analyse (manual subject, or auto-discovered from trend signals)."""
+import re
 from collections import defaultdict
 
 from . import prompts
 from .sources import SIGNAL_SOURCES
 from .util import clip, log
+
+
+def tidy_topic_name(name):
+    """Turn a hyphenated slug the model sometimes returns ('tesla-cybertruck-wind-down') into readable text."""
+    name = str(name or "").strip()
+    if name.count("-") >= 2 and re.fullmatch(r"[a-z0-9-]+", name):
+        name = name.replace("-", " ")
+        name = name[:1].upper() + name[1:]
+    return name
 
 
 def gather_signals(cfg):
@@ -56,7 +66,7 @@ def discover_topics(llm, cfg, existing_topic_names=()):
             continue
         platforms = sorted({signals[i].platform for i in ids})
         topics.append({
-            "topic": t["topic"],
+            "topic": tidy_topic_name(t["topic"]),
             "keywords": [str(k) for k in t.get("keywords", [])][:5],
             "summary": t.get("summary", ""),
             "platforms": platforms,

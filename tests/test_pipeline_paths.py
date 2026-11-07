@@ -196,6 +196,18 @@ class RunTests(PipelineTestCase):
         cluster_prompt = next(c["prompt"] for c in llm.calls if c["prompt"].startswith("TASK:cluster_topics"))
         self.assertIn("old-topic", cluster_prompt)
 
+    def test_the_model_is_shown_readable_topic_names_not_file_name_slugs(self):
+        self.content(mixed_items(12, 6))
+        self.signals([Signal("a", "google_trends"), Signal("b", "wikipedia")])
+        self.store.write("topics/tesla-cybertruck-wind-down.json", {"topic": "Tesla Cybertruck wind-down"})
+        self.store.write("topics/legacy.json", {"framings": []})  # no stored name: falls back to the file name
+        llm = ScriptedLLM(handler=handler(cluster_topics=[{"topic": "X", "keywords": [], "signal_ids": [0, 1]}]))
+        pipeline.run(llm, self.cfg, self.store)
+        prompt = next(c["prompt"] for c in llm.calls if c["prompt"].startswith("TASK:cluster_topics"))
+        self.assertIn("Tesla Cybertruck wind-down", prompt)
+        self.assertNotIn("tesla-cybertruck-wind-down", prompt)
+        self.assertIn("legacy", prompt)
+
     def test_nothing_trending_means_no_report(self):
         self.signals([])
         llm = ScriptedLLM(handler=handler())

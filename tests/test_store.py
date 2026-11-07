@@ -45,6 +45,11 @@ class StoreTests(unittest.TestCase):
         self.assertEqual(self.store.list_dir("d"), ["a.json", "b.json"])
         self.assertEqual(self.store.list_dir("missing"), [])
 
+    def test_paths_use_one_consistent_separator_style(self):
+        self.assertEqual(self.store.path("reports/a.md"),
+                         os.path.normpath(os.path.join(self._tmp.name, "reports", "a.md")))
+        self.assertNotIn("/./", self.store.path("./x/../y.json").replace(os.sep, "/"))
+
     def test_path_is_under_root(self):
         self.assertTrue(self.store.path("x/y.json").startswith(self._tmp.name))
 
