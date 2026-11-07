@@ -110,6 +110,21 @@
           "0304289dbd51"
         ],
         "evidence": []
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "f27d20eefc9a"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "replaces Susie Wiles with Stephen Miller... after the Republican defeat.",
+            "url": "https://mastodon.social/@elfolio/117572150582687210"
+          }
+        ]
       }
     }
   },
@@ -501,16 +516,19 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f4": 1,
+          "f4": 2,
           "f2": 1,
-          "none": 3
+          "none": 5
         },
         "seen": [
           "b5c041c4d361",
           "6603319ed3ff",
           "6024d77b811f",
           "1cdadfbfed66",
-          "0ac70bce5319"
+          "0ac70bce5319",
+          "811325177a93",
+          "eacc0600d0e2",
+          "cc8e83c24a5d"
         ],
         "evidence": [
           {
@@ -522,6 +540,11 @@
             "framing": "f2",
             "quote": "opens doors to new aid for Ukraine",
             "url": "https://mastodon.social/@thejapantimes/117569366495934205"
+          },
+          {
+            "framing": "f4",
+            "quote": "Japanese equities sank amid indications of Democratic gains",
+            "url": "https://mastodon.social/@thejapantimes/117557774315701419"
           }
         ]
       }
@@ -573,6 +596,27 @@
             "framing": "f3",
             "quote": "Republicans are beginning to look for a way to move their party beyond",
             "url": "https://www.urbanmind.net/display/f7dd981d-b81709c5-9e101906160b9970"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 2
+        },
+        "seen": [
+          "256ec2b484cb",
+          "3131aa24c171"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "had not gotten the midterm message",
+            "url": "https://www.urbanmind.net/display/f7dd981d-80f610d6-c5b2ced757a999fe"
+          },
+          {
+            "framing": "f2",
+            "quote": "won't be looking to cut any deals once the Democrats assume their majorities",
+            "url": "https://www.urbanmind.net/display/f7dd981d-cec66381-bae7621448bc222b"
           }
         ]
       }
@@ -640,16 +684,23 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f4": 1
+          "f4": 1,
+          "f2": 1
         },
         "seen": [
-          "5f05587c19be"
+          "5f05587c19be",
+          "3d8dfa576c10"
         ],
         "evidence": [
           {
             "framing": "f4",
             "quote": "Could the AI bubble burst after Democrats' midterms sweep",
             "url": "https://halo.nu/@theguardian_us_news/117570641935807359"
+          },
+          {
+            "framing": "f2",
+            "quote": "Several Democrats renew calls for datacenter pauses after blue wave",
+            "url": "https://halo.nu/@theguardian_us_news/117571602463007843"
           }
         ]
       }
@@ -720,6 +771,706 @@
             "framing": "f2",
             "quote": "Moves Follows Voters' Midterm Rebuke",
             "url": "https://mastodon.social/@deadline/117571054559303406"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:trending@mastodon.bot": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "35bc26aa6312"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:vwdasher@weird.autos": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "91ce9e8d3a12"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "RIP to Cyberstuck",
+            "url": "https://weird.autos/@vwdasher/117571276727724457"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ansonkennedy": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "1ad617a0435a"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "RIP Cyberedsel.",
+            "url": "https://mastodon.social/@ansonkennedy/117571516206017229"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kekoakiki@vt.social": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "b7f83cb4ba68"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "is finally toast. Nature really is healing.",
+            "url": "https://vt.social/@kekoakiki/117571981119643852"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:vnzn@mas.to": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "beb87cf9abcd"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Tesla to wind down Cybertruck production",
+            "url": "https://mas.to/@vnzn/117571213741573759"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:citelink": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "6067bea18f6d"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "as focus shifts to Cybercab",
+            "url": "https://mastodon.social/@citelink/117572615540532008"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:walletsum95": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "9529df3da592"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Tesla sold 20,237 in the US in 2025",
+            "url": "https://mastodon.social/@walletsum95/117572147901521393"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:hipsauerkraut@vivaldi.net": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "f0ad0839ba76"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Der # Wankpanzer ist tot",
+            "url": "https://social.vivaldi.net/@hipsauerkraut/117571538334265206"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:umutisik": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "cb01a0f38843"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "they will prioritize the cab",
+            "url": "https://news.ycombinator.com/item?id=50400187"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:krapp": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "d169fce497bd"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "The panels come unglued, they rust in the rain",
+            "url": "https://news.ycombinator.com/item?id=50399699"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:wyre": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "6fd146808049"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:panopticon": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "e2592c95c7d1"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:LightBug1": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "33a97f51b394"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "The Cyberduck has always been DOA",
+            "url": "https://news.ycombinator.com/item?id=50399465"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:lukan": {
+    "topics": {
+      "tesla-cybertruck-wind-down": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c833abb0f555"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:MaryAustinBooks@mstdn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "1edd54c1dd46"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "We cannot afford to have \"leadership\" owned by the tech fascists",
+            "url": "https://mstdn.social/@MaryAustinBooks/117572070297298377"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:gilduran@journa.host": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "6952a9dca270"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "After the GOP's midterm wipeout, he's blaming the Iran war",
+            "url": "https://journa.host/@gilduran/117572390771202196"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:DrALJONES": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1,
+          "f2": 1
+        },
+        "seen": [
+          "7dd10e165556",
+          "1fe5e07ea591"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Incoming senators want Schumer & Jeffries replaced",
+            "url": "https://mastodon.social/@DrALJONES/117571916909502629"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rick@rmendes.net": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "f7b76a6e0700"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Americans didn't vote to replace Republican abuses of power with Democratic political theater.",
+            "url": "https://rmendes.net/notes/2026/11/06/a219d"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:dbattistella@mstdn.ca": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "1c3e4193054f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "urging them not to elect Hakeem Jeffries as Speaker",
+            "url": "https://mstdn.ca/@dbattistella/117572690227436697"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:authorFreeman@ohai.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "82b9aa5452e0"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:ItalianNews@mastodon.ozioso.online": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "0150a7c4ef36"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Wall Street closed Thursday, November 5th with its worst session since April 2025",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117572135843755150"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ProgressivePower@newsie.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "77a0e7280d73"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "I am the only statewide elected Republican who remains in Texas.",
+            "url": "https://newsie.social/@ProgressivePower/117571787769610029"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:SteveThompson": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "16a0ac0429da"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Why Young Men Punished Trump",
+            "url": "https://mastodon.social/@SteveThompson/117572859252363034"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:killbait": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "023009abfc0d"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump's own handpicked ally turns on him after midterm wipeout",
+            "url": "https://mastodon.social/@killbait/117572561473316679"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Balkingpoints@mastodon.online": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "69e67c6817c7"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "the nation has spoken & rendered Trump a dwarf star",
+            "url": "https://mastodon.online/@Balkingpoints/117572457378225509"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:top_news": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b31675aa1407"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democrats are ready to investigate corruption",
+            "url": "https://mastodon.social/@top_news/117572528526239191"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:b7bird.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "7467e0dae267"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Republican blame-game begins as Democrats sweep to Victory",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:bgse2k6gs72yadkmdvftbk6y/post/3mzoq5kvtzk27"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:drmike": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 2
+        },
+        "seen": [
+          "ce0f9b29d732",
+          "840917ff6814"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "replaced a relatively sane chief of staff with someone.as stark-raving mad as He",
+            "url": "https://mastodon.social/@drmike/117571818710152780"
+          },
+          {
+            "framing": "f3",
+            "quote": "# fascism # racism # hate",
+            "url": "https://mastodon.social/@drmike/117572031197259351"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:yourautisticlife@mast.yourautisticlife.com": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "23a84f94055c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Miller is an Emperor Palpatine wannabe.",
+            "url": "https://mast.yourautisticlife.com/@yourautisticlife/117571342777065696"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:bazcook@mas.to": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "d8bcce1e462c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "You can see where this is all going.",
+            "url": "https://mas.to/@bazcook/117572128669713098"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:scheichsbeutel@troet.cafe": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9b85e57bb461"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "absolutely unscrupulous racist",
+            "url": "https://troet.cafe/@scheichsbeutel/117572124608085912"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:billykaren@mstdn.social": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "85c4ea498cca"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Voters handed Democrats the House and Senate.",
+            "url": "https://mstdn.social/@billykaren/117572092239565402"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:tda@thedemocracyadvocate.com": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "0b04380526b5"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Shows 47 Learned Nothing From the Midterms",
+            "url": "https://thedemocracyadvocate.com/white-house/stephen-miller-chief-of-staff/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:tda@social.thedemocracyadvocate.com": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "69647a554e9c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Three days later, 47 promoted Stephen Miller",
+            "url": "https://social.thedemocracyadvocate.com/notes/at9629fq8o"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:LiloStart": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "83e008ab4adb"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump is accelerating the residual destruction of the Republicans",
+            "url": "https://mastodon.social/@LiloStart/117571789254044946"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:astigdotph": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b5d2f873e21f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "three days after the Republican midterm rout",
+            "url": "https://mastodon.social/@astigdotph/117571776416884512"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:operamundi@mastodon.trueten.de": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "238d18f9ea46"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump names extremist as new White House chief of staff",
+            "url": "https://mastodon.trueten.de/@operamundi/117571741767017932"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:JoelKlebanoff@mas.to": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9b5b625c02f1"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "a full-blown uber-fascist, as his Chief of Staff",
+            "url": "https://mas.to/@JoelKlebanoff/117571183415174299"
           }
         ]
       }

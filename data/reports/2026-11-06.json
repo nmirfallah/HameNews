@@ -1,8 +1,8 @@
 [
   {
-    "topic": "Tesla Cybertruck wind-down",
+    "topic": "tesla-cybertruck-wind-down",
     "slug": "tesla-cybertruck-wind-down",
-    "summary": "Tesla is reported to be winding down Cybertruck production, with outlets and users describing it as a flop.",
+    "summary": "Tesla signaled it will wind down or halt Cybertruck production, with outlets describing the vehicle as a flop.",
     "platforms": [
       "bluesky",
       "hackernews",
@@ -38,144 +38,167 @@
     ],
     "n_items": 160,
     "narratives": {
+      "common": "Elon Musk said Tesla will wind down Cybertruck production at its Austin, Texas factory, with the end expected around mid-2027, after years of weak sales. The space is to be used for the Cybercab robotaxi, and Musk's earlier claim that the Cybertruck would be Tesla's 'best product ever' is cited in several reports.",
+      "common_links": [
+        {
+          "outlet": "KEYE",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS08tV2ZzMi1qSmtTblAyUEx1Nld6T2lmZlFzWWs5Y3Zkc1JheEZoY20zOEhoVGFVa0lFd2U4Rmo2SFJtOUhaQ1J0bFp5NkxvZVZUS2RLXy1fdjRfQkMyMHNvZW5sc2h3N19iSmd5TXZCR0I0amJIT3V1eGlqd3I3ZEFQRTN0SjJJZU96NDhqQ1lEbXRBWjI4OEd4eVAzcDdlQmdacnJ0UVQ?oc=5"
+        },
+        {
+          "outlet": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjkzMUd6c1NiUkIzNFFNNk1BcDFyZDFKdGw5dTBWNzB5X3FxUkFCZ19aYnVPZVpNT0Yzd3p5V3hycXVCejNfeHJncGhuLVpHSDA1aVRSdS11bnlqWEpNc0Q4bXJCVjVFN21fdWN2NUVPZ1RXNWRVV3dISGo2d25IbVJ5ZmdXZ1NTMUozUVlKUUdqRkZUV1E?oc=5"
+        },
+        {
+          "outlet": "SFist",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRU5XTVZ3QjZLbTcyVVpYTU5keVlFdzZBbTlTd0gwRGd1QzE5NHZXVS16YXlGSXdueU9CdWV2TWExb3FWYnJJdmo5VXpVdnZ6ZTJWTGJCLXd0MGhSV1BTV2E2OURCdWk0OTJoZ3Vpb2hndkJmLTAzTEYxc3lqY0dqSDBTX3E2d2RaUlM0Z2FZUUZLZw?oc=5"
+        },
+        {
+          "outlet": "CBS News",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2NGswdEUycm1SMmlwV2dEZHpDQ1JzdUUxdnNJQWRnbEhxVzFHMjJmSS1jcVNwS1FLVHNZSzE1a3FTR21KRWNLb0xSYS02Z1NqSDBuZy1ra1BSNnowQ3VLeHBEUzVIYXM1TGNyMGFtamZPa3FLdWVqTkt6V19LS0E?oc=5"
+        }
+      ],
       "groups": [
         {
           "group": "Mastodon posts",
-          "n_items": 61,
+          "n_items": 55,
           "outlets": [
+            "BaronessWinter@beige.party",
             "Beezloopnews",
-            "BruceMirken@mas.to",
+            "Casey@mastodon.green",
+            "Casey@newsie.social",
             "CharlieMcHenry@connectop.us",
-            "GripNews",
-            "ItalianNews@mastodon.ozioso.online",
-            "Lazarou",
-            "Marathon@mstdn.social",
-            "NewsHund"
+            "DrewNaylor@mastodon.online",
+            "EFreethought@universeodon.com",
+            "KanaMauna@sauropods.win"
           ],
           "outlet_notes": [],
           "languages": [
-            "Chinese",
+            "French",
             "German",
+            "Portuguese",
             "Spanish"
           ],
-          "narrative": "According to Mastodon posts, the Cybertruck's end is a cause for mockery: users call it an \"Edsel,\" an \"angular metallic flop,\" and \"the end of an error,\" quoting Wired's \"Unloved, Unwanted, and Utterly Absurd\" piece and Ars Technica. One post (translated from German) says Musk is clearing factory space for the Cybercab after the Cybertruck failed.",
+          "distinct": "Posts are mostly mocking and personal rather than reportive. They use insults such as 'WankPanzer', 'NaziTruck' and 'IncelCamino', and express schadenfreude about owners losing access to parts. A few share articles (TechCrunch, Curbed, Kotaku) and one mentions a '$92K last call' and a robotaxi with emergency controls as 'polite requests to the software'.",
           "links": [
             {
-              "outlet": "WarnerCrocker",
-              "url": "https://mastodon.social/@WarnerCrocker/117570156068869545"
+              "outlet": "faraiwe@mstdn.social",
+              "url": "https://mstdn.social/@faraiwe/117571872693814425"
             },
             {
-              "outlet": "dbattistella@mstdn.ca",
-              "url": "https://mstdn.ca/@dbattistella/117570746490160117"
+              "outlet": "flup@mastodon.scot",
+              "url": "https://mastodon.scot/@flup/117571913764482692"
             },
             {
-              "outlet": "Some_Emo_Chick",
-              "url": "https://mastodon.social/@Some_Emo_Chick/117570826563605425"
+              "outlet": "ppb1701@ppb.social",
+              "url": "https://ppb.social/@ppb1701/117570922920793716"
+            }
+          ]
+        },
+        {
+          "group": "Hacker News comments",
+          "n_items": 25,
+          "outlets": [
+            "LightBug1",
+            "MentalM",
+            "blobbers",
+            "dathinab",
+            "emsign",
+            "hansvm",
+            "jackb4040",
+            "janalsncm"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Commenters barely cover the announcement itself and instead debate the truck's merits. Topics include its roughly $82k price, its use as emergency home power, efficiency figures (2 mi/kWh against 3.8 for the Model Y), and towing range. Others call it a symbol of the Trump era or tie it to one political worldview, and one defends it as worth buying for Tesla's autonomous driving.",
+          "links": [
+            {
+              "outlet": "janalsncm",
+              "url": "https://news.ycombinator.com/item?id=50400837"
+            },
+            {
+              "outlet": "emsign",
+              "url": "https://news.ycombinator.com/item?id=50400729"
+            },
+            {
+              "outlet": "thtmnisamnstr",
+              "url": "https://news.ycombinator.com/item?id=50400651"
             }
           ]
         },
         {
           "group": "US media",
-          "n_items": 22,
+          "n_items": 16,
           "outlets": [
-            "Ark Invest",
-            "Barchart.com",
-            "Britannica",
             "Car and Driver",
+            "CleanTechnica",
+            "Edmunds",
             "Electrek",
-            "Futurism",
+            "GV Wire",
             "InsideEVs",
-            "KATU"
+            "KEYE",
+            "KOCO"
           ],
           "outlet_notes": [],
           "languages": [],
-          "narrative": "According to US media, Tesla is winding down Cybertruck production at the Austin/Giga Texas factory, as Musk said, because of poor sales. Electrek says sales stalled at about 10% of plan, Car and Driver says production ends in 2027, and Yahoo Finance notes it comes months after the truck was called the \"biggest flop in automotive history.\"",
+          "distinct": "Coverage is mostly straightforward headlines focused on the Austin Gigafactory and the production timeline. Some add that the truck's 'allure' escaped most buyers, and MotorTrend calls it a 'slow-selling pickup'.",
           "links": [
             {
               "outlet": "KOCO",
               "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeE9LM25FbWRuLTVhTWNSck5uQktGSkdEdzVQQXMtbVl1UmlxNmJTSWFnSndLOWtmbXdMTXZ0LU5mZk9JQmNsdHBQa3BLNWU5MVB3NWluUVQ0NTBYcUNlWmxfTjdVWE5EbUE3X1FFQmMxc0ZtUkY1Ym96emFyM3MwWVpR?oc=5"
             },
             {
-              "outlet": "Electrek",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON1JvS1hpNEFacFF1V2EwZHVQQm1Vc0pMTDhsWnpoLWh5ekwzaWJKOFgzYWZqSUxIeExvOEpfU3hvUzE1cGF5WWZtWWQ2ME1xd2xjRlhPMFhvdm5HSDdUVi1OME12Z1lsc2l2WE8yMDlvenVBdGxoTzhsZ2tlQ3R3Y2RhZ05CZ0gyS0dyT2E0aEVjUQ?oc=5"
-            },
-            {
               "outlet": "KEYE",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS08tV2ZzMi1qSmtTblAyUEx1Nld6T2lmZlFzWWs5Y3Zkc1JheEZoY20zOEhoVGFVa0lFd2U4Rmo2SFJtOUhaQ1J0bFp5NkxvZVZUS2RLXy1fdjRfQkMyMHNvZW5sc2h3N19iSmd5TXZCR0I0amJIT3V1eGlqd3I3ZEFQRTN0SjJJZU96NDhqQ1lEbXRBWjI4OEd4eVAzcDdlQmdacnJ0UVQ?oc=5"
-            }
-          ]
-        },
-        {
-          "group": "Hacker News comments",
-          "n_items": 19,
-          "outlets": [
-            "BrentOzar",
-            "Grombobulous",
-            "al_borland",
-            "biztos",
-            "bluGill",
-            "double0jimb0",
-            "jethro_tell",
-            "jmb99"
-          ],
-          "outlet_notes": [],
-          "languages": [],
-          "narrative": "According to Hacker News comments, discussion is mixed: one commenter contrasts the Model S, which helped bootstrap a small Tesla, with the Cybertruck, launched when Tesla already sold millions of cars. Another says pricier trucks like the F150 Raptor (estimated 20-25k units a year at about $100k) outsell it. Others debate using it as a home power source during outages, relate a neighbor's story about its quiet operation, or express strong dislike of its looks and its owners.",
-          "links": [
-            {
-              "outlet": "wat10000",
-              "url": "https://news.ycombinator.com/item?id=50397255"
             },
             {
-              "outlet": "double0jimb0",
-              "url": "https://news.ycombinator.com/item?id=50397189"
-            },
-            {
-              "outlet": "biztos",
-              "url": "https://news.ycombinator.com/item?id=50397066"
+              "outlet": "MotorTrend",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1CMThSQ3BpeUgwNGhDYnpqalh3M1JCQW8zUERkM2F4c2RkSW1fUExkS0I1anNLM1FiazRNazFwcWI2X0xhODhLU1ZDQ0dlclFMdVZValRCbDFfWnI5N1pxVFZrZ0I0ZFJncFBvYmlEbnphdmhjZkg4?oc=5"
             }
           ]
         },
         {
           "group": "US media (left-leaning)",
-          "n_items": 11,
+          "n_items": 14,
           "outlets": [
-            "Austin American-Statesman",
             "Business Insider",
             "CNN",
             "Defector",
             "Gizmodo",
-            "Mashable",
+            "Los Angeles Times",
+            "Mother Jones",
             "NBC News",
-            "TechCrunch"
+            "NPR"
           ],
           "outlet_notes": [
-            "Austin American-Statesman: center-left (AI estimate)",
             "Business Insider: center-left (AI estimate)",
             "CNN: center-left (AI estimate)",
             "Defector: left (AI estimate)",
             "Gizmodo: center-left (AI estimate)",
-            "Mashable: center-left (AI estimate)",
+            "Los Angeles Times: center-left (AI estimate)",
+            "Mother Jones: left (AI estimate)",
             "NBC News: center-left (AI estimate)",
+            "NPR: center-left (AI estimate)",
             "TechCrunch: center-left (AI estimate)",
+            "The Atlantic: center-left (AI estimate)",
             "The New York Times: center-left (AI estimate)",
             "The Verge: center-left (AI estimate)",
-            "The Washington Post: center-left (AI estimate)"
+            "The Washington Post: center-left (AI estimate)",
+            "WIRED: center-left (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to left-leaning US media, headlines report that Tesla will wind down or stop making the Cybertruck in 2027, citing Musk. They add that it followed \"years of poor sales in few markets\" (NBC) and call it a \"most polarizing EV\" (Business Insider). Defector's headline calls it \"A Total Failure.\"",
+          "distinct": "These outlets lean toward verdicts on failure and cause. Defector calls it 'A Total Failure', NPR names 'insufficient demand' as the 'cause of death', and NBC says sales were poor 'in few markets'. The Times frames it as a refocus on the Cybercab.",
           "links": [
-            {
-              "outlet": "CNN",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbWtnUlF4Z3VoWFhsY3ZDZmNmQi1IUHIyMTBwZFZZZVN2Mkl2dmtaZ1g3NGV3c0VGRlJkc2F2VjJaWFRrVHVFVXR1NXJ0Q0JjSHQ2Q3lVNkFvNFpaSk5pMXhBUm1TVlN2MS1QX0tZWHFjUEVwVUlZMXpteFhBVUxkV3pfSTBtdHBNenJr?oc=5"
-            },
             {
               "outlet": "NBC News",
               "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSG1oeC1rMEhSa295Y2lsOEx4bVJITmY3UEJRcWpBRE5SNHMxWWtyN0thOVZxdmI4QzNWYlJhenlOYVJQRVppb1IxR2lEbmxQNlhFOXNNTFVidjdCNEx5Rl9xTmZTUlVydDJSa1ZUVFNMdjU4Uk8wbWlOWUxhYlE2SEZEdUYzUGZTbzZFUngzMjVzaXlhN21DSFgxOHpnd3FwY2J1Smx2Ymdfb0k?oc=5"
             },
             {
-              "outlet": "Business Insider",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkxvb0RxQjJFZ1FfQ1RaSWpBODJjOGcwUzNrM1BiNTRVWGxxR3ctZkV2OEV4UVFlQTYyWm9jb3A5ajBkenFhOFItd2ZrdEhJVE8yNUZCN2JlNXpPb0V5dThoUnp4SXU4TkN5VURvZ0M3aXh1WDdDejFOQk9pdXoxdmpSakg0NHUyc2hPR0QtMnNIbWc5SFEwWXpwV25TbDRRblFYbA?oc=5"
+              "outlet": "The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT3BET3ZQajVOVnRXaEdyMTZydUZQYTNWN2Z5TG5GczZ2SzdPYkRTcDFPWURnN3RfM21KZGNlMl9odXVBNlVGamxianpvTGZXa25jZ05uc3M0bTR3VkJBbFp0c1ZQUEY5b2l2MHFFV3hsSXRkb3dNQ1Q3WEEyMVRadnBR?oc=5"
+            },
+            {
+              "outlet": "Defector",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03UzMxZk91OFZHSmdIMTdmV0pSMGVEajVtbzdEaUhGY094N3VuTGV4aVh3Yk5TYzZkZTNWOEJBT0MzVkJVdV9kc1VSMUdCVWR4dURWR09TR3AyVWFNRkRoZFJraUltcDhuMFNyNGZndnA?oc=5"
             }
           ]
         },
@@ -184,40 +207,40 @@
           "n_items": 10,
           "outlets": [
             "Ars Technica",
+            "Axios",
             "Barron's",
             "Bloomberg.com",
             "CBS News",
             "CNBC",
             "Fortune",
-            "The Hill",
-            "The Seattle Times"
+            "KSL News"
           ],
           "outlet_notes": [
             "Ars Technica: center (AI estimate)",
+            "Axios: center (AI estimate)",
             "Barron's: center (AI estimate)",
             "Bloomberg.com: center (AI estimate)",
             "CBS News: center (AI estimate)",
             "CNBC: center (AI estimate)",
             "Fortune: center (AI estimate)",
-            "The Hill: center (AI estimate)",
-            "The Seattle Times: center (AI estimate)",
-            "Toledo Blade: center (AI estimate)",
-            "USA Today: center (AI estimate)"
+            "KSL News: center (AI estimate)",
+            "USA Today: center (AI estimate)",
+            "WPRI.com: center (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to centrist US media, Musk says Tesla will end Cybertruck production in Texas in 2027, with CNBC and Forbes-style framing tying it to ramping up the Cybercab. Some headlines mention the truck's \"allure escaping most potential buyers,\" and Ars Technica calls it an \"angular metallic flop.\"",
+          "distinct": "Adds explainer and market angles, such as USA Today's 'what comes next' and Fortune's contrast with Musk's 'best product ever' claim. Ars Technica calls it an 'angular metallic flop'. Barron's item is about a broad Nasdaq sell-off hitting SpaceX and Tesla shares, not the Cybertruck.",
           "links": [
             {
-              "outlet": "CNBC",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5MOHpuVjVYejRkd2VlX2hvWGF0RDMxYUNzTGcxaTFadzNJT1c0Y19idmNzSl9nNDFFZnUzaWh4VFU4VkNqSWJOR3EzWk91MWhUdGxhamVWaEkxd1lOYVB3QnVOV1l5V0RCcXRndVQ3bE5DUdIBd0FVX3lxTE56Sy1vYlZjU2N0N2tfU3NMOGZ1TnNfaHQ5bmRYV0JxeENDZFpjMElvelY3RW52U2hMYXRkaHM4UlZaWVJaak9vUVVnUllwQ3hIbDhmb3N0d1RYeHdqQTh3cjJ6Z0lXRXVMS1VuclU5cFpfTjNNeXdJ?oc=5"
+              "outlet": "USA Today",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYXdoTEJWQ1NRamM0QWF2VkZQdm93aFN2WjdPSlA2RjNBemJFT09UMWFPa2k4MDhkMEk5Z0JSWTZoQnBkbWh2UEc3elVBcXVNaXNSaVdSMGFkRU5aQ1N2dVpxbkhuWVg2a05kcUdFMHIzcnBPQmI0Y1pUdFFaZzdkNVFIM3Zob29mNm1WcEJtR29xVWk2a2dSdkotM2RUTUp0d0N5MW9QbWMwU3M?oc=5"
             },
             {
-              "outlet": "The Seattle Times",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaEp3bkI4Rlp0Zm5CVGVEVjRGblV6ekRLcUNFR0YwckhIWVFOZXd5RUJHQVRqaDBhYjJfSE9na1JyUTZLMTFzWVVKbkNfNzhnTnE1U1pmUVJlYXRKeUctalo0WjVzYVF0b1diN2l6TkF2bXJLS2dTQktTb29CR3lFRkhCWERGV1RQRmQ2cTJfRkV4TGUybk54TVd6U0NOMHEtTWdfZXRqbXlUdXFwWW1XeXotNTZHODlrTjRGalJadldvMmxzLUZGZ1ZsUHBBdw?oc=5"
+              "outlet": "Fortune",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ2lXTktpTlozT3hmbktnSlluVl9QU3Y3UUY5eG5uRk8xRjVRdm1tOHhac2t4XzZhRkE4dHhMWkpkb1gtQ3I2a2lRb0ZrYi1aS1FhdnBIMkJZYUhDVGUwVFRVRVFHMWt1ZTFSenc1Y3JJNTdVRzV5ZHdjTHA1MEFkN3ZrMEJGNTZVRTZDLTVfNkx6TVFHTzB6MGhZWVhpd3Y0cmdqdWZfRTBEejlpQ2VIbWRWNXZXbHJOMm9Vcnh6aGd0WEt6bVRUVnpkUlRUTE5ISHFILXdMbw?oc=5"
             },
             {
-              "outlet": "CBS News",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2NGswdEUycm1SMmlwV2dEZHpDQ1JzdUUxdnNJQWRnbEhxVzFHMjJmSS1jcVNwS1FLVHNZSzE1a3FTR21KRWNLb0xSYS02Z1NqSDBuZy1ra1BSNnowQ3VLeHBEUzVIYXM1TGNyMGFtamZPa3FLdWVqTkt6V19LS0E?oc=5"
+              "outlet": "Ars Technica",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc0xncmpQRnRNV3labGNBOE15RFpFWlYzclM1VmVEX3BQQm10c3dJTFJqQm5vbkdXMHZoUGRaY241M0Nvam14Rm5wTDAwSzRxdHdrTnFEd3hyeXcwMUR6bjA3eHJLVTF5c2NYT1BaTFdaLWRYMDVVaC1jZkhFcjJEaW5HQ3U3cnhRdnV2QzhVd1NYWENVOFN6T3MtMkdQQlE?oc=5"
             }
           ]
         },
@@ -226,30 +249,62 @@
           "n_items": 4,
           "outlets": [
             "Forbes",
+            "Fox Business",
             "Investor's Business Daily",
-            "LiveNOW from FOX",
             "WSJ"
           ],
           "outlet_notes": [
             "Forbes: center-right (AI estimate)",
+            "Fox Business: right (AI estimate)",
             "Investor's Business Daily: right (AI estimate)",
-            "LiveNOW from FOX: center-right (AI estimate)",
             "WSJ: center-right (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to right-leaning US media, Tesla will wind down Cybertruck production next year \"amid slow sales\" (WSJ), calling it \"polarizing.\" Forbes says this is to make room for the Cybercab, and Investor's Business Daily notes shares inched up after an \"election rout.\"",
+          "distinct": "Frames the story through Musk's quote, with the WSJ saying the Cybertruck is 'being scrapped'. Fox Business and Forbes stress making room for the Cybercab. The Investor's Business Daily item is about a SpaceX land deal and a Tesla merger in an election context, with no Cybertruck mention in the headline.",
           "links": [
             {
+              "outlet": "Fox Business",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS3I2RHZ3c3ZoMmNway13ZGMxOVk1TFNKYlBld2phSm9fUkJsS3NmaU42dkJLMW1fc0FuYU1uaDlzcnBtckIxbXE1d0ZPR3lacWdHaU5pREhfSjYxZXZuMzJFdTVEX0c2Z3JnVlIyU3YtdnczWVlaNkQxMHlvaUc2THBLWkJBQ1AwVGJJNEJxbHVkemlKOGxhZG42eEU4eEkzRkdDc1Q4TmR0M0JxM3JTQ0VHNXZLeDjSAbwBQVVfeXFMTjJlU0VIYUh2Y0hLdWJnSzJyUjhLdTBZejY4QjBPRUNtRFZhc1doTTNWYTJ3R2p0SmxTZEZmdzFsaHpYMTJNSVgxUjZEZE5yLXEwOXg2azZ3RXZRMlJaY25Fby1MTXFDT2JQdF9nLW40by1MR3hnb1IxTnp2VW5WdHJLNHE4SER6SjZiUnNBalF4ejA1YlBDNVNJUDljNHpUTXpzMU83YTNnb0syM2JKZXRMVUVMbmVPV2hya0E?oc=5"
+            },
+            {
               "outlet": "WSJ",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd0Jtd1JvNWI2RUJHUlA0MVd4Q2RWdUFrelplWVVDNVBkei13Zk9najBrWDY2aHpUY3lYN1J4d21LczZSLTllR1k0Qk16eEtKVklKa01NU3JSeHdzTzBOUWV5aTlnNHBJOXhvWGZTT2R5TjFlUl92M3NvQ2lMaEJGOGhJaG1CQWtyUVZVenVBQ1NQOHVabDFZWUxnOWJDUQ?oc=5"
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTHpMa2lsQWt4MmYySXFrVk5TRTBleFg2akdjT0RhN215TkMwVkFnRm9yeHhBQ3NiZkdKQWV1dENHR19vTzVNYWpIS1dGdDU0dGNSanVmT1BROW9lLTIxMy1wVUJmTTFGNGh0d1JCYTI3VGhfT2dNT1RMVkp4cVJGZnY3RERwOVNOcmlrWjlfTVFxZ3dTNlVqMkxjdDhxMGZ0OVduTlplV2loX0xXZklrclVMNVpzOS02MDlQQQ?oc=5"
             },
             {
               "outlet": "Forbes",
               "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUZNLTVPQ29tNld4bHBMTXNQcFhjYmRMdmZEX1A1M3VfUVhiMFlLdlJBZjU2RTZmUTAyczdhcjB2VEFCbHBHV1FtV09NNzRJcHlzX1dOWXRfRTFqQ1FxV1h3NFdJWV93SmpySE5ZWktvQ21zWFR6MHBrT3pWM3N4X09jQXNyakVHVVJzcy1ibzB6ZF81d180X3o5OGM4SXJvM2RmQ3RVVkFvRlZ1NlNxci02bG12MGM?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Indian media (centrist)",
+          "n_items": 4,
+          "outlets": [
+            "Business Standard",
+            "Hindustan Times",
+            "Livemint",
+            "NDTV"
+          ],
+          "outlet_notes": [
+            "Business Standard: center (AI estimate)",
+            "Hindustan Times: center (AI estimate)",
+            "Livemint: center (AI estimate)",
+            "NDTV: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Adds the original ambition, citing '250,000-unit' hopes against the wind-down. Livemint asks 'what went wrong', while others stress weak sales and the Cybercab taking 'centre stage'.",
+          "links": [
+            {
+              "outlet": "Business Standard",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOU11U1cwcjU1a3N2WnozbElMdWVPTVUxVGJDU0xmUzNzbVYtUnBpU0FuM0JrQW1yakJYd1ROcG9KX2ZPQXVha01OWUkzYy0tdDR6NXpHMEpxS3J3U3JoLXhjdTRRbE0tdmFWd2c4YWlNT05xUnBDNnVkaHh5ZnVCbDR0NFZkZlFkcHFta28tSWtlOXZhWmx0WHRIaGdSVmM3a1l1azJhMHpRaVlPV2pUb2RiaTRMQ2lNb0xVVHFBeXBTeXNPbGNvU2QxSFU2SHPSAdQBQVVfeXFMUEswSURqNm9hTG80WmRYM1NTV3Z2Vnd3NWZneURJV2dEY0oxN003SnBpMk0zYUltSTVFRWttUlZzVEdQWkJrMDA3clFhWG9hTVpOTVhwdHRjc1hpdDdyTUFEU1BnUlc2QWc3ZVR1UFgyUksxUnp5VmxZRzFPQWdMcHF0dkU4MXVsbUdSbDN1WG5Id2xqNTZHOEw4dHV1ZnpLbGZVM3V1N0trcUFqaHdXRjRBaUtuM2RMNmhNamxKQmQ0NG5Ka2gyd1M4M1pjUjY2ZTRFSFQ?oc=5"
             },
             {
-              "outlet": "Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY3p6NkpwQzRSWW83RTNlUkwzSVFCbUZtUnZGUmRiRWVqV1pYc3prRmxFQVllZHRtUXEtRkFVajNlZzFsaHpNOHMxZzZFZTVhR25takFNZk54NkpndjFUT1BibUxkek83YVdrR0gtQVdZUkoyX2QwQTFHSjlJRkR0dFF3?oc=5"
+              "outlet": "Hindustan Times",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQS0tzQ2ZDUE9TSVQ4Q1RqYjZKZWRadlpieDdKaDl2d0dDMHA3M2FlSnp5NnpnN3Zsd0FfQ0l1WndEOE85eHNScFRfbDl6V0hPOUZ3Z29nLU1aNGM4bEJaQjRyczc0T3JVSll2ZjRKVGRibkUyM0dGbXZSZk1zbDlPTlFod3JpY2ZNSDI0WEM1eTlBRWlRR2FRelVzSzlTNFE0QUNuT3NaSW9aVklYQ0hpT0pxY1E1cmhGaGRBYkthSVhMTF94LUlmUXFtYzIwMjdRUlk2NTlVQmZMeG5lLWs2N1QyQlVFZGw5b0HSAe8BQVVfeXFMUGZDYjFaOUxkaTNvSGVxTnlQU0ZNNkt5dDM5UDRFUF9HVnpwTjFIc25ZdkpFaEV5M0laVWY5LWFpazFISDZod0xROTFnSFAxOFlnYVJIQmVSb0dWQmNWRkxERVFRdHQ3eE1wTTRXSk50Zm5DOU05X1NfYVctbXFIS2ZVS0hOV0lGcXQwZThXWDV6U3M1d3FTdUxLZ202RF9nQ01HTXRmVmd4UUp5T3N0ZzBSaDdMWWRZOFRSV0hzMFlRZHNfbTFTbmlGY3M2V182WE5YYWhJa2RZR0F3RzQ1enlkQlNFaERJX0JzMjAwTkE?oc=5"
+            },
+            {
+              "outlet": "Livemint",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQUmRVYzRXOHZFWkhSSnN3dmJYQ19TdXladXdQS015WDQ1Znk5UGNjUHQza0xISmRKRldXVm0wNDNDNlRIb3M1SDJpOHFwenpISlkyZlpQQUpNdGZfWEpXajZOYlhHMGFzWlY3OFlFV0FDZXhGd2lndWdZLWZuMTJ3YzdzT0d3M1VkOXVBY0lCMHZWRWl3eWFndUFidnl6YV9sUE1SOFFzUkY2Z1BLZFV6bkNRdHdVaEppVFVHc291SjhSVTN0TVQwSzVSRXV3bUV5OGJmWm9Hb1BOSDljTzFJMGItbEVXNmx6WGJJQ9IB8gFBVV95cUxOSWdkb3YxemFGT19fOThBTDlRNm9lRVV0dU94SmxObVlrWEdCcHJ6aHVXRXhkbUF6Y2FYTUUtalRDVW1saGg5ZzVnUnBqMkxOYkZVRWpETndTV21RZDZUb1djQk9uZG5fcXJtSDJnV1VhSHl5anFYd1NNUHc1dTNQSTRXOGN5UWUyWVVPOW5CeXVOV25heEpCLVQzSXR6T25yOWI0dm1abUxuU3E4Q1JhVElRMW9BVEEtMUk0TFhia2Jyc2l2RUwyelFFWTZudWFoUHVlYWc2eEpfclBFWTZsOG9wOVBrdFB6Q2FlUUxxNVlQZw?oc=5"
             }
           ]
         },
@@ -258,60 +313,30 @@
           "n_items": 3,
           "outlets": [
             "Dezeen",
-            "Top Gear",
+            "Proactive financial news",
             "Yahoo Finance UK"
           ],
           "outlet_notes": [],
           "languages": [],
-          "narrative": "According to UK media, Tesla is \"winding down\" Cybertruck production next year, with Musk setting the wind-down for the Cybercab. Yahoo Finance UK reports Tesla stock rising 3%, and Top Gear calls the truck \"controversial.\"",
+          "distinct": "Focuses on markets and uncertainty. One headline says Tesla stock rose 3%, and another says the model's future is left 'unclear'. Dezeen puts 'winding down' in quotation marks.",
           "links": [
             {
               "outlet": "Yahoo Finance UK",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4zb1BESUhkWnJTZjhHeC1ITW5JbEU5M2lfUElGS0l3Y0ZhR0wza2tfTzBGNlZ1eTBTdzR4d3IzcnA3Q0xvQXIzby1UcWpYX2VXWmo4NFFTVDc2MzdLQUd4Zm9tcVVYZlFKakFwSUp2TVMzVUh4WURMcWxRMG1lQQ?oc=5"
             },
             {
+              "outlet": "Proactive financial news",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQalR1SEtMVGljbUxBV3BDSnNfSlFvcE1XNzNuTmVYb3Q1R0NNMFNvbDdaUTkxT1kyVWxvbV9KcklCdXdPeWRVelBzZ29idmx0cE5NbHJRd25laW9USEQ5VGRoM21TRnVQazNLRmhLU1JyaVhmLWtsTU55RVVQSGVNTXYwVkZ6ZDFQZjNoNUpFa1FaTmFCbnpnRUhxNUVOZ2tWVWluRVpFNktWamQzcnBTZERTVXpBMEZUcFlsVEU1aHhPMEVnVDhFNmUwXzB4M1dWYnlV?oc=5"
+            },
+            {
               "outlet": "Dezeen",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSXdaMlFURDNuZnhNX3ZYYzR0RGN4MmtPMElWYmlpMDAwWnM5TXZlMEpKWUlWZklxb1ZJc0ZEZW91Y0V1N2N5VFZGX0FSS2U0YllZRVB6WkdqNXVfMEJacXBEZHNBUkk3RGFLeXFjTkRNcFRWZ2k4Mk5RUzRwUjhFcTM0X1M?oc=5"
-            },
-            {
-              "outlet": "Top Gear",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUlowa3V3RTFWWnBhY19lM0V6QVgxYXp4WDdReTQ5R2VJbnlERDY1NnIzcGxtWjA3SGRtMlBYcTRfQlpTc2Q5NG5OYkdVNHFMbGpXMlFiVEhSMHV2M0xpN2huLTJsd2RPS005NGRGSnhyY3pVZ1dqWUFaaWx5dUwxdTZGUUNOOG1Tc1JSY3cySQ?oc=5"
-            }
-          ]
-        },
-        {
-          "group": "Indian media (centrist)",
-          "n_items": 3,
-          "outlets": [
-            "Hindustan Times",
-            "NDTV",
-            "The Economic Times"
-          ],
-          "outlet_notes": [
-            "Hindustan Times: center (AI estimate)",
-            "NDTV: center (AI estimate)",
-            "The Economic Times: center (AI estimate)"
-          ],
-          "languages": [],
-          "narrative": "According to Indian centrist media, Musk says Cybertruck production will wind down next year, by mid-2027, as the Cybercab takes centre stage. The Economic Times frames this with the question \"What went wrong with Tesla Cybertruck?\"",
-          "links": [
-            {
-              "outlet": "NDTV",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2tkVHl1aFptQ0JVLXFSVnZncUdUOTkwZUx4b2tfUUdJdG1oeVNoVTFRN1FPSzZVWW1OLTR5b18xbE9ydi1aZ0xxTEF5blBhVmFfUEhYQ1JlQURQbXdTb2lRQ0ZWTDVvRTRheHpIeGhLVGVjWFhPbzRBY056dmFfWl9iMjVOVFpJaTcyYXc1WWdVTF9uZnZFN0k5T3jSAaQBQVVfeXFMUGMzWDZkWWlRR1BhRjF2SkNrelFEb0xZdTFnZjNqOEJzOXpqXzlPTUlDY3BjS0RhNlhPdGZZSHpoQVNlWC1ZdnRtNWhHMUxwbGZyeEtueXJ1RThJemZacUNlMUNwMnF0VjZ0TlJzc1lDN002TXhUVVB5Vkx4TFZBNEowVXpuTGFQWndDZ2ZhdnZiem1qanZUajJ3eTVhUmU5SS1iZW0?oc=5"
-            },
-            {
-              "outlet": "Hindustan Times",
-              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQS0tzQ2ZDUE9TSVQ4Q1RqYjZKZWRadlpieDdKaDl2d0dDMHA3M2FlSnp5NnpnN3Zsd0FfQ0l1WndEOE85eHNScFRfbDl6V0hPOUZ3Z29nLU1aNGM4bEJaQjRyczc0T3JVSll2ZjRKVGRibkUyM0dGbXZSZk1zbDlPTlFod3JpY2ZNSDI0WEM1eTlBRWlRR2FRelVzSzlTNFE0QUNuT3NaSW9aVklYQ0hpT0pxY1E1cmhGaGRBYkthSVhMTF94LUlmUXFtYzIwMjdRUlk2NTlVQmZMeG5lLWs2N1QyQlVFZGw5b0HSAe8BQVVfeXFMUGZDYjFaOUxkaTNvSGVxTnlQU0ZNNkt5dDM5UDRFUF9HVnpwTjFIc25ZdkpFaEV5M0laVWY5LWFpazFISDZod0xROTFnSFAxOFlnYVJIQmVSb0dWQmNWRkxERVFRdHQ3eE1wTTRXSk50Zm5DOU05X1NfYVctbXFIS2ZVS0hOV0lGcXQwZThXWDV6U3M1d3FTdUxLZ202RF9nQ01HTXRmVmd4UUp5T3N0ZzBSaDdMWWRZOFRSV0hzMFlRZHNfbTFTbmlGY3M2V182WE5YYWhJa2RZR0F3RzQ1enlkQlNFaERJX0JzMjAwTkE?oc=5"
-            },
-            {
-              "outlet": "The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNYnExZ1lzM0o4bXlrRm1wQ1RrSTgyS0tYdDhwSV9GOEJGQlg1OEFmRlBYZDN1Q0ZOOGhNV2h5d0t5MVNKZUIwUDRBSVE3NDgwOEFYcUNtYVBmMUNDYmRpWnpoR2NVYVJPWS1PSmJ1TVhqWXkybDdnUW9Id2NmUy1pSzJJc1hPck52bld3Vy1odlhJemg4VUhiY09qSWRCcUpVWDJlbDNGUUhGV1BocGdqMUFMRURkVzMzVHZ6THhVM0NjSU9IOGNsZVVHcW56X0V1b0V0NlZHNGpORVVOX2VoV0NJNHRuWFZoR3N3UDhWd3YzT3pkdFNrV3Bn0gH_AUFVX3lxTE9FU0RHMERzaUxlNEFRdXNVQWpNRFlmRVVDTkx4SUpzVW4yOWpfRkR5REk2MWpZekhQU0VJaThDVm5TZ0lfOW9kbWEtYVRzTkNqUms4WkVJTGxqVnN5cXkyYjRWRW5ScnUtdTBHNV9fSV95RnBMai1iVmlpS2taaVAyWEdLWmFha0xFR3NfdVRSTnZVNHdISjFJZFlKUWw2V04wa2Q4anhGSjAxZFFiWE55OFFEa2lOTDRhcnNfcHRYWGJUeHpnUlFVN2V4TVJRbDBFb29qMHh6WnNZb2YzTm9YTlZEYjh5bU1ZMXdTaU41MlBudk5SbHptYm1xZGlGaw?oc=5"
             }
           ]
         }
       ],
-      "unclassified": 7,
-      "differences": "Mastodon and Hacker News commenters use mocking or personal language (\"Edsel,\" \"dumpster fire,\" \"incel dumpster\") and debate practical use, while news groups mostly give neutral headlines on the wind-down, sales and Cybercab. Stock-price angles appear in right-leaning US and UK items, while Defector and Mastodon use the harshest verdicts of failure, and the Indian group gives a mid-2027 timing."
+      "conflicts": [],
+      "unclassified": 10
     },
     "framings": {
       "topic": "Tesla Cybertruck wind-down",
@@ -344,27 +369,35 @@
         }
       ],
       "created": "2026-11-06",
-      "history": []
+      "history": [
+        {
+          "date": "2026-11-06",
+          "verdict": "unreliable",
+          "kappa": 0.45,
+          "n_items": 160,
+          "n_framed": 53
+        }
+      ]
     },
     "divide": {
       "verdict": "unreliable",
-      "kappa": 0.45,
+      "kappa": 0.41,
       "n_items": 160,
-      "n_framed": 53,
-      "framed_share": 0.33,
+      "n_framed": 54,
+      "framed_share": 0.34,
       "counts": {
-        "f1": 15,
-        "f2": 18,
-        "f3": 9,
-        "f4": 2,
-        "f5": 9
+        "f1": 20,
+        "f2": 10,
+        "f3": 10,
+        "f4": 1,
+        "f5": 13
       },
       "shares": {
-        "f1": 0.28,
-        "f2": 0.34,
-        "f3": 0.17,
-        "f4": 0.04,
-        "f5": 0.17
+        "f1": 0.37,
+        "f2": 0.19,
+        "f3": 0.19,
+        "f4": 0.02,
+        "f5": 0.24
       }
     },
     "rows": {
@@ -380,6 +413,34 @@
               "framing": "f1",
               "quote": "Musk says Tesla will end Cybertruck production in 2027",
               "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2NGswdEUycm1SMmlwV2dEZHpDQ1JzdUUxdnNJQWRnbEhxVzFHMjJmSS1jcVNwS1FLVHNZSzE1a3FTR21KRWNLb0xSYS02Z1NqSDBuZy1ra1BSNnowQ3VLeHBEUzVIYXM1TGNyMGFtamZPa3FLdWVqTkt6V19LS0E?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "The Washington Post",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Musk says Tesla will wind down Cybertruck production in Texas",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZm10bzVmOFRPMlltTnRIY1MtVTNqZmZUSDdtQUg5QnpuSEFFdnVuZWgxcWFob1JtZGNXQktUUUNmbGktRjZjOFdUVFZoZ1BXa2xJb0JnRW5RMy1yMldpcmM2a09DdWo5dU1CLTJrYURjeVR4MU5GODE5X0hBUUk3RUY1XzFCYW1fZEVxTUpqWmVRQ19xZ2tTV295WjlDdzFPM29vY3ZwR1hUTnpfQXVF?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CNN",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Tesla set to wind down production of Cybertruck",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbWtnUlF4Z3VoWFhsY3ZDZmNmQi1IUHIyMTBwZFZZZVN2Mkl2dmtaZ1g3NGV3c0VGRlJkc2F2VjJaWFRrVHVFVXR1NXJ0Q0JjSHQ2Q3lVNkFvNFpaSk5pMXhBUm1TVlN2MS1QX0tZWHFjUEVwVUlZMXpteFhBVUxkV3pfSTBtdHBNenJr?oc=5"
             }
           ]
         },
@@ -436,6 +497,34 @@
               "framing": "f4",
               "quote": "cracked windows, long delays and 11 recalls",
               "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVlZoWnUxVlNKWGwzMk1oMUUyeEFfdFh4ek1IZWQ0d3R1SFRCUTZPNnhaMDVILTU3VkNrcWxDNWlXNkdNVEZXYW8wY1JDZTBHTEJYWW1VMElFX1gzdDVCUXpJUm9wVUF0UmNlWXJTNV9mNmpjejJMN2JfOE55WkowQ2Q3aDVlNUlmQ0FzT1Iwal83VWVSaTZMNm92ZEVJM3J5ZTF5VEszR1ZCWndXMEk0V3J2WDYydElnUzRaZnVSR3c1TWE2TkZjUExLNDg?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Axios",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "It's sunset for Tesla's divisive Cybertruck",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5TZFRuWVBDbG9NNHdXdjduS0JFUHR6NU1VRXBYVkFGOTRLUUx6Nmt1NFhRVzluV2NhZjc4VzhZTlpXNmtsbUliNWw4bkN3clRSNGZKaTl0U25mcDd0ekJaTDJrSWtwRW5NMEhqSGQ4MktiM09VX25iMHNpeExCQjA?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "Fortune",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Now he's winding down production",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ2lXTktpTlozT3hmbktnSlluVl9QU3Y3UUY5eG5uRk8xRjVRdm1tOHhac2t4XzZhRkE4dHhMWkpkb1gtQ3I2a2lRb0ZrYi1aS1FhdnBIMkJZYUhDVGUwVFRVRVFHMWt1ZTFSenc1Y3JJNTdVRzV5ZHdjTHA1MEFkN3ZrMEJGNTZVRTZDLTVfNkx6TVFHTzB6MGhZWVhpd3Y0cmdqdWZfRTBEejlpQ2VIbWRWNXZXbHJOMm9Vcnh6aGd0WEt6bVRUVnpkUlRUTE5ISHFILXdMbw?oc=5"
             }
           ]
         },
@@ -520,62 +609,6 @@
               "framing": "f2",
               "quote": "after years of poor sales in few markets",
               "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSG1oeC1rMEhSa295Y2lsOEx4bVJITmY3UEJRcWpBRE5SNHMxWWtyN0thOVZxdmI4QzNWYlJhenlOYVJQRVppb1IxR2lEbmxQNlhFOXNNTFVidjdCNEx5Rl9xTmZTUlVydDJSa1ZUVFNMdjU4Uk8wbWlOWUxhYlE2SEZEdUYzUGZTbzZFUngzMjVzaXlhN21DSFgxOHpnd3FwY2J1Smx2Ymdfb0k?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "KOCO",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f2",
-              "quote": "with its allure escaping most potential buyers",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeE9LM25FbWRuLTVhTWNSck5uQktGSkdEdzVQQXMtbVl1UmlxNmJTSWFnSndLOWtmbXdMTXZ0LU5mZk9JQmNsdHBQa3BLNWU5MVB3NWluUVQ0NTBYcUNlWmxfTjdVWE5EbUE3X1FFQmMxc0ZtUkY1Ym96emFyM3MwWVpR?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "DW.com",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f2",
-              "quote": "flop Cybertruck",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWHpBd3NESjR2NVMwTUVURFo3UDhrNHB1UC16bFRiZ1N2VGpYWmpvVi1JVVdDNE5wXzdyLUdlLW5ZSDE5LXhMR0lISkFCVGs3MzRJbmxmalRsdGwyZ3VBOUNJMFR1R25qWFZwNlRNdnNkVXAtZlBCcHhHVjdBdmdnZVhRTURscDNJ0gGIAUFVX3lxTE55d0VzUUdXX3JXeGhsOE1nYXlQRVBqWmJHejdJWUhtX3hObEJuWmV3dU9nUGg0WWxTSzdHN2p1aVlPbUxTeUtMV1FuOG0wR0pQa2NHX2ZkT2I0OGE2UEVwUENqU0JZTC1MZGhSSXV6THliSjVDcFpyUGlJdFF6ZWJHUHRnZm1aeHM?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "The Seattle Times",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f2",
-              "quote": "with allure escaping most potential buyers",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaEp3bkI4Rlp0Zm5CVGVEVjRGblV6ekRLcUNFR0YwckhIWVFOZXd5RUJHQVRqaDBhYjJfSE9na1JyUTZLMTFzWVVKbkNfNzhnTnE1U1pmUVJlYXRKeUctalo0WjVzYVF0b1diN2l6TkF2bXJLS2dTQktTb29CR3lFRkhCWERGV1RQRmQ2cTJfRkV4TGUybk54TVd6U0NOMHEtTWdfZXRqbXlUdXFwWW1XeXotNTZHODlrTjRGalJadldvMmxzLUZGZ1ZsUHBBdw?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Electrek",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f2",
-              "quote": "sales stall at ~10% of plan",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON1JvS1hpNEFacFF1V2EwZHVQQm1Vc0pMTDhsWnpoLWh5ekwzaWJKOFgzYWZqSUxIeExvOEpfU3hvUzE1cGF5WWZtWWQ2ME1xd2xjRlhPMFhvdm5HSDdUVi1OME12Z1lsc2l2WE8yMDlvenVBdGxoTzhsZ2tlQ3R3Y2RhZ05CZ0gyS0dyT2E0aEVjUQ?oc=5"
             }
           ]
         }
@@ -748,22 +781,58 @@
               "url": "https://news.ycombinator.com/item?id=50396732"
             }
           ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:trending@mastodon.bot",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:vwdasher@weird.autos",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "RIP to Cyberstuck",
+              "url": "https://weird.autos/@vwdasher/117571276727724457"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:ansonkennedy",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "RIP Cyberedsel.",
+              "url": "https://mastodon.social/@ansonkennedy/117571516206017229"
+            }
+          ]
         }
       ]
     },
-    "narrative": "Coverage of the reported Cybertruck wind-down splits into five framings, though the divide is weakly defined. Agreement between the coders was low (kappa 0.45, rated \"unreliable\"), and only 53 of 160 items (33%) carried a framing.\n\nThe most common is \"Commercial flop and weak sales\" (34% of framed items). It cites poor demand and uses words like \"flop.\" Next is \"Neutral production announcement\" (28%), which reports Musk's statement and timing without evaluation. \"Strategic pivot to Cybercab and AI\" and \"Obituary and skeptical commentary\" each hold 17%. \"Quality and recall troubles\" is smallest at 4%.\n\nOutlets are not labeled by lean, so no political leanings can be assigned. From headlines, CBS News, Bloomberg, NDTV, Euronews, The Telegraph and The Times appear neutral. The Guardian, Financial Times and The New York Times appear to stress the pivot. NBC News, KOCO, DW, The Seattle Times and Electrek lean toward the sales-failure frame. Reuters appears in the quality frame.\n\nIndividual accounts lean more toward flop or obituary language. Mastodon users such as BruceMirken and rameshgupta use obituary framing, while most Hacker News commenters discuss sales and market fit.\n\nLimits: outlets are judged from single headlines or snippets, each source has one item, and the sample is small.",
+    "narrative": "Coverage of Tesla's Cybertruck wind-down splits into five framings, though only 54 of 160 items (34%) carried a framing. The agreement score (kappa 0.41) is flagged \"unreliable,\" so the shares below are rough.\n\nThe largest framing, at 37% of framed items, is the neutral announcement, which reports Musk's statement and the Texas/2027 timing. In the sample, CBS News, The Washington Post, CNN, Bloomberg, NDTV, Euronews, The Telegraph and The Times fit this framing. Obituary and skeptical commentary follows at 24%, with Axios and Fortune, plus several Mastodon users using \"RIP\"-style language. Commercial flop (19%) appears in NBC News, Futurism's feed and several Hacker News commenters, who cite weak sales and product fit. The strategic pivot to Cybercab and AI (19%) appears in The Guardian, Financial Times and The New York Times. Quality and recall troubles is marginal (2%), with only Reuters in the sample.\n\nNo outlet or account carries a lean label; all are still \"building.\" Each has a single item, so the placements are tentative and based on headlines and snippets. Sample sizes are small.",
     "rank": 1
   },
   {
-    "topic": "2026 US midterm elections",
+    "topic": "2026-us-midterm-elections",
     "slug": "2026-us-midterm-elections",
-    "summary": "Coverage and reference-page interest surround the US midterm results, Democratic gains, individual Senate and governor races, and what they could mean for Trump and the 2028 race.",
+    "summary": "Coverage of the US midterm results, individual Senate, House and governor races, Democratic gains and what the outcome may mean for Trump, Republicans and the 2028 race.",
     "platforms": [
       "bluesky",
       "news",
       "wikipedia"
     ],
-    "n_signals": 52,
+    "n_signals": 35,
     "signals": [
       {
         "platform": "wikipedia",
@@ -775,10 +844,6 @@
       },
       {
         "platform": "wikipedia",
-        "name": "Gina Hinojosa"
-      },
-      {
-        "platform": "wikipedia",
         "name": "2026 United States elections"
       },
       {
@@ -787,7 +852,11 @@
       },
       {
         "platform": "wikipedia",
-        "name": "United States midterm election"
+        "name": "Gina Hinojosa"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "Nithya Raman"
       },
       {
         "platform": "wikipedia",
@@ -795,152 +864,168 @@
       },
       {
         "platform": "wikipedia",
-        "name": "Keisha Lance Bottoms"
+        "name": "2026 United States House of Representatives elections"
       }
     ],
     "n_items": 160,
     "narratives": {
+      "common": "Democrats won control of the U.S. House in the 2026 midterms, flipping more than 40 seats, and coverage describes a broad \"blue wave\" and Republican losses. Several outlets report a razor-thin Mississippi Senate race still undecided and a post-election shake-up at the White House. Attention has also turned to what a Democratic Congress will do and to how Democrats will organize internally.",
+      "common_links": [
+        {
+          "outlet": "CBS News",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdURNLUYxNXFnZWE2ektfNDRBQ09WcUltaVIxNnNWLXo0bDgxOHFNb0FkdmFXTElESUFKRHFUa2lMX1AtZVFwVGNUa2pNdU1pQTMzXzF1dVhXM2hVdXdjdUF5dllnZ1FZbXl0M3FLNThDaWFaTmx4OXdhUXREUXFHbGVR?oc=5"
+        },
+        {
+          "outlet": "NBC News",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zb3FDMGdwaC1OZmxSWVh1cThkeDRQcVlLaFh2NUg1WlJuX19CMV82aHJrajJvM3RrZGpmeHMyWjRzcXptN1V2NWVSb2F0OVZUc19tSXNjb1EyaUgxcmtOeFJhdlJZU3Bob0JWb2xn?oc=5"
+        },
+        {
+          "outlet": "Pillsbury Winthrop Shaw Pittman",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN1BrM2NqVmp5V0JNU01keXd3ekNkLTJUaW9GcnNTbnpZQmMtek1LeFBtU0VsSDJGem8tS3N4X2c3UjJtWHh2SUVrQjhhcTZWRGQ4N3FmYVBRMWxKUC1vQlJXNEZFOW1XdzJqSkgzTWtxX3JRdjY0WGYwNEFfTEhHODNQVUM2UHBybHJ4UnAzWnEydmc5WEk0?oc=5"
+        },
+        {
+          "outlet": "Sky News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZnk2V0FGdU5QUUZVd0s1S0xSZlNvNGEtcXNmSTJFNy1hMmRsZlJfaG1la2tMbHlyTGZzTmNiSkx2M1FtOW1aVTFyR3hDVUZUcGx2ZFc1dnpIcUpWazRveTE0Zi1aejJxNHh3TjBTNEpQZzZlRHlpMnVlNFQwWGFKVm5MX3lNZEYxMmRFM1BZNTdFOFZXVXlqOGFQME1MOE1ZRWk4?oc=5"
+        }
+      ],
       "groups": [
         {
           "group": "Mastodon posts",
           "n_items": 80,
           "outlets": [
             "Balkingpoints@mastodon.online",
-            "ClintBartonF",
+            "DemocratsAbroadMadagascar",
             "DrALJONES",
-            "GoWeaponsHot@mstdn.party",
             "ItalianNews@mastodon.ozioso.online",
-            "ManyRoads@mstdn.social",
-            "MaryAustinBooks@mstdn.social",
-            "MusiqueNow@masto.ai"
+            "JaniceOCG@mstdn.social",
+            "JugglingWithEggs@mstdn.social",
+            "KimPerales@toad.social",
+            "MaryAustinBooks@mstdn.social"
           ],
           "outlet_notes": [],
           "languages": [
-            "French",
-            "German",
-            "Spanish"
+            "Japanese",
+            "Portuguese"
           ],
-          "narrative": "According to Mastodon posts, Democrats won the midterms and now face pressure to deliver; one post quotes Hasan Piker saying Hakeem Jeffries and Chuck Schumer are \"two of the least popular politicians in the country\" and that there are demands for new party leadership. Other posts describe a \"Trump midterm debacle\" (ProPublica), a \"total repudiation\" of Republican extremism in Tarrant County (Texas Observer), credit to Black organizers, and report that Elon Musk spent nearly half a billion dollars on the midterms with little return (Japan Times). Some posts in the group are on unrelated topics, such as an AI stock sell-off and AI regulation.",
+          "distinct": "Posts are opinionated and personal. They quote Hakeem Jeffries' leadership being contested, attack JD Vance and \"tech fascists\", and cite Thomas Massie's plan to force an impeachment vote on Pete Hegseth. They also discuss Elon Musk's near-$500 million spending and the AI-stock dip. One post warns that hearings without resignations would not be accountability.",
           "links": [
             {
+              "outlet": "MaryAustinBooks@mstdn.social",
+              "url": "https://mstdn.social/@MaryAustinBooks/117572070297298377"
+            },
+            {
+              "outlet": "gilduran@journa.host",
+              "url": "https://journa.host/@gilduran/117572390771202196"
+            },
+            {
               "outlet": "DrALJONES",
-              "url": "https://mastodon.social/@DrALJONES/117570756799499136"
-            },
-            {
-              "outlet": "ProPublica@newsie.social",
-              "url": "https://newsie.social/@ProPublica/117570967094713877"
-            },
-            {
-              "outlet": "TexasObserver@texasobserver.social",
-              "url": "https://texasobserver.social/@TexasObserver/117571152817093580"
+              "url": "https://mastodon.social/@DrALJONES/117571913986874185"
             }
           ]
         },
         {
           "group": "US media",
-          "n_items": 12,
+          "n_items": 14,
           "outlets": [
-            "CNN Arabic",
-            "Crude Oil Prices Today | OilPrice.com",
+            "ABC7 Bay Area",
+            "ABC7 Chicago",
+            "Bulletin of the Atomic Scientists",
             "Edelman",
-            "NC Newsline",
-            "NPR Illinois",
+            "Goldman Sachs",
+            "Pillsbury Winthrop Shaw Pittman",
             "Political Science Now",
-            "SCOTUSblog",
-            "Teneo"
+            "SCOTUSblog"
           ],
           "outlet_notes": [],
-          "languages": [
-            "Arabic"
-          ],
-          "narrative": "According to US media, the items are mostly headlines and explainers on the midterm results and their implications for business, the Supreme Court, and forecasting. Specific items note that Stephen Miller was named White House chief of staff in a post-election shake-up, that the Mississippi count was still underway, that Wisconsin Democrats want to transform election law after flipping the legislature, and a commentary urging Democrats to \"make civility great again.\"",
+          "languages": [],
+          "distinct": "Mostly topical explainer and advisory headlines from law firms, consultancies and universities, covering what the results mean for business, philanthropy and forecasting, and election-day interference threats. Pillsbury's headline says Trump \"keeps the veto\". Yahoo adds that Stephen Miller was named chief of staff and that Alaska and Mississippi were undecided.",
           "links": [
             {
-              "outlet": "Yahoo",
-              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOVXRSOTMyejZZY2lrRGdDYWltTGgzUl9vYUI1S2xSN2dOdFVDZFNzN19TODNibWsxN3hmX3NxVzVIR213VEZ1akVyUnZQeFl4V0JOYzRlYzZUOVNITHZtSXQ4a0tPZHM0VGd2bHR1bS1leDhxem5oUkZEM1c5RnhlZG9CMk9TS2FvbWZQS0YwX3ByNDJiUHk3RldKVFhkZ0tuVHNmd0RHcWVHUUNib2VweW9BVFA3cXE0RWdueFlIUHMxQldWa19BbVFaOWxvVkdYNGgzQlFQRnRWYnR4aDFIcDc0bzZ1akd5aWI5dl9LVndqVGEzbVRZS0lXMnJucktFdHE1U09JMGJxLXF0bW81bjVJQjVyOXpRQldlZHcwVERFODhoMzZ3dGctdW9kUQ?oc=5"
+              "outlet": "ABC7 Chicago",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNmNSUnZBdkxPTGRHZWgyUFJDT3B0SzZrZm9fRUExSURlaHlOZDBpeERHZi1LMmtjTUR4cGtHbHRZdVV4MVFqMG1nLXd5anlZRVJLZG55X0pFWTRqSWlMSGFVaWY4Z2pXWVJiYm43RWptaU1vUjFjSW1CMW1qY3lvb3BzcFdnNV9TWC1VVUo2SGtkTmpJbWM5SFNrTEZuX09jbFhKY094Nk1Yd2w2dXdfNG5kRjLSAboBQVVfeXFMTTRpaEJOcHNIeXhNT1hJUDR3eFl0WjZHbFc0dVQ2M2ZkbVJxblhXLU1KaFFYU0JVNDVTM0NIWVNyS2ZOZU44ekFBQnFjYlg5SUY4MGoydXJEX1BpZGMtY083T25pR1hoWTRTalRQSlJnQ1pnNm44a2ZFbEFOazFJSFFaZnBpQjJpbHBMQkdoOXVCREh4WjNLb19wR0p3ZlU0TUliVEg3dGQ2ZTlicENtTlZYVjRQXzlsbFBn?oc=5"
             },
             {
               "outlet": "Edelman",
               "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUNDk4ZWltZ1NQSVR0dHl0SFNXR0JlQ1hJUlhlQmhrbG5MQzhnMnZqNTMtV3hfNVdTQ0Zlc3hXYWZWYjlnQ1Nld05pc01rOVJqNG5HeVo0REE2aDlUbWk4QnpXRVdwYzRIckE?oc=5"
             },
             {
-              "outlet": "Votebeat",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYVVjV2p4S1dTd2ZRMWFQVmo0VXNPcVVyMEVnZWJGRkthZ2I3aU1iWHIwUm9YVkV3eU10ZVpNUjFFQVN5U2pnd0JnWnA3bEtNMGRMSmlWa29lNHRGclVkYXU2QnV5cmtYTHpnTUE0MUV2UUNyTXRQN0FXS09xYWdvd3phWGVMdWhwMDFfNnBLZHF2TlBIaTZyVFNPQWMtdw?oc=5"
+              "outlet": "Yahoo",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOVXRSOTMyejZZY2lrRGdDYWltTGgzUl9vYUI1S2xSN2dOdFVDZFNzN19TODNibWsxN3hmX3NxVzVIR213VEZ1akVyUnZQeFl4V0JOYzRlYzZUOVNITHZtSXQ4a0tPZHM0VGd2bHR1bS1leDhxem5oUkZEM1c5RnhlZG9CMk9TS2FvbWZQS0YwX3ByNDJiUHk3RldKVFhkZ0tuVHNmd0RHcWVHUUNib2VweW9BVFA3cXE0RWdueFlIUHMxQldWa19BbVFaOWxvVkdYNGgzQlFQRnRWYnR4aDFIcDc0bzZ1akd5aWI5dl9LVndqVGEzbVRZS0lXMnJucktFdHE1U09JMGJxLXF0bW81bjVJQjVyOXpRQldlZHcwVERFODhoMzZ3dGctdW9kUQ?oc=5"
             }
           ]
         },
         {
           "group": "US media (centrist)",
-          "n_items": 10,
+          "n_items": 13,
           "outlets": [
             "Arizona Capitol Times",
             "Axios",
             "Bloomberg.com",
+            "Brookings",
             "CBS News",
             "CNBC",
             "Council on Foreign Relations",
-            "KCRA",
-            "PBS"
+            "Indiana Capital Chronicle"
           ],
           "outlet_notes": [
             "Arizona Capitol Times: center (AI estimate)",
             "Axios: center (AI estimate)",
             "Bloomberg.com: center (AI estimate)",
+            "Brookings: center (AI estimate)",
             "CBS News: center (AI estimate)",
             "CNBC: center (AI estimate)",
             "Council on Foreign Relations: center (AI estimate)",
-            "KCRA: center (AI estimate)",
+            "Indiana Capital Chronicle: center (AI estimate)",
             "PBS: center (AI estimate)",
             "Politico: center (AI estimate)",
-            "The Colorado Sun: center (AI estimate)"
+            "Stateline: center (AI estimate)",
+            "The Colorado Sun: center (AI estimate)",
+            "USA Today: center (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to centrist US media, Democrats swept the midterms and won control of the Senate, with Schumer speaking after the win. Coverage reports that Republicans are \"panicking\" as the 2028 map opened up, that top Democrats are calling for a \"national data center moratorium now\", and that House Democrats are \"inundated\" with calls not to elect Jeffries speaker. Other items cover the midterms rattling AI stocks, Turning Point's future after Republican losses, and Colorado Democrats winning state legislative supermajorities for the first time.",
+          "distinct": "Stresses the fallout for Republicans (\"panicking\" over the 2028 map, Turning Point's future) and concrete local effects, such as Houston reducing police cooperation with ICE. It notes \"historic firsts\" among winners and the AI-stock rattle. Axios reports House Democrats were \"inundated\" with calls against electing Jeffries speaker, and CNBC reports a possible legal fight in Mississippi.",
           "links": [
-            {
-              "outlet": "CNBC",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG85QmJuZGVEWUIxSW4ybHJPVmN2RmR2VjBTdnkydmZSOGV6YllsWEUtbVpYclRTSWhQS09EZGxJSllyY0otS1QtQVdVY3BhY0ZqMWxfR25WeWo3Q3d5LUg5dVZrUGRneGh2LTRBQjY3SERxNTdLaXNkaU9VaHVPb0lKQW10WmvSAYwBQVVfeXFMTWdsc2pjdEpUS1NXdWRzcld3SFp2eVBhWkU2NWNOTXRsUS1WbTNRVlg3S0ZRalhiYnR5WTNKQUxiR1JXNkI3b3ItbnBsZkdoZE9lbWJkVFB1eTFwMFluVFNobUtfLU1sTUJPSlRVSU1IUnRhYXFPVzNEc0NRempsZGM3MTFTVFZSUGUzS0Y?oc=5"
-            },
-            {
-              "outlet": "PBS",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaFRCSGMwS0c3akoxRjF1Wk9oc2VzVkZwekJIV01CQzVqSndNRmtTSGUzUWZESTdpYzE3QldGamlTbHBQcFFwS3VuOTVmem1CQVdsWC1BTW54eVhndUN6VkNtN21wNUx1Yld0dVYzOTJMdlR3VWJhcDlsU2N6N1E4SUh1UGpHX2hFUV9nVEt3ME5kbk0xTHpHcGdoeHhkcDBjcWpoN0lfSTNhQdIBrwFBVV95cUxNM29lcG5EbHIwTi11UFFLX0h0YnlwcHA1bXFHc0JGN0c5YnlHNVBpX0d1V1BiMENpQUpOOWFGTzRQTFdyQjBTdjdHTXVrZ0pqajF2M0c2VjF3QUdZdVU3ZFN1aVFXSnN0b2xKMlRDYlotakFoTDQxMnBCd295Skhyam5xZW9VMk95U2hMbWlZVzV4UTQwVkt3alVvbEpfUko1MDREa2lWMmJHbkxRSnI4?oc=5"
-            },
             {
               "outlet": "Politico",
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWENKQXBtR21iZi1tM0dMWEhZRlV1M0huSm1XUHBvcDlIRGVHN1lWclROdXl4ZnUwZldfNm1EYVQ3eXlHYzlGNWszR2lLaHlPczFWSTRwN0EyNEFXMUZKcjJ6ZnRMQ0d2UlpnamUyR25GNExlS0h3TmZSbXExVDF5VUR6blB0Q0t1eG5PcHNieGdWem5sRlA4TFFIQXIxX2U2ZjZ0NUZSQmM3RVVxUlB2eVllT0U?oc=5"
+            },
+            {
+              "outlet": "Arizona Capitol Times",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQkI0dEpSOS1hVUFaMmJmaTVuem9RTUtWQ3V4bXFCSmlYQ1UyNkNXRnUyZFRtNW00Uy1jYlhfbDVtSFJKbnQzWUdJbjdmRFExTUQ2NDBZLVphcWJ4aWU4a3hqbm9KYnhQWHNpSUJzR0ZLRHRHWlRYdzYySk9XSUQwQ0RTeEw3Mm9SLURVSlJTMjZLb2lBbVM1NEJtZFJSQThYcFEtcEFqSTRNRWl1bVhJZnJ3?oc=5"
+            },
+            {
+              "outlet": "USA Today",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVGdXSkNMWUpHRnVsYzBvV28xRk4zc25kaEJVa3lKT3hyRm9QbERwaTRnUGFvM0ttTU4wc2ZOSndWMEVmV2FVRElhZUhUUlBXNEJZSmJReWcxOGpKamRsWDRaVEFlRks5SEp2LTQ5c2k0dGxHU2FsVkRvYUNBM2tkOUtTXzBFRTc5dVlkOHQ1WnlWM3l4UmNsdG5HaGNDZTZFR3F4TGpJU2Exd2s0R2VSUE1kU3BrTng2UVo4Z2psRnVIR2EyRlVQZ0JRSGI4RW1aeklF?oc=5"
             }
           ]
         },
         {
           "group": "US media (left-leaning)",
-          "n_items": 8,
+          "n_items": 9,
           "outlets": [
+            "Brennan Center for Justice",
             "CNN",
-            "Colorado House Democrats",
             "MS NOW",
             "NBC News",
             "NPR",
-            "The 19th News",
-            "The New York Times",
-            "The Washington Post"
+            "National Catholic Reporter",
+            "The Atlantic",
+            "The New York Times"
           ],
           "outlet_notes": [
+            "Brennan Center for Justice: left (AI estimate)",
             "CNN: center-left (AI estimate)",
-            "Colorado House Democrats: left (AI estimate)",
             "MS NOW: left (AI estimate)",
             "NBC News: center-left (AI estimate)",
             "NPR: center-left (AI estimate)",
-            "The 19th News: center-left (AI estimate)",
+            "National Catholic Reporter: left (AI estimate)",
+            "The Atlantic: center-left (AI estimate)",
             "The New York Times: center-left (AI estimate)",
             "The Washington Post: center-left (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to left-leaning US media, Democrats won a Senate majority (NBC) and their lead in the Mississippi Senate race grew (NYT). The Washington Post calls the result \"a stunning rebuke\" and MS NOW reports Trump aides questioning his focus after Republican losses. CNN says the returns were bad news for progressive Democrats, and other items cover Vance's explanation of the loss, abuse survivors as an energized constituency, and Colorado House Democrats choosing Jennifer Bacon as Speaker.",
+          "distinct": "Emphasizes accountability and the party's direction: Trump aides questioning his focus, a coming \"blitz of investigations\" for corporate America, and a framing of democracy as a \"big winner\". CNN notes bad news for progressive Democrats, and the Brennan Center looks at surprising turnout. The NYT says the Democratic lead in Mississippi was growing.",
           "links": [
-            {
-              "outlet": "NBC News",
-              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HT01FMldrNmE3Z1pmR3lRYmxaMVhxNDN1MF9maXpIV1hiU2xLWnpuWURkeEFhXzVEMmdjR3dreFgyeWZxZDYxTVVxSWh4cUFGMkc4N3Bja2RzQm1KS2x3clhsR0I2WVR4WXVOTUNtRQ?oc=5"
-            },
             {
               "outlet": "The New York Times",
               "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9OOEhyQVI4QzR2YkQ4SklicndGeEdreEtYMHMyNWZHQWZacEVxcjVsbzNUQzNIdEczQkVhbks5d3hVdTdHcmJRc0R6WEdiY2RKLWFrVEF1aVhTYVV1ZmFIbWlUOEFNaTA5UlFFc05Fd25JWWtP?oc=5"
@@ -948,6 +1033,46 @@
             {
               "outlet": "CNN",
               "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMUhyQVdVdTBHQVZGSWxhajlXWEpmZGt1YTJ3ZGtSTkhkRXhjVHZYb0NiMWJlcDNSNVBOVUczTFoxODV2QW92cUtCQkY3eGcyelEyWXB6aGExbVN4TjgyM3JCSkZPYUw1dnNtYTduWnJfYUhRLV9UZ3ZxQTVzTERpTQ?oc=5"
+            },
+            {
+              "outlet": "The Washington Post",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ0JFeVRheGwtVnNLeDA4enEtWm5mQXRoNTdLT3hBZGpUTWxWX0pYcnpCSk1KNEtUWFZjeUNrcWc3bFJoaHYxcDcycG1uMHJkZUdpTXNMRDJmdlZaUUlnemZxSTM0bkJJQWlXeDIxNk9wdk9zWWk5dnNXWFN3TVpCMEFzX08wTmdLUXAyM1NFUGJGLVRTeUJCLXpnOHpRSEMwNmtlRkdyVVpiS0lRMGRudU1Xb1pnSHZycUsw?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Australian media (centrist)",
+          "n_items": 6,
+          "outlets": [
+            "ABC News & Headlines – Australian Broadcasting Corporation",
+            "Lowy Institute",
+            "Nine.com.au",
+            "SBS",
+            "The Conversation",
+            "United States Studies Centre"
+          ],
+          "outlet_notes": [
+            "ABC News & Headlines – Australian Broadcasting Corporation: center (AI estimate)",
+            "Lowy Institute: center (AI estimate)",
+            "Nine.com.au: center (AI estimate)",
+            "SBS: center (AI estimate)",
+            "The Conversation: center (AI estimate)",
+            "United States Studies Centre: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Focuses on drivers and global implications: women voters powering the \"blue wave\", a looming battle within the Democratic Party, effects on presidential elections and the rest of the world. Lowy argues Trump lost the midterms but not his grip on foreign policy.",
+          "links": [
+            {
+              "outlet": "The Conversation",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYUUxc1hWaEdnNzBZU1hYaWtONjc2NWw1V2gwemlzN1lUdEozN1NiLTdDMHVNQVM3LW9RY01yZEpSTC1pSDl3M2xFblppY1VxZ0JXTkpESDNNbFF5bGR0QzJOaExoTkdWWUpCQ3ZnMkwzNHdLMUs5NEZOdERCZU55MzN5ajQwUVpzTjAtWnpRSQ?oc=5"
+            },
+            {
+              "outlet": "ABC News & Headlines – Australian Broadcasting Corporation",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNenFya2RKdzlFZFh4aGlqZWNqdjYtVGpNTzVkMVFUSkdFS3lFWnFCdVJ4cWpsNno3eWw1TkYzVG9uWkxINmw1SEpwc3Z1Nm9uQnJOS0IwXzRlZ2x0UWRvMVFNQk5nZks0TFBNTlBCOW9rZlBmRUdKX2VHc0NWd3ppT0NjUWRseVpBVzBPSmViTVNENkR6a1YzbEZsUVRqOTFQUlowTWstVFFtNkE?oc=5"
+            },
+            {
+              "outlet": "Lowy Institute",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR0dfeV9paHJSMXlndUVDaXRkSWRDX05ZNFNjMnhFZmpINHlTa1ptd0FwOTJuSGhocENfaFpvLWJpUGNyWWM3TVBUN2hudlhVLWl3NXZaTHpSQ0dCME03eXJiaG5oSmFnTTdhMWdXMVhIMjRwTUJUX3oxWlU1RFpvdUxuWndYbmJvZk1mRzNCZFhtbmQ5TzhNVGtfNi0wcUJOc0E?oc=5"
             }
           ]
         },
@@ -969,12 +1094,8 @@
             "The Economist: center (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to centrist UK media, the midterms produced a \"historic\" result and a \"blue wave\" that The Economist says was powered by moderate Democrats. Items include live results trackers from the BBC and Financial Times, plus analysis from Chatham House and ODI on what the outcome means for both parties, populism and 2028.",
+          "distinct": "Frames results through market and ideological analysis: the Financial Times reports global stocks tumbling in an \"AI rout\", The Economist credits moderate Democrats for the wave, and Chatham House and ODI link the result to populism and 2028.",
           "links": [
-            {
-              "outlet": "The Economist",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcGxCRGRRN2NXcTZ1VFRqcTZReGNXNEpRRElYU3NZNXJGMmtlRHlTU3djVnprVU1BVG56MTh3eTFZanlaYTBTY3g2cEduWTVEWUxFV1FSTjFxLTNPVE12aEg0V1lCVEZoNW5iRUI0M3p6cnE2U0RVbUg0UHdZQ3BrNzdreHdvS2FhZ0xBMkxlRUU0TTNmWmNtQlhoZnZhNTFR?oc=5"
-            },
             {
               "outlet": "Chatham House",
               "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUEZpLWJnU1A5VVJZY3RRY0FIMHRNaVpXckp2cnZRTVoxdTlrNWRlUmIzeE9UTFVNZWh4NzdSMVc3Vk80U0szOEpNMlBBellmbnlsNUhOMUhGZzJ1N2Z0OWdZbVVTcWhwWlF5ZmRFNjlUX0F1OEI0OXVZdC1uZ05ENUVsSjFYNjduLWJ4S3FjaVc2YzEtcC1IRENLTFQtaV9JLWk1ZmZBYU1SMzdMNDZwVElB?oc=5"
@@ -982,104 +1103,77 @@
             {
               "outlet": "ODI: Think change",
               "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazNnTHpMc2RlbVpwV1dTbENfVC1TOGdjcE9JaFZPTUJuNFgyLVlMTEE2TDJXeDVVWXJlTUtsSlI2ZTlNclpNR04zWUV0bUJWODJzQ0RwUjJ4X21JaWhXREplZlRVNHBmNnVycUZzMWlDekR0aElILWlTSnY4MjZ0X3pEczhWWG92ZkM3UU9GODBnNmxfYmtxMUxHNkd4Q0JrQjVsdEswekp6OERyNGVNWW9zcUVEY0RiRVhsMHNIaEU?oc=5"
+            },
+            {
+              "outlet": "Financial Times",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLVNDVHZudzhtNGJENWl0NE9tQ3l4aVZRUUFabU1wMDJOMW96TER4cVJPc0F0NFh6RWJaVXlwTlhiLVRtSUNxUWhiNzlxT3d4MnBfdE52dmoyUFllZzlCcFRhdHBrMkFtVGVqWFpZTU9ub2dpbjFCdHgwYlZ3SFB1T1RUV20?oc=5"
             }
           ]
         },
         {
-          "group": "Australian media (centrist)",
-          "n_items": 5,
+          "group": "UK media",
+          "n_items": 4,
           "outlets": [
-            "ABC News & Headlines – Australian Broadcasting Corporation",
-            "Lowy Institute",
-            "SBS",
-            "The Conversation",
-            "United States Studies Centre"
-          ],
-          "outlet_notes": [
-            "ABC News & Headlines – Australian Broadcasting Corporation: center (AI estimate)",
-            "Lowy Institute: center (AI estimate)",
-            "SBS: center (AI estimate)",
-            "The Conversation: center (AI estimate)",
-            "United States Studies Centre: center (AI estimate)"
-          ],
-          "languages": [],
-          "narrative": "According to centrist Australian media, women voters helped drive the \"blue wave\" (The Conversation), and Democrats have taken control of Congress, raising questions about what changes for the rest of the world (SBS). The Lowy Institute argues that Trump lost the midterms but not his grip on foreign policy. Other items are a results page and a guide to the elections.",
-          "links": [
-            {
-              "outlet": "The Conversation",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYUUxc1hWaEdnNzBZU1hYaWtONjc2NWw1V2gwemlzN1lUdEozN1NiLTdDMHVNQVM3LW9RY01yZEpSTC1pSDl3M2xFblppY1VxZ0JXTkpESDNNbFF5bGR0QzJOaExoTkdWWUpCQ3ZnMkwzNHdLMUs5NEZOdERCZU55MzN5ajQwUVpzTjAtWnpRSQ?oc=5"
-            },
-            {
-              "outlet": "Lowy Institute",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR0dfeV9paHJSMXlndUVDaXRkSWRDX05ZNFNjMnhFZmpINHlTa1ptd0FwOTJuSGhocENfaFpvLWJpUGNyWWM3TVBUN2hudlhVLWl3NXZaTHpSQ0dCME03eXJiaG5oSmFnTTdhMWdXMVhIMjRwTUJUX3oxWlU1RFpvdUxuWndYbmJvZk1mRzNCZFhtbmQ5TzhNVGtfNi0wcUJOc0E?oc=5"
-            },
-            {
-              "outlet": "SBS",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWUJPMUFaWEhNekVrTk5PWGlXSllDbFJDcDlSRGJISVJfbERpQ005RUc4TVlSSlBKeS0wcUw4TFg4YjJUblhncFhsaW9tdWgxQ2JNdjFGbnRCUkVxX3lfbWRtRWh3Zm9EbFc3YlRfTDdFM2FWcFJPNFo1VnRVdGxhRmV5aTd5WUlyLWNaNXoxREJUS2ZibWR0TE5rN2I2QQ?oc=5"
-            }
-          ]
-        },
-        {
-          "group": "Indian media",
-          "n_items": 5,
-          "outlets": [
-            "ANI News",
-            "Investing.com India",
-            "Outlook India",
-            "The Hindu",
-            "The Times of India"
+            "ITVX",
+            "LSE Blogs",
+            "Sky News",
+            "St. James’s Place"
           ],
           "outlet_notes": [],
           "languages": [],
-          "narrative": "According to Indian media, the midterms were a setback for Trump, with The Hindu calling it a \"Trump debacle\" and The Times of India calling it a \"rout\" that put tech allies under scrutiny. Outlook India reports Marco Rubio rejected resignation reports, OpenAI's CFO said it will keep investing in data centers despite the results, and ANI reports John Bolton advised Democrats to target Trump's trade policies through Congress despite a possible veto.",
+          "distinct": "Reports that Rubio resignation rumours swirled amid a Republican \"blame game\". LSE Blogs argues the result may end Trumpism while \"MAGA is here to stay\", and Sky says Trump replaced his chief of staff.",
           "links": [
             {
-              "outlet": "The Hindu",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSi03akpRME9LMEdKX3RtY3V6SHl6b1FZbGZka3RhMXFsakc4UjdBdTMyNHk0czRFS0kyaGpKdE1HYU1MVGVlVEdRS2t0UHR5a3FTc0drbGdzU0Y2SVRibDRQOVRZZHA0Z1FoeXRMX1ZYY216Y0dBOUt5QUZxbDdWZElnVEJ5ZGozeTVFODMtQTZUdkx3QXV5TlI0aFJtUjJaUmdIcGYwcThld1NJdjloYtIBtwFBVV95cUxNVmJlVmtEV0hJN2xKU3VoVnNacDRoM3VFbXJoTGxrRnhXZTRBZmRJQUtMSFVsQ1BHZ25oeTNBcXRIQy03VFhydk10RVpCNGZ6R0otaEJRcTcyN1BvY1VvVlh5X1VLRTBURU1Ba2dnTGF5R19NRUc4ZUtoX00xMVl2XzdfOFpEbTNQMmpmTGEzY3VSVW9fYTNwclJWbkNCTWdTeUtUazQ4REM0NnpwN25NQlB1ZVV1Qkk?oc=5"
+              "outlet": "Sky News",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZnk2V0FGdU5QUUZVd0s1S0xSZlNvNGEtcXNmSTJFNy1hMmRsZlJfaG1la2tMbHlyTGZzTmNiSkx2M1FtOW1aVTFyR3hDVUZUcGx2ZFc1dnpIcUpWazRveTE0Zi1aejJxNHh3TjBTNEpQZzZlRHlpMnVlNFQwWGFKVm5MX3lNZEYxMmRFM1BZNTdFOFZXVXlqOGFQME1MOE1ZRWk4?oc=5"
             },
             {
-              "outlet": "The Times of India",
-              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcUtjbkRLOUExdVo3emJ5LW9telZhMzJfQV9aaVJhdkhFTXdDcm04MUh0cmtDN3N4elozcjZxNlJEa0tDZy1RRjZQVHFvXzdkZFRjZzJwWHk4ekl6WDRiMUVobmFxbmlJLWhRZW1qQmhobE1jS2xQR00yc0lueDBKSGtRczV0aDBnbUFvM1Rrc004MnU5RjllaGVteTZxVV9FNk5LYmo0V1R6QVFpX2VYYmdPTlhZMEtOdUJLTlFtdVJLVTJyRi1BX1FwM0xrWXBNVlM3RlgyS3RCVnfSAeABQVVfeXFMUGI2YUlPVFRPZ0M1b0lLUngySXk1RExNamcyWkp6NEI5RkhwNVRvalZDOWp3NkVBSmw5MWZHVmVQQld1NnI0ODVRcE5WNVdyZE1FbDlqZElLWEtIZGVKRlFQdjRIMUdRZUNKSFQ3dVljMno5eU40eEJHMmthMTkwRFVVTV9yaF9NWkJZN1FfLXg3dEVsbERLVmc5aTEtNXVUNmh2RkFwOXFadTNJbE5rMlJqNTFWR1dtVFN3bVRkWThhSTVVNFRSWEtfaHU5cS00NkxGUGdjRllCYl90eFlJdE4?oc=5"
+              "outlet": "ITVX",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWVNJdTdHeTBJQ18zVmhlUGJKVjFyMjRKdlNVczF6NzQzazh6QjRCcFNLVDctN1dTMnpFaDRlZFktSVhHR2Y4eXNqYldVQjl2Zkt6N0RJLVZ1ZVc5T0g3Z0NZaFhjLWxHS1Zxd1FzTVRwb21rYmpQWEpqQXFWc1NhX09qc2JkdE5CWXMyajRtcmsyZk1tQVJxd1EwRk5sbF9qYzNTNk4yWEdXVVVBNkV2dTRycVc5Zw?oc=5"
             },
             {
-              "outlet": "Outlook India",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNd1UxN2kxU0c1T0liQmRtR1pkZTZaV0RFNWlMOG1GbFhXZFlMYllveWk0cWlLb25QTjk5aGwxU3RpOGVqbjQyZzVlY0FPeTZRazM0b2laUmF2WFMxOWZPSmt5cDVHNHZQLUpOQUNvRU1HMVBEM0hhcmp5Y2s0SmxIMmZnS3NzWjROckZZUnJ1RVBQUXY1TG1hLXBUeC1JUERrcGJTTFRleWRRbWlnQUFsazZIVXVXZGxKR3ZESkpWRVVSc1RmSWpLNzlxbWNGVkU1Y3NGaDJLMUpTMWlabWZ6M1VoVmtwUkXSAfQBQVVfeXFMTUt6MlFSZVl0ZWZtcEc0VVVJYkJaZEtNMTVXTFlMMlh0UFY2OW8tWEVPRmc2NkgyeHNaU2RXcGprVUZMc0oyVGF4cVZUN2tKZVZJdmdZV1hIOUhBX1FsUVpxQ25oQnFwSU43c05PRmR1djNXY3ZSY1RGaERGWWl0TS1hVW95eXp1U3FqTWhxSVd0eXBIMlpaa1J5Z2VoRW5mR3JhdHg4YVotc0dyUF85RjdIQ1MzZHhZSnIxR1BpcUcyZEh5ME1nX1MxQ2pSeURWNjZOVm1SY1NWS2VHMXR1YlRFc3BYZTNvaVIwSGtFc3JLUWVwXw?oc=5"
+              "outlet": "LSE Blogs",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORjU3YjhGaGdLOTdmdGZ1MmI3S1FvNXNwWkZtYWtKTlY5QTBxYVJBTXY3YnRnUU1IbFJKUGFYd0ZueFNRRGxFWjJtWmJIcS1zdk9FQ3ZGQTE4T2xsUENycjhJNHNSMGdGd24yZmRiWGJmbmlqTnJlMUFOMUctcXAzM1U4N1JDdzRGYnc?oc=5"
             }
           ]
         },
         {
-          "group": "UK media (left-leaning)",
-          "n_items": 3,
+          "group": "Australian media (right-leaning)",
+          "n_items": 4,
           "outlets": [
-            "Channel 4",
-            "The Guardian",
-            "The Independent"
+            "AFR",
+            "News.com.au",
+            "The Australian",
+            "The Canberra Times"
           ],
           "outlet_notes": [
-            "Channel 4: center-left (AI estimate)",
-            "The Guardian: center-left (AI estimate)",
-            "The Independent: center-left (AI estimate)"
+            "AFR: center-right (AI estimate)",
+            "News.com.au: center-right (AI estimate)",
+            "The Australian: center-right (AI estimate)",
+            "The Canberra Times: center-right (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to left-leaning UK media, Trump promoted immigration hardliner Stephen Miller to White House chief of staff (Guardian). The Independent says Trump axed Susie Wiles for Miller after a \"resounding midterms defeat\". Channel 4 links Democrats' success to an AI and tech share sell-off.",
+          "distinct": "Largely sidesteps the national scoreboard in favor of lighter or human-interest and culture-war angles: voter anger in suburban Bethesda, the \"Arc De Trump\", the Pope voting, and a claim about the Ilhan Omar investigation dying \"on the vine\" under Obama.",
           "links": [
             {
-              "outlet": "The Guardian",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPd2EzVXE3YW9BZTFuM1l3Q2tvaEFvX0o2SGR4cW5ZRm5vNXpUVjQxc29YRFRTbnhCYl9DbDlYSUJVU2xtbmQ2aWc5OW9XZ2JFdERwNzdOQUVjY29jR3BFY19yOGRCTGdDS3FwWEU5RGNGeDNpWk5Sc2R0RjVGZ04wQVFtZlZsdE54WTlUa1ozcEtHQ2dUU0xuMEJNdU1Td2ZMek1vUXk2VU1Wczc1bjNhdV8yRkUtblBtVExvMXRMeE9FVGxXNEE?oc=5"
+              "outlet": "AFR",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUlhYRjRMVWF4cW5jM1FwWllPY2JUbTlkS0lJcUIzMDJhMldhOXZaMWhlcnRZWnV5VGZNMDhIX0NkWjZUWDZNUzJQWFNHU1VuU1JnODJBR2EwMHpCamVQWHBad0o5YlVUaWtxVnQ0V19SWWp0T0QwSnVtRWh2VlBDdDJZYklBMkNkMnV1THJiaVRFWXdJbENkUkduRWtqOWk5bnE1TzBB?oc=5"
             },
             {
-              "outlet": "The Independent",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeTdsUXZkOFdfdzhNWE5DajVGaU91M2lpRjBPQ0dnWjNvYXNSdktTUFpQXzBYVXBXVTVQUzZCaEdOVWhYZVZEaS1xVFFqTlM2cmZON0ZaeS1Bal9kS1JVaDdFTDRCR2d0MTY0bERfdHhYZ2xHZ2QycEZ2Q0NuMlNqUGk5NmFOaUlTN2kwelVQSEhUVHl1TFFIc19sdFZlWUVDYURVTTdmalpxdGVGMEZoc1N3c01KYXZMYm12d0N3Rl9SQQ?oc=5"
+              "outlet": "News.com.au",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWGlZb2ZRZDJQMnNkMEd3VTJYUS1TR2FyWGh2cnQ0SlVoM0FjVjNvdDgySEIwRERyNmszOFRuMEZQTThVTlNMal9KRTlDblhlN1NfZVhMQVZ0dHBpaU1lWDRjRjBNaWNHN3piVFJ5djFNSFJycmhyRVJDS1YtX2hoNHFyQWp0Sld6SEdtdEo3dUxxdjFoTkpnUXZ1R09LOUJrcVlKSEhQZFpmVExseV81bGxZOGh3RmhVdjFKRFRiVXRtZlhQV2VpcGhvN3kzeFF5LWRhQU5kMWg0YjRfbHZRdDVvRQ?oc=5"
             },
             {
-              "outlet": "Channel 4",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeUo3b1ljU0d4ZFJqQnF5SXlNWnhWdXlPRUN3VVMtRlYwUFhoaHM3OVZoRTRqMmhiUVE3dlU0QUxzTHNIQjhGREd2VGJqUHB5TmpfOGNMMWJnUW1tNDhPemxacFNUUjdUZjZoeE9PTUhtaW5xdVliTUNOYzZTRnNQMFpwWmJreFNsMVY1TXMxWWpzMnVqWXh1UDF6Y3ZuNm9iU09LNFpYZk5fdw?oc=5"
+              "outlet": "The Canberra Times",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWVJzekdxaUZ4R1lfdHpqTktKZ0dNQ19wdTVXS2R1VkhBSTAwTjdCcDktazNDNjNuU1dyMzltTkxOUDV3YW5SZUNINDI2VENIdkxVa1o4R2l2VlRObmp6U3p2WVRmOTExN0YwV3pzQXpXd0FrTXJneElPdUpqUHg5VmRLcVVISDg4V0NZTXdFT3J4SkRvOVBqWjFsN2dlZw?oc=5"
             }
           ]
         }
       ],
-      "unclassified": 2,
-      "differences": "Outlets across groups describe the outcome in similar terms of Democratic gains, but vary in emphasis: Mastodon posts focus on Democratic leadership pressure, local results and Musk's spending; US and UK left-leaning outlets stress the Miller/Wiles shake-up; Indian outlets use \"debacle\" and \"rout\" and highlight tech and trade; Australian and UK centrist outlets offer analytical framing (women voters, moderates, foreign policy, 2028)."
+      "conflicts": [
+        "Mississippi Senate race: ABC7 Bay Area describes it as separated by dozens of votes and CNBC calls it razor-thin with a possible legal fight, while the NYT says the Democratic lead is growing."
+      ],
+      "unclassified": 1
     },
     "framings": {
       "topic": "2026 US midterm elections",
@@ -1112,34 +1206,42 @@
         }
       ],
       "created": "2026-11-06",
-      "history": []
+      "history": [
+        {
+          "date": "2026-11-06",
+          "verdict": "unreliable",
+          "kappa": 0.4,
+          "n_items": 160,
+          "n_framed": 42
+        }
+      ]
     },
     "divide": {
       "verdict": "unreliable",
-      "kappa": 0.4,
+      "kappa": 0.5,
       "n_items": 160,
-      "n_framed": 42,
-      "framed_share": 0.26,
+      "n_framed": 47,
+      "framed_share": 0.29,
       "counts": {
-        "f1": 8,
+        "f1": 7,
         "f2": 10,
-        "f3": 10,
-        "f4": 7,
-        "f5": 7
+        "f3": 11,
+        "f4": 8,
+        "f5": 11
       },
       "shares": {
-        "f1": 0.19,
-        "f2": 0.24,
-        "f3": 0.24,
+        "f1": 0.15,
+        "f2": 0.21,
+        "f3": 0.23,
         "f4": 0.17,
-        "f5": 0.17
+        "f5": 0.23
       }
     },
     "rows": {
       "outlets": [
         {
-          "n": 1,
-          "label": "building (1/10 items needed)",
+          "n": 2,
+          "label": "building (2/10 items needed)",
           "confidence": "-",
           "name": "CBS News",
           "reference": "",
@@ -1148,12 +1250,17 @@
               "framing": "f2",
               "quote": "Democrats could dust off plans for Supreme Court reforms after capturing House and Senate",
               "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uY1prTkZBMXJpMjlJWmN5OFYtQUNxVUlNQ2NUbXlkT2dySlNsYlVYNHd5THhOTkM0eGw5WG50TjJMenJmdzdfZWVxZnktVFZleU82WFhjaFQ5bW9xNndoeng3Y1ltcE9BVEJNelY3LTlGaDZjQU1UbUJGWGpCaGM?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Here are all the districts that changed control in the midterms.",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdURNLUYxNXFnZWE2ektfNDRBQ09WcUltaVIxNnNWLXo0bDgxOHFNb0FkdmFXTElESUFKRHFUa2lMX1AtZVFwVGNUa2pNdU1pQTMzXzF1dVhXM2hVdXdjdUF5dllnZ1FZbXl0M3FLNThDaWFaTmx4OXdhUXREUXFHbGVR?oc=5"
             }
           ]
         },
         {
-          "n": 1,
-          "label": "building (1/10 items needed)",
+          "n": 2,
+          "label": "building (2/10 items needed)",
           "confidence": "-",
           "name": "The Washington Post",
           "reference": "",
@@ -1162,8 +1269,123 @@
               "framing": "f5",
               "quote": "This isn't the first midterms tsunami",
               "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSmtvREtsQ3plcnhVRmFLOFQzdkhCM01ZYlRmY0lLVWpwYWN4QUVCY2ktUkpwNGJWQkZDRHgwX2djUHU4M012N2JhWGR0ZEs5OVFraTNlMUFJdWk5d3dfQXJmZ3lRR0wwWHdTcjVmaFduZXNyb0lBbGI4dWptbDE5aGV3NFVoSFV5bWpqQjYwMWQ5TUpoTWF3ZUtuQQ?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Corporate America courted Trump. Now a blitz of investigations",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ0JFeVRheGwtVnNLeDA4enEtWm5mQXRoNTdLT3hBZGpUTWxWX0pYcnpCSk1KNEtUWFZjeUNrcWc3bFJoaHYxcDcycG1uMHJkZUdpTXNMRDJmdlZaUUlnemZxSTM0bkJJQWlXeDIxNk9wdk9zWWk5dnNXWFN3TVpCMEFzX08wTmdLUXAyM1NFUGJGLVRTeUJCLXpnOHpRSEMwNmtlRkdyVVpiS0lRMGRudU1Xb1pnSHZycUsw?oc=5"
             }
           ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Reuters",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "US midterm results in maps and charts",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9mYlFQMWJNR3dHZEQ1QVZ5TEo4QnRWOHYwTE9UMGh2X2x4TV8xTk1VbWNJSWZzdkdjclZFdjBNZmE5UFhhQnU4dGh0eXloOVhCeTBkekRwQUUyTzVZNV96Uml0ZXZDbHB1RHExMkphQUtLRnl3cWNMYmwyYVE?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Financial Times",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Live US midterm elections results tracker 2026",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRG5qZnpaSFIxMGs4a3pKbXFtZzRxSW9VYWNxd0FkdXZNN2E0R0ZsODZfZ2JxRHhaM2RhU3hHaUJFSnFoa2pGMGtjY0tIczc3Tk14Umx1MjB5MVNxVjR4dXprTlJ1SmRBQ25hcS1vUWduWWxZNXk3Nm1BMVBDSHZHcVEzdEE?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Global stocks tumble as Democratic midterm sweep sparks AI rout",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLVNDVHZudzhtNGJENWl0NE9tQ3l4aVZRUUFabU1wMDJOMW96TER4cVJPc0F0NFh6RWJaVXlwTlhiLVRtSUNxUWhiNzlxT3d4MnBfdE52dmoyUFllZzlCcFRhdHBrMkFtVGVqWFpZTU9ub2dpbjFCdHgwYlZ3SFB1T1RUV20?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "NBC News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "U.S. Senate Election 2026 Live Results: Democrats Win Majority",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HT01FMldrNmE3Z1pmR3lRYmxaMVhxNDN1MF9maXpIV1hiU2xLWnpuWURkeEFhXzVEMmdjR3dreFgyeWZxZDYxTVVxSWh4cUFGMkc4N3Bja2RzQm1KS2x3clhsR0I2WVR4WXVOTUNtRQ?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "U.S. House Elections 2026 Live Results: Democrats Win Control",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zb3FDMGdwaC1OZmxSWVh1cThkeDRQcVlLaFh2NUg1WlJuX19CMV82aHJrajJvM3RrZGpmeHMyWjRzcXptN1V2NWVSb2F0OVZUc19tSXNjb1EyaUgxcmtOeFJhdlJZU3Bob0JWb2xn?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "WSJ",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRVhNeS1XX0xDd1ZkN3JZMkdWcUJkaFhONTBWSmprcWxkRVpqbU02QUQxWnRVRXdlTHBzaVJNMENWaE5HaFcyU2pCVDl3SkpXV3Y4UTlEMzM4STJFc3FGVVByUW1xUHh1QWlqOWx2bHBKQTZxb09zSDQtMklkRFpsRENDbWRiNzg3dzlwMnVqbVpLQkhRVWwwT0F6UUxFODdybWFqekNqUVhrcEZKNzZz?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "France 24",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "European stocks plunge after US midterm election results shock markets",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzBFYkRISnp6Q01vdDZFckppcEduSWlrdTIwRHVxa2NJT0ViQ2ItZl9TUEVmcE1yRzFQNTRkeWVDQm0yaExGdUR1Q2NVUTR1a3FYYmlwSWw5YWw0Rl9Vcmd0VE44LXZPdHR0aVdPY3dINmZVUHB5SzRoSkJJVWd5OVBBNGl5elAyMlVRMUVwUnhoZlF5bFlWV1RSVmhoOWxmN29hM1o0bDB1ZHBEMXd1M2QzWmdDRlpPRU1aRUh3?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Le Monde.fr",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CNN",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Midterm returns show bad news for progressive Democrats",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMUhyQVdVdTBHQVZGSWxhajlXWEpmZGt1YTJ3ZGtSTkhkRXhjVHZYb0NiMWJlcDNSNVBOVUczTFoxODV2QW92cUtCQkY3eGcyelEyWXB6aGExbVN4TjgyM3JCSkZPYUw1dnNtYTduWnJfYUhRLV9UZ3ZxQTVzTERpTQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "AP News",
+          "reference": "",
+          "evidence": []
         },
         {
           "n": 1,
@@ -1219,20 +1441,6 @@
           "n": 1,
           "label": "building (1/10 items needed)",
           "confidence": "-",
-          "name": "Reuters",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "US midterm results in maps and charts",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9mYlFQMWJNR3dHZEQ1QVZ5TEo4QnRWOHYwTE9UMGh2X2x4TV8xTk1VbWNJSWZzdkdjclZFdjBNZmE5UFhhQnU4dGh0eXloOVhCeTBkekRwQUUyTzVZNV96Uml0ZXZDbHB1RHExMkphQUtLRnl3cWNMYmwyYVE?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
           "name": "CNBC",
           "reference": "",
           "evidence": [
@@ -1242,110 +1450,12 @@
               "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG85QmJuZGVEWUIxSW4ybHJPVmN2RmR2VjBTdnkydmZSOGV6YllsWEUtbVpYclRTSWhQS09EZGxJSllyY0otS1QtQVdVY3BhY0ZqMWxfR25WeWo3Q3d5LUg5dVZrUGRneGh2LTRBQjY3SERxNTdLaXNkaU9VaHVPb0lKQW10WmvSAYwBQVVfeXFMTWdsc2pjdEpUS1NXdWRzcld3SFp2eVBhWkU2NWNOTXRsUS1WbTNRVlg3S0ZRalhiYnR5WTNKQUxiR1JXNkI3b3ItbnBsZkdoZE9lbWJkVFB1eTFwMFluVFNobUtfLU1sTUJPSlRVSU1IUnRhYXFPVzNEc0NRempsZGM3MTFTVFZSUGUzS0Y?oc=5"
             }
           ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Euronews.com",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "2026 US midterm elections: Real-time results in maps and charts",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSDdDOV9mYVNKSjVxczdfSWU5bUtsNVFnMndDUTlwLXhmUzZ6NXBlRnkzTF9xTG81N1ptcnpiVERGeVhSb0MzUWFCamhDbnlURTEtcC0tTTVqT2FkeVdyaTVUTGR4eDNlby1XenpDclJEVjdyYXc5d3JhNlQybGE0am5fQkwzRDk2aVJOUzV5aHhVMG9vQ0h4aEtDdFFNNDhxLXFV?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "The Telegraph",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f3",
-              "quote": "Vance ready to take Trump's crown after midterms humbling",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWmRGaU1id1VzeE9qYUNmWVprT3U1Y18tRTFzX3o4NG9NT2FGa1lhTEo0Z0ttOGtBSWp6YWF5MXF5SzlLNXNicFlGbzJzcnFxQlZpN3FvN1J5dmloSEVlSE55NGRIVVhuT3BWOVFYWnZHMUhUUUg2MDFfY3Y2dU94MnAwWEVZaTFXU1ExNWxJbzJtOVZSMzh2UjlDQy1MbjlfTEdiSVVSZi13R3Bw?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Financial Times",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "Live US midterm elections results tracker 2026",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRG5qZnpaSFIxMGs4a3pKbXFtZzRxSW9VYWNxd0FkdXZNN2E0R0ZsODZfZ2JxRHhaM2RhU3hHaUJFSnFoa2pGMGtjY0tIczc3Tk14Umx1MjB5MVNxVjR4dXprTlJ1SmRBQ25hcS1vUWduWWxZNXk3Nm1BMVBDSHZHcVEzdEE?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Crude Oil Prices Today | OilPrice.com",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f3",
-              "quote": "Trump's Iran Strategy Reaches a Critical Crossroads After Midterm Defeat",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnAyQW15dlZZNUt5Skg2Umt3WkE0NUlabEtJZFVDdTFvNTJnUHBZejlYanBvVHQzSFNTQmdlOE1NNzh3Nl95RlVmeDdaX2MycjVIYkkwR0FPZ1lXbi1vcFgwRUFEd1RpQ3VoZFVWSmREcXktbnFLY3FXZTk2LVF2b1pUOE5XRGczWUhhek1YNml4WUZ6NDNrc2pVX3lydFpBSlJrbUNxOWNxR2xUb0s0YUl4LWJuRXk4ZFdZTUJ30gHDAUFVX3lxTE52MjNZZkM5UnR6cDMxWWMyMTZ5dnU3d2gyak1EUW5HZWZMUUJzVGthaVNKREJtbmtMN2ZtbmE4WWNOcXhBSVpzVC10aWhxSDBFakh4VUVRb2VTYnFYb2w2UmpMNUZQbjFnNTZFTUtSVi1EZzdsd3lSMGhtZ0g2by1VZ1R5RDl0VW0tSUw1QkJ2bUxmNURuRnZUMjFtZDAxcVk4X3lQSkJ4bWxWY3ZlSy1sV3dnaGxpWk52UVY1VnFYVWFYdw?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "AFR",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f3",
-              "quote": "2026 Trump blowout",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZmRGb28yWXVvX01xLV90YzRBdUQtNC1NTkROX2gxY0hxQTkzY1UtbUd3Sjh1RVFxemlYLVVpNU9kM3JEV19pMk02Y1lCU25GVldXdUNiTy04NFA1VEVoUE84WkRDZnFlSGFKbkNvTkVmZUFqUXZhVW10cjVZanVkM1BjRzlFLTg0QWxoa2h2RE9QbkN1a0ZVVE9JdzBOdHNPdWRKcjJ5UHBKWjhRckV6LVBJUlNnbkE?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "NBC News",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "U.S. Senate Election 2026 Live Results: Democrats Win Majority",
-              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HT01FMldrNmE3Z1pmR3lRYmxaMVhxNDN1MF9maXpIV1hiU2xLWnpuWURkeEFhXzVEMmdjR3dreFgyeWZxZDYxTVVxSWh4cUFGMkc4N3Bja2RzQm1KS2x3clhsR0I2WVR4WXVOTUNtRQ?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Hindustan Times",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f3",
-              "quote": "Two more top DOJ officials resign after Republicans' midterm defeat",
-              "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNbFBiWURibzRrRTdVeGlHYktkRnlVN0Y3Y0hiNG9BblprUWdmSDBxV1hGQmtFMTNfQldfSzRKS3pWSHFQYzUwdUhHbnp3VjJLRTlwUFJKRC04RENCaDkydjdadGF0RjJLeGhGVC0tWU9YQzVoT0pSUG1oQUR4bGlJSDd6ejBNLTNQLTAxcDBhREhNdWU2NU9sbTFBX0d1QXl3czhDWkhTTlFkWl9kOS15ZlpyZVlzV1NlWFNEd1J2WlRUQWg1U2JlUUJWQ043VmxVbjh0S1VnM0hUY3ZmM19WeTVTa1UyLV9LQlhzMWN6MzdyeVoxMXowaHBnRTdDcUN0aGpV0gGIAkFVX3lxTE5BLWRCbndSNHd3Zlh3WHYzVVlDTWlJNGZRSVRYOW1HTDE3cFFHbFJ2d1JqczdObnRpS2F1dTBSYU1RcXBZbmFMQlUwa3hiaWVjb1MxODFXdWs1Vm5FT1Y4anczaklpbjdKbnpDSUtrM0xaSXRLV3F0amFVUEhDTEdvTURmV0VoRFNqT2FPeWhzU3IwWUMwa2IwZ2hBdmM0YTdqaWs3T0xnZXBYNjFReHRIUTNWQUNLTUtma3lnWmFDR3lkdGZzYXJHTWl4dnZEcEFhZ2FGME9iUEpYdWFNSHA0YnlBazVpbnVLTUhjVjJ1SEFxOEZiblY5MDZyTmtoV05Cd1phVmtXUA?oc=5"
-            }
-          ]
         }
       ],
       "accounts": [
         {
-          "n": 5,
-          "label": "building (5/15 items needed)",
+          "n": 8,
+          "label": "building (8/15 items needed)",
           "confidence": "-",
           "name": "mastodon:thejapantimes",
           "reference": "",
@@ -1378,6 +1488,39 @@
               "framing": "f5",
               "quote": "Democrats won big in Ohio on working-class issues",
               "url": "https://rssfeed.media/@guardianfeeds/117570760182252024"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:theguardian_us_news@halo.nu",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "Could the AI bubble burst after Democrats' midterms sweep",
+              "url": "https://halo.nu/@theguardian_us_news/117570641935807359"
+            },
+            {
+              "framing": "f2",
+              "quote": "Several Democrats renew calls for datacenter pauses after blue wave",
+              "url": "https://halo.nu/@theguardian_us_news/117571602463007843"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:DrALJONES",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Incoming senators want Schumer & Jeffries replaced",
+              "url": "https://mastodon.social/@DrALJONES/117571916909502629"
             }
           ]
         },
@@ -1443,43 +1586,102 @@
           "n": 1,
           "label": "building (1/15 items needed)",
           "confidence": "-",
-          "name": "mastodon:theguardian_us_news@halo.nu",
+          "name": "mastodon:MaryAustinBooks@mstdn.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "We cannot afford to have \"leadership\" owned by the tech fascists",
+              "url": "https://mstdn.social/@MaryAustinBooks/117572070297298377"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:gilduran@journa.host",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "After the GOP's midterm wipeout, he's blaming the Iran war",
+              "url": "https://journa.host/@gilduran/117572390771202196"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:rick@rmendes.net",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Americans didn't vote to replace Republican abuses of power with Democratic political theater.",
+              "url": "https://rmendes.net/notes/2026/11/06/a219d"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:dbattistella@mstdn.ca",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "urging them not to elect Hakeem Jeffries as Speaker",
+              "url": "https://mstdn.ca/@dbattistella/117572690227436697"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:authorFreeman@ohai.social",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:ItalianNews@mastodon.ozioso.online",
           "reference": "",
           "evidence": [
             {
               "framing": "f4",
-              "quote": "Could the AI bubble burst after Democrats' midterms sweep",
-              "url": "https://halo.nu/@theguardian_us_news/117570641935807359"
+              "quote": "Wall Street closed Thursday, November 5th with its worst session since April 2025",
+              "url": "https://mastodon.ozioso.online/@ItalianNews/117572135843755150"
             }
           ]
         }
       ]
     },
-    "narrative": "**Briefing: 2026 US midterm elections**\n\nDiscussion is fragmented and the divide is weak. Only 42 of 160 items (26%) carried an identifiable framing, and agreement on classification was low (kappa 0.4, rated \"unreliable\"). The five framings are close in size:\n\n- **Democratic mandate and governing agenda (24%)** treats the Democratic win as a mandate and looks at what the party will do with power. CBS News's Supreme Court reform headline and posts on Ukraine aid fit here.\n- **Republican and Trump fallout (24%)** covers rebuke, turmoil and 2028 worries. Politico, The Telegraph, Hindustan Times and OilPrice.com headlines fit here.\n- **Live results tracking (19%)** is mostly straight tallies. BBC, Reuters, Yahoo, Euronews, Financial Times and NBC headlines fit here.\n- **Markets and economy (17%)** includes a Japan Times post on stocks falling and a Guardian-feed post on an AI bubble.\n- **Voter blocs and long-term shifts (17%)** includes a Washington Post historical comparison.\n\nThe data gives no political-lean labels for any outlet or account, so none are assigned. Each outlet has one item, and accounts have five or fewer, all well below the thresholds needed. Placements rest on headlines and snippets, and the samples are small, so these are indications rather than firm patterns.",
+    "narrative": "Coverage of the 2026 US midterms splits into five framings, with no single one dominant: Republican and Trump fallout (23% of framed items), voter blocs and long-term shifts (23%), Democratic mandate and governing agenda (21%), markets and economy (17%), and live results tracking (15%). Only 47 of 160 items (29%) were assigned a framing, and the divide is rated \"unreliable\" (kappa 0.5), so the picture is loose rather than polarized.\n\nFraming summaries:\n- **Live results:** tallies, maps and charts with little interpretation. Reuters, NBC News, BBC, Yahoo and the Financial Times (tracker) are examples.\n- **Democratic mandate:** what Democrats will do with power, such as Supreme Court reform (CBS News), tariff reversal (WSJ) and data center pauses. Several Mastodon accounts also debate Democratic leadership.\n- **Republican/Trump fallout:** Politico describes Republican panic over 2028; one account cites Trump blaming the Iran war.\n- **Markets:** the Financial Times, France 24 and Japan Times' Mastodon account stress falling stocks and AI-sector worries.\n- **Voter blocs:** CNN on progressive Democrats and the Washington Post on historical comparisons.\n\nThe data gives no political-lean labels for any outlet or account, so none are assigned.\n\nLimits: outlets are judged only from headlines and snippets, and most have one or two items, flagged as still \"building.\" Sample sizes are small.",
     "rank": 2
   },
   {
-    "topic": "Stephen Miller named chief of staff",
+    "topic": "stephen-miller-named-chief-of-staff",
     "slug": "stephen-miller-named-chief-of-staff",
-    "summary": "Trump announced that Stephen Miller will replace Susie Wiles as White House chief of staff.",
+    "summary": "Trump named Stephen Miller to replace Susie Wiles as White House chief of staff, prompting profiles and reactions including a warning from Marjorie Taylor Greene.",
     "platforms": [
       "bluesky",
-      "google_trends",
       "news"
     ],
-    "n_signals": 7,
+    "n_signals": 8,
     "signals": [
       {
-        "platform": "google_trends",
-        "name": "stephen miller wife"
-      },
-      {
-        "platform": "google_trends",
-        "name": "suzy wiles"
+        "platform": "bluesky",
+        "name": "Trump picks Miller as chief of staff"
       },
       {
         "platform": "bluesky",
-        "name": "Trump eyes Miller as chief"
+        "name": "Todd Blanche says he is Stephen Miller's lawyer"
       },
       {
         "platform": "news",
@@ -1487,65 +1689,96 @@
       },
       {
         "platform": "news",
-        "name": "Trump says making adviser Stephen Miller White House chief of staff [Al Jazeera]"
+        "name": "MTG warns Miller-Wiles shakeup will sink Republican chances in 2028 [Al Jazeera]"
       },
       {
         "platform": "news",
-        "name": "Trump names Stephen Miller new White House chief of staff, replacing Susie Wiles [Fox News]"
+        "name": "Who is Stephen Miller, Trump’s new White House chief of staff? [Al Jazeera]"
       },
       {
         "platform": "news",
-        "name": "US President Donald Trump names Stephen Miller as White House chief of staff [DW]"
+        "name": "Trump promotes Stephen Miller to Chief of Staff ‘to run things well’ [Al Jazeera]"
+      },
+      {
+        "platform": "news",
+        "name": "Stephen Miller named by Trump as new White House chief of staff [DW]"
+      },
+      {
+        "platform": "news",
+        "name": "Trump announces immigration hardliner Stephen Miller as new chief of staff [France 24]"
       }
     ],
     "n_items": 160,
     "narratives": {
+      "common": "President Trump announced that Stephen Miller will replace Susie Wiles as White House chief of staff. Coverage ties the change to the Republican losses in the midterm elections and describes Miller as an immigration hardliner.",
+      "common_links": [
+        {
+          "outlet": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaGhUR1cxdTlHU1pCUXp6amZfMlp1b0w0ckhXdW9kNVlrcWgtek5SV2Y1eHJfSU9NbjZMN1lFWE9wWWtmT2c1NkNQRlZ3amhXRnVvMzJVYTFXOGRBUWcxdklfUkVrbU5Fa0d2blpRcFEwOGo1Mng2cUJ1NHRXeWFIN0hGa3BRVmRMMFJmZGVUak5sN19oRHRXSG9tRFhKc3piRkF5cWFEb3Vld2dtV3k4WFJGbFZFZ212ckxOM2NaRTBKV2tE0gHKAUFVX3lxTE1KdDFFQnNkdnlUNkN1a29aTDlhVXlQNDRrWjRuQkpyZ2kwSDVXWDZlWUtZcHJUNWRjTzVHa3NBTm1mcjJ1NS1tTXd3Vkg2UzhvTm16MVJySklCTkh4V2FHUC1VeXhpTnVfYTBxbVBTb3BtMTdZenowcmxzN1lPVFA4TDFFb0JXZ3NkUENpejA1S1ZUSFZwYVk5d3VhUTJYSW03Y0d0bjY1OHp3REwwRklkMURnTHVCWEN3S0ljdFY0WHJEbm5kaGZvcXc?oc=5"
+        },
+        {
+          "outlet": "Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVBFUnEyOC1IT3psamR6c0xjLTZ0T1N3OXlIbmN1MjR2U0J2dlNVUnNZdzFxTUJuVEpkN0FfakpQUXoxeFVnRGpvckkwU2k5QVNZTnBLRzRmaHdzbl94bTh5eGkzZnY4WXVJaDgzeEJWbkp5ZDNqeXllNUVxaFhDUkhtYmNQOWI3RUtHT044Rl9GeTk1OHRlMWdMRkoyaWU5MXlMRkVmdko5OFk0VHR3?oc=5"
+        },
+        {
+          "outlet": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamU2dzlBUmJZRE0tcWQzZmFkYjBCVzBTRDdaQ3djMG9HMHlCVTlHTWxvYndYaURTUjI3R3pJRTBUZGZxd3Y0c2Nfbm1UQ1d5M1hfUTNyb0tidHpSRDFxeWpocDdPSVZCOGVqd0laLUozR05nVmlqSDVCaFkzVl9iYzJwZjE?oc=5"
+        },
+        {
+          "outlet": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTZ4MHlwT2psR3d6M080amlJb0lWZVJScE5Jd2kxbWVldUlQLWhYSV9TTDg0TGRXTWY3czlDU3p4bVUySG5XY19VSXBXVnlmNC1QMlR5MkVzV1VIRGJkckNBbXZtS1ZSQjhpaEZJN2lnU01TT3g2WkphOTdEeWlheTNtczc?oc=5"
+        }
+      ],
       "groups": [
         {
           "group": "Mastodon posts",
-          "n_items": 67,
+          "n_items": 73,
           "outlets": [
-            "DharmaDog",
-            "FinchHaven@hachyderm.io",
-            "FinchHaven@infosec.exchange",
+            "24horas@mastodon.cl",
+            "BruceMirken@mas.to",
+            "CharlieMcHenry@connectop.us",
+            "CogitoErgoWtf@mastodon.world",
+            "FoucPerotin@eldritch.cafe",
             "ItalianNews@mastodon.ozioso.online",
-            "JoelKlebanoff@mas.to",
-            "Jorro@universeodon.com",
-            "KimPerales@toad.social",
-            "MHowell@kolektiva.social"
+            "JaZone@universeodon.com",
+            "JoelKlebanoff@mas.to"
           ],
           "outlet_notes": [],
           "languages": [
-            "Arabic"
+            "Arabic",
+            "French",
+            "German",
+            "Portuguese",
+            "Spanish"
           ],
-          "narrative": "According to Mastodon posts, Trump named Stephen Miller to replace Susie Wiles as chief of staff, with Wiles moving to Trump's political operation, as the first administrative change after the midterms. Posters mostly react with alarm, calling it \"very bad news\" and Miller a \"zealot\" or \"fascist,\" while others point to reported Republican leaks targeting Miller after the midterm defeat. Some posts are unrelated to the topic (a cat photo, a historical Weimar comparison).",
+          "distinct": "Posts are mostly sarcastic or hostile commentary and use labels like \"architect of the brutalization of immigrants\" and \"fascist\", with jokes and shitposts mixed in. One post links the move to Trump's media ban that reportedly caught aides off guard while Wiles was out of town. Others mention Duke and a Colbert segment, and some posts are unrelated to the story.",
           "links": [
             {
-              "outlet": "MaryAustinBooks@mstdn.social",
-              "url": "https://mstdn.social/@MaryAustinBooks/117565802653794845"
+              "outlet": "benroyce",
+              "url": "https://mastodon.social/@benroyce/117571352444268763"
             },
             {
-              "outlet": "Nonilex@masto.ai",
-              "url": "https://masto.ai/@Nonilex/117571063951512823"
+              "outlet": "iuculano@masto.ai",
+              "url": "https://masto.ai/@iuculano/117299675363595940"
             },
             {
-              "outlet": "KimPerales@toad.social",
-              "url": "https://toad.social/@KimPerales/117571077071174752"
+              "outlet": "moira@mastodon.murkworks.net",
+              "url": "https://mastodon.murkworks.net/@moira/117572069554647118"
             }
           ]
         },
         {
           "group": "US media (centrist)",
-          "n_items": 24,
+          "n_items": 14,
           "outlets": [
             "Axios",
             "Bloomberg Law News",
             "Bloomberg.com",
             "CBS News",
             "CNBC",
-            "KIRO 7 News Seattle",
-            "KOKH",
-            "KTEN"
+            "Jewish Telegraphic Agency",
+            "NewsNation",
+            "PBS"
           ],
           "outlet_notes": [
             "Axios: center (AI estimate)",
@@ -1553,71 +1786,30 @@
             "Bloomberg.com: center (AI estimate)",
             "CBS News: center (AI estimate)",
             "CNBC: center (AI estimate)",
-            "KIRO 7 News Seattle: center (AI estimate)",
-            "KOKH: center (AI estimate)",
-            "KTEN: center (AI estimate)",
-            "NBC4 Washington: center (AI estimate)",
+            "Jewish Telegraphic Agency: center (AI estimate)",
             "NewsNation: center (AI estimate)",
-            "Newser: center (AI estimate)",
             "PBS: center (AI estimate)",
             "Politico: center (AI estimate)",
+            "Roll Call: center (AI estimate)",
             "Scripps News: center (AI estimate)",
-            "St. Cloud Times: center (AI estimate)",
             "The Hill: center (AI estimate)",
-            "TheWrap: center (AI estimate)",
             "Time Magazine: center (AI estimate)",
-            "USA Today: center (AI estimate)",
-            "WBAL News Radio: center (AI estimate)",
-            "WJLA: center (AI estimate)",
-            "WRVO Public Media: center (AI estimate)",
-            "WTAE: center (AI estimate)",
-            "WTOP News: center (AI estimate)"
+            "USA Today: center (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to US media (centrist), Trump named Stephen Miller chief of staff, replacing Susie Wiles, after major Republican midterm losses. One item quotes a former Trump aide calling the prospect of Miller replacing Wiles \"terrifying\"; the rest are straight announcement headlines.",
+          "distinct": "Mostly short, wire-style headlines that frame the move as a response to the midterm losses and the coming \"Dem takeover\". One item, from Bloomberg Law, covers a separate story about the FBI ousting officials who probed threats to Miller's wife.",
           "links": [
             {
-              "outlet": "The Hill",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTGY1WUFqLWRMRjdwQWI3UF9Kcy01blI1ZTQ4U1dndEtZMXpVUmNuMmxRODRhTVpjZmQyN3RZeGZzSzhfYVVxbFdaS0J3NEVDdXQxWnZZVHZTM3B5OTgyUi1UODYyNDdaSVdzczZyMDVsSnNsS1h0Mk1lbWZVNFhfTjN6MXhOdThiNWFRdkUzOUtOOGtyZFQtVWhSSFZybGotRVHSAacBQVVfeXFMTUJ1X3BEREpQVXhnLTM1ckJFcUxPUnYyYjZTRzBNZGl6eDBZNFpIQVdJRENkQWhQVERDdTl3c0s0UHNpYUZic21zQUJzcE8wa2s2NklDR283RWVpeE8wRUtURHUwajBUYnctVWJlSndYNGdtVzUxX3ZOSjVuVHo3SG1wTTZsUERTWGE1aG4yRHdmdG1OMEtDdFpiS0VyeldqbWgtMGVUdHc?oc=5"
-            },
-            {
-              "outlet": "PBS",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaGhUR1cxdTlHU1pCUXp6amZfMlp1b0w0ckhXdW9kNVlrcWgtek5SV2Y1eHJfSU9NbjZMN1lFWE9wWWtmT2c1NkNQRlZ3amhXRnVvMzJVYTFXOGRBUWcxdklfUkVrbU5Fa0d2blpRcFEwOGo1Mng2cUJ1NHRXeWFIN0hGa3BRVmRMMFJmZGVUak5sN19oRHRXSG9tRFhKc3piRkF5cWFEb3Vld2dtV3k4WFJGbFZFZ212ckxOM2NaRTBKV2tE0gHKAUFVX3lxTE1KdDFFQnNkdnlUNkN1a29aTDlhVXlQNDRrWjRuQkpyZ2kwSDVXWDZlWUtZcHJUNWRjTzVHa3NBTm1mcjJ1NS1tTXd3Vkg2UzhvTm16MVJySklCTkh4V2FHUC1VeXhpTnVfYTBxbVBTb3BtMTdZenowcmxzN1lPVFA4TDFFb0JXZ3NkUENpejA1S1ZUSFZwYVk5d3VhUTJYSW03Y0d0bjY1OHp3REwwRklkMURnTHVCWEN3S0ljdFY0WHJEbm5kaGZvcXc?oc=5"
+              "outlet": "Roll Call",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdGFNaVZCcG1KSkhleXliaXhDRXpEZGxlQ2JVal9uczVkSFBjS3hNck5iTUlrWV93ekI3WENldDNLNERlVEFfRGRMUHlRT1NmS29RdXgwbnFaNzBNNG5pQVdUeXhFeGVlOGxRa0VreE9JaXJjU0p6OWkwRUF2TmtyNzQ0NEZYLXUweUhMc1BEd1Brbk43UmRjbFVoZzFIeXFPNkE?oc=5"
             },
             {
               "outlet": "Scripps News",
               "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaGkxbVIxcGZQcGZlbHM2Ql85RDB1Tl9SZURoQzJZZ3VFWnVLTV95Ykc3alRoOEVBcjREYXp4clZPSGY1anUwTm9hYUlJYVVQbGZnMndnOFE5bEpZaGw3Zm5TRlk0SkUyeUVrMlBWSmlIX2VSWVlFOUJsZVpTVzJJMTV4MThoeUJ4c214RG90TUs5NC04cnVCZk1EU2FlWHFVdkNkX3ZsTzJIQmt2QkpwTllvdmJKbUhQSnRXY3BmanZRMHZ4X1duVUlveHlHa1J5?oc=5"
-            }
-          ]
-        },
-        {
-          "group": "Hacker News comments",
-          "n_items": 13,
-          "outlets": [
-            "BLKNSLVR",
-            "SpicyLemonZest",
-            "ang_cire",
-            "cosmicgadget",
-            "donkey_brains",
-            "lelandfe",
-            "shadowgovt",
-            "shimman"
-          ],
-          "outlet_notes": [],
-          "languages": [],
-          "narrative": "According to Hacker News comments, Stephen Miller appears mainly in passing, with no discussion of the chief of staff appointment itself. Commenters mention him as founder and president of America First Legal, as a figure in the administration, and one calls him a \"dead-eyed creep\"; another wonders whether a policy has \"something more Stephen Miller-y\" behind it.",
-          "links": [
-            {
-              "outlet": "lelandfe",
-              "url": "https://news.ycombinator.com/item?id=41217975"
             },
             {
-              "outlet": "BLKNSLVR",
-              "url": "https://news.ycombinator.com/item?id=50374244"
-            },
-            {
-              "outlet": "donkey_brains",
-              "url": "https://news.ycombinator.com/item?id=50014643"
+              "outlet": "Bloomberg Law News",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTV83ZC12WURYcHh1WWtFeG1vQXVrYmhUdFNGM3BLSlhYUkpEbXE5bmVCZHZjMkk4RmxkRVFIZ1BZeEQ1M0xyNTZPYWxtX0o4c2p4bG51SlpXNUpHT1NRQTF2MTdyMnVCeVlGY3JoYUJfdEFkdk8xclEwNWZVdTlxM0Iwa0QyankzZEIzd0NsVU9PSGhJWFhkamtObXkxVVhjamwzQU9B?oc=5"
             }
           ]
         },
@@ -1629,168 +1821,196 @@
             "CNN",
             "Los Angeles Times",
             "MS NOW",
+            "Mother Jones",
             "NBC News",
             "NPR",
-            "Public Citizen",
-            "Rolling Stone"
+            "The Atlantic"
           ],
           "outlet_notes": [
             "ABC News - Breaking News, Latest News and Videos: center-left (AI estimate)",
             "CNN: center-left (AI estimate)",
             "Los Angeles Times: center-left (AI estimate)",
             "MS NOW: left (AI estimate)",
+            "Mother Jones: left (AI estimate)",
             "NBC News: center-left (AI estimate)",
             "NPR: center-left (AI estimate)",
-            "Public Citizen: left (AI estimate)",
-            "Rolling Stone: center-left (AI estimate)",
-            "The New Republic: left (AI estimate)",
+            "The Atlantic: center-left (AI estimate)",
             "The New York Times: center-left (AI estimate)",
             "The Washington Post: center-left (AI estimate)",
-            "Vanity Fair: center-left (AI estimate)"
+            "Vanity Fair: center-left (AI estimate)",
+            "WIRED: center-left (AI estimate)"
           ],
           "languages": [],
-          "narrative": "According to US media (left-leaning), Trump named Stephen Miller chief of staff, replacing Susie Wiles. Rolling Stone and The New Republic frame it as Trump's first big move or a promotion after a Republican election \"wipeout.\" MS NOW separately reports that FBI agents probing threats against Miller's wife were demoted.",
+          "distinct": "Frames the appointment as Trump \"doubling down\" on a hard-line agenda after a \"midterm rout\". Opinion and feature outlets are sharper: Mother Jones says \"Hell on Earth\" and WIRED asks how Miller \"schemed his way to the top\". The Atlantic also describes it as doubling down.",
           "links": [
             {
-              "outlet": "NBC News",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVWlUZUk0N2lPSzFqNnlCZUYzQVhVWEJueXk5a29yaDhkVXp6R0xsX2xJamFhTjhyNEprTkdLQjNDeE5XVFRzMG1wTTkzOGtiNmhTVEZFTzZzTy1NcU4tQ0dqSG4xc1FiU3pLMDd5QndNM1pYejcxZ00ycUVwbVBLOEloSWdNdjI1MDNra2VEdTA0WU9keHpEOUNfMFpUMm8xa1B2ajBCM0VpYlFrYy1KZWotbXY0bXM?oc=5"
+              "outlet": "The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcy1TbzYwaC1KY0t3Z0ZMc0wweDVSQllCUEpVWGhSU0lqZUZCRUVQS1d2LWg2WFFibnFtZHRhQWUtTG9yM3l5UDhBQXNKdGFFVGtwdExBajBnNDlVMkpqLVRuaVVXSEh3TzZDcGxYSmRqZ2EwdmUyYW1neGpvdm9IWjRHY0JMZFVRUm1xWg?oc=5"
             },
             {
-              "outlet": "Rolling Stone",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMHdOeTlJdGRzODNjSWZSbjNfNTU1UjlObVdkQWppT256Mld6QmlaYlBwWWhmaHN6MlBQY0luTTFJVFF3NVVkU2xKVFZwSkpCTVVjZWFvYnpCR0dPUVBRYVVaa3BwVmVUazBhc2JjbWdmMVN2aWpGc1ZQMGtoNFZtMHVzR1FSRzJ4SHkzY2Zkc0FKdzgzZUNwWlFIM3NKRDY1MS1wckFGOWVQUTlLRXpQMw?oc=5"
+              "outlet": "Los Angeles Times",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVURIMmdzRUgtTU14VUtlWG9RSndCeW82VUlSQlZ0X1ZSbjhqV3Q4WGlWVXBYUUNncE5VLW9UWS1IQVNadTZCcmdpdUlyZFFKS3pBS1FzcHpDVEFGSXFlbGlpTVJSODJSM2pqVC1qLW1oMC01Sm5xZGpZcXJ6bno1ZVFKRHBqbWhxSUI1cmdpRXcxbzBnTi1UNFZFMXo5dXFFV0hhSFlGd0NrVEV1NkRrMzJBSQ?oc=5"
             },
             {
-              "outlet": "The New Republic",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaW5oMTlCNlc0dnZOZXBkWDlDanVrMEIzUzg3Vm1faUpEN3pRNm96MU5iMW1jS3RBOWV1VXhhQWZKX05jNWpoMEo1ellCbXQzSW9NWktSSEo5LS1Ib1ljUm0yaTU4RU5sc0lLQTZjbElMek9vRVdtdFBfV2lNX1JPUlM1cjVzWU5BMURYS2tjNU1NWGs?oc=5"
-            }
-          ]
-        },
-        {
-          "group": "US media (right-leaning)",
-          "n_items": 6,
-          "outlets": [
-            "Forbes",
-            "Fox News",
-            "LiveNOW from FOX",
-            "New York Post",
-            "The American Conservative",
-            "WSJ"
-          ],
-          "outlet_notes": [
-            "Forbes: center-right (AI estimate)",
-            "Fox News: right (AI estimate)",
-            "LiveNOW from FOX: center-right (AI estimate)",
-            "New York Post: right (AI estimate)",
-            "The American Conservative: right (AI estimate)",
-            "WSJ: center-right (AI estimate)"
-          ],
-          "languages": [],
-          "narrative": "According to US media (right-leaning), Stephen Miller is replacing Susie Wiles as White House chief of staff. Most headlines are neutral, and LiveNOW from FOX offers a \"Who is Stephen Miller\" explainer. The New York Post uses stronger wording, saying Trump \"fires\" Wiles after a midterm \"blowout.\"",
-          "links": [
-            {
-              "outlet": "WSJ",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSkRNLUdCaTVjYnpWYVp5aWNFMm5WQ2dlMkVDSjZzZG05RjdyWDRYSG9jRnlVRHNLdGhhODR1VDJadWlKZ1BJSS16LW9SelBab3hKZ1ExU0lxSkpyZkNvbXlhSHhBbzVxMVd3SzJtLTBUTEpwVWFJRGZDcllWc0lfRFZoZkdqYm1xeUhNVlJ1YzR4eVNHWjZSQ0h6TGw2QQ?oc=5"
-            },
-            {
-              "outlet": "Fox News",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNai1KVkNTS0w0X21BTDBJLVo5M081NW9aeHZsRlNMMnlVVUFaUzJmY3NYQjVfODV5WnJCS0pYZU5HbTVFaDNKTGZkV242amc5TG1iRy1feHhtb3RKdVdBMnFOdUFCcWFpWXVpd011NzdPeXgxcURfdjNxemRTMVVwYkxWMEUwQnZ5YXpMV19CWlNpaG5TMFR1aFdtZ2w4N01YanlFVTFzVk5oU05QY1E?oc=5"
-            },
-            {
-              "outlet": "LiveNOW from FOX",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4VmVsQWpMd3BVcHZJTWcxMWMzU1RXNlZKM2J3SExvMlYzQmhPZlp5YTlkRFNfc25SMlktR3dsUEZMeTNDVGY3X2c4VmhtdEhRZDItdnFRME9nSV84ZVV3SlFSRHhEOU5RM3pvYkVrZDE1ZHZJR3ZIOFFYUDhVc3M?oc=5"
+              "outlet": "Mother Jones",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZGNZYUpvR0kxbTlxRlI4TDJEWm50WGVUb3pMa1YwOTIzbm5VOXpxQWU5ejJvWjZNNFAxWjh6T0JLVXhOYWk5RWZWb0t6VzBSS0Y4TDJXcVNOaG8wYUhwWlR1TXY0ekJDZ29FVE52ekFUUGNnSVJBZ1NwWU93UEpweE9EQWJlNV9jempuNk1HbWlxV3dEN3BVSUVudTZBTVVaeHloM3F3?oc=5"
             }
           ]
         },
         {
           "group": "US media",
-          "n_items": 6,
+          "n_items": 9,
           "outlets": [
+            "ABC7 Bay Area",
             "Deadline",
-            "KATU",
-            "KOCO",
+            "House.gov",
+            "NBC 5 Dallas-Fort Worth",
+            "NBC Los Angeles",
             "The Duke Chronicle",
-            "WRDW",
-            "Yahoo"
+            "The White House (.gov)",
+            "WESH"
           ],
           "outlet_notes": [],
           "languages": [],
-          "narrative": "According to US media (unaffiliated outlets), Trump named Stephen Miller the new chief of staff, replacing Susie Wiles. The Duke Chronicle highlights that Miller is a Duke alumnus. The items are mostly bare announcement headlines.",
+          "distinct": "Adds local and institutional angles: NBC Los Angeles notes Miller is \"of Santa Monica\" and the Duke Chronicle claims him as an alumnus. A House.gov item carries a statement from Rep. Jayapal, and Yahoo folds it into live midterm results coverage with Alaska and Mississippi still undecided. ABC7 stresses that Wiles is \"out\".",
           "links": [
             {
-              "outlet": "KOCO",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMDJJU1NlOEctTGtScGM0UjlhSXQ1UTlSZGUwT0pJVFpXTkxqOVlYdm5TQWhVSkJtZHFBeHQyTnkyU1ZpaFhuNUxUWWRXeV9iUU9QR1FZV0lscUNwdmd1d3BYNUJ0SmFVQ3ZxMEZCaW5kWGczd2Qzd1NFWEd1RlFlN1JUSmhaWUVnYnZzYUhfdGRZZS1tOWhxNFA5V1lyQQ?oc=5"
+              "outlet": "ABC7 Bay Area",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDNGVlBMZGpIanlMOTdYVVk1cjlhdE9KYjZMckV6WmoxSFBwd2F3TDcwaHJXV0l6UXBVTmUyVDVxMTdnQTktcmY1S1VlVTUwa0gyaEdoX3VZVVdlYTktQzRGMFFpQV96Si05dVFWaFlKYkpqVEtwVlRBOW83UzFpUE9xOXhEUVNhdG16Q0FKT1BFb0s0Nnc?oc=5"
+            },
+            {
+              "outlet": "NBC Los Angeles",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObHJIR3lKZHVQaWs5QXk4bTZGZzZNMFdpRGdwM09zRGhmQm1pM3Y3OFJSVGg5c3JiaTBsNTJJV05mTG1fM0pQNnZCZWp3eXpPLWNEODRyeDJySUU4cTl6SUtPbDVNQ3dYQTJCd2tFU3g5OHJBdjFzY2YtVHFObnVxb2RCNWNTYTVFejJrR0hRVW5yc2U4bGEtMTB3djVad2wzcXh3U3VZaE5TaDBzRVlUVVlSUU_SAbwBQVVfeXFMTWhJb1hMV0didU85dGpudUFCYXZMRl9tTGhKNy14UXotVG9IRkMwNmxkWUhIdl80bWQtSFctRzBPTWVWcWUwVTl4VExBNG5XYVRvREZSczlid1FyMUJMaloyZWlyMk04Tm5BT0UwN3k5aEhZd2c0b2NQQ0EyOTQxS2E2ZlNQdUxqczA3MF80Yjlxc1RZWkotcGZYVnlGclVIeUR5b2U2RUlJalJaM0dBTk1aVVpnSUxKVWxDWEY?oc=5"
             },
             {
               "outlet": "The Duke Chronicle",
               "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTHhaNTI4b3ZoVjg1SE00bENPNXBlcExUNnJ5bG01QmxrZW9NX0g5NVhlcnhqMDJrVGRaaFZZdTRZa3NBOTdxM2dma2xwQlFQQ3ZWd1hoaTI0MEkxRW5YM2pHUUlKZC04Y19zWDJ4U25SMGVaLUpCUi1IRlZNamQ4aFlsM29ZelpvSi1iX0d2QTFfQnNmeGduN2JPeENCMnVpd01pNUk5aFMxUWM2UWVpcGdNLWZWTVVVaFMyT01KWUxzRHZKbzQ4bHRMcVk1aXZLTDJOQWVsTjNoOXlUckIxZkFManBFUGhodnZvQlNYaXZ6UE94MjlVMXlWcVY?oc=5"
-            },
-            {
-              "outlet": "Deadline",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQkFrZno1RHh4N3dEQ1RnSVBfU3JEUXFwRzlKVHNLV0xQSS13cnNOU1UxbFlRRl9jeTdaVnIzUnBtcC1PaWJKbzBMYmRENnJKdVd4MV9hb2xtSzBkb3RReVRwb3hMN3ItOEZFYnhFNEFrRHlFaXl2TGx3MmtRTDlqNjNyVXo3bTRZVlQtVnZPdnNHUQ?oc=5"
             }
           ]
         },
         {
-          "group": "UK media (centrist)",
-          "n_items": 4,
+          "group": "Hacker News comments",
+          "n_items": 7,
           "outlets": [
-            "BBC",
-            "Financial Times",
-            "LBC",
-            "The Economist"
+            "BLKNSLVR",
+            "JumpCrisscross",
+            "ang_cire",
+            "bicepjai",
+            "shadowgovt",
+            "verdverm"
           ],
-          "outlet_notes": [
-            "BBC: center (AI estimate)",
-            "Financial Times: center (AI estimate)",
-            "LBC: center (AI estimate)",
-            "The Economist: center (AI estimate)"
-          ],
+          "outlet_notes": [],
           "languages": [],
-          "narrative": "According to UK media (centrist), Trump said Stephen Miller will replace Susie Wiles as chief of staff. LBC ties the change to a midterms \"hammering,\" while the BBC, FT and Economist headlines are plain announcements.",
+          "distinct": "There is little direct news coverage. Comments mention Miller in passing, alongside Hegseth and Russ Vought, in broader arguments about Project 2025, immigration enforcement and racism. Other comments are off-topic.",
           "links": [
             {
-              "outlet": "The Economist",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUzBWXzdHZm1IdUxRMW1CWndxRjZraWQzbHlfblZpWFJfRnl5OTh2UmZJa3pPY2dDWEhFUjhXRlZ6c3p0NzNGV3drUERieTdQeWhGQnZ3ajdJUzF3elhoRWRLeDdrZWFOZlVBWmhxdFZ3RFZ3NkxDM01sb3B4Nm0zWlpsYXJ5aHpsUDRkMF80N0lFcWViWWdF?oc=5"
+              "outlet": "BLKNSLVR",
+              "url": "https://news.ycombinator.com/item?id=50374244"
             },
             {
-              "outlet": "BBC",
-              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1MHg1T3M5TnJwblpMNE84SXVkdEs4OFZRY1BmbnhqYTVDeXpPYnNYaTAwdFRnMFRFT2JUUk8ybWJnWHJnWEVDczFyTHlBc2Z0M0JvUDVSS2JFcWN4Nmc?oc=5"
+              "outlet": "ang_cire",
+              "url": "https://news.ycombinator.com/item?id=50275101"
             },
             {
-              "outlet": "LBC",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HVnVBTjF3RmM0X25Dd2RmcEllVFRVRUZrek5GN2xmMHlBS1dEbzhrUU1jeFB5NWhMckJvTk1IeE53Um9VM0dOdU50dVowRnpxaVBhdUZqSjdZcGNIYjNmb21waUE2clJGV3pYUGhHY2hSeWxZNkREX3ZveUVtS2s?oc=5"
+              "outlet": "verdverm",
+              "url": "https://news.ycombinator.com/item?id=50186179"
             }
           ]
         },
         {
           "group": "Indian media",
-          "n_items": 3,
+          "n_items": 4,
           "outlets": [
-            "Devdiscourse",
             "India Today",
-            "The Times of India"
+            "The Hindu",
+            "The Times of India",
+            "ThePrint"
           ],
           "outlet_notes": [],
           "languages": [],
-          "narrative": "According to Indian media, Trump \"sacks\" Susie Wiles and picks Stephen Miller as chief of staff after a midterm \"rout\" or defeat for the GOP. Devdiscourse gives a more neutral announcement headline.",
+          "distinct": "Uses stronger verbs, saying Trump \"sacks\" Wiles and that she \"resigns\". The Times of India headline quotes \"STEPHEN MILLER IS A DISASTER\" and says Trump was \"cornered on cam\". The Hindu and ThePrint stay closer to the standard framing of a replacement or promotion.",
           "links": [
             {
               "outlet": "India Today",
               "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNOXcwUnJaRmhCVHdnR09jNG1JaHJOMzVCWFYtWlctV1p4VGF3SEt0VXNXYWcyWXBSeVc1WFpCaE1nRzlXZU9BcWZUcFRGbW0xNllHT0dpd1oybTlzWnhZWVVIYTNUMVIxc2U3RDQwb1hlNmpzVXJ3NWxtNFNaX3Q4djZDZTFxb2htMEtSNlloSzNmSUpuUjVzaFQ5SHNtVEMyNG0xVVJfdVQ0cjRPcnNGWXhqaldPTDc4WDIxcXd1N1Q5dWdKRmlFd21jM1RhT1JkZjlpdDJFVWxMSlpXcWJwQXJWbUEwSTdfRVBVTWdTdE5hVUdKemNOeHVVZ1FTSmZG0gGGAkFVX3lxTE1LT0dYZk5TS0dnQmFxVnRBQnp0bjJhQ3hGNEo4dTlCVEVMVlFrWUFwRE9TSF9ITkFOMkNFQ2JwckhHZU1rc0tZSm9ZRlFDcThManVRbG8xTmwtVzFYa0Vzb3hTM3cyUDVhY0pWbFRxQkVsVGFYWXIzUDdZVEZRNG1JeFhFRVM0VGttZ3lLVmt3Uk55MDhncmk2NzJsTF9SWGVmMUpiTmtMaENXdWp6QldFOHlzajNHT09KRzRvQjJrOGUxczFaaDRWZUxqU215SmhmNWZmOWNrUlVFQjdVVGk3bExSaWpOeFJGSnQ3Q0ZpaWF3ekpTdlczY05IdFZxOE8zNzdQY1E?oc=5"
             },
             {
-              "outlet": "Devdiscourse",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNd1N6RmlvNlFvTVNid2ZoWU1LcW9LekhtRzRtTGxTd2NDNG1aVGtaa3Q4V3FCSlBOT3I0TmR5UHpOcGVGbU9uMzhZb0dwMnZONWdtVEVHV3QzQWJvbTJ3SGk5bkR0YkF5OVlEdU5fbThIWG5vNDJWR1FDX2tsbjlzRFFEY2w4WlctdFpQWnJuNlVEdWY1WG52blpSSE1hcWJ1czlrTEF6bV9IeUxPMHfSAbMBQVVfeXFMTjV5V3RPa3Q1QVY0bTJmTlhpQ1VQa203RllvNThuYWxTQU1UTVBjWGgzZkdCcHJqYUFyZVEzdEF2ZmFWX3dPN0Fia05iVGpwYjQ4Rng1UnlCamUtNkFHU194QlgzR1EtSUdEbWNxZmY4Z2hVa21GUVNHZlRLWTFmV0tLTUpPR2FFOEx3UENwX294Ml8yU3JuZV9yNHZtOWQ2dktrWmZRdEIxVkhkZmpsR1p1azA?oc=5"
+              "outlet": "The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOcWxtV21hd1RLbTBxU0hVeDVmZk4wYmM5SkFoVDQ3V19JV0l1ME1HX1padU5GQVI3ZHZDVmh2VWtRWU1CYkNYYUs0WDdjbjdLMFZfaHBwMzBNZ1pyLTZUVnVVV2lpX3BBdmdFV2xsNnpyRTgyR0JBZGxDYkJuNFI0RUMxRDNONzVmSlg2a0Npb2l5Y19aamFCckJHbVVOS0oyVngzcmZEdFFwS1BhRmdpSGFvd0ZzaU9NSmwxTFM1VlJQSWpid01VbFlvR2ViRER1Rkxsdlk3SFhjN2JoTVd1ZjdCdjBZMkVoRVVnSzNXVWJ1RzFCM0dpUkUxRFhaMTZUbE1xQ2d30gGLAkFVX3lxTE1tQzJOSG01Y0Q4a0tGVEFKSDE0emdfWGxUMlRSZUpjd0FabS1tU2NZbVFEMVNCYnJocGxtS0JLQV8xQjJPTkY1NnN4bnJ1bmhURWUyVmozcVdKOUY0LWVXMVVQU1o4VDdSdDdGZkFBc18xUEtVVUNfckVqYUdQZTdVVjIxNjNnWTFPNHlDSkRVTVYyRjlMU0hYUS1zM3B3S0hjc0JuR295OFVJc3c0WHZvS0tudkpDNHFwckZreGFHaEJyUy1menh0cHNPQzVSU2pGTC1oN2I0NVpuREVaY3lHUGFXZnhudldQajUtZ3dTUHJwMjlRWG9hZ0RRMjdYTFRFU2dQZEVGM0FzVQ?oc=5"
             },
             {
-              "outlet": "The Times of India",
-              "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOQ1owTnV3MXhKUFJCTDFDYmJ1ckhFNzREeGQ0MExYbHlaZmdoOXktZmMtSW56VVlrXzFpQTB2RWJVVGhhS01yM1NHVXdmeTYzWmRaWVV6ME5neU5tNHBna1pKUFdDTF9mRlg3ZnotYU5kYzJzX3J0R2Y1dkVsT2hxRVVxTjNNT2Jvd1kzQ1ZBREZSQk1LU21kMU1oNVE0RTRsMmcxcWNEenhmRTZVYlR1b0F3QjlwSnJaX1dFeHdJMGVYTmh5N3RzVkF4UXlfSmVGb1ppekJCcTFVQkNwaVFGcjJTQVRsQ0ZyNFB6VGhqQjMtOFhwMkd5ck00UENkQzdFandmQlhYTW5GSTV3NmJteVB0OXg2ZTZZMjhHVVJnWFFVUExGazZDanB2VVZOMmV3WnBTeWJvUkh0dVZjY25lcTFXY1lKX2cwREgwLWdSYV9oZWpRS2lLMVpsVUxHd09FSUtQT01LTmJ0SW9Xa1FqQ1dB0gH3AkFVX3lxTFA0a0hxX3lkNV9rcW5YeDBYSjIycUpvN0EzaE5LVld4VjFnek1CbjhqeVpReGdzcERIV3dXT0JxVW04Z2RadHNmT2N1NEJfSkpPVjBpYkVRNHBaUWtNMmp5U1daZ00xRnpMRGlpckR5Umh5V3NiQzFrSElpaUFHZENqTUh0WmRydFFLZmhab3lsNlN5YnBhX0txajZJdUFzekx1R09fbUJ3cnRfUWZtUXdDSGdobGp4SmM3OUVGQXF5ZEVTTTBNdzYwWWNwems5NzBxVGJORDhCQUxUcDFEdnA2RS1LZUZjblBGOWhlOTU3Vmh6b0JoNlF5SEozMi1PRTZPOVkzUG01X0FyYklfWUZYMkNyTGNwRVhGSGlsYjJtekdsSFlPdWk4ZVE0TUQ1bTVCMUMtbDFGVDJBMmFiWWVCQ29vOWpfVnVGQjNaTW11aExSVFlMbUR0cVZkOEY2V29xaEp3UWRvOGZiRVZBX2Y2YlFfMUltQQ?oc=5"
+              "outlet": "The Hindu",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaDNCdllzRjVWcUMxd2lqTG1pTVI4VV9CeXF0VERGY09HejZvVW51QnM0Mnd3Yk5MRUlFZlZkVjdrdFNoWlZ2OFNpTUI0aGI3ZS1udlBjeXBnUlZXdG5QUVhiRHgwSi1pbWtDdWdtU1JXOFFtekIyc3RiaDFDQU5Sc2dodF9vTmhESjJJTnVhQmJpR2xzYWRYZFpZbGFHaG5kRGZXMGp4R3BEMXpLM1ZLbmVHb0ZfR3JNVnhaMjI4ZTVyem4zeTZRd0MzRUZJUnpSVW44UnJGLVRub3hHVVFsQTJwTjkxVUdDd0HSAfABQVVfeXFMT1pEMVNMZGVuemw3Uy15SFRHQ0FCN2s0OFQyRVJSYjVlWDRpZTJFZ0M2Y3NNeWN5LVZNV1lQNFJwN1BKMGxydmtpYWlkUFRJaTVTR3B2VTJpNnU5TUVBSXBkV01SNDhSYy05cE9ibXVIaHJROUxlZHJ6MnlwaThlOHRHa2VINUlKRUg2OXpGZUZWcnZFenVKalJrLUxVTi1NQzlzdHBSeGNLaWVHRG1aQ0wxZlRZTkZYeVlxVDdfdXNGaUd6b1Rtc0E5VjY3RV91MmhGLU5TdVJndXhuQ05leFphdUk1YjBoai1CcklWRnNO?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Indian media (centrist)",
+          "n_items": 4,
+          "outlets": [
+            "Hindustan Times",
+            "Livemint",
+            "NDTV",
+            "The Indian Express"
+          ],
+          "outlet_notes": [
+            "Hindustan Times: center (AI estimate)",
+            "Livemint: center (AI estimate)",
+            "NDTV: center (AI estimate)",
+            "The Indian Express: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Explainer format: \"Who is Stephen Miller?\" pieces profile him as an immigration hardliner. Livemint adds his views on Iran, Venezuela and Greenland.",
+          "links": [
+            {
+              "outlet": "NDTV",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQUFUZDdtbDAyQjVRMU9yUHpYVGZzYmdrUHBBd0d1OHpWYXdWV21tNDhjQnMxdFpyQXZ0Snd5QmMwYlJxd2Y2UGNSNWFjX2QtQTlYbkJmMFVSNHNOYXN5NFRoTHBWUGR2bXJkdHhfa3RISWpMdmZ3eXdOTDRua296aUNvX040cW9OR3NCdHc2RVZSS0dXN3hGSnNtWWlDSEI5d0NNZ3ZMTFBrbllERWM3X0VocFNkVmN5VU5ZNXpSS1JoSms2V1Y4RHdiNWM3d2vSAdcBQVVfeXFMTTZtWnFYVVZvNTR2ZEtxb3BqUHBvS1BCRWRxTmNHUV9QeWh2eU5uRko0VmdqcW5odzhUSVVFSjFhWm5oSi1TcWxrRGVZYU85YkxXclJ4N2xDdzl6ajdvLXVscG5rTDZGcHQ3WDlfN2xVeUYxbW1WekU1cUFyNUMzeFpnajdJWTdMMzgtTUhyLWE0YWw2VGhodm5YODNYcjBNaFctWGhKZ3FkN2d4dEpER1FQY3FKaGN3OUs5VWxPeXl6YXg4T2xoUUQ4NS1HRHpSMV8tN2tBM1k?oc=5"
+            },
+            {
+              "outlet": "The Indian Express",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMV9uM3A1bV9UcHBTUjJWajVLQkpkLWZmVEowSjRfdDNwRFE1MG5DTjhGNktFbFFkYzBzbFRrUmh1clMwR3oyamg0dUJQaVZmN3F1b0FjZUU0M0dwcjlQUzZ4QVBDeFBuNkVsZFc3aGYxOUZ2WkhpTEJ5czMxejFFbW5EWHdiTFFkVm5mYml1ZkQ3ZzFBVE1sazdmb3NRUllkRVFON05XRFRiN1pZbXVDZS1vaVlpYnNLLUJ5VWxZZjlOWmFvbFU1NTdaSUpHUdIB1AFBVV95cUxNcUtwWmlzNnNRYmN3VmMyenJpNHluVzBxSm9wUzZsU25rWUdWdWk4T19DclRZcEx3Q2NGTTVTdW5zTm1INUN0WVQ4amo1Wm1tNVQyU0stSzlHeXNLT2JFUV90dGhDQTRBaHY5RUd1SUZpSWlOdGZOSGhIR2NEYnNQZkthcHd2bmlHZXFhTUdNVVQzbUhvMXU1M1RZN1ZZU0hRUGNRZ2MzVURRbkMzY2paQUUxNzFwSXN0dGVVaVA1YWp1M0I1V2ZOemJyTVZqUEZCUGJxeg?oc=5"
+            },
+            {
+              "outlet": "Livemint",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLU5QdXh4Z2RmTTJNa2t2YTcwd1RwUjV6aWk0STU1TWdpWC1BQ2pKYk55aGc3bEEzcHFhY1NCVkptbjByZmJ2eE5sOG1mSEh0UXplYnM4ZXhWaTkzNEhJd0wzd0l0QU1ZcE1uM1I0cXp3LVc0WTdhYnE2LTNfTWRrYndqeTA0bTBDYms4MUNpaC1xbkFCRUVvd29tMDJYSnRxbWVjV0tEcTVPZ3dhSXdqaXFfaExwa25ab2pwQW9uRHVpR1k4d19QVnRzSVBjUW1zbERrcXJaLUN2aGhfYmJlRmpXZm9YRnc1MUpvT0dkMTgyS1By0gH6AUFVX3lxTE0wWS1hZWJSeV9tOTdaMTQ0bHdUNXpJdHpQYjU5SWZLZlNxaHRNcVRpcFpuYmdpclNCRmk3MDFIU0JoUDgtcTRaXzVrY2cyZDBWM3VkM2dtTjdRT09ELWVPMS03SHdaQ3c0TkxISTA3dTg0Z2F4ZzQ0YTk0SXdPRVduN3Rmd251OGx6TFF0X21aUHFfVTFEbkZtSHo2eVZ3N3RMYmhIT0E2VjNoUkVkb1RBSzhnN2toVWxrNThDbXUtZkVnMU5NSHNKaVZWNXR0d0dVVS11ZG9aaEJ1MnhiTjVUOGZsRmZTQkFrcHJqbGRNRGxMLUpLemEwSHc?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media (centrist)",
+          "n_items": 3,
+          "outlets": [
+            "BBC",
+            "Belfast Telegraph",
+            "Financial Times"
+          ],
+          "outlet_notes": [
+            "BBC: center (AI estimate)",
+            "Belfast Telegraph: center (AI estimate)",
+            "Financial Times: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Brief and neutral. The Financial Times uses \"immigration hardliner\", and the Belfast Telegraph leads with the \"new White House chief of staff\" and the midterm defeat without naming Miller in its headline.",
+          "links": [
+            {
+              "outlet": "BBC",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GSGxvMGpyeHRHclh1TkRqeHRETzBOMGxUVU5sRklrT3JmSEJlM3p2bmt2c1RPUUhsYURLYmZibDVsUzFpZlVuLTg2NDR2WWhNY3E2WHNOZzlleGM?oc=5"
+            },
+            {
+              "outlet": "Belfast Telegraph",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcXgtOENlQVJEVDJoV2lwcUNINlV4YmdLQjhobGtXdThRb0V6SzVjTEMtelc2M284Z2dzUDVCRXc2UEFPSGRzaUw3NXdvOHBfU0MtbmJ2OU01WWJ5OUp2T0hVb0ZlZFpJTV82ZklIZDk2c1VhWWQwTnNLbjRjQmJDMHlnZmlkVDV6X24tU1hkc0lNYm5iZTFkLVd6VF9EZmJFeFl3amxVd2VyZ3p6bGZjS3lPZnVjc2xVTjhOZGgwRW9ta3Z1R1Z0S25BRnBjV1U?oc=5"
+            },
+            {
+              "outlet": "Financial Times",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTZ4MHlwT2psR3d6M080amlJb0lWZVJScE5Jd2kxbWVldUlQLWhYSV9TTDg0TGRXTWY3czlDU3p4bVUySG5XY19VSXBXVnlmNC1QMlR5MkVzV1VIRGJkckNBbXZtS1ZSQjhpaEZJN2lnU01TT3g2WkphOTdEeWlheTNtczc?oc=5"
             }
           ]
         }
       ],
-      "unclassified": 1,
-      "differences": "Wording on Wiles's exit varies: the New York Post, India Today and the Times of India say she was \"fired\" or \"sacked,\" while most US and UK outlets say she was \"replaced.\" Mastodon posts and commenters stress opposition to Miller, whereas most media groups report the appointment in plain headlines, usually linking it to the midterm losses."
+      "conflicts": [
+        "Indian media says Trump \"sacks\" Wiles (India Today) and that she \"resigns\" (Times of India), while US outlets describe a replacement or a departure."
+      ],
+      "unclassified": 2
     },
     "framings": {
       "topic": "Stephen Miller named chief of staff",
@@ -1818,29 +2038,127 @@
         }
       ],
       "created": "2026-11-06",
-      "history": []
+      "history": [
+        {
+          "date": "2026-11-06",
+          "verdict": "strong",
+          "kappa": 0.67,
+          "n_items": 160,
+          "n_framed": 54
+        }
+      ]
     },
     "divide": {
       "verdict": "strong",
-      "kappa": 0.67,
+      "kappa": 0.55,
       "n_items": 160,
-      "n_framed": 54,
-      "framed_share": 0.34,
+      "n_framed": 59,
+      "framed_share": 0.37,
       "counts": {
-        "f1": 30,
-        "f2": 17,
-        "f3": 2,
-        "f4": 5
+        "f1": 18,
+        "f2": 20,
+        "f3": 10,
+        "f4": 11
       },
       "shares": {
-        "f1": 0.56,
-        "f2": 0.31,
-        "f3": 0.04,
-        "f4": 0.09
+        "f1": 0.31,
+        "f2": 0.34,
+        "f3": 0.17,
+        "f4": 0.19
       }
     },
     "rows": {
       "outlets": [
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "CNN",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller in, Susie Wiles out",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkh6ek9FRnNMdWF2U3dFeTVGcmkyOG5VdFpOd1Z3UXktanBYTG56M1NGS1JwWnlNNVpEeDFsODZCZURvWkg2QnBBNXVZUnZCTmRFbHNtM3pMV3NRWlBVc3FjREhrUEZTVE9vYUhQQkhGT1JfMjBETzBxakwyTkJfYlFOWjFFOWFaUnlvRVI1MUh6UmpmVmlYZmE4YWg1LWdsOHdqbVVQM3QwclhGSlVV?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller will replace Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUhaRVZkcWRQQTRMVmp2QVdkVkVyMzI2TDFGM3hzaVpZYThxTkJUMWk5QVVsdFJ1NFQySENtcFpZUU1jRHp0ZjdxZWE1RE00ekFSWjZLRW4wTUJsWkVYVXUzOUstRE1DbFFsWm01MHpuNXFGUkQya2cxeXhZVXlaTmJiVUJYdEVvdk5aS0luZ3YzdEk1UjlSZ2I4UjI0S05qbEp6cXh4eWR1YkF4S3V5azJ3RWk1UQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "NDTV",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "After Midterm Rout, Trump Announces Stephen Miller",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeUlZRlFTakVaa2VYVVJDWWFybVd2UUYwNVFnaDVFWDVDSEZ5VnItczM1WVlRN1pLSHJSM2dMeEhIX3g0Rm1CR2E3U2hnU2toY2RnV3pTNmc0Y3BEdVVSSEIzOWdhZlZHMDM0R2xfamRfX09TVEV3MWR2Y2F4UGl0aGdFbzkzVXlpbHFaejYwZ2hmMVR1aUVMMW85QVBLZWp4LWFwVVZjRGZIQzRfNXFIVHV30gG6AUFVX3lxTFA3TnhPTmxKMC0xZkNSa3ZyNEkyV3A4d2k2VlgyUzZzS1FPN0VkVkMtQnZ2RXI1U2tIY0FWWFJHOF9qd2VKbnlVS09XU2g0NUlIcFd2VmlfUkFydHpKaUtjMDBhRXhZVnIwVHdQTGUyZFZqanhLNktERVJhLUtwaXpOQW5SUlZJV2VkZlBuSkR3Nk9kcG1scGVzb20yNnpsaUZCUGl3VXdiSVJOUXdiemdFa0xHZXVmMy1yQQ?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Who Is Stephen Miller, Donald Trump's New White House Chief Of Staff",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQUFUZDdtbDAyQjVRMU9yUHpYVGZzYmdrUHBBd0d1OHpWYXdWV21tNDhjQnMxdFpyQXZ0Snd5QmMwYlJxd2Y2UGNSNWFjX2QtQTlYbkJmMFVSNHNOYXN5NFRoTHBWUGR2bXJkdHhfa3RISWpMdmZ3eXdOTDRua296aUNvX040cW9OR3NCdHc2RVZSS0dXN3hGSnNtWWlDSEI5d0NNZ3ZMTFBrbllERWM3X0VocFNkVmN5VU5ZNXpSS1JoSms2V1Y4RHdiNWM3d2vSAdcBQVVfeXFMTTZtWnFYVVZvNTR2ZEtxb3BqUHBvS1BCRWRxTmNHUV9QeWh2eU5uRko0VmdqcW5odzhUSVVFSjFhWm5oSi1TcWxrRGVZYU85YkxXclJ4N2xDdzl6ajdvLXVscG5rTDZGcHQ3WDlfN2xVeUYxbW1WekU1cUFyNUMzeFpnajdJWTdMMzgtTUhyLWE0YWw2VGhodm5YODNYcjBNaFctWGhKZ3FkN2d4dEpER1FQY3FKaGN3OUs5VWxPeXl6YXg4T2xoUUQ4NS1HRHpSMV8tN2tBM1k?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Times of India",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "after GOP's midterm defeat, sacks Susie Wiles",
+              "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOQ1owTnV3MXhKUFJCTDFDYmJ1ckhFNzREeGQ0MExYbHlaZmdoOXktZmMtSW56VVlrXzFpQTB2RWJVVGhhS01yM1NHVXdmeTYzWmRaWVV6ME5neU5tNHBna1pKUFdDTF9mRlg3ZnotYU5kYzJzX3J0R2Y1dkVsT2hxRVVxTjNNT2Jvd1kzQ1ZBREZSQk1LU21kMU1oNVE0RTRsMmcxcWNEenhmRTZVYlR1b0F3QjlwSnJaX1dFeHdJMGVYTmh5N3RzVkF4UXlfSmVGb1ppekJCcTFVQkNwaVFGcjJTQVRsQ0ZyNFB6VGhqQjMtOFhwMkd5ck00UENkQzdFandmQlhYTW5GSTV3NmJteVB0OXg2ZTZZMjhHVVJnWFFVUExGazZDanB2VVZOMmV3WnBTeWJvUkh0dVZjY25lcTFXY1lKX2cwREgwLWdSYV9oZWpRS2lLMVpsVUxHd09FSUtQT01LTmJ0SW9Xa1FqQ1dB0gH3AkFVX3lxTFA0a0hxX3lkNV9rcW5YeDBYSjIycUpvN0EzaE5LVld4VjFnek1CbjhqeVpReGdzcERIV3dXT0JxVW04Z2RadHNmT2N1NEJfSkpPVjBpYkVRNHBaUWtNMmp5U1daZ00xRnpMRGlpckR5Umh5V3NiQzFrSElpaUFHZENqTUh0WmRydFFLZmhab3lsNlN5YnBhX0txajZJdUFzekx1R09fbUJ3cnRfUWZtUXdDSGdobGp4SmM3OUVGQXF5ZEVTTTBNdzYwWWNwems5NzBxVGJORDhCQUxUcDFEdnA2RS1LZUZjblBGOWhlOTU3Vmh6b0JoNlF5SEozMi1PRTZPOVkzUG01X0FyYklfWUZYMkNyTGNwRVhGSGlsYjJtekdsSFlPdWk4ZVE0TUQ1bTVCMUMtbDFGVDJBMmFiWWVCQ29vOWpfVnVGQjNaTW11aExSVFlMbUR0cVZkOEY2V29xaEp3UWRvOGZiRVZBX2Y2YlFfMUltQQ?oc=5"
+            },
+            {
+              "framing": "f3",
+              "quote": "‘STEPHEN MILLER IS A DISASTER’: Trump Cornered On Cam After Susie Wiles Resigns",
+              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOcWxtV21hd1RLbTBxU0hVeDVmZk4wYmM5SkFoVDQ3V19JV0l1ME1HX1padU5GQVI3ZHZDVmh2VWtRWU1CYkNYYUs0WDdjbjdLMFZfaHBwMzBNZ1pyLTZUVnVVV2lpX3BBdmdFV2xsNnpyRTgyR0JBZGxDYkJuNFI0RUMxRDNONzVmSlg2a0Npb2l5Y19aamFCckJHbVVOS0oyVngzcmZEdFFwS1BhRmdpSGFvd0ZzaU9NSmwxTFM1VlJQSWpid01VbFlvR2ViRER1Rkxsdlk3SFhjN2JoTVd1ZjdCdjBZMkVoRVVnSzNXVWJ1RzFCM0dpUkUxRFhaMTZUbE1xQ2d30gGLAkFVX3lxTE1tQzJOSG01Y0Q4a0tGVEFKSDE0emdfWGxUMlRSZUpjd0FabS1tU2NZbVFEMVNCYnJocGxtS0JLQV8xQjJPTkY1NnN4bnJ1bmhURWUyVmozcVdKOUY0LWVXMVVQU1o4VDdSdDdGZkFBc18xUEtVVUNfckVqYUdQZTdVVjIxNjNnWTFPNHlDSkRVTVYyRjlMU0hYUS1zM3B3S0hjc0JuR295OFVJc3c0WHZvS0tudkpDNHFwckZreGFHaEJyUy1menh0cHNPQzVSU2pGTC1oN2I0NVpuREVaY3lHUGFXZnhudldQajUtZ3dTUHJwMjlRWG9hZ0RRMjdYTFRFU2dQZEVGM0FzVQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Times of Israel",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Days after midterm route",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYlRBekhhN0x2MHUtdXROQ2pmOVlzOW94c2ZCcXFQRy1RcXJQT1ZRQlZMOElBZjA1d2hOWVpuSXRlUVBNRVVYeWlHVzFkNTYxN2I1MWw1YlhFenBPdmlTdDgzaHRTUjhyS0s5Z1ZtQnhxRFlhZ1pGWFpqOEtGSXlrcTJ2dWdWY1JKZDR4VXV4b2ZnTlBkblY3NjBqajlWcURCLWg1Y0dwLXpMb09Mb1hvTGRlRG41LUlEUm9Ldkl3Sll3ZWl0dVNvcXpMeGNlaFd2SUQwTldXOUluVWM?oc=5"
+            },
+            {
+              "framing": "f2",
+              "quote": "After midterm defeat, Trump replaces Susie Wiles with Stephen Miller",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVnFVQjJUU094dWlzNlQtOGswcXhoWWczTm1WT3owRDFXM04yRnQzN0RoMGFmNmpmVzFsSnMxYmdieXpjMGVLTmpLRFViSFZMcjRsZUlfdm5wMnJpMks2TGJvWE5JaEVqODdBTUcxOHlrczMxVTFTSFFoS3VxRWRQRHAtVFRhZnhOTmd5OFlsSXRTOEMzRktkdGtvRTRPSU02ZkM3bEwyemFGaDVjN1ZhYjZGalhCd03SAbwBQVVfeXFMT2VHNEp1MVlaZkpEb2VkbGt0ajlLS0xmcVRSQmZOdEtIN1BIMHRIb0pSX0N0VDlRMWNsaXJVVnNFVEF1Z2R1dzRWTVNrTDhXRmhUeHhqMjdrUVRrNG9Rek12Q3U5ZnIwTEJZTENWTGcxYjQ3RElBeE0wX3FVWkdnM05uYWlob2ExcU1ONHQyc21KbWZoMV95ZjBWUGwwYl9XZ2hGMFVUR3dqTXpFaUxzcUpGYW5YTkxST3NQRUY?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CBS News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "is the architect of his controversial immigration policies",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSVR1emxyZTgtakUwQUtId0pzYUtXVWVNVS1XNWFVcFdEdzdVQ2ZUMmtyMmx0N2dTSjNtamZxQ0RiVTRNNFFBenpGTzRHWDBkUXlpQmpHQUFNTmNOT2ZLUVlVWEFyYlZQVUpTT2NzRGJ2SHQ5czktTk91WFdMV05GY25JRXQzbDNhTW9CV1pXQQ?oc=5"
+            }
+          ]
+        },
         {
           "n": 1,
           "label": "building (1/10 items needed)",
@@ -1852,20 +2170,6 @@
               "framing": "f1",
               "quote": "Trump names Stephen Miller new White House chief of staff",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOUdhNU1vVzIzTjBRY0VsWlhFdHF2dGJUbUxLOHRSa0owZXdqMXpSaWdfYmhMUFBOand0QzFLWVVHLTh2ZTZTcmNhVmRfSnIyMFNQcDZkaEdDak0xWjZiTHJQcFBYVG1GTi12bXhqX0lyNi1PdmFqREhVSFlmazNUZDc4Mm1aTTdIc0VsZnUwaWQtcldjTEJPRndKTVNyV3FkNHR1YlM1d3p5QQ?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "CNN",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "Stephen Miller in, Susie Wiles out",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkh6ek9FRnNMdWF2U3dFeTVGcmkyOG5VdFpOd1Z3UXktanBYTG56M1NGS1JwWnlNNVpEeDFsODZCZURvWkg2QnBBNXVZUnZCTmRFbHNtM3pMV3NRWlBVc3FjREhrUEZTVE9vYUhQQkhGT1JfMjBETzBxakwyTkJfYlFOWjFFOWFaUnlvRVI1MUh6UmpmVmlYZmE4YWg1LWdsOHdqbVVQM3QwclhGSlVV?oc=5"
             }
           ]
         },
@@ -1894,6 +2198,20 @@
               "framing": "f1",
               "quote": "Trump says Stephen Miller will replace Susie Wiles as chief of staff",
               "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1MHg1T3M5TnJwblpMNE84SXVkdEs4OFZRY1BmbnhqYTVDeXpPYnNYaTAwdFRnMFRFT2JUUk8ybWJnWHJnWEVDczFyTHlBc2Z0M0JvUDVSS2JFcWN4Nmc?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "The Guardian",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "architect of Trump’s immigration crackdown",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2VvXzJSdDNEWHl4Q1BaVEtUYVJBZU5tYVFia0VmRjQ5T01ETHRQcm1lWXFZWWNLTXhXb0dhVVN0M0hnVEJiM1Y2WWRkb2RzZUFuU1F3cFN2Y1lCaFUxcXdnSzUtOWI4Z2p5M3ktLXQ3ckFHVUFIWHpjRHpCWktqRllUMWxySk5KRmRJ?oc=5"
             }
           ]
         },
@@ -1943,20 +2261,6 @@
           "n": 1,
           "label": "building (1/10 items needed)",
           "confidence": "-",
-          "name": "NDTV",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f2",
-              "quote": "After Midterm Rout, Trump Announces Stephen Miller",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeUlZRlFTakVaa2VYVVJDWWFybVd2UUYwNVFnaDVFWDVDSEZ5VnItczM1WVlRN1pLSHJSM2dMeEhIX3g0Rm1CR2E3U2hnU2toY2RnV3pTNmc0Y3BEdVVSSEIzOWdhZlZHMDM0R2xfamRfX09TVEV3MWR2Y2F4UGl0aGdFbzkzVXlpbHFaejYwZ2hmMVR1aUVMMW85QVBLZWp4LWFwVVZjRGZIQzRfNXFIVHV30gG6AUFVX3lxTFA3TnhPTmxKMC0xZkNSa3ZyNEkyV3A4d2k2VlgyUzZzS1FPN0VkVkMtQnZ2RXI1U2tIY0FWWFJHOF9qd2VKbnlVS09XU2g0NUlIcFd2VmlfUkFydHpKaUtjMDBhRXhZVnIwVHdQTGUyZFZqanhLNktERVJhLUtwaXpOQW5SUlZJV2VkZlBuSkR3Nk9kcG1scGVzb20yNnpsaUZCUGl3VXdiSVJOUXdiemdFa0xHZXVmMy1yQQ?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
           "name": "Politico",
           "reference": "",
           "evidence": [
@@ -1985,68 +2289,70 @@
           "n": 1,
           "label": "building (1/10 items needed)",
           "confidence": "-",
-          "name": "CNBC",
+          "name": "Axios",
           "reference": "",
           "evidence": [
             {
               "framing": "f1",
-              "quote": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamU2dzlBUmJZRE0tcWQzZmFkYjBCVzBTRDdaQ3djMG9HMHlCVTlHTWxvYndYaURTUjI3R3pJRTBUZGZxd3Y0c2Nfbm1UQ1d5M1hfUTNyb0tidHpSRDFxeWpocDdPSVZCOGVqd0laLUozR05nVmlqSDVCaFkzVl9iYzJwZjE?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "The Jerusalem Post",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f4",
-              "quote": "Donald Trump to promote Stephen Miller to admin. chief of staff",
-              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ycUpmcjA0LVYxajdVN2YwaEJJUGpuaGl4aDFoVFlTWVBwYjZmNjZjV2N5SmpaekJSOGVNdk9IcmdWRHBHZWVLaWlOWmRRdGhqQTRnTm9JN054TDN2WGNj?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Time Magazine",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "Stephen Miller to Be Trump's New Chief of Staff, Replacing Susie Wiles",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVBFUnEyOC1IT3psamR6c0xjLTZ0T1N3OXlIbmN1MjR2U0J2dlNVUnNZdzFxTUJuVEpkN0FfakpQUXoxeFVnRGpvckkwU2k5QVNZTnBLRzRmaHdzbl94bTh5eGkzZnY4WXVJaDgzeEJWbkp5ZDNqeXllNUVxaFhDUkhtYmNQOWI3RUtHT044Rl9GeTk1OHRlMWdMRkoyaWU5MXlMRkVmdko5OFk0VHR3?oc=5"
-            }
-          ]
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "The Telegraph",
-          "reference": "",
-          "evidence": []
-        },
-        {
-          "n": 1,
-          "label": "building (1/10 items needed)",
-          "confidence": "-",
-          "name": "Financial Times",
-          "reference": "",
-          "evidence": [
-            {
-              "framing": "f1",
-              "quote": "Trump to replace Susie Wiles with Stephen Miller as chief of staff",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTZ4MHlwT2psR3d6M080amlJb0lWZVJScE5Jd2kxbWVldUlQLWhYSV9TTDg0TGRXTWY3czlDU3p4bVUySG5XY19VSXBXVnlmNC1QMlR5MkVzV1VIRGJkckNBbXZtS1ZSQjhpaEZJN2lnU01TT3g2WkphOTdEeWlheTNtczc?oc=5"
+              "quote": "Trump replaces chief of staff Susie Wiles with Stephen Miller",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZGhwZGJCYW5FVk5iS004QzFIRGlOR1MzSHRVSWJVSmI0OWh0SXlzTzFpYjF0a0JKTGJBeHkyOUZPR2lPZWw2UXRCQUZZZks5bjY3V1hJTExQWFE0MVIxdl93bTV2enhUandDTFRWSnBHLVZESWoyeGh5V3l5cWJLLUtxWUgtb0U?oc=5"
             }
           ]
         }
       ],
       "accounts": [
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:alternet@www.urbanmind.net",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "had not gotten the midterm message",
+              "url": "https://www.urbanmind.net/display/f7dd981d-80f610d6-c5b2ced757a999fe"
+            },
+            {
+              "framing": "f2",
+              "quote": "won't be looking to cut any deals once the Democrats assume their majorities",
+              "url": "https://www.urbanmind.net/display/f7dd981d-cec66381-bae7621448bc222b"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:drmike",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "replaced a relatively sane chief of staff with someone.as stark-raving mad as He",
+              "url": "https://mastodon.social/@drmike/117571818710152780"
+            },
+            {
+              "framing": "f3",
+              "quote": "# fascism # racism # hate",
+              "url": "https://mastodon.social/@drmike/117572031197259351"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:elfolio",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "replaces Susie Wiles with Stephen Miller... after the Republican defeat.",
+              "url": "https://mastodon.social/@elfolio/117572150582687210"
+            }
+          ]
+        },
         {
           "n": 1,
           "label": "building (1/15 items needed)",
@@ -2096,10 +2402,122 @@
               "url": "https://mastodon.social/@deadline/117571054559303406"
             }
           ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:yourautisticlife@mast.yourautisticlife.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Miller is an Emperor Palpatine wannabe.",
+              "url": "https://mast.yourautisticlife.com/@yourautisticlife/117571342777065696"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:bazcook@mas.to",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "You can see where this is all going.",
+              "url": "https://mas.to/@bazcook/117572128669713098"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:scheichsbeutel@troet.cafe",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "absolutely unscrupulous racist",
+              "url": "https://troet.cafe/@scheichsbeutel/117572124608085912"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:billykaren@mstdn.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Voters handed Democrats the House and Senate.",
+              "url": "https://mstdn.social/@billykaren/117572092239565402"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:tda@thedemocracyadvocate.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Shows 47 Learned Nothing From the Midterms",
+              "url": "https://thedemocracyadvocate.com/white-house/stephen-miller-chief-of-staff/"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:tda@social.thedemocracyadvocate.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Three days later, 47 promoted Stephen Miller",
+              "url": "https://social.thedemocracyadvocate.com/notes/at9629fq8o"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:LiloStart",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Trump is accelerating the residual destruction of the Republicans",
+              "url": "https://mastodon.social/@LiloStart/117571789254044946"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:astigdotph",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "three days after the Republican midterm rout",
+              "url": "https://mastodon.social/@astigdotph/117571776416884512"
+            }
+          ]
         }
       ]
     },
-    "narrative": "Coverage of Trump's announcement that Stephen Miller will replace Susie Wiles as chief of staff shows a strong divide (kappa 0.67), though only 54 of 160 items (34%) carried a distinct framing.\n\nThe largest framing, at 56% of framed items, is a neutral personnel announcement. Headlines from The Washington Post, CNN, BBC, Bloomberg, ABC News, Politico, CNBC, Time and the Financial Times simply report the change.\n\nThe second framing, at 31%, links the move to Republican midterm losses. AP, PBS and NDTV use phrases such as \"midterm defeat,\" \"major Republican midterm losses\" and \"midterm rout.\" The Mastodon accounts KimPerales and deadline use similar language.\n\nA smaller framing, 9%, presents the move as a promotion or profile of Miller. Reuters and The Jerusalem Post use \"promotes\" or \"promote\" in their headlines.\n\nThe alarm framing is the smallest, at 4%. In the data it appears only in one Mastodon post, from Nonilex, calling Miller \"a zealot.\"\n\nNo outlet or account has a political-lean label, so no lean can be assigned.\n\nLimits: outlets are judged only from headlines and snippets, each has just one item, and all profiles are still marked \"building.\" The Telegraph and one account had no evidence. The small sample means these patterns are tentative.",
+    "narrative": "Coverage of Trump naming Stephen Miller to replace Susie Wiles as chief of staff divides into four framings, and the divide is rated strong (kappa 0.55). Of 160 items, 59 (37%) carried a framing. Reaction to midterm losses is the largest at 34%. It ties the change to Republican defeats and sometimes uses words like \"rout.\" Neutral personnel announcements follow at 31%. Promotion/profile pieces account for 19%, and alarm about Miller's influence for 17%. The alarm framing quotes a former Trump aide calling the prospect \"terrifying.\"\n\nOutlet labels come only from a few headlines each. BBC, Bloomberg, ABC News, Axios, Politico and The Washington Post lean neutral. NDTV, The Times of India, The Times of Israel, AP and PBS lean toward the midterm framing. Reuters, CBS News and The Guardian lean toward promotion/profile. CNN leans neutral. The Times of India also has one alarm-framed item.\n\nAmong Mastodon accounts, several posts use the midterm framing. Others, such as drmike, Nonilex and scheichsbeutel, use the alarm framing.\n\nLimits: outlets are judged from headlines and snippets, and every outlet and account has 1–2 items, below the thresholds the tool needs for firm labels. Samples are small.",
     "rank": 3
   }
 ]
