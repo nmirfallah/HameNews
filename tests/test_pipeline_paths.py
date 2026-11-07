@@ -20,8 +20,9 @@ def classify(prompt):
 def narratives(prompt):
     groups = re.findall(r'<group name="([^"]+)"', prompt)
     first = re.search(r'<item i="(\d+)"', prompt)
-    return {"groups": [{"group": g, "narrative": f"According to {g}, x", "item_ids": [int(first.group(1))]}
-                       for g in groups], "differences": "d"}
+    return {"common": "Main story.", "common_item_ids": [int(first.group(1))],
+            "groups": [{"group": g, "distinct": f"{g} adds x", "item_ids": [int(first.group(1))]} for g in groups],
+            "conflicts": ["d"]}
 
 
 def handler(**over):

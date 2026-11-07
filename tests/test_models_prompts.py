@@ -67,10 +67,11 @@ class PromptTests(unittest.TestCase):
         text = prompts.narrative({"topic": "Café"})
         self.assertIn(json.dumps({"topic": "Café"}, ensure_ascii=False), text)
 
-    def test_group_narratives_demands_attribution_without_judging(self):
+    def test_group_narratives_asks_for_a_main_story_differences_and_conflicts_without_judging(self):
         text = prompts.group_narratives("T", "block")
-        self.assertIn("According to <group name>", text)
-        self.assertIn("do not judge", text)
+        for needle in ("common", "distinct", "conflicts", "never repeat yourself", "Do not restate",
+                       "do not judge", "translated into English"):
+            self.assertIn(needle, text)
 
 
 if __name__ == "__main__":

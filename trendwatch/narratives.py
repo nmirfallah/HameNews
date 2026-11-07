@@ -1,4 +1,4 @@
-"""'According to X, ... According to Y, ...': one neutral narrative per source group."""
+"""The main story, then only what each source group adds or does differently, plus real conflicts."""
 from collections import OrderedDict, defaultdict
 
 from . import languages, prompts
@@ -54,7 +54,7 @@ def build(llm, topic_name, items, cfg):
     eligible = sorted(((g, its) for g, its in groups.items() if len(its) >= n["min_group_items"]),
                       key=lambda kv: -len(kv[1]))[: n["max_groups"]]
     if not eligible:
-        return {"groups": [], "differences": "", "unclassified": unclassified}
+        return {"common": "", "common_links": [], "groups": [], "conflicts": [], "unclassified": unclassified}
 
     refs, blocks = [], []
     for g, its in eligible:
@@ -77,24 +77,35 @@ def build(llm, topic_name, items, cfg):
         log.warning("narratives failed: %s", e)
         return None
 
+    def links_for(ids, cap):
+        links, seen = [], set()
+        for idx in ids if isinstance(ids, list) else []:
+            if isinstance(idx, int) and 0 <= idx < len(refs) and refs[idx].url and idx not in seen:
+                seen.add(idx)
+                links.append({"outlet": refs[idx].outlet, "url": refs[idx].url})
+        return links[:cap]
+
+    d = data if isinstance(data, dict) else {}
     sizes = {g: len(its) for g, its in eligible}
     outlet_lists = {g: sorted({i.outlet for i in its}) for g, its in eligible}
     note_lists = {g: _notes(its) for g, its in eligible}
     lang_lists = {g: sorted({languages.name(i.lang) for i in its if i.lang and i.lang != "en"})
                   for g, its in eligible}
-    out = []
-    for row in (data.get("groups", []) if isinstance(data, dict) else []):
-        g = row.get("group")
-        if g not in sizes or not row.get("narrative"):
+    out, done = [], set()
+    for row in (d.get("groups") if isinstance(d.get("groups"), list) else []):
+        if not isinstance(row, dict) or row.get("group") not in sizes or row["group"] in done:
             continue
-        links, seen = [], set()
-        for idx in row.get("item_ids", []):
-            if isinstance(idx, int) and 0 <= idx < len(refs) and refs[idx].url and idx not in seen:
-                seen.add(idx)
-                links.append({"outlet": refs[idx].outlet, "url": refs[idx].url})
+        g = row["group"]
+        done.add(g)
+        distinct = str(row.get("distinct", row.get("narrative", "")) or "").strip()
         out.append({"group": g, "n_items": sizes[g], "outlets": outlet_lists[g][:8],
-                    "outlet_notes": note_lists[g], "languages": lang_lists[g],
-                    "narrative": str(row["narrative"]).strip(), "links": links[:3]})
+                    "outlet_notes": note_lists[g], "languages": lang_lists[g], "distinct": distinct,
+                    "links": links_for(row.get("item_ids"), 3) if distinct else []})
     out.sort(key=lambda r: -r["n_items"])
-    return {"groups": out, "unclassified": unclassified,
-            "differences": str(data.get("differences", "")).strip() if isinstance(data, dict) else ""}
+
+    raw = d.get("conflicts", d.get("differences", []))
+    raw = [raw] if isinstance(raw, str) else raw if isinstance(raw, list) else []
+    conflicts = [str(c).strip() for c in raw if str(c).strip()][:5]
+    return {"common": str(d.get("common", "") or "").strip(),
+            "common_links": links_for(d.get("common_item_ids"), 4),
+            "groups": out, "conflicts": conflicts, "unclassified": unclassified}

@@ -13,12 +13,17 @@ and how outlets and accounts frame the topic, with evidence for every claim.
 - Per-outlet and per-account labels need history (10 articles per outlet, 15 posts per account on a topic).
 - Framings are frozen per topic in `data/topics/` so labels stay comparable; hand edits are kept.
 - The AI never decides which framing is correct.
+- The briefing is structured to avoid repetition: one shared main story, then per-group text limited to what
+  the group adds or does differently, then a short list of real factual conflicts. Groups that add nothing
+  are listed in one line.
 
 ## Multilingual notes
 Labels and summaries are computed on English translations so groups are comparable across languages.
 Translation quality is therefore part of label quality; the evaluation set should include translated items.
 
 ## Open questions
+- Does the model keep to the "say it once" rule on real topics, or does it still restate the main story in
+  each group? If so, tighten the prompt or post-filter repeated sentences.
 - Are the proposed framings sensible on real topics? Review the first live reports.
 - Do the two-pass agreement thresholds (kappa 0.5, 25% framed) separate real divides from imagined ones?
 - Do translated items label differently from native-English ones on the same story?

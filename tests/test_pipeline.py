@@ -46,9 +46,11 @@ class FakeLLM(LLM):
         if task == "group_narratives":
             gs = re.findall(r'<group name="([^"]+)"', prompt)
             first = re.search(r'<item i="(\d+)"', prompt)
-            return json.dumps({"groups": [{"group": g, "narrative": f"According to {g}, it was covered.",
+            return json.dumps({"common": "The album was released and widely covered.",
+                               "common_item_ids": [int(first.group(1))],
+                               "groups": [{"group": g, "distinct": f"{g} stresses its own angle.",
                                            "item_ids": [int(first.group(1))]} for g in gs],
-                               "differences": "They use different terms."})
+                               "conflicts": ["The groups disagree about the reception."]})
         if task == "write_narrative":
             return "Neutral briefing text."
         raise AssertionError(f"unexpected task {task}")
@@ -113,7 +115,8 @@ class EndToEndTests(unittest.TestCase):
         notes = [n for g in res["narratives"]["groups"] for n in g["outlet_notes"]]
         self.assertEqual(sorted(notes), ["Outlet0: right (AI estimate)", "Outlet1: center-left (AI estimate)"])
         self.assertEqual(res["rank"], 1)
-        self.assertTrue(res["narratives"]["differences"])
+        self.assertEqual(res["narratives"]["common"], "The album was released and widely covered.")
+        self.assertEqual(res["narratives"]["conflicts"], ["The groups disagree about the reception."])
         self.assertTrue(all(g["links"] for g in res["narratives"]["groups"]))
         # outlet classification is cached and editable; a second run must not ask again
         self.assertEqual(self.store.read("outlet_groups.json")["Outlet0"], "Israeli media")
@@ -124,12 +127,15 @@ class EndToEndTests(unittest.TestCase):
         self.assertEqual(llm.calls.count("classify_leanings"), 1)
         with open(self.store.path(name), encoding="utf-8") as f:
             md = f.read()
-        self.assertIn("### What each side says", md)
+        self.assertIn("### The main story", md)
+        self.assertIn("### How each side differs", md)
+        self.assertIn("### Points of disagreement", md)
+        self.assertEqual(md.count("The album was released and widely covered."), 1)  # said once, not per side
         self.assertIn("**Israeli media (right-leaning)**", md)
         self.assertIn("Outlet leanings: Outlet0: right (AI estimate)", md)
         with open(self.store.path(name.replace(".md", ".html")), encoding="utf-8") as f:
             html = f.read()
-        self.assertIn("According to Israeli media", html)
+        self.assertIn("Israeli media (right-leaning) stresses its own angle.", html)
         self.assertTrue(html.startswith("<!doctype html>"))
 
 

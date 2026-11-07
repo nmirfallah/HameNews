@@ -61,18 +61,23 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 5. **Profile sources.** Per-outlet and per-account counts accumulate across days. A label
    appears only after enough items (default 10 per outlet, 15 per account), and always shows
    its sample size, a confidence level and quoted evidence.
-6. **Report.** A neutral AI-written summary of the computed numbers, plus tables.
+6. **Report.** The main story, how each side differs, points of disagreement, and the numbers behind it in
+   a collapsible "Analysis details" section.
 
-**The report shows, for each trending topic (ranked by how much it is trending), what each group of
-sources says:**
+**The report shows, for each trending topic (ranked by how much it is trending):**
 
 ```
 #1  Hamas attack on Israel          (trending on 5 platforms)
-  According to Israeli media, ...   Sources: [Times of Israel] ...
-  According to Iranian media, ...   Sources: [Tehran Times] ...
-  According to US media, ...
-  Where they differ: terminology, casualty figures, causes cited ...
+
+  The main story        what most outlets report, stated once
+  How each side differs only what each group adds, stresses or words differently
+     Israeli media (right-leaning):  ...
+     Iranian media (left-leaning):   ...
+     Reported much the same as the main story: US independent media
+  Points of disagreement  specific facts or numbers that groups contradict each other on
 ```
+Nothing is said twice: the shared facts appear once in the main story, each side's block holds only its
+own extra details, emphasis, wording and omissions, and groups with nothing distinct are listed in one line.
 Groups are the country and ownership type of an outlet (for articles) or the platform (for posts), split
 by the outlet's political leaning where it is known, for example
 `United States independent media (right-leaning)` or `Russia state-linked media`.

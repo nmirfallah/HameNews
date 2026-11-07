@@ -10,15 +10,20 @@ def result(**over):
         "summary": "A big album was released.",
         "platforms": ["google_trends", "wikipedia"], "n_signals": 3, "n_items": 24,
         "narratives": {
+            "common": "A big album was released on Friday.",
+            "common_links": [{"outlet": "AP", "url": "http://ap/1"}],
             "groups": [
                 {"group": "Israeli media", "n_items": 3, "outlets": ["T1", "T2"],
                  "outlet_notes": ["T1: right (AI estimate)", "T2: center (config)"],
                  "languages": ["Arabic", "Persian"],
-                 "narrative": "According to Israeli media, it was big.",
+                 "distinct": "Calls it a triumph and stresses sales.",
                  "links": [{"outlet": "T1", "url": "http://t1/a"}]},
-                {"group": "Iranian media", "n_items": 2, "outlets": ["P1"],
-                 "narrative": "According to Iranian media, it was small.", "links": []}],
-            "differences": "They use different terms.", "unclassified": 2},
+                {"group": "Iranian media", "n_items": 2, "outlets": ["P1"], "outlet_notes": [], "languages": [],
+                 "distinct": "Plays down the sales figures.", "links": []},
+                {"group": "UK media", "n_items": 2, "outlets": ["B1"], "outlet_notes": [], "languages": [],
+                 "distinct": "", "links": []}],
+            "conflicts": ["Israeli media says 10 million sold; Iranian media says 2 million."],
+            "unclassified": 2},
         "divide": {"verdict": "strong", "kappa": 0.8, "n_items": 24, "n_framed": 16,
                    "shares": {"f1": 0.5, "f2": 0.5}, "counts": {"f1": 8, "f2": 8}},
         "framings": helpers.FRAMINGS,
@@ -45,14 +50,62 @@ class MarkdownTests(unittest.TestCase):
         md = report.render_topic(result())
         self.assertIn("## #1 Album Launch", md)
         self.assertIn("_Trending on google_trends, wikipedia (3 signals)_", md)
-        self.assertIn("### What each side says", md)
+        self.assertIn("### The main story", md)
+        self.assertIn("A big album was released on Friday.", md)
+        self.assertIn("Sources: [AP](http://ap/1)", md)
+        self.assertIn("### How each side differs", md)
         self.assertIn("**Israeli media** (3 items; T1, T2)", md)
-        self.assertIn("According to Israeli media, it was big.", md)
+        self.assertIn("Calls it a triumph and stresses sales.", md)
         self.assertIn("Sources: [T1](http://t1/a)", md)
         self.assertIn("Outlet leanings: T1: right (AI estimate); T2: center (config)", md)
         self.assertIn("Translated from: Arabic, Persian", md)
-        self.assertIn("**Where they differ:** They use different terms.", md)
+        self.assertIn("### Points of disagreement", md)
+        self.assertIn("- Israeli media says 10 million sold; Iranian media says 2 million.", md)
         self.assertIn("2 items came from outlets whose origin is unknown", md)
+
+    def test_the_one_line_topic_summary_is_dropped_when_a_main_story_exists(self):
+        self.assertNotIn("A big album was released.", report.render_topic(result()))
+        self.assertNotIn("A big album was released.</p>", report.render_html("d", [result()]).replace(
+            "A big album was released on Friday.", ""))
+
+    def test_the_one_line_topic_summary_is_kept_when_there_is_no_main_story(self):
+        res = result()
+        res["narratives"].update(common="", common_links=[])
+        self.assertIn("A big album was released.\n", report.render_topic(res))
+        self.assertIn("<p>A big album was released.</p>", report.render_html("d", [res]))
+        self.assertIn("A big album was released.\n", report.render_topic(result(narratives=None)))
+
+    def test_sections_come_in_the_right_order(self):
+        md = report.render_topic(result())
+        order = [md.index(h) for h in ("### The main story", "### How each side differs",
+                                       "### Points of disagreement", "### Analysis details")]
+        self.assertEqual(order, sorted(order))
+
+    def test_groups_with_nothing_distinct_are_listed_in_one_line_not_given_a_block(self):
+        md = report.render_topic(result())
+        self.assertIn("Reported much the same as the main story: UK media", md)
+        self.assertNotIn("**UK media**", md)
+
+    def test_every_group_block_shows_only_its_own_text(self):
+        md = report.render_topic(result())
+        self.assertEqual(md.count("A big album was released on Friday."), 1)
+
+    def test_without_a_main_story_or_conflicts_those_headings_are_left_out(self):
+        res = result()
+        res["narratives"].update(common="", common_links=[], conflicts=[])
+        md = report.render_topic(res)
+        self.assertNotIn("### The main story", md)
+        self.assertNotIn("### Points of disagreement", md)
+        self.assertIn("### How each side differs", md)
+
+    def test_only_a_main_story_when_every_group_is_similar(self):
+        res = result()
+        for g in res["narratives"]["groups"]:
+            g["distinct"] = ""
+        md = report.render_topic(res)
+        self.assertIn("### The main story", md)
+        self.assertNotIn("### How each side differs", md)
+        self.assertIn("Reported much the same as the main story: Israeli media, Iranian media, UK media", md)
 
     def test_manual_subject_says_so(self):
         self.assertIn("Subject chosen manually", report.render_topic(result(platforms=[], n_signals=0)))
@@ -61,7 +114,8 @@ class MarkdownTests(unittest.TestCase):
         md = report.render_topic(result(narratives=None))
         self.assertIn("Not enough attributable coverage", md)
         self.assertIn("24 items collected", md)
-        md = report.render_topic(result(narratives={"groups": [], "differences": "", "unclassified": 0}))
+        md = report.render_topic(result(narratives={"common": "", "common_links": [], "groups": [],
+                                                    "conflicts": [], "unclassified": 0}))
         self.assertIn("Not enough attributable coverage", md)
 
     def test_analysis_details(self):
@@ -115,22 +169,32 @@ class HtmlTests(unittest.TestCase):
 
     def test_sides_links_and_details(self):
         html = report.render_html("d", [result()])
-        self.assertIn("What each side says", html)
-        self.assertIn("According to Israeli media, it was big.", html)
+        self.assertIn("<h3>The main story</h3>", html)
+        self.assertIn("A big album was released on Friday.", html)
+        self.assertIn('<a href="http://ap/1" target="_blank" rel="noopener noreferrer">AP</a>', html)
+        self.assertIn("<h3>How each side differs</h3>", html)
+        self.assertIn("Calls it a triumph and stresses sales.", html)
         self.assertIn('<a href="http://t1/a" target="_blank" rel="noopener noreferrer">T1</a>', html)
         self.assertIn("Outlet leanings: T1: right (AI estimate); T2: center (config)", html)
         self.assertIn("Translated from: Arabic, Persian", html)
-        self.assertIn("Where they differ:", html)
+        self.assertIn("<h3>Points of disagreement</h3>", html)
+        self.assertIn("<li>Israeli media says 10 million sold; Iranian media says 2 million.</li>", html)
+        self.assertIn("Reported much the same as the main story: UK media", html)
         self.assertIn("<details><summary>Analysis details</summary>", html)
         self.assertIn("Divide verdict: strong", html)
         self.assertIn("AllSides: Center", html)
 
+    def test_the_main_story_is_shown_once(self):
+        self.assertEqual(report.render_html("d", [result()]).count("A big album was released on Friday."), 1)
+
     def test_untrusted_text_is_escaped_everywhere(self):
         evil = "<img src=x onerror=alert(1)>"
         res = result(topic=evil, summary=evil, narrative=evil,
-                     narratives={"groups": [{"group": evil, "n_items": 2, "outlets": [evil], "narrative": evil,
+                     narratives={"common": evil, "common_links": [{"outlet": evil, "url": "javascript:alert(1)"}],
+                                 "groups": [{"group": evil, "n_items": 2, "outlets": [evil], "outlet_notes": [evil],
+                                             "languages": [evil], "distinct": evil,
                                              "links": [{"outlet": evil, "url": "javascript:alert(1)"}]}],
-                                 "differences": evil, "unclassified": 0},
+                                 "conflicts": [evil], "unclassified": 0},
                      rows={"outlets": [{"name": evil, "n": 3, "label": evil, "confidence": evil,
                                         "reference": evil,
                                         "evidence": [{"framing": "f1", "quote": evil, "url": "data:text/html,x"}]}],

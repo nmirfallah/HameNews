@@ -27,24 +27,34 @@ def _rows_md(rows, kind):
 # ------------------------------------------------------------------ Markdown
 def render_topic(res):
     lines = [f"## #{res.get('rank', '?')} {res['topic']}", "", f"_{_trend_line(res)}_", ""]
-    if res.get("summary"):
+    nar = res.get("narratives")
+    if res.get("summary") and not (nar and nar.get("common")):  # the main story replaces the one-liner
         lines += [res["summary"], ""]
 
-    nar = res.get("narratives")
-    if nar and nar["groups"]:
-        lines += ["### What each side says", ""]
-        for g in nar["groups"]:
-            lines.append(f"**{g['group']}** ({g['n_items']} items; {', '.join(g['outlets'])})  ")
-            lines.append(g["narrative"])
-            if g.get("languages"):
-                lines.append("Translated from: " + ", ".join(g["languages"]))
-            if g.get("outlet_notes"):
-                lines.append("Outlet leanings: " + "; ".join(g["outlet_notes"]))
-            if g["links"]:
-                lines.append("Sources: " + ", ".join(f"[{l['outlet']}]({l['url']})" for l in g["links"]))
+    if nar and (nar["groups"] or nar.get("common")):
+        if nar.get("common"):
+            lines += ["### The main story", "", nar["common"]]
+            if nar.get("common_links"):
+                lines.append("Sources: " + ", ".join(f"[{l['outlet']}]({l['url']})" for l in nar["common_links"]))
             lines.append("")
-        if nar.get("differences"):
-            lines += [f"**Where they differ:** {nar['differences']}", ""]
+        distinct = [g for g in nar["groups"] if g.get("distinct")]
+        similar = [g for g in nar["groups"] if not g.get("distinct")]
+        if distinct:
+            lines += ["### How each side differs", ""]
+            for g in distinct:
+                lines.append(f"**{g['group']}** ({g['n_items']} items; {', '.join(g['outlets'])})  ")
+                lines.append(g["distinct"])
+                if g.get("languages"):
+                    lines.append("Translated from: " + ", ".join(g["languages"]))
+                if g.get("outlet_notes"):
+                    lines.append("Outlet leanings: " + "; ".join(g["outlet_notes"]))
+                if g["links"]:
+                    lines.append("Sources: " + ", ".join(f"[{l['outlet']}]({l['url']})" for l in g["links"]))
+                lines.append("")
+        if similar:
+            lines += ["Reported much the same as the main story: " + ", ".join(g["group"] for g in similar), ""]
+        if nar.get("conflicts"):
+            lines += ["### Points of disagreement", ""] + [f"- {c}" for c in nar["conflicts"]] + [""]
         if nar.get("unclassified"):
             lines += [f"_{nar['unclassified']} items came from outlets whose origin is unknown "
                       "and are not attributed to any side._", ""]
@@ -113,25 +123,37 @@ def _rows_html(rows, kind):
 def _topic_html(res):
     h = [f"<section class='topic'><h2><span class='rank'>#{_e(res.get('rank', '?'))}</span> "
          f"{_e(res['topic'])}</h2><p class='muted'>{_e(_trend_line(res))}</p>"]
-    if res.get("summary"):
+    nar = res.get("narratives")
+    if res.get("summary") and not (nar and nar.get("common")):  # the main story replaces the one-liner
         h.append(f"<p>{_e(res['summary'])}</p>")
 
-    nar = res.get("narratives")
-    if nar and nar["groups"]:
-        h.append("<h3>What each side says</h3>")
-        for g in nar["groups"]:
+    if nar and (nar["groups"] or nar.get("common")):
+        if nar.get("common"):
+            links = " · ".join(_link(l["outlet"], l["url"]) for l in nar.get("common_links", []))
+            h.append("<h3>The main story</h3><div class='story'>"
+                     f"<p>{_e(nar['common'])}</p>"
+                     + (f"<p class='src'>Sources: {links}</p>" if links else "") + "</div>")
+        distinct = [g for g in nar["groups"] if g.get("distinct")]
+        similar = [g for g in nar["groups"] if not g.get("distinct")]
+        if distinct:
+            h.append("<h3>How each side differs</h3>")
+        for g in distinct:
             links = " · ".join(_link(l["outlet"], l["url"]) for l in g["links"])
             h.append(
                 f"<div class='side'><div class='side-name'>{_e(g['group'])} "
                 f"<span class='muted'>({_e(g['n_items'])} items: {_e(', '.join(g['outlets']))})</span></div>"
-                f"<p>{_e(g['narrative'])}</p>"
+                f"<p>{_e(g['distinct'])}</p>"
                 + (f"<p class='src'>Translated from: {_e(', '.join(g['languages']))}</p>"
                    if g.get("languages") else "")
                 + (f"<p class='src'>Outlet leanings: {_e('; '.join(g['outlet_notes']))}</p>"
                    if g.get("outlet_notes") else "")
                 + (f"<p class='src'>Sources: {links}</p>" if links else "") + "</div>")
-        if nar.get("differences"):
-            h.append(f"<p class='diff'><strong>Where they differ:</strong> {_e(nar['differences'])}</p>")
+        if similar:
+            h.append("<p class='muted'>Reported much the same as the main story: "
+                     f"{_e(', '.join(g['group'] for g in similar))}</p>")
+        if nar.get("conflicts"):
+            h.append("<h3>Points of disagreement</h3><ul class='diff'>"
+                     + "".join(f"<li>{_e(c)}</li>" for c in nar["conflicts"]) + "</ul>")
         if nar.get("unclassified"):
             h.append(f"<p class='muted'>{_e(nar['unclassified'])} items came from outlets whose origin "
                      "is unknown and are not attributed to any side.</p>")
@@ -181,7 +203,8 @@ h1{margin:0 0 4px}h2{margin:0 0 4px}h3{margin:20px 0 8px}h4{margin:16px 0 6px}
 .topic{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:20px 0}
 .side{border-left:4px solid var(--accent);padding:2px 0 2px 14px;margin:14px 0}
 .side-name{font-weight:600}.side p{margin:4px 0}.src{font-size:.9em}
-.diff{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.diff{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px 10px 30px}
+.story{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:2px 14px}
 a{color:var(--accent)}details{margin-top:16px}summary{cursor:pointer;font-weight:600}
 .scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.92em}
 th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
