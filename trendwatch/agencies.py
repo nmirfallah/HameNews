@@ -56,7 +56,8 @@ AGENCIES = [
     ("Poland", "public", ["Polish Press Agency", "PAP"], ["pap.pl"]),
     ("Portugal", "public", ["Lusa", "Lusa News Agency"], ["lusa.pt"]),
     ("Qatar", "state", ["Qatar News Agency", "QNA", "Al Jazeera", "Al Jazeera English",
-                        "Al Jazeera Media Network"], ["qna.org.qa", "aljazeera.com"]),
+                        "Al Jazeera Media Network", "Al Jazeera Arabic", "الجزيرة", "الجزيرة نت"],
+     ["qna.org.qa", "aljazeera.com", "aljazeera.net"]),  # .com is the English edition, .net the Arabic one
     ("Romania", "public", ["AGERPRES"], ["agerpres.ro"]),
     ("Russia", "state", ["TASS", "TASS Russian News Agency", "RT", "RT News", "RT English",
                          "Russia Today"], ["tass.com", "rt.com", "rt-english.com"]),

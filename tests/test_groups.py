@@ -86,6 +86,17 @@ class GroupsTests(unittest.TestCase):
         self.assertEqual(items[1].group, "China state-linked media")
         self.assertNotEqual(items[2].group, "China state-linked media")
 
+    def test_both_al_jazeera_editions_land_in_the_same_group(self):
+        c = cfg()
+        items = [item(1, outlet="Al Jazeera English", domain="aljazeera.com"),
+                 item(2, outlet="الجزيرة نت", domain="aljazeera.net"),
+                 item(3, outlet="Something unfamiliar", domain="www.aljazeera.net"),
+                 item(4, outlet="الجزيرة"), item(5, outlet="Al Jazeera Arabic")]
+        llm = ScriptedLLM([])
+        assign_groups(llm, items, self.store, c)
+        self.assertEqual({i.group for i in items}, {"Qatar state-linked media"})
+        self.assertEqual(llm.calls, [])  # no AI guess needed for any of them
+
     def test_domain_beats_outlet_name(self):
         c = cfg(outlet_groups={"Wrong": ["Odd Name"]})
         items = [item(1, outlet="Odd Name", domain="tass.com")]
