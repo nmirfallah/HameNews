@@ -8,6 +8,7 @@ class Signal:
     platform: str          # google_trends, wikipedia, hackernews, mastodon, bluesky, news
     score: float = 0.0
     url: str = ""
+    source: str = ""       # the outlet or account behind the signal, when known (news headlines)
 
 
 @dataclass

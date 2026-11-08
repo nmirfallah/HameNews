@@ -3,7 +3,7 @@ from datetime import date
 
 from . import groups, languages, leanings, narratives, profiles, prompts, report
 from .collect import collect
-from .discovery import discover_topics, expand_subject
+from .discovery import discover_topics, expand_subject, split_topics
 from .stance import divide_report, get_framings, label_with_consensus
 from .util import log, slugify
 
@@ -15,7 +15,8 @@ def analyze_topic(llm, topic, cfg, store):
     except Exception as e:
         log.warning("keyword translation step failed: %s", e)
     items = collect(topic, cfg)
-    res = {k: topic.get(k) for k in ("topic", "slug", "summary", "platforms", "n_signals", "signals")}
+    res = {k: topic.get(k) for k in ("topic", "slug", "summary", "platforms", "n_signals", "n_outlets",
+                                      "trend_score", "watchlist", "signals")}
     res["n_items"] = len(items)
     a = cfg["analysis"]
 
@@ -68,28 +69,58 @@ def analyze_topic(llm, topic, cfg, store):
     return res
 
 
+def _also_entry(t):
+    return {k: t.get(k) for k in ("rank", "topic", "summary", "platforms", "n_signals", "n_outlets",
+                                  "trend_score", "signals")}
+
+
 def run(llm, cfg, store, subject=None):
     day = date.today().isoformat()
+    record, rest = {}, []
     if subject:
-        topics = [expand_subject(llm, subject)]
+        deep = [expand_subject(llm, subject)]
+        deep[0]["rank"] = 1
     else:
         existing = []   # readable names (the files are named by slug, which the model would imitate)
         for f in store.list_dir("topics"):
             if f.endswith(".json"):
                 existing.append((store.read(f"topics/{f}", {}) or {}).get("topic") or f[:-5])
-        topics = discover_topics(llm, cfg, existing)
-    if not topics:
+        topics = discover_topics(llm, cfg, existing, record)
+        deep, rest = split_topics(topics, cfg)
+        if not cfg["discovery"].get("list_all_topics", True):
+            rest = []
+    if not deep:
         log.warning("nothing to analyse today")
         return None
     results = []
-    for rank, t in enumerate(topics, 1):   # topics arrive sorted by how much they are trending
-        log.info("analysing topic #%d: %s", rank, t["topic"])
+    for t in deep:
+        if t.get("needs_expand"):      # a watchlist topic with no trend signals today: get its keywords first
+            e = expand_subject(llm, t["topic"])
+            t = dict(t, keywords=e["keywords"], summary=e["summary"])
+        log.info("analysing topic #%s: %s", t.get("rank"), t["topic"])
         res = analyze_topic(llm, t, cfg, store)
-        res["rank"] = rank
+        res["rank"] = t.get("rank")
         results.append(res)
+
+    also = [_also_entry(t) for t in rest]
     name = f"reports/{day}-{slugify(subject)}.md" if subject else f"reports/{day}.md"
-    store.write_text(name, report.render(day, results))
-    store.write_text(name.replace(".md", ".html"), report.render_html(day, results))
+    store.write_text(name, report.render(day, results, also))
+    store.write_text(name.replace(".md", ".html"), report.render_html(day, results, also))
     store.write(name.replace(".md", ".json"), results)
-    log.info("report written: %s", store.path(name))
+    if record:
+        _write_discovery_log(store, day, cfg, record, deep, rest)
+    log.info("report written: %s (%d analysed, %d listed)", store.path(name), len(results), len(also))
     return name
+
+
+def _write_discovery_log(store, day, cfg, record, deep, rest):
+    """Everything discovery saw and what happened to each cluster, so 'why is X missing?' can be answered."""
+    status = {t["topic"]: "analysed" for t in deep}
+    status.update({t["topic"]: "listed only" for t in rest})
+    for c in record.get("clusters", []):
+        c["status"] = status.get(c["topic"], "below threshold")
+    d = cfg["discovery"]
+    record["date"] = day
+    record["settings"] = {k: d.get(k) for k in ("topics_per_day", "min_platforms", "min_news_outlets",
+                                                "candidate_topics", "watchlist")}
+    store.write(f"discovery/{day}.json", record)

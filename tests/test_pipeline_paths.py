@@ -164,6 +164,95 @@ class LanguageIntegrationTests(PipelineTestCase):
         self.assertNotIn("translate_keywords", llm.tasks())
 
 
+class DiscoveryRunTests(PipelineTestCase):
+    # Signals are numbered after being grouped by platform, so they are listed here in that order:
+    # ids 0-2 google_trends, 3-5 wikipedia, 6 mastodon, 7 hackernews.
+    SIGNALS = [Signal("a", "google_trends"), Signal("d", "google_trends"), Signal("f", "google_trends"),
+               Signal("b", "wikipedia"), Signal("e", "wikipedia"), Signal("g", "wikipedia"),
+               Signal("c", "mastodon"), Signal("lone", "hackernews")]
+    CLUSTERS = [{"topic": "Big", "keywords": ["big"], "summary": "Big story", "signal_ids": [0, 3, 6]},
+                {"topic": "Medium", "keywords": ["medium"], "summary": "Medium story", "signal_ids": [1, 4]},
+                {"topic": "Small", "keywords": ["small"], "summary": "Small story", "signal_ids": [2, 5]},
+                {"topic": "Lonely", "keywords": ["lonely"], "summary": "One platform only", "signal_ids": [7]}]
+
+    def setUp(self):
+        super().setUp()
+        self.content(mixed_items(12, 6))
+        self.signals(self.SIGNALS)
+
+    def run_it(self, watch=(), **disc):
+        self.cfg = cfg(collection={"sources": ["fake"]}, analysis={"batch_size": 100},
+                       discovery=dict({"enabled_sources": ["fake"], "min_platforms": 2, "watchlist": list(watch)}, **disc))
+        llm = ScriptedLLM(handler=handler(cluster_topics=self.CLUSTERS))
+        name = pipeline.run(llm, self.cfg, self.store)
+        return name, llm
+
+    def test_only_the_top_n_are_analysed_and_the_rest_are_listed_with_their_ranks(self):
+        name, llm = self.run_it(topics_per_day=2)
+        res = self.store.read(name.replace(".md", ".json"))
+        self.assertEqual([(r["topic"], r["rank"]) for r in res], [("Big", 1), ("Medium", 2)])
+        with open(self.store.path(name), encoding="utf-8") as f:
+            md = f.read()
+        self.assertIn("## Also trending (headlines only)", md)
+        self.assertIn("### #3 Small", md)
+        self.assertIn("3. Small (headlines only)", md)
+        self.assertNotIn("Lonely", md)       # one platform and no big outlet count: below the threshold
+        self.assertEqual(llm.tasks().count("propose_framings"), 2)  # deep analysis only for the two
+
+    def test_zero_analyses_every_qualifying_topic_and_has_no_extras_section(self):
+        name, _ = self.run_it(topics_per_day=0)
+        res = self.store.read(name.replace(".md", ".json"))
+        self.assertEqual([r["topic"] for r in res], ["Big", "Medium", "Small"])
+        with open(self.store.path(name), encoding="utf-8") as f:
+            self.assertNotIn("Also trending", f.read())
+
+    def test_the_extras_list_can_be_switched_off(self):
+        name, _ = self.run_it(topics_per_day=1, list_all_topics=False)
+        with open(self.store.path(name), encoding="utf-8") as f:
+            self.assertNotIn("Also trending", f.read())
+
+    def test_the_html_report_has_the_extras_too(self):
+        name, _ = self.run_it(topics_per_day=1)
+        with open(self.store.path(name.replace(".md", ".html")), encoding="utf-8") as f:
+            html = f.read()
+        self.assertIn("Also trending (headlines only)", html)
+        self.assertIn("Medium", html)
+        self.assertIn("Small", html)
+
+    def test_a_discovery_log_records_every_signal_cluster_and_its_fate(self):
+        name, _ = self.run_it(topics_per_day=2)
+        log = self.store.read(f"discovery/{date.today().isoformat()}.json")
+        self.assertEqual(len(log["signals"]), 8)
+        fates = {c["topic"]: c["status"] for c in log["clusters"]}
+        self.assertEqual(fates, {"Big": "analysed", "Medium": "analysed", "Small": "listed only",
+                                 "Lonely": "below threshold"})
+        self.assertEqual(log["settings"]["topics_per_day"], 2)
+        self.assertEqual(log["settings"]["min_news_outlets"], 5)
+        self.assertEqual(log["date"], date.today().isoformat())
+
+    def test_a_watchlist_topic_no_signal_matched_is_still_analysed_and_flagged(self):
+        llm_handler = handler(cluster_topics=self.CLUSTERS,
+                              expand_subject={"topic": "Iran war", "keywords": ["Iran", "Tehran"], "summary": "s"})
+        self.cfg = cfg(collection={"sources": ["fake"]}, analysis={"batch_size": 100},
+                       discovery={"enabled_sources": ["fake"], "min_platforms": 2, "topics_per_day": 1,
+                                  "watchlist": ["Iran war"]})
+        llm = ScriptedLLM(handler=llm_handler)
+        name = pipeline.run(llm, self.cfg, self.store)
+        res = self.store.read(name.replace(".md", ".json"))
+        self.assertEqual([r["topic"] for r in res], ["Big", "Iran war"])   # beyond the top-1 limit, but forced in
+        self.assertTrue(res[1]["watchlist"])
+        self.assertEqual(llm.tasks().count("expand_subject"), 1)
+        with open(self.store.path(name), encoding="utf-8") as f:
+            self.assertIn("Watchlist topic (no trend signals today)", f.read())
+        log = self.store.read(f"discovery/{date.today().isoformat()}.json")
+        self.assertEqual({c["topic"]: c["status"] for c in log["clusters"]}["Iran war"], "analysed")
+
+    def test_subject_mode_writes_no_discovery_log_and_no_extras(self):
+        self.content(mixed_items(12, 6))
+        pipeline.run(ScriptedLLM(handler=handler()), self.cfg, self.store, subject="Album")
+        self.assertEqual(self.store.list_dir("discovery"), [])
+
+
 class RunTests(PipelineTestCase):
     def test_subject_mode_writes_three_report_files(self):
         self.content(mixed_items(12, 6))

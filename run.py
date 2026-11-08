@@ -5,6 +5,7 @@
   python run.py --subject "AI regulation"    # analyse one subject you choose
   python run.py --open                       # ...and open the HTML report in your browser
   python run.py --open-latest                # just open the newest report, no analysis
+  python run.py --why "Iran"                 # why is (or is not) this story in the latest report?
 """
 import argparse
 import logging
@@ -52,6 +53,7 @@ def main():
     ap.add_argument("--topics", type=int, help="override discovery.topics_per_day")
     ap.add_argument("--open", action="store_true", help="open the HTML report when finished")
     ap.add_argument("--open-latest", action="store_true", help="open the newest HTML report and exit")
+    ap.add_argument("--why", metavar="TERM", help="explain what happened to a story in the latest discovery log")
     args = ap.parse_args()
 
     for stream in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
@@ -59,6 +61,9 @@ def main():
             stream.reconfigure(encoding="utf-8", errors="replace")
 
     store = Store(args.data_dir)
+    if args.why:
+        from trendwatch.explain import explain as explain_story   # not `explain`: that name is the error helper
+        return print(explain_story(store, args.why))
     if args.open_latest:
         reports = [f for f in store.list_dir("reports") if f.endswith(".html")]
         if not reports:

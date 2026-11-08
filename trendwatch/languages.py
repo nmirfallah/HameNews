@@ -20,8 +20,16 @@ NAMES = {
     "ms": "Malay", "vi": "Vietnamese", "pl": "Polish", "cs": "Czech", "hu": "Hungarian",
     "ro": "Romanian", "bg": "Bulgarian", "sr": "Serbian", "hr": "Croatian", "sv": "Swedish",
     "no": "Norwegian", "da": "Danish", "fi": "Finnish", "az": "Azerbaijani", "kk": "Kazakh",
-    "ka": "Georgian", "hy": "Armenian", "sw": "Swahili",
+    "ka": "Georgian", "hy": "Armenian", "sw": "Swahili", "sk": "Slovak", "sl": "Slovenian",
+    "lt": "Lithuanian", "lv": "Latvian", "et": "Estonian", "is": "Icelandic", "ga": "Irish", "ca": "Catalan",
+    "eu": "Basque", "gl": "Galician", "af": "Afrikaans", "sq": "Albanian", "mk": "Macedonian",
+    "bs": "Bosnian", "mt": "Maltese", "lb": "Luxembourgish", "tl": "Filipino", "ta": "Tamil",
+    "te": "Telugu", "ml": "Malayalam", "kn": "Kannada", "mr": "Marathi", "gu": "Gujarati",
+    "pa": "Punjabi", "ne": "Nepali", "si": "Sinhala", "my": "Burmese", "km": "Khmer", "mn": "Mongolian",
+    "ps": "Pashto", "ku": "Kurdish", "am": "Amharic", "so": "Somali", "ha": "Hausa", "yo": "Yoruba",
+    "zu": "Zulu", "la": "Latin", "eo": "Esperanto", "cy": "Welsh", "be": "Belarusian",
 }
+UNDETERMINED = {"und", "zxx", "mul", "mis", "xx"}   # "language undetermined" style codes, not languages
 
 
 def name(code):
@@ -32,7 +40,7 @@ def norm(code):
     """'fa-IR' -> 'fa', 'iw' -> 'he'; anything that is not a plausible language code -> ''."""
     c = str(code or "").strip().lower().replace("_", "-").split("-")[0]
     c = {"iw": "he", "in": "id", "nb": "no", "nn": "no"}.get(c, c)
-    return c if c.isalpha() and 2 <= len(c) <= 3 else ""
+    return c if c.isalpha() and 2 <= len(c) <= 3 and c not in UNDETERMINED else ""
 
 
 # ------------------------------------------------------------- guessing

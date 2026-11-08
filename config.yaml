@@ -12,10 +12,21 @@ llm:
   # options: {base_url: "http://localhost:11434/v1"}
 
 discovery:
-  enabled_sources: [google_trends, wikipedia, hackernews, mastodon, bluesky, news_headlines]
-  topics_per_day: 3
-  min_platforms: 2               # a topic must trend on this many different platforms
+  enabled_sources: [google_trends, wikipedia, hackernews, mastodon, bluesky, news_headlines, google_news_top]
+  topics_per_day: 8              # topics that get the full analysis; 0 = every qualifying topic
+  list_all_topics: true          # list the rest too, ranked, with their headlines ("Also trending")
+  candidate_topics: 30           # how many topics the AI may find in the day's signals
+  min_platforms: 2               # a topic qualifies by trending on this many platforms...
+  min_news_outlets: 5            # ...or by being covered by this many different news outlets
   google_trends_geo: US
+  headlines_per_feed: 30
+  top_news_editions: [US, GB, IL, IN, AU]   # Google News top stories as seen from these countries
+  top_news_sections: ["", WORLD, NATION]    # "" = top stories
+  # Standing topics that are analysed every day, trending or not. Add the long-running stories you follow.
+  watchlist:
+    - Iran war
+    # - Gaza
+    # - Ukraine
 
 collection:
   sources: [news, bluesky, mastodon, hackernews]

@@ -77,6 +77,28 @@ class CliTests(unittest.TestCase):
         for name in ("httpx", "httpcore", "anthropic"):
             self.assertGreaterEqual(logging.getLogger(name).level, logging.WARNING, name)
 
+    def test_why_prints_the_explanation_without_needing_config_or_an_api_key(self):
+        Store(self.data).write("discovery/2026-11-07.json", {"settings": {}, "signals": [], "clusters": []})
+        out = io.StringIO()
+        with mock.patch.object(cli, "get_llm", side_effect=AssertionError("must not be called")), \
+                mock.patch.object(cli, "run", side_effect=AssertionError("must not run")), \
+                contextlib.redirect_stdout(out):
+            self.main("--why", "Iran")
+        self.assertIn("No signal in that run mentions 'Iran'", out.getvalue())
+
+    def test_why_without_a_log_explains_how_to_make_one(self):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            self.main("--why", "Iran")
+        self.assertIn("no discovery log yet", out.getvalue())
+
+    def test_the_error_helper_is_still_reachable_after_the_why_import(self):
+        # regression: importing the explainer inside main() once shadowed the error helper of the same name
+        with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", side_effect=FakeApiError(CREDIT, 400)):
+            with self.assertRaises(SystemExit) as cm:
+                self.main("--config", CONFIG)
+        self.assertIn("credit balance is too low", str(cm.exception))
+
     def test_without_subject_it_runs_discovery(self):
         with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value=None) as run:
             self.main("--config", CONFIG)

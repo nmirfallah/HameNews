@@ -52,14 +52,25 @@ DEFAULTS = {
     "agencies": {"enabled": True, "search": True, "site_chunk": 8},
     "discovery": {
         "enabled_sources": ["google_trends", "wikipedia", "hackernews", "mastodon",
-                            "bluesky", "news_headlines"],
-        "topics_per_day": 3,
-        "candidate_topics": 10,
+                            "bluesky", "news_headlines", "google_news_top"],
+        # How many topics get the full analysis. 0 = every qualifying topic. The rest are still listed,
+        # ranked, with their headlines (see list_all_topics).
+        "topics_per_day": 8,
+        "list_all_topics": True,
+        "candidate_topics": 30,
+        # A topic qualifies by trending on this many platforms, or by being covered by this many
+        # different news outlets (so a big story with no spike on search or social is not dropped).
         "min_platforms": 2,
+        "min_news_outlets": 5,
         "google_trends_geo": "US",
-        "signals_per_platform": 40,
-        "news_signal_cap": 120,
-        "headlines_per_feed": 15,
+        "signals_per_platform": 60,
+        "news_signal_cap": 400,
+        "headlines_per_feed": 30,
+        # Google News top-story feeds, as seen from several countries (more outlets, more perspectives).
+        "top_news_editions": ["US", "GB", "IL", "IN", "AU"],
+        "top_news_sections": ["", "WORLD", "NATION"],   # "" = top stories
+        # Standing topics that are always analysed, trending or not (e.g. "Iran war").
+        "watchlist": [],
     },
     "collection": {
         "sources": ["news", "bluesky", "mastodon", "hackernews"],

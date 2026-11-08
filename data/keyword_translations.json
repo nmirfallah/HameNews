@@ -146,5 +146,42 @@
       "Stephen Miller Beyaz Saray",
       "Beyaz Saray kurmay başkanı"
     ]
+  },
+  "krakow-shooting": {
+    "ar": [
+      "إطلاق النار في كراكوف",
+      "كراكوف بولندا إطلاق نار",
+      "مسلح كراكوف"
+    ],
+    "de": [
+      "Schüsse in Krakau",
+      "Krakau Schüsse Polen",
+      "Krakau Schütze"
+    ],
+    "fa": [
+      "تیراندازی در کراکوف",
+      "کراکوف لهستان تیراندازی",
+      "مسلحانه کراکوف"
+    ],
+    "fr": [
+      "fusillade à Cracovie",
+      "Cracovie fusillade Pologne",
+      "tireur Cracovie"
+    ],
+    "he": [
+      "ירי בקרקוב",
+      "קרקוב פולין ירי",
+      "חמוש קרקוב"
+    ],
+    "ru": [
+      "стрельба в Кракове",
+      "Краков стрельба Польша",
+      "стрелок Краков"
+    ],
+    "tr": [
+      "Krakow silahlı saldırı",
+      "Krakow Polonya silahlı saldırı",
+      "Krakow silahlı saldırgan"
+    ]
   }
 }

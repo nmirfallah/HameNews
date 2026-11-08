@@ -518,7 +518,7 @@
         "counts": {
           "f4": 2,
           "f2": 1,
-          "none": 5
+          "none": 6
         },
         "seen": [
           "b5c041c4d361",
@@ -528,7 +528,8 @@
           "0ac70bce5319",
           "811325177a93",
           "eacc0600d0e2",
-          "cc8e83c24a5d"
+          "cc8e83c24a5d",
+          "a3155e030a1c"
         ],
         "evidence": [
           {
@@ -554,16 +555,23 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f2": 1
+          "f2": 1,
+          "f5": 1
         },
         "seen": [
-          "6a3fd0881c58"
+          "6a3fd0881c58",
+          "70e12577ef7f"
         ],
         "evidence": [
           {
             "framing": "f2",
             "quote": "Dems won, now Dems need to get to work for people",
             "url": "https://masto.ai/@MusiqueNow/117570604132224873"
+          },
+          {
+            "framing": "f5",
+            "quote": "Huge Upset WIN for DSA in Florida",
+            "url": "https://masto.ai/@MusiqueNow/117124378228479739"
           }
         ]
       }
@@ -1061,17 +1069,35 @@
       "2026-us-midterm-elections": {
         "counts": {
           "none": 1,
-          "f2": 1
+          "f2": 4
         },
         "seen": [
           "7dd10e165556",
-          "1fe5e07ea591"
+          "1fe5e07ea591",
+          "9c830700cb15",
+          "b9ec4a3f1eef",
+          "d8a2387350e3"
         ],
         "evidence": [
           {
             "framing": "f2",
             "quote": "Incoming senators want Schumer & Jeffries replaced",
             "url": "https://mastodon.social/@DrALJONES/117571916909502629"
+          },
+          {
+            "framing": "f2",
+            "quote": "I want new leadership",
+            "url": "https://mastodon.social/@DrALJONES/117575834207074986"
+          },
+          {
+            "framing": "f2",
+            "quote": "Dems should impeach Trump even if just for the hearings",
+            "url": "https://mastodon.social/@DrALJONES/117575831288338817"
+          },
+          {
+            "framing": "f2",
+            "quote": "The Democratic leadership will face strong expectations for action against",
+            "url": "https://mastodon.social/@DrALJONES/117575600305138346"
           }
         ]
       }
@@ -1151,10 +1177,12 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f3": 1
+          "f3": 1,
+          "none": 1
         },
         "seen": [
-          "77a0e7280d73"
+          "77a0e7280d73",
+          "525c86783ac1"
         ],
         "evidence": [
           {
@@ -1170,10 +1198,12 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f5": 1
+          "f5": 1,
+          "none": 1
         },
         "seen": [
-          "16a0ac0429da"
+          "16a0ac0429da",
+          "270b22c7f67c"
         ],
         "evidence": [
           {
@@ -1189,16 +1219,37 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f3": 1
+          "f3": 3,
+          "none": 8
         },
         "seen": [
-          "023009abfc0d"
+          "023009abfc0d",
+          "4633611ce4c0",
+          "c23c3077cdfc",
+          "eb52286f8a5f",
+          "832a551e0175",
+          "3f347d47cef1",
+          "9fa4a7ecd29a",
+          "4e0e39e535e0",
+          "b2c826196054",
+          "14237dad60dc",
+          "bd0424e78614"
         ],
         "evidence": [
           {
             "framing": "f3",
             "quote": "Trump's own handpicked ally turns on him after midterm wipeout",
             "url": "https://mastodon.social/@killbait/117572561473316679"
+          },
+          {
+            "framing": "f3",
+            "quote": "Midterms Reflect Democracy's Resilience Amid Trump's Shadow",
+            "url": "https://mastodon.social/@killbait/117576238479345895"
+          },
+          {
+            "framing": "f3",
+            "quote": "Trump pleads with his nemesis amid intra-MAGA infighting",
+            "url": "https://mastodon.social/@killbait/117096443517620975"
           }
         ]
       }
@@ -1454,6 +1505,15 @@
             "url": "https://mastodon.trueten.de/@operamundi/117571741767017932"
           }
         ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "e70a4953e4ae"
+        ],
+        "evidence": []
       }
     }
   },
@@ -1471,6 +1531,481 @@
             "framing": "f3",
             "quote": "a full-blown uber-fascist, as his Chief of Staff",
             "url": "https://mas.to/@JoelKlebanoff/117571183415174299"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:AfroIsReborn": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b6a4fa4c25d4"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Jon Ossoff wins the Georgia Senate race",
+            "url": "https://mastodon.social/@AfroIsReborn/117555501999389992"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:SharonPersists@mastodon.nl": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "42ab3cac651f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "keeping tabs online on the very close Mississippi senate race",
+            "url": "https://mastodon.nl/@SharonPersists/117561586555773309"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Verdaderofalso@tardigram.com": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "185772ff8ade"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:killbait@mastodon.world": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "cef01eab009b",
+          "6e8ae1e50191"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:steve_zeke@freeradical.zone": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "daff7ccd3adb"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "corporate media warn Democrats of the perils of winning",
+            "url": "https://freeradical.zone/@steve_zeke/117575911560766455"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:hans@social.woefdram.nl": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "c35edb1be513"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump's elevation of Stephen Miller a middle finger to millions of voters",
+            "url": "https://social.woefdram.nl/item/797a2da6-933f-4388-b4da-863ae115de65"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:tmalesys@wonkodon.com": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b2e025100a47"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Excellent ! Harry Sisson on Substack # midterms # BlueTsunami",
+            "url": "https://wonkodon.com/@tmalesys/117575785340632714"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:researchbuzz@researchbuzz.masto.host": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "61f63e90f008"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:sjar@mastodon.online": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "48c1d24d8f9b"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "how the Senate (now Dem.-controlled) plans on effecting systemic transformation",
+            "url": "https://mastodon.online/@sjar/117576217144900791"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:LevZadov@kolektiva.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "fa8d70511a36"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "a day of reckoning appears to have arrived for Trump and the far-right",
+            "url": "https://kolektiva.social/@LevZadov/117575950836594542"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Penumbra@mastodontech.de": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "ba3b57ab0a3c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump and his cultists received a generational beating",
+            "url": "https://mastodontech.de/@Penumbra/117575640290461297"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rabenmutterschafft@mastodon.bida.im": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9338f406bb2a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Nach der Midterm-Ohrfeige: Navidi: Miller verschärft Trumps",
+            "url": "https://mastodon.bida.im/@rabenmutterschafft/117576445092512133"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Beezloopnews": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "094e8eb69429"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:fllics": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1,
+          "none": 2
+        },
+        "seen": [
+          "36d38c208f17",
+          "461c3da139ab",
+          "296273029bb6"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "won Michigan's open US Senate seat, according to media projections",
+            "url": "https://mastodon.social/@fllics/117557588506194165"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:mdshanto": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "1e9e1edfe85e"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:benroyce": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "a55d5f9cce44"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Stephen Miller is the architect of the brutalization of immigrants",
+            "url": "https://mastodon.social/@benroyce/117571352444268763"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:b@convo.casa": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "02c532dbe921"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Please tell me you're lying to me right now",
+            "url": "https://convo.casa/@b/117576368617435864"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:drrjv": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1,
+          "f2": 1
+        },
+        "seen": [
+          "5086cd852a1e",
+          "63e6655e666a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "no one in America could have picked to be his new chief of staff",
+            "url": "https://mastodon.social/@drrjv/117575429341314521"
+          },
+          {
+            "framing": "f2",
+            "quote": "Trump responded by putting Stephen Miller in charge",
+            "url": "https://mastodon.social/@drrjv/117574557489638011"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:leto60@troet.cafe": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f5c5e00824be"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "influential right-wing extremist and White Nationalist, becoming new chief of staff",
+            "url": "https://troet.cafe/@leto60/117574482129754415"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:sccdp@sfba.social": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "5d29c49f3936"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump and the GOP got destroyed by YOUR Blue Tsunami",
+            "url": "https://sfba.social/@sccdp/117576210954514799"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:jhy001": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f18a5856d40e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Totally unqualified to be a true American Patriot",
+            "url": "https://mastodon.social/@jhy001/117576138378702360"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:qkslvrwolf": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "b8dc124eb932"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Unless congress is able to take him out, we're in deep, deep shit",
+            "url": "https://mastodon.social/@qkslvrwolf/117575480529115024"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Econopass@flipboard.com": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "2d70fef87a1e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "The president has no interest in being reined in",
+            "url": "https://flipboard.com/@econopass/flipboard-exchange-feed-%F0%9F%97%9E%EF%B8%8F-a2ri49sqz/-/a-5eWIUrCwQOWtrAoofaOnLg%3Aa%3A4091604380-%2F0"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:fediboard_mix@flipboard.social": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "26cb2bc538e3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Trump doubles down on everything that lost him the midterms",
+            "url": "https://flipboard.social/@fediboard_mix/117573929093580491"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:redpres": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "b17765270768"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "After the defeat in the legislative elections: Trump fires the chief of staff",
+            "url": "https://mastodon.social/@redpres/117573538964504654"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:akerix": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "4e93b9e94686"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Midterm Election Consequences Reshape American Politics",
+            "url": "https://mastodon.social/@akerix/117573537263231263"
           }
         ]
       }

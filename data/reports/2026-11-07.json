@@ -1,0 +1,2142 @@
+[
+  {
+    "topic": "2026 US midterm elections",
+    "slug": "2026-us-midterm-elections",
+    "summary": "Coverage and reference-page interest center on the 2026 US midterm results, with Democrats reported as winning the House, plus individual Senate and governor races and what a Democratic Congress may do.",
+    "platforms": [
+      "bluesky",
+      "google_trends",
+      "news",
+      "wikipedia"
+    ],
+    "n_signals": 33,
+    "signals": [
+      {
+        "platform": "google_trends",
+        "name": "erika donalds"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "Abdul El-Sayed"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "James Talarico"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "2026 United States elections"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "Jon Ossoff"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "Gina Hinojosa"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "Nithya Raman"
+      },
+      {
+        "platform": "wikipedia",
+        "name": "2026 United States Senate elections"
+      }
+    ],
+    "n_items": 160,
+    "narratives": {
+      "common": "Items from most groups describe the 2026 US midterms as a strong night for Democrats, with Republicans losing ground and some Senate races, notably Mississippi between Scott Colom and Cindy Hyde-Smith, and Alaska, still too close to call days later. Coverage also points to market reactions, especially in AI and tech stocks, and to questions about what the results mean for Trump and the Republican Party.",
+      "common_links": [
+        {
+          "outlet": "Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOVXRSOTMyejZZY2lrRGdDYWltTGgzUl9vYUI1S2xSN2dOdFVDZFNzN19TODNibWsxN3hmX3NxVzVIR213VEZ1akVyUnZQeFl4V0JOYzRlYzZUOVNITHZtSXQ4a0tPZHM0VGd2bHR1bS1leDhxem5oUkZEM1c5RnhlZG9CMk9TS2FvbWZQS0YwX3ByNDJiUHk3RldKVFhkZ0tuVHNmd0RHcWVHUUNib2VweW9BVFA3cXE0RWdueFlIUHMxQldWa19BbVFaOWxvVkdYNGgzQlFQRnRWYnR4aDFIcDc0bzZ1akd5aWI5dl9LVndqVGEzbVRZS0lXMnJucktFdHE1U09JMGJxLXF0bW81bjVJQjVyOXpRQldlZHcwVERFODhoMzZ3dGctdW9kUQ?oc=5"
+        },
+        {
+          "outlet": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS19UUVpOVnlua2hDVjBiTDdKV1JQT2d2UDBwcl9SNWZoek9iQVVRTVF3Z3k4R21yckkzSndPZVJPTE5sdTFMS25YYkRuOFpVQ2JZRlZNdk1MbnFDVGVENmlubmp2TlRBYXk0dW9sXzR2Y1hpLTRGcV9XNUp6bzcxTzdqeFFGTFZBc1NtbWkzUjRrd3lZU0VyN09VZHpUMU1yNnFOVGVoT2RHQmc4S0RJR2FKUjQ4dmp5RzdqUnNoTdIBxAFBVV95cUxQd0lYX3k4cV9CRUlWU1QxMjdqQ1Y4U2tfREdIdGZ2SWZPeDY4OHZSR1RadjI4N0F5bHJ2QkxVeEFsVmV6UW1NTXFxLTZ2ZGhHMlFMbXlUZ21lT29OWWVEYk9wempVcDAwSFlWS1MyZXpTLUtJUFNkY1hSNGRzVlNhNmhVbzUyLW5xWXoyYVJwT2NvQmhjcWdGbFZaQVRHaDJfZGMwMUU1Ym1tSm5ibVZFMzNmX2lfVFRRSG92NWU0blRLUnUy?oc=5"
+        },
+        {
+          "outlet": "USA Today",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTldkOU16b0NHM2xvdGZNaUg1eXVEVEhSbHYwNDRNYzZxeEFkeU9WTXJ2aUViRlRNZnBQRG41WGJSNG9IcEZIaW1tejNtMmYxVUhvWjZFaVJqVDZndE9LZ09DN3R6bjdxeEtaNnIyVnNlNU9BWjY5cm9lcWpwRk5tWURXZTdiaUFPa2xIenUybnlSUUpjUTBsZDEzVDktXy1JMVV0NkxZVTdBNFVEcmdPVjFLN0xWdXVtQWxMdlNrOXRmVUowUGRzbXVYdEEwdlRTa3NfUUhpbE42aUFodGZ6UQ?oc=5"
+        },
+        {
+          "outlet": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9OOEhyQVI4QzR2YkQ4SklicndGeEdreEtYMHMyNWZHQWZacEVxcjVsbzNUQzNIdEczQkVhbks5d3hVdTdHcmJRc0R6WEdiY2RKLWFrVEF1aVhTYVV1ZmFIbWlUOEFNaTA5UlFFc05Fd25JWWtP?oc=5"
+        }
+      ],
+      "groups": [
+        {
+          "group": "Mastodon posts",
+          "n_items": 80,
+          "outlets": [
+            "2legged@mastodon.ie",
+            "AfroIsReborn",
+            "Beezloopnews",
+            "DoomsdaysCW@kolektiva.social",
+            "DrALJONES",
+            "GrumpyOldFart@expressional.social",
+            "LevZadov@kolektiva.social",
+            "MaryAustinBooks@mstdn.social"
+          ],
+          "outlet_notes": [],
+          "languages": [
+            "German",
+            "Portuguese",
+            "Spanish",
+            "und"
+          ],
+          "distinct": "Posts are personal and celebratory or activist in tone. They cite individual winners (Jon Ossoff in Georgia, Eric Armstrong in Iowa, Crystalyne Curley as the first woman elected Navajo Nation president) and a Democratic sweep of the Texas state government. Some warn that Democrats will 'betray' voters once the 'sugar high' fades, or argue the fight is to cut the party off from mega donors and the 'Israel lobby'. One post lists grievances against Trump, including Iran, Medicaid, tariffs and ICE.",
+          "links": [
+            {
+              "outlet": "benroyce",
+              "url": "https://mastodon.social/@benroyce/117575526694352436"
+            },
+            {
+              "outlet": "2legged@mastodon.ie",
+              "url": "https://mastodon.ie/@2legged/117575324625502439"
+            },
+            {
+              "outlet": "DrALJONES",
+              "url": "https://mastodon.social/@DrALJONES/117575843824524276"
+            }
+          ]
+        },
+        {
+          "group": "US media",
+          "n_items": 19,
+          "outlets": [
+            "10TV",
+            "ABC7 Bay Area",
+            "Action News 5",
+            "East Idaho News",
+            "Edelman",
+            "Eos",
+            "Goldman Sachs",
+            "Gray TV"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Mostly local TV and professional-services outlets, with a practical and regional focus: a Nebraska 'FACT CHECK' saying there was no 'red wave', a tight North Carolina state Senate race, and Colom's lead over Hyde-Smith growing to over 2,000 votes. Law firms and consultancies (Edelman, WilmerHale) discuss implications for business, philanthropy and nonprofits, and SCOTUSblog covers the Supreme Court.",
+          "links": [
+            {
+              "outlet": "WOWT",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTFQ1MTY0ZlRnWjJEbjB6aEFRVVlKeGVyOEQwUHpDOG1RYjJNbjRXQTYwdXpDaXo5dk5RYnhOdjN6MFpWRnk0NDBZR0F0aG5PVW56OFl0cUI0WExsWUJfVzhUVEEzNm9kOGVCQUJnS2sxZGUxZWpEVjBUZlhuUG53R3g1LU5OMjZzb0pZaUY4bWl4QlRuQzNST19OSWtxc1hPV0hJRg?oc=5"
+            },
+            {
+              "outlet": "Edelman",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUNDk4ZWltZ1NQSVR0dHl0SFNXR0JlQ1hJUlhlQmhrbG5MQzhnMnZqNTMtV3hfNVdTQ0Zlc3hXYWZWYjlnQ1Nld05pc01rOVJqNG5HeVo0REE2aDlUbWk4QnpXRVdwYzRIckE?oc=5"
+            },
+            {
+              "outlet": "WilmerHale",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVHJMeXhyYk96QXZ6VHphYThwODV0TWpCR1kzcElJMlh5cjV3UzVybmwtdTFJa2MyZnFKZVBmNFU0aTZvSVNHN1BWOHRPX0F5aV85OF9pUlN1MFdWOVotcWktWWNQaWhRMm11M1N5Q0pub3VQcEpCNlJKR1Fjc000NXMxUEJLbk8xOGhVaWlJVEszeTNLcFBFYWYxNUhTWEpLdV9FWS1ZN2VNZ0F4SzB0bWU4Y19iQ0dQNUVBZmUyYzdzeHJrV3YtalBfcHZUZw?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (centrist)",
+          "n_items": 11,
+          "outlets": [
+            "Arizona Capitol Times",
+            "Axios",
+            "Bloomberg.com",
+            "CBS News",
+            "CNBC",
+            "Council on Foreign Relations",
+            "Louisiana Illuminator",
+            "Mississippi Today"
+          ],
+          "outlet_notes": [
+            "Arizona Capitol Times: center (AI estimate)",
+            "Axios: center (AI estimate)",
+            "Bloomberg.com: center (AI estimate)",
+            "CBS News: center (AI estimate)",
+            "CNBC: center (AI estimate)",
+            "Council on Foreign Relations: center (AI estimate)",
+            "Louisiana Illuminator: center (AI estimate)",
+            "Mississippi Today: center (AI estimate)",
+            "PBS: center (AI estimate)",
+            "The Hill: center (AI estimate)",
+            "USA Today: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Adds exit-poll and institutional angles: an AP Voter Poll explaining why Republicans lost, Mississippi's voter rolls and looming legal fights over the close Senate races, and a Louisiana Democratic 'near-miss' that raises hopes for the governor's race. Also covers Turning Point's future after Republican losses and an Anthropic IPO facing an AI backlash tied to data centers.",
+          "links": [
+            {
+              "outlet": "PBS",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS19UUVpOVnlua2hDVjBiTDdKV1JQT2d2UDBwcl9SNWZoek9iQVVRTVF3Z3k4R21yckkzSndPZVJPTE5sdTFMS25YYkRuOFpVQ2JZRlZNdk1MbnFDVGVENmlubmp2TlRBYXk0dW9sXzR2Y1hpLTRGcV9XNUp6bzcxTzdqeFFGTFZBc1NtbWkzUjRrd3lZU0VyN09VZHpUMU1yNnFOVGVoT2RHQmc4S0RJR2FKUjQ4dmp5RzdqUnNoTdIBxAFBVV95cUxQd0lYX3k4cV9CRUlWU1QxMjdqQ1Y4U2tfREdIdGZ2SWZPeDY4OHZSR1RadjI4N0F5bHJ2QkxVeEFsVmV6UW1NTXFxLTZ2ZGhHMlFMbXlUZ21lT29OWWVEYk9wempVcDAwSFlWS1MyZXpTLUtJUFNkY1hSNGRzVlNhNmhVbzUyLW5xWXoyYVJwT2NvQmhjcWdGbFZaQVRHaDJfZGMwMUU1Ym1tSm5ibVZFMzNmX2lfVFRRSG92NWU0blRLUnUy?oc=5"
+            },
+            {
+              "outlet": "CNBC",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkVFNKdFlSLTl6ZndHZTBvOFFta0JaelYzcldkc21kSVJiSHNOcDVBX19xTVY3clpiekZSWmpRbFdtaHdTbVo1d3lNNXJTa3FfQ2NiWHhJV3Vvb3hEekdfQnJDV2xQcU0wUFo4dnBiM050YnhVOVFfYXo4VW5PRWc?oc=5"
+            },
+            {
+              "outlet": "Arizona Capitol Times",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQkI0dEpSOS1hVUFaMmJmaTVuem9RTUtWQ3V4bXFCSmlYQ1UyNkNXRnUyZFRtNW00Uy1jYlhfbDVtSFJKbnQzWUdJbjdmRFExTUQ2NDBZLVphcWJ4aWU4a3hqbm9KYnhQWHNpSUJzR0ZLRHRHWlRYdzYySk9XSUQwQ0RTeEw3Mm9SLURVSlJTMjZLb2lBbVM1NEJtZFJSQThYcFEtcEFqSTRNRWl1bVhJZnJ3?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (left-leaning)",
+          "n_items": 9,
+          "outlets": [
+            "Brennan Center for Justice",
+            "CNN",
+            "Democracy Docket",
+            "MS NOW",
+            "Mother Jones",
+            "NBC News",
+            "NPR",
+            "The New York Times"
+          ],
+          "outlet_notes": [
+            "Brennan Center for Justice: left (AI estimate)",
+            "CNN: center-left (AI estimate)",
+            "Democracy Docket: left (AI estimate)",
+            "MS NOW: left (AI estimate)",
+            "Mother Jones: left (AI estimate)",
+            "NBC News: center-left (AI estimate)",
+            "NPR: center-left (AI estimate)",
+            "The New York Times: center-left (AI estimate)",
+            "The Washington Post: center-left (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Frames the result as a 'big 2026 wave' using charts, turnout data and Hispanic voters' role in Democratic wins. It also includes a CNN piece on 'bad news for progressive Democrats' and describes the GOP's post-election 'scramble' as pure 'Survivor'. NPR puts the tech selloff at $2 trillion, tied to fears of an AI crackdown.",
+          "links": [
+            {
+              "outlet": "CNN",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTjBjNFpoN3psUUlQTUFMTjFyY0RTcW9xUXdfMjhUM2pMbmwwblozOXdYY1gxOFhiTE52OEJfcTNiT0pKekNMV0tBekM5OGJVTVo4LU96MzZZQU9qQlVtSkpWTU1nUnBxMUhmSWVyVkJlNmt5b1h2WEtNeFlZWHBzWE9CeVpHQQ?oc=5"
+            },
+            {
+              "outlet": "NBC News",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVVo0VGtwVEYyUl9pNE9rV0VicEJtZnlSZVFvQTVvb1ZuWnV3ZEdrVjkyVENUUHQyU0tTZVN2TnMzYUdQcjY3Q3N0UktwNE1DSHlKbm41MjRNd2FLMWdhSG9iYzBsV3RkMlY4dlJYRlFtZ1AyaGwyQTFTbEZWXzB5Ykp3WGlYVmdDd0lEd0NvOFUxT2VaUWFQUmczNGdmRXN1OHBGRUphZjNSM2c?oc=5"
+            },
+            {
+              "outlet": "The Washington Post",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaUhjeDJfTkpLYS1mYWZKSHZpVS14LWNVdU11X2wyWkFWdG1wdzZQMFJMMGUtMnlsbF93VkRwc0xveHFZMlVDV3BPSWRNSjJRbmM4UUdhU0pxRmdrcGVtX21rdXVtamhyaDdTaGlmWkE4UXM1Nmp4QTItSXlRek9WbURQOGJmaEg2VEt0QW01Q1VpT2JjZ3ZaUk5tanlNYm9mZDhSX2djRUxJR1VTWEE?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Australian media (centrist)",
+          "n_items": 6,
+          "outlets": [
+            "ABC News & Headlines – Australian Broadcasting Corporation",
+            "Lowy Institute",
+            "Nine.com.au",
+            "SBS",
+            "The Conversation",
+            "United States Studies Centre"
+          ],
+          "outlet_notes": [
+            "ABC News & Headlines – Australian Broadcasting Corporation: center (AI estimate)",
+            "Lowy Institute: center (AI estimate)",
+            "Nine.com.au: center (AI estimate)",
+            "SBS: center (AI estimate)",
+            "The Conversation: center (AI estimate)",
+            "United States Studies Centre: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Highlights near-record youth turnout focused on the economy, and Native American women's historic victories alongside Trump intervening in a tight Senate race. The Lowy Institute argues Trump lost the midterms but not his hold on foreign policy, and coverage notes Trump's first post-election appearance and a JD Vance statement.",
+          "links": [
+            {
+              "outlet": "The Conversation",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWkpkajlGSDBFd3k2TGtMSUhqR21HUG5oTzZHVE1jbVFMZVhELU1fZi1VNS1lRFZzekZEazA4eFBoWW9YdmtTTTZKcDhwX1B4RXdZRndfZTlMYjVnYWVKRVlyaWkxNnhfcjNGRGo4RUowRUdYYmVxMVFVMjZERjJmUXl0ZnZ1cjFieHRwS0xHSWQ5UlNhWWJ6TWw5eW9jWXJtcDR2MUgzODB5azBlemdnZEJ0cGN5T2lzS1d3bWF1c0EtMFRsY29jaGpJRHFsclRRRzFiWExR?oc=5"
+            },
+            {
+              "outlet": "Nine.com.au",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQelFjVFJkZGRpUF9QMmV2WnZMY3pkMHBpbkJFZjkya0VsT21MbXpPdGg4QlU2NlRTRWY1dHoycHNOYUROb0c4N1E3R1VNUV83UGhJdmdBenlMQjhsejNlZ3RhMmN2UjYzRWZRZ2xDWXBCblp5amwyOHBkM1Rsb2txdTZLWkxnR1N3aTVwejk0VFdFX0RxYzdtNFR5SzRuUDdQR1QwamhhUmZSR0RfMzRWM05HYnFQOUlZUjc2VzdYWW0xQWkwM3NQbXlYZw?oc=5"
+            },
+            {
+              "outlet": "Lowy Institute",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR0dfeV9paHJSMXlndUVDaXRkSWRDX05ZNFNjMnhFZmpINHlTa1ptd0FwOTJuSGhocENfaFpvLWJpUGNyWWM3TVBUN2hudlhVLWl3NXZaTHpSQ0dCME03eXJiaG5oSmFnTTdhMWdXMVhIMjRwTUJUX3oxWlU1RFpvdUxuWndYbmJvZk1mRzNCZFhtbmQ5TzhNVGtfNi0wcUJOc0E?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Indian media",
+          "n_items": 4,
+          "outlets": [
+            "Deccan Chronicle",
+            "The Hindu",
+            "The New Indian Express",
+            "The Times of India"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Uses stronger language such as 'midterm wipeout' and 'blue shift', and asks whether Trump's grip on his party is in doubt. It quotes Nikki Haley saying Republicans cannot blame media or academia for the loss, and adds an angle on global trust in America after 'Trumpism stumbles'.",
+          "links": [
+            {
+              "outlet": "The New Indian Express",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNazM3M0xjcmVVeU9ZTGhJSWktZGpnbzdzb1RIa2NnOGxrRnROTnpsOVJ5NUlaVTRwTW1yQjV1MklmMEtqZk52dkNUVVNaUDMzSnpnQk9nMlFFa3dUWm9YNi1XczdLbmdhdjZKYUFjSW5ldE1VRXp0dEJYZHdzZVFubUhPa0QyaXJhTm5ibDVvd2pGYVZvNmRYSGpoZElaXzN0cm5NUjRqMWlITWZjSFJQQ2pmTHZDRU5CdnVxSl83aHlsVTJGZW5IMXJpR2oyekpp0gHeAUFVX3lxTFB2UzZrQlhycU5pTVpSYkxZZkxKcnBBMTdHWUoxVGRTOXlqV1hmdTBqdkl1d3NTaGVGTHZFY2VtYWdHbE9YcTdoYTdQOGtLZ0FLWmxMclMtTG9hZVJNdkJIdktwcmxwSGFUa1laNjF2V0ZvcTNuMEJMU1dNd3lESGhqNzJpRmZGMS04NHdiRU8wRHEwSmVCbVhkbDM4eGMxMTQyMUltWnEwZkZfaHpFQno5V05fdzhtSjBHa3czWE80QzRQRVdXWjIxV0dtbjA3ODVSMkQwVlZEdXVYa1gzQQ?oc=5"
+            },
+            {
+              "outlet": "The Hindu",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaDZoNkh2enNLcjNjbzJNNjA0RDAwM2J0SlZabXhZUjJHVE1yM0lORXRBUFpmTW9lazFfczdiMF9oSmRFNWd0aWFVY3VSOFNHYm1xWlhYU2FUSU5GZjVnWXZ6TGtSX3U5Z1JZcDZTdWVNVC1OV2E3T3h3aWJEd0tuaThCZFEzaVlRdGFTM2lDd0FkOFF2dkRCWlFvdHYtTUh4cDAzTzhGeHN4M2JyMUlJTDU4REU5alBmYV83S19FWDlyaVhSakNTOXlB?oc=5"
+            },
+            {
+              "outlet": "The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOMGlBbUt4LUw0ZjI4TjhTam0tN3BFVGZ2dmZacGdNUF9RTm9KOVp5QVBZMHQzcllkOF9xODdvMG1SU0FCNEdRdGhxODZEMFlTRE80WWV2MjQyNEFzZEZ5S2p2WVNhU2U2T2JYbldfMkl0RFA5andUUllnOHZQNkhocVU2RmFwdVFMMFI0eEQwazI0Yl8tekxlaXpXVk5zdllsV0Q4RkdVaU5Sc2ZNWnpKeXRUeUZZWXdHR1U0RHpVNHlCc1g1MFZkYS0yYVVBN3dMaHhEdTcySW44RUVDd3pjUU13QmRDcWVBbkRuOGp5ZlM2blJOTHpyblp3WUYtYVZCTUlTTmZkOWM2RjhwUmY0MW1KQWlCaXpaV0ZENHFfRUlWU3VOdlhBV00yeHZoNkHSAbQCQVVfeXFMT01QQWtBQ3pHLUhQWmxQWWhMc3NMM2FyZXhjazRhTFdWdGVBZU5wS1B6R1hnWldqWENhT0NQZk92VjloUlNTMWN6YWtDOTgyYzFmenFhdHB3a0pjbEFHRzIyZ0E0dnZrTnc1ZHpmXzQyd2puMl9VVTZtMXNyTTV3UkNSTGFkTXBFTTQ1UEJLQmlWR2NwVXZhYnA0T2hFdVljVEM5cUhNS0xMaFdSTWNmMk1IdkllMzFXdUdkTFJYT21CZ1l2bEhEaDRrMVhzbk8zQ0dtSUJSVDB3WHhTRThLUlNMT2pmcTBLbEthakNrZlZQaktjQ2plNmtpYmpYUUlmZjk1TGtudlljVXpHVFhaZVJGVFlLcGtnSWVOU1NFVWRfYVQxdVpuakQ2eloxdUk4OENnSE4?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media (centrist)",
+          "n_items": 3,
+          "outlets": [
+            "BBC",
+            "Chatham House",
+            "ODI: Think change"
+          ],
+          "outlet_notes": [
+            "BBC: center (AI estimate)",
+            "Chatham House: center (AI estimate)",
+            "ODI: Think change: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Takes a longer-term, analytical view, looking at what the results suggest about populism and political change toward 2028 and the future of both parties. It calls the results 'historic' and gives live coverage rather than specific race details.",
+          "links": [
+            {
+              "outlet": "BBC",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12UGtQS1M3eEd3N1BXOGR4TDdmeVlabFdQOXFya3NiNlZRTkdteEdCM2JPbHlVYzJzMEhwc1dhOENCUE1TbnFiWExFQWtuX0VqRlZhVFNB?oc=5"
+            },
+            {
+              "outlet": "ODI: Think change",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazNnTHpMc2RlbVpwV1dTbENfVC1TOGdjcE9JaFZPTUJuNFgyLVlMTEE2TDJXeDVVWXJlTUtsSlI2ZTlNclpNR04zWUV0bUJWODJzQ0RwUjJ4X21JaWhXREplZlRVNHBmNnVycUZzMWlDekR0aElILWlTSnY4MjZ0X3pEczhWWG92ZkM3UU9GODBnNmxfYmtxMUxHNkd4Q0JrQjVsdEswekp6OERyNGVNWW9zcUVEY0RiRVhsMHNIaEU?oc=5"
+            },
+            {
+              "outlet": "Chatham House",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUEZpLWJnU1A5VVJZY3RRY0FIMHRNaVpXckp2cnZRTVoxdTlrNWRlUmIzeE9UTFVNZWh4NzdSMVc3Vk80U0szOEpNMlBBellmbnlsNUhOMUhGZzJ1N2Z0OWdZbVVTcWhwWlF5ZmRFNjlUX0F1OEI0OXVZdC1uZ05ENUVsSjFYNjduLWJ4S3FjaVc2YzEtcC1IRENLTFQtaV9JLWk1ZmZBYU1SMzdMNDZwVElB?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (right-leaning)",
+          "n_items": 3,
+          "outlets": [
+            "Forbes",
+            "Fox News",
+            "WSJ"
+          ],
+          "outlet_notes": [
+            "Forbes: center-right (AI estimate)",
+            "Fox News: right (AI estimate)",
+            "WSJ: center-right (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Focuses on Republican infighting and fallout rather than Democratic gains. It reports House Republicans erupting at Stephen Miller as Trump elevates him after the 'midterm massacre', and the 'manosphere' reaction, with Rogan saying Republicans got 'destroyed'. The WSJ also reports that Ken Paxton partied in Dubai with fugitives before the Texas Senate race.",
+          "links": [
+            {
+              "outlet": "Fox News",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdy03MThZT2Q5VW9VY2Fid2VucU1HMlJ1MkZRUVZ4RHdXSFhmc1RGZnhBTGRNcnVRUTF1TnQ2RzBZSjh6ZUtJd1QxS3Z4Y2wyRGdHTEloVEhOQVR5ckxhckM0Y2p1Yk1qQnpfcW1MSW5tcUNLeHcydmZRYXowbmVWNG5uRThpLXBFZl8tdlZVUlQ5cDNsdGNhSmZpQjJrWUZnTUYta1FkcEFpMXhyT29VOHRrQV9hTmV4SDY00gHAAUFVX3lxTE4yWk5OZ1NNMGE0TVBKd2Iwd2Q3ei1HM0c2VGM4WWFvdEFYcFVTVUZUS2ZWZkpXc3Fkb21PR2RtTG1palRtRks1eDVDOW5aTEExWDB0ZnhXY0JHV29jdW1SNmtIQUtWUTVMakhkQnV5aDdXM1FjTGp3MjNvZkdqOUpGbEVLM0l5clJlejNGSzU0YWNlMmJMM0o4Nm5rYU95Vmw0ODBSLW0yZnluRWVtMUJDOEdveXJGM3NJa3NmRzI2bg?oc=5"
+            },
+            {
+              "outlet": "Forbes",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOUk1QW9TZmRTN0NLVzdiTGNPSWwxY2ViNWo4aEkzaTQ0cW00ODRzOWVySkVSTmRseEJFMzBOZ0ZfUTFIVGVCc0hadGhyLUhSR0Nqa01KVml5X0ZyTnVhWEEtNUh6akpOMWZaZHpLWDJKMm4zOFdXTGNtbGpWNlhQRlU3ZHE0NS1RT2ZJWnpycGFiU2JDZW01cklMYWt0MXVpTFBtbXh5LTlmQXZ2RDlKbHN3X1JHSl80VWMxcllydjdHb1hxMnEwdWlIa0NIcnViSE9STE14bnVjZw?oc=5"
+            },
+            {
+              "outlet": "WSJ",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcnp4SzJLZDczcjFGUXVmemxyQS1abFdTbEh1T3NWY3pXVEdHcDdGUG1CRDMyQy1Tcm4xNzNSZTFpaEs4NEhyeUFwc21ubzNiUWdyLVpuUmhWTmFIYWhoLVVuMnM1LXFkamZXMGtXbjRZRW1qSkJ0RTZOTVRBbzdKSlhwcy1JQQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unclassified": 2
+    },
+    "framings": {
+      "topic": "2026 US midterm elections",
+      "has_distinct_framings": true,
+      "framings": [
+        {
+          "id": "f1",
+          "label": "Live results and vote tracking",
+          "description": "Posts present the midterms as a running tally of races, maps and charts, reporting who won or leads without much interpretation."
+        },
+        {
+          "id": "f2",
+          "label": "Democratic mandate and governing agenda",
+          "description": "Posts treat the Democratic win of Congress and state legislatures as a mandate and look at what the party will do with power, such as tariff reversal, Supreme Court reform, election law changes, AI limits and leadership choices."
+        },
+        {
+          "id": "f3",
+          "label": "Republican and Trump fallout",
+          "description": "Posts focus on the Republican defeat as a rebuke of Trump and a source of turmoil, covering aides doubting his focus, White House staff changes, 2028 worries and the Iran war."
+        },
+        {
+          "id": "f4",
+          "label": "Markets, business and economy",
+          "description": "Posts view the results through their financial effects, including falling stocks, AI-sector jitters, business implications and policy forecasts."
+        },
+        {
+          "id": "f5",
+          "label": "Voter blocs and long-term political shifts",
+          "description": "Posts interpret the results as evidence of wider trends, such as women voters, progressive versus moderate Democrats, populism, historical comparisons and the 2028 outlook."
+        }
+      ],
+      "created": "2026-11-06",
+      "history": [
+        {
+          "date": "2026-11-06",
+          "verdict": "unreliable",
+          "kappa": 0.4,
+          "n_items": 160,
+          "n_framed": 42
+        },
+        {
+          "date": "2026-11-06",
+          "verdict": "unreliable",
+          "kappa": 0.5,
+          "n_items": 160,
+          "n_framed": 47
+        }
+      ]
+    },
+    "divide": {
+      "verdict": "strong",
+      "kappa": 0.6,
+      "n_items": 160,
+      "n_framed": 62,
+      "framed_share": 0.39,
+      "counts": {
+        "f1": 18,
+        "f2": 5,
+        "f3": 22,
+        "f4": 11,
+        "f5": 6
+      },
+      "shares": {
+        "f1": 0.29,
+        "f2": 0.08,
+        "f3": 0.35,
+        "f4": 0.18,
+        "f5": 0.1
+      }
+    },
+    "rows": {
+      "outlets": [
+        {
+          "n": 3,
+          "label": "building (3/10 items needed)",
+          "confidence": "-",
+          "name": "CBS News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Democrats could dust off plans for Supreme Court reforms after capturing House and Senate",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uY1prTkZBMXJpMjlJWmN5OFYtQUNxVUlNQ2NUbXlkT2dySlNsYlVYNHd5THhOTkM0eGw5WG50TjJMenJmdzdfZWVxZnktVFZleU82WFhjaFQ5bW9xNndoeng3Y1ltcE9BVEJNelY3LTlGaDZjQU1UbUJGWGpCaGM?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Here are all the districts that changed control in the midterms.",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdURNLUYxNXFnZWE2ektfNDRBQ09WcUltaVIxNnNWLXo0bDgxOHFNb0FkdmFXTElESUFKRHFUa2lMX1AtZVFwVGNUa2pNdU1pQTMzXzF1dVhXM2hVdXdjdUF5dllnZ1FZbXl0M3FLNThDaWFaTmx4OXdhUXREUXFHbGVR?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "label": "building (3/10 items needed)",
+          "confidence": "-",
+          "name": "The Washington Post",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "This isn't the first midterms tsunami",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSmtvREtsQ3plcnhVRmFLOFQzdkhCM01ZYlRmY0lLVWpwYWN4QUVCY2ktUkpwNGJWQkZDRHgwX2djUHU4M012N2JhWGR0ZEs5OVFraTNlMUFJdWk5d3dfQXJmZ3lRR0wwWHdTcjVmaFduZXNyb0lBbGI4dWptbDE5aGV3NFVoSFV5bWpqQjYwMWQ5TUpoTWF3ZUtuQQ?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Corporate America courted Trump. Now a blitz of investigations",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ0JFeVRheGwtVnNLeDA4enEtWm5mQXRoNTdLT3hBZGpUTWxWX0pYcnpCSk1KNEtUWFZjeUNrcWc3bFJoaHYxcDcycG1uMHJkZUdpTXNMRDJmdlZaUUlnemZxSTM0bkJJQWlXeDIxNk9wdk9zWWk5dnNXWFN3TVpCMEFzX08wTmdLUXAyM1NFUGJGLVRTeUJCLXpnOHpRSEMwNmtlRkdyVVpiS0lRMGRudU1Xb1pnSHZycUsw?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Reuters",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "US midterm results in maps and charts",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9mYlFQMWJNR3dHZEQ1QVZ5TEo4QnRWOHYwTE9UMGh2X2x4TV8xTk1VbWNJSWZzdkdjclZFdjBNZmE5UFhhQnU4dGh0eXloOVhCeTBkekRwQUUyTzVZNV96Uml0ZXZDbHB1RHExMkphQUtLRnl3cWNMYmwyYVE?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "CNBC",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "National data center moratorium now",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG85QmJuZGVEWUIxSW4ybHJPVmN2RmR2VjBTdnkydmZSOGV6YllsWEUtbVpYclRTSWhQS09EZGxJSllyY0otS1QtQVdVY3BhY0ZqMWxfR25WeWo3Q3d5LUg5dVZrUGRneGh2LTRBQjY3SERxNTdLaXNkaU9VaHVPb0lKQW10WmvSAYwBQVVfeXFMTWdsc2pjdEpUS1NXdWRzcld3SFp2eVBhWkU2NWNOTXRsUS1WbTNRVlg3S0ZRalhiYnR5WTNKQUxiR1JXNkI3b3ItbnBsZkdoZE9lbWJkVFB1eTFwMFluVFNobUtfLU1sTUJPSlRVSU1IUnRhYXFPVzNEc0NRempsZGM3MTFTVFZSUGUzS0Y?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Anthropic IPO meets AI backlash after midterms show stinging rebuke",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkVFNKdFlSLTl6ZndHZTBvOFFta0JaelYzcldkc21kSVJiSHNOcDVBX19xTVY3clpiekZSWmpRbFdtaHdTbVo1d3lNNXJTa3FfQ2NiWHhJV3Vvb3hEekdfQnJDV2xQcU0wUFo4dnBiM050YnhVOVFfYXo4VW5PRWc?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Telegraph",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Vance ready to take Trump's crown after midterms humbling",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWmRGaU1id1VzeE9qYUNmWVprT3U1Y18tRTFzX3o4NG9NT2FGa1lhTEo0Z0ttOGtBSWp6YWF5MXF5SzlLNXNicFlGbzJzcnFxQlZpN3FvN1J5dmloSEVlSE55NGRIVVhuT3BWOVFYWnZHMUhUUUg2MDFfY3Y2dU94MnAwWEVZaTFXU1ExNWxJbzJtOVZSMzh2UjlDQy1MbjlfTEdiSVVSZi13R3Bw?oc=5"
+            },
+            {
+              "framing": "f3",
+              "quote": "Badenoch: Trump deserved midterms thrashing",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORjJYRjkycVpYcjVTTGJvZm0wWVdibzNLSDYySzR3WnhyUmFvazhmbUdneDJnRUpoc2RPUWRpWjMxX05MZk94cWJySkxOcE9uNzI0OUloRUJkeVRPVFpjN3RuUmJSdVZtUUhodVZwYWg3Zk9HMjEzcEptekhUNU4xNlptYmxvSGdCc3BHUHdPUndrZ19XSWRORjE5SzZVLXRHUV90enpXQQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Financial Times",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Live US midterm elections results tracker 2026",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRG5qZnpaSFIxMGs4a3pKbXFtZzRxSW9VYWNxd0FkdXZNN2E0R0ZsODZfZ2JxRHhaM2RhU3hHaUJFSnFoa2pGMGtjY0tIczc3Tk14Umx1MjB5MVNxVjR4dXprTlJ1SmRBQ25hcS1vUWduWWxZNXk3Nm1BMVBDSHZHcVEzdEE?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Global stocks tumble as Democratic midterm sweep sparks AI rout",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLVNDVHZudzhtNGJENWl0NE9tQ3l4aVZRUUFabU1wMDJOMW96TER4cVJPc0F0NFh6RWJaVXlwTlhiLVRtSUNxUWhiNzlxT3d4MnBfdE52dmoyUFllZzlCcFRhdHBrMkFtVGVqWFpZTU9ub2dpbjFCdHgwYlZ3SFB1T1RUV20?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "NBC News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "U.S. Senate Election 2026 Live Results: Democrats Win Majority",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HT01FMldrNmE3Z1pmR3lRYmxaMVhxNDN1MF9maXpIV1hiU2xLWnpuWURkeEFhXzVEMmdjR3dreFgyeWZxZDYxTVVxSWh4cUFGMkc4N3Bja2RzQm1KS2x3clhsR0I2WVR4WXVOTUNtRQ?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "U.S. House Elections 2026 Live Results: Democrats Win Control",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zb3FDMGdwaC1OZmxSWVh1cThkeDRQcVlLaFh2NUg1WlJuX19CMV82aHJrajJvM3RrZGpmeHMyWjRzcXptN1V2NWVSb2F0OVZUc19tSXNjb1EyaUgxcmtOeFJhdlJZU3Bob0JWb2xn?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "MS NOW",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Trump aides question his focus after Republicans' midterm losses",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kZGs1MzF6cE00OHJGQkNRVGNvcEhkOHVJZ1h3b2ZBdWF1TmdabVRFcjVDXzZmbWhKU1RpNkxRSDlXc24zVDVxM1BxX2oxd1BJSURhRFJGZkNUSHJTbDMwSkdfdFJDWHdQMUw4Ty1Qaw?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Democrat Scott Colom's lead widens in Mississippi Senate race that remains too close to call",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUmxYSkRaNWM3d1ZRN0I4Vm0wQnByVkl6QzVXT0JkWXVmNE1uYnh6M0dFOUwwM0tDWDNfU2VOZnk5Z2J2aEhHemd2SEl4cndKZEViNUIybm82NE5QcjM1akZIcE5fbGV4am5yLU40QktXRWdKTE1KZnBrVi10WEpSanJ5WjI5eHNiNndvenNQcWpvZXlqZnV1WnZRN0hTbVZiZmc2b3J5MUpXQk1TemF3RWhVTXBzQ1FtN0lFQWZFaWoycGlRREE4MDlqdFIxMDFmSXNEaVR3?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Conversation",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "women voters helped drive the ‘blue wave’",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYUUxc1hWaEdnNzBZU1hYaWtONjc2NWw1V2gwemlzN1lUdEozN1NiLTdDMHVNQVM3LW9RY01yZEpSTC1pSDl3M2xFblppY1VxZ0JXTkpESDNNbFF5bGR0QzJOaExoTkdWWUpCQ3ZnMkwzNHdLMUs5NEZOdERCZU55MzN5ajQwUVpzTjAtWnpRSQ?oc=5"
+            },
+            {
+              "framing": "f5",
+              "quote": "Young people turned out in near-record numbers",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWkpkajlGSDBFd3k2TGtMSUhqR21HUG5oTzZHVE1jbVFMZVhELU1fZi1VNS1lRFZzekZEazA4eFBoWW9YdmtTTTZKcDhwX1B4RXdZRndfZTlMYjVnYWVKRVlyaWkxNnhfcjNGRGo4RUowRUdYYmVxMVFVMjZERjJmUXl0ZnZ1cjFieHRwS0xHSWQ5UlNhWWJ6TWw5eW9jWXJtcDR2MUgzODB5azBlemdnZEJ0cGN5T2lzS1d3bWF1c0EtMFRsY29jaGpJRHFsclRRRzFiWExR?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "WSJ",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRVhNeS1XX0xDd1ZkN3JZMkdWcUJkaFhONTBWSmprcWxkRVpqbU02QUQxWnRVRXdlTHBzaVJNMENWaE5HaFcyU2pCVDl3SkpXV3Y4UTlEMzM4STJFc3FGVVByUW1xUHh1QWlqOWx2bHBKQTZxb09zSDQtMklkRFpsRENDbWRiNzg3dzlwMnVqbVpLQkhRVWwwT0F6UUxFODdybWFqekNqUVhrcEZKNzZz?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "France 24",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "European stocks plunge after US midterm election results shock markets",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzBFYkRISnp6Q01vdDZFckppcEduSWlrdTIwRHVxa2NJT0ViQ2ItZl9TUEVmcE1yRzFQNTRkeWVDQm0yaExGdUR1Q2NVUTR1a3FYYmlwSWw5YWw0Rl9Vcmd0VE44LXZPdHR0aVdPY3dINmZVUHB5SzRoSkJJVWd5OVBBNGl5elAyMlVRMUVwUnhoZlF5bFlWV1RSVmhoOWxmN29hM1o0bDB1ZHBEMXd1M2QzWmdDRlpPRU1aRUh3?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Le Monde.fr",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Times of India",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Trump's fawning tech bros under scrutiny after midterm rout for president",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcUtjbkRLOUExdVo3emJ5LW9telZhMzJfQV9aaVJhdkhFTXdDcm04MUh0cmtDN3N4elozcjZxNlJEa0tDZy1RRjZQVHFvXzdkZFRjZzJwWHk4ekl6WDRiMUVobmFxbmlJLWhRZW1qQmhobE1jS2xQR00yc0lueDBKSGtRczV0aDBnbUFvM1Rrc004MnU5RjllaGVteTZxVV9FNk5LYmo0V1R6QVFpX2VYYmdPTlhZMEtOdUJLTlFtdVJLVTJyRi1BX1FwM0xrWXBNVlM3RlgyS3RCVnfSAeABQVVfeXFMUGI2YUlPVFRPZ0M1b0lLUngySXk1RExNamcyWkp6NEI5RkhwNVRvalZDOWp3NkVBSmw5MWZHVmVQQld1NnI0ODVRcE5WNVdyZE1FbDlqZElLWEtIZGVKRlFQdjRIMUdRZUNKSFQ3dVljMno5eU40eEJHMmthMTkwRFVVTV9yaF9NWkJZN1FfLXg3dEVsbERLVmc5aTEtNXVUNmh2RkFwOXFadTNJbE5rMlJqNTFWR1dtVFN3bVRkWThhSTVVNFRSWEtfaHU5cS00NkxGUGdjRllCYl90eFlJdE4?oc=5"
+            },
+            {
+              "framing": "f3",
+              "quote": "Nikki Haley's analysis of GOP's midterm loss",
+              "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOMGlBbUt4LUw0ZjI4TjhTam0tN3BFVGZ2dmZacGdNUF9RTm9KOVp5QVBZMHQzcllkOF9xODdvMG1SU0FCNEdRdGhxODZEMFlTRE80WWV2MjQyNEFzZEZ5S2p2WVNhU2U2T2JYbldfMkl0RFA5andUUllnOHZQNkhocVU2RmFwdVFMMFI0eEQwazI0Yl8tekxlaXpXVk5zdllsV0Q4RkdVaU5Sc2ZNWnpKeXRUeUZZWXdHR1U0RHpVNHlCc1g1MFZkYS0yYVVBN3dMaHhEdTcySW44RUVDd3pjUU13QmRDcWVBbkRuOGp5ZlM2blJOTHpyblp3WUYtYVZCTUlTTmZkOWM2RjhwUmY0MW1KQWlCaXpaV0ZENHFfRUlWU3VOdlhBV00yeHZoNkHSAbQCQVVfeXFMT01QQWtBQ3pHLUhQWmxQWWhMc3NMM2FyZXhjazRhTFdWdGVBZU5wS1B6R1hnWldqWENhT0NQZk92VjloUlNTMWN6YWtDOTgyYzFmenFhdHB3a0pjbEFHRzIyZ0E0dnZrTnc1ZHpmXzQyd2puMl9VVTZtMXNyTTV3UkNSTGFkTXBFTTQ1UEJLQmlWR2NwVXZhYnA0T2hFdVljVEM5cUhNS0xMaFdSTWNmMk1IdkllMzFXdUdkTFJYT21CZ1l2bEhEaDRrMVhzbk8zQ0dtSUJSVDB3WHhTRThLUlNMT2pmcTBLbEthakNrZlZQaktjQ2plNmtpYmpYUUlmZjk1TGtudlljVXpHVFhaZVJGVFlLcGtnSWVOU1NFVWRfYVQxdVpuakQ2eloxdUk4OENnSE4?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Al Jazeera",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Can America ever return to pre-Trump politics?",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOY2ctUXMweVM1R3IyNnJZVTdXdGc5aW54VmxxS3pjWWtaelh0ckNNQl8xeHBfd1BiYVp1eU1qb2VodFhoMVFCZGR5eUlkWmY0NWR2RTc0MnRsdlQwcXlKS09ieENiWlFfWU1MX2M3Z1ZPUUNaSmpucDJCaHBoOXBOVjhSbnZkTU05NW1JZkVVSU9LdlZQ0gGaAUFVX3lxTE5FbktHVlJSU3daeERXTXJId3FieUpDRjc0b2U4bDRmR0RvRE9fb3BwS1ItWU9weGFGSW5TclBrMlNxUUZqMzQ4VjlNOHMwOFdMQ2dGa3FUOU5jR0dIVjFEMURMc1JmMkhIZVVNRmdpUFBxWWcwcXJmX1NZSncyQnZwVWZ4azA2XzFJV0REcUR6VGlNSmxOcHZjVXc?oc=5"
+            },
+            {
+              "framing": "f3",
+              "quote": "How the Iran war helped Democrats win the midterms",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLTlvSktaejJVWTBCa1lwSnV3MDFUMVZUR2JpTXBhMTlpWk9tSFRHeUwyMkpSelpvWDJmSW95VVFMMjRUQkdpcmtzZEVuVGRUanJVWE9uZkh3cWdpajhUOXhQdlFhNVZnMDdlbGUzMllaTVNCU2RhQjlzZHdTdmVKTi1qY1FBNUNmWWEteE5HRUVxNVdGdWFSX0RHWdIBoAFBVV95cUxPcnE4UndNZk5zb1BrTVJwUXVhOEFmR2JjemI0ckw0ZVhvb0hmTlpMMU1JU1RSMnpjdG0xXy1uTEN4M0wzcDEzbTBUVElBd1pBWEZfcnF6M2VCdFhYM0YtUEdSdXRrTHdlY0N3emhFREIxR2t5SDVnWEIzbzhWWnZLV3FIa1hSQXE1d1dWcWJET0MxdEdBaG9SUk5qY25NMDN3?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "ABC7 Bay Area",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Mississippi 2026 live midterm results: Surprisingly tight Senate race",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbWZIakxDYkNETUZwa3IzMHFQaXViSUpOVHdrbWhrZDZFaWgydmc1dUpQWWoyTkY5eGowV1VtMlJhM0FUa2xJcU93OEZ2a0NtNjJWOGF4ZHUwRXRHN1BhYk4zVldEeVR3bUxhWlZZSDZSQzVLcGxvejJCWXlSRkF1QWFCb1hLVHBGSmg1eElDQlNkVjJ0a2FMekwtSWJPRzdncFZ0MERQdHRDQkdFYXJHa2h5MG5BcWVlQTAyd0hpOFkySGU2eG1j?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Mississippi 2026 live midterm results: Surprisingly tight Senate race separated by dozens of votes",
+              "url": "https://news.google.com/rss/articles/CBMinwtBVV95cUxOTkh3ZXgtdkFlUXpwUzdvdjB5VmIxejZwcFRMUm9Jdm54Zl9OLWxuQWloZzFOeUM0S3ZydmFHRFZlbl9fRnhmaGZSRWtuR3IxYTlJa0VwbTBBTmdyaUI2bzU4TVBDMjBlblpQRENCb2szbzRRb2JLZ2JTRmRUU2dKbXgzbE9PVG40SkYyUk5UZ0J3UkpMczVmZ1pNYWNETGE0RHNfVF9aaFlPdVhxUFF5dVE3SnBGTE1fNVdqWGo5bV9DX1dLSXRsLUFrTHlaamZRZjVXTms4d0haMHFkM2JmWERHMk9oSW45U1lZS0xEcHBrT1lnNDBma3A1WHpvSlVSY1VaWlphQWNYZmNzem9mMDlaYUNTc2JvMWNob1BFd0NMQnNLNlVtQURKUEN3RWVpYWUyQUowa1JqNUlVdkhUVDlwU0dySlE2cGVVMHJWVlItTV9TR3VkQjAxYlo5UC1TcFV0LTRuWjNNOE5GRF9CalRBbVJ1UGExcVVPSXhNQ2pjVmdPWmx0b0NaSGMwWVVkeUtVMG1HbHo5ZnByVVBBZW55MXlrd2c4dldUckVUTndjZHpQenYyUWFXTjhPV0hfU1ozYkFFS2V1OTBBOXBNaU96b0d6cXJJcS1HUHZFd05mSHFUMzZzeDJBWDV2cGY4NzBERUFsVjJJTjhZWXJKaVJHMU5lVDJWVEltS2tidTJFVE5lU2IwV29mT3BnbjMzUGlqN1FBS1VXTlU3OVYwVXMzS1pBMHhiOXNleXo2Q2tEdTEtT2JhUmNCZXNJajdNTTVpTXJHTFM3bVJnZC1KQnpBZWZreDF6QTYtRzJUdTdLNzVKVk5odVYxVnFzc3Z5NzJFRjdJbXRMY2VGRnc4UjVwYll2alpvV0VtZHF2LWVncmhKNDRDLVR4RXZjVkR0TG5iZDB4ZTVQYmwyWWVVZTc2cEVLLVdjNjFtN2NHUUpackFib0kzTkZlemVqREZoQ3hpaktKcE5NUDFvWXlKQm1zZmJyekVvbFR3R2lpOVUwUG9fbFZyM0hfWU82RVAzNXN5d3dCWVZneXVERzh3ZnprMmxmQkpHdzJnM05LRzJTajRLNXRwNDN6dkE4bXU5QWtOYldEYnlHbUEzRmVPS0pYQnFhdWV0LVdUeUlKVHVFcjQ4UnVQcmM0bkFwdGdfbzJRRW9IS3cyUV9pWVg2ZjBMVlpNdDI5V2VmYWRMY3lvYTZWX1RNYVBIMEtTQ0Nua1ZvX3ZHOTExOHFBaDBUSXZpWU9CbHJsTmc3TnBucFBhdlhJeEpfdF8xS3Y5ak5zX2F1dDN5TTltT0lpNlViUExXaWdtVWJ6VTdmcWtRRjVTX2FTa1pMUm1UVjRjMGNEUW1UZGotc2pLZURydHhYdHdtb1NSOHRPSEplOW83Qy1UVjhpZmdnU3NBTjVnNEZBU1V0dGxDMGx4N1MxQ2JyTThla1VYWVhKOW9DMS1tbkxlWHJMbFd4X2tpejBNc2xuRTBOSnl2RTJpd2ZMNmtaeUYxM2V3SDlydTAzT3NyQ0Vxc2djRlFiZTItSkdkM2pFWmMyNVJ1QWNVVjdGZF9FNWl3WUdOaUJWWHdFRWNuRFRMcDlleTdUZnNkWnVoSXdveTZkUnR5MURrSVh5b3pvUzFzMVhLcUlLZGJNOUtDTEd6ZWN2SVhLMWpYaUZCeGI4M1M5NEFOc1o0TGpWcTJHZk5PQ1AycFoyV1U3UU81WEhTSHlWMUNyTXRVaEpJSXkxbGpvRVRQd3E3ZkJMM2dpTGF2ZnBEdFNlalk5X3J2OUppQU5tV3lRbENSVURiSWNobGZ2b1ZNQUJLM1kxR2ZWNXI5cTF6MWMxbi1aclU3R0VCZjZDYTFKbUh2ekhwZXVnRVBBc3gwNUNWc2wtNVFMQVMtSHM0a3ZGV1JsNEoxUQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "n": 11,
+          "label": "building (11/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:killbait",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Trump's own handpicked ally turns on him after midterm wipeout",
+              "url": "https://mastodon.social/@killbait/117572561473316679"
+            },
+            {
+              "framing": "f3",
+              "quote": "Midterms Reflect Democracy's Resilience Amid Trump's Shadow",
+              "url": "https://mastodon.social/@killbait/117576238479345895"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "label": "building (9/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:thejapantimes",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "The Democratic sweep has devastated U.S. stocks",
+              "url": "https://mastodon.social/@thejapantimes/117568839394390981"
+            },
+            {
+              "framing": "f2",
+              "quote": "opens doors to new aid for Ukraine",
+              "url": "https://mastodon.social/@thejapantimes/117569366495934205"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "label": "building (5/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:DrALJONES",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Incoming senators want Schumer & Jeffries replaced",
+              "url": "https://mastodon.social/@DrALJONES/117571916909502629"
+            },
+            {
+              "framing": "f2",
+              "quote": "I want new leadership",
+              "url": "https://mastodon.social/@DrALJONES/117575834207074986"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "label": "building (3/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:fllics",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "won Michigan's open US Senate seat, according to media projections",
+              "url": "https://mastodon.social/@fllics/117557588506194165"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:MusiqueNow@masto.ai",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Dems won, now Dems need to get to work for people",
+              "url": "https://masto.ai/@MusiqueNow/117570604132224873"
+            },
+            {
+              "framing": "f5",
+              "quote": "Huge Upset WIN for DSA in Florida",
+              "url": "https://masto.ai/@MusiqueNow/117124378228479739"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:guardianfeeds@rssfeed.media",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Democratics plan comeback for when new Congress is sworn in",
+              "url": "https://rssfeed.media/@guardianfeeds/117570761052643574"
+            },
+            {
+              "framing": "f5",
+              "quote": "Democrats won big in Ohio on working-class issues",
+              "url": "https://rssfeed.media/@guardianfeeds/117570760182252024"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:theguardian_us_news@halo.nu",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "Could the AI bubble burst after Democrats' midterms sweep",
+              "url": "https://halo.nu/@theguardian_us_news/117570641935807359"
+            },
+            {
+              "framing": "f2",
+              "quote": "Several Democrats renew calls for datacenter pauses after blue wave",
+              "url": "https://halo.nu/@theguardian_us_news/117571602463007843"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:ProgressivePower@newsie.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "I am the only statewide elected Republican who remains in Texas.",
+              "url": "https://newsie.social/@ProgressivePower/117571787769610029"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:SteveThompson",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f5",
+              "quote": "Why Young Men Punished Trump",
+              "url": "https://mastodon.social/@SteveThompson/117572859252363034"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:killbait@mastodon.world",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:peri@ciberlandia.pt",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:alternet@www.urbanmind.net",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Republicans are beginning to look for a way to move their party beyond",
+              "url": "https://www.urbanmind.net/display/f7dd981d-b81709c5-9e101906160b9970"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:newyorker.com@web.brid.gy",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "where they go from here",
+              "url": "https://fed.brid.gy/r/https://www.newyorker.com/culture/the-new-yorker-interview/pete-buttigieg-on-the-democrats-sweep-of-congress-and-where-they-go-from-here"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:SocraticEthics@mastodon.online",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:MaryAustinBooks@mstdn.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "We cannot afford to have \"leadership\" owned by the tech fascists",
+              "url": "https://mstdn.social/@MaryAustinBooks/117572070297298377"
+            }
+          ]
+        }
+      ]
+    },
+    "narrative": "Discussion of the 2026 US midterms splits into five framings, with 62 of 160 items (39%) framed; the rest carry none of them. The divide is rated strong (kappa 0.6).\n\nThe largest framing is Republican and Trump fallout (35%): the defeat as a rebuke, aides questioning his focus, 2028 worries and the Iran war. Live results and vote tracking follows (29%), then markets and business (18%), voter blocs and long-term shifts (10%), and Democratic mandate and governing agenda (8%).\n\nOutlet patterns come only from sampled headlines. CBS News, NBC News, Reuters, the Financial Times and ABC7 Bay Area each had results-tracking headlines. The Telegraph, MS NOW and The Times of India appeared mainly under Trump fallout. The Washington Post, CNBC and the Financial Times also had market or business items. WSJ had a governing-agenda item, and The Conversation had voter-bloc items. Al Jazeera appeared under both voter-bloc and Trump-fallout headlines. Among Mastodon accounts, killbait leaned toward fallout, thejapantimes toward markets, and DrALJONES toward governing agenda.\n\nLimits: no outlet has reached the 10-item threshold and no account the 15-item threshold, so all labels are provisional. Judgments rest on headlines and snippets, and sample sizes are small.",
+    "rank": 1
+  },
+  {
+    "topic": "Krakow shooting",
+    "slug": "krakow-shooting",
+    "summary": "Multiple outlets report a shooting in Krakow, Poland, with police and media citing five to six people killed and around ten or more wounded.",
+    "platforms": [
+      "bluesky",
+      "news"
+    ],
+    "n_signals": 8,
+    "signals": [
+      {
+        "platform": "bluesky",
+        "name": "Shooting reported in Krakow"
+      },
+      {
+        "platform": "news",
+        "name": "Five killed and at least 10 injured in Krakow shooting [Al Jazeera]"
+      },
+      {
+        "platform": "news",
+        "name": "At least five people killed in shooting in Poland’s Krakow [Al Jazeera]"
+      },
+      {
+        "platform": "news",
+        "name": "Gunman opens fire from moving car in European tourist hotspot, leaving 6 dead and at least 11 wounded [Fox News]"
+      },
+      {
+        "platform": "news",
+        "name": "At least 6 killed in shooting in Polish city of Krakow, police say [DW]"
+      },
+      {
+        "platform": "news",
+        "name": "🔴 At least five people killed in shooting in Krakow, Polish police say ⤵️ [France 24]"
+      },
+      {
+        "platform": "news",
+        "name": "At least six people killed in shooting in Polish city of Krakow, police say [France 24]"
+      },
+      {
+        "platform": "news",
+        "name": "At least six dead as gunman opens fire in Polish city (GRAPHIC VIDEOS) [RT]"
+      }
+    ],
+    "n_items": 160,
+    "narratives": {
+      "common": "A gunman opened fire in Krakow's Main Market Square in Poland, and police said five people were killed and about a dozen or more were injured. The suspect was shot by police. Early reports differed on the toll, with some outlets citing two dead and others six.",
+      "common_links": [
+        {
+          "outlet": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZldLSDJIZzlCNHZ3Wkk0OUdudGMyU29relpRQThWdGVUSm5jYVhSVVpoeUhCdnMtaUlEUlpwMFVUVGdYR1NMb2Q2UzFjeDNVaWszY1dOUUxBakJoZG9VbEMwc0dudmRoRmF0QjVBYnIyUUJxRFd3OWNpRjByTDE5X3I2RUFPbFRZYWRKX1IwUWp4eDc5TUtxazl3TTlxNmktRThidUxFWWo?oc=5"
+        },
+        {
+          "outlet": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PNkk3MlNFeWxjUEJMbklqOHFhNk8xcS1xcEp1M0J1TG9KUzVuSDhrcDNQemw4aV8xNTN5QURNaklWQ3lOaHZXM1pXem5SM3RlRXJ5blEwYU9YTnhBdmFVV1BwSEQydGpQTEJr?oc=5"
+        },
+        {
+          "outlet": "U.S. News & World Report",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONGRxZ0E0SEVDZE9QaTVMdUFZZ1BkZ0ZBXzNQanRReVZtOXd2QUk2NEpLWm9rcEVmeDQwdHFmaUo0QkhzazJIU2kxWkdsQ21BMmJiRHE2dUZiTlNMMjNGR0J5WlNDbmFUM1k0UHBla09wNi1BOFBMTG4xdVZEYTB3enlLZVZWOVRCalZ4ZThCbnJ3aUpKSmtwRkhzSEdjV2ZCaTNKRWtFNTcwYnhNZnNFTnRoWXRLdWtsTnFpYWNXVXBVR20tRktEUGxma29uUVdo?oc=5"
+        },
+        {
+          "outlet": "ITVX",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObWV0b0V6d2RqcG1EN1dmekdENG0yU24xdXN6N3JMeFBHSjhrbVJzS1BqTGx5WFBiYXdwdkhoWnRYZUE2TUtxU3NIc2h3ZmpnZlA5REdIMHpEOV81eDN1TzdteVZNeG8zLUZrVFNuSmFkVXdNZS1pbHNSbUdpVmt1U0tlWUc5V1lQX1dWMnQ3VTd0cFlFTVFMc3RyQm1CeGttTHlnc1Y5d3JkS0F6a3BqaGRBMTk?oc=5"
+        }
+      ],
+      "groups": [
+        {
+          "group": "Mastodon posts",
+          "n_items": 74,
+          "outlets": [
+            "3iatlas",
+            "Auja@ravenation.club",
+            "ItalianNews@mastodon.ozioso.online",
+            "LThinkTank",
+            "LukaszzChojecki",
+            "Mathrubhumi_English",
+            "Miro_Collas@masto.ai",
+            "SidewalksTVShow"
+          ],
+          "outlet_notes": [],
+          "languages": [
+            "French",
+            "German",
+            "Polish",
+            "Swedish"
+          ],
+          "distinct": "Posts are mostly Polish-language reactions rather than reporting. One praises two patrol officers who pursued and 'eliminated' the attacker and says the footage is hard to watch. Others criticise the president's wording ('citizens' not 'people') and accuse TV Republika and other PiS-aligned media of politicising the tragedy. An Italian post quotes Tusk calling it a 'tragic shooting' without giving a motive. Many items are unrelated 'shooting' hashtag spam.",
+          "links": [
+            {
+              "outlet": "filiplachert",
+              "url": "https://mastodon.social/@filiplachert/117575952562613290"
+            },
+            {
+              "outlet": "ItalianNews@mastodon.ozioso.online",
+              "url": "https://mastodon.ozioso.online/@ItalianNews/117575912294628340"
+            },
+            {
+              "outlet": "LukaszzChojecki",
+              "url": "https://mastodon.social/@LukaszzChojecki/117576055234627077"
+            }
+          ]
+        },
+        {
+          "group": "US media (centrist)",
+          "n_items": 16,
+          "outlets": [
+            "6abc Philadelphia",
+            "ABC7 Los Angeles",
+            "Bloomberg.com",
+            "CBS News",
+            "CNBC",
+            "Denver7",
+            "FOX4KC.com",
+            "KCTV"
+          ],
+          "outlet_notes": [
+            "6abc Philadelphia: center (AI estimate)",
+            "ABC7 Los Angeles: center (AI estimate)",
+            "Bloomberg.com: center (AI estimate)",
+            "CBS News: center (AI estimate)",
+            "CNBC: center (AI estimate)",
+            "Denver7: center (AI estimate)",
+            "FOX4KC.com: center (AI estimate)",
+            "KCTV: center (AI estimate)",
+            "KMOV: center (AI estimate)",
+            "NBC 6 South Florida: center (AI estimate)",
+            "Politico: center (AI estimate)",
+            "U.S. News & World Report: center (AI estimate)",
+            "USA Today: center (AI estimate)",
+            "WKMG: center (AI estimate)",
+            "WSBT: center (AI estimate)",
+            "WYFF: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Headlines stress the market-square setting and give the highest tolls, with CBS saying at least 6 dead and 15 injured. Several items are unrelated US shooting stories.",
+          "links": [
+            {
+              "outlet": "U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONGRxZ0E0SEVDZE9QaTVMdUFZZ1BkZ0ZBXzNQanRReVZtOXd2QUk2NEpLWm9rcEVmeDQwdHFmaUo0QkhzazJIU2kxWkdsQ21BMmJiRHE2dUZiTlNMMjNGR0J5WlNDbmFUM1k0UHBla09wNi1BOFBMTG4xdVZEYTB3enlLZVZWOVRCalZ4ZThCbnJ3aUpKSmtwRkhzSEdjV2ZCaTNKRWtFNTcwYnhNZnNFTnRoWXRLdWtsTnFpYWNXVXBVR20tRktEUGxma29uUVdo?oc=5"
+            },
+            {
+              "outlet": "CBS News",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1hNmVNc21wVVZlVi1OM3l4VTV0bGo5SjNyVTNOck4yUmgySzgwRlEydmRONG43YzlPaUY0Y0VpZUF6TkFoZ01kenNhWVBlZnlXenFfOUdNSzlrUE9BMzg5TzZndTJaRFk2akxIeHJOVUpkR2E4ZndwYVE5NA?oc=5"
+            },
+            {
+              "outlet": "CNBC",
+              "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PNkk3MlNFeWxjUEJMbklqOHFhNk8xcS1xcEp1M0J1TG9KUzVuSDhrcDNQemw4aV8xNTN5QURNaklWQ3lOaHZXM1pXem5SM3RlRXJ5blEwYU9YTnhBdmFVV1BwSEQydGpQTEJr?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media",
+          "n_items": 9,
+          "outlets": [
+            "ABC7 Bay Area",
+            "ESPN",
+            "Eleven Warriors",
+            "Facebook",
+            "KRCG",
+            "TMZ",
+            "U.S. Embassy In Poland (.gov)",
+            "WESH"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "The U.S. Embassy issued a 'Security Alert' for the Main Market Square. TMZ adds that the gunman 'drove onto' the square, and a Facebook post says he was shot by police. Several items are unrelated shootings.",
+          "links": [
+            {
+              "outlet": "U.S. Embassy In Poland (.gov)",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVmwzRjZNTlp5MUxTZ3c1UHJtanpWTGtRakNzZGdJN0l0WnB2MnNDakVMejlzRUxlSklCWDdxeU5jdlVKZU5yNjd1THVtTFB2S3BoaUpNOEk3VDVEMUFIUWFUTzdfMXJOR0ktc012RFNuTkZveGVsdGxLOGI4bXo2WHBHUzA?oc=5"
+            },
+            {
+              "outlet": "TMZ",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VUl9WR1ZIUGJ5cFJyRDFvZ2h6cTFXTDVUUTEzd0pEc3k3UDNyOGJvc0RvMVFWNVR4S1lZUW1INGZDaVpOd1ZSeGd1aUljSFBscUdKRzE2cmhfRFV2MG1ENUdsWlU5SS12bEI2U3hZcTRGb193?oc=5"
+            },
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQXc1azY4X2pkZUNJVFlvdWlQSnVlVTVXRXNuY1h2Wi00VFJ5VXNXTlduNHRTbUR1RGVTSTlNcTJubW9wY25tTmc3SDM0XzNwOGw0ekdhWDc0QklBdkpjelhDM21nVVZyX2lnTzVVSlBDU1hmV1RRb2lGdXdZNWtXdUMyRE5aZUk4b2d3OGl0OGVKRk4zQ0xOTkg1RWhOMjFPMDJYeWY5U28za0Mzb3pLTlhnSzNnTVBUcTNUNzdLV1BjNkNjdDFDVEh3NE92R1AyNHM4?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media",
+          "n_items": 8,
+          "outlets": [
+            "ASHARQ AL-AWSAT English",
+            "Greater Manchester Police",
+            "Hampshire Chronicle",
+            "ITVX",
+            "North Norfolk News",
+            "Sky News",
+            "The Irish News",
+            "West Midlands Police"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Sky News focuses on footage showing a police officer shooting the suspect. Hampshire Chronicle gives six dead and at least 15 injured, while the others say five dead and more than a dozen injured. Some items are unrelated UK crime stories.",
+          "links": [
+            {
+              "outlet": "Sky News",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZG9BSlhoLXRnZUdFajVzT2s0Rnl3UDFxNndoSUtmS19ybFhzOGhZU3BDemdWd3h0ekFaUVZRdTFzcERMT3VZb21hTTRDNU91RTd5ZlFobGRBa0t4WUlEelgyMDM0YXNpQjhESEhZOGUwbzV6V0lBdVhRSGw4a1ljNFNzTm11endHSjV5VUNFS3MyR3dSX1E?oc=5"
+            },
+            {
+              "outlet": "Hampshire Chronicle",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSVZ4SExDR0pxUzFqYXZUdWM2dDdTSnhhUC04RWsyeWM1YmczT0djQnpHSVN5Nk5faXBGVXA1Tm14YXJZZ3dpV1hKU2YzQ0xlMWE2NUJzNGdkM3FMLTFNbHFQVDEtUGpONUpnUGt0SnBRbVdfbW9fNzVJZmIzd3BTcEoyeW1YQUo1YnktWVpMVTN1NmlFSC1KRW5ad3A2dXBxTjJv?oc=5"
+            },
+            {
+              "outlet": "ITVX",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObWV0b0V6d2RqcG1EN1dmekdENG0yU24xdXN6N3JMeFBHSjhrbVJzS1BqTGx5WFBiYXdwdkhoWnRYZUE2TUtxU3NIc2h3ZmpnZlA5REdIMHpEOV81eDN1TzdteVZNeG8zLUZrVFNuSmFkVXdNZS1pbHNSbUdpVmt1U0tlWUc5V1lQX1dWMnQ3VTd0cFlFTVFMc3RyQm1CeGttTHlnc1Y5d3JkS0F6a3BqaGRBMTk?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (left-leaning)",
+          "n_items": 7,
+          "outlets": [
+            "ABC News - Breaking News, Latest News and Videos",
+            "CNN",
+            "Kansas City Star",
+            "NBC News",
+            "NPR",
+            "The New York Times",
+            "The Washington Post"
+          ],
+          "outlet_notes": [
+            "ABC News - Breaking News, Latest News and Videos: center-left (AI estimate)",
+            "CNN: center-left (AI estimate)",
+            "Kansas City Star: center-left (AI estimate)",
+            "NBC News: center-left (AI estimate)",
+            "NPR: center-left (AI estimate)",
+            "The New York Times: center-left (AI estimate)",
+            "The Washington Post: center-left (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Reports attribute the figures to Polish police, with 'at least 5' dead and 'multiple' or 'several' injured, and use 'market square' wording. NPR and Kansas City Star items are unrelated.",
+          "links": [
+            {
+              "outlet": "The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObkx0c1ppY3BJRjhPbmhyaUdzdVU3RE94RDFvQkprdkJWbGJ0YVRIM3pkc1pwaEFvVGJyaHNwdDlOcWtKc3JwOHFRLXRMN2RHdWN4eXpEQ1YxSWs5YW83M29Vd3hhcDVuUDdXM0JrRWpGWTg0S0NOeFFNYmRaaFU2OA?oc=5"
+            },
+            {
+              "outlet": "CNN",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wMkFOc2xCQlhUQlhTNEVodjYya2h3ek12WUs2cVEwaEVZM1UyOVNqTk1uMTB1cDJBQlBNeWZRZU5qaENXWGtlNGplOUdkRUVUSU5xZkFsOFBFQ0NlZnpaUU0yQzFVMUhxbGxsVTNGTW9RcEJkSE1lM0JVaGQ?oc=5"
+            },
+            {
+              "outlet": "ABC News - Breaking News, Latest News and Videos",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNTRKanQ2WnJGUDc4cWc3bjM5TU9CX1AybDFYNHVQMUhIV1dOamIxZ3pwc3k0aWt6MW5LWll6dmJRWUdNalFob19CWkJhLUpOejhyQnQxWmZfaFpubGVJOWh5RnlXLTVDbmVqOXhRZmNKcGVza096OWs3MmpabTRfMWdQN2RIcTM4eU4wMnVJMVRQVkl5SVZzODg2cXc5YkY40gGmAUFVX3lxTE5SckpHX3FqLVpRSFBUeU56SFFGbm00aG1pbXltRExOaHhyWHo4Y3BScHJsQ0ZsMU9WLW5PQmdmVElva1dvRnJmblY4bFZmbUIycVBNWFFoS0VRSUlCdTVsU1hJZVE3S2xoQ3dsM1hMWC1pckJCb0pRYTRhUFFQb2tOX0Q5WjZkMTB1TTd5NVROcTdudkFYdXlCX2twM2FjNE5sVENXVlE?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Hacker News comments",
+          "n_items": 6,
+          "outlets": [
+            "TeMPOraL",
+            "akavel",
+            "jajko",
+            "msephton",
+            "vanderZwan"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "No comments discuss the shooting. Kraków appears only incidentally, in remarks about buses and a mislabelled photo of the Main Square.",
+          "links": [
+            {
+              "outlet": "TeMPOraL",
+              "url": "https://news.ycombinator.com/item?id=43024489"
+            },
+            {
+              "outlet": "akavel",
+              "url": "https://news.ycombinator.com/item?id=18680789"
+            }
+          ]
+        },
+        {
+          "group": "UK media (left-leaning)",
+          "n_items": 3,
+          "outlets": [
+            "Metro.co.uk",
+            "The Guardian",
+            "The Independent"
+          ],
+          "outlet_notes": [
+            "Metro.co.uk: center-left (AI estimate)",
+            "The Guardian: center-left (AI estimate)",
+            "The Independent: center-left (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "The Guardian says the gunman fired 'at random'. The Independent's headline reports two dead, an earlier and lower figure than the other items in this group.",
+          "links": [
+            {
+              "outlet": "The Guardian",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTzNFdnFEUjdfLUpna3o3TDJHZ0NOZ3pDdXZtdk52aVRqZkJXVGRYc1Y2YmNFZ3FjeEZINXMxR29KV005XzhpZ250Skt6ZWJ4TFRFcG9SMmRWWXUwQmNlbXBMWjhCd013WV9EVUUyMVhNRXI2WEZ4eG5EcG1ScHVQRXlzbFRfY1p4Ymlrd015aFYzYVY0NHNydXhyem0?oc=5"
+            },
+            {
+              "outlet": "The Independent",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTTRQV1c4aUlUM3I0eUtUMmFITVhBUDVCZFk3b2tkYzFMcW1wMjdVOHhpRmhhSlMwR29wXzdXSTFlSTZ4Z05ZNElMZkVDaGhzSG84V2xYN1NCbEdkYUEzYzhxMnZ6Ym5rTnRwLWNUMmRCV1BfaFRFU3ZudFNJTVQ2bzdVLVR6WXZLbV8yZkxLUEFpY2JJMzBmV3F3MmFOZ1FnWnc?oc=5"
+            },
+            {
+              "outlet": "Metro.co.uk",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ0JjSkpIdDd3Sm5ZSjZ3NDhNTVlHXzhkQmxqRERaVWFDcGxxdXJYdzI4aEtUZTRaT2dVa00wWTd0aWhmb1d2NmZoeDZHVlNWNkRvRUx2T2FoSnZaOXkwQlBMajkyd1RyeFhQa2VjbzBqQzlxUkFDVl9qY3d6SWFZOEN4YUw5eTjSAYwBQVVfeXFMUEdkZUlGcHZjeXljMEhwdVhKdXRER0NaOWFQUXg4aDM4ODR5TUZYTVhueXgxSklHVG9mV3JaWnpxc2pWVHNWb1JrZUVBSnYxMnI1S21aQTNSUUJXUU1GZXZTSmhSekRvdnEwUGx5VnVNM3M1Ym9LamFWZDFiUUhBdkhGYnQtdGwzTGJwdEU?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Ukrainian media",
+          "n_items": 3,
+          "outlets": [
+            "UA.NEWS",
+            "UNITED24 Media",
+            "Українська правда"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "The distinctive item is President Zelenskyy's condemnation of the attack as a 'shocking crime'. UA.NEWS republishes The Independent's early toll of at least two dead and 10 injured, while UNITED24 reports five dead and 12 injured.",
+          "links": [
+            {
+              "outlet": "Українська правда",
+              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1PdHBCY1JTbWZ3NkprYVhlZWFWM0dFUmswYzc0ams3enZiVnJuZWNLUmhIa2dvaGtLZ3A2dGVyY1RyQi1kUnZXWmR6NmdySGF4QnppUFJUZEktVHA5Wi1XWjQxbjXSAXBBVV95cUxPelhIS3FVTWVmSGo2NFBLTUI3Q040Rm50czUyMS15QXFoQlQ3RUhETkRlVWd0akRvSEtIc1A3bFZQZl9uZFBQa21uaFNWREJ4TDVwNU5tYjlvOHRHMFJtbzRzVF9kZ1QzRXdVcGNDZWIz?oc=5"
+            },
+            {
+              "outlet": "UA.NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZXVERjU5dk5kTlk1S2Zjc2Nldng5TlNsZ1l4M0dxenJENVpsX09zc3N3NzRQRTFZZGQtb2NULWU2ZVJnQjY3aGx4UGdlNTJqVjhJMkRlOWJYbnlXQzMtekNtRjh2N2VIMXdVVTIwY1JzZ1U4cHZTN2NqWmV2cTVES1FDTXI1UUk0OGswemFHRS1MZXMzcmhVMk92SHNDbzZ0SXNRa3lZLUJTVVpRbm9KR2ZmdmFvT0Nn?oc=5"
+            },
+            {
+              "outlet": "UNITED24 Media",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcVNGeGVvNHRnV09pbU9ZUEV4STQ4ZmpzZlRxNEZFTTAwMk1wSXFMZm14RExoRzVtT3NHQUdydGZfM25HaXVsdUhlTVpGNUZaUVVRcUZEa0dwdHJNWFRudFNDc0lsXzRTS0J5NDk0SE90amxTeU5KemI3OEpkaFd4Y3RzcEhJQzFBRzFPNm5VYkxxREVwS3ZLRHl2T1R1NG4tckE1V214bU9RUQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        "Death toll: The Independent (UK left-leaning) and UA.NEWS (Ukrainian) report two dead, Hampshire Chronicle (UK) and CBS News (US centrist) report six, and most other outlets report five.",
+        "Injured count: UA.NEWS says 10 injured, UNITED24, CNBC and the Washington Post say 12, and CBS News and Hampshire Chronicle say 15."
+      ],
+      "unclassified": 4
+    },
+    "framings": {
+      "topic": "Krakow shooting",
+      "has_distinct_framings": false,
+      "framings": [],
+      "created": "2026-11-07",
+      "history": []
+    },
+    "divide": {
+      "verdict": "no distinct framings",
+      "note": "The sample showed essentially one shared reaction."
+    },
+    "rank": 2
+  },
+  {
+    "topic": "Stephen Miller named chief of staff",
+    "slug": "stephen-miller-named-chief-of-staff",
+    "summary": "Outlets report that Stephen Miller has been named White House chief of staff, with BBC describing Trump preparing for a battle and Miller saying he 'saved America'.",
+    "platforms": [
+      "bluesky",
+      "news"
+    ],
+    "n_signals": 4,
+    "signals": [
+      {
+        "platform": "bluesky",
+        "name": "Todd Blanche says he is Stephen Miller's lawyer"
+      },
+      {
+        "platform": "news",
+        "name": "With Stephen Miller pick, Trump readies for a battle [BBC News]"
+      },
+      {
+        "platform": "news",
+        "name": "Trump’s new chief of staff Stephen Miller says he ‘saved America’ [Al Jazeera]"
+      },
+      {
+        "platform": "news",
+        "name": "Stephen Miller named White House Chief of Staff [France 24]"
+      }
+    ],
+    "n_items": 160,
+    "narratives": {
+      "common": "President Trump named Stephen Miller, previously his senior adviser and a key figure in immigration policy, as White House chief of staff, replacing Susie Wiles. Most outlets report the change came after Republican losses in the midterm elections.",
+      "common_links": [
+        {
+          "outlet": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaGhUR1cxdTlHU1pCUXp6amZfMlp1b0w0ckhXdW9kNVlrcWgtek5SV2Y1eHJfSU9NbjZMN1lFWE9wWWtmT2c1NkNQRlZ3amhXRnVvMzJVYTFXOGRBUWcxdklfUkVrbU5Fa0d2blpRcFEwOGo1Mng2cUJ1NHRXeWFIN0hGa3BRVmRMMFJmZGVUak5sN19oRHRXSG9tRFhKc3piRkF5cWFEb3Vld2dtV3k4WFJGbFZFZ212ckxOM2NaRTBKV2tE0gHKAUFVX3lxTE1KdDFFQnNkdnlUNkN1a29aTDlhVXlQNDRrWjRuQkpyZ2kwSDVXWDZlWUtZcHJUNWRjTzVHa3NBTm1mcjJ1NS1tTXd3Vkg2UzhvTm16MVJySklCTkh4V2FHUC1VeXhpTnVfYTBxbVBTb3BtMTdZenowcmxzN1lPVFA4TDFFb0JXZ3NkUENpejA1S1ZUSFZwYVk5d3VhUTJYSW03Y0d0bjY1OHp3REwwRklkMURnTHVCWEN3S0ljdFY0WHJEbm5kaGZvcXc?oc=5"
+        },
+        {
+          "outlet": "Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVBFUnEyOC1IT3psamR6c0xjLTZ0T1N3OXlIbmN1MjR2U0J2dlNVUnNZdzFxTUJuVEpkN0FfakpQUXoxeFVnRGpvckkwU2k5QVNZTnBLRzRmaHdzbl94bTh5eGkzZnY4WXVJaDgzeEJWbkp5ZDNqeXllNUVxaFhDUkhtYmNQOWI3RUtHT044Rl9GeTk1OHRlMWdMRkoyaWU5MXlMRkVmdko5OFk0VHR3?oc=5"
+        },
+        {
+          "outlet": "USA Today",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb2JzQnQyamlTWnRWR0E0dDh6cl9CMjUyY3JsTV9HQWJncU1zVFJ1cUZjMzVZaFJoWFhIb0dLY0tjM29HQ2hQQkdlUDZVQmJ0OVVMWDVZdW8xclNjZVNvZUllb2RYd2JpN2puLUZZc0VPZFFTb0xmQ3R1cjFMeEU1V1ppbVhyWVNKQzU0TXJINkdFc2dlV0xaSUVPbUZvc3lCQXpFR3Y1bXUyeENNcTdEdkxuQTluVEk?oc=5"
+        },
+        {
+          "outlet": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GSGxvMGpyeHRHclh1TkRqeHRETzBOMGxUVU5sRklrT3JmSEJlM3p2bmt2c1RPUUhsYURLYmZibDVsUzFpZlVuLTg2NDR2WWhNY3E2WHNOZzlleGM?oc=5"
+        }
+      ],
+      "groups": [
+        {
+          "group": "Mastodon posts",
+          "n_items": 75,
+          "outlets": [
+            "Data_Threads@piaille.fr",
+            "DubiousCandy@sonomu.club",
+            "Econopass@flipboard.com",
+            "Gartenpoet@pixelfed.de",
+            "JoelKlebanoff@mas.to",
+            "KimPerales@toad.social",
+            "MaryAustinBooks@mstdn.social",
+            "MichaelaWifi@ruhr.social"
+          ],
+          "outlet_notes": [],
+          "languages": [
+            "Arabic",
+            "French",
+            "German",
+            "Italian",
+            "Spanish",
+            "Swedish",
+            "sk"
+          ],
+          "distinct": "Posts are mostly personal commentary and hostile to Miller, calling him 'EVIL' and 'Lich' and calling for prosecution, removal or impeachment, and blaming him for ICE actions. One post argues Wiles was 'an enabler' and that Miller has gained no extra influence but made 'new enemies in the GOP'. Several posts are off-topic, such as a cat photo and a Politico item about a news-outlet ban.",
+          "links": [
+            {
+              "outlet": "benroyce",
+              "url": "https://mastodon.social/@benroyce/117571352444268763"
+            },
+            {
+              "outlet": "PeterLG@theblower.au",
+              "url": "https://theblower.au/@PeterLG/117573758495153449"
+            },
+            {
+              "outlet": "MaryAustinBooks@mstdn.social",
+              "url": "https://mstdn.social/@MaryAustinBooks/117575637086830660"
+            }
+          ]
+        },
+        {
+          "group": "US media (centrist)",
+          "n_items": 15,
+          "outlets": [
+            "6abc Philadelphia",
+            "Axios",
+            "Bloomberg.com",
+            "CBS News",
+            "CNBC",
+            "FOX 5 DC",
+            "KCRA",
+            "NewsNation"
+          ],
+          "outlet_notes": [
+            "6abc Philadelphia: center (AI estimate)",
+            "Axios: center (AI estimate)",
+            "Bloomberg.com: center (AI estimate)",
+            "CBS News: center (AI estimate)",
+            "CNBC: center (AI estimate)",
+            "FOX 5 DC: center (AI estimate)",
+            "KCRA: center (AI estimate)",
+            "NewsNation: center (AI estimate)",
+            "PBS: center (AI estimate)",
+            "Politico: center (AI estimate)",
+            "Roll Call: center (AI estimate)",
+            "Scripps News: center (AI estimate)",
+            "The Hill: center (AI estimate)",
+            "Time Magazine: center (AI estimate)",
+            "USA Today: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Stresses the political fallout. Fox 5 DC reports House Republicans erupting at Miller ('Megalomaniac'), Roll Call ties the move to the coming Democratic takeover, and The Hill quotes Miller calling the post the 'honor of my life' at a Mar-a-Lago event. Headlines are mostly straightforward.",
+          "links": [
+            {
+              "outlet": "FOX 5 DC",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6MDJvVUxJb3NTN2FFMXcwOFdXUGRrMjJldjB4M3U1VnBMUXhLMDVpVDU2MkVSNjd5ZGJYX19TdC1PQjJjOVpoZTQ1ZjVRN2pmM01LYUp0eEFXc3ExY2t1TFdfQ0hpOEl6MFVKQ1FUUHd4T1RBanc?oc=5"
+            },
+            {
+              "outlet": "Roll Call",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdGFNaVZCcG1KSkhleXliaXhDRXpEZGxlQ2JVal9uczVkSFBjS3hNck5iTUlrWV93ekI3WENldDNLNERlVEFfRGRMUHlRT1NmS29RdXgwbnFaNzBNNG5pQVdUeXhFeGVlOGxRa0VreE9JaXJjU0p6OWkwRUF2TmtyNzQ0NEZYLXUweUhMc1BEd1Brbk43UmRjbFVoZzFIeXFPNkE?oc=5"
+            },
+            {
+              "outlet": "The Hill",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX3VMZzluMVUwb1NybVd1aHNfY1FIZWtyY3pDN1h1SkZGNGRPdy1jQV9sOWlpcFJHZk9JRGhwRFdfOU84UnFQdlJKSE5jbmFRRTFBRGxZdndVTlNmRXNvbkthTE5RUEhORVpjWTVNQzcxb1NhS0dzdWoxcjc2SlQ2YWRTX1lzVTMyZU1Bd2hESkdhNjREV1M1VDN1dVHSAaIBQVVfeXFMTVZoSWdROVVBX3l2dHpRTVdYUV9OUXd3NzBtTF9VWWV4aU45aTJPQ0tpMG1CNGpjVHlpVmRxeVE5aGwxUHNjMTB5NkF2UW5BNUo1MEJGUUd4Y0d3enM3c0M3UTlUMjJXekg0VktZZ2ZXcXRBMFRJOU02cTJTZ2lkcnZCNzlXWFFKM1RsYlVoczVRcXdETDB5WnFLQnZONENxVm5n?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "US media (left-leaning)",
+          "n_items": 14,
+          "outlets": [
+            "ABC News - Breaking News, Latest News and Videos",
+            "CNN",
+            "Los Angeles Times",
+            "MS NOW",
+            "Mother Jones",
+            "NBC News",
+            "NPR",
+            "The Atlantic"
+          ],
+          "outlet_notes": [
+            "ABC News - Breaking News, Latest News and Videos: center-left (AI estimate)",
+            "CNN: center-left (AI estimate)",
+            "Los Angeles Times: center-left (AI estimate)",
+            "MS NOW: left (AI estimate)",
+            "Mother Jones: left (AI estimate)",
+            "NBC News: center-left (AI estimate)",
+            "NPR: center-left (AI estimate)",
+            "The Atlantic: center-left (AI estimate)",
+            "The New York Times: center-left (AI estimate)",
+            "The New Yorker: left (AI estimate)",
+            "The Washington Post: center-left (AI estimate)",
+            "WIRED: center-left (AI estimate)",
+            "World Socialist Web Site: left (AI estimate)",
+            "Zeteo: left (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Frames the appointment as a 'doubling down' on a hard-line agenda after a midterm 'rout'. Mother Jones is openly alarmed ('Hell on Earth'), while NBC, NPR and MS NOW use plain headlines.",
+          "links": [
+            {
+              "outlet": "Los Angeles Times",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVURIMmdzRUgtTU14VUtlWG9RSndCeW82VUlSQlZ0X1ZSbjhqV3Q4WGlWVXBYUUNncE5VLW9UWS1IQVNadTZCcmdpdUlyZFFKS3pBS1FzcHpDVEFGSXFlbGlpTVJSODJSM2pqVC1qLW1oMC01Sm5xZGpZcXJ6bno1ZVFKRHBqbWhxSUI1cmdpRXcxbzBnTi1UNFZFMXo5dXFFV0hhSFlGd0NrVEV1NkRrMzJBSQ?oc=5"
+            },
+            {
+              "outlet": "The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcy1TbzYwaC1KY0t3Z0ZMc0wweDVSQllCUEpVWGhSU0lqZUZCRUVQS1d2LWg2WFFibnFtZHRhQWUtTG9yM3l5UDhBQXNKdGFFVGtwdExBajBnNDlVMkpqLVRuaVVXSEh3TzZDcGxYSmRqZ2EwdmUyYW1neGpvdm9IWjRHY0JMZFVRUm1xWg?oc=5"
+            },
+            {
+              "outlet": "Mother Jones",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZGNZYUpvR0kxbTlxRlI4TDJEWm50WGVUb3pMa1YwOTIzbm5VOXpxQWU5ejJvWjZNNFAxWjh6T0JLVXhOYWk5RWZWb0t6VzBSS0Y4TDJXcVNOaG8wYUhwWlR1TXY0ekJDZ29FVE52ekFUUGNnSVJBZ1NwWU93UEpweE9EQWJlNV9jempuNk1HbWlxV3dEN3BVSUVudTZBTVVaeHloM3F3?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Indian media",
+          "n_items": 7,
+          "outlets": [
+            "ANI News",
+            "News On AIR",
+            "Open Magazine",
+            "Rediff",
+            "The Hindu",
+            "The New Indian Express",
+            "The Times of India"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Quotes Trump saying 'I just wanted to make a change' and presents the move as a 'fightback' ('It's Miller time'). ANI highlights Miller pledging 'absolute loyalty' and saying the US 'would not exist right now without Trump'. Open Magazine asks why Trump chose him.",
+          "links": [
+            {
+              "outlet": "The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbVBLb1NmU1pObVFFc3RmUG5kYklyQ3IxRjZ5T0pGMks5eHhtWUhNVjFMa2FESVJDNnNUTEY1WUJwQmRSR0RmVmxJcWdEdFZaVnZQVk5Qck9Tbkthd240QzY2YTJOQkt6elBEdU5ucnZETktUMDlNbmVSY0U0dlNYTkhCQXVEdXNuQ19vTjVDalZKZjdxWXVEWmR0bExrLTlld1JGR1lwanNBbzNFVmtFbF9IbGdudnl4SzZURGRQUGZ5SUpVWUJDbTZEQjVLaFNNZ0hUeUVaM0R4Q21FaVhENXRrWEFZLW1MVHNOdklYeHdNUUNJWnRrblQ0NlBYZ9IBgwJBVV95cUxNTGFncjN0VDRlY29fQlpoTi1hS3E3eFg3WjZsQWVxbk1IXy1QT0ZfMnRHX0EyRTBMNzl4V3ExcktYNndnZ0RfSTlldnZCRThubXpHWTJ1Tm9rZ0VRNGNyZkozZVFtb3ZNSlA0Ykd6d0NXS1FtRl9yZUNkV1IwRmw0eGZ1RjNreFJmdllDTzBQTGw4Qmw0UnA4aDBkOTQxVWU3bHNvZzNlVEgxY1p0eG1vZHN6ZV83b29CQ0NGNXkwSGtBWXNvb1BjdEZFTDhUNjZjQjhocjNuUTlBVGpZWnVCTWU5MUIzSkhxNlZZME41VEJueEVfYkxmTU5QSWF6dFFRaXY4?oc=5"
+            },
+            {
+              "outlet": "The New Indian Express",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem5YbEFsUk5OeFQ1bkhHZGhaNDZ6N2JMYlhuNjlKYVBEZk0xd1Vyb2tjS3RpN1N4ZHk2UmZRXzNRRWQ2RlAtNDZFbFI3d3JVdTlpYmNRM3UzZmxmaWxlZ1hhbkQ2WncyVmFrQW9ibTJiQy1LUExrREN1QlhqMmZMTXgxNnhrMFgzbWpVbWRxZ0FZV1QtbVU4SzZWUXY1Skluek9KSDJURGxYODNsYVBlemEwbXLSAcIBQVVfeXFMTzY0UjhZclh6V2NDWlprazE4NGVsYzhBdlEybEZrVjM4VWpoRUl0NmdlSmx1MERvUnB4dGlJb2ZpM1g5TkhGXzF0NHRhcU9YSWxYR28tMkFfRUVnMXZqdVRXZ2U3R25aSXlXSGk1NG5GVDlfRnUwQWVTZVJRUlI1dWstMUM0SFdBSXBibEk5aG4xa3BDRUJXVmdkT2pjMUY4ak1qdkkzZWhrQzhMMTl0cGNtN2ExZkJBZjdIREVCZlFtakE?oc=5"
+            },
+            {
+              "outlet": "ANI News",
+              "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPY2Y4R0RHelVHbTF1SnZEUEE0bjN6SjlFXzdhSkRjZ0ZEV2hQRE5SQXJ2WjJBMVpvd2RmaHQtME9tR0w4cjAydGMzZzkxTG1MNjdIWDd1ejUtWWVBUWhQc1llOG1wZFFaOF9TSkRaaXJZR1JRXzdXc1FyUUdrZnpvUWozMWVpN0Q2V1ZDUWVQRUVud3YyVnlqaVM1MXJuaHRZTnljdFFkY1RRamVaam10QTNSVnItRWxCUVdLa25pajUwRlFlVEo5V01aaUM5dTRjRG9peEhVWlBEOXZOalFwcGQ2QVg1TW5NNXgzV2VqTWZaSC1jaFdSQjBqZkRsVjhBcXVzMnpzNzh6aHR3?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "Hacker News comments",
+          "n_items": 5,
+          "outlets": [
+            "BLKNSLVR",
+            "JumpCrisscross",
+            "bicepjai",
+            "lelandfe",
+            "shadowgovt"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Barely discusses the appointment itself. Commenters mention Miller's founding of America First Legal, with one saying 'Trump-aligned' understates it, and drift into unrelated topics such as AI and immigration.",
+          "links": [
+            {
+              "outlet": "lelandfe",
+              "url": "https://news.ycombinator.com/item?id=41217975"
+            },
+            {
+              "outlet": "JumpCrisscross",
+              "url": "https://news.ycombinator.com/item?id=50400376"
+            },
+            {
+              "outlet": "shadowgovt",
+              "url": "https://news.ycombinator.com/item?id=50278647"
+            }
+          ]
+        },
+        {
+          "group": "US media",
+          "n_items": 4,
+          "outlets": [
+            "ABC7 Bay Area",
+            "ABC7 Chicago",
+            "News From The States",
+            "The White House (.gov)"
+          ],
+          "outlet_notes": [],
+          "languages": [],
+          "distinct": "Defines Miller by immigration enforcement, calling him the 'driving force' behind 'Operation Midway Blitz' and 'Mastermind of immigration crackdown'. ABC7 Bay Area describes him as a 'bombastic critic of Democrats' and quotes his own words. The White House (.gov) page lists him under his new title.",
+          "links": [
+            {
+              "outlet": "ABC7 Chicago",
+              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQckl1cWJXRFI0Y0g5UHlReVpVY3hDNldvMTZKa1MtNXdGX1RXQzE0Xy1lemZOSEVRZVhLamJ6ajk3U1lGY3NPT0x4akhoNDJlMWRnU3ZsaTM4bkV0UHhTbjI3blAzWVh6YjJPRG1icS1HMW5HOWl3QWpWbTl5ZnhNTnFUeUlPN3J3ZVZEeEw4Q0VOZVBWbllIZlRaWVR0d1hmdmFCNDUwaTRXckxYVDFUUDVMRkdBSTU2R0ZfVmhxQ0lnTWVYMWhRbzgtWG1uV1BlMGhYQjlrU0hlT0EzRWJzYzhkTDNrVjRC0gHuAUFVX3lxTE5lREh0dXg4SlNsbUlDU25LUnJQZEJVYi12WXRKTVQ0Wm5UQjd1V203TXY3WFRWVXM5T2R5OWtCb0VyODhoUWpyd3YxcUZFdXNxb1lKcHNqS2xhNUZ6cjFSVXkzTkk2S2NVQXlLQ2lnRnhyUHVNMG5aTHlDaWx2clBYczZqLUc5czFfSGVVVk5MMlg1dVdvTW9TWlBsVkRWUVRUd0MtNjkxaGxZOVVsZlZuMFdlU2l1UVRBLWI0aDBOTDRORF9PMS1yc1I0VTZrQUh1WlZmLWJSN2ltbWo4Ui1HTjF5V3lBNDFUNV9mYmc?oc=5"
+            },
+            {
+              "outlet": "ABC7 Bay Area",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeG5wbmFsTzFkUlJDV3lnNW1HMUFHYnlGRnNKS3ljbzZuX0hYREVYd0NzRDl5VEJrek8zMU1oWUtleTQtUkhOeDNfWGZXU3N0QUQwMmpOTXNYWHoyZUpVQUFZTzlKZk9LMHk1UlFpZ0x2cGNkVUR4TFZPQ1dtVmx5b2g5cGZxZFVoQkJGZkZZQ2V6dHZPb2lCTTI5RzBabzJpZzk2MlVqQk9ya3cyMnFQb0piVFk2b3dFOGFjVkdVdUk5MFlyNE84azlvT1pMVzBKU1VQNkdwelI2Qm_SAdsBQVVfeXFMUHhucG5hbE8xZFJSQ1d5ZzVtRzFBR2J5RkZzSkt5Y282bl9IWERFWHdDc0Q5eVRCa3pPMzFNaFlLZXk0LVJITngzX1hmV1NzdEFEMDJqTk1zWFh6MmVKVUFBWU85SmZPSzB5NVJRaWdMdnBjZFVEeExWT0NXbVZseW9oOXBmcWRVaEJCRmZGWUNlenR2T29pQk0yOUcwWm8yaWc5NjJVakJPcmt3MjJxUG9KYlRZNm93RThhY1ZHVXVJOTBZcjRPOGs5b09aTFcwSlNVUDZHcHpSNkJv?oc=5"
+            },
+            {
+              "outlet": "News From The States",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVzBjWjVqeENSUUI3dHhHNVQxdGMyaFNXLXpENnpKdHE3aENEQW11cFJMZ19qcnZzbFVrWVVnTmhJWFFZRTN3N3ZwUXRtdUE3LUlxUHNnMERjOEczeGFfTmJfdmtaX2xVNGFHZFNMVzhkU2VjU0o3Sm1aQ3hZT0Q2TC1KRVdOS196TWdVWUI3V2Iyak9GRW9tTGtYYjJ6OHpvamFjYnBlZ2ljYlFoMkUtd2pvSQ?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media (centrist)",
+          "n_items": 4,
+          "outlets": [
+            "BBC",
+            "Financial Times",
+            "The Economist",
+            "The i Paper"
+          ],
+          "outlet_notes": [
+            "BBC: center (AI estimate)",
+            "Financial Times: center (AI estimate)",
+            "The Economist: center (AI estimate)",
+            "The i Paper: center (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "Presents Miller as an 'immigration hardliner' (FT) and a 'reckless' MAGA loyalist (The i Paper) through explainer-style profiles. The Economist folds the story into a news roundup next to US jobs growth.",
+          "links": [
+            {
+              "outlet": "The i Paper",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWU03YWlwQm9LLVNkMHRwSENYUUs3ZVM5cHZoMFNyWHdGc0Q5a19oRkNvdEFVdkRRUXhuVFhBVW1jNXVGWlI0SV9rSmpZV1pJVWg5Q0ZzR1ZSaHhDREgzYm5lQmU4NHBiMnhiSVhPdFFINWZoQWlzbV8wZ0lFc2dZcVFTTzJ5dml0VDBmaEJIZw?oc=5"
+            },
+            {
+              "outlet": "Financial Times",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTZ4MHlwT2psR3d6M080amlJb0lWZVJScE5Jd2kxbWVldUlQLWhYSV9TTDg0TGRXTWY3czlDU3p4bVUySG5XY19VSXBXVnlmNC1QMlR5MkVzV1VIRGJkckNBbXZtS1ZSQjhpaEZJN2lnU01TT3g2WkphOTdEeWlheTNtczc?oc=5"
+            },
+            {
+              "outlet": "The Economist",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWXVsYjNIUTNtc0pHWXNhQnhTUm54aWVpa09VMUNlZlo5XzBnZk9PNEhuU0pHNDlRV1hMLVp3OXZnakJ6ZzJPTDJlUjhkN0FQbVdHUW1UblpFd203b0pmdmJBTVlWaDNfYVJSckN4ei1LVWJ0NXpRcHhTUTV1MTh1c1d6X21HTlBDVjNxSy1BSnBsaGkyX2J3?oc=5"
+            }
+          ]
+        },
+        {
+          "group": "UK media (left-leaning)",
+          "n_items": 3,
+          "outlets": [
+            "HuffPost UK",
+            "The Guardian",
+            "The Independent"
+          ],
+          "outlet_notes": [
+            "HuffPost UK: left (AI estimate)",
+            "The Guardian: center-left (AI estimate)",
+            "The Independent: center-left (AI estimate)"
+          ],
+          "languages": [],
+          "distinct": "The Guardian focuses on criticism, describing the appointment as 'dangerous' and noting the backlash it drew. The Independent runs a 'who is' profile, and HuffPost UK reports it straight.",
+          "links": [
+            {
+              "outlet": "The Guardian",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPY0FnYVdEdFhsczZ2Mk5NcnY0Zl82MmRVVlVueF9hVlNpNW45eWVELVZ5UVZwTHhua2R1QnItNWtrektXYTVxU3JnUkswckRTd1BJanl4bXZ4RVdTMEYwLTljUFFuUFBSZjUwNVhuQ3FNUmlBS05ZUERMVWJHN1Z4eVRsQnI?oc=5"
+            },
+            {
+              "outlet": "The Independent",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNV9fSmNMVVpKSVBVOXBZRHVOU2pWREJSSXAtLW82TGt0ekVzejd2X01nZVYxd3RRdWU0OUVoYzJGQ2RQQ2dKRk9MNXN0akZLQ2NDVGVoVEZmM2pDNmtRWVFwZjc5UVZfNDExdGtnM2hQN0pLS3dyTDJ6OWFxVjhiZzk0WVR3anFTTU00ZnZDTE5ncThEZUhVaDR5bUJ2SDN4dC02NDNNd245MENxa0cycFQxTzk2TzNY?oc=5"
+            },
+            {
+              "outlet": "HuffPost UK",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX1lkaVlUTzc4QlNHR2drUFEycTlwTnlFWTJzZngzWE5RbUoxcFBnd2RsUURWdTJwNmF5UUJfSWJQNHFVc1M2VlZzRU5ndUdXRHN5eWNVS0lyUWxLYjQwVjdjUlp2TjVzdE9vQmFPZ01WZDdqWUgya2xmZ0NVTjRIRzlkTzBvTnlUbTFpeDh3UjdxQ2tndU1hTGFDN1BXRk5ERWVfWTFZdHF5WC1YUFozUG85YklRbzQ?oc=5"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unclassified": 1
+    },
+    "framings": {
+      "topic": "Stephen Miller named chief of staff",
+      "has_distinct_framings": true,
+      "framings": [
+        {
+          "id": "f1",
+          "label": "Neutral personnel announcement",
+          "description": "Straight news reports state that Trump named Stephen Miller chief of staff to replace Susie Wiles, with little added interpretation."
+        },
+        {
+          "id": "f2",
+          "label": "Reaction to midterm losses",
+          "description": "Posts tie the staffing change to Republican midterm defeats, presenting it as Trump's first major move after the election, sometimes with language like 'fires', 'blowout' or 'wipeout'."
+        },
+        {
+          "id": "f3",
+          "label": "Alarm about Miller's influence",
+          "description": "Coverage quotes a former Trump aide calling the prospect of Miller replacing Wiles 'terrifying', framing the change as a source of concern."
+        },
+        {
+          "id": "f4",
+          "label": "Promotion and profile of Miller",
+          "description": "Pieces present the move as a promotion or explain who Miller is, including biographical angles such as his Duke background."
+        }
+      ],
+      "created": "2026-11-06",
+      "history": [
+        {
+          "date": "2026-11-06",
+          "verdict": "strong",
+          "kappa": 0.67,
+          "n_items": 160,
+          "n_framed": 54
+        },
+        {
+          "date": "2026-11-06",
+          "verdict": "strong",
+          "kappa": 0.55,
+          "n_items": 160,
+          "n_framed": 59
+        }
+      ]
+    },
+    "divide": {
+      "verdict": "strong",
+      "kappa": 0.54,
+      "n_items": 160,
+      "n_framed": 56,
+      "framed_share": 0.35,
+      "counts": {
+        "f1": 23,
+        "f2": 16,
+        "f3": 9,
+        "f4": 8
+      },
+      "shares": {
+        "f1": 0.41,
+        "f2": 0.29,
+        "f3": 0.16,
+        "f4": 0.14
+      }
+    },
+    "rows": {
+      "outlets": [
+        {
+          "n": 3,
+          "label": "building (3/10 items needed)",
+          "confidence": "-",
+          "name": "CNN",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller in, Susie Wiles out",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkh6ek9FRnNMdWF2U3dFeTVGcmkyOG5VdFpOd1Z3UXktanBYTG56M1NGS1JwWnlNNVpEeDFsODZCZURvWkg2QnBBNXVZUnZCTmRFbHNtM3pMV3NRWlBVc3FjREhrUEZTVE9vYUhQQkhGT1JfMjBETzBxakwyTkJfYlFOWjFFOWFaUnlvRVI1MUh6UmpmVmlYZmE4YWg1LWdsOHdqbVVQM3QwclhGSlVV?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller will replace Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUhaRVZkcWRQQTRMVmp2QVdkVkVyMzI2TDFGM3hzaVpZYThxTkJUMWk5QVVsdFJ1NFQySENtcFpZUU1jRHp0ZjdxZWE1RE00ekFSWjZLRW4wTUJsWkVYVXUzOUstRE1DbFFsWm01MHpuNXFGUkQya2cxeXhZVXlaTmJiVUJYdEVvdk5aS0luZ3YzdEk1UjlSZ2I4UjI0S05qbEp6cXh4eWR1YkF4S3V5azJ3RWk1UQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "label": "building (3/10 items needed)",
+          "confidence": "-",
+          "name": "NDTV",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "After Midterm Rout, Trump Announces Stephen Miller",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeUlZRlFTakVaa2VYVVJDWWFybVd2UUYwNVFnaDVFWDVDSEZ5VnItczM1WVlRN1pLSHJSM2dMeEhIX3g0Rm1CR2E3U2hnU2toY2RnV3pTNmc0Y3BEdVVSSEIzOWdhZlZHMDM0R2xfamRfX09TVEV3MWR2Y2F4UGl0aGdFbzkzVXlpbHFaejYwZ2hmMVR1aUVMMW85QVBLZWp4LWFwVVZjRGZIQzRfNXFIVHV30gG6AUFVX3lxTFA3TnhPTmxKMC0xZkNSa3ZyNEkyV3A4d2k2VlgyUzZzS1FPN0VkVkMtQnZ2RXI1U2tIY0FWWFJHOF9qd2VKbnlVS09XU2g0NUlIcFd2VmlfUkFydHpKaUtjMDBhRXhZVnIwVHdQTGUyZFZqanhLNktERVJhLUtwaXpOQW5SUlZJV2VkZlBuSkR3Nk9kcG1scGVzb20yNnpsaUZCUGl3VXdiSVJOUXdiemdFa0xHZXVmMy1yQQ?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Who Is Stephen Miller, Donald Trump's New White House Chief Of Staff",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQUFUZDdtbDAyQjVRMU9yUHpYVGZzYmdrUHBBd0d1OHpWYXdWV21tNDhjQnMxdFpyQXZ0Snd5QmMwYlJxd2Y2UGNSNWFjX2QtQTlYbkJmMFVSNHNOYXN5NFRoTHBWUGR2bXJkdHhfa3RISWpMdmZ3eXdOTDRua296aUNvX040cW9OR3NCdHc2RVZSS0dXN3hGSnNtWWlDSEI5d0NNZ3ZMTFBrbllERWM3X0VocFNkVmN5VU5ZNXpSS1JoSms2V1Y4RHdiNWM3d2vSAdcBQVVfeXFMTTZtWnFYVVZvNTR2ZEtxb3BqUHBvS1BCRWRxTmNHUV9QeWh2eU5uRko0VmdqcW5odzhUSVVFSjFhWm5oSi1TcWxrRGVZYU85YkxXclJ4N2xDdzl6ajdvLXVscG5rTDZGcHQ3WDlfN2xVeUYxbW1WekU1cUFyNUMzeFpnajdJWTdMMzgtTUhyLWE0YWw2VGhodm5YODNYcjBNaFctWGhKZ3FkN2d4dEpER1FQY3FKaGN3OUs5VWxPeXl6YXg4T2xoUUQ4NS1HRHpSMV8tN2tBM1k?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "label": "building (3/10 items needed)",
+          "confidence": "-",
+          "name": "The Times of India",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "after GOP's midterm defeat, sacks Susie Wiles",
+              "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOQ1owTnV3MXhKUFJCTDFDYmJ1ckhFNzREeGQ0MExYbHlaZmdoOXktZmMtSW56VVlrXzFpQTB2RWJVVGhhS01yM1NHVXdmeTYzWmRaWVV6ME5neU5tNHBna1pKUFdDTF9mRlg3ZnotYU5kYzJzX3J0R2Y1dkVsT2hxRVVxTjNNT2Jvd1kzQ1ZBREZSQk1LU21kMU1oNVE0RTRsMmcxcWNEenhmRTZVYlR1b0F3QjlwSnJaX1dFeHdJMGVYTmh5N3RzVkF4UXlfSmVGb1ppekJCcTFVQkNwaVFGcjJTQVRsQ0ZyNFB6VGhqQjMtOFhwMkd5ck00UENkQzdFandmQlhYTW5GSTV3NmJteVB0OXg2ZTZZMjhHVVJnWFFVUExGazZDanB2VVZOMmV3WnBTeWJvUkh0dVZjY25lcTFXY1lKX2cwREgwLWdSYV9oZWpRS2lLMVpsVUxHd09FSUtQT01LTmJ0SW9Xa1FqQ1dB0gH3AkFVX3lxTFA0a0hxX3lkNV9rcW5YeDBYSjIycUpvN0EzaE5LVld4VjFnek1CbjhqeVpReGdzcERIV3dXT0JxVW04Z2RadHNmT2N1NEJfSkpPVjBpYkVRNHBaUWtNMmp5U1daZ00xRnpMRGlpckR5Umh5V3NiQzFrSElpaUFHZENqTUh0WmRydFFLZmhab3lsNlN5YnBhX0txajZJdUFzekx1R09fbUJ3cnRfUWZtUXdDSGdobGp4SmM3OUVGQXF5ZEVTTTBNdzYwWWNwems5NzBxVGJORDhCQUxUcDFEdnA2RS1LZUZjblBGOWhlOTU3Vmh6b0JoNlF5SEozMi1PRTZPOVkzUG01X0FyYklfWUZYMkNyTGNwRVhGSGlsYjJtekdsSFlPdWk4ZVE0TUQ1bTVCMUMtbDFGVDJBMmFiWWVCQ29vOWpfVnVGQjNaTW11aExSVFlMbUR0cVZkOEY2V29xaEp3UWRvOGZiRVZBX2Y2YlFfMUltQQ?oc=5"
+            },
+            {
+              "framing": "f3",
+              "quote": "‘STEPHEN MILLER IS A DISASTER’: Trump Cornered On Cam After Susie Wiles Resigns",
+              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOcWxtV21hd1RLbTBxU0hVeDVmZk4wYmM5SkFoVDQ3V19JV0l1ME1HX1padU5GQVI3ZHZDVmh2VWtRWU1CYkNYYUs0WDdjbjdLMFZfaHBwMzBNZ1pyLTZUVnVVV2lpX3BBdmdFV2xsNnpyRTgyR0JBZGxDYkJuNFI0RUMxRDNONzVmSlg2a0Npb2l5Y19aamFCckJHbVVOS0oyVngzcmZEdFFwS1BhRmdpSGFvd0ZzaU9NSmwxTFM1VlJQSWpid01VbFlvR2ViRER1Rkxsdlk3SFhjN2JoTVd1ZjdCdjBZMkVoRVVnSzNXVWJ1RzFCM0dpUkUxRFhaMTZUbE1xQ2d30gGLAkFVX3lxTE1tQzJOSG01Y0Q4a0tGVEFKSDE0emdfWGxUMlRSZUpjd0FabS1tU2NZbVFEMVNCYnJocGxtS0JLQV8xQjJPTkY1NnN4bnJ1bmhURWUyVmozcVdKOUY0LWVXMVVQU1o4VDdSdDdGZkFBc18xUEtVVUNfckVqYUdQZTdVVjIxNjNnWTFPNHlDSkRVTVYyRjlMU0hYUS1zM3B3S0hjc0JuR295OFVJc3c0WHZvS0tudkpDNHFwckZreGFHaEJyUy1menh0cHNPQzVSU2pGTC1oN2I0NVpuREVaY3lHUGFXZnhudldQajUtZ3dTUHJwMjlRWG9hZ0RRMjdYTFRFU2dQZEVGM0FzVQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "Politico",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller will replace Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOM1BHOEpVT0E0bUtPTTF5aGVQWlZKckhPR1FRbktnUzlNdF9UZFQ0cGJ5ZGUzMWJrTUVJc1FVSWNIYzB0MjU0UlBNb3daQkszNThSVThaT2hoOFNLNjdTSVJOWExTT3JERmxTNXNSNGEzY1RfaXZ6MHFCb3pMVEx1bDNmZ1dHNExVSWFlU1BvVDZLQlN0MEU1dzBsUkNEdw?oc=5"
+            },
+            {
+              "framing": "f2",
+              "quote": "Hardliners, thumped by voters, rise with Miller's new role",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWU9KWWxVNmRFbWZDeGthZE9HZTl0RThVWUFDSm1nOGdpWEgzdW00WUpZVnpRZHcyWGlzU002SlRqWHZfMFNDanl3OXJzTlFnUjk3d1oyaTJuVEdqbU9UN0dvdmVnWmY1MEhXQkNybU9CRF94NElHVE5BYl9SdlZIdDdBZzJJSlJDSnY3US1tR3I2NFVEWW5aZkZ1NEFEeUY2aTZ4a0RR?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "CNBC",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamU2dzlBUmJZRE0tcWQzZmFkYjBCVzBTRDdaQ3djMG9HMHlCVTlHTWxvYndYaURTUjI3R3pJRTBUZGZxd3Y0c2Nfbm1UQ1d5M1hfUTNyb0tidHpSRDFxeWpocDdPSVZCOGVqd0laLUozR05nVmlqSDVCaFkzVl9iYzJwZjE?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamU2dzlBUmJZRE0tcWQzZmFkYjBCVzBTRDdaQ3djMG9HMHlCVTlHTWxvYndYaURTUjI3R3pJRTBUZGZxd3Y0c2Nfbm1UQ1d5M1hfUTNyb0tidHpSRDFxeWpocDdPSVZCOGVqd0laLUozR05nVmlqSDVCaFkzVl9iYzJwZjHSAYoBQVVfeXFMTzhUczJYVGs5amlzREtLSEpJSTdrRTZhV0NFdDFEeG5pS09OVGlqcVVqbWFEUDBjYVNud0NXRFBXbmVUWDVXd1ZtaVFVWFp2WEV5aGZ1MWdpN2Z1MlZHT2I0V0M2eE9rYlN4NjRQbExLX1BWSW9wTERKbVEwSHptd3pDYjlRY2kxdFFR?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "DW.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Trump names Stephen Miller as White House Chief of Staff",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ3JxNTI0QVkwclI4Z3ZwaUNGZkxRY28zZlZlWWlTMmQwNXRvakg0TkcxdVRkRmJTb29Fa1dKYUUwSW04Z29naVh0MlNqR1lWdmd2N3BFblhQTFRBcWVRa0lQUG5HTmFqWmJMemQzXzNaWXZWMUk5Q21JMVVXNTh5OC0yLXZmU3VoWjU3M2JXUTBWaGQ4R095T3hQeWZVMDB4YU9iZUtxcEE2ZnlGX3fSAa4BQVVfeXFMTUxHNmQ0UVB5OHpYSFVJQ3NrNEM2OUprZjNUeDk3cUpidGtqTElFRTNoOHNaOFZoMnRTTHBzU2FNTEtrM2tfMFVqbjl4cGZCRXI1aWNpVHBTNjR4VkNIWXV6Y1E0aFVXRV9hVi03UTdmNXlGN3lnQmo4THl6QWZ5Ui1KUTZHZldvazRwdGxqd1RnRFZvc0dkcXlpZWJQWGRXRnY5UGdFMllXMktmb1J3?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller named by Trump as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTVV2TGNDUzFzcWcxbFFmdXdmTUNWeHZMUVl6cGMwZjBUeXJ3YVZpSnFVWlIyalJTTXBaTEE1QkZSNGkzRG1iSG1RNmFFTmRSQVhiYVRNazdGXzd4VVU0RFVkdno3SzdWZTBUakQtNzdHaERKVmdLX1lnV1dCRWRCR2pod2NrWHl0STRSRUhYcG9WUFpqN19VbGdKb3PSAZwBQVVfeXFMTUdjUWpXVHNZRHgySE8yT29HMk14NDNRekVwLXpSTHNXVUdCLVI0YkRjalZwY21CRVJRRlh0cjJ0aGRUemY4WjlMZTZjMFFnZjBQVHpMSEJqS0RxWlNzVXlGcmJITy00RS1GU1hQcmdXZ0EwOFJfTHFSWl9fUlMxUkUwak1aVDluX0p2ZHg3NnpzTEY5RHJZSVc3MEZy?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "WSJ",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Trump Names Stephen Miller His New Chief of Staff",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSkRNLUdCaTVjYnpWYVp5aWNFMm5WQ2dlMkVDSjZzZG05RjdyWDRYSG9jRnlVRHNLdGhhODR1VDJadWlKZ1BJSS16LW9SelBab3hKZ1ExU0lxSkpyZkNvbXlhSHhBbzVxMVd3SzJtLTBUTEpwVWFJRGZDcllWc0lfRFZoZkdqYm1xeUhNVlJ1YzR4eVNHWjZSQ0h6TGw2QQ?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller Is Trump's New Chief of Staff",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYS1mWXB5ZV9jVmZrWk9DY1BNSmZ5Q1YzcUlONU83QjhhdXFiNFVWS3lEU2JHalhpd3BzLWk3M05MZ0haTE9PNWYzaXpVZzdIQXEybmotMUt4b05WbXFiY1liMnFqN3ZDUS01djc4NXpfbkRKYklDV3VIQUVmdFhtVHdGdkFOX3Ew?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "NPR",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller will replace Susie Wiles as Trump's chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTG1zcnVYQ3lRbUhVNUFLSDRmLVp3SXJMc0ZudkdsMjFhMmthTlptYkg2OVBWck1zM3M4bVJlTlpWZjVBZ3lMTjNScjFzUlBDQTNHNnNtWDhadWo0amhOa0I5SWVIVXpXYWRlcXk0Zktnd3l0TDBvRW9pVHBxdlYyV0M0YVVvQXhoSmFhaGRhZUpiaGtibG93OGREaEp0TEYzdWJ3?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller replaces Susie Wiles as White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY0pKVFBkeVZIOXMzTnFibmFoQ0RkSGFULUVxdWdONUVBYl96dERqVEZ3eUU5VDAxWTNLOVhsVXozSFIzRU1JTExvcWFWV3hMTE1GZnlsNDQtUXNXZFZLd2hjRExtRTlTVjBiVEY0cHFOazdqclkzTnBfd0lnc1llVEg5SXRnbkhFM0ZWeVBxZUhZQVRRT2tHTDhoTDNrZjJ6Q1htV25pQTg5Wng4TzdZ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "New York Post",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Trump fires Susie Wiles after midterm blowout",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOVBCaVV1UHR5cEtGUWRJQ2N3NU9YSldHZXhHZlhKeXN3QzFYSktDR1RyTjB0LWdYQkR4Uzc2dktZNzNMb3ZlLV8xa09tNEx6YXpnZk5sZG5ZVzRLeHpCSUQ4alc4MWF3c2JiZmxMcE95SmFVRUhpYVdkX2RwQ1BvWXROSXhHcTZzV1BRLWk4OHhNM3dqYlhNVXhsRTc3RVUwcXpBNUt0QkZEdlk5aDJ1dS1vd2hQTlkyVmE2Qk8xdWJUSWRweXc?oc=5"
+            },
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller pledges absolute loyalty to Trump in first speech",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2dlQzVMUDhwYzdxYTU4ZG1vTEp6OXlNZDF4LS11V3V3SlZra3ljTnk0SjZreVVVbEVqSGFOT1ctZWFZNW5YN3ZMUW9UNUV1YlI2OGpHdmE5TUhzaWxKUC1UY2hGNTcyZVVHWkdzd1g1OU5sUjFrQ2JwWnp1dEYtWkR6OWd2Q2N0RkhDSklXTVdsV19DSjl6XzN5NTFhVzhhSjlUMjVNRWRpNVNsMU93ampCV1VfdEthVkVNYTRIODF6QQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Independent",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Trump axes chief of staff Susie Wiles for Stephen Miller after resounding midterms defeat",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeTdsUXZkOFdfdzhNWE5DajVGaU91M2lpRjBPQ0dnWjNvYXNSdktTUFpQXzBYVXBXVTVQUzZCaEdOVWhYZVZEaS1xVFFqTlM2cmZON0ZaeS1Bal9kS1JVaDdFTDRCR2d0MTY0bERfdHhYZ2xHZ2QycEZ2Q0NuMlNqUGk5NmFOaUlTN2kwelVQSEhUVHl1TFFIc19sdFZlWUVDYURVTTdmalpxdGVGMEZoc1N3c01KYXZMYm12d0N3Rl9SQQ?oc=5"
+            },
+            {
+              "framing": "f4",
+              "quote": "Who is Donald Trump's new chief of staff, Stephen Miller?",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNV9fSmNMVVpKSVBVOXBZRHVOU2pWREJSSXAtLW82TGt0ekVzejd2X01nZVYxd3RRdWU0OUVoYzJGQ2RQQ2dKRk9MNXN0akZLQ2NDVGVoVEZmM2pDNmtRWVFwZjc5UVZfNDExdGtnM2hQN0pLS3dyTDJ6OWFxVjhiZzk0WVR3anFTTU00ZnZDTE5ncThEZUhVaDR5bUJ2SDN4dC02NDNNd245MENxa0cycFQxTzk2TzNY?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Economist",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Stephen Miller is Trump's new chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWXVsYjNIUTNtc0pHWXNhQnhTUm54aWVpa09VMUNlZlo5XzBnZk9PNEhuU0pHNDlRV1hMLVp3OXZnakJ6ZzJPTDJlUjhkN0FQbVdHUW1UblpFd203b0pmdmJBTVlWaDNfYVJSckN4ei1LVWJ0NXpRcHhTUTV1MTh1c1d6X21HTlBDVjNxSy1BSnBsaGkyX2J3?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/10 items needed)",
+          "confidence": "-",
+          "name": "The Times of Israel",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Days after midterm route",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYlRBekhhN0x2MHUtdXROQ2pmOVlzOW94c2ZCcXFQRy1RcXJQT1ZRQlZMOElBZjA1d2hOWVpuSXRlUVBNRVVYeWlHVzFkNTYxN2I1MWw1YlhFenBPdmlTdDgzaHRTUjhyS0s5Z1ZtQnhxRFlhZ1pGWFpqOEtGSXlrcTJ2dWdWY1JKZDR4VXV4b2ZnTlBkblY3NjBqajlWcURCLWg1Y0dwLXpMb09Mb1hvTGRlRG41LUlEUm9Ldkl3Sll3ZWl0dVNvcXpMeGNlaFd2SUQwTldXOUluVWM?oc=5"
+            },
+            {
+              "framing": "f2",
+              "quote": "After midterm defeat, Trump replaces Susie Wiles with Stephen Miller",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVnFVQjJUU094dWlzNlQtOGswcXhoWWczTm1WT3owRDFXM04yRnQzN0RoMGFmNmpmVzFsSnMxYmdieXpjMGVLTmpLRFViSFZMcjRsZUlfdm5wMnJpMks2TGJvWE5JaEVqODdBTUcxOHlrczMxVTFTSFFoS3VxRWRQRHAtVFRhZnhOTmd5OFlsSXRTOEMzRktkdGtvRTRPSU02ZkM3bEwyemFGaDVjN1ZhYjZGalhCd03SAbwBQVVfeXFMT2VHNEp1MVlaZkpEb2VkbGt0ajlLS0xmcVRSQmZOdEtIN1BIMHRIb0pSX0N0VDlRMWNsaXJVVnNFVEF1Z2R1dzRWTVNrTDhXRmhUeHhqMjdrUVRrNG9Rek12Q3U5ZnIwTEJZTENWTGcxYjQ3RElBeE0wX3FVWkdnM05uYWlob2ExcU1ONHQyc21KbWZoMV95ZjBWUGwwYl9XZ2hGMFVUR3dqTXpFaUxzcUpGYW5YTkxST3NQRUY?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "CBS News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f4",
+              "quote": "is the architect of his controversial immigration policies",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSVR1emxyZTgtakUwQUtId0pzYUtXVWVNVS1XNWFVcFdEdzdVQ2ZUMmtyMmx0N2dTSjNtamZxQ0RiVTRNNFFBenpGTzRHWDBkUXlpQmpHQUFNTmNOT2ZLUVlVWEFyYlZQVUpTT2NzRGJ2SHQ5czktTk91WFdMV05GY25JRXQzbDNhTW9CV1pXQQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "The Washington Post",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f1",
+              "quote": "Trump names Stephen Miller new White House chief of staff",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOUdhNU1vVzIzTjBRY0VsWlhFdHF2dGJUbUxLOHRSa0owZXdqMXpSaWdfYmhMUFBOand0QzFLWVVHLTh2ZTZTcmNhVmRfSnIyMFNQcDZkaEdDak0xWjZiTHJQcFBYVG1GTi12bXhqX0lyNi1PdmFqREhVSFlmazNUZDc4Mm1aTTdIc0VsZnUwaWQtcldjTEJPRndKTVNyV3FkNHR1YlM1d3p5QQ?oc=5"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/10 items needed)",
+          "confidence": "-",
+          "name": "AP News",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "after GOP’s midterm defeat",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdReU5NTkhUSUdyRGlEeFF3YVVOaW9PMjdJOUtSd2YwdEpzUUM5WmhtRlJ1NFNrekdLZjM3Y0RSeTIwQ0xwQW5xaHJhUnFrSlhHZm1HZmdzcjFlZzcydHVhV3dLQ1U4X21vakg3a01ONi1VREdFc1pJMVB2S3JXVEN4clJyR182NnBBSG9WcWQtQXNpSVQzQw?oc=5"
+            }
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:alternet@www.urbanmind.net",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "had not gotten the midterm message",
+              "url": "https://www.urbanmind.net/display/f7dd981d-80f610d6-c5b2ced757a999fe"
+            },
+            {
+              "framing": "f2",
+              "quote": "won't be looking to cut any deals once the Democrats assume their majorities",
+              "url": "https://www.urbanmind.net/display/f7dd981d-cec66381-bae7621448bc222b"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:drmike",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "replaced a relatively sane chief of staff with someone.as stark-raving mad as He",
+              "url": "https://mastodon.social/@drmike/117571818710152780"
+            },
+            {
+              "framing": "f3",
+              "quote": "# fascism # racism # hate",
+              "url": "https://mastodon.social/@drmike/117572031197259351"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "label": "building (2/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:drrjv",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "no one in America could have picked to be his new chief of staff",
+              "url": "https://mastodon.social/@drrjv/117575429341314521"
+            },
+            {
+              "framing": "f2",
+              "quote": "Trump responded by putting Stephen Miller in charge",
+              "url": "https://mastodon.social/@drrjv/117574557489638011"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:elfolio",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "replaces Susie Wiles with Stephen Miller... after the Republican defeat.",
+              "url": "https://mastodon.social/@elfolio/117572150582687210"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:Nonilex@masto.ai",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Very bad news. Trump may be a lame duck, but Miller is a zealot.",
+              "url": "https://masto.ai/@Nonilex/117571063951512823"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:KimPerales@toad.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "first administrative change since the lopsided midterm elections",
+              "url": "https://toad.social/@KimPerales/117571077071174752"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:iuculano@masto.ai",
+          "reference": "",
+          "evidence": []
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:deadline",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Moves Follows Voters' Midterm Rebuke",
+              "url": "https://mastodon.social/@deadline/117571054559303406"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:yourautisticlife@mast.yourautisticlife.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "Miller is an Emperor Palpatine wannabe.",
+              "url": "https://mast.yourautisticlife.com/@yourautisticlife/117571342777065696"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:bazcook@mas.to",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "You can see where this is all going.",
+              "url": "https://mas.to/@bazcook/117572128669713098"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:scheichsbeutel@troet.cafe",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f3",
+              "quote": "absolutely unscrupulous racist",
+              "url": "https://troet.cafe/@scheichsbeutel/117572124608085912"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:billykaren@mstdn.social",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Voters handed Democrats the House and Senate.",
+              "url": "https://mstdn.social/@billykaren/117572092239565402"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:tda@thedemocracyadvocate.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Shows 47 Learned Nothing From the Midterms",
+              "url": "https://thedemocracyadvocate.com/white-house/stephen-miller-chief-of-staff/"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:tda@social.thedemocracyadvocate.com",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Three days later, 47 promoted Stephen Miller",
+              "url": "https://social.thedemocracyadvocate.com/notes/at9629fq8o"
+            }
+          ]
+        },
+        {
+          "n": 1,
+          "label": "building (1/15 items needed)",
+          "confidence": "-",
+          "name": "mastodon:LiloStart",
+          "reference": "",
+          "evidence": [
+            {
+              "framing": "f2",
+              "quote": "Trump is accelerating the residual destruction of the Republicans",
+              "url": "https://mastodon.social/@LiloStart/117571789254044946"
+            }
+          ]
+        }
+      ]
+    },
+    "narrative": "Coverage of Stephen Miller's naming as chief of staff splits into four framings, and the divide is rated strong (kappa 0.54). Of 160 items, 56 (35%) were framed. The largest share, 41%, is a neutral personnel announcement: Trump named Miller to replace Susie Wiles. Next is 29% tying the move to Republican midterm losses, using words like 'fires', 'blowout' and 'wipeout'. Alarm about Miller's influence makes up 16%, citing a former Trump aide who called the prospect 'terrifying'. A promotion-and-profile framing makes up 14%.\n\nOutlet labels are tentative. CNN, Politico, CNBC, DW, WSJ, NPR, The Economist and The Washington Post show mainly neutral headlines. NDTV, The Times of India, New York Post, The Independent, The Times of Israel, AP News and Politico (one headline) show the midterm framing. NDTV, The Independent and CBS News also have profile pieces. The Times of India has one alarm-style item.\n\nMastodon accounts mostly use the midterm framing (alternet, elfolio, KimPerales, deadline, billykaren, both tda accounts, LiloStart) or the alarm framing (drmike, Nonilex, yourautisticlife, bazcook, scheichsbeutel). drrjv appears in both.\n\nLimits: outlets are judged from headlines and snippets, no outlet or account has reached the item threshold, and samples are very small.",
+    "rank": 3
+  }
+]

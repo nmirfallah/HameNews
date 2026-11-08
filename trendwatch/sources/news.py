@@ -19,6 +19,11 @@ def google_url(query, edition="US", lang="en"):
     return GOOGLE_NEWS_LANG.format(q=quote_plus(query), c=edition, l=lang)
 
 
+def top_url(edition="US", section=""):
+    base = "https://news.google.com/rss" + (f"/headlines/section/topic/{section}" if section else "")
+    return f"{base}?hl=en-{edition}&gl={edition}&ceid={edition}:en"
+
+
 def signals(cfg):
     """Headlines from the configured feeds, used as trend signals."""
     out = []
@@ -31,7 +36,25 @@ def signals(cfg):
             title = strip_html(e.get("title", ""))
             if title:
                 out.append(Signal(name=f"{title} [{f['name']}]", platform="news",
-                                  score=1.0, url=e.get("link", "")))
+                                  score=1.0, url=e.get("link", ""), source=f["name"]))
+    return out
+
+
+def top_signals(cfg):
+    """Google News top-story feeds from several countries: many outlets, so big stories stand out."""
+    d = cfg["discovery"]
+    out, seen = [], set()
+    for edition in d.get("top_news_editions", ["US"]):
+        for section in d.get("top_news_sections", [""]):
+            feed = get_feed(top_url(edition, section))
+            time.sleep(0.2)
+            for item in google_items(feed, d.get("headlines_per_feed", 30)):
+                key = (item.text.lower(), item.outlet.lower())
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append(Signal(name=f"{item.text} [{item.outlet}]", platform="news", score=1.0,
+                                  url=item.url, source=item.outlet))
     return out
 
 

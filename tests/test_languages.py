@@ -17,6 +17,15 @@ class NameAndNormTests(unittest.TestCase):
         for bad in ("", None, "x", "english", "12", "e1", 5):
             self.assertEqual(L.norm(bad), "", repr(bad))
 
+    def test_undetermined_language_codes_are_not_languages(self):
+        for code in ("und", "UND", "zxx", "mul", "mis", "xx"):
+            self.assertEqual(L.norm(code), "", code)
+
+    def test_more_languages_have_readable_names(self):
+        self.assertEqual(L.name("sk"), "Slovak")
+        self.assertEqual(L.name("ca"), "Catalan")
+        self.assertEqual(L.name(L.norm("und")), "unknown")
+
     def test_name(self):
         self.assertEqual(L.name("fa"), "Persian")
         self.assertEqual(L.name("zz"), "zz")
@@ -113,6 +122,11 @@ class TranslateItemsTests(unittest.TestCase):
         L.translate_items(llm, again, self.store, cfg())
         self.assertEqual(len(llm.calls), 1)
         self.assertEqual(again[0].text_en, "Talks begin")
+
+    def test_an_undetermined_answer_keeps_the_existing_guess(self):
+        it = item("x", text="Alguna cosa", lang="es")
+        L.translate_items(ScriptedLLM([[{"i": 0, "lang": "und", "english": "Something"}]]), [it], self.store, cfg())
+        self.assertEqual((it.lang, it.text_en), ("es", "Something"))
 
     def test_the_model_can_correct_a_wrong_language_guess(self):
         it = item("x", text="Hello there", lang="de")

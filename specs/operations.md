@@ -16,6 +16,11 @@ Run once a day unattended, cheaply, with failures that are visible and never sil
 - Offline test suite (unittest, no dependencies beyond the app's own) runs on every push via
   `.github/workflows/tests.yml`; the AI and all network access are faked in tests.
 
+## Cost levers
+Full analysis costs roughly 50-60 fast-model requests plus a few smart-model ones per topic (seen in the
+first live run). `discovery.topics_per_day` is the main lever; "Also trending" costs nothing beyond the
+single clustering call. Check the Console usage page and set `topics_per_day` to what you want to pay daily.
+
 ## Open questions
 - Translation adds fast-model calls (20 items per call) and one keyword-translation call per topic; how much does it add per run? Both are cached.
 - Actual cost per daily run on live data? Check the Anthropic Console usage page after the first runs.

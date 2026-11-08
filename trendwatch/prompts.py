@@ -11,8 +11,11 @@ SYSTEM = (
 )
 
 
-def cluster(signals_text, n_candidates, existing):
+def cluster(signals_text, n_candidates, existing, watchlist=()):
     ex = ", ".join(existing[:50]) or "(none)"
+    watch = ("Standing topics the user always wants tracked: " + "; ".join(watchlist) + ". If any signals relate to "
+             "one of them, return it as its own topic using exactly that name, even if it is only weakly trending.\n"
+             if watchlist else "")
     return (
         "TASK:cluster_topics\n"
         "Below are trending signals from several platforms, each as [id] (platform) text.\n"
@@ -20,6 +23,7 @@ def cluster(signals_text, n_candidates, existing):
         "Ignore evergreen or generic items (e.g. 'Main Page', lists of deaths, standing reference pages) "
         "and signals that fit no group.\n"
         f"Topics already tracked: {ex}. If a group is the same story as one of these, reuse that exact name.\n"
+        f"{watch}"
         f"Return a JSON list of at most {n_candidates} objects with keys: "
         "topic (short neutral name), keywords (2-5 search terms), signal_ids (list of ints), "
         "summary (one neutral sentence on what is happening). Write topic names as short readable titles in "

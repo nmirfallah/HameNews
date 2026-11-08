@@ -149,6 +149,61 @@ class NativeSearchTests(unittest.TestCase):
         self.assertNotIn("hl=fa", urls[0])
 
 
+class TopNewsTests(unittest.TestCase):
+    def test_urls_for_editions_and_sections(self):
+        self.assertEqual(news.top_url("US", ""), "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en")
+        self.assertEqual(news.top_url("GB", "WORLD"),
+                         "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-GB&gl=GB&ceid=GB:en")
+
+    def entry(self, title, outlet, link):
+        return {"title": f"{title} - {outlet}", "link": link, "source": {"title": outlet, "href": f"https://{outlet.lower()}.com"}}
+
+    def run_top(self, feeds, **disc):
+        urls = []
+
+        def fake(url):
+            urls.append(url)
+            return feeds.get(url, feed())
+
+        conf = cfg(discovery=dict({"top_news_editions": ["US", "IL"], "top_news_sections": ["", "WORLD"]}, **disc))
+        with mock.patch.object(news, "get_feed", side_effect=fake), mock.patch.object(news.time, "sleep"):
+            return news.top_signals(conf), urls
+
+    def test_one_request_per_edition_and_section(self):
+        _, urls = self.run_top({})
+        self.assertEqual(len(urls), 4)
+        self.assertEqual(len(set(urls)), 4)
+
+    def test_headlines_become_news_signals_with_the_outlet_recorded(self):
+        feeds = {news.top_url("US", ""): feed(self.entry("Strikes continue", "BBC", "http://g/1"),
+                                              self.entry("Talks resume", "CNN", "http://g/2"))}
+        out, _ = self.run_top(feeds)
+        self.assertEqual([(s.name, s.platform, s.source, s.url) for s in out],
+                         [("Strikes continue [BBC]", "news", "BBC", "http://g/1"),
+                          ("Talks resume [CNN]", "news", "CNN", "http://g/2")])
+
+    def test_the_same_headline_from_several_editions_counts_once_but_different_outlets_all_count(self):
+        same = self.entry("Strikes continue", "BBC", "http://g/1")
+        feeds = {news.top_url("US", ""): feed(same), news.top_url("IL", ""): feed(same),
+                 news.top_url("IL", "WORLD"): feed(self.entry("Strikes continue", "Times of Israel", "http://g/9"))}
+        out, _ = self.run_top(feeds)
+        self.assertEqual(sorted(s.source for s in out), ["BBC", "Times of Israel"])
+
+    def test_headlines_per_feed_limits_each_feed(self):
+        many = feed(*[self.entry(f"Story {i}", f"Out{i}", f"http://g/{i}") for i in range(10)])
+        out, _ = self.run_top({news.top_url("US", ""): many}, headlines_per_feed=3)
+        self.assertEqual(len(out), 3)
+
+    def test_failed_feeds_are_skipped(self):
+        out, _ = self.run_top({})
+        self.assertEqual(out, [])
+
+    def test_the_source_is_registered_and_enabled_by_default(self):
+        from trendwatch.sources import SIGNAL_SOURCES
+        self.assertIs(SIGNAL_SOURCES["google_news_top"], news.top_signals)
+        self.assertIn("google_news_top", cfg()["discovery"]["enabled_sources"])
+
+
 class NewsSignalsTests(unittest.TestCase):
     def test_headlines_become_signals_and_failed_feeds_are_skipped(self):
         feeds = {"http://a": feed({"title": "<b>Hi</b>", "link": "l1"}, {"title": "Second", "link": "l2"}),
@@ -158,6 +213,7 @@ class NewsSignalsTests(unittest.TestCase):
         with mock.patch.object(news, "get_feed", side_effect=lambda u: feeds[u]):
             out = news.signals(conf)
         self.assertEqual([(s.name, s.platform, s.url) for s in out], [("Hi [BBC]", "news", "l1")])
+        self.assertEqual(out[0].source, "BBC")
 
 
 class NewsSearchTests(unittest.TestCase):

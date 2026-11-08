@@ -8,6 +8,7 @@ SIGNAL_SOURCES = {
     "mastodon": mastodon.signals,
     "bluesky": bluesky.signals,
     "news_headlines": news.signals,
+    "google_news_top": news.top_signals,
 }
 
 # Collection: each takes (topic, cfg) and returns list[Item]

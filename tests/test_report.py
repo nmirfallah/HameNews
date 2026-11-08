@@ -157,6 +157,61 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("## Trending now", md)
 
 
+ALSO = [{"rank": 3, "topic": "Krakow shooting", "summary": "A gunman opened fire.", "platforms": ["bluesky", "news"],
+         "n_signals": 8, "n_outlets": 5,
+         "signals": [{"platform": "news", "name": "Five killed in Krakow [BBC]", "url": "http://bbc/1", "source": "BBC"},
+                     {"platform": "bluesky", "name": "Krakow", "url": "", "source": ""},
+                     {"platform": "news", "name": "Evil <b>link</b>", "url": "javascript:alert(1)", "source": "X"}]},
+        {"rank": 4, "topic": "Bare topic", "summary": "", "platforms": ["news"], "n_signals": 2, "n_outlets": 0,
+         "signals": []}]
+
+
+class AlsoTrendingTests(unittest.TestCase):
+    def test_every_topic_appears_in_the_ranked_list_with_the_unanalysed_ones_marked(self):
+        md = report.render("d", [result()], ALSO)
+        self.assertIn("1. Album Launch\n", md)
+        self.assertIn("3. Krakow shooting (headlines only)", md)
+        self.assertIn("4. Bare topic (headlines only)", md)
+        self.assertLess(md.index("1. Album Launch"), md.index("3. Krakow shooting"))
+
+    def test_the_ranked_list_is_ordered_by_rank_even_when_results_and_extras_interleave(self):
+        also = [dict(ALSO[0], rank=2), dict(ALSO[1], rank=5)]
+        md = report.render("d", [result(rank=1), result(topic="Late", rank=4)], also)
+        order = [md.index(x) for x in ("1. Album Launch", "2. Krakow shooting", "4. Late", "5. Bare topic")]
+        self.assertEqual(order, sorted(order))
+
+    def test_markdown_section(self):
+        md = report.render("d", [result()], ALSO)
+        self.assertIn("## Also trending (headlines only)", md)
+        self.assertIn("topics_per_day", md)
+        self.assertIn("### #3 Krakow shooting", md)
+        self.assertIn("_Trending on bluesky, news (8 signals, 5 outlets)_", md)
+        self.assertIn("A gunman opened fire.", md)
+        self.assertIn("- [Five killed in Krakow [BBC]](http://bbc/1)", md)
+        self.assertIn("- Krakow\n", md)                       # no url: plain text
+        self.assertNotIn("](javascript:", md)                   # unsafe urls are never linked
+
+    def test_no_extras_means_no_section(self):
+        self.assertNotIn("Also trending", report.render("d", [result()]))
+        self.assertNotIn("Also trending", report.render_html("d", [result()]))
+
+    def test_html_section(self):
+        html = report.render_html("d", [result()], ALSO)
+        self.assertIn("<h2>Also trending (headlines only)</h2>", html)
+        self.assertIn("Krakow shooting", html)
+        self.assertIn("(8 signals, 5 outlets)", html)
+        self.assertIn('<a href="http://bbc/1"', html)
+        self.assertIn("(headlines only)", html)
+        self.assertNotIn("javascript:", html)
+        self.assertNotIn("<b>link</b>", html)                   # untrusted text is escaped
+
+    def test_trend_line_shows_outlets_when_known_and_watchlist_topics_say_so(self):
+        self.assertIn("(3 signals, 4 outlets)", report.render_topic(result(n_outlets=4)))
+        watch = result(platforms=[], n_signals=0, watchlist=True)
+        self.assertIn("Watchlist topic (no trend signals today)", report.render_topic(watch))
+        self.assertIn("Subject chosen manually", report.render_topic(result(platforms=[], n_signals=0)))
+
+
 class HtmlTests(unittest.TestCase):
     def test_page_structure(self):
         html = report.render_html("2026-01-01", [result(), result(topic="Other", rank=2)])
@@ -164,7 +219,8 @@ class HtmlTests(unittest.TestCase):
         self.assertIn("<title>HameNews 2026-01-01</title>", html)
         self.assertIn("width=device-width", html)
         self.assertIn("prefers-color-scheme:dark", html)
-        self.assertIn("<li>Album Launch</li>", html)
+        self.assertIn("<li value='1'>Album Launch", html)
+        self.assertIn("<li value='2'>Other", html)
         self.assertIn("#1</span> Album Launch", html)
 
     def test_sides_links_and_details(self):

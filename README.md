@@ -18,6 +18,7 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 | `python run.py --open` | **The main program.** Checks every trend source, picks the trending subjects, collects coverage, and writes the report (then opens it in your browser). |
 | `python run.py --subject "Iran" --open` | Same, but for one subject you choose instead of discovered ones. |
 | `python run.py --open-latest` | Reopens the newest report without running anything. |
+| `python run.py --why "Iran"` | Explains what happened to a story in the latest run: whether any source returned it, which topic it landed in, and why that topic was or was not analysed. |
 | `python check_sources.py` | Diagnostic only: tests whether each website responds. It makes no report. |
 
 ## Contents
@@ -35,10 +36,16 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 
 ## How it works
 
-1. **Discover.** Trend signals come from Google Trends (public RSS), Wikipedia pageviews,
-   Hacker News, Mastodon, Bluesky and news-feed headlines. The AI groups them into topics.
-   A topic counts as trending only if it shows up on at least `min_platforms` different
-   platforms (default 2). Skip this step with `--subject "..."`.
+1. **Discover.** Trend signals come from Google Trends, Wikipedia, Hacker News, Mastodon, Bluesky,
+   your news feeds and Google News top stories as seen from several countries. The AI groups them into
+   topics, and every topic gets a **trend score** that rewards both breadth (how many platforms) and volume
+   (how many *different news outlets* cover it). A topic qualifies by trending on `min_platforms` platforms
+   or by being covered by `min_news_outlets` outlets, so a big story with no spike on search or social media
+   is not dropped. All qualifying topics are ranked by score. The top `topics_per_day` get the full analysis
+   and the rest are listed under "Also trending" with their headlines, so nothing is hidden (set
+   `topics_per_day: 0` to analyse all of them). Topics on your `watchlist` are always analysed.
+   Every run saves what it saw to `data/discovery/<date>.json`; `python run.py --why "Iran"` reads it.
+   Skip this step with `--subject "..."`.
 2. **Collect.** Articles come from Google News RSS plus your own feed list. Posts come from
    Bluesky, Mastodon and Hacker News comments.
 3. **Find framings.** The AI proposes up to five ways different groups talk about the topic,
@@ -295,6 +302,7 @@ first, and enter them as your own ratings.
 ```
 data/
   reports/2026-11-03.html    the daily report to read in a browser (plus .md and .json versions)
+  discovery/2026-11-03.json  every signal and topic that day's discovery saw, and what happened to each
   outlet_groups.json         which country group each outlet belongs to (editable)
   outlet_leanings.json       each outlet's leaning and where it came from (editable)
   translations.json          cached English translations of non-English items
@@ -315,7 +323,7 @@ run.py                      command-line entry point
 check_sources.py            smoke-tests every source and the AI model
 config.yaml                 your settings
 trendwatch/
-  discovery.py              find and rank trending topics
+  discovery.py              find, score and rank trending topics (plus explain.py for --why)
   collect.py                gather articles and posts
   stance.py                 framings, two-pass labelling, divide verdict
   profiles.py               running outlet and account profiles

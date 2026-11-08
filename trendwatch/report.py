@@ -9,9 +9,15 @@ NOTE = ("Summaries and labels are written by an AI from headlines and short snip
         "Open the linked sources before relying on any of it.")
 
 
+def _counts(n_signals, n_outlets):
+    return f"{n_signals} signals" + (f", {n_outlets} outlets" if n_outlets else "")
+
+
 def _trend_line(res):
     if res.get("platforms"):
-        return f"Trending on {', '.join(res['platforms'])} ({res['n_signals']} signals)"
+        return f"Trending on {', '.join(res['platforms'])} ({_counts(res['n_signals'], res.get('n_outlets'))})"
+    if res.get("watchlist"):
+        return "Watchlist topic (no trend signals today)"
     return "Subject chosen manually"
 
 
@@ -90,10 +96,34 @@ def render_topic(res):
     return "\n".join(lines)
 
 
-def render(day, results):
+def _also_md(entry):
+    lines = [f"### #{entry.get('rank', '?')} {entry['topic']}",
+             f"_Trending on {', '.join(entry.get('platforms') or [])} "
+             f"({_counts(entry.get('n_signals', 0), entry.get('n_outlets'))})_", ""]
+    if entry.get("summary"):
+        lines += [entry["summary"], ""]
+    for sig in entry.get("signals") or []:
+        url = sig.get("url") or ""
+        lines.append(f"- [{sig['name']}]({url})" if url.startswith(("http://", "https://")) else f"- {sig['name']}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def _ranked_titles(results, also):
+    rows = [(r.get("rank") or 10 ** 6, r["topic"], "") for r in results]
+    rows += [(a.get("rank") or 10 ** 6, a["topic"], " (headlines only)") for a in also]
+    return sorted(rows, key=lambda row: row[0])
+
+
+def render(day, results, also=()):
     head = [f"# HameNews report {day}", "", f"_{NOTE}_", "", "## Trending now", ""]
-    head += [f"{r.get('rank', i)}. {r['topic']}" for i, r in enumerate(results, 1)] + [""]
-    return "\n".join(head + [render_topic(r) for r in results])
+    head += [f"{rank}. {title}{tag}" for rank, title, tag in _ranked_titles(results, also)] + [""]
+    out = head + [render_topic(r) for r in results]
+    if also:
+        out += ["## Also trending (headlines only)", "",
+                "_Not analysed in depth. Raise `discovery.topics_per_day` in config.yaml, or set it to 0, to "
+                "analyse more of them._", ""] + [_also_md(a) for a in also]
+    return "\n".join(out)
 
 
 # ---------------------------------------------------------------------- HTML
@@ -211,11 +241,28 @@ th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertic
 """
 
 
-def render_html(day, results):
-    toc = "".join(f"<li>{_e(r['topic'])}</li>" for r in results)
+def _also_html(entry):
+    items = []
+    for sig in entry.get("signals") or []:
+        items.append(f"<li>{_link(sig['name'], sig.get('url'))}</li>")
+    return (f"<section class='topic'><h3><span class='rank'>#{_e(entry.get('rank', '?'))}</span> "
+            f"{_e(entry['topic'])}</h3><p class='muted'>Trending on {_e(', '.join(entry.get('platforms') or []))} "
+            f"({_e(_counts(entry.get('n_signals', 0), entry.get('n_outlets')))})</p>"
+            + (f"<p>{_e(entry['summary'])}</p>" if entry.get("summary") else "")
+            + (f"<ul>{''.join(items)}</ul>" if items else "") + "</section>")
+
+
+def render_html(day, results, also=()):
+    toc = "".join(f"<li value='{_e(rank)}'>{_e(title)}<span class='muted'>{_e(tag)}</span></li>"
+                  for rank, title, tag in _ranked_titles(results, also))
+    more = ""
+    if also:
+        more = ("<h2>Also trending (headlines only)</h2><p class='muted'>Not analysed in depth. Raise "
+                "<code>discovery.topics_per_day</code> in config.yaml, or set it to 0, to analyse more of them.</p>"
+                + "".join(_also_html(a) for a in also))
     return ("<!doctype html><html lang='en'><head><meta charset='utf-8'>"
             "<meta name='viewport' content='width=device-width, initial-scale=1'>"
             f"<title>HameNews {_e(day)}</title><style>{CSS}</style></head><body><main>"
             f"<h1>HameNews</h1><p class='muted'>{_e(day)}</p><p class='note'>{_e(NOTE)}</p>"
             f"<h3>Trending now</h3><ol class='toc'>{toc}</ol>"
-            + "".join(_topic_html(r) for r in results) + "</main></body></html>")
+            + "".join(_topic_html(r) for r in results) + more + "</main></body></html>")
