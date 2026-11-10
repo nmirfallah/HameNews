@@ -77,15 +77,17 @@ def _sample(signals, limit=6):
     return out
 
 
-def discover_topics(llm, cfg, existing_topic_names=(), record=None):
+def discover_topics(llm, cfg, existing_topic_names=(), record=None, extra_signals=(), only_extra=False):
     """Return EVERY qualifying topic, ranked by trend score (not capped; see split_topics).
 
     If `record` is a dict it is filled with the signals and all clusters, for the discovery log."""
-    signals = cap_signals(gather_signals(cfg), cfg)
+    extra = list(extra_signals)
+    signals = extra if only_extra else cap_signals(gather_signals(cfg), cfg) + extra
     if not signals:
         log.warning("no trend signals collected")
         return []
     d = cfg["discovery"]
+    extra_urls = {s.url for s in extra if s.url}
     watchlist = [str(w).strip() for w in d.get("watchlist", []) if str(w).strip()]
     listing = "\n".join(f"[{i}] ({s.platform}) {clip(s.name, 120)}" for i, s in enumerate(signals))
     data = llm.complete_json(prompts.SYSTEM,
@@ -115,11 +117,12 @@ def discover_topics(llm, cfg, existing_topic_names=(), record=None):
             "watchlist": name.lower() in watch_names,
             "signal_ids": ids,
             "signals": _sample(sigs),
+            "focus_urls": [s.url for s in sigs if s.url in extra_urls],
         })
 
     # Qualify by breadth (several platforms) OR by many different outlets covering it.
     def qualifies(t):
-        return (t["watchlist"] or len(t["platforms"]) >= d["min_platforms"]
+        return (only_extra or t["watchlist"] or len(t["platforms"]) >= d["min_platforms"]
                 or t["n_outlets"] >= d.get("min_news_outlets", 0) > 0)
 
     for t in topics:

@@ -1,0 +1,41 @@
+{
+  "topic": "Iran war",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Live military operations and blockade",
+      "description": "Reports tactical developments such as strikes, the naval blockade, the new land-route task force, vessels fired upon and mines, mostly in a factual, event-by-event style."
+    },
+    {
+      "id": "f2",
+      "label": "Diplomacy and de-escalation tracks",
+      "description": "Presents talks, the Qatari plan for nuclear inspections, reopening the Strait of Hormuz, and international calls for restraint as a possible path out of the conflict."
+    },
+    {
+      "id": "f3",
+      "label": "Domestic politics and midterm fallout",
+      "description": "Treats the war through U.S. electoral and intra-party dynamics, including the midterm results, GOP criticism, clashing advisers, and accountability for the president and Hegseth."
+    },
+    {
+      "id": "f4",
+      "label": "Official US triumph and resolve",
+      "description": "Relays administration messaging that portrays the war as courageous and historic, stresses finishing the job, and cites progress and blockade effectiveness."
+    },
+    {
+      "id": "f5",
+      "label": "Skeptical assessments of war outcomes",
+      "description": "Questions official claims by pointing to the nuclear-information bounty, reported US-Israeli failures, oil company profits, and escalation risk."
+    }
+  ],
+  "created": "2026-11-08",
+  "history": [
+    {
+      "date": "2026-11-08",
+      "verdict": "strong",
+      "kappa": 0.59,
+      "n_items": 160,
+      "n_framed": 77
+    }
+  ]
+}

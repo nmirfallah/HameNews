@@ -1,0 +1,41 @@
+{
+  "topic": "ICE enforcement controversies",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Accountability and legal limits",
+      "description": "Frames ICE as having expanded beyond its legal authorities and oversight, focusing on remedies, prosecution of agents, masked or unidentified officers, and court rulings."
+    },
+    {
+      "id": "f2",
+      "label": "Waste and harm critique",
+      "description": "Presents ICE practices as problematic, wasteful or harmful, citing reports, polls showing public disapproval, and individual cases such as detained children, courthouse re-arrests and hospital presence."
+    },
+    {
+      "id": "f3",
+      "label": "Local-federal cooperation disputes",
+      "description": "Treats ICE as a matter of state and local policy choices, covering 287(g) agreements, task forces, police alerts, sheriff and governor stances, and legislation."
+    },
+    {
+      "id": "f4",
+      "label": "Trump policy and personnel",
+      "description": "Explains ICE enforcement through the Trump administration's agenda, key figures such as Stephen Miller and new ICE leadership, and the political direction of deportation policy."
+    },
+    {
+      "id": "f5",
+      "label": "Explainer and insider perspective",
+      "description": "Offers informational or expert-led background on what ICE is, what powers agents have and why enforcement has become aggressive, often through former officials or legal analysts."
+    }
+  ],
+  "created": "2026-11-08",
+  "history": [
+    {
+      "date": "2026-11-08",
+      "verdict": "weak",
+      "kappa": 0.69,
+      "n_items": 160,
+      "n_framed": 21
+    }
+  ]
+}

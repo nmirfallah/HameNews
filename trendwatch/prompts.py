@@ -163,3 +163,15 @@ def translate_keywords(topic, keywords, langs):
         "Return a JSON object mapping each language code to a list of strings.\n"
         f"Languages: {', '.join(langs)}"
     )
+
+
+def verify_translations(items_block):
+    return (
+        "TASK:verify_translations\n"
+        "Below are original news texts, each with an English translation made by another model. Judge how "
+        "faithful each translation is. verdict is 'good' (accurate), 'minor' (small slips or lost nuance that do "
+        "not change the meaning) or 'wrong' (meaning changed, content added or missing, names or numbers wrong). "
+        "note is at most 20 words and only needed when the verdict is not 'good'. Do not rewrite the translation.\n"
+        "Return a JSON list with one object per item with keys: i (the item index), verdict, note.\n\n"
+        f"{items_block}"
+    )

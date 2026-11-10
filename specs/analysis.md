@@ -28,6 +28,12 @@ Translation quality is therefore part of label quality; the evaluation set shoul
   structured-output mode or dropping the model-written evidence in favour of code-extracted snippets.
 - The model copied the style of the "already tracked topics" list. Pass readable names, never file-name slugs.
 
+## Translation testing
+`python run.py -j <source>` runs detection and translation on one source and saves a side-by-side page with
+automatic checks and an optional model review (`--verify`). To go further: keep a small human-checked set of
+headlines per language (Persian, Arabic, Russian, Hebrew, Turkish) and score translations against it, and
+compare translations of the same story from different outlets for consistent handling of loaded terms.
+
 ## Open questions
 - Does the model keep to the "say it once" rule on real topics, or does it still restate the main story in
   each group? If so, tighten the prompt or post-filter repeated sentences.

@@ -3,8 +3,24 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "13WHAM-TV": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "1News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "247Sports": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "6abc Philadelphia": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "7NEWS": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "9NEWS": {
@@ -15,12 +31,20 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "A.V. Club": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "ABC News & Headlines – Australian Broadcasting Corporation": {
     "leaning": "center",
     "source": "AI estimate"
   },
   "ABC News - Breaking News, Latest News and Videos": {
     "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "ABC13 Houston": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "ABC7 Bay Area": {
@@ -47,6 +71,10 @@
     "leaning": "center-right",
     "source": "AI estimate"
   },
+  "AL.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "ANI News": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -63,7 +91,23 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "AUC": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "AZ Family": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Action News 5": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Al Akhbar": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Al Arabiya English": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -71,7 +115,27 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Al-Monitor": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "American Civil Liberties Union": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "American Immigration Council": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "An-Najah National University": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Anadolu Ajansı": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Anbaetv": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -107,6 +171,10 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Awful Announcing": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Axios": {
     "leaning": "center",
     "source": "AI estimate"
@@ -117,6 +185,14 @@
   },
   "BBC": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Bangkok Post": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "BankInfoSecurity": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Barchart.com": {
@@ -131,6 +207,14 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Belleville News-Democrat": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Bleacher Report": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Bloomberg Law News": {
     "leaning": "center",
     "source": "AI estimate"
@@ -139,8 +223,20 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Boston University Athletics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Brave New Coin": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Brennan Center for Justice": {
     "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Briefs Finance": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Britannica": {
@@ -159,8 +255,16 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "Business Insider Africa": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Business Standard": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "BusinessLine": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "CBC": {
@@ -169,6 +273,14 @@
   },
   "CBS News": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "CBS Sports": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "CGTN": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "CNBC": {
@@ -180,6 +292,10 @@
     "source": "AI estimate"
   },
   "CNN Arabic": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "CT Insider": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -199,6 +315,10 @@
     "leaning": "left",
     "source": "AI estimate"
   },
+  "Central Oregon Daily": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Channel 4": {
     "leaning": "center-left",
     "source": "AI estimate"
@@ -207,11 +327,31 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Chron": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "City & State New York": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "CleanTechnica": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Click2Houston": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "College Football Playoff": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "ColombiaOne.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Colorado College Athletics": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -223,11 +363,23 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Common Dreams": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Consequence of Sound": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Council on Foreign Relations": {
     "leaning": "center",
     "source": "AI estimate"
   },
   "Crude Oil Prices Today | OilPrice.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Cryptopolitan": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -237,6 +389,10 @@
   },
   "DW.com": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Daily Pioneer": {
+    "leaning": "center-right",
     "source": "AI estimate"
   },
   "Daily Sabah": {
@@ -251,6 +407,22 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Data Center Dynamics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "DawgNation": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Dawn": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Dayton Daily News": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "Deadline": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -259,11 +431,19 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Deccan Herald": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "Defector": {
     "leaning": "left",
     "source": "AI estimate"
   },
   "Democracy Docket": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Democracy Now!": {
     "leaning": "left",
     "source": "AI estimate"
   },
@@ -287,11 +467,31 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Digital Watch Observatory": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "DutchNews.nl": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "EFE - Agencia de noticias": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "EL PAÍS English": {
     "leaning": "center-left",
     "source": "AI estimate"
   },
   "ESPN": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "ESPN India": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "ETV Bharat": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -327,8 +527,28 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "European Interest": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "FOX 10 Phoenix": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "FOX 26 Houston": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "FOX 5 DC": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "FOX 5 New York": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "FOX Sports": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "FOX4KC.com": {
@@ -336,6 +556,10 @@
     "source": "AI estimate"
   },
   "Facebook": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "FanSided": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -349,6 +573,14 @@
   },
   "Forbes": {
     "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "Forbes.ru": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Formula 1": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Fortune": {
@@ -365,6 +597,10 @@
   },
   "France 24": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Front Office Sports": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Frontline Magazine": {
@@ -387,6 +623,10 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Georgia Recorder": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Gizmodo": {
     "leaning": "center-left",
     "source": "AI estimate"
@@ -399,7 +639,15 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Goshen News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Gray TV": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Greater Kashmir": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -407,7 +655,19 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Gujarat Samachar": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Gulf News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Haaretz": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Halifax Examiner": {
     "leaning": "center-left",
     "source": "AI estimate"
   },
@@ -415,12 +675,32 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Harvard Athletics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Herald Sun": {
     "leaning": "center-right",
     "source": "AI estimate"
   },
+  "Hespress": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Hespress - هسبريس جريدة إلكترونية مغربية": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Hindustan Times": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Holy Cross Athletics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Hoodline": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "House.gov": {
@@ -431,11 +711,27 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Houston Public Media": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "HuffPost UK": {
     "leaning": "left",
     "source": "AI estimate"
   },
+  "ICE | U.S. Immigration and Customs Enforcement (.gov)": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "IIHF": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "ITVX": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "InDaily South Australia": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -447,7 +743,19 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Indiatimes": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Inside NU": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "InsideEVs": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Instagram": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -487,6 +795,10 @@
     "leaning": "right",
     "source": "AI estimate"
   },
+  "Jamaica Gleaner": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Jewish Telegraphic Agency": {
     "leaning": "center",
     "source": "AI estimate"
@@ -503,11 +815,19 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "KCUR": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
   "KEYE": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
   "KFOX": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "KHOU": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -527,6 +847,10 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "KOMO": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "KRCG": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -543,6 +867,10 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "KTVN": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "KVUE": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -551,7 +879,23 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "Kansas Reflector": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Khaleej Times": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Knoxville News Sentinel": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Kooora": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "L'Orient Today": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -571,12 +915,20 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Life.ru": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "LiveNOW from FOX": {
     "leaning": "center-right",
     "source": "AI estimate"
   },
   "Livemint": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "London Evening Standard": {
+    "leaning": "center-right",
     "source": "AI estimate"
   },
   "Los Angeles Times": {
@@ -591,12 +943,32 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "MMA Fighting": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "MPR News": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
   "MS NOW": {
     "leaning": "left",
     "source": "AI estimate"
   },
+  "Marist Poll": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Mashable": {
     "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Masrawy": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Men's Journal": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Metro.co.uk": {
@@ -604,6 +976,14 @@
     "source": "AI estimate"
   },
   "Mezha.net": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Michigan Advance": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Mid-Day": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -631,11 +1011,27 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Moneycontrol.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Morgan Stanley": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Mother Jones": {
     "leaning": "left",
     "source": "AI estimate"
   },
   "MotorTrend": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "MyNorthwest.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "NASA Science (.gov)": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -647,6 +1043,10 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "NBC 7 San Diego": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "NBC Los Angeles": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -655,11 +1055,23 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "NBC Sports": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "NBC4 Washington": {
     "leaning": "center",
     "source": "AI estimate"
   },
+  "NC Football News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "NC Newsline": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "NCAA.com": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -667,8 +1079,16 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "NDTV Profit": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "NHKニュース": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "NOLA.com": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "NPR": {
@@ -676,6 +1096,10 @@
     "source": "AI estimate"
   },
   "NPR Illinois": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Nation Thailand": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -687,8 +1111,20 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "National Herald": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "National Immigration Law Center": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
   "New Atlas": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "New York Magazine": {
+    "leaning": "left",
     "source": "AI estimate"
   },
   "New York Post": {
@@ -705,6 +1141,14 @@
   },
   "News.com.au": {
     "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "News18": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "News24": {
+    "leaning": "center",
     "source": "AI estimate"
   },
   "NewsCord": {
@@ -743,7 +1187,19 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "OSV News": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "On3": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Open Magazine": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Oskaloosa Herald": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -763,7 +1219,23 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Palestine Chronicle": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Pew Research Center": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "Pillsbury Winthrop Shaw Pittman": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Pinsent Masons": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Police1": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -775,7 +1247,15 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Post Register": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Pounding The Rock": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Princeton University Athletics": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -785,6 +1265,14 @@
   },
   "Public Citizen": {
     "leaning": "left",
+    "source": "AI estimate"
+  },
+  "Quartz": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Quinnipiac University Athletics": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "RFI": {
@@ -799,6 +1287,14 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Real Madrid CF | Web Oficial": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Red Bull": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Reddy Neumann Brown PC": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -807,8 +1303,16 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Register-Pajaronian": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Renew Economy": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Republic World": {
+    "leaning": "right",
     "source": "AI estimate"
   },
   "Reuters": {
@@ -843,11 +1347,35 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "Sahara Reporters": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Science Daily": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Scotsman Guide": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Scripps News": {
     "leaning": "center",
     "source": "AI estimate"
   },
+  "Sharjah24": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Sky News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sky Sports": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Somerset County Gazette": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -856,6 +1384,34 @@
     "source": "AI estimate"
   },
   "Spectrum News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sport.ua": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sport5": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sporting News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sports Illustrated": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "SportsGrid": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Sportsnaut": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Spotlight PA": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -871,15 +1427,39 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Star Tribune": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "Startup Fortune": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Stateline": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Stonehill College Athletics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Studentsport.ru": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Stuff": {
     "leaning": "center",
     "source": "AI estimate"
   },
+  "SussexWorld": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "TMZ": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "TNT Sports": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -895,11 +1475,23 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "TechRadar": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Telangana Today": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Telegraph India": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
   "Teneo": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Texas AFT": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -935,12 +1527,28 @@
     "leaning": "center-right",
     "source": "AI estimate"
   },
+  "The Christian Science Monitor": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "The Colorado Sun": {
     "leaning": "center",
     "source": "AI estimate"
   },
   "The Conversation": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Daily Beast": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
+  "The Daily Telegraph": {
+    "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Denver Post": {
+    "leaning": "center-left",
     "source": "AI estimate"
   },
   "The Diplomat – Asia-Pacific Current Affairs Magazine": {
@@ -991,6 +1599,10 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "The Information": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "The Irish News": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -1007,8 +1619,24 @@
     "leaning": "center-right",
     "source": "AI estimate"
   },
+  "The Killeen Daily Herald": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Kyiv Independent": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Malaysian Reserve": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "The Media Line": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Mercury News": {
+    "leaning": "center-left",
     "source": "AI estimate"
   },
   "The Motley Fool": {
@@ -1019,7 +1647,15 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "The National Scot": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "The New Arab": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The New Daily": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1047,6 +1683,18 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "The Spokesman-Review": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "The Sports Examiner": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Statesman": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "The Straits Times": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -1055,8 +1703,20 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "The Sum and Substance": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "The Sun": {
+    "leaning": "right",
+    "source": "AI estimate"
+  },
   "The Telegraph": {
     "leaning": "center-right",
+    "source": "AI estimate"
+  },
+  "The Texas Tribune": {
+    "leaning": "center",
     "source": "AI estimate"
   },
   "The Times": {
@@ -1071,12 +1731,20 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "The Tribune": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "The Verge": {
     "leaning": "center-left",
     "source": "AI estimate"
   },
   "The Washington Post": {
     "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "The Week": {
+    "leaning": "center",
     "source": "AI estimate"
   },
   "The Weekly Times": {
@@ -1093,6 +1761,10 @@
   },
   "ThePrint": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "TheWire.in": {
+    "leaning": "center-left",
     "source": "AI estimate"
   },
   "TheWrap": {
@@ -1119,6 +1791,10 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Truthout": {
+    "leaning": "left",
+    "source": "AI estimate"
+  },
   "U.S. Embassy In Poland (.gov)": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -1135,6 +1811,14 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "UMY": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "UN News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "UNITED24 Media": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -1147,7 +1831,15 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "University of Maine Athletics": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "University of Michigan News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Valley News": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1159,7 +1851,19 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Vatican News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Vietnam.vn": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Votebeat": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WAMC": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1175,11 +1879,23 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "WBUR": {
+    "leaning": "center-left",
+    "source": "AI estimate"
+  },
+  "WCAX": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "WCTV": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
   "WESH": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WION": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1200,6 +1916,10 @@
     "source": "AI estimate"
   },
   "WLOX": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "WOODTV.com": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1227,6 +1947,10 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "WSAZ": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "WSBT": {
     "leaning": "center",
     "source": "AI estimate"
@@ -1239,12 +1963,24 @@
     "leaning": "center",
     "source": "AI estimate"
   },
+  "WTHI-TV": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "WTOP News": {
     "leaning": "center",
     "source": "AI estimate"
   },
+  "WV News": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "WYFF": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Washington State Standard": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "West Midlands Police": {
@@ -1265,6 +2001,10 @@
   },
   "Xinhua": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "YNET": {
+    "leaning": "center",
     "source": "AI estimate"
   },
   "Yahoo": {
@@ -1295,8 +2035,20 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "Yahoo Sports": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Yakima Herald-Republic": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Ynetnews": {
     "leaning": "center",
+    "source": "AI estimate"
+  },
+  "YouTube Official Blog": {
+    "leaning": "unknown",
     "source": "AI estimate"
   },
   "Zeteo": {
@@ -1311,6 +2063,18 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "dailyrecordnews.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "disgustingmen.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "firstandgoal.ru": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "https://ascendants.in/": {
     "leaning": "unknown",
     "source": "AI estimate"
@@ -1319,7 +2083,15 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "https://www.championat.ru/": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "i24NEWS": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "khorasantimes.com": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1327,8 +2099,32 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "news8000.com": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "orfonline.org": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "reutersinstitute.politics.ox.ac.uk": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
   "shattered.io": {
     "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "studentsport.ru": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "tech-insider.org": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "upi": {
+    "leaning": "center",
     "source": "AI estimate"
   },
   "www.inss.org.il": {
@@ -1343,7 +2139,47 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "БО Спорт": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Белновости": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Ведомости": {
+    "leaning": "center",
+    "source": "AI estimate"
+  },
+  "Вечерний Санкт-Петербург": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Ставка ТВ": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Судово-юридична газета": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Тульские известия": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Т—Ж": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "Українська правда": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Українські Національні Новини (УНН)": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "Футбол 24": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1351,7 +2187,19 @@
     "leaning": "center-left",
     "source": "AI estimate"
   },
+  "ספורט 1": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "اخبارك نت": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "الأيام البحرينية": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "البيان": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1375,11 +2223,27 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "الشروق أونلاين": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "العربية": {
     "leaning": "center-right",
     "source": "AI estimate"
   },
+  "القدس العربي": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "القلعة نيوز": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "اليوم السابع": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "بوابة الأهرام": {
     "leaning": "unknown",
     "source": "AI estimate"
   },
@@ -1387,7 +2251,39 @@
     "leaning": "unknown",
     "source": "AI estimate"
   },
+  "جامعة طنطا": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "جريدة الجزيرة": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
   "سكاي نيوز عربية": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "صحيفة الصحوة": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "صدى البلد": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "صوت الإمارات": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "قناة المملكة": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "مراكش الان": {
+    "leaning": "unknown",
+    "source": "AI estimate"
+  },
+  "ملفات تادلة 24": {
     "leaning": "unknown",
     "source": "AI estimate"
   }

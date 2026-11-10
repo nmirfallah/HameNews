@@ -31,11 +31,37 @@ def _rows_md(rows, kind):
 
 
 # ------------------------------------------------------------------ Markdown
+def _focus_md(focus):
+    if not focus:
+        return []
+    if not focus["items"]:
+        return [f"### What {focus['source']} reported", "", f"_Nothing on this topic in the items fetched from {focus['source']}._", ""]
+    lines = [f"### What {focus['source']} reported", ""]
+    for r in focus["items"]:
+        text = r["english"] or r["original"]
+        link = f"[{text}]({r['url']})" if str(r.get("url", "")).startswith(("http://", "https://")) else text
+        extra = f" ({r['lang_name']}; original: {r['original']})" if r["lang"] != "en" else ""
+        lines.append(f"- {link}{extra}")
+        lines += [f"  - CHECK: {f}" for f in r.get("flags", [])]
+    lines.append("")
+    return lines
+
+
+def _focus_summary_md(info):
+    if not info:
+        return []
+    langs = ", ".join(f"{k} {v}" for k, v in info["languages"].items())
+    return [f"## Focus source: {info['name']}", "", f"Found via: {info['found_via']}.",
+            f"{info['n_items']} items fetched ({langs}); the translation checks flagged {info['flagged']}; "
+            f"it appears in {info['topics_covered']} of {info['topics_total']} analysed topics.", ""]
+
+
 def render_topic(res):
     lines = [f"## #{res.get('rank', '?')} {res['topic']}", "", f"_{_trend_line(res)}_", ""]
     nar = res.get("narratives")
     if res.get("summary") and not (nar and nar.get("common")):  # the main story replaces the one-liner
         lines += [res["summary"], ""]
+    lines += _focus_md(res.get("focus"))
 
     if nar and (nar["groups"] or nar.get("common")):
         if nar.get("common"):
@@ -115,9 +141,10 @@ def _ranked_titles(results, also):
     return sorted(rows, key=lambda row: row[0])
 
 
-def render(day, results, also=()):
+def render(day, results, also=(), focus=None):
     head = [f"# HameNews report {day}", "", f"_{NOTE}_", "", "## Trending now", ""]
     head += [f"{rank}. {title}{tag}" for rank, title, tag in _ranked_titles(results, also)] + [""]
+    head += _focus_summary_md(focus)
     out = head + [render_topic(r) for r in results]
     if also:
         out += ["## Also trending (headlines only)", "",
@@ -150,12 +177,29 @@ def _rows_html(rows, kind):
             f"<th>Confidence</th><th>Reference</th></tr>{body}</table></div>")
 
 
+def _focus_html(focus):
+    if not focus:
+        return ""
+    name = _e(focus["source"])
+    if not focus["items"]:
+        return f"<h3>What {name} reported</h3><p class='muted'>Nothing on this topic in the items fetched.</p>"
+    rows = []
+    for r in focus["items"]:
+        marks = "".join(f"<div class='flag'>CHECK: {_e(f)}</div>" for f in r.get("flags", []))
+        english = r["english"] or ("" if r["lang"] != "en" else r["original"])
+        rows.append(f"<tr><td>{_e(r['lang_name'])}</td><td dir='auto' lang='{_e(r['lang'])}'>{_e(r['original'])}</td>"
+                    f"<td>{_link(english or r['original'], r.get('url'))}</td><td>{marks}</td></tr>")
+    return (f"<h3>What {name} reported</h3><div class='scroll'><table><tr><th>Language</th><th>Original</th>"
+            f"<th>English</th><th>Checks</th></tr>{''.join(rows)}</table></div>")
+
+
 def _topic_html(res):
     h = [f"<section class='topic'><h2><span class='rank'>#{_e(res.get('rank', '?'))}</span> "
          f"{_e(res['topic'])}</h2><p class='muted'>{_e(_trend_line(res))}</p>"]
     nar = res.get("narratives")
     if res.get("summary") and not (nar and nar.get("common")):  # the main story replaces the one-liner
         h.append(f"<p>{_e(res['summary'])}</p>")
+    h.append(_focus_html(res.get("focus")))
 
     if nar and (nar["groups"] or nar.get("common")):
         if nar.get("common"):
@@ -234,6 +278,7 @@ h1{margin:0 0 4px}h2{margin:0 0 4px}h3{margin:20px 0 8px}h4{margin:16px 0 6px}
 .side{border-left:4px solid var(--accent);padding:2px 0 2px 14px;margin:14px 0}
 .side-name{font-weight:600}.side p{margin:4px 0}.src{font-size:.9em}
 .diff{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px 10px 30px}
+.flag{color:#b45309}
 .story{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:2px 14px}
 a{color:var(--accent)}details{margin-top:16px}summary{cursor:pointer;font-weight:600}
 .scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.92em}
@@ -252,7 +297,17 @@ def _also_html(entry):
             + (f"<ul>{''.join(items)}</ul>" if items else "") + "</section>")
 
 
-def render_html(day, results, also=()):
+def _focus_summary_html(info):
+    if not info:
+        return ""
+    langs = ", ".join(f"{k} {v}" for k, v in info["languages"].items())
+    return (f"<h2>Focus source: {_e(info['name'])}</h2><p class='muted'>Found via: {_e(info['found_via'])}.</p>"
+            f"<p>{_e(info['n_items'])} items fetched ({_e(langs)}); the translation checks flagged "
+            f"{_e(info['flagged'])}; it appears in {_e(info['topics_covered'])} of {_e(info['topics_total'])} "
+            "analysed topics.</p>")
+
+
+def render_html(day, results, also=(), focus=None):
     toc = "".join(f"<li value='{_e(rank)}'>{_e(title)}<span class='muted'>{_e(tag)}</span></li>"
                   for rank, title, tag in _ranked_titles(results, also))
     more = ""
@@ -265,4 +320,4 @@ def render_html(day, results, also=()):
             f"<title>HameNews {_e(day)}</title><style>{CSS}</style></head><body><main>"
             f"<h1>HameNews</h1><p class='muted'>{_e(day)}</p><p class='note'>{_e(NOTE)}</p>"
             f"<h3>Trending now</h3><ol class='toc'>{toc}</ol>"
-            + "".join(_topic_html(r) for r in results) + more + "</main></body></html>")
+            + _focus_summary_html(focus) + "".join(_topic_html(r) for r in results) + more + "</main></body></html>")

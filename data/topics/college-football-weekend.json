@@ -1,0 +1,41 @@
+{
+  "topic": "College football weekend",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Playoff race and rankings implications",
+      "description": "Pieces treat each result mainly as a shift in the CFP and AP rankings, asking who is in, out or on the brink after upsets and the first committee release."
+    },
+    {
+      "id": "f2",
+      "label": "Practical viewing guides and schedules",
+      "description": "Posts serve fans with live updates, schedules, TV information, GameDay locations and lists of the best games to watch."
+    },
+    {
+      "id": "f3",
+      "label": "Upset alerts and weekend drama",
+      "description": "Previews and recaps build tension around ranked teams at risk, teams with no room for error, and top-ranked sides falling."
+    },
+    {
+      "id": "f4",
+      "label": "Skepticism toward the ranking process",
+      "description": "Some items question the legitimacy of the committee and rankings, calling the show pointless, taking digs at the SEC and offering alternative rankings of how they should look."
+    },
+    {
+      "id": "f5",
+      "label": "Cost and fan-experience burden",
+      "description": "An item focuses on the financial side of attending big games, such as steep hotel prices and ticket costs."
+    }
+  ],
+  "created": "2026-11-08",
+  "history": [
+    {
+      "date": "2026-11-08",
+      "verdict": "strong",
+      "kappa": 0.6,
+      "n_items": 160,
+      "n_framed": 43
+    }
+  ]
+}

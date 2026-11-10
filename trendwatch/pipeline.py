@@ -1,23 +1,31 @@
 import json
 from datetime import date
 
-from . import groups, languages, leanings, narratives, profiles, prompts, report
+from . import groups, journal, languages, leanings, narratives, profiles, prompts, report
 from .collect import collect
 from .discovery import discover_topics, expand_subject, split_topics
 from .stance import divide_report, get_framings, label_with_consensus
 from .util import log, slugify
 
 
-def analyze_topic(llm, topic, cfg, store):
+def analyze_topic(llm, topic, cfg, store, focus=None):
     topic = dict(topic, slug=slugify(topic["topic"]))
     try:
         languages.translate_keywords(llm, topic, cfg, store)   # so topics can be searched in other languages
     except Exception as e:
         log.warning("keyword translation step failed: %s", e)
     items = collect(topic, cfg)
+    focus_ids = set()
+    if focus:     # the chosen source's own items for this topic are always included
+        mine = journal.focus_items_for_topic(focus, topic)
+        focus_ids = {i.id for i in mine}
+        have = {i.id for i in items}
+        items += [i for i in mine if i.id not in have]
     res = {k: topic.get(k) for k in ("topic", "slug", "summary", "platforms", "n_signals", "n_outlets",
                                       "trend_score", "watchlist", "signals")}
     res["n_items"] = len(items)
+    if focus:
+        res["focus"] = {"source": focus["name"], "items": [journal.row_for(i) for i in items if i.id in focus_ids]}
     a = cfg["analysis"]
 
     try:
@@ -74,7 +82,7 @@ def _also_entry(t):
                                   "trend_score", "signals")}
 
 
-def run(llm, cfg, store, subject=None):
+def run(llm, cfg, store, subject=None, focus=None, only=False):
     day = date.today().isoformat()
     record, rest = {}, []
     if subject:
@@ -85,7 +93,9 @@ def run(llm, cfg, store, subject=None):
         for f in store.list_dir("topics"):
             if f.endswith(".json"):
                 existing.append((store.read(f"topics/{f}", {}) or {}).get("topic") or f[:-5])
-        topics = discover_topics(llm, cfg, existing, record)
+        topics = discover_topics(llm, cfg, existing, record,
+                                 extra_signals=journal.focus_signals(focus) if focus else (),
+                                 only_extra=bool(focus and only))
         deep, rest = split_topics(topics, cfg)
         if not cfg["discovery"].get("list_all_topics", True):
             rest = []
@@ -98,14 +108,16 @@ def run(llm, cfg, store, subject=None):
             e = expand_subject(llm, t["topic"])
             t = dict(t, keywords=e["keywords"], summary=e["summary"])
         log.info("analysing topic #%s: %s", t.get("rank"), t["topic"])
-        res = analyze_topic(llm, t, cfg, store)
+        res = analyze_topic(llm, t, cfg, store, focus)
         res["rank"] = t.get("rank")
         results.append(res)
 
     also = [_also_entry(t) for t in rest]
-    name = f"reports/{day}-{slugify(subject)}.md" if subject else f"reports/{day}.md"
-    store.write_text(name, report.render(day, results, also))
-    store.write_text(name.replace(".md", ".html"), report.render_html(day, results, also))
+    info = journal.focus_info(focus, results) if focus else None
+    suffix = "-".join(slugify(x) for x in (subject, focus["source"] if focus else "") if x)
+    name = f"reports/{day}-{suffix}.md" if suffix else f"reports/{day}.md"
+    store.write_text(name, report.render(day, results, also, info))
+    store.write_text(name.replace(".md", ".html"), report.render_html(day, results, also, info))
     store.write(name.replace(".md", ".json"), results)
     if record:
         _write_discovery_log(store, day, cfg, record, deep, rest)

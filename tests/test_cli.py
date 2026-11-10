@@ -61,7 +61,7 @@ class CliTests(unittest.TestCase):
             self.main("--config", CONFIG, "--subject", "Foo", "--topics", "5")
         (got_llm, conf, store), kw = run.call_args
         self.assertIs(got_llm, llm)
-        self.assertEqual(kw, {"subject": "Foo"})
+        self.assertEqual(kw, {"subject": "Foo", "focus": None, "only": False})
         self.assertEqual(conf["discovery"]["topics_per_day"], 5)
         self.assertIsInstance(store, Store)
         self.assertEqual(store.root, self.data)
@@ -102,7 +102,7 @@ class CliTests(unittest.TestCase):
     def test_without_subject_it_runs_discovery(self):
         with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value=None) as run:
             self.main("--config", CONFIG)
-        self.assertEqual(run.call_args[1], {"subject": None})
+        self.assertEqual(run.call_args[1], {"subject": None, "focus": None, "only": False})
 
     def test_open_flag_opens_the_html_version_of_the_report(self):
         with mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value="reports/x.md"), \
@@ -115,6 +115,111 @@ class CliTests(unittest.TestCase):
                 mock.patch.object(cli.webbrowser, "open") as op:
             self.main("--config", CONFIG, "--open")
         op.assert_not_called()
+
+
+class JournalCliTests(unittest.TestCase):
+    """-j SOURCE: analyse the news with that source included (--only: that source alone).
+    --translation-only keeps the old per-source translation test."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+
+    def main(self, *args):
+        with mock.patch.object(sys, "argv", ["run.py", "--data-dir", self._tmp.name, "--config", CONFIG, *args]):
+            cli.main()
+
+    FOCUS = {"source": "irna.ir", "name": "IRNA", "found_via": "a feed", "items": [object()], "rows": []}
+    RESULT = {"source": "irna.ir", "found_via": "x", "rows": [{"n": 1}], "path": "journal/irna-ir-2026-11-08.html",
+              "summary": {}}
+
+    def patched_focus(self, focus=None):
+        import trendwatch.journal as j
+        return mock.patch.object(j, "prepare_focus", return_value=focus or self.FOCUS)
+
+    # --- the analysis
+    def test_j_runs_the_real_analysis_with_the_source_as_the_focus(self):
+        with self.patched_focus() as pf, mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", return_value="reports/x.md") as run:
+            self.main("-j", "irna.ir")
+        self.assertEqual(pf.call_args[0][3], "irna.ir")
+        self.assertEqual(pf.call_args[1], {"lang": "", "limit": 40, "use_cache": True})
+        (llm, conf, store), kw = run.call_args
+        self.assertEqual(kw, {"subject": None, "focus": self.FOCUS, "only": False})
+        self.assertTrue(conf["collection"]["sources"])           # normal sources stay on
+
+    def test_only_switches_off_every_other_source_and_relaxes_the_minimum_items(self):
+        with self.patched_focus(), mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", return_value="reports/x.md") as run:
+            self.main("-j", "irna.ir", "--only")
+        (_, conf, _), kw = run.call_args
+        self.assertTrue(kw["only"])
+        self.assertEqual(conf["collection"]["sources"], [])
+        self.assertEqual(conf["news_sites"], [])
+        self.assertFalse(conf["languages"]["search_native"])
+        self.assertEqual(conf["analysis"]["min_items_to_analyze"], 4)
+
+    def test_options_reach_the_focus_preparation_and_the_run(self):
+        with self.patched_focus() as pf, mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", return_value=None) as run:
+            self.main("--journal", "irna.ir", "--lang", "fa", "-n", "15", "--no-cache", "--subject", "Iran",
+                      "--topics", "3")
+        self.assertEqual(pf.call_args[1], {"lang": "fa", "limit": 15, "use_cache": False})
+        (_, conf, _), kw = run.call_args
+        self.assertEqual(kw["subject"], "Iran")
+        self.assertEqual(conf["discovery"]["topics_per_day"], 3)
+
+    def test_a_source_that_returns_nothing_stops_with_an_explanation(self):
+        empty = dict(self.FOCUS, items=[], found_via="nothing")
+        with self.patched_focus(empty), mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", side_effect=AssertionError("must not run")):
+            with self.assertRaises(SystemExit) as cm:
+                self.main("-j", "nope.example")
+        self.assertIn("Nothing to translate", str(cm.exception))
+
+    def test_open_opens_the_report_html(self):
+        with self.patched_focus(), mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", return_value="reports/2026-11-09-irna-ir.md"), \
+                mock.patch.object(cli.webbrowser, "open") as op, contextlib.redirect_stdout(io.StringIO()):
+            self.main("-j", "irna.ir", "--open")
+        self.assertTrue(op.call_args[0][0].endswith("2026-11-09-irna-ir.html"))
+
+    def test_api_errors_while_preparing_the_source_get_the_short_message(self):
+        import trendwatch.journal as j
+        with mock.patch.object(j, "prepare_focus", side_effect=FakeApiError(CREDIT, 400)), mock.patch.object(cli, "get_llm"):
+            with self.assertRaises(SystemExit) as cm:
+                self.main("-j", "irna.ir")
+        self.assertIn("credit balance is too low", str(cm.exception))
+
+    def test_short_and_long_flags_are_the_same_option(self):
+        with self.patched_focus() as pf, mock.patch.object(cli, "get_llm"), mock.patch.object(cli, "run", return_value=None):
+            self.main("-j", "tasnimnews.ir")
+            self.main("--journal", "tasnimnews.ir")
+        self.assertEqual([c[0][3] for c in pf.call_args_list], ["tasnimnews.ir", "tasnimnews.ir"])
+
+    # --- the translation test (previous behaviour of -j)
+    def test_translation_only_runs_the_translation_test_and_not_the_analysis(self):
+        import trendwatch.journal as j
+        out = io.StringIO()
+        with mock.patch.object(j, "run_journal", return_value=self.RESULT) as rj, \
+                mock.patch.object(j, "render_text", return_value="REPORT TEXT"), mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli, "run", side_effect=AssertionError("must not analyse")), contextlib.redirect_stdout(out):
+            self.main("-j", "irna.ir", "--translation-only")
+        (_, _, _, source), kw = rj.call_args
+        self.assertEqual((source, kw), ("irna.ir", {"subject": "", "lang": "", "limit": 10, "use_cache": True,
+                                                    "do_verify": False}))
+        self.assertIn("REPORT TEXT", out.getvalue())
+
+    def test_translation_only_passes_every_option_and_can_open_the_page(self):
+        import trendwatch.journal as j
+        with mock.patch.object(j, "run_journal", return_value=self.RESULT) as rj, \
+                mock.patch.object(j, "render_text", return_value="x"), mock.patch.object(cli, "get_llm"), \
+                mock.patch.object(cli.webbrowser, "open") as op, contextlib.redirect_stdout(io.StringIO()):
+            self.main("-j", "irna.ir", "--translation-only", "--subject", "Iran", "--lang", "fa", "-n", "5",
+                      "--no-cache", "--verify", "--open")
+        self.assertEqual(rj.call_args[1], {"subject": "Iran", "lang": "fa", "limit": 5, "use_cache": False,
+                                           "do_verify": True})
+        self.assertTrue(op.call_args[0][0].endswith("irna-ir-2026-11-08.html"))
 
 
 class FakeApiError(Exception):

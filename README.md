@@ -19,6 +19,9 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 | `python run.py --subject "Iran" --open` | Same, but for one subject you choose instead of discovered ones. |
 | `python run.py --open-latest` | Reopens the newest report without running anything. |
 | `python run.py --why "Iran"` | Explains what happened to a story in the latest run: whether any source returned it, which topic it landed in, and why that topic was or was not analysed. |
+| `python run.py -j irna.ir --open` | **Focus on one source.** The normal analysis, plus that source's own articles (translated) added to every topic, with a "What IRNA reported" section showing original and English. |
+| `python run.py -j irna.ir --only --open` | Analyse **only** that source: its own headlines decide the topics, and no other source is used. |
+| `python run.py -j irna.ir --translation-only` | Skip the news analysis and just show the source's items next to their translations, with quality checks. |
 | `python check_sources.py` | Diagnostic only: tests whether each website responds. It makes no report. |
 
 ## Contents
@@ -266,6 +269,54 @@ HameNews reads sources in any language the AI model understands.
 
 Change the languages under `languages:` in `config.yaml`. Turn translation off with `translate: false`
 and native-language searching with `search_native: false`.
+
+### Focusing on one source (`-j`)
+
+`-j` (or `--journal`) takes a domain, an outlet name from the agency list, or a feed URL:
+
+```powershell
+python run.py -j irna.ir --open                   # normal analysis + what irna.ir reported on each topic
+python run.py -j irna.ir --only --open            # only irna.ir: what is it covering, and how does it frame it
+python run.py -j "Tasnim News Agency" --open      # an outlet name
+python run.py -j https://www.tasnimnews.ir/fa/rss --open   # a feed URL
+python run.py -j irna.ir --subject Iran --open    # one subject, with irna.ir included
+python run.py -j irna.ir --lang fa -n 60          # ask Google News for Persian pages, fetch 60 items
+python run.py -j irna.ir --no-cache               # ignore saved translations and translate again
+```
+
+How the source is found, in order: a feed you configured, the URL itself if it is a feed, a feed discovered on the
+site (the links its homepage advertises, then the usual `/rss` and `/feed` paths), then Google News restricted
+to the site. The report says which one worked.
+
+What happens with the source's items (default 40, change with `-n`):
+1. They are translated to English (cached) and their headlines join the day's trend signals, so topics the
+   source covers rise in the ranking.
+2. For each topic, the items that belong to it (members of the topic's cluster plus English keyword matches)
+   are added to the collected articles, are never cut by the article cap, and get their own group
+   (for example `Iran state-linked media`), so "How each side differs" shows what this source says
+   that others do not.
+3. Each topic gets a **"What <source> reported"** section listing those items, original and English, with the
+   automatic translation checks. A topic it did not cover says so. The top of the report has a
+   **Focus source** summary: how it was found, languages, flagged translations, and how many topics it appears in.
+
+With `--only`, the source's own headlines decide the topics and no other source is used, so there is one
+group and the report shows what that source reports and how it frames it, with its framing breakdown.
+Use `--translation-only` for the quick per-source translation test described next.
+
+#### Translation test only (`--translation-only`)
+```powershell
+python run.py -j irna.ir --translation-only --open   # side-by-side page of 10 items
+python run.py -j irna.ir --translation-only --verify # also have a stronger model grade each translation
+```
+It writes `data/journal/<source>-<date>.html` (plus `.md` and `.json`) with, for each item, the detected
+language and how it was found (source metadata, script/word guess, assumed English, or corrected by the model),
+the original and the English.
+
+**Automatic checks** flag a row when: no translation came back; it is identical to the original; the English
+still contains non-Latin script; its length looks wrong; or the source's own language tag disagrees with the
+model's. Flags are prompts to look, not verdicts. With `--verify`, a stronger model also grades each translation
+as good, minor (small slips or lost nuance) or wrong. That is an independent opinion from the same family of
+models, not ground truth, so for anything important compare against a person who reads the language.
 
 Limits: Google News does not offer every country and language pair (for example there is no Iran
 edition), so some pairs return nothing; the script-based guess is a fallback and can be wrong for short

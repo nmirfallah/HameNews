@@ -27,6 +27,39 @@
             "url": "https://social.vir.group/@analytics/117570085271961123"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f1": 4
+        },
+        "seen": [
+          "cff0cbf07138",
+          "a2620ff7b59e",
+          "235531c4c9ed",
+          "dcd4ca168c5e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Two oil tankers exploded and caught fire in the Strait of Hormuz",
+            "url": "https://social.vir.group/@analytics/117577240051982462"
+          },
+          {
+            "framing": "f1",
+            "quote": "US MQ-9 Reaper drone shot down over Strait of Hormuz",
+            "url": "https://social.vir.group/@analytics/117557816985255975"
+          },
+          {
+            "framing": "f1",
+            "quote": "Four tankers were destroyed by naval mines in the Strait of Hormuz.",
+            "url": "https://social.vir.group/@analytics/117556968395570081"
+          },
+          {
+            "framing": "f1",
+            "quote": "Reports of explosions in the Strait of Hormuz",
+            "url": "https://social.vir.group/@analytics/117571098055814059"
+          }
+        ]
       }
     }
   },
@@ -97,6 +130,34 @@
             "url": "https://journa.host/@ScottLucas/117570433848943103"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f1": 2,
+          "f2": 1
+        },
+        "seen": [
+          "ef3213cc3097",
+          "90a498accd18",
+          "a895f3d16d01"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US confirms another set of defensive strikes on Qeshm Island",
+            "url": "https://journa.host/@ScottLucas/117573914716796378"
+          },
+          {
+            "framing": "f1",
+            "quote": "2 missiles struck Qeshm Island in the Strait of Hormuz",
+            "url": "https://journa.host/@ScottLucas/117571907223663967"
+          },
+          {
+            "framing": "f2",
+            "quote": "Qatar Emir urges Trump to refrain from further airstrikes",
+            "url": "https://journa.host/@ScottLucas/117568973552005337"
+          }
+        ]
       }
     }
   },
@@ -123,6 +184,21 @@
             "framing": "f2",
             "quote": "replaces Susie Wiles with Stephen Miller... after the Republican defeat.",
             "url": "https://mastodon.social/@elfolio/117572150582687210"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "006a0ced72da"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump offers UFC chief Dana White the White House spokesperson role",
+            "url": "https://mastodon.social/@elfolio/117577172876692195"
           }
         ]
       }
@@ -279,6 +355,21 @@
             "framing": "f3",
             "quote": "Qatar mediates with Trump to prevent escalation with Iran",
             "url": "https://mastodon.social/@desnips/117570232646456850"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "36fd466f7138"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Donald Trump asks UFC boss Dana White to be White House press chief",
+            "url": "https://mastodon.social/@desnips/117576898517969183"
           }
         ]
       }
@@ -518,7 +609,8 @@
         "counts": {
           "f4": 2,
           "f2": 1,
-          "none": 6
+          "none": 9,
+          "f5": 1
         },
         "seen": [
           "b5c041c4d361",
@@ -529,7 +621,11 @@
           "811325177a93",
           "eacc0600d0e2",
           "cc8e83c24a5d",
-          "a3155e030a1c"
+          "a3155e030a1c",
+          "7d593207d78d",
+          "5995aa8df675",
+          "e25b605fd5fd",
+          "1a5db873c996"
         ],
         "evidence": [
           {
@@ -546,6 +642,43 @@
             "framing": "f4",
             "quote": "Japanese equities sank amid indications of Democratic gains",
             "url": "https://mastodon.social/@thejapantimes/117557774315701419"
+          },
+          {
+            "framing": "f5",
+            "quote": "groundswell of anger over the AI boom has cut across political divides",
+            "url": "https://mastodon.social/@thejapantimes/117564596816762450"
+          }
+        ]
+      },
+      "college-football-weekend": {
+        "counts": {
+          "f1": 1,
+          "none": 1
+        },
+        "seen": [
+          "b1f623f9ce59",
+          "d6c626c53f19"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "top four seeds in the 12-team College Football Playoff",
+            "url": "https://mastodon.social/@thejapantimes/115684151260024392"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b53adb9a312e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Donald Trump struck a combative tone Saturday, offering UFC head Dana White",
+            "url": "https://mastodon.social/@thejapantimes/117578150841622118"
           }
         ]
       }
@@ -627,6 +760,21 @@
             "url": "https://www.urbanmind.net/display/f7dd981d-cec66381-bae7621448bc222b"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "a64683959e3f"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Fox News tells Trump to do some hard thinking",
+            "url": "https://www.urbanmind.net/display/f7dd981d-297f22dc-f3a7d6eac968c059"
+          }
+        ]
       }
     }
   },
@@ -683,6 +831,24 @@
             "framing": "f5",
             "quote": "Democrats won big in Ohio on working-class issues",
             "url": "https://rssfeed.media/@guardianfeeds/117570760182252024"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "f1": 1,
+          "none": 2
+        },
+        "seen": [
+          "958f51438505",
+          "ed4f8460eabf",
+          "bf024827240f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US carries out another round of minor strikes on Iran",
+            "url": "https://rssfeed.media/@guardianfeeds/117573002384137788"
           }
         ]
       }
@@ -749,6 +915,58 @@
             "url": "https://toad.social/@KimPerales/117571077071174752"
           }
         ]
+      },
+      "ice-enforcement-controversies": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "19a39a79a304"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "took an 8-year-old Haitian boy into custody after calling him in",
+            "url": "https://toad.social/@KimPerales/117576837803355327"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "92dd6c3e6700"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "to defend us against the Lunatic Left",
+            "url": "https://toad.social/@KimPerales/117576904454521256"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "f3": 1,
+          "f5": 1
+        },
+        "seen": [
+          "af1e4b98a3d5",
+          "fc0968f56e2e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Let's hope that GOP MOC come to their senses",
+            "url": "https://toad.social/@KimPerales/117577682858850242"
+          },
+          {
+            "framing": "f5",
+            "quote": "Concerning: further underscores recent actions from the US",
+            "url": "https://toad.social/@KimPerales/117575646763188216"
+          }
+        ]
       }
     }
   },
@@ -781,6 +999,48 @@
             "url": "https://mastodon.social/@deadline/117571054559303406"
           }
         ]
+      },
+      "college-football-weekend": {
+        "counts": {
+          "f2": 3
+        },
+        "seen": [
+          "22fa98dba5a5",
+          "3c3aaf8a28b1",
+          "81a99e57bda3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "How To Watch On TV & Online",
+            "url": "https://mastodon.social/@deadline/115923380265241722"
+          },
+          {
+            "framing": "f2",
+            "quote": "College Football Playoff Bracket Sets Teams, TV Schedule",
+            "url": "https://mastodon.social/@deadline/115680510470246605"
+          },
+          {
+            "framing": "f2",
+            "quote": "College Football Playoff TV Schedule: Dates, Times & Networks",
+            "url": "https://mastodon.social/@deadline/113762068394640595"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "ef2257ae40a6"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Trump Says Please Take The Job",
+            "url": "https://mastodon.social/@deadline/117577089474803464"
+          }
+        ]
       }
     }
   },
@@ -792,6 +1052,15 @@
         },
         "seen": [
           "35bc26aa6312"
+        ],
+        "evidence": []
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "93ce1d1cd8e2"
         ],
         "evidence": []
       }
@@ -887,6 +1156,21 @@
             "framing": "f3",
             "quote": "as focus shifts to Cybercab",
             "url": "https://mastodon.social/@citelink/117572615540532008"
+          }
+        ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "818c5e87f3c1"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "following major midterm losses",
+            "url": "https://mastodon.social/@citelink/117578442508345988"
           }
         ]
       }
@@ -1100,6 +1384,35 @@
             "url": "https://mastodon.social/@DrALJONES/117575600305138346"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "none": 1,
+          "f3": 3
+        },
+        "seen": [
+          "6254abeeaa7e",
+          "6f3549308e85",
+          "3c8a6d2731b9",
+          "c0ae4114837a"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "It was among Aipac's worst performances in years.",
+            "url": "https://mastodon.social/@DrALJONES/117574581285765465"
+          },
+          {
+            "framing": "f3",
+            "quote": "It was among Aipac's worst performances in years.",
+            "url": "https://mastodon.social/@DrALJONES/117572012536265974"
+          },
+          {
+            "framing": "f3",
+            "quote": "Congress can cut off funding for the war on Iran",
+            "url": "https://mastodon.social/@DrALJONES/117570171219627888"
+          }
+        ]
       }
     }
   },
@@ -1252,6 +1565,21 @@
             "url": "https://mastodon.social/@killbait/117096443517620975"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "a7d23324a832"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Multilateral Cooperation Essential for Sustainable Strait of Hormuz Governance",
+            "url": "https://mastodon.social/@killbait/117571185024201745"
+          }
+        ]
       }
     }
   },
@@ -1290,6 +1618,15 @@
             "url": "https://mastodon.social/@top_news/117572528526239191"
           }
         ]
+      },
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c66565c9f2a4"
+        ],
+        "evidence": []
       }
     }
   },
@@ -1484,6 +1821,36 @@
             "framing": "f2",
             "quote": "three days after the Republican midterm rout",
             "url": "https://mastodon.social/@astigdotph/117571776416884512"
+          }
+        ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0f6dd99a6ac2"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump asks UFC's Dana White to be press secretary",
+            "url": "https://mastodon.social/@astigdotph/117577441786391838"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "185924ceb97f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US struck Qeshm again and put $20 million on Iran's nuclear program",
+            "url": "https://mastodon.social/@astigdotph/117574618502752978"
           }
         ]
       }
@@ -1779,6 +2146,31 @@
             "url": "https://mastodon.social/@fllics/117557588506194165"
           }
         ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "e8cc81faf56b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Donald Trump announced that he offered Dana White",
+            "url": "https://mastodon.social/@fllics/117577570037852205"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "06f4a9f25828",
+          "4f26bdcb0a19"
+        ],
+        "evidence": []
       }
     }
   },
@@ -2008,6 +2400,1413 @@
             "url": "https://mastodon.social/@akerix/117573537263231263"
           }
         ]
+      },
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0272ac4fc6f8"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump Offers Dana White, President of UFC, the Post of White House Press Secretary",
+            "url": "https://mastodon.social/@akerix/117577177142638561"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:DoomsdaysCW@kolektiva.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "9650ca69032c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "American voters have emphatically endorsed socialism to oppose the corruption",
+            "url": "https://kolektiva.social/@DoomsdaysCW/117566524759168140"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:abcnews@www.urbanmind.net": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1,
+          "f3": 1,
+          "none": 1
+        },
+        "seen": [
+          "c7e34e593e81",
+          "132e72835f1e",
+          "a408da3ca562"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democratic push to repeal U.S. President Donald Trump's tariffs on Canada",
+            "url": "https://www.urbanmind.net/display/f7dd981d-1d4db2ed-6c8ac74dd64a387e"
+          },
+          {
+            "framing": "f3",
+            "quote": "an election that soundly repudiated his policies",
+            "url": "https://www.urbanmind.net/display/f7dd981d-844a2ccb-857a4276ed41a361"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:CogitoErgoWtf@mastodon.world": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "aea2272914fe"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump Stink Remover for the Republican Scumbags",
+            "url": "https://mastodon.world/@CogitoErgoWtf/117565073843159377"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:variety_feed": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1,
+          "none": 2
+        },
+        "seen": [
+          "369db8a5daed",
+          "0c0db340306d",
+          "d2c1c2dc6d2b"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Bill Maher Rubs Salt in Trump's Midterms Wound",
+            "url": "https://mastodon.social/@variety_feed/117573019444696247"
+          }
+        ]
+      },
+      "college-football-weekend": {
+        "counts": {
+          "f2": 2
+        },
+        "seen": [
+          "0ed0b7f7b114",
+          "cc1b3388888f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "How to Watch Miami Hurricanes vs. Indiana Hoosiers Online",
+            "url": "https://mastodon.social/@variety_feed/115923793400059064"
+          },
+          {
+            "framing": "f2",
+            "quote": "How to Watch Ohio State vs. Notre Dame Online Without Cable",
+            "url": "https://mastodon.social/@variety_feed/113862476198520155"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:b_cavello@mastodon.publicinterest.town": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "74a9fa0ae90c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Proud of my Texas friends for showing up and showing Abbott out",
+            "url": "https://mastodon.publicinterest.town/@b_cavello/117565128823181221"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ilust606": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1,
+          "f3": 1
+        },
+        "seen": [
+          "f86e16d8855d",
+          "d26b8b152beb"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "biggest accomplishment of Democratic majorities in the 120th Congress may be simply being the majorities",
+            "url": "https://mastodon.social/@ilust606/117576921772554148"
+          },
+          {
+            "framing": "f3",
+            "quote": "Trump and Musk are LOSERS.",
+            "url": "https://mastodon.social/@ilust606/117571139848473914"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:researchbuzz_firehose@rbfirehose.com": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "60e2d0070cfc",
+          "d7d51cfc021b"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:thisislife2": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "19b47af04c68"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump administration joined the war hoping positive outcome would boost mid-term prospects",
+            "url": "https://news.ycombinator.com/item?id=48429521"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:toomuchtodo": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "862dffd9990f"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "100+ Democratic Socialists were elected in midterm elections",
+            "url": "https://news.ycombinator.com/item?id=50406247"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:Grombobulous": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "none": 1,
+          "f5": 1
+        },
+        "seen": [
+          "da11d3822c66",
+          "a2b39367ec58"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "potentially highly regulated environment where building a data centre",
+            "url": "https://news.ycombinator.com/item?id=50372901"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:drweevil": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "6a908eff8792"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "imposing NDAs, which have no place in democratic governance",
+            "url": "https://news.ycombinator.com/item?id=50392451"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:sailfast": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "aebbf5e30049"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:wahern": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "265bd2f3d747"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:reasonableklout": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "18f25fb15ddc"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "groundswell of bipartisan support for AI regulation",
+            "url": "https://news.ycombinator.com/item?id=49888601"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:dam_jackalopes": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "ea66e2810bf1"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "giving DataOne a $6.2 million loan",
+            "url": "https://news.ycombinator.com/item?id=49837359"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:pj_mukh": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "89a7ae2758d8"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "NDA-laden, Coal powered loud turbine data center projects",
+            "url": "https://news.ycombinator.com/item?id=50388450"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:rcxdude": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "2120eb32f1e0"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:ProfessorLayton": {
+    "topics": {
+      "data-center-backlash": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "16050aa9f877"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "the votes say otherwise",
+            "url": "https://news.ycombinator.com/item?id=50369381"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:columbus@tomkahe.com": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 2,
+          "f1": 1
+        },
+        "seen": [
+          "8d4ae682e3a1",
+          "45a16bd153b1",
+          "1986690e0ab4"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Does a first-round bye hurt in the College Football Playoff?",
+            "url": "https://tomkahe.com/@columbus/115829283398947688"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:biziday@mastodon.world": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "538d661bfc55"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:houstonpublicmedia": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7cbeb20f2391"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:ReneeVoiceBrand": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "597b7cf69dda"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:defector.com@web.brid.gy": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "80aa2a4438f2"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Florida State Stares Into The Abyss",
+            "url": "https://fed.brid.gy/r/https://defector.com/florida-state-stares-into-the-abyss"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:boles@bolesblogs.com": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9b6e1d11caef"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Nebraska Must Fire Matt Rhule Now",
+            "url": "https://bolesblogs.com/2026/11/01/nebraska-must-fire-matt-rhule-now/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rydunleavy@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f3": 1,
+          "f4": 1
+        },
+        "seen": [
+          "bf25073ae1a0",
+          "00f6b23bdfca"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "had a true Cinderella this year",
+            "url": "https://twitter.com/rydunleavy/status/2034726726123614333"
+          },
+          {
+            "framing": "f4",
+            "quote": "No one makes sillier choices than the NCAA",
+            "url": "https://twitter.com/rydunleavy/status/2002563579967656308"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:danielglenn": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "4019d7fab900"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "just because experts say so, doesn't mean it is going",
+            "url": "https://mastodon.social/@danielglenn/115925531551071892"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:variety.com@web.brid.gy": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "83994ec8a3c4"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "How to Watch Miami Hurricanes vs. Indiana Hoosiers Online",
+            "url": "https://fed.brid.gy/r/https://variety.com/2026/shopping/news/how-to-watch-2026-cfp-national-championship-live-online-free-1236273168/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:vivocfb": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "c92ace51a4a4"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "The SEC has gone 3 years without playing in the championship final",
+            "url": "https://mastodon.social/@vivocfb/115871411062110883"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Fantrax@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "d89e332ac418",
+          "ba115aff736a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:TroyRenck@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "573fdf641804"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:UGAfootballLive@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1,
+          "f1": 1
+        },
+        "seen": [
+          "dfdf6ce2978e",
+          "6c5c8ab407e1"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "The first CollegeFootballPlayoff rankings come out tonight, and the Dawgs",
+            "url": "https://twitter.com/UGAfootballLive/status/1985749950227939520"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ShannonSharpe@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "eee7d39876e9"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:1053thefan@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0e6d91542a1f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Oklahoma controls their own destiny to make the College Football Playoff",
+            "url": "https://twitter.com/1053thefan/status/1991621208324907384"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Trysta_Krick@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "d0baee402dfa"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:coollegenation": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c76e4ab8c269"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:dfwticket@sportsbots.xyz": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "c7b065c27dc7"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "The Hardline is up next with guests from 3-7",
+            "url": "https://twitter.com/dfwticket/status/1874203866243448980"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:disposition2": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "77d9c99d729a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:listenallyall": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "9dea671b7cbf"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:StateCollege": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "cd4eedb97f4a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:NYCNews": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "4b07b514f376"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Everything to Know About the Clemson–Penn State Bowl Game",
+            "url": "https://news.ycombinator.com/item?id=46192903"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Cloudslave@aus.social": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "c61f292fe4ef"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Be afraid. Be very afraid!",
+            "url": "https://aus.social/@Cloudslave/117578813127389557"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:touaregtweet": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f0e1e7c30ef0"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Take a look at Miller's history of racism and xenophobia",
+            "url": "https://mastodon.social/@touaregtweet/117578536320580614"
+          }
+        ]
+      },
+      "ice-enforcement-controversies": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "efbbb083d468"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "this lack of awareness around the FN303's potential for severe",
+            "url": "https://mastodon.social/@touaregtweet/117577247017089261"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:copymanLE@mastodon.uno": {
+    "topics": {
+      "stephen-miller-named-chief-of-staff": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "86c9635c3ef3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "the first head to roll in the Trump administration after the electoral defeat",
+            "url": "https://mastodon.uno/@copymanLE/117576327557150677"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kravietz@video.echelon.pl": {
+    "topics": {
+      "krakow-shooting": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "75a4921f9191"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Mass shooting in Poland leaves 6 dead, dozen wounded",
+            "url": "https://video.echelon.pl/w/b7RBEfEu2LTiSs837uuCV5"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Miro_Collas@masto.ai": {
+    "topics": {
+      "krakow-shooting": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cdf71509b7a8"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "six killed and more than a dozen injured, police say",
+            "url": "https://masto.ai/@Miro_Collas/117576461319823359"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:africa@journa.host": {
+    "topics": {
+      "krakow-shooting": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "f32cdb8f75db"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Footage shows people taking cover as a gunman opens fire",
+            "url": "https://journa.host/@africa/117577610552579810"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:MikeDunnAuthor@kolektiva.social": {
+    "topics": {
+      "ice-enforcement-controversies": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3ef4ab9f75c4"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:CubitOom@social.linux.pizza": {
+    "topics": {
+      "ice-enforcement-controversies": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "95bbfc5b49f7"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "ICE fascists pushed a woman to the ground during a protest",
+            "url": "https://social.linux.pizza/@CubitOom/117576517019065571"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ai6yr@m.ai6yr.org": {
+    "topics": {
+      "ice-enforcement-controversies": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "f99580802b30"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:seaice_usa@partyon.xyz": {
+    "topics": {
+      "ice-enforcement-controversies": {
+        "counts": {
+          "none": 21
+        },
+        "seen": [
+          "e0fe65cf22ca",
+          "14c1e6a3120c",
+          "f1bff8ddaf89",
+          "716814cc2f28",
+          "dda3d5e3ff9c",
+          "95ca4ba1c084",
+          "2ce7d6f80da8",
+          "79dad5d25ba8",
+          "8ae59da4bb73",
+          "49d033e62729",
+          "bbceeef3b878",
+          "fc10783f6460",
+          "0199601f2131",
+          "a18a4d207f48",
+          "f37c8546aabd",
+          "00fe8a57be38",
+          "40946331d5c3",
+          "abaadea8bd8b",
+          "84c03e350f01",
+          "fe390fb6f670",
+          "1de01a19c427"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:PhloXOXO": {
+    "topics": {
+      "ice-enforcement-controversies": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "a68febbfb3d0"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Stephen Miller is still coming for us... he is a soulless racist",
+            "url": "https://mastodon.social/@PhloXOXO/117577075656431936"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:DemocracyMattersALot@mstdn.social": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "de91b28c00a2"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "#TrumpMustGo #KingOfTreason #RepublicansDidThis",
+            "url": "https://mstdn.social/@DemocracyMattersALot/117577263451644768"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:emol@mastodon.cl": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "218912e8afa5"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump says he offered the White House press secretary post to Dana White",
+            "url": "https://mastodon.cl/@emol/117578256701527844"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:crhoy@bots.fedi.cr": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8f1c7b730589"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Trump offers White House press secretary job to UFC head",
+            "url": "https://bots.fedi.cr/@crhoy/117578231019591300"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:lapatilla.com@web.brid.gy": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "c9a4dee82199"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Director ejecutivo de la UFC rechazó ser el nuevo portavoz",
+            "url": "https://fed.brid.gy/r/https://lapatilla.com/2026/11/07/director-ejecutivo-de-la-ufc-rechazo-ser-el-nuevo-portavoz-de-trump-segun-cnn/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:svenska_yle@ahlroos.me": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "177f6bfa9fb9"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US President Donald Trump offers the press secretary job to UFC boss",
+            "url": "https://social.ahlroos.me/@svenska_yle/117577151722646892"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kurtsh": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "e92f748aafbd"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Dana White is a lapdog & a whore",
+            "url": "https://mastodon.social/@kurtsh/117576859552021786"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:usbs_usa@glasgow.social": {
+    "topics": {
+      "dana-white-press-secretary-offer": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "ee502a39aba5"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:moira@mastodon.murkworks.net": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "ac55d54a8598",
+          "629eb739d4a0"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:faab64@todon.eu": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "f921d19ae90e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "IRGC reported that they attacked 2 oil tankers tonight",
+            "url": "https://todon.eu/@faab64/117577421949370330"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:RonSupportsYou": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "87a6bb1e5b05"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "arguments between pro-war and anti-war Republicans",
+            "url": "https://mastodon.social/@RonSupportsYou/117577695856416547"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:shipbot.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "735cc5bd7e1c"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Suspected missile explosion leaves one seafarer dead in Persian Gulf",
+            "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:xyb7mhgqqxwsz6if4jmtfext/post/3mzny5zy3x22k"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:LThinkTank": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bfb536c79e02"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Possible Iranian anti-ship cruise missile launches reportedly detected heading toward the Strait of Hormuz",
+            "url": "https://mastodon.social/@LThinkTank/117571843034545637"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:PDFlynn@universeodon.com": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "12530071bfec"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "President Trump is taking an enormous risk.",
+            "url": "https://universeodon.com/@PDFlynn/114725260466576521"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:agilefactor": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7868abce7d14"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:realTuckFrumper": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "0e150b91401c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Vance blamed the Iran war for the GOP wipeout",
+            "url": "https://mastodon.social/@realTuckFrumper/117570318009288306"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:israelhayom.com@web.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "59dba6649bb3"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:dailytimes.com.pk@web.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 3,
+          "f2": 1
+        },
+        "seen": [
+          "99ee9e474fb2",
+          "b842d442d8df",
+          "14729488ac60",
+          "cf60673ba029"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Oil tanker hits naval mine in Strait of Hormuz",
+            "url": "https://fed.brid.gy/r/https://dailytimes.com.pk/1578160/oil-tanker-hits-naval-mine-in-strait-of-hormuz/"
+          },
+          {
+            "framing": "f2",
+            "quote": "Qatar reports progress in US-Iran mediation efforts",
+            "url": "https://fed.brid.gy/r/https://dailytimes.com.pk/1578096/qatar-reports-progress-in-us-iran-mediation-efforts/"
+          },
+          {
+            "framing": "f1",
+            "quote": "Iran claims shooting down US drone over Qeshm Island",
+            "url": "https://fed.brid.gy/r/https://dailytimes.com.pk/1578080/iran-claims-shooting-down-us-drone-over-qeshm-island-as-military-tensions-persist/"
+          },
+          {
+            "framing": "f1",
+            "quote": "US strikes Iran IRGC targets after missile attack",
+            "url": "https://fed.brid.gy/r/https://dailytimes.com.pk/1530907/us-strikes-iran-irgc-targets-after-missile-attack/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:maritimecurrent": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "5037ae82fdfc"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "five oil tankers caught fire after striking naval mines",
+            "url": "https://mastodon.social/@maritimecurrent/117574606337247964"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:theguardian_world_news@halo.nu": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b594ae3940b6"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US carries out another round of minor strikes on Iran",
+            "url": "https://halo.nu/@theguardian_world_news/117572990165083896"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:truthdig.com@web.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "927142d80d65"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "The Straight of Hormuz Midterms",
+            "url": "https://fed.brid.gy/r/https://www.truthdig.com/articles/the-straight-of-hormuz-midterms/?utm_source=rss&utm_medium=rss&utm_campaign=the-straight-of-hormuz-midterms"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:BrentD@techhub.social": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7e2b7ec4be80"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:stacescases2.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "730ea4230ad3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "IRGC claimed 4 oil tankers destroyed by naval mines",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:76e4qryfph6q4wmz3li6v2l6/post/3mzidfa75ok2x"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:atpgeo.com@bsky.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "c37f08b85175"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Marjorie Taylor Greene excoriates Trump Over Iran",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:k245sxjrjanxprhcm6mu36oj/post/3mq7l4nmff22i"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:glworld_mirror@mastodon.hongkongers.net": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "53becfe47840"
+        ],
+        "evidence": []
       }
     }
   }

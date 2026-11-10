@@ -183,5 +183,190 @@
       "Krakow Polonya silahlı saldırı",
       "Krakow silahlı saldırgan"
     ]
+  },
+  "data-center-backlash": {
+    "ar": [
+      "رفض مراكز البيانات",
+      "احتجاجات مراكز البيانات",
+      "مراكز البيانات للذكاء الاصطناعي"
+    ],
+    "de": [
+      "Widerstand gegen Rechenzentren",
+      "Rechenzentren Proteste",
+      "KI-Rechenzentren"
+    ],
+    "fa": [
+      "مقاومت در برابر مراکز داده",
+      "اعتراض به مراکز داده",
+      "مراکز داده هوش مصنوعی"
+    ],
+    "fr": [
+      "rejet des centres de données",
+      "manifestation contre les centres de données",
+      "centres de données IA"
+    ],
+    "he": [
+      "התנגדות למרכזי נתונים",
+      "הפגנות נגד מרכזי נתונים",
+      "מרכזי נתונים בינה מלאכותית"
+    ],
+    "ru": [
+      "протесты против дата-центров",
+      "дата-центры ИИ",
+      "дата-центр Microsoft Амстердам"
+    ],
+    "tr": [
+      "veri merkezi tepkisi",
+      "veri merkezlerine karşı protesto",
+      "yapay zeka veri merkezleri"
+    ]
+  },
+  "college-football-weekend": {
+    "ar": [
+      "كرة القدم الجامعية الأمريكية",
+      "تصنيفات كرة القدم الجامعية",
+      "بلاي أوف كرة القدم الجامعية"
+    ],
+    "de": [
+      "College Football Wochenende",
+      "College Football Rangliste",
+      "College Football Playoff"
+    ],
+    "fa": [
+      "فوتبال دانشگاهی آمریکا",
+      "رده‌بندی فوتبال دانشگاهی",
+      "پلی‌آف فوتبال دانشگاهی"
+    ],
+    "fr": [
+      "football universitaire américain",
+      "classement football universitaire",
+      "playoffs football universitaire"
+    ],
+    "he": [
+      "כדורגל מכללות אמריקאי",
+      "דירוג כדורגל מכללות",
+      "פלייאוף כדורגל מכללות"
+    ],
+    "ru": [
+      "студенческий футбол США",
+      "рейтинг студенческого футбола",
+      "плей-офф студенческого футбола"
+    ],
+    "tr": [
+      "üniversite futbolu",
+      "üniversite futbolu sıralaması",
+      "üniversite futbolu play-off"
+    ]
+  },
+  "ice-enforcement-controversies": {
+    "ar": [
+      "وكالة الهجرة والجمارك الأمريكية الجدل",
+      "إطلاق النار على عملاء إيس",
+      "شرطة هيوستن إيس"
+    ],
+    "de": [
+      "ICE Kontroversen Einwanderungsbehörde",
+      "ICE Schüsse",
+      "Polizei Houston ICE"
+    ],
+    "fa": [
+      "جنجال‌های آی‌سی‌ای",
+      "تیراندازی ماموران آی‌سی‌ای",
+      "پلیس هیوستن آی‌سی‌ای"
+    ],
+    "fr": [
+      "controverses ICE immigration",
+      "fusillades ICE",
+      "police de Houston ICE"
+    ],
+    "he": [
+      "מחלוקות ICE אכיפת הגירה",
+      "ירי של ICE",
+      "משטרת יוסטון ICE"
+    ],
+    "ru": [
+      "споры вокруг ICE иммиграционная служба",
+      "стрельба сотрудников ICE",
+      "полиция Хьюстона ICE"
+    ],
+    "tr": [
+      "ICE tartışmaları göçmenlik operasyonları",
+      "ICE ateş açma olayları",
+      "Houston polisi ICE"
+    ]
+  },
+  "dana-white-press-secretary-offer": {
+    "ar": [
+      "دانا وايت سكرتير صحفي",
+      "دانا وايت ترامب",
+      "دانا وايت البيت الأبيض"
+    ],
+    "de": [
+      "Dana White Pressesprecher",
+      "Dana White Trump Pressesprecherin",
+      "Dana White UFC Trump"
+    ],
+    "fa": [
+      "دانا وایت سخنگوی کاخ سفید",
+      "دانا وایت ترامپ",
+      "دانا وایت یو‌اف‌سی"
+    ],
+    "fr": [
+      "Dana White porte-parole",
+      "Dana White attaché de presse Trump",
+      "Dana White UFC Trump"
+    ],
+    "he": [
+      "דנה וייט דובר",
+      "דנה וייט טראמפ",
+      "דנה וייט הבית הלבן"
+    ],
+    "ru": [
+      "Дана Уайт пресс-секретарь",
+      "Дана Уайт Трамп",
+      "Дана Уайт UFC Трамп"
+    ],
+    "tr": [
+      "Dana White basın sekreteri",
+      "Dana White Trump",
+      "Dana White UFC Trump"
+    ]
+  },
+  "iran-war": {
+    "ar": [
+      "حرب إيران",
+      "مضيق هرمز",
+      "الضربات الأمريكية على إيران"
+    ],
+    "de": [
+      "Iran-Krieg",
+      "Straße von Hormus",
+      "US-Angriffe auf Iran"
+    ],
+    "fa": [
+      "جنگ ایران",
+      "تنگه هرمز",
+      "حملات آمریکا به ایران"
+    ],
+    "fr": [
+      "guerre en Iran",
+      "détroit d'Ormuz",
+      "frappes américaines en Iran"
+    ],
+    "he": [
+      "מלחמת איראן",
+      "מצרי הורמוז",
+      "תקיפות אמריקאיות באיראן"
+    ],
+    "ru": [
+      "война с Ираном",
+      "Ормузский пролив",
+      "удары США по Ирану"
+    ],
+    "tr": [
+      "İran savaşı",
+      "Hürmüz Boğazı",
+      "ABD'nin İran'a saldırıları"
+    ]
   }
 }

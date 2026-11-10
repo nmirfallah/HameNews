@@ -6,6 +6,9 @@
   python run.py --open                       # ...and open the HTML report in your browser
   python run.py --open-latest                # just open the newest report, no analysis
   python run.py --why "Iran"                 # why is (or is not) this story in the latest report?
+  python run.py -j irna.ir --open            # normal analysis, plus what this source reported on every topic
+  python run.py -j irna.ir --only --open     # analyse ONLY this source (what is it covering, how does it frame it)
+  python run.py -j irna.ir --translation-only   # just test language detection + translation on that source
 """
 import argparse
 import logging
@@ -53,6 +56,19 @@ def main():
     ap.add_argument("--topics", type=int, help="override discovery.topics_per_day")
     ap.add_argument("--open", action="store_true", help="open the HTML report when finished")
     ap.add_argument("--open-latest", action="store_true", help="open the newest HTML report and exit")
+    ap.add_argument("-j", "--journal", metavar="SOURCE",
+                    help="focus on one source: a domain (irna.ir), an outlet name, or a feed URL. Its articles are "
+                         "translated and added to the analysis of every topic")
+    ap.add_argument("--only", action="store_true",
+                    help="with -j: analyse only that source (its own headlines decide the topics)")
+    ap.add_argument("--translation-only", action="store_true",
+                    help="with -j: do not analyse news, just show the source's items next to their translations")
+    ap.add_argument("-n", "--limit", type=int, default=None,
+                    help="with -j: how many of the source's items to fetch (default 40; 10 with --translation-only)")
+    ap.add_argument("--lang", metavar="CODE", help="with -j: ask Google News for pages in this language (e.g. fa, ar, ru)")
+    ap.add_argument("--no-cache", action="store_true", help="with -j: ignore saved translations and translate again")
+    ap.add_argument("--verify", action="store_true",
+                    help="with -j: also have a stronger model grade each translation (a few extra requests)")
     ap.add_argument("--why", metavar="TERM", help="explain what happened to a story in the latest discovery log")
     args = ap.parse_args()
 
@@ -78,7 +94,28 @@ def main():
     if args.topics:
         cfg["discovery"]["topics_per_day"] = args.topics
     try:
-        name = run(get_llm(cfg["llm"]), cfg, store, subject=args.subject)
+        if args.journal and args.translation_only:
+            from trendwatch.journal import render_text, run_journal
+            result = run_journal(get_llm(cfg["llm"]), cfg, store, args.journal, subject=args.subject or "",
+                                 lang=args.lang or "", limit=args.limit or 10, use_cache=not args.no_cache,
+                                 do_verify=args.verify)
+            print(render_text(result))
+            if result["rows"] and args.open:
+                open_in_browser(store.path(result["path"]))
+            return
+        llm, focus = get_llm(cfg["llm"]), None
+        if args.journal:
+            from trendwatch.journal import prepare_focus, render_text
+            focus = prepare_focus(llm, cfg, store, args.journal, lang=args.lang or "", limit=args.limit or 40,
+                                  use_cache=not args.no_cache)
+            if not focus["items"]:
+                sys.exit(render_text({"source": args.journal, "found_via": focus["found_via"], "rows": []}))
+            if args.only:   # nothing but this source: no other collection or discovery sources
+                cfg["collection"]["sources"] = []
+                cfg["news_sites"] = []
+                cfg["languages"]["search_native"] = False
+                cfg["analysis"]["min_items_to_analyze"] = min(cfg["analysis"]["min_items_to_analyze"], 4)
+        name = run(llm, cfg, store, subject=args.subject, focus=focus, only=bool(args.journal and args.only))
     except Exception as e:
         message = explain(e)
         if message is None:

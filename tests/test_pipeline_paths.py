@@ -164,6 +164,132 @@ class LanguageIntegrationTests(PipelineTestCase):
         self.assertNotIn("translate_keywords", llm.tasks())
 
 
+class FocusSourceTests(PipelineTestCase):
+    def focus(self, n=3):
+        from trendwatch.models import Item
+        items = [Item(f"f{i}", "article", "news", "IRNA", f"خبر {i}", url=f"http://i/{i}", lang="fa", domain="irna.ir")
+                 for i in range(n)]
+        for i, it in enumerate(items):
+            it.text_en = f"Iran talks update {i}" if i < 2 else "Football final"
+        rows = [helpers_row for helpers_row in []]
+        return {"source": "irna.ir", "name": "IRNA", "found_via": "a feed", "items": items, "rows": rows}
+
+    def topic(self, **kw):
+        t = {"topic": "Album", "keywords": ["album"], "summary": "s", "platforms": ["a", "b"], "n_signals": 2,
+             "focus_urls": []}
+        t.update(kw)
+        return t
+
+    def test_the_sources_items_for_the_topic_join_the_collected_items(self):
+        self.content(mixed_items(12, 6))
+        res = pipeline.analyze_topic(ScriptedLLM(handler=handler()), self.topic(keywords=["Iran"]), self.cfg,
+                                     self.store, focus=self.focus())
+        self.assertEqual(res["n_items"], 18 + 2)
+        mine = res["focus"]
+        self.assertEqual(mine["source"], "IRNA")
+        self.assertEqual([r["english"] for r in mine["items"]], ["Iran talks update 0", "Iran talks update 1"])
+        self.assertEqual(mine["items"][0]["lang_name"], "Persian")
+
+    def test_the_sources_items_are_never_cut_by_the_article_cap(self):
+        self.cfg = cfg(collection={"sources": ["fake"], "max_articles": 3}, analysis={"batch_size": 100})
+        self.content(mixed_items(12, 0))
+        res = pipeline.analyze_topic(ScriptedLLM(handler=handler()), self.topic(keywords=["Iran"]), self.cfg,
+                                     self.store, focus=self.focus())
+        self.assertEqual(res["n_items"], 3 + 2)
+        self.assertEqual(len(res["focus"]["items"]), 2)
+
+    def test_membership_by_cluster_works_without_a_keyword(self):
+        self.content([])
+        res = pipeline.analyze_topic(ScriptedLLM(handler=handler()),
+                                     self.topic(keywords=["zzz"], focus_urls=["http://i/2"]), self.cfg, self.store,
+                                     focus=self.focus())
+        self.assertEqual([r["english"] for r in res["focus"]["items"]], ["Football final"])
+
+    def test_a_topic_the_source_did_not_cover_says_so(self):
+        self.content(mixed_items(12, 6))
+        res = pipeline.analyze_topic(ScriptedLLM(handler=handler()), self.topic(keywords=["tennis"]), self.cfg,
+                                     self.store, focus=self.focus())
+        self.assertEqual(res["focus"], {"source": "IRNA", "items": []})
+
+    def test_without_a_focus_nothing_changes(self):
+        self.content(mixed_items(12, 6))
+        res = pipeline.analyze_topic(ScriptedLLM(handler=handler()), self.topic(), self.cfg, self.store)
+        self.assertNotIn("focus", res)
+
+    def test_the_sources_items_are_grouped_with_its_own_group(self):
+        self.content(mixed_items(12, 6))
+        llm = ScriptedLLM(handler=handler())
+        res = pipeline.analyze_topic(llm, self.topic(keywords=["Iran"]), self.cfg, self.store, focus=self.focus())
+        names = {g["group"] for g in res["narratives"]["groups"]}
+        self.assertIn("Iran state-linked media", names)
+
+
+class FocusRunTests(PipelineTestCase):
+    def setUp(self):
+        super().setUp()
+        from trendwatch.models import Item
+        self.items = [Item(f"f{i}", "article", "news", "IRNA", f"خبر {i}", url=f"http://i/{i}", lang="fa", domain="irna.ir")
+                      for i in range(5)]
+        for it in self.items:
+            it.text_en = "Iran talks update"
+        self.focus = {"source": "irna.ir", "name": "IRNA", "found_via": "a feed found at x", "items": self.items,
+                      "rows": [{"flags": [], "lang_name": "Persian"} for _ in self.items]}
+
+    def run_it(self, only=False, **kw):
+        self.content(mixed_items(12, 6))
+        self.signals([Signal("a", "google_trends"), Signal("b", "wikipedia")])
+        cluster = [{"topic": "Iran talks", "keywords": ["Iran"], "summary": "s", "signal_ids": [0, 1, 2]}]
+        llm = ScriptedLLM(handler=handler(cluster_topics=cluster))
+        name = pipeline.run(llm, self.cfg, self.store, focus=self.focus, only=only, **kw)
+        return name, llm
+
+    def test_the_report_is_named_after_the_source_and_shows_its_section(self):
+        name, _ = self.run_it()
+        self.assertEqual(name, f"reports/{date.today().isoformat()}-irna-ir.md")
+        md = open(self.store.path(name), encoding="utf-8").read()
+        self.assertIn("## Focus source: IRNA", md)
+        self.assertIn("Found via: a feed found at x.", md)
+        self.assertIn("5 items fetched (Persian 5)", md)
+        self.assertIn("it appears in 1 of 1 analysed topics", md)
+        self.assertIn("### What IRNA reported", md)  # the block is titled with the outlet's readable name
+        self.assertIn("original: خبر 0", md)
+
+    def test_the_html_report_shows_original_and_english_side_by_side(self):
+        name, _ = self.run_it()
+        html = open(self.store.path(name.replace(".md", ".html")), encoding="utf-8").read()
+        self.assertIn("Focus source: IRNA", html)
+        self.assertIn("dir='auto'", html)
+        self.assertIn("خبر 0", html)
+        self.assertIn("Iran talks update", html)
+
+    def test_the_sources_headlines_take_part_in_discovery(self):
+        _, llm = self.run_it()
+        prompt = next(c["prompt"] for c in llm.calls if c["prompt"].startswith("TASK:cluster_topics"))
+        self.assertIn("(news) Iran talks update [IRNA]", prompt)
+
+    def test_only_mode_discovers_from_the_source_alone(self):
+        name, llm = self.run_it(only=True)
+        prompt = next(c["prompt"] for c in llm.calls if c["prompt"].startswith("TASK:cluster_topics"))
+        self.assertNotIn("google_trends", prompt)
+        self.assertIn("[IRNA]", prompt)
+
+    def test_a_subject_and_a_source_can_be_combined(self):
+        self.content(mixed_items(12, 6))
+        llm = ScriptedLLM(handler=handler(expand_subject={"topic": "Iran talks", "keywords": ["Iran"], "summary": "s"}))
+        name = pipeline.run(llm, self.cfg, self.store, subject="Iran talks", focus=self.focus)
+        self.assertEqual(name, f"reports/{date.today().isoformat()}-iran-talks-irna-ir.md")
+        md = open(self.store.path(name), encoding="utf-8").read()
+        self.assertIn("### What IRNA reported", md)
+
+    def test_the_normal_run_is_untouched_by_the_new_parameters(self):
+        self.content(mixed_items(12, 6))
+        self.signals([Signal("a", "google_trends"), Signal("b", "wikipedia")])
+        cluster = [{"topic": "Album", "keywords": ["album"], "summary": "s", "signal_ids": [0, 1]}]
+        name = pipeline.run(ScriptedLLM(handler=handler(cluster_topics=cluster)), self.cfg, self.store)
+        self.assertEqual(name, f"reports/{date.today().isoformat()}.md")
+        self.assertNotIn("Focus source", open(self.store.path(name), encoding="utf-8").read())
+
+
 class DiscoveryRunTests(PipelineTestCase):
     # Signals are numbered after being grouped by platform, so they are listed here in that order:
     # ids 0-2 google_trends, 3-5 wikipedia, 6 mastodon, 7 hackernews.

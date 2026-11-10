@@ -45,6 +45,13 @@
       "kappa": 0.54,
       "n_items": 160,
       "n_framed": 56
+    },
+    {
+      "date": "2026-11-08",
+      "verdict": "unreliable",
+      "kappa": 0.42,
+      "n_items": 160,
+      "n_framed": 33
     }
   ]
 }

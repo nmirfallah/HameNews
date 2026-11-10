@@ -50,6 +50,13 @@
       "kappa": 0.6,
       "n_items": 160,
       "n_framed": 62
+    },
+    {
+      "date": "2026-11-07",
+      "verdict": "strong",
+      "kappa": 0.58,
+      "n_items": 160,
+      "n_framed": 51
     }
   ]
 }

@@ -13,6 +13,9 @@ section reflects real differences, and know which sources actually work.
   grouped as `<Country> state-linked | public | independent media`.
 - The Grayzone is its own group, not filed under a funder, because its funding is disputed.
 - X/Twitter and Instagram are excluded (no free API access).
+- 2026-11-09: `-j SOURCE` focuses the real analysis on one source (its translated items join every topic and
+  its headlines join discovery); `--only` uses that source alone; `--translation-only` is the old per-source
+  translation test. A first version of `-j` was only the translation test, which was not what was wanted.
 - 2026-11-07: discovery ranks by a trend score (platform breadth plus distinct news outlets) and no longer
   requires two platforms, because a story covered by many outlets but not spiking on search or social was
   being dropped (suspected for the Iran war). Topics beyond `topics_per_day` are listed, not hidden. A

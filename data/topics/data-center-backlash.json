@@ -1,0 +1,41 @@
+{
+  "topic": "Data center backlash",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Midterms as voter verdict",
+      "description": "Frames data center opposition as a decisive electoral force, citing ousted incumbents, flipped states and ballot results as a message from voters."
+    },
+    {
+      "id": "f2",
+      "label": "Industry response and damage control",
+      "description": "Covers how tech companies and suppliers react to the backlash through pledges, rebranding, retrofitting ideas, warnings about slower expansion, and arguments that the anger is political rather than anti-tech."
+    },
+    {
+      "id": "f3",
+      "label": "Backlash as business and market risk",
+      "description": "Treats the backlash as a financial and strategic matter, examining effects on energy stocks, IPOs, the trillion-dollar buildout, and which large or small firms gain or lose."
+    },
+    {
+      "id": "f4",
+      "label": "European street protest and direct action",
+      "description": "Reports on physical demonstrations and site break-ins across Europe, presenting the opposition as a spreading, coordinated protest movement."
+    },
+    {
+      "id": "f5",
+      "label": "Regulation, politicians and civil liberties",
+      "description": "Focuses on political targets and policy consequences, including protests at a senator's home, expected tougher rules, and arguments about civil rights and accountability of big tech deals."
+    }
+  ],
+  "created": "2026-11-07",
+  "history": [
+    {
+      "date": "2026-11-08",
+      "verdict": "unreliable",
+      "kappa": 0.22,
+      "n_items": 140,
+      "n_framed": 24
+    }
+  ]
+}

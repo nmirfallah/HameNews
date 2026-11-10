@@ -208,6 +208,58 @@ class QualificationAndRankingTests(unittest.TestCase):
         self.assertEqual(len(topics), 12)
 
 
+class ExtraSignalsTests(unittest.TestCase):
+    PLATFORM = {"all": lambda c: [Signal("Album drop", "google_trends"), Signal("New album", "wikipedia")]}
+
+    def extra(self):
+        return [Signal("Iran talks resume [IRNA]", "news", url="http://i/1", source="IRNA"),
+                Signal("Oil price rises [IRNA]", "news", url="http://i/2", source="IRNA")]
+
+    def discover(self, reply, **kw):
+        conf = cfg(discovery={"enabled_sources": ["all"], "min_platforms": 2})
+        llm = ScriptedLLM([reply])
+        with mock.patch.dict(SIGNAL_SOURCES, self.PLATFORM, clear=True):
+            return discovery.discover_topics(llm, conf, **kw), llm
+
+    def test_extra_signals_are_listed_after_the_platform_signals(self):
+        _, llm = self.discover([], extra_signals=self.extra())
+        prompt = llm.calls[0]["prompt"]
+        self.assertIn("[0] (google_trends) Album drop", prompt)
+        self.assertIn("[2] (news) Iran talks resume [IRNA]", prompt)
+
+    def test_topics_remember_which_of_their_signals_came_from_the_extra_source(self):
+        reply = [{"topic": "Iran talks", "signal_ids": [2, 3, 0]}, {"topic": "Album", "signal_ids": [0, 1]}]
+        topics, _ = self.discover(reply, extra_signals=self.extra())
+        iran = next(t for t in topics if t["topic"] == "Iran talks")
+        self.assertEqual(iran["focus_urls"], ["http://i/1", "http://i/2"])
+        self.assertEqual(next(t for t in topics if t["topic"] == "Album")["focus_urls"], [])
+
+    def test_only_extra_uses_nothing_but_the_extra_signals_and_every_topic_qualifies(self):
+        reply = [{"topic": "Iran talks", "signal_ids": [0]}, {"topic": "Oil", "signal_ids": [1]}]
+        topics, llm = self.discover(reply, extra_signals=self.extra(), only_extra=True)
+        self.assertEqual({t["topic"] for t in topics}, {"Iran talks", "Oil"})   # one outlet, yet both qualify
+        self.assertNotIn("google_trends", llm.calls[0]["prompt"])
+        self.assertIn("[0] (news) Iran talks resume [IRNA]", llm.calls[0]["prompt"])
+
+    def test_only_extra_keeps_every_topic_even_when_a_watchlist_topic_qualifies_on_its_own(self):
+        reply = [{"topic": "Iran war", "signal_ids": [0]}, {"topic": "Oil", "signal_ids": [1]}]
+        conf = cfg(discovery={"watchlist": ["Iran war"], "min_platforms": 2})
+        topics = discovery.discover_topics(ScriptedLLM([reply]), conf, extra_signals=self.extra(), only_extra=True)
+        self.assertEqual({t["topic"] for t in topics}, {"Iran war", "Oil"})
+
+    def test_without_only_extra_a_watchlist_topic_qualifies_alone_and_weak_topics_are_left_out(self):
+        reply = [{"topic": "Iran war", "signal_ids": [2]}, {"topic": "Oil", "signal_ids": [3]}]
+        conf = cfg(discovery={"enabled_sources": ["all"], "watchlist": ["Iran war"], "min_platforms": 2})
+        with mock.patch.dict(SIGNAL_SOURCES, self.PLATFORM, clear=True):
+            topics = discovery.discover_topics(ScriptedLLM([reply]), conf, extra_signals=self.extra())
+        self.assertEqual([t["topic"] for t in topics], ["Iran war"])   # Oil: one outlet, one platform
+
+    def test_only_extra_with_no_signals_returns_nothing_without_a_call(self):
+        llm = ScriptedLLM([])
+        self.assertEqual(discovery.discover_topics(llm, cfg(), extra_signals=[], only_extra=True), [])
+        self.assertEqual(llm.calls, [])
+
+
 class SplitTopicsTests(unittest.TestCase):
     def topics(self, n, watch=()):
         return [{"topic": f"T{i}", "watchlist": i in watch} for i in range(n)]

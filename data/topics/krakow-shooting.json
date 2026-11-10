@@ -1,7 +1,41 @@
 {
   "topic": "Krakow shooting",
-  "has_distinct_framings": false,
-  "framings": [],
-  "created": "2026-11-07",
-  "history": []
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Breaking news incident reporting",
+      "description": "Headlines focus on the unfolding event, giving casualty counts, location in the market square, and police statements, with figures that shift between five, six and nine dead."
+    },
+    {
+      "id": "f2",
+      "label": "Far-right ideology as motive",
+      "description": "Articles foreground officials' statements that the gunman was fascinated by far-right or ultranationalist ideas, treating ideology as the key explanatory detail."
+    },
+    {
+      "id": "f3",
+      "label": "Terror attack and official response",
+      "description": "Posts quote police and government figures describing the shooting as an act of terror and report on the investigation, including bodies found at the suspect's home."
+    },
+    {
+      "id": "f4",
+      "label": "National mourning and shock",
+      "description": "Coverage emphasizes grief, communal and church reaction, and a country in shock over an attack in a historic public space."
+    },
+    {
+      "id": "f5",
+      "label": "Eyewitness footage and personal stories",
+      "description": "Items highlight video of gunshots and people taking cover, plus individual survivor accounts, to convey the experience on the ground."
+    }
+  ],
+  "created": "2026-11-08",
+  "history": [
+    {
+      "date": "2026-11-08",
+      "verdict": "strong",
+      "kappa": 0.87,
+      "n_items": 93,
+      "n_framed": 76
+    }
+  ]
 }
