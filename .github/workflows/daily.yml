@@ -8,29 +8,69 @@ on:
       subject:
         description: "Optional subject to analyse instead of auto-discovery"
         required: false
+      topics:
+        description: "Optional: how many topics get the full analysis (overrides discovery.topics_per_day)"
+        required: false
 
 permissions:
   contents: write
 
+# Never run two reports at once: they would both try to push to the same branch.
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60          # a full run of 8 topics makes several hundred API requests
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+
       - run: pip install -r requirements.txt
+
+      - name: Check the API key secret exists
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::The ANTHROPIC_API_KEY secret is missing or empty. Add it under Settings > Secrets and variables > Actions > Repository secrets (the name must match exactly)."
+            exit 1
+          fi
+
       - name: Run analysis
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           SUBJECT: ${{ github.event.inputs.subject }}
+          TOPICS: ${{ github.event.inputs.topics }}
         run: |
-          if [ -n "$SUBJECT" ]; then python run.py --subject "$SUBJECT"; else python run.py; fi
+          args=()
+          if [ -n "$SUBJECT" ]; then args+=(--subject "$SUBJECT"); fi
+          if [ -n "$TOPICS" ]; then args+=(--topics "$TOPICS"); fi
+          python run.py ${args[@]+"${args[@]}"}
+
+      - name: Show the report in the job summary
+        if: success()
+        run: |
+          latest=$(ls -t data/reports/*.md 2>/dev/null | head -1 || true)
+          if [ -n "$latest" ]; then cat "$latest" >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Keep the readable HTML report as a downloadable file
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hamenews-report
+          path: data/reports/*.html
+          retention-days: 14
+          if-no-files-found: ignore
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"

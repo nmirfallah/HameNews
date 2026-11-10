@@ -145,16 +145,32 @@ feed or endpoint never stops a run. Remove or fix any source that keeps warning.
 ## Run it daily with GitHub Actions
 
 1. Push this project to a **private** repository.
-2. Go to *Settings, Secrets and variables, Actions* and add:
-   - `ANTHROPIC_API_KEY` (required)
-   - `BSKY_HANDLE` and `BSKY_APP_PASSWORD` (optional; Bluesky search may need a free app password)
-3. `.github/workflows/daily.yml` runs every day at 12:00 UTC and commits the new files in `data/`.
-4. To test, open the *Actions* tab, choose **Daily trend report**, and click **Run workflow**.
-   You can enter a subject there to analyse it instead of auto-discovering.
+2. Go to *Settings, Secrets and variables, Actions, Repository secrets* and add (names must match exactly):
+   - `ANTHROPIC_API_KEY` (required; the key must belong to an Anthropic account that has credit)
+   - `BSKY_HANDLE` and `BSKY_APP_PASSWORD` (optional; Bluesky search needs an app password)
+3. `.github/workflows/daily.yml` runs every day at 12:00 UTC. Each run: installs the dependencies, checks the
+   secret exists (failing with a clear message if not), runs `python run.py`, shows the report in the job
+   summary, keeps the HTML report as a downloadable artifact for 14 days, and commits the new files in `data/`.
+4. **Test it once by hand:** *Actions* tab, **Daily trend report**, **Run workflow**. You can enter a subject, or
+   a number of topics to analyse in depth (for a cheaper first run, try 2). Open the run and check that
+   "Run analysis" ends with `report written` and that "Commit results" made a commit.
 
-Cost: GitHub Actions is free for this usage (a daily run takes a few minutes). The AI
-provider's API usage is billed separately; at this volume it is typically small, and
-`discovery.topics_per_day`, `collection.max_articles` and `collection.max_posts` control it.
+What a healthy run looks like: the log shows the trend sources returning signals, then one block of requests per
+analysed topic, then `report written: data/reports/<date>.md`. A full run of 8 topics can take 20-40 minutes,
+so the job has a 60 minute limit; two runs never overlap.
+
+If a run fails:
+
+| Symptom | Cause and fix |
+|---|---|
+| `The ANTHROPIC_API_KEY secret is missing or empty` | The secret is not a *repository* secret with exactly that name (check spelling, and that it is not only an Environment or Dependabot secret). |
+| `Your Anthropic API credit balance is too low` | Add credit at console.anthropic.com > Plans & Billing, in the organization that owns the key. |
+| `The API key was rejected` | The key was revoked or mistyped. Create a new one and update the secret. |
+| `git push` is rejected | Branch protection blocks the bot. Allow GitHub Actions to push to the branch, or push reports to a separate branch. |
+| Many source warnings, few articles | Some sites (Google News especially) rate-limit GitHub's servers. The run still completes with less data; lower `agencies.search` or `topics_per_day`, or retry later. |
+
+Cost: GitHub Actions minutes are free for this (a private repo has 2,000 a month; a 30 minute daily run uses about
+900). The Anthropic API usage is billed separately and grows with `discovery.topics_per_day`.
 
 ## Configuration
 

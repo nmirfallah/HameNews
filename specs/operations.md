@@ -21,6 +21,11 @@ Full analysis costs roughly 50-60 fast-model requests plus a few smart-model one
 first live run). `discovery.topics_per_day` is the main lever; "Also trending" costs nothing beyond the
 single clustering call. Check the Console usage page and set `topics_per_day` to what you want to pay daily.
 
+## Workflow facts (checked by tests/test_workflows.py)
+Secret names match the code's environment variables; a preflight step fails early if the key is missing; 60
+minute timeout; no overlapping runs; user inputs reach the shell only through environment variables; the commit
+step runs last and only after success; the report is shown in the job summary and kept as an artifact.
+
 ## Open questions
 - Translation adds fast-model calls (20 items per call) and one keyword-translation call per topic; how much does it add per run? Both are cached.
 - Actual cost per daily run on live data? Check the Anthropic Console usage page after the first runs.
@@ -30,8 +35,9 @@ single clustering call. Check the Console usage page and set `topics_per_day` to
   confirm the behaviour.)
 
 ## Tasks
+- First live Actions run still to be done: confirm runtime, cost and that Google News tolerates GitHub's IP ranges.
 - Add a failure summary to the report (which sources returned nothing today).
-- Alert on failed runs (e.g. GitHub notifications on the workflow).
+- Alert on failed runs (GitHub emails the workflow owner on failure by default; confirm it reaches you).
 - Cost cap: stop analysing further topics once an estimated token budget is exceeded.
 - Add a small set of live smoke tests (opt-in, needs network and an API key) for the real sources and models.
 - Pin dependency versions once the first live run succeeds.
