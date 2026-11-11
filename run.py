@@ -6,6 +6,7 @@
   python run.py --open                       # ...and open the HTML report in your browser
   python run.py --open-latest                # just open the newest report, no analysis
   python run.py --why "Iran"                 # why is (or is not) this story in the latest report?
+  python run.py --email                      # ...and email the report to the people in emails.yaml
   python run.py -j irna.ir --open            # normal analysis, plus what this source reported on every topic
   python run.py -j irna.ir --only --open     # analyse ONLY this source (what is it covering, how does it frame it)
   python run.py -j irna.ir --translation-only   # just test language detection + translation on that source
@@ -55,6 +56,8 @@ def main():
     ap.add_argument("--data-dir", default="data")
     ap.add_argument("--topics", type=int, help="override discovery.topics_per_day")
     ap.add_argument("--open", action="store_true", help="open the HTML report when finished")
+    ap.add_argument("--email", action="store_true",
+                    help="email the finished report to the recipients in emails.yaml (needs SMTP_USERNAME/SMTP_PASSWORD)")
     ap.add_argument("--open-latest", action="store_true", help="open the newest HTML report and exit")
     ap.add_argument("-j", "--journal", metavar="SOURCE",
                     help="focus on one source: a domain (irna.ir), an outlet name, or a feed URL. Its articles are "
@@ -123,6 +126,13 @@ def main():
         sys.exit(f"\nError: {message}")
     if name and args.open:
         open_in_browser(store.path(name.replace(".md", ".html")))
+    if name and args.email:
+        from trendwatch.emailer import EmailError, send_report
+        try:
+            summary = send_report(args.data_dir, os.path.join(os.path.dirname(os.path.abspath(args.config)), "emails.yaml"))
+        except EmailError as e:
+            sys.exit(f"\nError: {e}")
+        print(summary.get("skipped") or f"Emailed {summary['sent']} recipient(s): {', '.join(summary['recipients'])}")
 
 
 if __name__ == "__main__":

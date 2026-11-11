@@ -1,0 +1,15 @@
+# Who receives the daily HameNews report by email.
+#
+# Add one address per line under "recipients" (or use address/name for a display name).
+# Each person gets their own message, so recipients never see each other's addresses.
+# Keep this repository PRIVATE: these addresses are stored in it.
+enabled: true                 # set to false to pause emails without touching the workflow
+
+recipients:
+  - s.n.mirfallah@gmail.com
+  # - address: someone@example.com
+  #   name: Someone Else
+
+subject_prefix: HameNews      # the subject is "<prefix> <date>: <top topics>"
+topics_in_subject: 3
+attach: [html]                # html = the full readable report; markdown = a plain-text copy; [] = none

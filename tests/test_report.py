@@ -212,6 +212,83 @@ class AlsoTrendingTests(unittest.TestCase):
         self.assertIn("Subject chosen manually", report.render_topic(result(platforms=[], n_signals=0)))
 
 
+class EmailHtmlTests(unittest.TestCase):
+    def render(self, **kw):
+        return report.render_email_html("2026-11-10", [result()], ALSO, kw.get("focus"))
+
+    def test_it_uses_only_what_email_clients_support(self):
+        html = self.render()
+        for banned in ("<style", "<details", "<script", "var(--", "prefers-color-scheme", "<summary"):
+            self.assertNotIn(banned, html)
+        self.assertIn('style="', html)
+        self.assertTrue(html.startswith("<!doctype html>"))
+
+    def test_everything_a_reader_needs_is_expanded_in_the_body(self):
+        html = self.render()
+        for needle in ("Trending now", "Album Launch", "The main story", "A big album was released on Friday.",
+                       "How each side differs", "Israeli media", "Calls it a triumph and stresses sales.",
+                       "Points of disagreement", "Israeli media says 10 million sold; Iranian media says 2 million.",
+                       "Reported much the same as the main story: UK media", "Also trending (headlines only)",
+                       "Krakow shooting", "The full report with tables is attached."):
+            self.assertIn(needle, html)
+
+    def test_the_main_story_appears_once_and_the_one_line_summary_is_dropped(self):
+        html = self.render()
+        self.assertEqual(html.count("A big album was released on Friday."), 1)
+        self.assertNotIn("A big album was released.<", html)
+
+    def test_ranked_list_marks_headline_only_topics(self):
+        html = self.render()
+        self.assertIn('<li value="1"', html)
+        self.assertIn('<li value="3"', html)
+        self.assertIn("(headlines only)", html)
+
+    def test_links_are_safe_and_untrusted_text_is_escaped(self):
+        evil = "<img src=x onerror=alert(1)>"
+        res = result(topic=evil, narratives={"common": evil, "common_links": [{"outlet": evil, "url": "javascript:alert(1)"}],
+                                             "groups": [{"group": evil, "n_items": 2, "outlets": [evil], "outlet_notes": [evil],
+                                                         "languages": [evil], "distinct": evil, "links": [{"outlet": "x", "url": "data:text/html,x"}]}],
+                                             "conflicts": [evil], "unclassified": 0})
+        html = report.render_email_html("d", [res], [dict(ALSO[0], summary=evil)])
+        self.assertNotIn("<img", html)
+        self.assertNotIn("javascript:", html)
+        self.assertNotIn("data:text/html", html)
+        self.assertIn("&lt;img", html)
+
+    def test_real_links_are_clickable_and_coloured_inline(self):
+        html = self.render()
+        self.assertIn('<a href="http://t1/a" style="color:#0b5fff">T1</a>', html)
+        self.assertIn('<a href="http://bbc/1"', html)
+
+    def test_leanings_and_translations_are_shown_under_each_side(self):
+        html = self.render()
+        self.assertIn("Outlet leanings: T1: right (AI estimate); T2: center (config)", html)
+        self.assertIn("Translated from: Arabic, Persian", html)
+
+    def test_the_focus_source_summary_and_items_appear(self):
+        info = {"name": "IRNA", "n_items": 9, "languages": {"Persian": 9}, "topics_covered": 1, "topics_total": 2, "flagged": 0}
+        res = result(focus={"source": "IRNA", "items": [{"english": "Talks resume", "original": "مذاکرات", "lang": "fa",
+                                                         "lang_name": "Persian", "url": "http://i/1", "flags": []}]})
+        html = report.render_email_html("d", [res], (), info)
+        self.assertIn("Focus source: IRNA.", html)
+        self.assertIn("What IRNA reported", html)
+        self.assertIn("Talks resume", html)
+        self.assertIn("original: مذاکرات", html)
+
+    def test_a_topic_without_attributable_coverage_says_so(self):
+        html = report.render_email_html("d", [result(narratives=None)])
+        self.assertIn("Not enough attributable coverage", html)
+
+    def test_no_topics_still_renders(self):
+        html = report.render_email_html("2026-11-10", [])
+        self.assertIn("HameNews", html)
+        self.assertNotIn("Also trending", html)
+
+    def test_it_is_far_smaller_than_the_full_report_because_tables_stay_in_the_attachment(self):
+        self.assertNotIn("<table", self.render())
+        self.assertIn("<table", report.render_html("d", [result()], ALSO))
+
+
 class HtmlTests(unittest.TestCase):
     def test_page_structure(self):
         html = report.render_html("2026-01-01", [result(), result(topic="Other", rank=2)])

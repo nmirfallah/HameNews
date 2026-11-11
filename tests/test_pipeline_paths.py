@@ -385,10 +385,8 @@ class RunTests(PipelineTestCase):
         llm = ScriptedLLM(handler=handler())
         name = pipeline.run(llm, self.cfg, self.store, subject="Album")
         self.assertEqual(name, f"reports/{date.today().isoformat()}-album.md")
-        for ext in (".md", ".html", ".json"):
-            self.assertTrue(self.store.list_dir("reports"), ext)
-        self.assertEqual(sorted(f.rsplit(".", 1)[1] for f in self.store.list_dir("reports")),
-                         ["html", "json", "md"])
+        self.assertEqual(sorted(self.store.list_dir("reports")),
+                         sorted(f"{date.today().isoformat()}-album.{ext}" for ext in ("md", "html", "email.html", "json")))
         self.assertEqual(llm.tasks()[0], "expand_subject")
         self.assertEqual(self.store.read(name.replace(".md", ".json"))[0]["rank"], 1)
 

@@ -11,6 +11,10 @@ on:
       topics:
         description: "Optional: how many topics get the full analysis (overrides discovery.topics_per_day)"
         required: false
+      send_email:
+        description: "Email the report to the people in emails.yaml"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -78,3 +82,14 @@ jobs:
           git add data
           git diff --staged --quiet || git commit -m "Daily report $(date -u +%F)"
           git push
+
+      # Last, so a mail problem can never prevent the results from being saved.
+      - name: Email the report
+        if: ${{ success() && (github.event_name == 'schedule' || github.event.inputs.send_email != 'false') }}
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+        run: python send_report.py

@@ -321,3 +321,110 @@ def render_html(day, results, also=(), focus=None):
             f"<h1>HameNews</h1><p class='muted'>{_e(day)}</p><p class='note'>{_e(NOTE)}</p>"
             f"<h3>Trending now</h3><ol class='toc'>{toc}</ol>"
             + _focus_summary_html(focus) + "".join(_topic_html(r) for r in results) + more + "</main></body></html>")
+
+
+# --------------------------------------------------------------------- email body
+# Email clients drop <style> blocks, CSS variables and <details>, so this version uses inline styles only and
+# shows everything expanded. The full report is attached to the email.
+_FONT = "font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+_MUTED = "color:#6b6b70"
+
+
+def _a(label, url):
+    u = _safe_url(url)
+    return f'<a href="{_e(u)}" style="color:#0b5fff">{_e(label)}</a>' if u else _e(label)
+
+
+def _links_email(links):
+    return " &middot; ".join(_a(l["outlet"], l["url"]) for l in links)
+
+
+def _topic_email(res):
+    out = ['<div style="border:1px solid #d8d8dd;border-radius:10px;padding:14px 16px;margin:0 0 16px">',
+           f'<h2 style="font-size:18px;margin:0 0 2px"><span style="color:#0b5fff">#{_e(res.get("rank", "?"))}</span> '
+           f'{_e(res["topic"])}</h2>',
+           f'<p style="{_MUTED};font-size:13px;margin:0 0 10px">{_e(_trend_line(res))}</p>']
+    focus = res.get("focus")
+    if focus:
+        if focus["items"]:
+            lines = "".join(
+                f'<li style="margin:0 0 4px">{_a(r["english"] or r["original"], r.get("url"))}'
+                + (f' <span style="{_MUTED}">({_e(r["lang_name"])}; original: {_e(r["original"])})</span>'
+                   if r["lang"] != "en" else "") + "</li>" for r in focus["items"])
+            out.append(f'<h3 style="font-size:15px;margin:10px 0 4px">What {_e(focus["source"])} reported</h3>'
+                       f'<ul style="margin:0 0 8px;padding-left:20px">{lines}</ul>')
+        else:
+            out.append(f'<p style="{_MUTED}">Nothing from {_e(focus["source"])} on this topic.</p>')
+
+    nar = res.get("narratives")
+    if nar and (nar["groups"] or nar.get("common")):
+        if nar.get("common"):
+            out.append('<h3 style="font-size:15px;margin:10px 0 4px">The main story</h3>'
+                       f'<p style="margin:0 0 6px;line-height:1.5">{_e(nar["common"])}</p>')
+            if nar.get("common_links"):
+                out.append(f'<p style="font-size:13px;margin:0 0 8px">Sources: {_links_email(nar["common_links"])}</p>')
+        distinct = [g for g in nar["groups"] if g.get("distinct")]
+        similar = [g for g in nar["groups"] if not g.get("distinct")]
+        if distinct:
+            out.append('<h3 style="font-size:15px;margin:10px 0 4px">How each side differs</h3>')
+        for g in distinct:
+            extra = []
+            if g.get("languages"):
+                extra.append("Translated from: " + ", ".join(g["languages"]))
+            if g.get("outlet_notes"):
+                extra.append("Outlet leanings: " + "; ".join(g["outlet_notes"]))
+            if g["links"]:
+                extra.append("Sources: " + _links_email(g["links"]))
+            out.append('<div style="border-left:4px solid #0b5fff;padding:2px 0 2px 12px;margin:0 0 10px">'
+                       f'<div style="font-weight:600">{_e(g["group"])} <span style="{_MUTED};font-weight:400">'
+                       f'({_e(g["n_items"])} items)</span></div>'
+                       f'<p style="margin:2px 0;line-height:1.5">{_e(g["distinct"])}</p>'
+                       + "".join(f'<p style="{_MUTED};font-size:12px;margin:2px 0">{x}</p>'
+                                 for x in ([_e(e) for e in extra if not e.startswith("Sources")]
+                                           + [e for e in extra if e.startswith("Sources")])) + "</div>")
+        if similar:
+            out.append(f'<p style="{_MUTED};font-size:13px">Reported much the same as the main story: '
+                       f'{_e(", ".join(g["group"] for g in similar))}</p>')
+        if nar.get("conflicts"):
+            out.append('<h3 style="font-size:15px;margin:10px 0 4px">Points of disagreement</h3>'
+                       '<ul style="margin:0 0 8px;padding-left:20px">'
+                       + "".join(f'<li style="margin:0 0 4px">{_e(c)}</li>' for c in nar["conflicts"]) + "</ul>")
+    else:
+        out.append(f'<p style="{_MUTED}">Not enough attributable coverage to summarise by source group '
+                   f'({_e(res["n_items"])} items collected).</p>')
+    d = res.get("divide")
+    if d:
+        out.append(f'<p style="{_MUTED};font-size:12px;margin:6px 0 0">Divide verdict: {_e(d["verdict"])}. '
+                   'Full tables are in the attached report.</p>')
+    out.append("</div>")
+    return "".join(out)
+
+
+def render_email_html(day, results, also=(), focus=None):
+    toc = "".join(f'<li value="{_e(rank)}" style="margin:0 0 3px">{_e(title)}'
+                  f'<span style="{_MUTED}">{_e(tag)}</span></li>' for rank, title, tag in _ranked_titles(results, also))
+    parts = [f'<div style="{_FONT};max-width:680px;margin:0 auto;padding:16px;color:#1c1c1e;font-size:15px">',
+             '<h1 style="font-size:22px;margin:0 0 2px">HameNews</h1>',
+             f'<p style="{_MUTED};margin:0 0 10px">{_e(day)}</p>',
+             f'<p style="{_MUTED};font-size:12px;margin:0 0 14px">{_e(NOTE)}</p>',
+             '<h2 style="font-size:17px;margin:14px 0 6px">Trending now</h2>'
+             f'<ol style="margin:0 0 16px;padding-left:24px">{toc}</ol>']
+    if focus:
+        langs = ", ".join(f"{k} {v}" for k, v in focus["languages"].items())
+        parts.append(f'<p style="margin:0 0 14px"><strong>Focus source: {_e(focus["name"])}.</strong> '
+                     f'{_e(focus["n_items"])} items fetched ({_e(langs)}); it appears in {_e(focus["topics_covered"])} '
+                     f'of {_e(focus["topics_total"])} analysed topics.</p>')
+    parts += [_topic_email(r) for r in results]
+    if also:
+        parts.append('<h2 style="font-size:17px;margin:18px 0 6px">Also trending (headlines only)</h2>')
+        for a in also:
+            heads = "".join(f'<li style="margin:0 0 2px">{_a(s["name"], s.get("url"))}</li>'
+                            for s in (a.get("signals") or [])[:3])
+            parts.append(f'<div style="margin:0 0 12px"><div style="font-weight:600"><span style="color:#0b5fff">'
+                         f'#{_e(a.get("rank", "?"))}</span> {_e(a["topic"])} <span style="{_MUTED};font-weight:400;'
+                         f'font-size:13px">({_e(_counts(a.get("n_signals", 0), a.get("n_outlets")))})</span></div>'
+                         + (f'<ul style="margin:2px 0 0;padding-left:20px">{heads}</ul>' if heads else "") + "</div>")
+    parts.append(f'<p style="{_MUTED};font-size:12px;margin-top:18px">The full report with tables is attached.</p></div>')
+    return ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, '
+            f'initial-scale=1"><title>HameNews {_e(day)}</title></head><body style="margin:0;background:#ffffff">'
+            + "".join(parts) + "</body></html>")

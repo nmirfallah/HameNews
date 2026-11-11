@@ -118,6 +118,7 @@ def run(llm, cfg, store, subject=None, focus=None, only=False):
     name = f"reports/{day}-{suffix}.md" if suffix else f"reports/{day}.md"
     store.write_text(name, report.render(day, results, also, info))
     store.write_text(name.replace(".md", ".html"), report.render_html(day, results, also, info))
+    store.write_text(name.replace(".md", ".email.html"), report.render_email_html(day, results, also, info))
     store.write(name.replace(".md", ".json"), results)
     if record:
         _write_discovery_log(store, day, cfg, record, deep, rest)

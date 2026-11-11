@@ -42,18 +42,48 @@ class DailyWorkflowTests(unittest.TestCase):
         env = step(self.wf, "Run analysis")["env"]
         self.assertEqual(env["ANTHROPIC_API_KEY"], "${{ secrets.ANTHROPIC_API_KEY }}")
 
-    def test_every_environment_variable_the_code_needs_is_passed_to_the_run(self):
-        needed = set()
-        for path in glob.glob(os.path.join(helpers.ROOT, "trendwatch", "**", "*.py"), recursive=True):
-            src = open(path, encoding="utf-8").read()
-            needed |= set(re.findall(r'environ\.get\("([A-Z][A-Z_]+)"', src))
-            needed |= set(re.findall(r'api_key_env="([A-Z][A-Z_]+)"', src))
-        needed.discard("OPENAI_API_KEY")        # only for the optional OpenAI-compatible provider
+    def env_names_in(self, *relative):
+        found = set()
+        for rel in relative:
+            for path in glob.glob(os.path.join(helpers.ROOT, rel), recursive=True):
+                src = open(path, encoding="utf-8").read()
+                found |= set(re.findall(r'environ\.get\("([A-Z][A-Z_]+)"', src))
+                found |= set(re.findall(r'api_key_env="([A-Z][A-Z_]+)"', src))
+        return found
+
+    def test_every_environment_variable_the_analysis_needs_is_passed_to_that_step(self):
+        needed = self.env_names_in("trendwatch/*.py", "trendwatch/llm/*.py", "trendwatch/sources/*.py") - {"OPENAI_API_KEY"}
+        needed -= self.env_names_in("trendwatch/emailer.py")
         env = step(self.wf, "Run analysis")["env"]
         self.assertTrue({"ANTHROPIC_API_KEY", "BSKY_HANDLE", "BSKY_APP_PASSWORD"} <= needed, needed)
         for name in needed:
             self.assertIn(name, env, f"{name} is read by the code but not passed by the workflow")
             self.assertIn(f"secrets.{name}", env[name])
+
+    def test_every_environment_variable_the_emailer_reads_is_passed_to_the_email_step(self):
+        needed = self.env_names_in("trendwatch/emailer.py")
+        self.assertTrue({"SMTP_USERNAME", "SMTP_PASSWORD", "SMTP_HOST", "SMTP_PORT", "MAIL_FROM"} <= needed, needed)
+        env = step(self.wf, "Email the report")["env"]
+        for name in needed:
+            self.assertEqual(env.get(name), "${{ secrets." + name + " }}", name)
+
+    def test_the_mail_credentials_are_only_given_to_the_email_step(self):
+        for st in steps(self.wf):
+            if st.get("name") != "Email the report":
+                self.assertNotIn("SMTP_PASSWORD", yaml.dump(st), st.get("name"))
+
+    def test_the_email_goes_out_last_after_the_results_are_committed(self):
+        names = [s.get("name", s.get("uses", "")) for s in steps(self.wf)]
+        self.assertEqual(names[-2:], ["Commit results", "Email the report"])
+        self.assertEqual(step(self.wf, "Email the report")["run"], "python send_report.py")
+
+    def test_scheduled_runs_always_email_and_manual_runs_can_opt_out(self):
+        condition = step(self.wf, "Email the report")["if"]
+        self.assertIn("github.event_name == 'schedule'", condition)
+        self.assertIn("github.event.inputs.send_email != 'false'", condition)
+        self.assertIn("success()", condition)
+        on = self.wf[True] if True in self.wf else self.wf["on"]
+        self.assertTrue(on["workflow_dispatch"]["inputs"]["send_email"]["default"])
 
     def test_a_missing_secret_fails_early_with_a_clear_message(self):
         names = [s.get("name", "") for s in steps(self.wf)]
@@ -79,7 +109,7 @@ class DailyWorkflowTests(unittest.TestCase):
         self.assertIn("git diff --staged --quiet ||", commit)             # no empty commits
         self.assertIn("git push", commit)
         names = [s.get("name", s.get("uses", "")) for s in steps(self.wf)]
-        self.assertEqual(names[-1], "Commit results")                      # only after everything else succeeded
+        self.assertLess(names.index("Run analysis"), names.index("Commit results"))   # only after the analysis succeeded
 
     def test_python_dependencies_come_from_requirements_and_the_version_is_supported(self):
         self.assertIn("pip install -r requirements.txt", self.text)

@@ -148,9 +148,11 @@ feed or endpoint never stops a run. Remove or fix any source that keeps warning.
 2. Go to *Settings, Secrets and variables, Actions, Repository secrets* and add (names must match exactly):
    - `ANTHROPIC_API_KEY` (required; the key must belong to an Anthropic account that has credit)
    - `BSKY_HANDLE` and `BSKY_APP_PASSWORD` (optional; Bluesky search needs an app password)
+   - `SMTP_USERNAME` and `SMTP_PASSWORD` (to email the report; see "Email the report" below)
 3. `.github/workflows/daily.yml` runs every day at 12:00 UTC. Each run: installs the dependencies, checks the
    secret exists (failing with a clear message if not), runs `python run.py`, shows the report in the job
-   summary, keeps the HTML report as a downloadable artifact for 14 days, and commits the new files in `data/`.
+   summary, keeps the HTML report as a downloadable artifact for 14 days, commits the new files in `data/`, and finally
+   emails the report to everyone in `emails.yaml`.
 4. **Test it once by hand:** *Actions* tab, **Daily trend report**, **Run workflow**. You can enter a subject, or
    a number of topics to analyse in depth (for a cheaper first run, try 2). Open the run and check that
    "Run analysis" ends with `report written` and that "Commit results" made a commit.
@@ -171,6 +173,54 @@ If a run fails:
 
 Cost: GitHub Actions minutes are free for this (a private repo has 2,000 a month; a 30 minute daily run uses about
 900). The Anthropic API usage is billed separately and grows with `discovery.topics_per_day`.
+
+## Email the report
+
+After every daily run the workflow emails the report to the people listed in `emails.yaml`:
+
+```yaml
+enabled: true
+recipients:
+  - s.n.mirfallah@gmail.com
+  # - address: someone@example.com
+  #   name: Someone Else
+subject_prefix: HameNews
+topics_in_subject: 3
+attach: [html]          # html = full readable report, markdown = plain-text copy, [] = none
+```
+
+Add addresses under `recipients` and commit. Each person gets their own message, so nobody sees anyone
+else's address. The email contains the main story, how each side differs and the points of disagreement for
+every analysed topic, plus the "Also trending" headlines; the full report with its tables is attached as an
+HTML file. The subject reads `HameNews 2026-11-10: <top topics>`. Keep the repository private: the addresses are
+stored in it. Set `enabled: false` to pause emails without touching the workflow.
+
+**One-time setup with Gmail** (any SMTP provider works; change `SMTP_HOST` and `SMTP_PORT`):
+1. In the Google Account that will *send* the mail, turn on 2-Step Verification, then create an **app password**
+   (Google Account > Security > 2-Step Verification > App passwords). It is 16 characters. Your normal password
+   will not work, and nobody else should ever see this password.
+2. Add repository secrets (*Settings > Secrets and variables > Actions*):
+   - `SMTP_USERNAME`: the full Gmail address that sends the mail (it may be the same one that receives it)
+   - `SMTP_PASSWORD`: the app password
+   - optional: `SMTP_HOST` (default `smtp.gmail.com`), `SMTP_PORT` (default `587`, STARTTLS; `465` uses SSL),
+     `MAIL_FROM` (default: the username)
+3. Run the workflow by hand once (*Actions > Daily trend report > Run workflow*) and check "Email the report".
+   Untick "Email the report" in that dialog to skip emailing on a manual run.
+
+**Test it from your PC first** (PowerShell, in the project folder, after at least one `python run.py`):
+```powershell
+python send_report.py --dry-run          # no credentials needed: builds the email, saves data\email-preview.html
+$env:SMTP_USERNAME = "you@gmail.com"
+$env:SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"       # the app password; this lasts for the current window only
+python send_report.py --to s.n.mirfallah@gmail.com   # send only to this address
+python send_report.py                    # send to everyone in emails.yaml
+python run.py --email                    # run the analysis, then email it
+```
+
+Troubleshooting: *"rejected the login"* means the app password is wrong or 2-Step Verification is off (Google
+Workspace admins can also disable app passwords); *"Missing SMTP_USERNAME"* means the secret is empty or misnamed;
+a personal Gmail account can send about 500 messages a day, far more than needed here. The email step runs last,
+so a mail problem never stops the results from being saved.
 
 ## Configuration
 
@@ -397,7 +447,8 @@ trendwatch/
   languages.py              language detection and translation
   groups.py, leanings.py    source groups and outlet political leaning
   narratives.py             the "According to X..." summaries
-  report.py, pipeline.py    report rendering (Markdown and HTML) and the daily flow
+  report.py, pipeline.py    report rendering (Markdown, HTML, email) and the daily flow
+  emailer.py + send_report.py + emails.yaml   emailing the report to the people listed
   prompts.py                every prompt in one place
   llm/                      model-independent AI layer and providers
   sources/                  one module per data source
