@@ -81,6 +81,7 @@ DEFAULTS = {
         # Google News editions to search. More editions = more national perspectives.
         "google_news_editions": ["US", "GB", "IL", "IN", "AU"],
     },
+    "kb": {"enabled": True},          # keep the knowledge base (data/kb/) up to date during runs
     "narratives": {
         "enabled": True,
         "min_total_items": 3,

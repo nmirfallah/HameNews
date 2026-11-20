@@ -368,5 +368,256 @@
       "Hürmüz Boğazı",
       "ABD'nin İran'a saldırıları"
     ]
+  },
+  "hegseth-impeachment-bid-fails": {
+    "ar": [
+      "عزل هيغسيث",
+      "تصويت مجلس النواب",
+      "غياب الديمقراطيين"
+    ],
+    "de": [
+      "Hegseth Amtsenthebungsverfahren",
+      "Abstimmung Repräsentantenhaus",
+      "Demokraten abwesend"
+    ],
+    "fa": [
+      "استیضاح هگست",
+      "رأی مجلس نمایندگان",
+      "غیبت دموکرات‌ها"
+    ],
+    "fr": [
+      "destitution Hegseth",
+      "vote Chambre des représentants",
+      "démocrates absents"
+    ],
+    "he": [
+      "הדחת הגסת",
+      "הצבעה בבית הנבחרים",
+      "דמוקרטים נעדרים"
+    ],
+    "ru": [
+      "импичмент Хегсета",
+      "голосование в Палате представителей",
+      "демократы отсутствовали"
+    ],
+    "tr": [
+      "Hegseth azil girişimi",
+      "Temsilciler Meclisi oylaması",
+      "Demokratlar yok"
+    ]
+  },
+  "veterans-day-and-armistice-day": {
+    "ar": [
+      "يوم المحاربين القدامى",
+      "يوم الهدنة",
+      "ذكرى انتهاء الحرب"
+    ],
+    "de": [
+      "Veteranentag",
+      "Waffenstillstand 1918 Gedenken",
+      "Tag des Waffenstillstands"
+    ],
+    "fa": [
+      "روز کهنه‌سربازان",
+      "روز آتش‌بس",
+      "یادبود آتش‌بس"
+    ],
+    "fr": [
+      "Journée des anciens combattants",
+      "Armistice 11 novembre",
+      "commémoration 11 novembre"
+    ],
+    "he": [
+      "יום הוותיקים",
+      "יום שביתת הנשק"
+    ],
+    "ru": [
+      "День ветеранов",
+      "День перемирия",
+      "памяти 11 ноября"
+    ],
+    "tr": [
+      "Gaziler Günü",
+      "Mütareke Günü",
+      "11 Kasım anma"
+    ]
+  },
+  "nvidia-investigates-jensen-huang": {
+    "ar": [
+      "إنفيديا تحقيق جنسن هوانغ",
+      "جنسن هوانغ",
+      "تحقيق إنفيديا"
+    ],
+    "de": [
+      "Nvidia Untersuchung Jensen Huang",
+      "Jensen Huang Ermittlungen",
+      "Nvidia Jensen Huang"
+    ],
+    "fa": [
+      "تحقیقات انویدیا جنسن هوانگ",
+      "جنسن هوانگ",
+      "بازرسی انویدیا"
+    ],
+    "fr": [
+      "Nvidia enquête Jensen Huang",
+      "Jensen Huang enquête",
+      "Nvidia enquête"
+    ],
+    "he": [
+      "חקירת אנבידיה ג'נסן הואנג",
+      "ג'נסן הואנג",
+      "חקירת אנבידיה"
+    ],
+    "ru": [
+      "Nvidia расследование Дженсен Хуанг",
+      "Дженсен Хуанг",
+      "расследование Nvidia"
+    ],
+    "tr": [
+      "Nvidia soruşturma Jensen Huang",
+      "Jensen Huang soruşturma",
+      "Nvidia soruşturması"
+    ]
+  },
+  "us-nationwide-faa-ground-stop": {
+    "ar": [
+      "توقف الرحلات الجوية في الولايات المتحدة",
+      "إدارة الطيران الفيدرالية FAA",
+      "دافي الأسلاك النحاسية"
+    ],
+    "de": [
+      "FAA Flugstopp USA",
+      "FAA Ground Stop",
+      "Duffy Kupferkabel"
+    ],
+    "fa": [
+      "توقف پروازها در آمریکا FAA",
+      "اداره هواپیمایی فدرال آمریکا",
+      "دافی سیم مسی"
+    ],
+    "fr": [
+      "FAA arrêt des vols États-Unis",
+      "FAA ground stop",
+      "Duffy câbles en cuivre"
+    ],
+    "he": [
+      "עצירת טיסות ברחבי ארצות הברית",
+      "רשות התעופה הפדרלית FAA",
+      "שון דאפי כבלי נחושת"
+    ],
+    "ru": [
+      "остановка полётов США FAA",
+      "Федеральное авиационное управление США",
+      "Дафи медные провода"
+    ],
+    "tr": [
+      "ABD FAA uçuş durdurma",
+      "ABD genelinde uçuşlar durduruldu",
+      "Duffy bakır kablo"
+    ]
+  },
+  "donbas-for-nato-proposal": {
+    "ar": [
+      "مقترح دونباس مقابل الناتو",
+      "زيلينسكي دونباس",
+      "زيلينسكي الناتو"
+    ],
+    "de": [
+      "Donbass Nato Vorschlag",
+      "Selenskyj Donbass",
+      "Selenskyj Nato"
+    ],
+    "fa": [
+      "پیشنهاد دونباس ناتو",
+      "زلنسکی دونباس",
+      "زلنسکی ناتو"
+    ],
+    "fr": [
+      "proposition Donbass OTAN",
+      "Zelensky Donbass",
+      "Zelensky OTAN"
+    ],
+    "he": [
+      "הצעת דונבס נאט\"ו",
+      "זלנסקי דונבס",
+      "זלנסקי נאט\"ו"
+    ],
+    "ru": [
+      "предложение Донбасс НАТО",
+      "Зеленский Донбасс",
+      "Зеленский НАТО"
+    ],
+    "tr": [
+      "Donbas NATO önerisi",
+      "Zelenskiy Donbas",
+      "Zelenskiy NATO"
+    ]
+  },
+  "van-hollen-senate-leader-bid": {
+    "ar": [
+      "كريس فان هولين زعامة مجلس الشيوخ",
+      "فان هولين شومر",
+      "زعيم الأغلبية في مجلس الشيوخ"
+    ],
+    "de": [
+      "Van Hollen Senatsführung",
+      "Van Hollen Schumer",
+      "Van Hollen Fraktionsvorsitz Senat"
+    ],
+    "fa": [
+      "ون هولن رهبری سنا",
+      "ون هولن شومر",
+      "رهبری مجلس سنای آمریکا"
+    ],
+    "fr": [
+      "Van Hollen direction du Sénat",
+      "Van Hollen Schumer",
+      "chef de file démocrate Sénat"
+    ],
+    "he": [
+      "ון הולן מנהיגות הסנאט",
+      "ון הולן שומר",
+      "מנהיג הסנאט"
+    ],
+    "ru": [
+      "Ван Холлен лидерство в Сенате",
+      "Ван Холлен Шумер",
+      "лидер демократов в Сенате"
+    ],
+    "tr": [
+      "Van Hollen Senato liderliği",
+      "Van Hollen Schumer",
+      "Senato lideri"
+    ]
+  },
+  "spacex-starship-catch": {
+    "ar": [
+      "سبيس إكس ستارشيب التقاط",
+      "ستارشيب الرحلة 15"
+    ],
+    "de": [
+      "SpaceX Starship Fang",
+      "Starship Flug 15"
+    ],
+    "fa": [
+      "اسپیس‌ایکس استارشیپ گرفتن",
+      "استارشیپ پرواز ۱۵"
+    ],
+    "fr": [
+      "SpaceX Starship capture",
+      "Starship vol 15"
+    ],
+    "he": [
+      "ספייסX סטארשיפ תפיסה",
+      "סטארשיפ טיסה 15"
+    ],
+    "ru": [
+      "SpaceX Starship поимка",
+      "Starship полет 15"
+    ],
+    "tr": [
+      "SpaceX Starship yakalama",
+      "Starship Uçuş 15"
+    ]
   }
 }

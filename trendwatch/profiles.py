@@ -1,5 +1,5 @@
 """Running per-outlet and per-account profiles, accumulated across days (stored as JSON)."""
-from .util import short_hash
+from .util import log, short_hash
 
 FILES = {"article": "profiles/outlets.json", "post": "profiles/accounts.json"}
 
@@ -50,6 +50,13 @@ def summarize(counts, framings, min_items, lean_threshold):
 def rows(store, slug, framings, cfg, limit=15):
     a = cfg["analysis"]
     refs = {k.lower(): v for k, v in (store.read("known_ratings.json", {}) or {}).items()}
+    background = None
+    if cfg.get("kb", {}).get("enabled", True):
+        try:
+            from .kb.background import Background
+            background = Background(store.root)
+        except Exception as e:      # a damaged knowledge base must never stop a report
+            log.warning("knowledge base unavailable for the reference column: %s", e)
     out = {}
     for kind, min_items in (("article", a["min_items_outlet"]), ("post", a["min_items_account"])):
         lst = []
@@ -58,7 +65,10 @@ def rows(store, slug, framings, cfg, limit=15):
             if not t:
                 continue
             s = summarize(t["counts"], framings["framings"], min_items, a["lean_threshold"])
-            s.update({"name": name, "reference": refs.get(name.lower(), ""),
+            reference = refs.get(name.lower(), "")
+            if not reference and background:
+                reference = background.reference(name, kind)
+            s.update({"name": name, "reference": reference,
                       "evidence": t["evidence"][:2]})
             lst.append(s)
         out["outlets" if kind == "article" else "accounts"] = sorted(lst, key=lambda r: -r["n"])[:limit]

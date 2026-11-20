@@ -36,6 +36,13 @@
       "kappa": 0.6,
       "n_items": 160,
       "n_framed": 43
+    },
+    {
+      "date": "2026-11-14",
+      "verdict": "weak",
+      "kappa": 0.54,
+      "n_items": 160,
+      "n_framed": 14
     }
   ]
 }

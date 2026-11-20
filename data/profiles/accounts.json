@@ -133,13 +133,19 @@
       },
       "iran-war": {
         "counts": {
-          "f1": 2,
-          "f2": 1
+          "f1": 3,
+          "f2": 1,
+          "none": 1,
+          "f3": 2
         },
         "seen": [
           "ef3213cc3097",
           "90a498accd18",
-          "a895f3d16d01"
+          "a895f3d16d01",
+          "f6cd3fc5e1c5",
+          "f3e4f78753cf",
+          "d4e67eb43ab3",
+          "b802acdcd4e3"
         ],
         "evidence": [
           {
@@ -156,8 +162,49 @@
             "framing": "f2",
             "quote": "Qatar Emir urges Trump to refrain from further airstrikes",
             "url": "https://journa.host/@ScottLucas/117568973552005337"
+          },
+          {
+            "framing": "f1",
+            "quote": "We destroyed another US MQ-1 Predator drone over Qeshm Island",
+            "url": "https://journa.host/@ScottLucas/117614800571369090"
+          },
+          {
+            "framing": "f3",
+            "quote": "Trump’s snub of Vance and its significance both for the IranWar",
+            "url": "https://journa.host/@ScottLucas/117615330453273929"
           }
         ]
+      },
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "f4": 1,
+          "f5": 1
+        },
+        "seen": [
+          "e94e3ef7c717",
+          "b6f69aeb9257"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "but here is why this story is far from over",
+            "url": "https://journa.host/@ScottLucas/117596797390555494"
+          },
+          {
+            "framing": "f5",
+            "quote": "The Case For Pete Hegseth's Impeachment",
+            "url": "https://journa.host/@ScottLucas/117596788591144090"
+          }
+        ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "9b0f1d08ef81"
+        ],
+        "evidence": []
       }
     }
   },
@@ -199,6 +246,21 @@
             "framing": "f1",
             "quote": "Trump offers UFC chief Dana White the White House spokesperson role",
             "url": "https://mastodon.social/@elfolio/117577172876692195"
+          }
+        ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "91048298bd39"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Zelenski revela el planteamiento de Estados Unidos",
+            "url": "https://mastodon.social/@elfolio/117614503793023076"
           }
         ]
       }
@@ -338,6 +400,21 @@
             "url": "https://mastodon.social/@GeoWire/117570241335155655"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "21e873a3ce5e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Iran's IRGC claims it destroyed a U.S. early-warning radar in Bahrain",
+            "url": "https://mastodon.social/@GeoWire/117617345388405170"
+          }
+        ]
       }
     }
   },
@@ -372,6 +449,21 @@
             "url": "https://mastodon.social/@desnips/117576898517969183"
           }
         ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "05608ed49449"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Zelensky wil referendum",
+            "url": "https://mastodon.social/@desnips/117614535595800310"
+          }
+        ]
       }
     }
   },
@@ -389,6 +481,51 @@
             "framing": "f5",
             "quote": "A brutal but accurate obit for the soon-to-die # Cybertruck",
             "url": "https://mas.to/@BruceMirken/117570809213441485"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "04258e6aefa1"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "debunks the claim that Democratic moderates outperformed progressives",
+            "url": "https://mas.to/@BruceMirken/117611186413230571"
+          }
+        ]
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "2295959141d6"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Schumer intervened to support Haley Stevens over AbdulElSayed",
+            "url": "https://mas.to/@BruceMirken/117610971613874789"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "c012b0606c58"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Van Hollen and Khanna are pushing their party to act boldly",
+            "url": "https://mas.to/@BruceMirken/117605897252242769"
           }
         ]
       }
@@ -607,9 +744,9 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f4": 2,
+          "f4": 3,
           "f2": 1,
-          "none": 9,
+          "none": 10,
           "f5": 1
         },
         "seen": [
@@ -625,7 +762,9 @@
           "7d593207d78d",
           "5995aa8df675",
           "e25b605fd5fd",
-          "1a5db873c996"
+          "1a5db873c996",
+          "53eb6150af9c",
+          "dd6f8f46100a"
         ],
         "evidence": [
           {
@@ -647,6 +786,11 @@
             "framing": "f5",
             "quote": "groundswell of anger over the AI boom has cut across political divides",
             "url": "https://mastodon.social/@thejapantimes/117564596816762450"
+          },
+          {
+            "framing": "f4",
+            "quote": "Musk spent nearly half a billion dollars on the U.S. midterm elections, but the record expenditure yielded little",
+            "url": "https://mastodon.social/@thejapantimes/117569933127341367"
           }
         ]
       },
@@ -681,6 +825,15 @@
             "url": "https://mastodon.social/@thejapantimes/117578150841622118"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "003912a43b8e"
+        ],
+        "evidence": []
       }
     }
   },
@@ -705,6 +858,21 @@
             "framing": "f5",
             "quote": "Huge Upset WIN for DSA in Florida",
             "url": "https://masto.ai/@MusiqueNow/117124378228479739"
+          }
+        ]
+      },
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "2e2199c98429"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Just wait until January",
+            "url": "https://masto.ai/@MusiqueNow/117598646967025343"
           }
         ]
       }
@@ -801,10 +969,11 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "none": 1
+          "none": 2
         },
         "seen": [
-          "3c985bb32141"
+          "3c985bb32141",
+          "af79d7b5e9bc"
         ],
         "evidence": []
       }
@@ -851,6 +1020,15 @@
             "url": "https://rssfeed.media/@guardianfeeds/117573002384137788"
           }
         ]
+      },
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "fcb97bfb5647"
+        ],
+        "evidence": []
       }
     }
   },
@@ -877,6 +1055,15 @@
             "url": "https://halo.nu/@theguardian_us_news/117571602463007843"
           }
         ]
+      },
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3dfbec237daf"
+        ],
+        "evidence": []
       }
     }
   },
@@ -949,11 +1136,12 @@
       "iran-war": {
         "counts": {
           "f3": 1,
-          "f5": 1
+          "f5": 2
         },
         "seen": [
           "af1e4b98a3d5",
-          "fc0968f56e2e"
+          "fc0968f56e2e",
+          "aac007be2f6d"
         ],
         "evidence": [
           {
@@ -965,6 +1153,26 @@
             "framing": "f5",
             "quote": "Concerning: further underscores recent actions from the US",
             "url": "https://toad.social/@KimPerales/117575646763188216"
+          },
+          {
+            "framing": "f5",
+            "quote": "The current 'status quo' is actively pushing Iran towards escalation",
+            "url": "https://toad.social/@KimPerales/117615694823312381"
+          }
+        ]
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ecdd01dcf795"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "It's now on us to meet this moment",
+            "url": "https://toad.social/@KimPerales/117610067318951503"
           }
         ]
       }
@@ -980,6 +1188,43 @@
           "2092d1bc3fdb"
         ],
         "evidence": []
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1,
+          "f3": 1
+        },
+        "seen": [
+          "c5d016f60579",
+          "9f473ae8075c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "The People want change. Do your jobs, or get primary-ed next go-around",
+            "url": "https://masto.ai/@iuculano/117598586555111362"
+          },
+          {
+            "framing": "f3",
+            "quote": "Donald (the lame) Duck! I admit I laughed a little too much",
+            "url": "https://masto.ai/@iuculano/117616252941805275"
+          }
+        ]
+      },
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0580afef09ac"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Armistice Day marks the end of WorldWarOne hostilities",
+            "url": "https://masto.ai/@iuculano/117598476920025908"
+          }
+        ]
       }
     }
   },
@@ -1353,14 +1598,16 @@
       "2026-us-midterm-elections": {
         "counts": {
           "none": 1,
-          "f2": 4
+          "f2": 4,
+          "f3": 1
         },
         "seen": [
           "7dd10e165556",
           "1fe5e07ea591",
           "9c830700cb15",
           "b9ec4a3f1eef",
-          "d8a2387350e3"
+          "d8a2387350e3",
+          "9629feadb97d"
         ],
         "evidence": [
           {
@@ -1382,19 +1629,28 @@
             "framing": "f2",
             "quote": "The Democratic leadership will face strong expectations for action against",
             "url": "https://mastodon.social/@DrALJONES/117575600305138346"
+          },
+          {
+            "framing": "f3",
+            "quote": "Democrats running cover for Iran war",
+            "url": "https://mastodon.social/@DrALJONES/117612154169279146"
           }
         ]
       },
       "iran-war": {
         "counts": {
           "none": 1,
-          "f3": 3
+          "f3": 7
         },
         "seen": [
           "6254abeeaa7e",
           "6f3549308e85",
           "3c8a6d2731b9",
-          "c0ae4114837a"
+          "c0ae4114837a",
+          "98074ca34fce",
+          "0e224745dc09",
+          "9629feadb97d",
+          "79708cafbbf9"
         ],
         "evidence": [
           {
@@ -1411,6 +1667,48 @@
             "framing": "f3",
             "quote": "Congress can cut off funding for the war on Iran",
             "url": "https://mastodon.social/@DrALJONES/117570171219627888"
+          },
+          {
+            "framing": "f3",
+            "quote": "Jeffries & Schumer want the Iran war to continue",
+            "url": "https://mastodon.social/@DrALJONES/117613853181797848"
+          },
+          {
+            "framing": "f3",
+            "quote": "Jeffries & Schumer want the Iran war to continue bcz it will hurt Trump politically",
+            "url": "https://mastodon.social/@DrALJONES/117609661534657801"
+          }
+        ]
+      },
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "none": 2
+        },
+        "seen": [
+          "55878941cf51",
+          "80ec1b203351"
+        ],
+        "evidence": []
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f4": 1,
+          "f1": 1
+        },
+        "seen": [
+          "984ba2318fef",
+          "9f27718a2b5d"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "10 Reasons Chuck Schumer Should Not Be Senate Majority Leader",
+            "url": "https://mastodon.social/@DrALJONES/117615424441182006"
+          },
+          {
+            "framing": "f1",
+            "quote": "Step up or step aside",
+            "url": "https://mastodon.social/@DrALJONES/117609975443777207"
           }
         ]
       }
@@ -1471,18 +1769,117 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f4": 1
+          "f4": 1,
+          "f1": 1
         },
         "seen": [
-          "0150a7c4ef36"
+          "0150a7c4ef36",
+          "e4c5862f6025"
         ],
         "evidence": [
           {
             "framing": "f4",
             "quote": "Wall Street closed Thursday, November 5th with its worst session since April 2025",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117572135843755150"
+          },
+          {
+            "framing": "f1",
+            "quote": "Jonathan Kreiss-Tomkins è stato eletto governatore dell'Alaska",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117615822769006564"
           }
         ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "none": 2,
+          "f1": 6,
+          "f4": 1,
+          "f2": 1
+        },
+        "seen": [
+          "09d899abbbf8",
+          "946549b018b2",
+          "5af4d7f535af",
+          "e67de3113944",
+          "d81d67dcea3b",
+          "1303cb973a9d",
+          "7581c9bbf366",
+          "caf600ef044c",
+          "b0e3561be13b",
+          "c0fedc1ce939"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Zelensky: From the US, the proposal to cede the Donbas",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117617433989190274"
+          },
+          {
+            "framing": "f1",
+            "quote": "Zelensky unveils Trump's proposal: NATO in exchange for Donbass",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117617394453081488"
+          },
+          {
+            "framing": "f1",
+            "quote": "Zelensky reports the hypothesis proposed by the Americans, but reiterates that Kyiv",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117616490320231448"
+          },
+          {
+            "framing": "f1",
+            "quote": "Gli Usa ci propongono la Nato in cambio del Donbass",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117616295362284985"
+          },
+          {
+            "framing": "f4",
+            "quote": "Perché il tavolo non si sblocca, quattro scenari",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117615980319726190"
+          }
+        ]
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7de93d9972cf"
+        ],
+        "evidence": []
+      },
+      "iran-war": {
+        "counts": {
+          "none": 5,
+          "f1": 2
+        },
+        "seen": [
+          "5cf5b766cf80",
+          "4effc372a699",
+          "43cf864550e2",
+          "c9a74883d7cc",
+          "3a9ab1cec03f",
+          "95b373879908",
+          "7d9e2da83b61"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "la struttura ospiterebbe missili balistici a propellente solido e liquido",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117596872051132573"
+          },
+          {
+            "framing": "f1",
+            "quote": "L’IRGC sostiene di aver colpito tre petroliere",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117587000673308965"
+          }
+        ]
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "ad8e494b715f"
+        ],
+        "evidence": []
       }
     }
   },
@@ -1502,6 +1899,21 @@
             "framing": "f3",
             "quote": "I am the only statewide elected Republican who remains in Texas.",
             "url": "https://newsie.social/@ProgressivePower/117571787769610029"
+          }
+        ]
+      },
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "975da73b06ec"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Let's restore the Constitution that we serve.",
+            "url": "https://newsie.social/@ProgressivePower/117599368255494172"
           }
         ]
       }
@@ -1568,16 +1980,42 @@
       },
       "iran-war": {
         "counts": {
-          "f2": 1
+          "f2": 1,
+          "none": 1
         },
         "seen": [
-          "a7d23324a832"
+          "a7d23324a832",
+          "54b4698e5eb0"
         ],
         "evidence": [
           {
             "framing": "f2",
             "quote": "Multilateral Cooperation Essential for Sustainable Strait of Hormuz Governance",
             "url": "https://mastodon.social/@killbait/117571185024201745"
+          }
+        ]
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3735c5d407c1"
+        ],
+        "evidence": []
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ba71e14bf17e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "SpaceX Achieves First Successful Catch of Starship Upper Stage in Historic Test Flight",
+            "url": "https://mastodon.social/@killbait/117617595591252662"
           }
         ]
       }
@@ -1627,6 +2065,69 @@
           "c66565c9f2a4"
         ],
         "evidence": []
+      },
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "1c26182a2b15"
+        ],
+        "evidence": []
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "2127ebfbbe78"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+            "url": "https://mastodon.social/@top_news/117614921350421074"
+          }
+        ]
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1,
+          "f2": 1,
+          "none": 1
+        },
+        "seen": [
+          "04ef7d1f2151",
+          "24855bb865cb",
+          "a6c3ea187bcd"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "The Establishment's race to keep Schumer and Jeffries as leaders must be stopped",
+            "url": "https://mastodon.social/@top_news/117585746249544009"
+          },
+          {
+            "framing": "f2",
+            "quote": "Senate Democrats are torn on whom to elect as their leader",
+            "url": "https://mastodon.social/@top_news/117615105132925886"
+          }
+        ]
+      },
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "031f14b48f66"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "After President Trump's midterm election losses",
+            "url": "https://mastodon.social/@top_news/117618151370140080"
+          }
+        ]
       }
     }
   },
@@ -1634,16 +2135,22 @@
     "topics": {
       "2026-us-midterm-elections": {
         "counts": {
-          "f3": 1
+          "f3": 2
         },
         "seen": [
-          "7467e0dae267"
+          "7467e0dae267",
+          "c1e54cb5c31a"
         ],
         "evidence": [
           {
             "framing": "f3",
             "quote": "Republican blame-game begins as Democrats sweep to Victory",
             "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:bgse2k6gs72yadkmdvftbk6y/post/3mzoq5kvtzk27"
+          },
+          {
+            "framing": "f3",
+            "quote": "The reckoning for Donald Trump s Cabinet has begun following the Midterms",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:bgse2k6gs72yadkmdvftbk6y/post/3n22lwyh74k2z"
           }
         ]
       }
@@ -1764,6 +2271,21 @@
             "framing": "f2",
             "quote": "Shows 47 Learned Nothing From the Midterms",
             "url": "https://thedemocracyadvocate.com/white-house/stephen-miller-chief-of-staff/"
+          }
+        ]
+      },
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "f763cbb7b0ae"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "vote now waits until after Election Day",
+            "url": "https://thedemocracyadvocate.com/elections/hegseth-impeachment-vote/"
           }
         ]
       }
@@ -2054,6 +2576,15 @@
             "url": "https://mastodon.online/@sjar/117576217144900791"
           }
         ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "fc94b23fc744"
+        ],
+        "evidence": []
       }
     }
   },
@@ -2071,6 +2602,21 @@
             "framing": "f3",
             "quote": "a day of reckoning appears to have arrived for Trump and the far-right",
             "url": "https://kolektiva.social/@LevZadov/117575950836594542"
+          }
+        ]
+      },
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "44c678de92f1"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Nvidia board urged to consider potential return of Jensen Huang",
+            "url": "https://kolektiva.social/@LevZadov/117617520817243686"
           }
         ]
       }
@@ -2132,12 +2678,13 @@
       "2026-us-midterm-elections": {
         "counts": {
           "f1": 1,
-          "none": 2
+          "none": 3
         },
         "seen": [
           "36d38c208f17",
           "461c3da139ab",
-          "296273029bb6"
+          "296273029bb6",
+          "8e1aff7681af"
         ],
         "evidence": [
           {
@@ -2462,6 +3009,21 @@
             "url": "https://www.urbanmind.net/display/f7dd981d-844a2ccb-857a4276ed41a361"
           }
         ]
+      },
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9c36f13d8314"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Trump bluntly tells JD Vance to shift focus from Iran",
+            "url": "https://www.urbanmind.net/display/f7dd981d-ab447a2e-7d86961f8004169f"
+          }
+        ]
       }
     }
   },
@@ -2506,11 +3068,12 @@
       },
       "college-football-weekend": {
         "counts": {
-          "f2": 2
+          "f2": 3
         },
         "seen": [
           "0ed0b7f7b114",
-          "cc1b3388888f"
+          "cc1b3388888f",
+          "9aa829569a06"
         ],
         "evidence": [
           {
@@ -2522,6 +3085,11 @@
             "framing": "f2",
             "quote": "How to Watch Ohio State vs. Notre Dame Online Without Cable",
             "url": "https://mastodon.social/@variety_feed/113862476198520155"
+          },
+          {
+            "framing": "f2",
+            "quote": "How to Watch the Troy Trojans vs. South Alabama Jaguars Game",
+            "url": "https://mastodon.social/@variety_feed/117616823751393268"
           }
         ]
       }
@@ -2979,10 +3547,12 @@
     "topics": {
       "college-football-weekend": {
         "counts": {
-          "none": 1
+          "none": 3
         },
         "seen": [
-          "573fdf641804"
+          "573fdf641804",
+          "985cb80a1f6e",
+          "1f4b716ed1a1"
         ],
         "evidence": []
       }
@@ -3283,6 +3853,21 @@
           "3ef4ab9f75c4"
         ],
         "evidence": []
+      },
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ed44c3fd6e35"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Originally, Armistice Day, November 11 was celebrated throughout the U.S.",
+            "url": "https://kolektiva.social/@MikeDunnAuthor/117598666602828081"
+          }
+        ]
       }
     }
   },
@@ -3424,6 +4009,21 @@
             "url": "https://bots.fedi.cr/@crhoy/117578231019591300"
           }
         ]
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "37b8490cf106"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "SpaceX achieves historic capture of spacecraft",
+            "url": "https://bots.fedi.cr/@crhoy/117617507837344910"
+          }
+        ]
       }
     }
   },
@@ -3460,6 +4060,21 @@
             "framing": "f1",
             "quote": "US President Donald Trump offers the press secretary job to UFC boss",
             "url": "https://social.ahlroos.me/@svenska_yle/117577151722646892"
+          }
+        ]
+      },
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "a5420f03cc63"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "USA föreslog mark mot ukrainskt Natomedlemskap",
+            "url": "https://social.ahlroos.me/@svenska_yle/117614546397807726"
           }
         ]
       }
@@ -3501,11 +4116,12 @@
     "topics": {
       "iran-war": {
         "counts": {
-          "none": 2
+          "none": 3
         },
         "seen": [
           "ac55d54a8598",
-          "629eb739d4a0"
+          "629eb739d4a0",
+          "cd4db76b6bb4"
         ],
         "evidence": []
       }
@@ -3515,16 +4131,35 @@
     "topics": {
       "iran-war": {
         "counts": {
-          "f1": 1
+          "f1": 3,
+          "f5": 1
         },
         "seen": [
-          "f921d19ae90e"
+          "f921d19ae90e",
+          "9bdc74235288",
+          "fcf8858f6396",
+          "1a974d1cb177"
         ],
         "evidence": [
           {
             "framing": "f1",
             "quote": "IRGC reported that they attacked 2 oil tankers tonight",
             "url": "https://todon.eu/@faab64/117577421949370330"
+          },
+          {
+            "framing": "f5",
+            "quote": "Manufacturing consent: Mossad has reportedly provided the CIA",
+            "url": "https://todon.eu/@faab64/117616877065562652"
+          },
+          {
+            "framing": "f1",
+            "quote": "72 military aircraft were observed in the region",
+            "url": "https://todon.eu/@faab64/117617344734060553"
+          },
+          {
+            "framing": "f1",
+            "quote": "Explosions, likely US airstrikes, heard in Kong, southern Iran",
+            "url": "https://todon.eu/@faab64/117616811796579200"
           }
         ]
       }
@@ -3534,16 +4169,52 @@
     "topics": {
       "iran-war": {
         "counts": {
-          "f3": 1
+          "f3": 3
         },
         "seen": [
-          "87a6bb1e5b05"
+          "87a6bb1e5b05",
+          "c6501cecea86",
+          "fb99a4759567"
         ],
         "evidence": [
           {
             "framing": "f3",
             "quote": "arguments between pro-war and anti-war Republicans",
             "url": "https://mastodon.social/@RonSupportsYou/117577695856416547"
+          },
+          {
+            "framing": "f3",
+            "quote": "One of the first priorities is to end the IranWar by cutting off funds",
+            "url": "https://mastodon.social/@RonSupportsYou/117615174957235285"
+          },
+          {
+            "framing": "f3",
+            "quote": "The election results were not what we hoped for; Republicans could have investigated Trump's corruption",
+            "url": "https://mastodon.social/@RonSupportsYou/117606109146491093"
+          }
+        ]
+      },
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c8b44f9a9ab7"
+        ],
+        "evidence": []
+      },
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "6298d1c8d2a9"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "That will require bold leadership",
+            "url": "https://mastodon.social/@RonSupportsYou/117609303615131163"
           }
         ]
       }
@@ -3610,12 +4281,20 @@
     "topics": {
       "iran-war": {
         "counts": {
-          "none": 1
+          "none": 1,
+          "f1": 1
         },
         "seen": [
-          "7868abce7d14"
+          "7868abce7d14",
+          "22102f3b449d"
         ],
-        "evidence": []
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "U.S. forces disable a blockade-runner",
+            "url": "https://mastodon.social/@agilefactor/117610252494110196"
+          }
+        ]
       }
     }
   },
@@ -3623,16 +4302,29 @@
     "topics": {
       "iran-war": {
         "counts": {
-          "f3": 1
+          "f3": 2,
+          "f5": 1
         },
         "seen": [
-          "0e150b91401c"
+          "0e150b91401c",
+          "bb4445d23f65",
+          "29fa26b0006f"
         ],
         "evidence": [
           {
             "framing": "f3",
             "quote": "Vance blamed the Iran war for the GOP wipeout",
             "url": "https://mastodon.social/@realTuckFrumper/117570318009288306"
+          },
+          {
+            "framing": "f3",
+            "quote": "Trump sidelined JD Vance's Iran negotiations and told him to focus",
+            "url": "https://mastodon.social/@realTuckFrumper/117611215928248618"
+          },
+          {
+            "framing": "f5",
+            "quote": "Trump says the war is basically over",
+            "url": "https://mastodon.social/@realTuckFrumper/117606942191944323"
           }
         ]
       }
@@ -3805,6 +4497,2708 @@
         },
         "seen": [
           "53becfe47840"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:ProPublica@newsie.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "685b23094876"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Lana@beige.party": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "4ebb8b2a1eb6"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Boebert has gone down a second time",
+            "url": "https://beige.party/@Lana/117593255280389276"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:filippocoletta": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "bc3a7223372d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:LeNouvelEssai@todon.nl": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "425039123e86"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "If only the under-30s had voted: just 1 Republican state",
+            "url": "https://todon.nl/@LeNouvelEssai/117597580624984933"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:whatyoumissed@mastodon.vtip.me": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "64d476141391"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Democrats push forward on affordability and accountability measures",
+            "url": "https://mastodon.vtip.me/@whatyoumissed/117597461548845313"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Bongolian@mstdn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "f189a620d3cc"
+        ],
+        "evidence": []
+      },
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "a74d67800d56"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Hegseth Escapes Impeachment Vets Deserve Better",
+            "url": "https://mstdn.social/@Bongolian/117599176030360041"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:myrtlewyckoff": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "38a5f44cf232"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Suddenly they are talking Constitutional limits",
+            "url": "https://mastodon.social/@myrtlewyckoff/117598906802049022"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:lyndawoolard.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c7e7e53af11a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:sanjaysharma@mstdn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 3
+        },
+        "seen": [
+          "199314b50213",
+          "0aceeb6b29ec",
+          "1a4da4b47f4f"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Chuck Hubbard (D) leads Rep. Virginia Foxx (R) by 335",
+            "url": "https://mstdn.social/@sanjaysharma/117598518178378146"
+          },
+          {
+            "framing": "f1",
+            "quote": "Mary Peltola's lead over Dan Sullivan grows to 4,250 with 84% counted",
+            "url": "https://mstdn.social/@sanjaysharma/117598433602234533"
+          },
+          {
+            "framing": "f1",
+            "quote": "Scott Colom's lead tops 3,000, now 3,041. Checked at 10:02 AM ET",
+            "url": "https://mstdn.social/@sanjaysharma/117598414695297599"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:cypherreport": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "8c004ee11b78"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "how little they learned from their drumming",
+            "url": "https://mastodon.social/@cypherreport/117595946589583421"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:wernerkeil": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "707de14e4d22"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "After lost Midterms: Republicans GymJordan JimJordan becomes minority leader",
+            "url": "https://mastodon.social/@wernerkeil/117594788769303758"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ernestbruce": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "9986f623c810"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "WE DO NOT WANT JEFFRIES AS LEADER OF THE PARTY",
+            "url": "https://mastodon.social/@ernestbruce/117596619884193716"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:faraiwe@mstdn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "468cece994e8"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "warm up our schadenfreude glands, because the next few months",
+            "url": "https://mstdn.social/@faraiwe/117594482578555899"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:peoplepowerunited.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "f5": 3,
+          "none": 1
+        },
+        "seen": [
+          "b522fffb1b71",
+          "7e1551ae4779",
+          "d3889d965b44",
+          "9ef4ba747367"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Iran conflict continued despite congressional action seeking removal",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:njbqbuz5qhu475km33kjfmpv/post/3mwhjdur6s726"
+          },
+          {
+            "framing": "f5",
+            "quote": "faces allegations that Iran hostilities continued beyond War Powers Resolution deadlines",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:njbqbuz5qhu475km33kjfmpv/post/3mw5jgrrbyq2f"
+          },
+          {
+            "framing": "f5",
+            "quote": "faces impeachment allegations involving unauthorized hostilities in Iran",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:njbqbuz5qhu475km33kjfmpv/post/3mvw4mncor62t"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:peoplepowerunited": {
+    "topics": {
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "f5": 3,
+          "none": 1
+        },
+        "seen": [
+          "d69b7dffcd73",
+          "24739688a08c",
+          "ddef4402786a",
+          "b2beb34c35d5"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "faces allegations that Iran hostilities continued beyond War Powers Resolution deadlines",
+            "url": "https://mastodon.social/@peoplepowerunited/117317602078509562"
+          },
+          {
+            "framing": "f5",
+            "quote": "faces allegations that U.S. hostilities in Iran continued without congressional authorization",
+            "url": "https://mastodon.social/@peoplepowerunited/117311326350232945"
+          },
+          {
+            "framing": "f5",
+            "quote": "faces impeachment allegations involving unauthorized hostilities in Iran",
+            "url": "https://mastodon.social/@peoplepowerunited/117300937576809953"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:ck2": {
+    "topics": {
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "71ff99c8ebc4"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:defrost": {
+    "topics": {
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "772c4014522c"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:cosmicgadget": {
+    "topics": {
+      "hegseth-impeachment-bid-fails": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0bcd6e7b6171"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:blogdiva": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "69bc3cf430f4"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "share with you my baby brother's last dying wish",
+            "url": "https://mastodon.social/@blogdiva/117599011956638700"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:publicdomainrev": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "68723a4bfa5a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:minouette@spore.social": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "e7fbc410744c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Lest we forget",
+            "url": "https://spore.social/@minouette/117598107023831289"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Karen5Lund": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "672a67c2b359"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "In Flanders fields the poppies blow Between the crosses, row on row",
+            "url": "https://mastodon.social/@Karen5Lund/117598642539304273"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:bobthetraveler@mastodon.world": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1,
+          "none": 3
+        },
+        "seen": [
+          "605fa18fbc76",
+          "636dd7d13c06",
+          "b615e314cfb3",
+          "eb7c4a99f195"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Suckers and Losers Day",
+            "url": "https://mastodon.world/@bobthetraveler/117599124909867307"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:scottishlass@mastodon.scot": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "d41f444f8cf2"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Distant relative",
+            "url": "https://mastodon.scot/@scottishlass/117597947677865184"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:mjhall": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "27244010e172"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Thank you.",
+            "url": "https://mastodon.social/@mjhall/117597758792130618"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Free_Press@mstdn.social": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "eec6ddb8e798"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Think of those who served. My father served. My uncle served.",
+            "url": "https://mstdn.social/@Free_Press/117599191942872354"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:MissConstrue@mefi.social": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "0f5c7e253418"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "often confused with Memorial Day",
+            "url": "https://mefi.social/@MissConstrue/117599407603053084"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:LauraJG@mastodon.art": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "0a71f32c31f9"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:NaraMoore_Author_Poet@indieauthors.social": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "8171772e414d"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "I speak as a veteran. # PeteHegseth should be removed",
+            "url": "https://indieauthors.social/@NaraMoore_Author_Poet/117599378124605755"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:TheEddieShow@beige.party": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "e6b71afa0908"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Remembering Dad on # VeteransDay",
+            "url": "https://beige.party/@TheEddieShow/117599132839313609"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:flyingpenguin@infosec.exchange": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "51977062e42e"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "laid the colonial foundations of the modern Middle East",
+            "url": "https://infosec.exchange/@flyingpenguin/117597571505625011"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Armadillosoft": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1,
+          "f5": 3
+        },
+        "seen": [
+          "6e3900df4a81",
+          "4a0fe3791fb7",
+          "c8b0b689bcc7",
+          "aa1638c624d6"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "remembrance of the real cost of war an annual event",
+            "url": "https://mastodon.social/@Armadillosoft/117599305904629231"
+          },
+          {
+            "framing": "f5",
+            "quote": "protect them from needless wars. The cost is too much",
+            "url": "https://mastodon.social/@Armadillosoft/117599298139543456"
+          },
+          {
+            "framing": "f5",
+            "quote": "a war of distraction that none of our leaders can even explain",
+            "url": "https://mastodon.social/@Armadillosoft/117599290716297723"
+          },
+          {
+            "framing": "f5",
+            "quote": "true costs of war and why it really, truly has to be held",
+            "url": "https://mastodon.social/@Armadillosoft/117599286205774533"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:PeggyStuart": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "2e0c62965f96"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "My father-in-law fought in the Pacific in the Navy.",
+            "url": "https://mastodon.social/@PeggyStuart/117599143826138799"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:SkylarkDuquesne@mas.to": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "fc3034cc96f0"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "wishing for peace and a cessation of conflict around the world",
+            "url": "https://mas.to/@SkylarkDuquesne/117598692385786041"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:SonsOfLibertyOfficial": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "cfe8710f04bd"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Happy Veterans Day!",
+            "url": "https://mastodon.social/@SonsOfLibertyOfficial/117599431720091382"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:tamarasellman@social.seattle.wa.us": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "b82b727911df"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Thank you to all our active duty and retired veteran service members",
+            "url": "https://social.seattle.wa.us/@tamarasellman/117599389038901436"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ewisniowski@mastodon.sdf.org": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "8535accc5f47"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Thank you to all the Veterans who answered the call.",
+            "url": "https://mastodon.sdf.org/@ewisniowski/117599329545505850"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:BartlettAstro@scicomm.xyz": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "774057bc34ca"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "To honor those who served on behalf of this Republic in every conflict",
+            "url": "https://scicomm.xyz/@BartlettAstro/117599315618940853"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Pirates@sportsbots.xyz": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "f645f743ee1e"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "we're honoring and remembering Scott Welsh",
+            "url": "https://twitter.com/Pirates/status/2120587263448871412"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:tradeweave": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "3c1ec1f396a5"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Today, we honor those who served. To the veterans on job sites",
+            "url": "https://mastodon.social/@tradeweave/117599269905127873"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:FurryGardenCo": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "89d27e0815ad"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "thank you for your service and for protecting our freedom",
+            "url": "https://mastodon.social/@FurryGardenCo/117599203057005434"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Dodgers@sportsbots.xyz": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "9bed1a55f42e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "we honor the brave men and women who have served and sacrificed",
+            "url": "https://twitter.com/Dodgers/status/2120577811090227600"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Navarrotherapy": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "2d3c2933c868"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "thank you to the veterans in our community and across the country",
+            "url": "https://mastodon.social/@Navarrotherapy/117599145075003929"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:peggystuart.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "3ad9f47d21c0"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "I have friends and relatives buried at Rosecrans National Cemetery",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:7fo4kehjjc7fbnan4dkyqrty/post/3n22kedon422o"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:lifesjourney": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c72bbd2e19fc"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Broncos@sportsbots.xyz": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "2ba6b0b0a3f5"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Salute to our troops",
+            "url": "https://twitter.com/Broncos/status/2120576559744430157"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:AZCardinals@sportsbots.xyz": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "dd42833fc6ab"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Honoring all of those who have served our country",
+            "url": "https://twitter.com/AZCardinals/status/2120570826387034527"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kdraven@mysterioustimes.co.uk": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "6551bae95918"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "where did the two-minute silence come from",
+            "url": "https://mysterioustimes.co.uk/2026/11/11/the-silence-that-travelled-across-the-world-how-two-minutes-became-an-act-of-remembrance/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:LiamOMaraIV": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "acb1d67df6bb"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:RegGuy@mstdn.social": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "f6c6d8b6de77"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "My dad a newly minted US Marine in WWII",
+            "url": "https://mstdn.social/@RegGuy/117598236853243547"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:cutecalendar": {
+    "topics": {
+      "veterans-day-and-armistice-day": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "ed4aa5cf153b"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:ginaintheburg@mastodon.world": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "05aa19c950cb"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "This is an administration that cannot be trusted",
+            "url": "https://mastodon.world/@ginaintheburg/117617848921412263"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:spocko@mastodon.online": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "2ef20de65410"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Surely Transportation Secretary Duffy has told us the whole story",
+            "url": "https://mastodon.online/@spocko/117617975755576480"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:gkearney@c.im": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "e6e7a30acdfe"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "received campaign donations from companies now believed responsible for the air travel grounding",
+            "url": "https://c.im/@gkearney/117616410461415906"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ginaintheburg.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "1b7da2e96593"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "We don't really need any investigation into FAA ground stop",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:h6gbaoquhivhn5kiy26ni2qm/post/3n2cr2gsuq225"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Lilmikesf@c.im": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "4c268497f8e3"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "It Took 4.5 Hours for Drumpf Gov Officials To Issue A Peep About Nationwide Air Travel Ground Stop",
+            "url": "https://c.im/@Lilmikesf/117614832214919956"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:coololddude1963": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "8bc9a708015e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "D.L. Hughley Calls Out Trump Over FAA Funding",
+            "url": "https://mastodon.social/@coololddude1963/117617858665064797"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:moriel@chaosfem.tw": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "e52ae5c74efd"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "leave the political appointees in charge",
+            "url": "https://chaosfem.tw/@moriel/117617848393482811"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:thefrugalmaniac@drinkofjesus.com": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "3e0a4165a21d"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "FAA ground stop lifted; flights at DFW and Dallas Love Field airports delayed",
+            "url": "https://drinkofjesus.com/2026/11/14/faa-ground-stop-lifted-flights-at-dfw-and-dallas-love-field-airports-delayed/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:EditorDavePerry@mastodon.online": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cc5125aa4e0b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Airlines work to recover after nationwide ground stop cancels more than 2,000 flights",
+            "url": "https://mastodon.online/@EditorDavePerry/117615069756891504"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:TheAuroraSentinel@newsie.social": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "7db53b854834"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Airlines work to recover after nationwide ground stop cancels more than 2,000 flights",
+            "url": "https://newsie.social/@TheAuroraSentinel/117615069398988683"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:midnitte@fosstodon.org": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "5c8368250e87"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "blaming old tech for one of the biggest disruptions to travel since 9/11",
+            "url": "https://fosstodon.org/@midnitte/117614902360290156"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:mmooss": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "3335f9904df5"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "ground stop is in effect for all destinations until further notice",
+            "url": "https://news.ycombinator.com/item?id=50490043"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:cogman10": {
+    "topics": {
+      "us-nationwide-faa-ground-stop": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "f1b06e76b93c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Sec Duffy asking for $50B to give to L3H because they failed",
+            "url": "https://news.ycombinator.com/item?id=50503447"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:jbz@indieweb.social": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "60e83b432fb6"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "sold nearly $1B in stock weeks before the Jensen Huang scandal",
+            "url": "https://indieweb.social/@jbz/117617570819155805"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:maquinari_cat": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "1fb0c69b0600"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "La bombolla de la IA l'ha punxada la titola d'en Jensen Huang",
+            "url": "https://mastodon.social/@maquinari_cat/117615702219576535"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:BossRushNetwork": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "0767973c22a3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "centered on an international intelligence scandal with foreign intelligence operation allegations",
+            "url": "https://mastodon.social/@BossRushNetwork/117615984447366099"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:intelec1": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "19e84082a809"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Nvidia's biggest risk isn't Jensen Huang's exit, it's the financing behind the AI boom.",
+            "url": "https://mastodon.social/@intelec1/117617716256262967"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:geekrealmhub": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "e966caa7ccdf"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "urged the board not to rush its CEO search",
+            "url": "https://mastodon.social/@geekrealmhub/117617280218403656"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:in.mashable.com@web.brid.gy": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "3417df52ca18"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Jensen Huang's 'Nice Guy' Image Was Fake? Biographer Reveals What Nvidia Employees Knew",
+            "url": "https://in.mashable.com/tech/116139/jensen-huangs-nice-guy-image-was-fake-biographer-reveals-what-nvidia-employees-knew"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:newsevoce": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "4df2077e514c"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "expõe 5 riscos para a indústria de IA",
+            "url": "https://mastodon.social/@newsevoce/117615758537880169"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:aftonbladet@friendica.helvetet.eu": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "18c8ba7844e2"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "De sista orden efter tre affärer",
+            "url": "https://friendica.helvetet.eu/display/a7e70941-51fa020d-5510bd0174bd3536"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:schuler": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "62829b46d7a6"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "A petition to reinstate Jensen Huang as Nvidia CEO",
+            "url": "https://mastodon.social/@schuler/117617950931073566"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:HarHarVeryFunny": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "7ef4d08b9d00"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "knowingly supplying Megaspeed (and probably many more) Chinese proxy companies with GPUs",
+            "url": "https://news.ycombinator.com/item?id=50483098"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:janilowski": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "07616ba62c0a"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Alice Huang, a Chinese national, was previously working for a CCP propaganda",
+            "url": "https://news.ycombinator.com/item?id=50468194"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:Gareth321": {
+    "topics": {
+      "nvidia-investigates-jensen-huang": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "75bce01ca7cc"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "US intelligence agencies reportedly monitored Alice Huang for over a year",
+            "url": "https://news.ycombinator.com/item?id=50463565"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:ulrichkelber@bonn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "351a4558e3a9"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Mary Peltola's lead is growing",
+            "url": "https://bonn.social/@ulrichkelber/117613985125012737"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kevinrns@mstdn.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "b603289fcef0"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "96% of the votes have been counted",
+            "url": "https://mstdn.social/@kevinrns/117616638156427169"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:digyoursoul@universeodon.com": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3034a6ef7b8e"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:2legged@mastodon.ie": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "72614e5f8999"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "In January they will have the power to start dismantling",
+            "url": "https://mastodon.ie/@2legged/117616356101776413"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:deFractal@infosec.exchange": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "116f995a1f58"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Get 175,000 voters in MA7 specifically to all tell Rep. Pressley",
+            "url": "https://infosec.exchange/@deFractal/117611901408996671"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:surf@flipboard.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "f06db116e9cc"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "AssociatedPress has finally called the election in Colorado's Fourth District",
+            "url": "https://flipboard.social/@surf/117611134396954855"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:aburtch@shakedown.social": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "db7d1039d97c"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Establishment Democrats have learned NOTHING",
+            "url": "https://shakedown.social/@aburtch/117616155537546478"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:DisobeyTalks": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "1d2999447e8b"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "in areas with data centres the swing from Red to Blue",
+            "url": "https://mastodon.social/@DisobeyTalks/117614456988905577"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:thehardtimes.net@web.brid.gy": {
+    "topics": {
+      "2026-us-midterm-elections": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "304dc97ec375"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Chris Van Hollen for Majority Leader",
+            "url": "https://thehardtimes.net/breaking/crestfallen-chuck-schumer-admits-the-baileys-support-chris-van-hollen-for-majority-leader/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rvps2001": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "270574732a1e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US 'negotiators' have touted the idea of Ukraine withdrawing",
+            "url": "https://mastodon.social/@rvps2001/117614384122506551"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:RomaniaTeIubesc@mstdn.social": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "130462caa3ce"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Ce a cerut SUA Ucrainei în schimbul aderării la NATO",
+            "url": "https://mstdn.social/@RomaniaTeIubesc/117614501670841324"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:aidoo@masto.es": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8270b5bed216"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Washington no lo confirma",
+            "url": "https://masto.es/@aidoo/117616826077375896"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:aidoo": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "bcf0e2d1ded3"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Washington no lo confirma",
+            "url": "https://mastodon.social/@aidoo/117616826014847134"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:valigiablu@mastodon.uno": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "76babe449872"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:alexandre_m": {
+    "topics": {
+      "donbas-for-nato-proposal": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "0682cb4097b6"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "Putin still won't settle without keeping the occupied regions",
+            "url": "https://news.ycombinator.com/item?id=50494377"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:CindyWeinstein@zirk.us": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "cb83f3df444b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Schumer, move on. Let someone else have a chance.",
+            "url": "https://zirk.us/@CindyWeinstein/117592795975749992"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:liam@gruezi.net": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "fc87f1c58b9d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Solomon_G": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "c600a6431d9a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:JoBlakely": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "8d9661da4137"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:jgobble": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "667e3973df7b"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "I'll register as Independent if he stops Schumer",
+            "url": "https://mastodon.social/@jgobble/117610369246702387"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:NotRappaport@mindly.social": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ec22a26301ba"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Merkley, senior Senate progressive, backs VanHollen over Schumer",
+            "url": "https://mindly.social/@NotRappaport/117613505099396445"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:inkshark@mastodon.art": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "8b27b410c2a4"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "giving Schumer the boot. He has made it clear this is just a job to him.",
+            "url": "https://mastodon.art/@inkshark/117609582157312621"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:whasdah": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "bbb63452fe43"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:verdverm": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "ab131151a517"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:mdp2021": {
+    "topics": {
+      "van-hollen-senate-leader-bid": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "1fd0e0e81a01"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:HamonWry@mastodon.world": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "7b28fb482e8e"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "his most loyal supporters will cling to him until the very end",
+            "url": "https://mastodon.world/@HamonWry/117618255630974759"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:appassionato": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "384ed9b5ea55"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Lazarou": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "b63fa6b2cf26"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "Years of this....because Trump won't fix it and the Dems probably can't",
+            "url": "https://mastodon.social/@Lazarou/117609588072262812"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:MJmusicinears@mastodon.world": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "972a4cfa011d"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "US Troops ENTER Iran Pentagon's 24-Hour Update",
+            "url": "https://mastodon.world/@MJmusicinears/117618154555134488"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:kali@discuss.systems": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "95407809ac09"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "aftermath of the latest bombing",
+            "url": "https://discuss.systems/@kali/117599155176133798"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:telesurtv.net@web.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "2d7a18023682"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Irán derriba decimoséptimo dron estadounidense MQ-1 sobre isla de Qeshm",
+            "url": "https://www.telesurtv.net/iran-derriba-17mo-dron-mq1-eeuu-qeshm/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:biobiochile@mastodon.cl": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1,
+          "f1": 1
+        },
+        "seen": [
+          "46b3cebab878",
+          "5bc3ec608549"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Iran reports two more tankers set on fire in Hormuz after mine detonations",
+            "url": "https://mastodon.cl/@biobiochile/117617397151634602"
+          }
+        ]
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "840ae29c045b"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:nachogazpachof@masto.es": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "f2bee8d345ea"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:nemo@manganiello.tech": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "fdf627540cbe"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "IRGC says three tankers hit mines and caught fire",
+            "url": "https://manganiello.tech/@nemo/117597044024816474"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:GrumpyOldFart@expressional.social": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "5f54c4b14cbe"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Iran's two-day proposal to reopen the Strait of Hormuz remained on the table",
+            "url": "https://expressional.social/@GrumpyOldFart/117585177407454765"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:gkmizuno@mas.to": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "e378246970f6"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Walk Away (quietly)",
+            "url": "https://mas.to/@gkmizuno/117605233797673106"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:NieuwsJunkies": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "50e9d39e0335"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Iran reports fire on two ships in the Strait of Hormuz",
+            "url": "https://mastodon.social/@NieuwsJunkies/117617679271026672"
+          }
+        ]
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "d38dd622293a"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Spectacular footage: spacecraft caught by launch tower",
+            "url": "https://mastodon.social/@NieuwsJunkies/117617276215621126"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:zubiqo": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "70c039fb5cbe"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "two tankers hit mines and burst into flames on a prohibited Hormuz route",
+            "url": "https://mastodon.social/@zubiqo/117617599390965308"
+          }
+        ]
+      },
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "f82469ca4614"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:interaksyon.philstar.com@web.brid.gy": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "8f620bcdc64b"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:Nymnympseudonymm@mstdn.science": {
+    "topics": {
+      "iran-war": {
+        "counts": {
+          "f3": 1
+        },
+        "seen": [
+          "fc39a5fa510c"
+        ],
+        "evidence": [
+          {
+            "framing": "f3",
+            "quote": "sign the open letter from Prof. Pape telling Congress to support regional balancing",
+            "url": "https://mstdn.science/@Nymnympseudonymm/117617134326229701"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:insideusc.blog@insideusc.blog": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "33b4721d105f"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "USC-Indiana Live Blog #collegeFootball #featured",
+            "url": "https://insideusc.blog/2026/11/14/usc-indiana-live-blog/"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:BigDogBo@universeodon.com": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "941dc036a1e6"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:23homes@mstdn.business": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "68de9adf2f1b"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:emarktaylor.bsky.social@bsky.brid.gy": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 14
+        },
+        "seen": [
+          "2af3ff147ad2",
+          "4e50ba28fd4b",
+          "5e2cf59a4417",
+          "1f2a627d9378",
+          "280f886c57df",
+          "b19e4c00ed4a",
+          "35e682ab37fc",
+          "5799b5fa84ca",
+          "91f661ff9453",
+          "210d39238d80",
+          "32f6dbec13f0",
+          "97d9f387869c",
+          "560652c39ae0",
+          "23577894eb4a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:paninid@mastodon.world": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "7d23b7f12c01"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:hollywoodreporter": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "707de78effe3"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Where to Watch Texas vs. LSU Football Game Online",
+            "url": "https://mastodon.social/@hollywoodreporter/117616587895253058"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:Godai71@mastodon.uno": {
+    "topics": {
+      "college-football-weekend": {
+        "counts": {
+          "none": 1,
+          "f2": 1
+        },
+        "seen": [
+          "3ceff2f79ba2",
+          "ec3cbdb0b609"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Saturday 16:00 SKORPIONS Varese vs GIAGUARI Torino 18:00",
+            "url": "https://mastodon.uno/@Godai71/114442805783471370"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:theguardian_science@halo.nu": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "5f54d9763223"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "in victory for company",
+            "url": "https://halo.nu/@theguardian_science/117617247864158582"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:PlanetariumBochum": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "42cf89eb025e"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "For the first time a Starship has flown back from orbit",
+            "url": "https://mastodon.social/@PlanetariumBochum/117617058824144861"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:brouhaha": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "e1e8ce37555d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:3iatlas": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 5,
+          "f5": 1,
+          "f2": 2,
+          "f1": 1,
+          "f4": 1
+        },
+        "seen": [
+          "60eabd84bdb4",
+          "54ffd69c1424",
+          "c7c3c2978f85",
+          "a4aef96e8e0b",
+          "c701e622bc22",
+          "fc977e358bb9",
+          "22c35c71744f",
+          "718b33c8d132",
+          "986c61fae314",
+          "ded4b5a81b03"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "SpaceX's Starship Launch Today Could Lift the Stock",
+            "url": "https://mastodon.social/@3iatlas/117617986013526038"
+          },
+          {
+            "framing": "f2",
+            "quote": "launches Starship for a 22-hour test",
+            "url": "https://mastodon.social/@3iatlas/117617984672175107"
+          },
+          {
+            "framing": "f1",
+            "quote": "SpaceX Catches a Starship From Orbit for First Time",
+            "url": "https://mastodon.social/@3iatlas/117617514115261069"
+          },
+          {
+            "framing": "f2",
+            "quote": "Tower was go for catch",
+            "url": "https://mastodon.social/@3iatlas/117617513575889132"
+          },
+          {
+            "framing": "f4",
+            "quote": "designed from the ground up to be fully reusable",
+            "url": "https://mastodon.social/@3iatlas/117617512723175424"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:mirror.co.uk@web.brid.gy": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "338dd67b7beb"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "dramatic return to Earth after being 'caught' in mid-air by mechanical arms",
+            "url": "https://www.mirror.co.uk/news/world-news/space-x-starship-elon-musk-37878434"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:vibewire@mastodon.au": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "6b6e782b0483"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:hacker_news_bot": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "4c35719fe99a"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:killbait_es": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "d60a39e2a72d"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "mastodon:cosmiclog@mastodon.online": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "ffb7a6783eeb"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "first-ever midair capture at its launch pad",
+            "url": "https://mastodon.online/@cosmiclog/117617362080736535"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:rtlnieuws": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "aca1b2eb2c77"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "for the first time, fully controlled the return of the Starship rocket",
+            "url": "https://mastodon.social/@rtlnieuws/117617255228157017"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:AstroGate@spacey.space": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "d24fac850eb0"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "Live broadcast with Arabic commentary of the first attempt to catch Starship",
+            "url": "https://spacey.space/@AstroGate/117617247564238659"
+          }
+        ]
+      }
+    }
+  },
+  "mastodon:oddquark@vivaldi.net": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f1": 1
+        },
+        "seen": [
+          "39de1f683f73"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "Flight 15 for the history books",
+            "url": "https://social.vivaldi.net/@oddquark/117617079562371074"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:baw-bag": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "047cd0ef06ee"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:motionlessveloc": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1,
+          "f1": 1
+        },
+        "seen": [
+          "446d8c728de7",
+          "aa21f652f65b"
+        ],
+        "evidence": [
+          {
+            "framing": "f1",
+            "quote": "This marks the first time in the history of rocketry",
+            "url": "https://news.ycombinator.com/item?id=50501115"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:testing22321": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "9afe6643dd24"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "They are kicking fucking ass",
+            "url": "https://news.ycombinator.com/item?id=50420120"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:metalman": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f2": 1
+        },
+        "seen": [
+          "3c67b7597b30"
+        ],
+        "evidence": [
+          {
+            "framing": "f2",
+            "quote": "A live webcast of the flight will begin about 30 minutes before liftoff",
+            "url": "https://news.ycombinator.com/item?id=50416671"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:ggreer": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "6b280ced4f9e"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:__patchbit__": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "66667641755c"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:AlexandrB": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "203918225730"
+        ],
+        "evidence": []
+      }
+    }
+  },
+  "hackernews:genidoi": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f5": 1
+        },
+        "seen": [
+          "fe36dc8b0b39"
+        ],
+        "evidence": [
+          {
+            "framing": "f5",
+            "quote": "Starship at $170B is pure option value",
+            "url": "https://news.ycombinator.com/item?id=47617432"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:ACCount37": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "f4": 1
+        },
+        "seen": [
+          "3c5688a5ce8e"
+        ],
+        "evidence": [
+          {
+            "framing": "f4",
+            "quote": "if SpaceX's Starship HLS catches enough delays",
+            "url": "https://news.ycombinator.com/item?id=45655845"
+          }
+        ]
+      }
+    }
+  },
+  "hackernews:stinkbeetle": {
+    "topics": {
+      "spacex-starship-catch": {
+        "counts": {
+          "none": 1
+        },
+        "seen": [
+          "3c3cf40795d7"
         ],
         "evidence": []
       }

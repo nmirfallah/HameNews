@@ -22,6 +22,7 @@ accounts by how they frame the topic. The result is a Markdown report committed 
 | `python run.py -j irna.ir --open` | **Focus on one source.** The normal analysis, plus that source's own articles (translated) added to every topic, with a "What IRNA reported" section showing original and English. |
 | `python run.py -j irna.ir --only --open` | Analyse **only** that source: its own headlines decide the topics, and no other source is used. |
 | `python run.py -j irna.ir --translation-only` | Skip the news analysis and just show the source's items next to their translations, with quality checks. |
+| `python kb.py show "Tasnim News Agency"` | Look things up in the **knowledge base** (who is connected to whom, with sources): see "Knowledge base" below. |
 | `python check_sources.py` | Diagnostic only: tests whether each website responds. It makes no report. |
 
 ## Contents
@@ -221,6 +222,55 @@ Troubleshooting: *"rejected the login"* means the app password is wrong or 2-Ste
 Workspace admins can also disable app passwords); *"Missing SMTP_USERNAME"* means the secret is empty or misnamed;
 a personal Gmail account can send about 500 messages a day, far more than needed here. The email step runs last,
 so a mail problem never stops the results from being saved.
+
+## Knowledge base
+
+HameNews keeps a small database of **who is connected to whom**, in `data/kb/` (plain JSONL files that are
+committed to your repo, so every change shows up in git). It holds three things:
+
+- **Entities**: outlets, accounts, states, companies, movements, parties, people.
+- **Claims**: a connection (`owned_by`, `funded_by`, `state_linked`, `affiliated_with`, `part_of`, `based_in`, ...) or a
+  `leaning`, always with **who asserted it**, an optional source link and date, and a **status**: `documented`,
+  `self_described`, `reported`, `alleged`, `denied` or `inferred`. A denial is its own claim stored beside the
+  allegation, so disputes stay visible and nothing is merged into a verdict.
+- **Observations**: what each outlet and account said on each topic each day (counts per framing), recorded by
+  every run.
+
+The daily run keeps it up to date and also seeds it: the agency list (country, and `state_linked` or
+`publicly_funded_by` where the list says state-run or public) and the outlet leanings. Those seeded claims are marked
+`reported` or `inferred` with their origin, and every seeded tie carries the note to verify it against a primary
+source. The report's outlet tables use it to fill the "Reference" column (for example
+`state-linked to Iran (reported)`) when you have not set your own rating in `known_ratings.json`.
+
+```powershell
+python kb.py show "Tasnim News Agency"       # everything about one entity: claims, disputes, what it said
+python kb.py tied-to Iran --hops 2           # outlets whose chain of ties leads to Iran (owner of owner, ...)
+python kb.py tied-to Iran --include-alleged  # ...also following alleged claims
+python kb.py connections "IRNA" --hops 2     # everything linked to an entity
+python kb.py disputed                        # claims that have a denial next to them
+python kb.py search iran                     # find entities by name, alias or part of a name
+python kb.py stats                           # how much is stored
+python kb.py check                           # validate the data (dangling links, bad statuses)
+python kb.py sql "SELECT subject_name, object_name FROM v_claims WHERE status = 'alleged'"
+```
+
+**Adding what you know, with sources.** (The URLs below are placeholders showing the format only.)
+```powershell
+python kb.py add-entity outlet "Example Daily" --alias exampledaily.com --country "United Kingdom"
+python kb.py add-claim "Example Daily" funded_by "Some State" --status reported --by "Some Newspaper" --source https://example.com/story --published 2018-10-31
+python kb.py add-claim "Example Daily" funded_by "Some State" --status denied --by "Example Daily" --source https://example.com/statement
+python kb.py disputed
+python kb.py remove-claim c_1234abcd5678      # ids are shown when you add a claim
+```
+Names are matched by id, name or alias (ignoring case and accents); if a name matches several entities you are asked to
+use the exact id. A claim needs `--by` (who says it); sources must be http(s) links; dates are `YYYY-MM-DD`; a `leaning`
+takes `left`, `center-left`, `center`, `center-right` or `right`. Your own edits are never overwritten by re-seeding.
+
+How it is stored: the JSONL files are the single source of truth (sorted, one JSON object per line, written
+atomically). `python kb.py sql` and the graph queries run on a SQLite index built in memory from those files each time,
+and the index sits in one module so another engine (for example DuckDB) could replace it. Two rules protect the data:
+a denial is never followed as a link, and the knowledge base can never stop a report (a damaged file only logs a warning).
+Turn it off with `kb: {enabled: false}` in `config.yaml`.
 
 ## Configuration
 
@@ -449,6 +499,7 @@ trendwatch/
   narratives.py             the "According to X..." summaries
   report.py, pipeline.py    report rendering (Markdown, HTML, email) and the daily flow
   emailer.py + send_report.py + emails.yaml   emailing the report to the people listed
+  kb/ and kb.py             the knowledge base (entities, claims, observations) and its command
   prompts.py                every prompt in one place
   llm/                      model-independent AI layer and providers
   sources/                  one module per data source

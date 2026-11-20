@@ -1,0 +1,41 @@
+{
+  "topic": "Veterans Day and Armistice Day",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Historical origins explainer",
+      "description": "Posts explain how Armistice Day on Nov. 11 after World War I became Veterans Day, often clarifying how it differs from Memorial Day."
+    },
+    {
+      "id": "f2",
+      "label": "Practical logistics and consumer deals",
+      "description": "Posts treat the day as a practical matter, listing what is open or closed, who gets time off, and where to find free meals and discounts."
+    },
+    {
+      "id": "f3",
+      "label": "Gratitude and honoring service",
+      "description": "Posts use tribute language such as thank-you messages and remembrance of sacrifice to honor all who served and what freedom costs."
+    },
+    {
+      "id": "f4",
+      "label": "Local ceremonies and community events",
+      "description": "Posts announce or cover parades, flyovers, cemetery ceremonies, school projects and institutional tributes in specific places."
+    },
+    {
+      "id": "f5",
+      "label": "Peace, loss and political context",
+      "description": "Posts connect the day to peace advocacy, grief over war deaths, or national leaders' remarks, framing it through current conflict and politics."
+    }
+  ],
+  "created": "2026-11-11",
+  "history": [
+    {
+      "date": "2026-11-11",
+      "verdict": "strong",
+      "kappa": 0.66,
+      "n_items": 160,
+      "n_framed": 84
+    }
+  ]
+}

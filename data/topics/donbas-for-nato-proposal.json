@@ -1,0 +1,41 @@
+{
+  "topic": "Donbas-for-NATO proposal",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Neutral wire report of US offer",
+      "description": "Reports the claim in near-identical headlines as attributed news: Zelensky says the US floated or asked about Ukraine ceding or withdrawing from Donbas in exchange for NATO membership."
+    },
+    {
+      "id": "f2",
+      "label": "Zelensky resisting, plan benefits Putin",
+      "description": "Presents the proposal through Zelensky's pushback, stressing that he stands firm on Donbas, that Ukraine must decide, and that the US plan or security framework could benefit Putin."
+    },
+    {
+      "id": "f3",
+      "label": "Legal and explanatory analysis",
+      "description": "Treats the idea as a question to unpack, asking whether Ukraine can lawfully trade territory and what the deal would mean for Ukraine, Russia and Zelensky, or comparing coverage across outlets."
+    },
+    {
+      "id": "f4",
+      "label": "Part of wider negotiation dynamics",
+      "description": "Places the proposal within ongoing US-Russia-Ukraine talks, alongside Putin signaling no compromise, Russia seeking to revise European security, and Trump blaming personal hatred between leaders."
+    },
+    {
+      "id": "f5",
+      "label": "Bundled with Starshield pressure claims",
+      "description": "Pairs the Donbas-for-NATO claim with Zelensky's accusations that SpaceX is restricting Starshield or Starlink access during talks, which SpaceX denies, so the offer appears alongside concerns about leverage over Ukraine."
+    }
+  ],
+  "created": "2026-11-14",
+  "history": [
+    {
+      "date": "2026-11-14",
+      "verdict": "unreliable",
+      "kappa": 0.44,
+      "n_items": 160,
+      "n_framed": 46
+    }
+  ]
+}

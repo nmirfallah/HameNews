@@ -1,0 +1,48 @@
+{
+  "topic": "Nvidia investigates Jensen Huang",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Corporate governance and internal probe",
+      "description": "Coverage presents the story as a company matter: the board hiring a law firm or former prosecutor, the scope of the investigation, whether Huang is fired or reined in, and how he returns to the office."
+    },
+    {
+      "id": "f2",
+      "label": "National security and espionage threat",
+      "description": "Posts frame the affair as a possible Chinese intelligence operation, citing government warnings, alleged ties enabling chip sales to China, and a suspected earlier shutdown of a smuggling probe."
+    },
+    {
+      "id": "f3",
+      "label": "Political and congressional fallout",
+      "description": "Articles focus on lawmakers calling for federal probes, testimony or resignation, the bipartisan response, and disagreement over Trump's role and Nvidia's Washington standing."
+    },
+    {
+      "id": "f4",
+      "label": "Market and industry risk",
+      "description": "Coverage treats the scandal as a financial and sector story, tracking share drops and rebounds, lost market value, customer and partner unease, and wider risk to the AI industry."
+    },
+    {
+      "id": "f5",
+      "label": "Personal affair and human interest",
+      "description": "Pieces center on the personal side, including who Alice Huang is, his wife and family, his background story, and commentary on whether such behavior is commonplace or has an upside."
+    }
+  ],
+  "created": "2026-11-11",
+  "history": [
+    {
+      "date": "2026-11-11",
+      "verdict": "unreliable",
+      "kappa": 0.0,
+      "n_items": 151,
+      "n_framed": 0
+    },
+    {
+      "date": "2026-11-14",
+      "verdict": "unreliable",
+      "kappa": 0.39,
+      "n_items": 160,
+      "n_framed": 38
+    }
+  ]
+}

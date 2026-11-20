@@ -1,3 +1,4 @@
+import os
 import re
 import tempfile
 import unittest
@@ -10,6 +11,7 @@ from helpers import (FRAMINGS_REPLY, ScriptedLLM, cfg, keyword_labels, leaning_r
 from trendwatch import pipeline
 from trendwatch.models import Signal
 from trendwatch.sources import CONTENT_SOURCES, SIGNAL_SOURCES
+from trendwatch.kb import KBStore
 from trendwatch.store import Store
 
 
@@ -162,6 +164,69 @@ class LanguageIntegrationTests(PipelineTestCase):
         self.analyze(llm)
         self.assertNotIn("translate_items", llm.tasks())
         self.assertNotIn("translate_keywords", llm.tasks())
+
+
+class KnowledgeBaseIntegrationTests(PipelineTestCase):
+    def kb(self):
+        return KBStore(self.store.root)
+
+    def test_a_topic_analysis_records_what_each_outlet_and_account_said(self):
+        self.content(mixed_items(12, 6))
+        self.analyze(ScriptedLLM(handler=handler()))
+        obs = self.kb().observations
+        today = date.today().isoformat()
+        self.assertIn(("outlet:outlet0", "album", today), obs)
+        self.assertIn(("account:bluesky-user0", "album", today), obs)
+        row = obs[("outlet:outlet0", "album", today)]
+        self.assertEqual(row["topic_name"], "Album")
+        self.assertTrue(set(row["counts"]) <= {"Celebratory", "Dismissive", "none"})
+        self.assertGreater(row["n_items"], 0)
+
+    def test_analysing_the_same_day_twice_does_not_double_count(self):
+        self.content(mixed_items(12, 6))
+        llm = ScriptedLLM(handler=handler())
+        self.analyze(llm)
+        first = {k: v["n_items"] for k, v in self.kb().observations.items()}
+        self.analyze(llm)
+        self.assertEqual({k: v["n_items"] for k, v in self.kb().observations.items()}, first)
+
+    def test_a_run_seeds_the_knowledge_base_with_the_agency_list(self):
+        self.content(mixed_items(12, 6))
+        pipeline.run(ScriptedLLM(handler=handler()), self.cfg, self.store, subject="Album")
+        kb = self.kb()
+        self.assertEqual(len(kb.find_exact("IRNA", "outlet")), 1)
+        self.assertEqual(kb.check(), [])
+
+    def test_leanings_found_during_a_run_reach_the_knowledge_base_on_the_next_run(self):
+        self.content(mixed_items(12, 6))
+        llm = ScriptedLLM(handler=handler())
+        pipeline.run(llm, self.cfg, self.store, subject="Album")
+        pipeline.run(llm, self.cfg, self.store, subject="Album")
+        claims = [c for c in self.kb().claims.values() if c["predicate"] == "leaning"]
+        self.assertTrue(claims)
+        self.assertEqual({c["added_by"] for c in claims}, {"seed:leanings"})
+
+    def test_the_knowledge_base_can_be_switched_off(self):
+        self.cfg = cfg(collection={"sources": ["fake"]}, analysis={"batch_size": 100}, kb={"enabled": False})
+        self.content(mixed_items(12, 6))
+        pipeline.run(ScriptedLLM(handler=handler()), self.cfg, self.store, subject="Album")
+        self.assertFalse(os.path.exists(self.store.path("kb")))
+
+    def test_a_knowledge_base_failure_never_stops_a_report(self):
+        self.content(mixed_items(12, 6))
+        with mock.patch.object(pipeline, "record_observations", side_effect=RuntimeError("disk full")), \
+                mock.patch.object(pipeline, "seed_all", side_effect=RuntimeError("boom")):
+            name = pipeline.run(ScriptedLLM(handler=handler()), self.cfg, self.store, subject="Album")
+        self.assertTrue(name)
+        self.assertEqual(self.store.read(name.replace(".md", ".json"))[0]["divide"]["verdict"], "strong")
+
+    def test_a_corrupted_knowledge_base_file_is_survived(self):
+        os.makedirs(self.store.path("kb"))
+        with open(self.store.path("kb/claims.jsonl"), "w", encoding="utf-8") as f:
+            f.write("{broken\n")
+        self.content(mixed_items(12, 6))
+        name = pipeline.run(ScriptedLLM(handler=handler()), self.cfg, self.store, subject="Album")
+        self.assertTrue(name)
 
 
 class FocusSourceTests(PipelineTestCase):

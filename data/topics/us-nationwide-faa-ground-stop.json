@@ -1,0 +1,41 @@
+{
+  "topic": "US nationwide FAA ground stop",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Breaking news and traveler disruption",
+      "description": "Posts report the ground stop as a live event, covering cancellations, delays, stranded travelers, recovery timelines and practical 'what to know' guidance."
+    },
+    {
+      "id": "f2",
+      "label": "Officials' technical cause explanation",
+      "description": "Posts relay the Transportation Secretary's account that a contractor's (L3Harris) copper wire or telecom system upgrade or routine maintenance caused the outage, often with the cause attributed to specific named parties."
+    },
+    {
+      "id": "f3",
+      "label": "Aging infrastructure and funding need",
+      "description": "Posts present the outage as the result of old, overloaded technology and tie it to calls for billions more in funding for an air traffic control overhaul."
+    },
+    {
+      "id": "f4",
+      "label": "Government response and accountability questions",
+      "description": "Posts focus on how the White House and security officials reacted, the president's silence, and whether press briefings and explanations were adequate or left questions unanswered."
+    },
+    {
+      "id": "f5",
+      "label": "Sports schedule fallout",
+      "description": "Posts treat the ground stop through its effects on games, travel and officiating for the NBA, NHL, NFL and college football, including league decisions and reactions from coaches and athletic directors."
+    }
+  ],
+  "created": "2026-11-14",
+  "history": [
+    {
+      "date": "2026-11-14",
+      "verdict": "unreliable",
+      "kappa": 0.47,
+      "n_items": 160,
+      "n_framed": 55
+    }
+  ]
+}

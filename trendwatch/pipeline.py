@@ -2,6 +2,9 @@ import json
 from datetime import date
 
 from . import groups, journal, languages, leanings, narratives, profiles, prompts, report
+from .kb import KBStore
+from .kb.record import record_observations
+from .kb.seed import seed_all
 from .collect import collect
 from .discovery import discover_topics, expand_subject, split_topics
 from .stance import divide_report, get_framings, label_with_consensus
@@ -58,6 +61,13 @@ def analyze_topic(llm, topic, cfg, store, focus=None):
     res["divide"] = divide
 
     profiles.update(store, topic["slug"], items, labels)
+    if cfg.get("kb", {}).get("enabled", True):
+        try:
+            kb = KBStore(store.root)
+            record_observations(kb, date.today().isoformat(), topic["slug"], topic["topic"], items, labels, framings)
+            kb.save()
+        except Exception as e:          # the knowledge base must never stop a report
+            log.warning("knowledge base update failed: %s", e)
     res["rows"] = profiles.rows(store, topic["slug"], framings, cfg)
 
     # Keep a small history so divides can be compared over days.
@@ -85,6 +95,11 @@ def _also_entry(t):
 def run(llm, cfg, store, subject=None, focus=None, only=False):
     day = date.today().isoformat()
     record, rest = {}, []
+    if cfg.get("kb", {}).get("enabled", True):
+        try:
+            seed_all(store.root, cfg)    # idempotent: adds new leanings and agency facts, never overwrites edits
+        except Exception as e:
+            log.warning("knowledge base seeding failed: %s", e)
     if subject:
         deep = [expand_subject(llm, subject)]
         deep[0]["rank"] = 1

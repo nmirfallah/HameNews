@@ -1,0 +1,41 @@
+{
+  "topic": "Van Hollen Senate leader bid",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Change versus status quo",
+      "description": "Coverage presents Van Hollen's bid as a response to voters wanting change and Democrats needing to 'meet this moment', including his own explanations and calls for new leadership such as the activist protests and Merkley's endorsement."
+    },
+    {
+      "id": "f2",
+      "label": "Vote count and colleague support",
+      "description": "Articles treat the contest as a whip-count story, noting that few colleagues have embraced Van Hollen, that Schumer says he has the votes, that Kelly and Gallego back Schumer, and that Democrats are torn."
+    },
+    {
+      "id": "f3",
+      "label": "Fetterman's threat and party rift",
+      "description": "Pieces centered on John Fetterman's warnings that a Van Hollen leadership would be 'troubling' or could push him out frame the race as a potential breaking point for Democratic unity."
+    },
+    {
+      "id": "f4",
+      "label": "Schumer's unpopularity and credibility",
+      "description": "Items highlight Schumer's weak public standing and disputed record, such as the comparison with Trump's unpopularity and the fact check on Jon Stewart's claim, as context for the challenge."
+    },
+    {
+      "id": "f5",
+      "label": "Procedure, profile and what comes next",
+      "description": "Explainers and profiles cover how the contest could unfold, Van Hollen's background, his ruling out a 2028 run, Senate rule changes he would pursue and Democrats' focus on Trump administration probes."
+    }
+  ],
+  "created": "2026-11-14",
+  "history": [
+    {
+      "date": "2026-11-14",
+      "verdict": "weak",
+      "kappa": 0.64,
+      "n_items": 160,
+      "n_framed": 39
+    }
+  ]
+}

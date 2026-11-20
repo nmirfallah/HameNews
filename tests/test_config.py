@@ -75,6 +75,16 @@ class BuildConfigTests(unittest.TestCase):
         self.assertEqual(replaced["languages"]["editions"], [{"country": "JP", "lang": "ja"}])
         self.assertTrue(replaced["languages"]["translate"])  # the rest of the section is kept
 
+    def test_the_knowledge_base_is_on_by_default(self):
+        self.assertEqual(build_config({})["kb"], {"enabled": True})
+        self.assertEqual(build_config({"kb": {"enabled": False}})["kb"], {"enabled": False})
+
+    def test_the_knowledge_base_files_are_committed_but_temporary_files_are_not(self):
+        lines = [l.strip() for l in open(os.path.join(helpers.ROOT, ".gitignore"), encoding="utf-8")]
+        self.assertIn("data/kb/*.tmp", lines)
+        for ignored in ("data/kb/", "data/kb", "data/", "data", "*.jsonl", "data/kb/*.jsonl"):
+            self.assertNotIn(ignored, lines)
+
     def test_default_models_exist_for_both_tiers(self):
         self.assertEqual(set(DEFAULTS["llm"]["models"]), {"fast", "smart"})
 

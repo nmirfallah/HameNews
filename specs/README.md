@@ -5,7 +5,7 @@ these describe what is planned, why, and what was decided.
 
 | Spec | Subject | Status |
 |---|---|---|
-| [knowledge-base.md](knowledge-base.md) | Entities, claims, and storage (JSONL, DuckDB, graph) | Designed, not built |
+| [knowledge-base.md](knowledge-base.md) | Entities, claims, and storage (JSONL, DuckDB, graph) | First version built |
 | [sources.md](sources.md) | News feeds, agencies, social platforms and their gaps | In progress |
 | [analysis.md](analysis.md) | Framing detection, labels, narratives, trend history | In progress |
 | [scoring.md](scoring.md) | Scores linking sources to claimers (documented connection, narrative alignment, combined) | Draft |

@@ -1,0 +1,41 @@
+{
+  "topic": "Hegseth impeachment bid fails",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Neutral procedural vote report",
+      "description": "Straight news accounts that report the House blocking or rejecting the impeachment effort, citing the 211-204 tally and GOP leadership's procedural move, with little interpretation."
+    },
+    {
+      "id": "f2",
+      "label": "Democratic attendance and leadership failure",
+      "description": "Frames the outcome around 11 absent Democrats and the narrow seven-vote margin, treating it as a problem for Jeffries and party unity and asking why members missed the vote."
+    },
+    {
+      "id": "f3",
+      "label": "Trump and Hegseth vindication narrative",
+      "description": "Presents the failure as exoneration, quoting Trump's praise of Hegseth as a patriot, his attacks on Massie and Democrats, and Hegseth's dismissal of the effort as a farce comparable to Trump's past impeachments."
+    },
+    {
+      "id": "f4",
+      "label": "Not over: effort may return",
+      "description": "Emphasizes qualifiers such as 'for now' and 'could try again', noting Democrats could revive the impeachment push after the midterms or in January."
+    },
+    {
+      "id": "f5",
+      "label": "Iran war and legitimacy of charges",
+      "description": "Places the impeachment in the context of the Iran war and oversight, with supporters like Ocasio-Cortez and Jeffries calling the articles legitimate while Hegseth and the White House cast it as a policy disagreement or a threat to national security signaling."
+    }
+  ],
+  "created": "2026-11-11",
+  "history": [
+    {
+      "date": "2026-11-11",
+      "verdict": "strong",
+      "kappa": 0.54,
+      "n_items": 157,
+      "n_framed": 43
+    }
+  ]
+}

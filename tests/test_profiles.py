@@ -129,6 +129,33 @@ class RowsTests(unittest.TestCase):
         self.assertEqual(rows["outlets"][0]["reference"], "AllSides: Center")
         self.assertEqual(rows["outlets"][1]["reference"], "")
 
+    def test_the_reference_column_falls_back_to_the_knowledge_base(self):
+        from trendwatch.kb.seed import seed_all
+        seed_all(self.store.root, cfg())
+        items = [item(f"t{i}", outlet="Tasnim News Agency") for i in range(3)]
+        profiles.update(self.store, "t", items, {i.id: lab("f1") for i in items})
+        rows = profiles.rows(self.store, "t", FRAMINGS, self.cfg)
+        self.assertEqual(rows["outlets"][0]["reference"], "state-linked to Iran (reported)")
+
+    def test_your_own_known_ratings_win_over_the_knowledge_base(self):
+        from trendwatch.kb.seed import seed_all
+        seed_all(self.store.root, cfg())
+        self.store.write("known_ratings.json", {"Tasnim News Agency": "AllSides: n/a"})
+        items = [item(f"t{i}", outlet="Tasnim News Agency") for i in range(3)]
+        profiles.update(self.store, "t", items, {i.id: lab("f1") for i in items})
+        self.assertEqual(profiles.rows(self.store, "t", FRAMINGS, self.cfg)["outlets"][0]["reference"], "AllSides: n/a")
+
+    def test_the_reference_can_be_switched_off_and_unknown_outlets_stay_blank(self):
+        from trendwatch.kb.seed import seed_all
+        seed_all(self.store.root, cfg())
+        items = [item(f"t{i}", outlet="Tasnim News Agency") for i in range(3)] + [item(f"u{i}", outlet="Unknown Daily") for i in range(3)]
+        profiles.update(self.store, "t", items, {i.id: lab("f1") for i in items})
+        rows = {r["name"]: r for r in profiles.rows(self.store, "t", FRAMINGS, self.cfg)["outlets"]}
+        self.assertEqual(rows["Unknown Daily"]["reference"], "")
+        off = cfg(analysis={"min_items_outlet": 2, "min_items_account": 4}, kb={"enabled": False})
+        rows = {r["name"]: r for r in profiles.rows(self.store, "t", FRAMINGS, off)["outlets"]}
+        self.assertEqual(rows["Tasnim News Agency"]["reference"], "")
+
     def test_only_entries_for_the_requested_topic(self):
         self.seed()
         rows = profiles.rows(self.store, "other-topic", FRAMINGS, self.cfg)

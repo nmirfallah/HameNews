@@ -1,0 +1,41 @@
+{
+  "topic": "SpaceX Starship catch",
+  "has_distinct_framings": true,
+  "framings": [
+    {
+      "id": "f1",
+      "label": "Historic first milestone",
+      "description": "Headlines present the tower catch as an unprecedented, history-making achievement, often with vivid imagery such as giant mechanical arms snatching the ship from the sky."
+    },
+    {
+      "id": "f2",
+      "label": "Live event and anticipation",
+      "description": "Posts treat the flight as an unfolding event, with livestreams, live updates and previews of the planned double-catch attempt."
+    },
+    {
+      "id": "f3",
+      "label": "Setback followed by recovery",
+      "description": "Coverage stresses that the booster catch was aborted or missed, then presents the ship catch as the success that followed."
+    },
+    {
+      "id": "f4",
+      "label": "Reusability and lunar ambitions",
+      "description": "Some pieces place the catch in the context of reusable rockets and the company's moon and deep-space goals, treating the flight as a test of those plans."
+    },
+    {
+      "id": "f5",
+      "label": "Company, Musk and market angle",
+      "description": "A few items frame the catch through its meaning for Elon Musk, the company's victory, or stock and investment implications."
+    }
+  ],
+  "created": "2026-11-14",
+  "history": [
+    {
+      "date": "2026-11-14",
+      "verdict": "strong",
+      "kappa": 0.58,
+      "n_items": 160,
+      "n_framed": 66
+    }
+  ]
+}
